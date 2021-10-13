@@ -1,0 +1,134 @@
+@import url('https://cdn.hldtru.space/stylesheets/ScaniaSans.css');
+@import url('https://cdn.hldtru.space/stylesheets/SFPro.css');
+@import "variables";
+@import "fonts";
+@import "main";
+@import "footer";
+@import "overlay";
+
+.canvas {
+  position: fixed;
+  scroll-behavior: none;
+  max-width: 100vw;
+  max-height: 100vh;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  padding: 0rem;
+	z-index: 1;
+  background-color: transparent !important;
+}
+
+.three {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.overlay {
+  z-index: 9999;
+  font-family: "Menlo", monospace;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  -webkit-user-select: none;
+}
+
+.overlay__link {
+  color: #FF0 !important;
+  text-decoration: none;
+}
+
+.overlay__link:hover {
+  text-decoration: underline;
+}
+
+.video {
+  position: absolute;
+  object-fit: cover;
+  object-position: 50% 50%;
+  max-width: 100vw;
+  max-height: 100vh;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.scania_heading {
+  font-family: 'SF Pro Display', sans-serif;
+  font-size: 0.6rem;
+  font-style: normal;
+  font-weight: normal;
+  color: #fff;
+  z-index: 30;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 4px;
+  margin: auto;
+}
+
+.scania_body {
+  font-family: 'SF Pro Display', sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1;
+  color: #000;
+  z-index: 30;
+  padding-left: 2px;
+  padding-top: 6px;
+  padding-right: 4px;
+  padding-bottom: 2px;
+}
+
+.scania_bodysmall {
+  font-family: 'SF Pro Display', sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  color: gray;
+  z-index: 30;
+  padding-left: 2px;
+  padding-top: 2px;
+  padding-right: 4px;
+  padding-bottom: 4px;
+}
+
+.heading {
+	font-family: 'Scania Sans CY Headline', sans-serif !important;
+	font-weight: bold;
+	font-style: normal;
+  font-size: 3rem !important;
+}
+
+.heading_sf {
+	font-family: 'SF Pro Display', sans-serif !important;
+	font-weight: 600;
+	font-style: normal;
+  font-size: 3.5rem !important;
+}
+
+.heading_sf:hover {
+  opacity: 0.8;
+}
+
+@media only screen and (max-width: 600px) {
+  .heading {
+    font-size: 2.5rem !important;
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "alias": [
+    "www.ady.world",
+    "adyworld.vercel.app",
+    "www.adyproject.com",
+    "ady.project.com"
+  ],
+  "github": {
+    "silent": true
+  },
+  "headers": [
+    {
+      "headers": [
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        },
+        {
+          "key": "Content-Security-Policy",
+          "value": "base-uri 'self'; connect-src 'self' cdn.hldtru.space rawcdn.githack.com cdn.hldtru.io; default-src 'none'; font-src 'self' cdn.hldtru.space cdn.hldtru.io; form-action 'self' klaviyo.com; frame-ancestors 'none'; frame-src 'self'; img-src 'self' rawcdn.githack.com cdn.hldtru.space data:; manifest-src 'self'; media-src 'self' cdn.hldtru.space cdn.hldtru.io cdn.hldtru.com rawcdn.githack.com; object-src 'self' rawcdn.githack.com cdn.hldtru.space; script-src 'self' 'unsafe-eval' rawcdn.githack.com cdn.hldtru.space; style-src 'self' 'unsafe-inline' cdn.hldtru.space rawcdn.githack.com;"
+        },
+        {
+          "key": "Expect-CT",
+          "value": "max-age=31536000, report-uri=\"https://atelier.report-uri.com/r/d/ct/reportOnly\""
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "accelerometer 'self'; ambient-light-sensor 'self'; autoplay 'self'; camera 'self'; document-domain 'self'; encrypted-media 'self'; fullscreen 'self'; geolocation 'self'; gyroscope 'self'; magnetometer 'self'; microphone 'self'; midi 'self'; payment 'self'; picture-in-picture 'self'; speaker 'self'; sync-xhr 'self'; usb 'self'; vr / xr 'self';"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin"
+        },
+        {
+          "key": "Strict-Transport-Security",
+          "value": "max-age=31536000; includesubdomains; preload"
+        },
+        {
+          "key": "Vary",
+          "value": "Accept-Encoding"
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "allow"
+        },
+        {
+          "key": "X-XSS-Protection",
+          "value": "1; mode=block"
+        }
+      ],
+      "source": "/(.*)"
+    }
+  ],
+  "redirects": [
+    {
+      "destination": "https://instagram.com/ady.world",
+      "source": "/instagram"
+    },
+    {
+      "destination": "https://github.com/chvndler",
+      "source": "/github"
+    },
+    {
+      "destination": "https://twitter.com/_adyworld",
+      "source": "/twitter"
+    }
+  ],
+  "scope": "ady.world"
+}
