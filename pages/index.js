@@ -7,7 +7,7 @@ export default function Atelier() {
   <>
     <div className="canvas">
       <video className="video" playsInline autoPlay muted loop crossOrigin="true">
-        <source src="/above.mp4" type="video/mp4" />
+        <source src="/flow_purple.mp4" type="video/mp4" />
       </video>
       <Layout pageTitle="Atelier®">
         <a href="https://github.com/chvndler">

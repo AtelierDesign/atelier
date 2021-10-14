@@ -12,16 +12,8 @@ export default function Model(props) {
   return (
 <group ref={group} {...props} dispose={null}>
   <group name="Scene">
-    <mesh
-      name="Curve"
-      castShadow
-      receiveShadow
-      geometry={nodes.Curve.geometry}
-      rotation={[1.5712, -0.0005, -0.8164]}
-      scale={[8, 8, 8]}
-      userData={{ name: 'Curve' }}
-      material={materials[ 'Galvanized Steel']}>
-      <meshStandardMaterial color="red" />
+    <mesh name="Curve" castShadow receiveShadow geometry={nodes.Curve.geometry} rotation={[1.5712, -0.0005, -0.8164]} scale={[8, 8, 8]} userData={{ name: 'Curve' }} material={materials[ 'Galvanized Steel']}>
+    <meshStandardMaterial color="red" />
     </mesh>
   </group>
 </group>

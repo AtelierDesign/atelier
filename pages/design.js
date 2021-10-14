@@ -19,12 +19,7 @@ export default function Design() {
     <br></br>
     view source on _<a className="overlay__link" href="https://github.com/chvndler"> github</a>
   </div>
-  <Canvas
-    className="three"
-    shadows
-    dpr={[1, 2]}
-    camera={{ position: [1, 2, 2] }}
-  >
+  <Canvas className="three" shadows dpr={[1, 2]} camera={{ position: [1, 2, 2] }}>
     <Suspense fallback={null}>
       <Environment background={true} files={"/sunrise_1k.hdr"} />
       <Stage
