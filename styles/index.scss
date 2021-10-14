@@ -5,6 +5,7 @@
 @import "main";
 @import "footer";
 @import "overlay";
+@import "viewport";
 
 .canvas {
   position: fixed;
@@ -52,6 +53,13 @@
 
 .overlay__link:hover {
   text-decoration: underline;
+}
+
+.svg__logo {
+  z-index: 7777;
+  max-width: 140px;
+  color: #fff;
+  display: flex;
 }
 
 .video {
