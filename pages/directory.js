@@ -1,23 +1,25 @@
+
+import TopLayout from '../components/top_layout';
 import Image from 'next/image';
-import Layout from '../components/layout';
 
 export default function Directory() {
 
   return (
   <>
-    <div className="canvas">
     {/* No
       <video className="video" playsInline autoPlay muted loop crossOrigin="true">
         <source src="/flow_purple.mp4" type="video/mp4" />
       </video>
       */}
-      <Layout pageTitle="Atelier®">
-        <a href="https://github.com/chvndler">
-          <div className="svg__logo">
-            <Image src="/atelier_white.svg" alt="Atelier Design Yield®" height={100} width={140} />
-          </div>
-        </a>
-      </Layout>
+    <TopLayout pageTitle="Atelier®">
+      <a href="https://github.com/chvndler">
+        <div className="svg__logo">
+          <Image src="/atelier_white.svg" alt="Atelier Design Yield®" height={40} width={110} />
+        </div>
+      </a>
+    </TopLayout>
+    <div className="center__links">
+    <a href="https://github.com/chvndler">One</a>
     </div>
  </>
   );
