@@ -4,6 +4,9 @@
 @import "fonts";
 @import "main";
 @import "footer";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 .canvas {
   position: fixed;
@@ -16,6 +19,17 @@
   display: grid;
   grid-template-rows: 1fr auto;
   padding: 0rem;
+	z-index: 1;
+  background-color: transparent !important;
+}
+
+.crater {
+  max-width: 100vw;
+  overflow: scroll;
+  height: 100%;
+  width: 100%;
+  padding: 4px;
+  margin: auto;
 	z-index: 1;
   background-color: transparent !important;
 }
@@ -84,16 +98,18 @@
 
 .scania_heading {
   font-family: 'SF Pro Display', sans-serif;
-  font-size: 0.6rem;
+  font-size: 2rem;
   font-style: normal;
   font-weight: normal;
-  color: #fff;
-  z-index: 30;
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 4px;
-  margin: auto;
+  color: #000;
+}
+
+.scania__heading {
+  font-family: 'Scania Sans CY Headline', sans-serif;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: bold;
+  color: #000;
 }
 
 .scania_body {
@@ -121,7 +137,7 @@
   padding-left: 2px;
   padding-top: 2px;
   padding-right: 4px;
-  padding-bottom: 4px;
+  padding-bottom: 8px;
 }
 
 .center__links {

@@ -1,5 +1,7 @@
 {
   "dependencies": {
+    "@tailwindcss/aspect-ratio": "^0.3.0",
+    "@tailwindcss/typography": "^0.4.1",
     "@react-three/drei": "^7.12.6",
     "@react-three/fiber": "^7.0.9",
     "next": "11.1.2",
@@ -8,6 +10,8 @@
     "prismjs": "^1.25.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "tailwindcss-classnames": "^2.2.4",
+    "tailwindcss-interaction-variants": "^5.0.0",
     "sass": "1.41.1",
     "three": "^0.133.1",
     "threejs-meshline": "^2.0.12",
@@ -23,6 +27,15 @@
   },
   "devDependencies": {
     "eslint": "^7.32.0",
-    "eslint-config-next": "11.1.2"
+    "eslint-config-next": "11.1.2",
+    "autoprefixer": "^10.3.7",
+    "classnames": "^2.3.1",
+    "postcss": "^8.3.9",
+    "postcss-100vh-fix": "1.0.2",
+    "postcss-flexbugs-fixes": "5.0.2",
+    "postcss-hover-media-feature": "1.0.1",
+    "postcss-preset-env": "6.7.0",
+    "tailwindcss": "^2.2.16",
+    "tailwindcss-blend-mode": "^1.0.0"
   }
 }
