@@ -26,7 +26,7 @@ module.exports = {
     },
     container: {
       center: true,
-      padding: '0rem',
+      padding: '0rem'
     },
     colors: {
       transparent: 'transparent',

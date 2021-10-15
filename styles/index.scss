@@ -31,14 +31,7 @@
   padding: 4px;
   margin: auto;
 	z-index: 1;
-  background-color: transparent !important;
-}
-
-.three {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
+  background-color: transparent;
 }
 
 .overlay {
@@ -104,38 +97,39 @@
 
 .scania__heading {
   font-family: 'Scania Sans CY Headline', sans-serif;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-style: normal;
   font-weight: bold;
   color: #000;
+  padding-top: 2px;
 }
 
 .scania_body {
   font-family: 'SF Pro Display', sans-serif;
-  font-size: 13px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 600;
   line-height: 1;
   color: #000;
   z-index: 30;
   padding-left: 2px;
-  padding-top: 6px;
+  padding-top: 10px;
   padding-right: 4px;
   padding-bottom: 2px;
 }
 
 .scania_bodysmall {
   font-family: 'SF Pro Display', sans-serif;
-  font-size: 12px;
+  font-size: 14px;
   font-style: normal;
   font-weight: normal;
   line-height: 1;
+  letter-spacing: 0.03rem;
   color: gray;
   z-index: 30;
   padding-left: 2px;
   padding-top: 2px;
   padding-right: 4px;
-  padding-bottom: 8px;
 }
 
 .center__links {
@@ -159,6 +153,10 @@
 
 .heading_sf:hover {
   opacity: 0.8;
+}
+
+.image__height {
+  height: $h400;
 }
 
 @media only screen and (max-width: 600px) {
