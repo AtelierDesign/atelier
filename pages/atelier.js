@@ -1,18 +1,21 @@
 import Image from "next/image";
 import Navbar from '../components/navbar';
+import Hero from '../components/hero';
+import FooterLarge from '../components/largeFooter';
 
 export default function Atelier() {
   return (
 <>
   <Navbar />
+   <Hero />
   <div className="crater">
     <div className="flex flex-wrap h-auto -mx-0 mb-0 mt-6 z-20 bg-transparent z-8">
       {/* Image Row #1 */}
       {/* FIRST IMAGE */}
       <div className="w-full mb-8 md:w-1/2 lg:w-1/4 px-2">
-        <div className="relative image__height border-2 rounded-lg bg-gray-100 text-sm text-grey-dark flex items-center justify-center">
+        <div className="relative image__height rounded-lg bg-gray-100 text-sm text-grey-dark flex items-center justify-center">
           <Image
-            src="https://d37ni96g2zvg5.cloudfront.net/assets/placeholder.png"
+            src="https://cdn.ady.systems/assets/44.jpg"
             alt="one"
             layout="fill"
             objectFit="cover"
@@ -27,9 +30,9 @@ export default function Atelier() {
 
       {/* SECOND IMAGE */}
       <div className="w-full mb-8 md:w-1/2 lg:w-1/4 px-2 mb-3">
-        <div className="relative image__height border-2 rounded-lg bg-gray-100 text-sm text-grey-dark flex items-center justify-center">
+        <div className="relative image__height rounded-lg bg-gray-100 text-sm text-grey-dark flex items-center justify-center">
           <Image
-            src="https://d37ni96g2zvg5.cloudfront.net/assets/placeholder.png"
+            src="https://cdn.ady.systems/assets/vhvh.jpg"
             alt="one"
             layout="fill"
             objectFit="cover"
@@ -44,9 +47,9 @@ export default function Atelier() {
 
       {/* THIRD IMAGE */}
       <div className="w-full mb-8 md:w-1/2 lg:w-1/2 px-2 mb-3">
-        <div className="image__height relative border-2 rounded-lg bg-gray-100 text-sm text-grey-dark flex items-center justify-center">
+        <div className="image__height relative rounded-lg bg-gray-100 text-sm text-grey-dark flex items-center justify-center">
           <Image
-            src="https://d37ni96g2zvg5.cloudfront.net/assets/placeholder.png"
+            src="https://cdn.ady.systems/assets/999.jpg"
             alt="one"
             layout="fill"
             objectFit="cover"
@@ -61,9 +64,9 @@ export default function Atelier() {
 
       {/* FOURTH IMAGE */}
       <div className="w-full mb-8 md:w-1/2 lg:w-1/2 px-2 mb-3">
-        <div className="image__height relative border-2 rounded-lg bg-gray-100 text-sm text-grey-dark flex items-center justify-center">
+        <div className="image__height relative rounded-lg bg-gray-100 text-sm text-grey-dark flex items-center justify-center">
           <Image
-            src="https://d37ni96g2zvg5.cloudfront.net/assets/placeholder.png"
+            src="https://cdn.ady.systems/assets/55.jpg"
             alt="one"
             layout="fill"
             objectFit="cover"
@@ -78,9 +81,9 @@ export default function Atelier() {
 
       {/* FIFTH IMAGE */}
       <div className="w-full mb-8 md:w-1/2 lg:w-1/2 px-2 mb-3">
-        <div className="image__height relative border-2 rounded-lg bg-gray-100 text-sm text-grey-dark flex items-center justify-center">
+        <div className="image__height relative rounded-lg bg-gray-100 text-sm text-grey-dark flex items-center justify-center">
           <Image
-            src="https://d37ni96g2zvg5.cloudfront.net/assets/placeholder.png"
+            src="https://cdn.ady.systems/assets/000.jpg"
             alt="one"
             layout="fill"
             objectFit="cover"
@@ -95,9 +98,9 @@ export default function Atelier() {
 
       {/* SIX IMAGE */}
       <div className="w-full mb-8 md:w-1/2 lg:w-1/3 px-2 mb-3">
-        <div className="image__height relative border-2 rounded-lg bg-gray-100 text-sm text-grey-dark flex items-center justify-center">
+        <div className="image__height relative rounded-lg bg-gray-100 text-sm text-grey-dark flex items-center justify-center">
           <Image
-            src="https://d37ni96g2zvg5.cloudfront.net/assets/placeholder.png"
+            src="https://cdn.ady.systems/assets/kkkkkn.jpg"
             alt="one"
             layout="fill"
             objectFit="cover"
@@ -112,9 +115,9 @@ export default function Atelier() {
 
       {/* SIEVEN IMAGE */}
       <div className="w-full mb-8 md:w-1/2 lg:w-2/3 px-2 mb-3">
-        <div className="image__height relative border-2 rounded-lg bg-gray-100 text-sm text-grey-dark flex items-center justify-center">
+        <div className="image__height relative rounded-lg bg-gray-100 text-sm text-grey-dark flex items-center justify-center">
           <Image
-            src="https://d37ni96g2zvg5.cloudfront.net/assets/placeholder.png"
+            src="https://cdn.ady.systems/assets/vhvh.jpg"
             alt="one"
             layout="fill"
             objectFit="cover"
@@ -129,7 +132,13 @@ export default function Atelier() {
     </div>
 
     <div className="bg-transparent h-20"></div>
+
+
+<FooterLarge />
   </div>
+
+
+
 </>
 
   );

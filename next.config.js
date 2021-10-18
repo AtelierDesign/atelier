@@ -11,6 +11,6 @@ module.exports = withPWA({
 module.exports = {
   reactStrictMode: true,
 	images: {
-	  domains: ['d37ni96g2zvg5.cloudfront.net', 'cdn.hldtru.space', 'ady.systems', 'hldtru.space', 'cdn.hldtru.io'],
+	  domains: ['d37ni96g2zvg5.cloudfront.net', 'cdn.ady.systems', 'ady.systems', 'hldtru.space'],
 	}
 }

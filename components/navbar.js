@@ -10,11 +10,14 @@ export default function Navbar() {
         <div className="scania__heading">
           <Link href="/">Back</Link>
         </div>
-        <a href="https://github.com/chvndler">
+
+        <Link href="/">
           <div className="svg__logo">
             <Image src="/atelier_blk.svg" alt="Atelier Design Yield®" height={24} width={120} />
           </div>
-        </a>
+        </Link>
+
+
         <div className="scania__heading">Menu</div>
       </div>
     </header>
