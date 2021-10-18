@@ -13,7 +13,7 @@ export default function Fsp() {
 
   return (
     <>
-      <Clock />
+      <Clock className="clock"></Clock>
     </>
   )
 }

@@ -1,14 +1,13 @@
 import Image from 'next/image';
 import Layout from '../components/layout';
+import Video from '../components/video';
 
 export default function Index() {
 
   return (
   <>
     <div className="canvas">
-      <video className="video" playsInline autoPlay muted loop crossOrigin="true">
-        <source src="/above.mp4" type="video/mp4" />
-      </video>
+     <Video className="video" />
       <Layout pageTitle="Atelier®">
         <a href="https://github.com/chvndler">
           <div className="svg__logo">

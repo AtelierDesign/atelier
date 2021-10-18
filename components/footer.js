@@ -17,7 +17,6 @@ export default function Footer() {
         </a>
       </div>
       <div className="footer__center">
-        <Link className="link" href="/design">Model.js </Link>
         <a className="link" href="/twitter" target="_blank" rel="noopener noreferrer"> Twitter</a>
         <a className="link" href="/github" target="_blank" rel="noopener noreferrer"> GitHub</a>
         <a className="link" href="/instagram" target="_blank" rel="noopener noreferrer"> Instagram</a>

@@ -27,10 +27,12 @@ const Clock = () => {
           color: #000;
           font: 12px "Menlo", monospace;
           background-color: transparent;
+          z-index: 100;
         }
 
         .light {
           background-color: transparent;
+          z-index: 100;
         }
       `}</style>
     </div>
