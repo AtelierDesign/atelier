@@ -1,10 +1,6 @@
 {
   "alias": [
-    "www.ady.world",
-    "atelier-adyworld.vercel.app",
-    "atelier-hazel.vercel.app",
-    "atelier-git-main.vercel.app",
-    "ady.systems"
+    "www.ady.world"
   ],
   "github": {
     "silent": true
