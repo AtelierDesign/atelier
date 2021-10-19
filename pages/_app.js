@@ -4,6 +4,7 @@ import '../styles/index.scss';
 
 export default function App({ Component, pageProps }) {
   const createStore = useCreateStore(pageProps.initialZustandState)
+  
   return (
   <Provider createStore={createStore}>
    <Head>

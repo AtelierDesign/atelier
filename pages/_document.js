@@ -6,6 +6,7 @@ export default class Doc extends Document {
     return { ...initialProps };
   }
 
+
   render() {
     return (
       <Html lang="en">
