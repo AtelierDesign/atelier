@@ -2,7 +2,7 @@ import Layout from '../components/layout';
 import React, { Suspense, useRef } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { useLoader } from "@react-three/fiber";
-import { OrbitControls, Stage, Environment } from '@react-three/drei';
+import { OrbitControls, Billboard, Stage, Environment, TransformControls } from '@react-three/drei';
 import Model from '../components/model';
 
 
@@ -30,7 +30,7 @@ export default function Design() {
         <Model />
       </Stage>
     </Suspense>
-    <OrbitControls ref={ref} />
+    <OrbitControls ref={ref} enablePan={true} enableZoom={false} enableRotate={true} />
   </Canvas>
 </div>
 

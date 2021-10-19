@@ -11,7 +11,7 @@ export default function Navbar() {
           <Link href="/">Back</Link>
         </div>
 
-        <Link href="/">
+        <Link href="/" passHref>
           <div className="svg__logo">
             <Image src="/atelier_blk.svg" alt="Atelier Design Yield®" height={24} width={120} />
           </div>
