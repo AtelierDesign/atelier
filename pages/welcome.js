@@ -48,11 +48,10 @@ export default function Index() {
             Brand Identity, Website Design, System, Video
           </div>
         </div>
-
-
       </div>
     </div>
   </div>
+
 </>
 
 

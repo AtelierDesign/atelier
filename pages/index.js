@@ -7,7 +7,7 @@ export default function Index() {
   return (
   <>
     <div className="canvas">
-     <Video className="video" />
+     <Video />
       <Layout pageTitle="Atelier®">
         <a href="https://github.com/chvndler">
           <div className="svg__logo">
