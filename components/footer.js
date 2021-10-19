@@ -17,9 +17,9 @@ export default function Footer() {
         </a>
       </div>
       <div className="footer__center">
-        <a className="link" href="/twitter" target="_blank" rel="noopener noreferrer"> Twitter</a>
-        <a className="link" href="/github" target="_blank" rel="noopener noreferrer"> GitHub</a>
-        <a className="link" href="/instagram" target="_blank" rel="noopener noreferrer"> Instagram</a>
+        <a className="link" href="/twitter" target="_blank" rel="noopener noreferrer">Twitter</a>
+        <a className="link" href="/github" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a className="link" href="/instagram" target="_blank" rel="noopener noreferrer">Instagram</a>
       </div>
       <div className="footer__right">
         <a href="/github" target="_blank" rel="noopener noreferrer">
