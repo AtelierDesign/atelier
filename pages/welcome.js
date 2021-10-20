@@ -1,13 +1,13 @@
 import Image from 'next/image';
 import Layout from '../components/layout';
-import Navbar from '../components/navbar';
+import Header from '../components/header';
 import Hero from '../components/hero';
 
 export default function Welcome() {
 
   return (
 <>
-    <Navbar />
+    <Header />
       <Hero />
       <div className="crater">
     <div className="container mx-auto">
