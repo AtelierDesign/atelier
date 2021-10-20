@@ -1,14 +1,14 @@
 import Image from "next/image";
 import Navbar from '../components/navbar';
 import Hero from '../components/hero';
-import FooterLarge from '../components/largeFooter';
 
 export default function Atelier() {
   return (
 <>
-<Navbar />
-<Hero />
+
+
 <div className="crater">
+<Hero />
   <div className="flex flex-wrap h-auto -mx-0 mb-0 mt-6 z-20 bg-transparent z-8">
     {/* Image Row #1 */} {/* FIRST IMAGE */}
     <div className="w-full mb-8 md:w-1/2 lg:w-1/4 px-2">
@@ -91,7 +91,6 @@ export default function Atelier() {
   <div className="bg-transparent h-20"></div>
 
 
-  <FooterLarge />
 </div>
 </>
 
