@@ -36,6 +36,7 @@ export default function Headtest() {
   return (
 <>
   <Header />
+  <Hero />
   <div className="crater">
 <div className="container xl">
   <div className="flex flex-wrap h-auto -mx-0 mb-0 mt-6 z-20 bg-transparent z-8">

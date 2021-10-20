@@ -7,8 +7,9 @@ export default function Header() {
   return (
 <>
 <header>
-  <div className="container2">
+  <div className="bar">
     <nav>
+    {/* <!-- /.nav-list nav-list-mobile -->  */}
       <ul className="navlist__mobile">
         <li className="nav-item">
           <div className="mobile-menu">
@@ -27,21 +28,42 @@ export default function Header() {
           </Link>
         </li>
       </ul>
-      {/* <!-- /.nav-list nav-list-mobile -->  */}
+</nav>
 
+{/* <!-- /.nav-list nav-list-larger -->  */}
+   <div className="navlist__larger">
       <ul className="navlist__larger">
-        <li className="nav-item nav-item-hidden">
-          <Link href="/">
-            <a className="nav-link nav-link-logo"></a>
+        <li className="nav-item">
+          <Link className="nav-link nav-link-logo" href="/">
+            <a>Link</a>
           </Link>
         </li>
+
+        <li className="nav-item">
+          <Link href="https://apple.com" className="nav-link">
+            <a>Link 4</a>
+          </Link>
+        </li>
+
+        <li className="nav-item">
+          <Link href="https://apple.com" className="nav-link">
+            <a>Link 4</a>
+          </Link>
+        </li>
+
+        <li className="nav-item" className="nav-link">
+          <Link href="https://apple.com">
+            <a>Link 4</a>
+          </Link>
+        </li>
+
         <li className="nav-item">
           <Link href="https://apple.com">
             <a className="nav-link">Link 4</a>
           </Link>
         </li>
       </ul>
-    </nav>
+    </div>>
   </div>
 </header>
 </>

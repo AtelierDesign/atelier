@@ -21,7 +21,7 @@ export default function Design() {
   </div>
   <Canvas className="three" shadows dpr={[1, 2]} camera={{ position: [1, 2, 2] }}>
     <Suspense fallback={null}>
-      <Environment background={true} files={"/sunrise_1k.hdr"} />
+      <Environment background={true} files={"/hdr/sunrise_1k.hdr"} />
       <Stage
         controls={ref}
         intensity={0.7}
