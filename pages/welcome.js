@@ -3,13 +3,16 @@ import Layout from '../components/layout';
 import Header from '../components/header';
 import Hero from '../components/hero';
 
+
+
+
 export default function Welcome() {
 
   return (
 <>
-    <Header />
-      <Hero />
-      <div className="crater">
+  <Header />
+  <Hero />
+  <div className="crater">
     <div className="container mx-auto">
       <div className="flex flex-wrap h-auto -mx-0 mb-0 mt-6 z-20 bg-transparent z-8">
         {/* Image Row #1 */} {/* FIRST IMAGE */}
@@ -21,16 +24,21 @@ export default function Welcome() {
               alt="one"
               layout="fill"
               objectFit="cover"
-              className="rounded-lg"
+              className="rounded-lg shadow-lg"
             />
           </div>
         </div>
 
-
         {/* SECOND IMAGE */}
         <div className="w-full mb-8 md:w-1/2 lg:w-1/2 px-2 mb-3">
           <div className="relative image__height rounded-lg bg-gray-100 text-sm text-grey-dark flex items-center justify-center">
-            <Image src="https://cdn.ady.systems/assets/blk.jpg" alt="one" layout="fill" objectFit="cover" className="rounded-lg" />
+            <Image
+              src="https://cdn.ady.systems/assets/a.gif"
+              alt="one"
+              layout="fill"
+              objectFit="cover"
+              className="rounded-lg shadow-lg"
+            />
           </div>
           <div className="scania_body">Product _ 002</div>
           <div className="scania_bodysmall">
@@ -41,7 +49,13 @@ export default function Welcome() {
         {/* THIRD IMAGE */}
         <div className="w-full mb-8 md:w-1/2 lg:w-1/2 px-2 mb-3">
           <div className="relative image__height rounded-lg bg-gray-100 text-sm text-grey-dark flex items-center justify-center">
-            <Image src="https://cdn.ady.systems/assets/blk.jpg" alt="one" layout="fill" objectFit="cover" className="rounded-lg" />
+            <Image
+              src="https://cdn.ady.systems/assets/blk.jpg"
+              alt="one"
+              layout="fill"
+              objectFit="cover"
+              className="rounded-lg shadow-lg" 
+            />
           </div>
           <div className="scania_body">Product _ 002</div>
           <div className="scania_bodysmall">
@@ -51,7 +65,6 @@ export default function Welcome() {
       </div>
     </div>
   </div>
-
 </>
 
 
