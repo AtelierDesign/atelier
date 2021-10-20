@@ -1,5 +1,6 @@
-import Link from 'next/link'
+import Link from 'next/link';
 import React, { useState } from 'react';
+import Image from 'next/image';
 
 
 export default function Header() {
@@ -32,7 +33,19 @@ export default function Header() {
 
 {/* <!-- /.nav-list nav-list-larger -->  */}
 
-      <ul className="navlist__larger"></ul>
+      <div className="navlist__larger w-full">
+      <div className="flex h-full w-full pt-4">
+  <div className="flex-grow h-16 text-left">
+    Menu
+  </div>
+  <div className="flex-grow-0 h-16 text-center">
+    <Image src="/svg/logo__alt.svg" alt="Logo" width={30} height={26}></Image>
+  </div>
+  <div className="flex-grow h-16 text-right">
+    Store
+  </div>
+  </div>
+</div>
     </nav>
   </div>
 </header>
