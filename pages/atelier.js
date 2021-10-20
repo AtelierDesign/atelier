@@ -4,10 +4,8 @@ import Hero from '../components/hero';
 export default function Atelier() {
   return (
 <>
-
-
 <div className="crater">
-<Hero />
+  <Hero />
   <div className="flex flex-wrap h-auto -mx-0 mb-0 mt-6 z-20 bg-transparent z-8">
     {/* Image Row #1 */} {/* FIRST IMAGE */}
     <div className="w-full mb-8 md:w-1/2 lg:w-1/4 px-2">
@@ -88,8 +86,6 @@ export default function Atelier() {
   </div>
 
   <div className="bg-transparent h-20"></div>
-
-
 </div>
 </>
 
