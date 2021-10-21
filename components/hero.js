@@ -13,7 +13,7 @@ export default function Hero() {
     <div className="hero__inner">
       <Image src="/svg/atelier_blk.svg" alt="Atelier®" width={200} height={50} />
       <div className="hero__body">
-        <p>An ever– expanding ecosystem of design components.</p>
+        <p>An ever– expanding ecosystem of essential design components, for artists to empower the new culture of design.</p>
       </div>
     </div>
   </div>
