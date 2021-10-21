@@ -24,7 +24,7 @@
   background-color: transparent !important;
 }
 
-.crater {
+.sand__box {
   max-width: 100vw;
   overflow: scroll;
   height: 100%;
@@ -61,11 +61,11 @@
   text-decoration: underline;
 }
 
-.image__overtext {
+.image__text {
   position: absolute;
   top: 0;
   left: 0;
-  font-family: '$font-main', sans-serif !important;
+  font-family: 'SF Pro Display', sans-serif !important;
   font-size: 32px;
   font-style: normal;
   font-weight: 600;
@@ -236,12 +236,39 @@
   opacity: 0.8;
 }
 
-.image__height {
+.image__xl {
+  height: $h700;
+}
+
+.image__lg {
+  height: $h600;
+}
+
+.image__md {
+  height: $h500;
+}
+
+.image__sm {
   height: $h400;
+}
+
+.spa__cer {
+  height: 200px;
+  background-color: transparent;
 }
 
 @media only screen and (max-width: 600px) {
   .heading {
     font-size: 2.5rem !important;
   }
+}
+
+//* Products (svg) *//
+.product__svg {
+  position: absolute;
+  top: 0;
+  padding-top: 10px;
+  z-index: 500;
+  margin: auto;
+  align-items: center;
 }

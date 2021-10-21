@@ -8,6 +8,7 @@ export default function Header() {
   return (
 <>
 <header>
+
   <div className="bar">
     <nav>
       {/*
@@ -50,6 +51,7 @@ export default function Header() {
       </div>
     </nav>
   </div>
+
 </header>
 </>
 

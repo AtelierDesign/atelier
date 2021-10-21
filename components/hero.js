@@ -5,15 +5,15 @@ import Image from 'next/image';
 
 
 
-    export default function Hero() {
+export default function Hero() {
 
-      return (
+  return (
   <>
   <div className="hero">
     <div className="hero__inner">
       <Image src="/svg/atelier_blk.svg" alt="Atelier®" width={200} height={50} />
       <div className="hero__body">
-        <p>Ecosystem of design components.</p>
+        <p>An ever– expanding ecosystem of design components.</p>
       </div>
     </div>
   </div>
