@@ -57,18 +57,3 @@ main {
   padding: 3rem;
 	z-index: 1;
 }
-
-.top__layout {
-  position: absolute;
-  background-color: #000;
-  top: 0;
-  left: 0;
-  right: 0;
-  width: 100vw;
-  height: 10%;
-  overflow: hidden;
-  display: grid;
-  grid-template-rows: 1fr auto;
-  padding: 2rem;
-	z-index: 3;
-}

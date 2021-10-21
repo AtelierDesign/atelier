@@ -3,8 +3,8 @@
 // https://github.com/rsms/inter
 
 $font-display: swap;
-$font-family: "Scania Sans CY";
-$font-path: "https://cdn.hldtru.space/fonts/";
+$font-family: "SF Pro Display";
+$font-path: "https://cdn.ady.systems/fontface/";
 
 @mixin fontface($weight, $style, $name) {
   @font-face {
@@ -12,7 +12,13 @@ $font-path: "https://cdn.hldtru.space/fonts/";
     font-family: $font-family;
     font-style: $style;
     font-weight: $weight;
-    src: url("#{$font-path}ScaniaSansCY-#{$name}.woff2") format("woff2"), url("#{$font-path}ScaniaSansCY-#{$name}.woff") format("woff");
+    src: url("#{$font-path}SFProDisplay-#{$name}.woff2") format("woff2"), url("#{$font-path}SFProDisplay-#{$name}.woff") format("woff");
+  }
+  @font-face {
+    font-family: 'RX 100';
+    font-style: normal;
+    font-weight: 400;
+    src: url("#{$font-path}RX100-#{$name}.woff2") format("woff2"), url("#{$font-path}RX100-#{$name}.woff") format("woff");
   }
 }
 
@@ -36,7 +42,7 @@ $font-path: "https://cdn.hldtru.space/fonts/";
 @include fontface(900, italic, BlackItalic);
 @include fontface(900, normal, Black);
 
-// variable fonts
+/* variable fonts
 @mixin variablefont($style, $weight, $instance, $name) {
   @font-face {
     font-display: $font-display;
@@ -47,8 +53,9 @@ $font-path: "https://cdn.hldtru.space/fonts/";
     src: url("#{$font-path}ScaniaSansCY-#{$name}.woff2") format("woff2");
   }
 }
+*/
 
-$font-main: -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-main: "SF Pro Display", sans-serif;
 
 :root {
   -moz-tab-size: 4;
