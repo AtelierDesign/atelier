@@ -252,6 +252,20 @@
   height: $h400;
 }
 
+@media only screen and (max-width: 600px) {
+  .image__xl {
+    height: $h600;
+  }
+
+  .image__lg {
+    height: $h500;
+  }
+
+  .image__md {
+    height: $h400;
+  }
+}
+
 .spa__cer {
   height: 200px;
   background-color: transparent;
