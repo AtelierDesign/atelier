@@ -14,12 +14,6 @@ $font-path: "https://cdn.ady.systems/fontface/";
     font-weight: $weight;
     src: url("#{$font-path}SFProDisplay-#{$name}.woff2") format("woff2"), url("#{$font-path}SFProDisplay-#{$name}.woff") format("woff");
   }
-  @font-face {
-    font-family: 'RX 100';
-    font-style: normal;
-    font-weight: 400;
-    src: url("#{$font-path}RX100-#{$name}.woff2") format("woff2"), url("#{$font-path}RX100-#{$name}.woff") format("woff");
-  }
 }
 
 // include fonts
@@ -41,19 +35,6 @@ $font-path: "https://cdn.ady.systems/fontface/";
 @include fontface(800, normal, ExtraBold);
 @include fontface(900, italic, BlackItalic);
 @include fontface(900, normal, Black);
-
-/* variable fonts
-@mixin variablefont($style, $weight, $instance, $name) {
-  @font-face {
-    font-display: $font-display;
-    font-family: "#{$font-family} var";
-    font-style: $style;
-    font-weight: $weight;
-    font-named-instance: $instance;
-    src: url("#{$font-path}ScaniaSansCY-#{$name}.woff2") format("woff2");
-  }
-}
-*/
 
 $font-main: "SF Pro Display", sans-serif;
 
