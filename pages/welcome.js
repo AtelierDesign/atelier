@@ -102,13 +102,10 @@ export default function Welcome() {
           </div>
           <div className="spa__cer" />
         </div>
-
-
       </div>
     </div>
   </div>
 </>
 
-
-  );
+ );
 }

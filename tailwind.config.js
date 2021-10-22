@@ -7,15 +7,6 @@ module.exports = {
   purge: ["./components/**/*.js", "./pages/**/*.js"],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    colors: {
-      gray: colors.coolGray,
-      blue: colors.sky,
-      red: colors.rose,
-      pink: colors.fuchsia,
-    },
-    fontFamily: {
-      sans: ['SF Pro Display', 'sans-serif']
-    },
     extend: {
       borderRadius: {
         'none': '0',
