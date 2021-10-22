@@ -17,6 +17,13 @@ $font-path: "https://cdn.ady.systems/fontface/";
 }
 
 // include fonts
+@font-face {
+  font-family: "RX 100";
+  font-style: normal;
+  font-weight: 400;
+  src: url("https://cdn.ady.systems/fontface/RX100-Regular.woff2") format("woff2"), url("https://cdn.ady.systems/fontface/RX100-Regular.woff") format("woff");
+}
+
 @include fontface(100, italic, ThinItalic);
 @include fontface(100, normal, Thin);
 @include fontface(200, italic, ExtraLightItalic);
