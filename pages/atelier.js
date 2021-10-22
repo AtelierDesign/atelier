@@ -28,13 +28,13 @@ export default function Atelier() {
 
       {/* SECOND IMAGE */}
       <div className="w-full mb-8 md:w-1/2 lg:w-1/2 px-2 mb-3">
-        <div className="relative image__sm rounded-lg bg-gray-100 text-sm text-grey-dark flex items-center justify-center">
+        <div className="relative image__sm rounded-lg bg-gray text-sm text-grey-dark flex items-center justify-center">
         <div className="product__svg">
         <Image src="/svg/time.svg" alt="one" width={140} height={70} />
         <p>An Adobe After Effects plugin, allowing you to add aesthetic styles + timecode displays to your projects.</p>
         </div>
           <Image
-            src="https://cdn.ady.systems/assets/grey.jpg"
+            src="https://cdn.ady.systems/assets/panel.jpg"
             alt="one"
             layout="fill"
             objectFit="cover"
@@ -49,7 +49,7 @@ export default function Atelier() {
 
       {/* THIRD IMAGE */}
       <div className="w-full mb-8 md:w-1/2 lg:w-1/2 px-2 mb-3">
-        <div className="relative image__sm rounded-lg bg-gray-100 text-sm text-grey-dark flex items-center justify-center">
+        <div className="relative image__sm rounded-lg bg-gray text-sm text-grey-dark flex items-center justify-center">
         <div className="product__svg">
         <Image src="/svg/sound.svg" alt="one" width={180} height={70} />
                 <p>A dynamic pack of essential sound design to quickly enhance all types of productions.</p>
