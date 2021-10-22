@@ -4,8 +4,8 @@ const plugin = require('tailwindcss/plugin');
 
 
 module.exports = {
-  purge: ["./components/**/*.js", "./pages/**/*.js"],
   darkMode: false, // or 'media' or 'class'
+  purge: ["./components/**/*.js", "./pages/**/*.js"],
   theme: {
     extend: {
       borderRadius: {
@@ -21,7 +21,7 @@ module.exports = {
         '2xl': '1536px',
       },
       fontFamily: {
-        sans: ['Scania Sans CY', 'Scania Sans CY Headline', 'sans-serif'],
+        sans: ['SF Pro Display', 'sans-serif'],
       },
     },
     container: {
