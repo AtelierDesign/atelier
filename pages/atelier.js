@@ -25,9 +25,14 @@ export default function Atelier() {
         <div className="relative image__lg rounded-lg bg-gray-100 text-sm text-white flex items-center justify-center">
           <div className="image__title">Atelier Design Yield.</div>
           <div className="image__sub">Lorem Ipsum</div>
-          <video className="video__product" playsInline autoPlay muted loop crossOrigin="true">
-            <source src="/mp4/flow_purple.mp4" type="video/mp4" />
-          </video>
+
+          <Image
+            src="https://cdn.ady.systems/assets/ady.jpg"
+            alt="one"
+            layout="fill"
+            objectFit="cover"
+            className="rounded-lg"
+          />
 
         </div>
       </div>
@@ -40,7 +45,7 @@ export default function Atelier() {
         <p>An Adobe After Effects plugin, allowing you to add aesthetic styles + timecode displays to your projects.</p>
         </div>
           <Image
-            src="https://cdn.ady.systems/assets/panel.jpg"
+            src="https://cdn.ady.systems/assets/grey.jpg"
             alt="one"
             layout="fill"
             objectFit="cover"
@@ -78,7 +83,7 @@ export default function Atelier() {
       <div className="w-full mb-8 md:w-1/2 lg:w-1/2 px-2 mb-3">
         <div className="relative image__sm rounded-lg bg-gray-100 text-sm text-grey-dark flex items-center justify-center">
           <Image
-            src="https://cdn.ady.systems/assets/grey.jpg"
+            src="https://cdn.ady.systems/assets/a.gif"
             alt="one"
             layout="fill"
             objectFit="cover"
