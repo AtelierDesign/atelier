@@ -13,13 +13,9 @@ export default function Navbar() {
   <div className="bar">
     <div className="h-full pt-3 lg:pt-5 md:pt-5">
       <div className="flex items-center justify-between md:container mx-auto my-0 pl-6 pr-6 md:px-0">
-<div className="lg:hidden md:hidden">
-
-<Image src="/svg/menu.svg" alt="menu" width={20} height={20} />
-
-</div>
-
-
+        <div className="lg:hidden md:hidden">
+          <Image src="/svg/menu.svg" alt="menu" width={20} height={20} />
+        </div>
         <Image src="/svg/brand.svg" alt="menu" width={78} height={20} />
         <div className="space-x-8 xl:space-x-12 sm:flex items-center justify-between hidden md:px-0">
           <span className="text-xl text-charcoal font-semibold cursor-pointer">
@@ -41,6 +37,7 @@ export default function Navbar() {
     </div>
   </div>
 </header>
+
 
 
 
