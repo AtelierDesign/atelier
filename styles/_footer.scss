@@ -20,6 +20,29 @@
   }
 }
 
+.footer__alt {
+  color: #000 !important;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-bottom: 18px;
+  z-index: 8888;
+
+  > * {
+    flex: 1;
+    margin: 0 3rem;
+  }
+
+  @media (max-width: $mobile) {
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+}
+
 .footer__left {
   text-align: left;
 }

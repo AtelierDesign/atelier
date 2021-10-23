@@ -3,6 +3,7 @@ const plugin = require('tailwindcss/plugin');
 
 
 
+
 module.exports = {
   darkMode: false, // or 'media' or 'class'
   purge: ["./components/**/*.js", "./pages/**/*.js"],
@@ -10,7 +11,9 @@ module.exports = {
     extend: {
       borderRadius: {
         'none': '0',
-        'large': '12px',
+        'sm': '10px',
+        'md': '12px',
+        'large': '18px',
         'lg': '18px',
       },
       screens: {
@@ -29,6 +32,9 @@ module.exports = {
       padding: '0rem'
     },
     colors: {
+      'lime-light': '#b5e48c',
+      'lime': '#9ef01a',
+      'lime-dark': '#70e000',
       transparent: 'transparent',
       current: 'currentColor',
       black: colors.black,

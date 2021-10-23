@@ -1,6 +1,8 @@
 import Image from 'next/image';
 import Navbar from '../components/navbar';
 import Hero from '../components/hero';
+import Subscribe from '../components/subscribe';
+import Footeralt from '../components/footeralt';
 
 
 
@@ -100,11 +102,18 @@ export default function Atelier() {
         <div className="scania_bodysmall">
           Brand Identity, Website Design, System, Video
         </div>
-        <div className="spa__cer" />
+
       </div>
     </div>
   </div>
 </div>
+
+  {/*Email Subscribe*/}
+  <Subscribe />
+  <div className="spa__cer"></div>
+  <Footeralt />
+
 </>
+
   );
 }
