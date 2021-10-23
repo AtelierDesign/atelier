@@ -1,6 +1,7 @@
 @import url('https://cdn.ady.systems/css/atelier.type.css');
 
 @import "variables";
+@import "components";
 @import "fonts";
 @import "main";
 @import "footer";
@@ -9,6 +10,60 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Text Styles */
+
+h1 {
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  padding: 8px;
+  color: #333333;
+}
+
+h2 {
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 42px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  padding: 8px;
+  color: #333333;
+}
+
+h3 {
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 52px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  padding: 8px;
+  color: #333333;
+}
+
+@media only screen and (max-width: 600px) {
+  h3 {
+    font-size: 42px;
+  }
+}
+
+p {
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  padding: 8px;
+  color: #999999;
+}
+
+/* MAIN STYLES */
 
 .canvas {
   position: fixed;
@@ -122,65 +177,16 @@
   padding-bottom: 2px;
 }
 
-.hero {
-  position: relative;
-  width: 100vw;
-  height: 70vh;
-  overflow: auto;
-  display: grid;
-  grid-template-rows: 1fr auto;
-  padding: 3rem;
-  margin: 0;
-}
-
-.hero__inner {
-  font-family: "SF Pro Display", sans-serif;
-  font-size: 4.8rem;
-  font-weight: bold;
-  letter-spacing: 0;
+.section__home {
   text-align: center;
-  color: #000;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 60%;
-}
-
-.hero__body {
-  font-family: "SF Pro Display", sans-serif;
-  font-size: 1.8rem;
-  font-weight: normal;
-  letter-spacing: 0;
-  text-align: center;
-  color: #000;
-}
-
-@media only screen and (max-width: 600px) {
-.hero__inner {
-  font-family: "SF Pro Display", sans-serif;
-  font-size: 4rem;
-  font-weight: bold;
-  letter-spacing: 0;
-  text-align: left;
-  margin: 0;
-  padding: 20px;
+  align-items: center;
   width: 100%;
- }
- .hero__body {
-   font-family: $font-main;
-   font-size: 1.5rem;
-   font-weight: normal;
-   letter-spacing: 0;
-   text-align: left;
-   color: #000;
- }
 }
 
-.subscribe {
+.block {
   position: relative;
   width: 100vw;
-  height: 70vh;
+  height: auto;
   overflow: auto;
   display: grid;
   grid-template-rows: 1fr auto;
@@ -188,31 +194,32 @@
   margin: 0;
 }
 
-.subscribe__label {
-  font-family: "SF Pro Display", sans-serif;
-  font-size: 32px;
-  font-weight: 600;
-  font-style: normal;
-  text-align: center;
-  color: #000;
-  padding-left: 4px;
-  padding-bottom: 12px;
+@media only screen and (max-width: 600px) {
+  .block {
+    padding: 0rem;
+    margin: 0;
+  }
 }
 
-.subscribe__inner {
-  text-align: left;
-  color: #000;
+.section__title__left {
   position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 40%;
+  top: 0;
+  left: 0;
+  width: 90%;
+  text-align: left;
+  padding-left: 0px;
+  padding-bottom: 12px;
+  padding-top: 20px;
+  padding-right: 0px;
 }
 
 @media only screen and (max-width: 600px) {
-.subscribe__inner {
-  width: 80%;
- }
+  .section__title__left {
+    padding-left: 5px;
+    padding-bottom: 12px;
+    padding-top: 20px;
+    padding-right: 0px;
+  }
 }
 
 .center__div {

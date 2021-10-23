@@ -7,7 +7,9 @@ export default function Subscribe() {
   <>
 <div className="subscribe">
   <div className="subscribe__inner">
-    <div className="subscribe__label">Subscribe</div>
+    <div className="subscribe__label">
+    <h1>Subscribe</h1>
+    </div>
     {/*Email Subscribe*/}
     <div className="relative mx-auto">
       <input
