@@ -32,7 +32,7 @@ export default function Model(props) {
           material={materials.Jewelry}
           rotation={[Math.PI / 2, 0, 0]}
         >
-      <meshStandardMaterial metalness={1} roughness={0} color="green" />
+      <meshStandardMaterial metalness={1} roughness={0} color="yellow" />
       </mesh>
       </group>
     </group>
