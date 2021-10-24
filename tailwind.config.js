@@ -36,6 +36,7 @@ module.exports = {
       'lime': '#9ef01a',
       'lime-dark': '#70e000',
       'charcoal': '#231f20',
+      'soft-white': 'rgba(240,240,240,0.8)',
       transparent: 'transparent',
       current: 'currentColor',
       black: colors.black,

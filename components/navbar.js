@@ -3,6 +3,33 @@ import Image from 'next/image';
 
 
 
+import { Popover, Transition } from '@headlessui/react'
+import { ChevronDownIcon } from '@heroicons/react/solid'
+import { Fragment } from 'react'
+import Image from 'next/image';
+
+const solutions = [
+  {
+    name: 'Shop',
+    description: 'Measure actions your users take',
+    href: '##',
+    icon: IconOne,
+  },
+  {
+    name: 'Docs',
+    description: 'Create your own targeted content',
+    href: '##',
+    icon: IconTwo,
+  },
+  {
+    name: 'About',
+    description: 'Keep track of your growth',
+    href: '##',
+    icon: IconThree,
+  },
+]
+
+
 
 
 export default function Navbar() {
