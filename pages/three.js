@@ -41,7 +41,7 @@ export default function Three() {
   </div>
 
   {/* three.js Canvas (Desktop Only)*/}
-  <div className="invisible lg:visible">
+
     <Canvas shadows dpr={[1, 2]} camera={{ fov: 120 }}>
       <Suspense fallback={null}>
         <Environment background={false} files={"/hdr/park.hdr"} />
@@ -57,15 +57,10 @@ export default function Three() {
       </Suspense>
       <OrbitControls ref={ref} autoRotate />
     </Canvas>
-  </div>
+
   {/* three.js canvas End */}
 
-  {/* Mobile Display */}
-  <div className="visible lg:invisible">
-    <div className="center__div">
-      <Image src="/svg/adyady.svg" width={90} height={120} alt="back" />
-    </div>
-  </div>
+
 </div>
   );
 }
