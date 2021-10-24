@@ -11,6 +11,15 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  --tw-ring-inset: var(--tw-empty,/*!*/ /*!*/);
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: transparent;
+  --tw-ring-color: transparent;
+  --tw-ring-offset-shadow: 0;
+  --tw-ring-shadow: 0
+}
+
 /* Text Styles */
 
 h1 {

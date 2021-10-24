@@ -16,9 +16,12 @@
 .popover__button {
   position: relative;
   padding-left: 6px;
+  --tw-ring-offset-width: 0px !important;
+  --tw-ring-color: transparent !important;
 }
 
 .popover__link {
+  font-size: 16px;
   color: #231f20;
   text-align: left;
   line-height: 2;
@@ -32,25 +35,54 @@
   border-right-width: 0px;
 }
 
+.popover__logo {
+  align-items: center;
+  text-align: center;
+  line-height: 1;
+  padding: 0rem;
+}
+
+.popover__copyright {
+  font-size: 12px !important;
+  text-align: center;
+  line-height: 2;
+  padding: 0rem;
+  letter-spacing: normal;
+}
+
+.popover__footer {
+  text-align: center;
+  padding-top: 10rem;
+  padding-bottom: 0px;
+}
+
+.popover__copyright:hover {
+  opacity: .8;
+}
+
+.popover__logo:hover {
+  opacity: .8;
+}
+
 .popover__panel {
   display: block;
   box-sizing: border-box;
   position: absolute;
-  top: 30px;
+  top: 35px;
   width: 100vw;
   height: auto;
   padding-top: 2rem;
   padding-left: 2rem;
   padding-right: 2rem;
-  padding-bottom: 4rem;
-  margin: auto;
+  padding-bottom: 3rem;
+  margin: 0;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 18px;
   border-bottom-right-radius: 18px;
   background-color: rgba(240,240,240,0.8);
   backdrop-filter: blur(2rem);
-  z-index: 1500;
+  z-index: 1300;
 }
 
 .nav-link:hover {

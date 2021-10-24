@@ -7,6 +7,11 @@ const plugin = require('tailwindcss/plugin');
 module.exports = {
   darkMode: false, // or 'media' or 'class'
   purge: ["./components/**/*.js", "./pages/**/*.js"],
+  corePlugins: {
+    ringWidth: false,
+    outline: false,
+    accessibility: false,
+  },
   theme: {
     extend: {
       borderRadius: {
@@ -51,7 +56,7 @@ module.exports = {
     mixBlendMode: ['responsive'],
     backgroundBlendMode: ['responsive'],
     isolation: ['responsive'],
-    extend: {},
+    extend: {}
   },
   plugins: [
     require('tailwindcss-blend-mode')(),
