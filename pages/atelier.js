@@ -91,13 +91,13 @@ export default function Atelier() {
     Shop
     </button>
 </Cta>
+
+
+
 {/*SECTION 001*/}
-
-
 <Section>
   <div className="section__home">
   <h2>This is a Section.</h2>
-
   <Image
     src="https://cdn.ady.systems/assets/test.png"
     alt="one"
@@ -105,43 +105,26 @@ export default function Atelier() {
     objectFit="cover"
     className=""
   />
+  </div>
+</Section>
 
+{/*SECTION 002*/}
+<Section>
+  <div className="section__home">
+  <h2>This is a Section.</h2>
+  <Image
+    src="https://cdn.ady.systems/assets/rope.png"
+    alt="one"
+    layout="fill"
+    objectFit="cover"
+    className=""
+  />
   </div>
 </Section>
 
 
 
-  <div>
-    <div className="block">
-      <div className="container mx-auto">
-        <div className="flex flex-wrap h-auto -mx-0 mb-0 mt-6 z-20 bg-transparent">
-
-        {/* Left Title  */}
-        <div className="w-full mb-8 md:w-1/2 lg:w-1/2 px-2 mb-3">
-          <div className="relative image__sm rounded-lg bg-gray text-sm text-grey-dark flex items-center justify-center">
-            <div className="section__title__left">
-            <h2>Free Sample.</h2>
-            <p>Lorem ipsum dolor sit amet, ei salutatus voluptatibus sed, ne duo nibh pertinax. Ea molestie complectitur necessitatibus his. At eos omnium animal accusamus. Ad eam vidit habemus electram, qui no omnes laoreet disputando.</p>
-            </div>
-          </div>
-        </div>
-
-        {/* Right IMAGE */}
-        <div className="w-full mb-8 md:w-1/2 lg:w-1/2 px-2 mb-3">
-          <div className="relative image__sm rounded-lg bg-gray text-sm text-grey-dark flex items-center justify-center">
-            <Image
-              src="https://cdn.ady.systems/assets/grey.jpg"
-              alt="one"
-              layout="fill"
-              objectFit="cover"
-              className="rounded-lg"
-            />
-          </div>
-        </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  
 
 
   {/*Email Subscribe*/}
