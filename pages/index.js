@@ -2,7 +2,7 @@ import Head from 'next/head';
 import React, { Suspense, useRef } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls, Stage, Environment } from '@react-three/drei';
-import Model from '../components/model';
+import Material from '../components/material';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -30,12 +30,10 @@ export default function Index() {
       {" "}
       github
     </a>
-    <br></br>
     <div className="overlay__big">
-    <Link href="https://github.com/AtelierDesign" target="_blank" rel="noreffer">
+    <Link href="https://github.com/AtelierDesign/atelier" target="_blank" rel="noreffer">
       <a>
-        {" "}
-        ENTER
+        WEBSITE OPENING SOON
       </a>
     </Link>
   </div>
@@ -45,15 +43,14 @@ export default function Index() {
   <div className="invisible lg:visible">
     <Canvas shadows dpr={[1, 2]} camera={{ fov: 120 }}>
       <Suspense fallback={null}>
-        <Environment background={true} files={"/hdr/park.hdr"} />
         <Stage
           controls={ref}
           preset="soft"
-          intensity={2}
+          intensity={3}
           contactShadow={false}
           environment="park"
         >
-          <Model />
+          <Material />
         </Stage>
       </Suspense>
       <OrbitControls ref={ref} autoRotate />
