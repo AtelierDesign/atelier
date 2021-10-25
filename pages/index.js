@@ -31,13 +31,14 @@ export default function Index() {
       github
     </a>
     <br></br>
-    <br></br>
-    <Link href="/atelier">
-      <a className="overlay__big" href="https://threejs.org">
+    <div className="overlay__big">
+    <Link href="https://github.com/AtelierDesign" target="_blank" rel="noreffer">
+      <a className="overlay__big">
         {" "}
-        Atelier Design Yield®
+        ENTER
       </a>
     </Link>
+  </div>
   </div>
 
   {/* three.js Canvas (Desktop Only)*/}
@@ -62,9 +63,14 @@ export default function Index() {
 
   {/* Mobile Display */}
   <div className="visible lg:invisible">
-    <div className="center__div">
-      <Image src="/svg/adyady.svg" width={90} height={120} alt="back" />
-    </div>
+
+      <Image
+        src="https://cdn.ady.systems/assets/ady_02.gif"
+        alt="cover"
+        layout="fill"
+        objectFit="cover"
+      />
+
   </div>
 </div>
   );
