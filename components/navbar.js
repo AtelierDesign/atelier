@@ -35,12 +35,19 @@ export default function Navbar() {
 
           <Popover.Panel className="popover__panel">
             <div className="grid grid-cols-1">
-              <a className="popover__link" href="/analytics">
-                Webstore
-              </a>
-              <a className="popover__link" href="/engagement">
-                Documentation
-              </a>
+              <Link href="/atelier">
+                <a className="popover__link">Webstore</a>
+              </Link>
+              <Link href="/new">
+                <a className="popover__link">New Releases</a>
+              </Link>
+              <Link href="https://docs.ady.world">
+                <a className="popover__link">Documentation</a>
+              </Link>
+              <Link href="https://github.com/AtelierDesign">
+                <a className="popover__link">Github</a>
+              </Link>
+
               <a className="popover__link" href="/security">
                 Information
               </a>
