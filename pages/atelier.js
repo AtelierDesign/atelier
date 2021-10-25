@@ -21,126 +21,118 @@ export default function Atelier() {
   <Navbar />
   <Hero>
     <h3>Welcome.</h3>
-
-    <p>An ever– expanding ecosystem of essential design components,
-      for artists to empower the new culture of design.</p>
+    <p>
+      An ever– expanding ecosystem of essential design components, for artists
+      to empower the new culture of design.
+    </p>
   </Hero>
-<div className="sand__box">
-  <div className="container mx-auto">
-    <div className="flex flex-wrap h-auto -mx-0 mb-0 mt-6 z-20 bg-transparent z-8">
+  <div className="sand__box">
+    <div className="container mx-auto">
+      <div className="flex flex-wrap h-auto -mx-0 mb-0 mt-6 z-20 bg-transparent z-8">
 
-      {/* Image Row #1 */} {/* FIRST IMAGE */}
-      <div className="w-full mb-4 md:w-full lg:w-full px-2">
-        <div className="relative image__lg rounded-lg bg-gray-100 text-sm text-white flex items-center justify-center">
-          <div className="image__title">Atelier Design Yield.</div>
-          <div className="image__sub">Lorem Ipsum</div>
-          <Image
-            src="https://cdn.ady.systems/assets/grid_hamilton.jpg"
-            alt="one"
-            layout="fill"
-            objectFit="cover"
-            className="rounded-lg"
-          />
-        </div>
-      </div>
-
-      {/* SECOND IMAGE */}
-      <div className="w-full mb-8 md:w-1/2 lg:w-1/2 px-2 mb-3">
-        <div className="relative image__sm rounded-lg bg-gray text-sm text-grey-dark flex items-center justify-center">
-        <div className="product__svg">
-        <Image src="/svg/time.svg" alt="one" width={140} height={70} />
-        <p>An Adobe After Effects plugin, allowing you to add aesthetic styles + timecode displays to your projects.</p>
-        </div>
-          <Image
-            src="https://cdn.ady.systems/assets/grey.jpg"
-            alt="one"
-            layout="fill"
-            objectFit="cover"
-            className="rounded-lg"
-          />
-        </div>
-        <div className="scania_body">Ady® Interval</div>
-        <div className="scania_bodysmall">
-          From $32 USD
-        </div>
-      </div>
-
-      {/* THIRD IMAGE */}
-      <div className="w-full mb-8 md:w-1/2 lg:w-1/2 px-2 mb-3">
-        <div className="relative image__sm rounded-lg bg-gray text-sm text-grey-dark flex items-center justify-center">
-        <div className="product__svg">
-          <Image src="/svg/sound.svg" alt="one" width={180} height={70} />
-            <p>A dynamic pack of essential sound design to quickly enhance all types of productions.</p>
+        {/*FIRST IMAGE*/}
+        <div className="w-full mb-4 md:w-full lg:w-full px-2">
+          <div className="relative image__lg rounded-lg bg-gray-100 text-sm text-white flex items-center justify-center">
+            <div className="image__title">Atelier Design Yield.</div>
+            <div className="image__sub">Lorem Ipsum</div>
+            <Image
+              src="https://cdn.ady.systems/assets/grid_hamilton.jpg"
+              alt="One"
+              layout="fill"
+              objectFit="cover"
+              className="rounded-lg"
+            />
           </div>
-          <Image
-            src="https://cdn.ady.systems/assets/grey.jpg"
-            alt="one"
-            layout="fill"
-            objectFit="cover"
-            className="rounded-lg"
-          />
         </div>
-        <div className="scania_body">Ady® Sound</div>
-        <div className="scania_bodysmall">
-          From $32 USD
+
+        {/*SECOND IMAGE*/}
+        <div className="w-full mb-8 md:w-1/2 lg:w-1/2 px-2 mb-3">
+          <div className="relative image__md rounded-lg bg-gray text-sm text-grey-dark flex items-center justify-center">
+            <div className="product__svg">
+              <Image src="/svg/time.svg" alt="one" width={140} height={70} />
+              <p>
+                An Adobe After Effects plugin, allowing you to add aesthetic
+                styles + timecode displays to your projects.
+              </p>
+            </div>
+            <Image
+              src="https://cdn.ady.systems/assets/grey.jpg"
+              alt="Two"
+              layout="fill"
+              objectFit="cover"
+              className="rounded-lg"
+            />
+          </div>
+          <div className="caption__title">Ady® Interval</div>
+          <div className="caption__description">From $32 USD</div>
+        </div>
+
+        {/*THIRD IMAGE*/}
+        <div className="w-full mb-8 md:w-1/2 lg:w-1/2 px-2 mb-3">
+          <div className="relative image__md rounded-lg bg-gray text-sm text-grey-dark flex items-center justify-center">
+            <div className="product__svg">
+              <Image src="/svg/sound.svg" alt="one" width={180} height={70} />
+              <p>
+                A dynamic pack of essential sound design to quickly enhance all
+                types of productions.
+              </p>
+            </div>
+            <Image
+              src="https://cdn.ady.systems/assets/grey.jpg"
+              alt="Three"
+              layout="fill"
+              objectFit="cover"
+              className="rounded-lg"
+            />
+          </div>
+          <div className="caption__title">Ady® Sound</div>
+          <div className="caption__description">From $32 USD</div>
         </div>
       </div>
     </div>
   </div>
-</div>
 
-
-{/*CTA 001*/}
-<Cta>
-  <p>Shop All Products</p>
-  <button className="bg-drey-light border-1 border-lime hover:bg-gray-600 text-white font-bold w-1/2 mt-5 py-2 px-4 rounded-sm">
-    Shop all products
+  {/*Call-to-Action*/}
+  <Cta>
+    <p>Shop All Products</p>
+    <button className="bg-drey-light border-1 border-lime hover:bg-gray-600 text-white font-bold w-1/2 mt-5 py-2 px-4 rounded-sm">
+      Shop all products
     </button>
-</Cta>
+  </Cta>
 
+  {/*SECTION 001*/}
+  <Section>
+    <div className="section__home">
+      <h2>This is a Section.</h2>
+      <Image
+        src="https://cdn.ady.systems/assets/who_is_going_to.jpg"
+        alt="one"
+        layout="fill"
+        objectFit="cover"
+        className=""
+      />
+    </div>
+  </Section>
 
-
-{/*SECTION 001*/}
-<Section>
-  <div className="section__home">
-  <h2>This is a Section.</h2>
-  <Image
-    src="https://cdn.ady.systems/assets/who_is_going_to.jpg"
-    alt="one"
-    layout="fill"
-    objectFit="cover"
-    className=""
-  />
-  </div>
-</Section>
-
-{/*SECTION 002*/}
-<Section>
-  <div className="section__home">
-  <h2>This is a Section.</h2>
-  <Image
-    src="https://cdn.ady.systems/assets/title_promo.jpg"
-    alt="one"
-    layout="fill"
-    objectFit="cover"
-    className=""
-  />
-  </div>
-</Section>
-
-
-
-
-
+  {/*SECTION 002*/}
+  <Section>
+    <div className="section__home">
+      <h1>This is Another Section.</h1>
+      <Image
+        src="https://cdn.ady.systems/assets/title_promo.jpg"
+        alt="one"
+        layout="fill"
+        objectFit="cover"
+      />
+    </div>
+  </Section>
 
   {/*Email Subscribe*/}
   <Subscribe />
-
   <div className="spa__cer"></div>
-
   <Footeralt />
-
 </>
+
 
   );
 }

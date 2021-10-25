@@ -5,10 +5,11 @@ import Image from 'next/image';
 
 export default function Cover({ children, ...props }) {
   return (
-    <>
-      <div className="cover">
-        <div>{children}</div>
-      </div>
-    </>
+<>
+  <div className="cover">
+    <div>{children}</div>
+  </div>
+</>
+
   );
 }

@@ -15,7 +15,7 @@ export default function Three() {
 
 <div className="canvas">
   <Head>
-    <title>Atelier®</title>
+    <title>Ady® Project.</title>
   </Head>
 
   <div className="overlay">
@@ -41,26 +41,23 @@ export default function Three() {
   </div>
 
   {/* three.js Canvas (Desktop Only)*/}
-
-    <Canvas shadows dpr={[1, 2]} camera={{ fov: 120 }}>
-      <Suspense fallback={null}>
-        <Environment background={false} files={"/hdr/park.hdr"} />
-        <Stage
-          controls={ref}
-          preset="soft"
-          intensity={3}
-          contactShadow={false}
-          environment="park"
-        >
-          <Material />
-        </Stage>
-      </Suspense>
-      <OrbitControls ref={ref} autoRotate />
-    </Canvas>
-
+  <Canvas shadows dpr={[1, 2]} camera={{ fov: 120 }}>
+    <Suspense fallback={null}>
+      <Environment background={false} files={"/hdr/park.hdr"} />
+      <Stage
+        controls={ref}
+        preset="soft"
+        intensity={3}
+        contactShadow={false}
+        environment="park"
+      >
+        <Material />
+      </Stage>
+    </Suspense>
+    <OrbitControls ref={ref} autoRotate />
+  </Canvas>
   {/* three.js canvas End */}
-
-
 </div>
+
   );
 }

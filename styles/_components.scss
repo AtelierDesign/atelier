@@ -127,3 +127,16 @@
   padding: 0;
   z-index: 1;
 }
+
+.clock {
+  font-family: "Menlo", monospace;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: normal;
+  color: rgba(35, 31, 32, 0.4);
+  align-items: center;
+  text-align: center;
+  z-index: 100;
+  margin: auto;
+  padding: 1rem;
+}

@@ -1,5 +1,7 @@
 @import url('https://cdn.ady.systems/css/atelier.type.css');
 
+/* Custom Components & Variables */
+
 @import "variables";
 @import "components";
 @import "fonts";
@@ -7,6 +9,9 @@
 @import "footer";
 @import "header";
 @import "video";
+
+/* Tailwind.css */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -103,7 +108,7 @@ p {
 .overlay {
   z-index: 9999;
   font-family: "Menlo", monospace;
-  font-size: 12px;
+  font-size: 10px;
   font-style: normal;
   font-weight: 400;
   position: absolute;
@@ -256,28 +261,7 @@ p {
   cursor: pointer;
 }
 
-.clock {
-  z-index: 100;
-}
-
-.scania_heading {
-  font-family: 'SF Pro Display', sans-serif;
-  font-size: 2rem;
-  font-style: normal;
-  font-weight: normal;
-  color: #000;
-}
-
-.scania__heading {
-  font-family: 'SF Pro Display', sans-serif;
-  font-size: 1.5rem;
-  font-style: normal;
-  font-weight: bold;
-  color: #000;
-  padding-top: 2px;
-}
-
-.scania_body {
+.caption__title {
   font-family: 'SF Pro Display', sans-serif;
   font-size: 14px;
   font-style: normal;
@@ -291,7 +275,7 @@ p {
   padding-bottom: 2px;
 }
 
-.scania_bodysmall {
+.caption__description {
   font-family: 'SF Pro Display', sans-serif;
   font-size: 12px;
   font-style: normal;
@@ -308,24 +292,6 @@ p {
 .center__links {
   text-align: center;
   color: #000;
-}
-
-.heading {
-	font-family: 'SF Pro Display', sans-serif !important;
-	font-weight: bold;
-	font-style: normal;
-  font-size: 3rem !important;
-}
-
-.heading_sf {
-	font-family: 'SF Pro Display', sans-serif !important;
-	font-weight: 600;
-	font-style: normal;
-  font-size: 3.5rem !important;
-}
-
-.heading_sf:hover {
-  opacity: 0.8;
 }
 
 .image__xl {
