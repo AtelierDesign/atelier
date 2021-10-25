@@ -60,7 +60,11 @@ export default function Navbar() {
 
               <div className="popover__footer">
                 <div className="popover__logo">
+                  <Link href="/">
+                    <a>
                   <Image src="/svg/brand.svg" alt="menu" width={50} height={20} />
+                  </a>
+                </Link>
                 </div>
                 <p className="popover__copyright">©2021. All Rights Reserved.</p>
               </div>
