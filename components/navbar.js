@@ -1,8 +1,8 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { Popover } from '@headlessui/react'
-import { Transition } from '@headlessui/react'
-import { useState } from 'react'
+import { Popover } from '@headlessui/react';
+import { Transition } from '@headlessui/react';
+import { useState } from 'react';
 
 
 
@@ -13,7 +13,7 @@ export default function Navbar() {
 
 
 <header>
-  <div className="h-full pt-3 lg:pt-5 md:pt-5">
+  <div className="h-full pt-4 lg:pt-4 md:pt-5">
     <div className="flex items-center justify-between md:container mx-auto my-0 px-0 py-0 md:px-0">
       <div className="lg:hidden md:hidden">
         <Popover className="popover">
@@ -74,7 +74,7 @@ export default function Navbar() {
       </div>
 
       <Link href="/">
-        <a><Image src="/svg/brand.svg" alt="menu" width={78} height={18} /></a>
+        <a><Image src="/svg/brand.svg" alt="menu" width={78} height={19} /></a>
       </Link>
       <div className="space-x-8 xl:space-x-12 sm:flex items-center justify-between hidden md:px-0">
         <span className="text-xl text-charcoal font-semibold cursor-pointer">
