@@ -3,17 +3,17 @@ import Image from 'next/image';
 
 
 
-export default function Section({ children, ...props }) {
+export default function Help({ children, ...props }) {
 
   return (
-<section>
-  <div className="section">
-    <div className="section__content">
+<>
+  <div className="help__section">
+    <div className="help__content">
       {/* Section Elements Here */}
       {children}
     </div>
   </div>
-</section>
+</>
 
   );
 }

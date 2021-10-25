@@ -102,29 +102,7 @@ export default function Atelier() {
 
   {/*SECTION 001*/}
   <Section>
-    <div className="section__home">
-      <h2>This is a Section.</h2>
-      <Image
-        src="https://cdn.ady.systems/assets/who_is_going_to.jpg"
-        alt="one"
-        layout="fill"
-        objectFit="cover"
-        className=""
-      />
-    </div>
-  </Section>
-
-  {/*SECTION 002*/}
-  <Section>
-    <div className="section__home">
-      <h1>This is Another Section.</h1>
-      <Image
-        src="https://cdn.ady.systems/assets/title_promo.jpg"
-        alt="one"
-        layout="fill"
-        objectFit="cover"
-      />
-    </div>
+      <h1>This is a Section.</h1>
   </Section>
 
   {/*Email Subscribe*/}

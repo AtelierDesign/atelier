@@ -4,6 +4,7 @@
 
 @import "variables";
 @import "components";
+@import "elements";
 @import "fonts";
 @import "main";
 @import "footer";
@@ -36,6 +37,7 @@ h1 {
   letter-spacing: normal;
   padding: 8px;
   color: #333333;
+  z-index: 9999;
 }
 
 h2 {
@@ -47,6 +49,7 @@ h2 {
   letter-spacing: normal;
   padding: 8px;
   color: #333333;
+  z-index: 9999;
 }
 
 h3 {
@@ -58,6 +61,7 @@ h3 {
   letter-spacing: normal;
   padding: 8px;
   color: #333333;
+  z-index: 9999;
 }
 
 @media only screen and (max-width: 600px) {
@@ -75,6 +79,12 @@ p {
   letter-spacing: normal;
   padding: 8px;
   color: #999999;
+  z-index: 9999;
+}
+
+p:link,
+p:a {
+  color: #231f20;
 }
 
 /* MAIN STYLES */
@@ -190,12 +200,6 @@ p {
   padding-top: 60px;
   padding-right: 4px;
   padding-bottom: 2px;
-}
-
-.section__home {
-  text-align: center;
-  align-items: center;
-  width: 100%;
 }
 
 .block {

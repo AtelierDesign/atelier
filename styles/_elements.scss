@@ -1,0 +1,50 @@
+/* Tab Groups */
+
+.tab__group {
+  align-items: center;
+  padding: 4rem;
+  margin: auto;
+  width: 80%;
+}
+
+@media only screen and (max-width: 600px) {
+.tab__group {
+  align-items: center;
+  padding: 2rem;
+  margin: auto;
+  width: 100%;
+}
+}
+
+.tab__navbar {
+  align-items: center;
+  margin: auto;
+  width: 100%;
+}
+
+.tab__button {
+  max-width: auto;
+  margin-left: 4px;
+  margin-right: 4px;
+  padding: 4px;
+}
+
+.tab__content {
+  align-items: center;
+  padding: 4rem;
+  margin: auto;
+}
+
+.tab__panels {
+  align-items: center;
+  margin-top: 10px;
+  height: auto;
+  text-align: left;
+  width: 100%;
+  background-color: rgba(240,240,240,0.8);
+  backdrop-filter: blur(2rem);
+  border-style: solid;
+  border-width: 1px;
+  border-color: #231f20;
+  border-radius: 18px;
+}
