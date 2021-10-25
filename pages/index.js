@@ -19,7 +19,7 @@ export default function Index() {
   </Head>
 
   <div className="overlay">
-    (a®)
+    (ady®)
     <a className="overlay__link" href="https://threejs.org">
       {" "}
       three.js
@@ -33,7 +33,7 @@ export default function Index() {
     <br></br>
     <div className="overlay__big">
     <Link href="https://github.com/AtelierDesign" target="_blank" rel="noreffer">
-      <a className="overlay__big">
+      <a>
         {" "}
         ENTER
       </a>
@@ -63,14 +63,12 @@ export default function Index() {
 
   {/* Mobile Display */}
   <div className="visible lg:invisible">
-
       <Image
         src="https://cdn.ady.systems/assets/ady_02.gif"
         alt="cover"
         layout="fill"
         objectFit="cover"
       />
-
   </div>
 </div>
   );
