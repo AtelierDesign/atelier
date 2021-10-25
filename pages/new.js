@@ -14,36 +14,20 @@ export default function Atelier() {
 
   return (
 <>
-  <Head>
-    <title>Atelier Design®</title>
-  </Head>
-  <Navbar />
-  <Hero>
-    <h3>Welcome.</h3>
-
-    <p>An ever– expanding ecosystem of essential design components,
-      for artists to empower the new culture of design.</p>
-  </Hero>
+<Head>
+<title>Atelier Design®</title>
+</Head>
+<Navbar />
+<Hero>
+<h3>New.</h3>
+ </Hero>
 <div className="sand__box">
   <div className="container mx-auto">
     <div className="flex flex-wrap h-auto -mx-0 mb-0 mt-6 z-20 bg-transparent z-8">
 
-      {/* Image Row #1 */} {/* FIRST IMAGE */}
-      <div className="w-full mb-4 md:w-full lg:w-full px-2">
-        <div className="relative image__lg rounded-lg bg-gray-100 text-sm text-white flex items-center justify-center">
-          <div className="image__title">Atelier Design Yield.</div>
-          <div className="image__sub">Lorem Ipsum</div>
-          <Image
-            src="https://cdn.ady.systems/assets/grid_hamilton.jpg"
-            alt="one"
-            layout="fill"
-            objectFit="cover"
-            className="rounded-lg"
-          />
-        </div>
-      </div>
 
-      {/* SECOND IMAGE */}
+
+      {/* FIRST */}
       <div className="w-full mb-8 md:w-1/2 lg:w-1/2 px-2 mb-3">
         <div className="relative image__sm rounded-lg bg-gray text-sm text-grey-dark flex items-center justify-center">
         <div className="product__svg">
@@ -51,7 +35,7 @@ export default function Atelier() {
         <p>An Adobe After Effects plugin, allowing you to add aesthetic styles + timecode displays to your projects.</p>
         </div>
           <Image
-            src="https://cdn.ady.systems/assets/grey.jpg"
+            src="https://cdn.ady.systems/assets/grid_hamilton.jpg"
             alt="one"
             layout="fill"
             objectFit="cover"
@@ -64,7 +48,7 @@ export default function Atelier() {
         </div>
       </div>
 
-      {/* THIRD IMAGE */}
+      {/* SECOND */}
       <div className="w-full mb-8 md:w-1/2 lg:w-1/2 px-2 mb-3">
         <div className="relative image__sm rounded-lg bg-gray text-sm text-grey-dark flex items-center justify-center">
         <div className="product__svg">
@@ -72,7 +56,7 @@ export default function Atelier() {
             <p>A dynamic pack of essential sound design to quickly enhance all types of productions.</p>
           </div>
           <Image
-            src="https://cdn.ady.systems/assets/grey.jpg"
+            src="https://cdn.ady.systems/assets/circuit_desktop.jpg"
             alt="one"
             layout="fill"
             objectFit="cover"
@@ -84,6 +68,49 @@ export default function Atelier() {
           From $32 USD
         </div>
       </div>
+
+      {/* THIRD */}
+      <div className="w-full mb-8 md:w-1/2 lg:w-1/2 px-2 mb-3">
+        <div className="relative image__sm rounded-lg bg-gray text-sm text-grey-dark flex items-center justify-center">
+        <div className="product__svg">
+          <Image src="/svg/sound.svg" alt="one" width={180} height={70} />
+            <p>A dynamic pack of essential sound design to quickly enhance all types of productions.</p>
+          </div>
+          <Image
+            src="https://cdn.ady.systems/assets/title_promo02.jpg"
+            alt="one"
+            layout="fill"
+            objectFit="cover"
+            className="rounded-lg"
+          />
+        </div>
+        <div className="scania_body">Ady® Sound</div>
+        <div className="scania_bodysmall">
+          From $32 USD
+        </div>
+      </div>
+
+      {/* FOURTH */}
+      <div className="w-full mb-8 md:w-1/2 lg:w-1/2 px-2 mb-3">
+        <div className="relative image__sm rounded-lg bg-gray text-sm text-grey-dark flex items-center justify-center">
+        <div className="product__svg">
+          <Image src="/svg/sound.svg" alt="one" width={180} height={70} />
+            <p>A dynamic pack of essential sound design to quickly enhance all types of productions.</p>
+          </div>
+          <Image
+            src="https://cdn.ady.systems/assets/ady.jpg"
+            alt="one"
+            layout="fill"
+            objectFit="cover"
+            className="rounded-lg"
+          />
+        </div>
+        <div className="scania_body">Ady® Sound</div>
+        <div className="scania_bodysmall">
+          From $32 USD
+        </div>
+      </div>
+
     </div>
   </div>
 </div>
@@ -103,31 +130,8 @@ export default function Atelier() {
 <Section>
   <div className="section__home">
   <h2>This is a Section.</h2>
-  <Image
-    src="https://cdn.ady.systems/assets/who_is_going_to.jpg"
-    alt="one"
-    layout="fill"
-    objectFit="cover"
-    className=""
-  />
   </div>
 </Section>
-
-{/*SECTION 002*/}
-<Section>
-  <div className="section__home">
-  <h2>This is a Section.</h2>
-  <Image
-    src="https://cdn.ady.systems/assets/title_promo.jpg"
-    alt="one"
-    layout="fill"
-    objectFit="cover"
-    className=""
-  />
-  </div>
-</Section>
-
-
 
 
 

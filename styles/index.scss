@@ -240,6 +240,8 @@ p {
   text-align: center;
   align-items: center;
   margin: auto;
+  background-color: transparent;
+  z-index: 2;
 }
 
 .svg__logo {
@@ -251,16 +253,6 @@ p {
 
 .svg__logo:hover {
   cursor: pointer;
-}
-
-.free__sample {
-  background-color: #000;
-  color: #fff;
-  height: 100vh; /* Use vh as a fallback for browsers that do not support Custom Properties */
-  height: calc(var(--vh, 1vh) * 100);
-  margin: 0 auto;
-  padding: 0;
-  min-width: 100vw;
 }
 
 .clock {

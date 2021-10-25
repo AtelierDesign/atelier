@@ -1,7 +1,6 @@
 import Image from 'next/image';
-import Layout from '../components/layout';
-import Navbar from '../components/navbar';
-import Hero from '../components/hero';
+import Cover from '../components/cover';
+
 
 
 
@@ -9,11 +8,17 @@ import Hero from '../components/hero';
 export default function Welcome() {
   return (
     <>
-
-
-<Navbar />
-
-
+      <Cover>
+        <div className="center__div">
+          <h1>Enter.</h1>
+        </div>
+        <Image
+          src="https://cdn.ady.systems/assets/circuit_desktop.jpg"
+          alt="cover"
+          layout="fill"
+          objectFit="cover"
+        />
+      </Cover>
     </>
   )
 }

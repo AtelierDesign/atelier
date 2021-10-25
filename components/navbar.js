@@ -67,13 +67,19 @@ export default function Navbar() {
       <Image src="/svg/brand.svg" alt="menu" width={78} height={18} />
       <div className="space-x-8 xl:space-x-12 sm:flex items-center justify-between hidden md:px-0">
         <span className="text-xl text-charcoal font-semibold cursor-pointer">
-          New Releases
+          <Link href="/new">
+            <a>New Releases</a>
+          </Link>
         </span>
         <span className="text-xl text-charcoal font-semibold cursor-pointer">
-          About
+          <Link href="/welcome">
+            <a>About</a>
+          </Link>
         </span>
         <span className="text-xl text-charcoal font-semibold cursor-pointer">
-          Documentation
+          <Link href="https://docs.ady.world" rel="noreffer">
+            <a>Documentation</a>
+          </Link>
         </span>
       </div>
       <div className="flex">

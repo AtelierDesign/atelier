@@ -5,19 +5,16 @@ import Image from 'next/image';
 
 
 
-export default function Hero() {
+export default function Hero({ children, ...props }) {
 
   return (
   <>
   <div className="hero">
     <div className="hero__inner">
-    {/*Escape for Now
-        <Image src="/svg/atelier_blk.svg" alt="Atelier®" width={180} height={50} />
-        */}
-        <h3>Welcome.</h3>
+    {/* Hero Title - use h1, h2, or h3 */}
+    {/* Body Text - use .p */}
 
-        <p>An ever– expanding ecosystem of essential design components,
-        for artists to empower the new culture of design.</p>
+        <div>{children}</div>
 
     </div>
   </div>
