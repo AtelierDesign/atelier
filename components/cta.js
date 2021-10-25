@@ -13,7 +13,7 @@ export default function Cta({ children, ...props }) {
       <div>{children}</div>
     </div>
   </div>
-</>;
+</>
 
   );
 }
