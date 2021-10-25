@@ -61,9 +61,7 @@ export default function Navbar() {
               <div className="popover__footer">
                 <div className="popover__logo">
                   <Link href="/">
-                    <a>
-                  <Image src="/svg/brand.svg" alt="menu" width={50} height={20} />
-                  </a>
+                    <a><Image src="/svg/brand.svg" alt="menu" width={50} height={20} /></a>
                 </Link>
                 </div>
                 <p className="popover__copyright">©2021. All Rights Reserved.</p>
@@ -75,7 +73,9 @@ export default function Navbar() {
         </Popover>
       </div>
 
-      <Image src="/svg/brand.svg" alt="menu" width={78} height={18} />
+      <Link href="/">
+        <a><Image src="/svg/brand.svg" alt="menu" width={78} height={18} /></a>
+      </Link>
       <div className="space-x-8 xl:space-x-12 sm:flex items-center justify-between hidden md:px-0">
         <span className="text-xl text-charcoal font-semibold cursor-pointer">
           <Link href="/new">
