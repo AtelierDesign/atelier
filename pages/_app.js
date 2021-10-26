@@ -14,6 +14,14 @@ export default function App({ Component, pageProps }) {
       name="viewport"
       content="initial-scale=1, width=device-width, user-scalable=no"
     />
+    <meta
+      property="og:image"
+      content="https://cdn.ady.systems/assets/social.jpg"
+    />
+    <meta
+      property="og:image:secure_url"
+      content="https://cdn.ady.systems/assets/social.jpg"
+    />
   </Head>
   <Component {...pageProps} />
 </Provider>
