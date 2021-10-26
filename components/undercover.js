@@ -7,7 +7,7 @@ export default function Undercover() {
 <>
     <div className="undercover">
     <Image
-      src="https://cdn.ady.systems/assets/fabric.jpg"
+      src="https://cdn.ady.systems/assets/bubble_01a.jpg"
       alt="One"
       layout="fill"
       objectFit="cover"
