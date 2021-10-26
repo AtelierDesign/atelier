@@ -36,7 +36,7 @@ export default function Atelier() {
             <div className="image__title">Atelier Design Yield.</div>
             <div className="image__sub">Lorem Ipsum</div>
             <Image
-              src="https://cdn.ady.systems/assets/grid_hamilton.jpg"
+              src="https://cdn.ady.systems/assets/social.jpg"
               alt="One"
               layout="fill"
               objectFit="cover"
