@@ -7,10 +7,6 @@
   user-select: none;
 }
 
-html {
-  background-color: #f7f7f7;
-}
-
 html,
 body {
   @include no-select;

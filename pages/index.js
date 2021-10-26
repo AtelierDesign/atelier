@@ -21,12 +21,8 @@ export default function Index() {
 
   <div className="overlay">
     (ady®)
-    <a className="overlay__link" href="https://threejs.org">
-      {" "}
-      three.js
-    </a>
     <br></br>
-    view source on _
+    view source _
     <a
       className="overlay__link"
       href="https://github.com/AtelierDesign/atelier"

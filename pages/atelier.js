@@ -95,7 +95,7 @@ export default function Atelier() {
   {/*Call-to-Action*/}
   <Cta>
     <p>Shop All Products</p>
-    <button className="bg-drey-light border-1 border-lime hover:bg-gray-600 text-white font-bold w-1/2 mt-5 py-2 px-4 rounded-sm">
+    <button className="bg-pewter border-1 border-lime hover:bg-gray-600 text-white font-bold w-1/2 mt-5 py-2 px-4 rounded-sm">
       Shop all products
     </button>
   </Cta>

@@ -44,7 +44,7 @@ export default function Footeralt() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          GitHub
+          Github
         </a>
         <a
           className="link"
