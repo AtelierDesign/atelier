@@ -16,6 +16,7 @@ Full Website Build
 3. Finish Panel build.
 4. T-Shirt Designs.
 5. Launch before Christmas. *There is always something to learn*
+6. Getttting Close
 
 - Personal Website
 - Update all Socials
