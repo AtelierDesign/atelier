@@ -22,7 +22,6 @@ export default function Information() {
     <Hero>
       <Image src="/svg/we_are.svg" alt="menu" className="we__are" width={220} height={110} />
       <h4>ATELIER DESIGN YIELD</h4>
-      <h6>That&apos;s us.</h6>
     </Hero>
 
     {/*Subscribe*/}
