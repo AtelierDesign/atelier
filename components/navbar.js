@@ -59,7 +59,7 @@ export default function Navbar() {
                 <Link href="/policy">
                   <a className="popover__small__link">Terms & Conditions</a>
                 </Link>
-                <Link href="/subscribe">
+                <Link href="/join">
                   <a className="popover__small__link">Subscribe</a>
                 </Link>
                 <a className="popover__small__link" href="/account">
