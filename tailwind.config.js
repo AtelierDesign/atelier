@@ -31,7 +31,7 @@ module.exports = {
         '2xl': '1536px',
       },
       fontFamily: {
-        sans: ['SF Pro Display', 'sans-serif'],
+        sans: ['Inter', 'sans-serif'],
       },
     },
     container: {
