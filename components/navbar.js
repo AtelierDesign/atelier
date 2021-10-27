@@ -50,15 +50,16 @@ export default function Navbar() {
 
                 {/*Small Links*/}
                 <br></br>
-                  <Link href="/contact">
-                    <a className="popover__small__link">Contact</a>
-                  </Link>
-                <a className="popover__small__link" href="/about">
-                  Information
-                </a>
-                <a className="popover__small__link" href="/policy">
-                  Terms & Conditions
-                </a>
+                <Link href="/contact">
+                  <a className="popover__small__link">Contact</a>
+                </Link>
+                <Link href="/information">
+                  <a className="popover__small__link">About</a>
+                </Link>
+                <Link href="/policy">
+                  <a className="popover__small__link">Terms & Conditions</a>
+                </Link>
+
                 <a className="popover__small__link" href="/subscribe">
                   Subscribe
                 </a>
