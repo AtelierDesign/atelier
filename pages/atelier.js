@@ -33,10 +33,14 @@ export default function Atelier() {
         {/*FIRST IMAGE*/}
         <div className="w-full mb-4 md:w-full lg:w-full px-2">
           <div className="relative image__lg rounded-lg bg-gray-100 text-sm text-white flex items-center justify-center">
-            <div className="image__title">Atelier Design Yield.</div>
-            <div className="image__sub">Lorem Ipsum</div>
+            <div className="image__title">
+              <h1>Atelier.</h1>
+            </div>
+            <div className="image__sub">
+            <p>Lorem Ipsum</p>
+            </div>
             <Image
-              src="https://cdn.ady.systems/assets/social.jpg"
+              src="https://cdn.ady.systems/assets/green.jpg"
               alt="One"
               layout="fill"
               objectFit="cover"
@@ -85,7 +89,7 @@ export default function Atelier() {
               className="rounded-lg"
             />
           </div>
-          <div className="caption__title">Ady® Sound</div>
+          <div className="caption__title">ADY® SOUND</div>
           <div className="caption__description">From $32 USD</div>
         </div>
       </div>
@@ -110,7 +114,6 @@ export default function Atelier() {
   <div className="spa__cer"></div>
   <Footeralt />
 </>
-
 
   );
 }

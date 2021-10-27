@@ -12,5 +12,8 @@ module.exports = {
   reactStrictMode: true,
 	images: {
 	  domains: ['cdn.ady.systems', 'ady.systems', 'd37ni96g2zvg5.cloudfront.net'],
-	}
+	},
+  experimental: {
+    urlImports: ['https://cdn.ady.systems/', 'https://use.typekit.net/'],
+  },
 }

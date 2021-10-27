@@ -1,124 +1,180 @@
-/* INTER */
+/*
+ * The Typekit service used to deliver this font or fonts for use on websites
+ * is provided by Adobe and is subject to these Terms of Use
+ * http://www.adobe.com/products/eulas/tou_typekit. For font license
+ * information, see the list below.
+ *
+ * Folio STD:
+ *
+ * © 2016-2021 Atelier Design Yield. All Rights Reserved.
+ */
+/*{"last_published":"2021-10-27 06:53:15 UTC"}*/
+
 
 @font-face {
-  font-family: 'Inter';
-  font-style:  normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url("/fonts/Inter-Regular.woff2?v=3.15") format("woff2"),
-       url("/fonts/Inter-Regular.woff?v=3.15") format("woff");
-}
-@font-face {
-  font-family: 'Inter';
-  font-style:  italic;
-  font-weight: 400;
-  font-display: swap;
-  src: url("/fonts/Inter-Italic.woff2?v=3.15") format("woff2"),
-       url("/fonts/Inter-Italic.woff?v=3.15") format("woff");
-}
-@font-face {
-  font-family: 'Inter';
-  font-style:  normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url("/fonts/Inter-Medium.woff2?v=3.15") format("woff2"),
-       url("/fonts/Inter-Medium.woff?v=3.15") format("woff");
-}
-@font-face {
-  font-family: 'Inter';
-  font-style:  italic;
-  font-weight: 500;
-  font-display: swap;
-  src: url("/fonts/Inter-MediumItalic.woff2?v=3.15") format("woff2"),
-       url("/fonts/Inter-MediumItalic.woff?v=3.15") format("woff");
-}
-@font-face {
-  font-family: 'Inter';
-  font-style:  normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url("/fonts/Inter-SemiBold.woff2?v=3.15") format("woff2"),
-       url("/fonts/Inter-SemiBold.woff?v=3.15") format("woff");
-}
-@font-face {
-  font-family: 'Inter';
-  font-style:  italic;
-  font-weight: 600;
-  font-display: swap;
-  src: url("/fonts/Inter-SemiBoldItalic.woff2?v=3.15") format("woff2"),
-       url("/fonts/Inter-SemiBoldItalic.woff?v=3.15") format("woff");
-}
-@font-face {
-  font-family: 'Inter';
-  font-style:  normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url("/fonts/Inter-Bold.woff2?v=3.15") format("woff2"),
-       url("/fonts/Inter-Bold.woff?v=3.15") format("woff");
-}
-@font-face {
-  font-family: 'Inter';
-  font-style:  italic;
-  font-weight: 700;
-  font-display: swap;
-  src: url("/fonts/Inter-BoldItalic.woff2?v=3.15") format("woff2"),
-       url("/fonts/Inter-BoldItalic.woff?v=3.15") format("woff");
-}
-@font-face {
-  font-family: 'Inter';
-  font-style:  normal;
-  font-weight: 800;
-  font-display: swap;
-  src: url("/fonts/Inter-ExtraBold.woff2?v=3.15") format("woff2"),
-       url("/fonts/Inter-ExtraBold.woff?v=3.15") format("woff");
-}
-@font-face {
-  font-family: 'Inter';
-  font-style:  italic;
-  font-weight: 800;
-  font-display: swap;
-  src: url("/fonts/Inter-ExtraBoldItalic.woff2?v=3.15") format("woff2"),
-       url("/fonts/Inter-ExtraBoldItalic.woff?v=3.15") format("woff");
-}
-@font-face {
-  font-family: 'Inter';
-  font-style:  normal;
-  font-weight: 900;
-  font-display: swap;
-  src: url("/fonts/Inter-Black.woff2?v=3.15") format("woff2"),
-       url("/fonts/Inter-Black.woff?v=3.15") format("woff");
-}
-@font-face {
-  font-family: 'Inter';
-  font-style:  italic;
-  font-weight: 900;
-  font-display: swap;
-  src: url("/fonts/Inter-BlackItalic.woff2?v=3.15") format("woff2"),
-       url("/fonts/Inter-BlackItalic.woff?v=3.15") format("woff");
-}
-
-/* Variable */
-@font-face {
-  font-family: 'Inter var';
-  font-weight: 100 900;
-  font-display: swap;
-  font-style: normal;
-  font-named-instance: 'Regular';
-  src: url("/fonts/Inter-roman.var.woff2?v=3.15") format("woff2");
-}
-
-/* TOURNEY */
-/* Regular */
-
-@font-face {
-    font-family: 'Tourney';
-    src: local('/fonts/Tourney-Thin.woff2'), local('/fonts/Tourney-Thin.woff'),
-        url('/fonts/Tourney-Thin.woff2') format('woff2'),
-        url('/fonts/Tourney-Thin.woff') format('woff'),
-        url('/fonts/Tourney-Thin.ttf') format('truetype');
-    font-weight: 100;
+    font-family: 'Folio Std';
+    src: url('/fonts/FolioStd-Light.eot');
+    src: local('Folio Std Light'), local('/fonts/FolioStd-Light'),
+        url('https://cdn.ady.systems/typeface/FolioStd-Light.eot?#iefix') format('embedded-opentype'),
+        url('https://cdn.ady.systems/typeface/FolioStd-Light.woff2') format('woff2'),
+        url('https://cdn.ady.systems/typeface/FolioStd-Light.woff') format('woff'),
+        url('https://cdn.ady.systems/typeface/FolioStd-Light.ttf') format('truetype');
+    font-weight: 300;
     font-style: normal;
-  }
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Folio Std';
+    src: url('/fonts/FolioStd-Medium.eot');
+    src: local('Folio Std Medium'), local('/fonts/FolioStd-Medium'),
+        url('https://cdn.ady.systems/typeface/FolioStd-Medium.eot?#iefix') format('embedded-opentype'),
+        url('https://cdn.ady.systems/typeface/FolioStd-Medium.woff2') format('woff2'),
+        url('https://cdn.ady.systems/typeface/FolioStd-Medium.woff') format('woff'),
+        url('https://cdn.ady.systems/typeface/FolioStd-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Folio Std';
+    src: url('/fonts/FolioStd-BoldCondensed.eot');
+    src: local('Folio Std Bold Condensed'), local('/fonts/FolioStd-BoldCondensed'),
+        url('https://cdn.ady.systems/typeface/FolioStd-BoldCondensed.eot?#iefix') format('embedded-opentype'),
+        url('https://cdn.ady.systems/typeface/FolioStd-BoldCondensed.woff2') format('woff2'),
+        url('https://cdn.ady.systems/typeface/FolioStd-BoldCondensed.woff') format('woff'),
+        url('https://cdn.ady.systems/typeface/FolioStd-BoldCondensed.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Folio Std';
+    src: url('/fonts/FolioStd-ExtraBold.eot');
+    src: local('Folio Std Extra Bold'), local('/fonts/FolioStd-ExtraBold'),
+        url('https://cdn.ady.systems/typeface/FolioStd-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('https://cdn.ady.systems/typeface/FolioStd-ExtraBold.woff2') format('woff2'),
+        url('https://cdn.ady.systems/typeface/FolioStd-ExtraBold.woff') format('woff'),
+        url('https://cdn.ady.systems/typeface/FolioStd-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Folio Std';
+    src: url('/fonts/FolioStd-Bold.eot');
+    src: local('Folio Std Bold'), local('/fonts/FolioStd-Bold'),
+        url('https://cdn.ady.systems/typeface/FolioStd-Bold.eot?#iefix') format('embedded-opentype'),
+        url('https://cdn.ady.systems/typeface/FolioStd-Bold.woff2') format('woff2'),
+        url('https://cdn.ady.systems/typeface/FolioStd-Bold.woff') format('woff'),
+        url('https://cdn.ady.systems/typeface/FolioStd-Bold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+ * The Typekit service used to deliver this font or fonts for use on websites
+ * is provided by Adobe and is subject to these Terms of Use
+ * http://www.adobe.com/products/eulas/tou_typekit. For font license
+ * information, see the list below.
+ *
+ * forma-djr-micro:
+ *   - http://typekit.com/eulas/00000000000000003b9ae4dc
+ *   - http://typekit.com/eulas/00000000000000003b9ae4dd
+ *   - http://typekit.com/eulas/00000000000000003b9ae4de
+ *   - http://typekit.com/eulas/00000000000000003b9ae4df
+ *   - http://typekit.com/eulas/00000000000000003b9ae4e0
+ *   - http://typekit.com/eulas/00000000000000003b9ae4e1
+ *   - http://typekit.com/eulas/00000000000000003b9ae4e2
+ *   - http://typekit.com/eulas/00000000000000003b9ae4e3
+ *   - http://typekit.com/eulas/00000000000000003b9ae4e4
+ *   - http://typekit.com/eulas/00000000000000003b9ae4e5
+ *
+ * © 2009-2021 Adobe Systems Incorporated. All Rights Reserved.
+ */
+/*{"last_published":"2021-10-27 06:53:15 UTC"}*/
+
+
+@font-face {
+font-family:"forma-djr-micro";
+src:url("https://use.typekit.net/af/4240d2/00000000000000003b9ae4dc/27/l?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=n2&v=3") format("woff2"),url("https://use.typekit.net/af/4240d2/00000000000000003b9ae4dc/27/d?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=n2&v=3") format("woff"),url("https://use.typekit.net/af/4240d2/00000000000000003b9ae4dc/27/a?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=n2&v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:200;
+}
+
+
+@font-face {
+font-family:"forma-djr-micro";
+src:url("https://use.typekit.net/af/be4beb/00000000000000003b9ae4df/27/l?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=n3&v=3") format("woff2"),url("https://use.typekit.net/af/be4beb/00000000000000003b9ae4df/27/d?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=n3&v=3") format("woff"),url("https://use.typekit.net/af/be4beb/00000000000000003b9ae4df/27/a?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=n3&v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:300;
+}
+
+@font-face {
+font-family:"forma-djr-micro";
+src:url("https://use.typekit.net/af/9f9862/00000000000000003b9ae4e0/27/l?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/9f9862/00000000000000003b9ae4e0/27/d?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/9f9862/00000000000000003b9ae4e0/27/a?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=n4&v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:400;
+}
+
+@font-face {
+font-family:"forma-djr-micro";
+src:url("https://use.typekit.net/af/320fdc/00000000000000003b9ae4e1/27/l?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=i4&v=3") format("woff2"),url("https://use.typekit.net/af/320fdc/00000000000000003b9ae4e1/27/d?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=i4&v=3") format("woff"),url("https://use.typekit.net/af/320fdc/00000000000000003b9ae4e1/27/a?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=i4&v=3") format("opentype");
+font-display:auto;font-style:italic;font-weight:400;
+}
+
+@font-face {
+font-family:"forma-djr-micro";
+src:url("https://use.typekit.net/af/f88859/00000000000000003b9ae4e2/27/l?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=i5&v=3") format("woff2"),url("https://use.typekit.net/af/f88859/00000000000000003b9ae4e2/27/d?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=i5&v=3") format("woff"),url("https://use.typekit.net/af/f88859/00000000000000003b9ae4e2/27/a?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=i5&v=3") format("opentype");
+font-display:auto;font-style:italic;font-weight:500;
+}
+
+@font-face {
+font-family:"forma-djr-micro";
+src:url("https://use.typekit.net/af/648356/00000000000000003b9ae4e3/27/l?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=n5&v=3") format("woff2"),url("https://use.typekit.net/af/648356/00000000000000003b9ae4e3/27/d?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=n5&v=3") format("woff"),url("https://use.typekit.net/af/648356/00000000000000003b9ae4e3/27/a?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=n5&v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:500;
+}
+
+@font-face {
+font-family:"forma-djr-micro";
+src:url("https://use.typekit.net/af/8bf2d1/00000000000000003b9ae4e4/27/l?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=i7&v=3") format("woff2"),url("https://use.typekit.net/af/8bf2d1/00000000000000003b9ae4e4/27/d?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=i7&v=3") format("woff"),url("https://use.typekit.net/af/8bf2d1/00000000000000003b9ae4e4/27/a?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=i7&v=3") format("opentype");
+font-display:auto;font-style:italic;font-weight:700;
+}
+
+@font-face {
+font-family:"forma-djr-micro";
+src:url("https://use.typekit.net/af/03caec/00000000000000003b9ae4e5/27/l?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=n7&v=3") format("woff2"),url("https://use.typekit.net/af/03caec/00000000000000003b9ae4e5/27/d?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=n7&v=3") format("woff"),url("https://use.typekit.net/af/03caec/00000000000000003b9ae4e5/27/a?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=n7&v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:700;
+}
+
+@font-face {
+font-family:"forma-djr-micro";
+src:url("https://use.typekit.net/af/75951a/00000000000000007735ea68/30/l?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=n9&v=3") format("woff2"),url("https://use.typekit.net/af/75951a/00000000000000007735ea68/30/d?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=n9&v=3") format("woff"),url("https://use.typekit.net/af/75951a/00000000000000007735ea68/30/a?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=n9&v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:900;
+}
+
+@font-face {
+font-family:"forma-djr-micro";
+src:url("https://use.typekit.net/af/e9dc6e/00000000000000007735ea69/30/l?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=n8&v=3") format("woff2"),url("https://use.typekit.net/af/e9dc6e/00000000000000007735ea69/30/d?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=n8&v=3") format("woff"),url("https://use.typekit.net/af/e9dc6e/00000000000000007735ea69/30/a?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=n8&v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:800;
+}
+
+.tk-forma-djr-micro { font-family: "forma-djr-micro",sans-serif; }
+
 
 /* SF PRO DISPLAY */
 /* Regular */

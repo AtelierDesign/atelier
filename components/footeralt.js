@@ -59,7 +59,7 @@ export default function Footeralt() {
         <a href="/github" target="_blank" rel="noopener noreferrer">
           <div className="vercel">
             <span className="atelier__title">
-              Copyright <strong>©2021</strong>
+              ©2021. All Rights Reserved.
             </span>
           </div>
         </a>

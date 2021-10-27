@@ -12,7 +12,7 @@ export default function Navbar() {
   return (
 
 <header>
-  <div className="h-full pt-4 pb-4 lg:pt-4 md:pt-5">
+  <div className="h-full pt-4 pb-4 lg:pt-5 md:pt-5">
     <div className="flex items-center justify-between md:container mx-0 my-0 px-0 py-0 md:px-0">
       <div className="lg:hidden md:hidden">
         <Popover className="popover">
@@ -97,19 +97,19 @@ export default function Navbar() {
       </Link>
 
       <div className="space-x-8 xl:space-x-12 sm:flex items-center justify-between hidden md:px-0">
-        <span className="text-xl text-charcoal font-semibold cursor-pointer">
-          <Link href="/new">
-            <a>New Releases</a>
-          </Link>
-        </span>
-        <span className="text-xl text-charcoal font-semibold cursor-pointer">
+        <span className="text-charcoal cursor-pointer">
           <Link href="/information">
-            <a>About</a>
+            <a className="desktop__link">About</a>
           </Link>
         </span>
-        <span className="text-xl text-charcoal font-semibold cursor-pointer">
+        <span className="text-charcoal cursor-pointer">
+          <Link href="/new">
+            <a className="desktop__link">New Releases</a>
+          </Link>
+        </span>
+        <span className="text-charcoal cursor-pointer">
           <Link href="https://docs.ady.world" rel="noreffer">
-            <a>Documentation</a>
+            <a className="desktop__link">Docs</a>
           </Link>
         </span>
       </div>
