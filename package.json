@@ -1,7 +1,4 @@
 {
-  "name": "atelier",
-  "version": "1.0.0",
-  "main": "/index.js",
   "dependencies": {
     "@headlessui/react": "^1.4.1",
     "@heroicons/react": "^1.0.4",
