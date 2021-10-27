@@ -10,7 +10,8 @@ module.exports = withPWA({
 
 module.exports = {
   reactStrictMode: true,
+  optimizeFonts: false,
 	images: {
-	  domains: ['d37ni96g2zvg5.cloudfront.net', 'cdn.ady.systems', 'ady.systems', 'hldtru.space'],
+	  domains: ['cdn.ady.systems', 'ady.systems', 'd37ni96g2zvg5.cloudfront.net'],
 	}
 }

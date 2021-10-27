@@ -14,14 +14,14 @@ export default function Footer() {
         >
           <div>
             <svg
-              width="18"
-              height="18"
+              width="15"
+              height="15"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
               <g>
                 <path
-                  fill="#aaf683"
+                  fill="#000"
                   d="M10.5,10.5H4.5L3.8,12H0.7l4.7-9h4.2l4.7,9h-3.1L10.5,10.5z M7.8,5.1H7.2L5.5,8.5h4L7.8,5.1z"
                 />
               </g>
@@ -59,7 +59,7 @@ export default function Footer() {
         <a href="/github" target="_blank" rel="noopener noreferrer">
           <div className="vercel">
             <span className="atelier__title">
-              Copyright <strong>©2021</strong>
+              Copyright ©2021
             </span>
           </div>
         </a>

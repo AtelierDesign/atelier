@@ -3,16 +3,15 @@
 // https://github.com/rsms/inter
 
 $font-display: swap;
-$font-family: "SF Pro Display";
-$font-path: "https://cdn.ady.systems/fontface/";
+$font-family: "Inter";
+$font-path: "/fonts/";
 
 @mixin fontface($weight, $style, $name) {
   @font-face {
-    font-display: $font-display;
     font-family: $font-family;
     font-style: $style;
     font-weight: $weight;
-    src: url("#{$font-path}SFProDisplay-#{$name}.woff2") format("woff2"), url("#{$font-path}SFProDisplay-#{$name}.woff") format("woff");
+    src: url("#{$font-path}Inter-#{$name}.woff2") format("woff2"), url("#{$font-path}Inter-#{$name}.woff") format("woff");
   }
 }
 
@@ -24,12 +23,7 @@ $font-path: "https://cdn.ady.systems/fontface/";
   src: url("https://cdn.ady.systems/fontface/RX100-Regular.woff2") format("woff2"), url("https://cdn.ady.systems/fontface/RX100-Regular.woff") format("woff");
 }
 
-@include fontface(100, italic, ThinItalic);
-@include fontface(100, normal, Thin);
-@include fontface(200, italic, ExtraLightItalic);
-@include fontface(200, normal, ExtraLight);
-@include fontface(300, italic, LightItalic);
-@include fontface(300, normal, Light);
+
 @include fontface(400, italic, Italic);
 @include fontface(400, normal, Regular);
 @include fontface(500, italic, MediumItalic);
@@ -43,7 +37,7 @@ $font-path: "https://cdn.ady.systems/fontface/";
 @include fontface(900, italic, BlackItalic);
 @include fontface(900, normal, Black);
 
-$font-main: "SF Pro Display", sans-serif;
+$font-main: "Inter", sans-serif;
 
 :root {
   -moz-tab-size: 4;

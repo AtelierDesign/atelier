@@ -28,8 +28,9 @@ section {
   padding-left: 2rem;
   padding-right: 2rem;
   padding-bottom: 5rem;
-  height: auto;
+  height: 100%;
   width: 100%;
+  z-index: 4;
 }
 
 .section__title {
@@ -195,8 +196,8 @@ section {
 }
 
 .clock {
-  font-family: "Menlo", monospace;
-  font-size: 13px;
+  font-family: 'Bergen Mono', monospace;
+  font-size: 14px;
   font-style: normal;
   font-weight: normal;
   color: rgba(35, 31, 32, 0.6);

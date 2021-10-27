@@ -49,7 +49,7 @@ export default function Three() {
   {/*three.js Canvas (Desktop Only)*/}
   <div className="invisible lg:visible">
     <Canvas shadows dpr={[1, 2]} camera={{ fov: 120 }}>
-      <Suspense fallback={null}>
+      <Suspense fallback={'Loading...'}>
         <Stage
           controls={ref}
           preset="soft"

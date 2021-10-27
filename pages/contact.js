@@ -25,7 +25,7 @@ export default function Contact() {
 
   <Section>
     <div className="center__div">
-      <h1 className="section__title">Support</h1>
+      <h4 className="section__title">SUPPORT.</h4>
       <p>
         Please contact
         <Link href="mailto: sales@ady.world">
