@@ -23,12 +23,12 @@ export default function Information() {
       <Image src="/svg/we_are.svg" alt="menu" className="we__are" width={220} height={110} />
       <h4>ATELIER DESIGN YIELD</h4>
     </Hero>
-
+  <div className="sand__box">
     {/*Subscribe*/}
     <Subscribe />
     <div className="spa__cer"></div>
     <Footeralt />
-
+</div>
 </>
 
 
