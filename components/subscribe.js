@@ -1,15 +1,14 @@
 
 
 
-export default function Subscribe() {
+export default function Subscribe({ children, ...props }) {
 
   return (
 <>
   <div className="subscribe">
     <div className="subscribe__inner">
       <div className="subscribe__label">
-        <h1>Subscribe</h1>
-      </div>
+      </div>{ children }
       {/*Email Subscribe*/}
       <div className="relative mx-auto">
         <input
