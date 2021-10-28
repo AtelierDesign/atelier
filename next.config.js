@@ -11,9 +11,9 @@ module.exports = withPWA({
 module.exports = {
   reactStrictMode: true,
 	images: {
-	  domains: ['cdn.ady.systems', 'ady.systems', 'd37ni96g2zvg5.cloudfront.net'],
+	  domains: ['cdn.ady.systems', 'ady.systems'],
 	},
   experimental: {
-    urlImports: ['https://cdn.ady.systems/', 'https://use.typekit.net/'],
+    urlImports: ['https://cdn.ady.systems/'],
   },
 }
