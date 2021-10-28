@@ -34,10 +34,10 @@ export default function Atelier() {
         <div className="w-full mb-4 md:w-full lg:w-full px-2">
           <div className="relative image__lg rounded-lg bg-gray-100 text-sm text-white flex items-center justify-center">
             <div className="image__title">
-              <h2>Atelier.</h2>
+              <h2>Heading.2</h2>
             </div>
             <div className="image__sub">
-            <p>Lorem Ipsum</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt<br /> ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
             </div>
             <Image
               src="https://cdn.ady.systems/assets/green.jpg"
@@ -106,7 +106,8 @@ export default function Atelier() {
 
   {/*SECTION 001*/}
   <Section>
-      <h1>This is a Section.</h1>
+      <h1>ATELIER®</h1>
+      <p><strong>This is a section, you can put whatever the hell you want here.</strong></p>
   </Section>
 
   {/*Email Subscribe*/}

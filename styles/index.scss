@@ -34,11 +34,12 @@ strong {
 }
 
 h1 {
-  font-family: 'Neue Plak Extra', sans-serif;
-  font-size: 34px;
-  font-weight: 900;
+  font-family: 'Neue Plak Wide', sans-serif;
+  font-size: 50px;
+  font-weight: bold;
   font-style: normal;
   line-height: 1;
+  text-transform: uppercase;
   letter-spacing: -0.05rem;
   padding: 8px;
   color: #333333;
@@ -59,10 +60,11 @@ h2 {
 
 h3 {
   font-family: 'Helvetica Now Text', sans-serif;
-  font-size: 40px;
+  font-size: 45px;
   font-weight: 800;
   font-style: normal;
   line-height: 1;
+  text-transform: uppercase;
   letter-spacing: -0.1rem;
   padding: 8px;
   color: #333333;
@@ -118,7 +120,7 @@ h6 {
 
 p {
   font-family: 'Helvetica Now Text', sans-serif;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: normal;
   font-style: normal;
   line-height: 1.2;
@@ -254,8 +256,8 @@ p:a {
   line-height: 1;
   color: #fff;
   z-index: 30;
-  padding-left: 20px;
-  padding-top: 60px;
+  padding-left: 22px;
+  padding-top: 80px;
   padding-right: 4px;
   padding-bottom: 2px;
 }

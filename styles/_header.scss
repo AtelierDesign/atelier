@@ -44,13 +44,12 @@ header {
 }
 
 .popover__link {
-  font-family: 'Molde Semi Expanded', sans-serif;
-  font-size: 20px;
+  font-family: 'Helvetica Now Text', sans-serif;
+  font-size: 24px;
   font-weight: bold;
-  text-transform: uppercase;
   color: #231f20;
   text-align: left;
-  line-height: 1.5;
+  line-height: 1.2;
   letter-spacing: normal;
   padding-top: 6px;
   padding-bottom: 6px;
@@ -68,7 +67,7 @@ header {
   font-weight: 500;
   color: #999999;
   text-align: left;
-  line-height: 1;
+  line-height: 1.2;
   padding-top: 3px;
   padding-bottom: 3px;
   border-style: none;
@@ -81,13 +80,14 @@ header {
 }
 
 .popover__footer {
-  padding-top: 10rem;
+  padding-top: 14rem;
   padding-bottom: 0rem;
 }
 
 .popover__copyright {
-  font-size: 12px !important;
-  font-weight: 300;
+  font-family: 'Helvetica Now Text', sans-serif;
+  font-size: 11px !important;
+  font-weight: 500;
   text-align: left;
   line-height: 1.5;
   padding: 0rem;

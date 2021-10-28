@@ -21,7 +21,7 @@ export default function Index() {
     <div className="center__div">
       <Link href="https://github.com/AtelierDesign">
       <a>
-        <Image src="/svg/brand.svg" alt="menu" width={100} height={50} />
+        <Image src="/svg/brand.svg" alt="menu" width={120} height={55} />
       </a>
       </Link>
     </div>

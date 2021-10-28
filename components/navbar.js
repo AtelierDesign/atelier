@@ -45,7 +45,7 @@ export default function Navbar() {
                   <a className="popover__link">Coming Soon</a>
                 </Link>
                 <Link href="https://docs.ady.world">
-                  <a className="popover__link">Docs</a>
+                  <a className="popover__link">Documentation</a>
                 </Link>
 
                 {/*Small Links*/}
@@ -73,14 +73,14 @@ export default function Navbar() {
                         <Image
                           src="/svg/brand.svg"
                           alt="menu"
-                          width={50}
+                          width={55}
                           height={20}
                         />
                       </a>
                     </Link>
                   </div>
                   <p className="popover__copyright">
-                    © 2021. All rights reserved.
+                    ©2021 ALL RIGHTS RESERVED.
                   </p>
                 </div>
               </div>
