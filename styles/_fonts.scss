@@ -2,26 +2,137 @@
 // https://npm.im/inter-ui
 // https://github.com/rsms/inter
 
-$font-display: auto;
-$font-family: "Folio Std";
+
+
+$font-display: swap;
 $font-path: "https://cdn.ady.systems/typeface/";
 
-@mixin fontface($weight, $style, $name) {
+@mixin now($weight, $style, $name) {
   @font-face {
-    font-family: $font-family;
+    font-family: "Helvetica Now Text";
     font-style: $style;
     font-weight: $weight;
-    src: url("#{$font-path}FolioStd-#{$name}.woff2") format("woff2"), url("#{$font-path}FolioStd-#{$name}.woff") format("woff");
+    src: url("#{$font-path}HelveticaNowText-#{$name}.woff2") format("woff2"), url("#{$font-path}HelveticaNowText-#{$name}.woff") format("woff");
   }
 }
 
-@include fontface(300, normal, Light);
-@include fontface(500, normal, Medium);
-@include fontface(600, normal, Bold);
-@include fontface(700, normal, BoldCondensed);
-@include fontface(800, normal, ExtraBold);
+@mixin neue($weight, $style, $name) {
+  @font-face {
+    font-family: "Neue Plak";
+    font-style: $style;
+    font-weight: $weight;
+    src: url("#{$font-path}NeuePlak-#{$name}.woff2") format("woff2"), url("#{$font-path}NeuePlak-#{$name}.woff") format("woff");
+  }
+}
 
-$font-main: "Folio Std", sans-serif;
+@mixin neue-ext($weight, $style, $name) {
+  @font-face {
+    font-family: "Neue Plak Extended";
+    font-style: $style;
+    font-weight: $weight;
+    src: url("#{$font-path}NeuePlak-Extended#{$name}.woff2") format("woff2"), url("#{$font-path}NeuePlak-Extended#{$name}.woff") format("woff");
+  }
+}
+
+@mixin neue-ext-extra($weight, $style, $name) {
+  @font-face {
+    font-family: "Neue Plak Extended Extra";
+    font-style: $style;
+    font-weight: $weight;
+    src: url("#{$font-path}NeuePlak-#{$name}.woff2") format("woff2"), url("#{$font-path}NeuePlak-#{$name}.woff") format("woff");
+  }
+}
+
+@mixin neue-extra($weight, $style, $name) {
+  @font-face {
+    font-family: "Neue Plak Extra";
+    font-style: $style;
+    font-weight: $weight;
+    src: url("#{$font-path}NeuePlak-#{$name}.woff2") format("woff2"), url("#{$font-path}NeuePlak-#{$name}.woff") format("woff");
+  }
+}
+
+@mixin neue-wide($weight, $style, $name) {
+  @font-face {
+    font-family: "Neue Plak Wide";
+    font-style: $style;
+    font-weight: $weight;
+    src: url("#{$font-path}NeuePlak-#{$name}.woff2") format("woff2"), url("#{$font-path}NeuePlak-#{$name}.woff") format("woff");
+  }
+}
+
+@mixin molde-exp($weight, $style, $name) {
+  @font-face {
+    font-family: "Molde Expanded";
+    font-style: $style;
+    font-weight: $weight;
+    src: url("#{$font-path}Molde-Expanded-#{$name}.woff2") format("woff2"), url("#{$font-path}Molde-Expanded-#{$name}.woff") format("woff");
+  }
+}
+
+@mixin molde-semi($weight, $style, $name) {
+  @font-face {
+    font-family: "Molde Semi Expanded";
+    font-style: $style;
+    font-weight: $weight;
+    src: url("#{$font-path}Molde-SemiExpanded-#{$name}.woff2") format("woff2"), url("#{$font-path}Molde-SemiExpanded-#{$name}.woff") format("woff");
+  }
+}
+
+@mixin berg-mono($weight, $style, $name) {
+  @font-face {
+    font-family: "Bergen Mono";
+    font-style: $style;
+    font-weight: $weight;
+    src: url("#{$font-path}BergenMono-#{$name}.woff2") format("woff2"), url("#{$font-path}BergenMono-#{$name}.woff") format("woff");
+  }
+}
+
+@include now(normal, normal, Regular);
+@include now(500, normal, Medium);
+@include now(bold, normal, Bold);
+@include now(800, normal, ExtraBold);
+@include now(900, normal, Black);
+
+@include neue(normal, normal, Regular);
+@include neue(600, normal, SemiBold);
+@include neue(bold, normal, Bold);
+@include neue(900, normal, Black);
+
+@include neue-ext(normal, normal, Regular);
+@include neue-ext(600, normal, SemiBold);
+@include neue-ext(bold, normal, Bold);
+@include neue-ext(800, normal, Black);
+@include neue-ext(900, normal, ExtraBlack);
+
+@include neue-ext-extra(900, normal, ExtendedExtraBlack);
+
+@include neue-extra(900, normal, ExtraBlack);
+
+@include neue-wide(normal, normal, WideRegular);
+@include neue-wide(600, normal, WideSemiBold);
+@include neue-wide(bold, normal, WideBold);
+@include neue-wide(900, normal, WideBlack);
+
+@include molde-exp(normal, normal, Regular);
+@include molde-exp(500, normal, Medium);
+@include molde-exp(600, normal, Semibold);
+@include molde-exp(bold, normal, Bold);
+@include molde-exp(900, normal, Black);
+
+@include molde-semi(normal, normal, Regular);
+@include molde-semi(500, normal, Medium);
+@include molde-semi(600, normal, Semibold);
+@include molde-semi(bold, normal, Bold);
+
+@include berg-mono(normal, normal, Regular);
+@include berg-mono(600, normal, SemiBold);
+@include berg-mono(700, normal, Bold);
+
+
+/* MAIN FONT */
+
+$font-main: "Helvetica Now Text", sans-serif;
 
 :root {
   -moz-tab-size: 4;
@@ -30,7 +141,7 @@ $font-main: "Folio Std", sans-serif;
 }
 
 html {
-  font-family: $font-main;
+  font-family: 'Helvetica Now Text';
   font-size: 10px;
 }
 

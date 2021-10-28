@@ -34,7 +34,7 @@ export default function Atelier() {
         <div className="w-full mb-4 md:w-full lg:w-full px-2">
           <div className="relative image__lg rounded-lg bg-gray-100 text-sm text-white flex items-center justify-center">
             <div className="image__title">
-              <h1>Atelier.</h1>
+              <h2>Atelier.</h2>
             </div>
             <div className="image__sub">
             <p>Lorem Ipsum</p>
