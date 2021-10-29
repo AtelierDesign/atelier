@@ -5,21 +5,15 @@ import Head from 'next/head';
 import Link from 'next/link';
 import DesignSystem from '../lib/des.system.js';
 
-
-
-
-
 export default function Design() {
-
   return (
-<>
-  <Head>
-    <title>Design.System</title>
-  </Head>
-  <div>
-  <DesignSystem />
-  </div>
-</>
-
+    <>
+      <Head>
+        <title>Design.System</title>
+      </Head>
+      <div>
+        <DesignSystem />
+      </div>
+    </>
   );
 }

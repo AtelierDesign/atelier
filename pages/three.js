@@ -7,8 +7,6 @@ import Time from '../components/time';
 import Image from 'next/image';
 import Link from 'next/link';
 
-
-
 export default function Three() {
     const ref = useRef()
 

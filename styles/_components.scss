@@ -15,7 +15,7 @@ section {
   position: relative;
 }
 
-.section {
+.section__section {
   position: relative;
   margin-top: 10px;
   margin-bottom: 0px;
@@ -28,7 +28,7 @@ section {
 }
 
 @media only screen and (max-width: 600px) {
-  .section {
+  .section__section {
     height: 60vh;
   }
 }
@@ -174,9 +174,9 @@ section {
 }
 
 @media only screen and (max-width: 600px) {
-.subscribe__inner {
-  width: 80%;
- }
+  .subscribe__inner {
+    width: 80%;
+  }
 }
 
 .cover {
@@ -185,7 +185,7 @@ section {
   height: 100vh;
   margin: 0;
   padding: 0;
-  background-color: rgba(240,240,240,0.8);
+  background-color: rgba(240, 240, 240, 0.8);
   backdrop-filter: blur(2rem);
   -webkit-backdrop-filter: blur(2rem);
   z-index: 3 !important;
@@ -198,7 +198,7 @@ section {
   height: 100vh;
   margin: 0;
   padding: 0;
-  background-color: rgba(240,240,240,0.5);
+  background-color: rgba(240, 240, 240, 0.5);
   backdrop-filter: blur(2rem);
   -webkit-backdrop-filter: blur(2rem);
   z-index: 3 !important;

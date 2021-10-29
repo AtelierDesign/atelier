@@ -9,38 +9,31 @@ import Help from '../components/help';
 import Cta from '../components/cta';
 import Footeralt from '../components/footeralt';
 
-import { Tab } from '@headlessui/react'
-
-
-
+import { Tab } from '@headlessui/react';
 
 export default function Policy() {
-
   return (
-<>
-  <Head>
-    <title>Privacy.</title>
-  </Head>
-  <Navbar />
+    <>
+      <Head>
+        <title>Privacy.</title>
+      </Head>
+      <Navbar />
 
-  <Section>
-    <div className="center__div">
-      <h4 className="section__title">Privacy.</h4>
-      <p>
-        Please contact
-        <Link href="mailto: sales@ady.world">
-          <a>
-            {" "}
-            ( <strong> sales@ady.world </strong> ){" "}
-          </a>
-        </Link>
-        for any questions or concerns.
-      </p>
-    </div>
-  </Section>
-
-
-</>
-
+      <Section>
+        <div className="center__div">
+          <h4 className="section__title">Privacy.</h4>
+          <p>
+            Please contact
+            <Link href="mailto: sales@ady.world">
+              <a>
+                {' '}
+                ( <strong> sales@ady.world </strong> ){' '}
+              </a>
+            </Link>
+            for any questions or concerns.
+          </p>
+        </div>
+      </Section>
+    </>
   );
 }

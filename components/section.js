@@ -7,7 +7,7 @@ export default function Section({ children, ...props }) {
 
   return (
 <section>
-  <div className="section">
+  <div className="section__section">
     <div className="section__content">
       {/* Section Elements Here */}
       {children}
