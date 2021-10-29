@@ -14,6 +14,6 @@ module.exports = {
 	  domains: ['cdn.ady.systems', 'ady.systems'],
 	},
   experimental: {
-    urlImports: ['https://cdn.ady.systems/'],
+    urlImports: ['https://cdn.ady.systems/', 'https://cdn.skypack.dev/'],
   },
 }
