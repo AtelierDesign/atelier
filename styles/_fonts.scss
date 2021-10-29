@@ -1,11 +1,43 @@
-// fonts
-// https://npm.im/inter-ui
-// https://github.com/rsms/inter
+// fonts @mixins
+// https://raw.githubusercontent.com/AtelierDesign/atelier/be80c9eceb856c8c0127f08e1bd9cb08261ec19b/styles/_fonts.scss
+//
+// /styles/_fonts.scss
 
+/*
+ * this @fontface stylesheet is used to deliver
+ * Atelier Design Yield©, LLC web fonts.
+ * the typefaces listed below may be subject to © Copyright
+ *
+ * https://cdn.ady.systems/typeface/
+ * For font license information, see the list below.
+ *
+ *
+ * 'fonts-included': {
+ * 'NEUE PLAK' ( Regular, Semi-Bold, Bold, Extra-Bold ),
+ * 'NEUE PLAK EXT' ( Black ),
+ * 'HELVETICA NOW' ( Regular, Medium, Bold, Extra-Bold, Black ),
+ * 'NEUE PLAK WIDE' ( Regular, Semi-Bold, Bold, Extra-Bold, Black ),
+ * 'MOLDE EXPANDED',
+ * 'MOLDE SEMI EXPANDED',
+ * 'BERGEN MONO' ( Regular, Semi-Bold, Bold ),
+ * 'HELVETICA' ( Fallback ),
+ * },
+ *
+ * © 2016-2021 Atelier Design Yield. All Rights Reserved.
+ *
+/* "updated":"2021-10-27 06:53:15 UTC" */
 
 
 $font-display: swap;
 $font-path: "https://cdn.ady.systems/typeface/";
+
+// helvetica now
+@include now(300, normal, Light);
+@include now(normal, normal, Regular);
+@include now(500, normal, Medium);
+@include now(bold, normal, Bold);
+@include now(800, normal, ExtraBold);
+@include now(900, normal, Black);
 
 @mixin now($weight, $style, $name) {
   @font-face {
@@ -16,6 +48,11 @@ $font-path: "https://cdn.ady.systems/typeface/";
   }
 }
 
+// neue plak
+@include neue(normal, normal, Regular);
+@include neue(600, normal, SemiBold);
+@include neue(bold, normal, Bold);
+@include neue(900, normal, Black);
 @mixin neue($weight, $style, $name) {
   @font-face {
     font-family: "Neue Plak";
@@ -25,6 +62,12 @@ $font-path: "https://cdn.ady.systems/typeface/";
   }
 }
 
+// neue plak extended
+@include neue-ext(normal, normal, Regular);
+@include neue-ext(600, normal, SemiBold);
+@include neue-ext(bold, normal, Bold);
+@include neue-ext(800, normal, Black);
+@include neue-ext(900, normal, ExtraBlack);
 @mixin neue-ext($weight, $style, $name) {
   @font-face {
     font-family: "Neue Plak Extended";
@@ -34,6 +77,10 @@ $font-path: "https://cdn.ady.systems/typeface/";
   }
 }
 
+// neue plak extended extrablack
+// neue plak extra
+@include neue-ext-extra(900, normal, ExtendedExtraBlack);
+@include neue-extra(900, normal, ExtraBlack);
 @mixin neue-ext-extra($weight, $style, $name) {
   @font-face {
     font-family: "Neue Plak Extended Extra";
@@ -42,7 +89,6 @@ $font-path: "https://cdn.ady.systems/typeface/";
     src: url("#{$font-path}NeuePlak-#{$name}.woff2") format("woff2"), url("#{$font-path}NeuePlak-#{$name}.woff") format("woff");
   }
 }
-
 @mixin neue-extra($weight, $style, $name) {
   @font-face {
     font-family: "Neue Plak Extra";
@@ -52,6 +98,11 @@ $font-path: "https://cdn.ady.systems/typeface/";
   }
 }
 
+// neue plak wide
+@include neue-wide(normal, normal, WideRegular);
+@include neue-wide(600, normal, WideSemiBold);
+@include neue-wide(bold, normal, WideBold);
+@include neue-wide(900, normal, WideBlack);
 @mixin neue-wide($weight, $style, $name) {
   @font-face {
     font-family: "Neue Plak Wide";
@@ -61,6 +112,12 @@ $font-path: "https://cdn.ady.systems/typeface/";
   }
 }
 
+// molde expanded
+@include molde-exp(normal, normal, Regular);
+@include molde-exp(500, normal, Medium);
+@include molde-exp(600, normal, Semibold);
+@include molde-exp(bold, normal, Bold);
+@include molde-exp(900, normal, Black);
 @mixin molde-exp($weight, $style, $name) {
   @font-face {
     font-family: "Molde Expanded";
@@ -70,6 +127,11 @@ $font-path: "https://cdn.ady.systems/typeface/";
   }
 }
 
+// molde semi-expanded
+@include molde-semi(normal, normal, Regular);
+@include molde-semi(500, normal, Medium);
+@include molde-semi(600, normal, Semibold);
+@include molde-semi(bold, normal, Bold);
 @mixin molde-semi($weight, $style, $name) {
   @font-face {
     font-family: "Molde Semi Expanded";
@@ -79,6 +141,10 @@ $font-path: "https://cdn.ady.systems/typeface/";
   }
 }
 
+// bergen mono
+@include berg-mono(normal, normal, Regular);
+@include berg-mono(600, normal, SemiBold);
+@include berg-mono(700, normal, Bold);
 @mixin berg-mono($weight, $style, $name) {
   @font-face {
     font-family: "Bergen Mono";
@@ -87,49 +153,6 @@ $font-path: "https://cdn.ady.systems/typeface/";
     src: url("#{$font-path}BergenMono-#{$name}.woff2") format("woff2"), url("#{$font-path}BergenMono-#{$name}.woff") format("woff");
   }
 }
-
-@include now(300, normal, Light);
-@include now(normal, normal, Regular);
-@include now(500, normal, Medium);
-@include now(bold, normal, Bold);
-@include now(800, normal, ExtraBold);
-@include now(900, normal, Black);
-
-@include neue(normal, normal, Regular);
-@include neue(600, normal, SemiBold);
-@include neue(bold, normal, Bold);
-@include neue(900, normal, Black);
-
-@include neue-ext(normal, normal, Regular);
-@include neue-ext(600, normal, SemiBold);
-@include neue-ext(bold, normal, Bold);
-@include neue-ext(800, normal, Black);
-@include neue-ext(900, normal, ExtraBlack);
-
-@include neue-ext-extra(900, normal, ExtendedExtraBlack);
-
-@include neue-extra(900, normal, ExtraBlack);
-
-@include neue-wide(normal, normal, WideRegular);
-@include neue-wide(600, normal, WideSemiBold);
-@include neue-wide(bold, normal, WideBold);
-@include neue-wide(900, normal, WideBlack);
-
-@include molde-exp(normal, normal, Regular);
-@include molde-exp(500, normal, Medium);
-@include molde-exp(600, normal, Semibold);
-@include molde-exp(bold, normal, Bold);
-@include molde-exp(900, normal, Black);
-
-@include molde-semi(normal, normal, Regular);
-@include molde-semi(500, normal, Medium);
-@include molde-semi(600, normal, Semibold);
-@include molde-semi(bold, normal, Bold);
-
-@include berg-mono(normal, normal, Regular);
-@include berg-mono(600, normal, SemiBold);
-@include berg-mono(700, normal, Bold);
-
 
 /* MAIN FONT */
 

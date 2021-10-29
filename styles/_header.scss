@@ -15,6 +15,7 @@ header {
   height: 4.4rem;
   background-color: rgba(240,240,240,0.8);
   backdrop-filter: blur(2rem);
+  -webkit-backdrop-filter: blur(2rem);
 }
 
 .desktop__link {
@@ -126,6 +127,7 @@ header {
   border-bottom-right-radius: 18px;
   background-color: rgba(240,240,240,0.8);
   backdrop-filter: blur(2rem);
+  -webkit-backdrop-filter: blur(2rem);
   z-index: 1300;
 }
 

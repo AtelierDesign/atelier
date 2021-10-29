@@ -1,7 +1,7 @@
 // colors
-$c000: #ffffff;
-$c005: #f5f5f5;
-$c010: #e5e5e5;
+$c000: #ffffff; // white
+$c005: #f5f5f5; // blk
+$c010: #e5e5e5; //
 $c020: #cccccc;
 $c030: #b2b2b2;
 $c040: #999999;
@@ -18,8 +18,16 @@ $mobile: 696px;
 
 // heights
 $hfull: 100vh;
-
 $h700: 700px;
 $h600: 600px;
 $h500: 500px;
 $h400: 400px;
+
+// widths
+$w100: 100vw;
+$w90: 90vw;
+$w80: 80vw;
+$w70: 70vw;
+$w60: 60vw;
+$w50: 50vw;
+$w40: 40vw;
