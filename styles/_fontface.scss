@@ -64,6 +64,18 @@
 }
 
 @font-face {
+    font-family: 'Helvetica Now Text';
+    src: url('https://cdn.ady.systems/typeface/HelveticaNowText-Light.eot');
+    src: local('Helvetica Now Text  Light'), local('HelveticaNowText-Light'),
+        url('https://cdn.ady.systems/typeface/HelveticaNowText-Light.eot?#iefix') format('embedded-opentype'),
+        url('https://cdn.ady.systems/typeface/HelveticaNowText-Light.woff2') format('woff2'),
+        url('https://cdn.ady.systems/typeface/HelveticaNowText-Light.woff') format('woff'),
+        url('https://cdn.ady.systems/typeface/HelveticaNowText-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
   font-family: "Helvetica Now Text";
   src: url("https://cdn.ady.systems/typeface/HelveticaNowText-Regular.eot");
   src: local("Helvetica Now Text  Regular"), local("HelveticaNowText-Regular"),

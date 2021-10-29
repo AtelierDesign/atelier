@@ -1,3 +1,3 @@
 # Atelier Design Yield®
 
-Official website of Atelier Design Yield®.
+Atelier Design Yield® Website

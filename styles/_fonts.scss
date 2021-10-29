@@ -88,6 +88,7 @@ $font-path: "https://cdn.ady.systems/typeface/";
   }
 }
 
+@include now(300, normal, Light);
 @include now(normal, normal, Regular);
 @include now(500, normal, Medium);
 @include now(bold, normal, Bold);
