@@ -1,0 +1,16 @@
+/*
+ * Skypack CDN - react-bootstrap@2.0.1
+ *
+ * Learn more:
+ *   📙 Package Documentation: https://www.skypack.dev/view/react-bootstrap
+ *   📘 Skypack Documentation: https://www.skypack.dev/docs
+ *
+ * Pinned URL: (Optimized for Production)
+ *   ▶️ Normal: https://cdn.skypack.dev/pin/react-bootstrap@v2.0.1-maKdA9GIMoGX6XzgEDaV/mode=imports/optimized/react-bootstrap.js
+ *   ⏩ Minified: https://cdn.skypack.dev/pin/react-bootstrap@v2.0.1-maKdA9GIMoGX6XzgEDaV/mode=imports,min/optimized/react-bootstrap.js
+ *
+ */
+
+// Browser-Optimized Imports (Don't directly import the URLs below in your application!)
+export * from '/-/react-bootstrap@v2.0.1-maKdA9GIMoGX6XzgEDaV/dist=es2020,mode=imports/optimized/react-bootstrap.js';
+export {default} from '/-/react-bootstrap@v2.0.1-maKdA9GIMoGX6XzgEDaV/dist=es2020,mode=imports/optimized/react-bootstrap.js';
