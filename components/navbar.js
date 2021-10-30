@@ -24,10 +24,10 @@ export default function Navbar() {
 
           <Transition
             show={isShowing}
-            enter="transition-opacity ease-in-out duration-500"
+            enter="transition-opacity ease-in-out duration-350"
             enterFrom="opacity-0"
             enterTo="opacity-100"
-            leave="transition-opacity ease-linear duration-500"
+            leave="transition-opacity ease-linear duration-350"
             leaveFrom="opacity-100"
             leaveTo="opacity-0"
           >
