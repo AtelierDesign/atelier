@@ -12,7 +12,7 @@ export default function Subscribe() {
         <div className="production__container_lg">
           <div className="input__group">
           <InputGroup size="sm">
-            <InputGroup.Text id="inputGroup-sizing-sm"><h4>Subscribe</h4></InputGroup.Text>
+            <InputGroup.Text id="inputGroup-sizing-sm"><h5>Subscribe</h5></InputGroup.Text>
             <br></br>
             <FormControl className="glass__input" aria-label="Small" aria-describedby="inputGroup-sizing-sm" placeholder="Email address" />
           </InputGroup>

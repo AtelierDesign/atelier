@@ -42,7 +42,6 @@ h1 {
   font-weight: 800;
   font-style: normal;
   line-height: 1;
-  text-transform: uppercase;
   letter-spacing: -0.1rem;
   padding: 8px;
   color: #333333;
@@ -89,13 +88,13 @@ h4 {
 }
 
 h5 {
-  font-family: 'Neue Plak Wide', sans-serif;
-  font-size: 40px;
+  font-family: 'Helvetica Now Text', sans-serif;
+  font-size: 24px;
   font-weight: bold;
   font-style: normal;
   line-height: 1;
   letter-spacing: normal;
-  text-transform: uppercase !important;
+  text-transform: none;
   padding: 8px;
   color: #333333;
   z-index: 9999;
