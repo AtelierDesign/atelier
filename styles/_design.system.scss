@@ -26,6 +26,15 @@
 }
 */
 
+.row__justify {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center !important;
+  text-align: center !important;
+  margin: auto;
+}
+
 .design__system {
   max-width: 100vw;
   overflow: hidden;

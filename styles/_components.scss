@@ -10,6 +10,210 @@
  * © 2016-2021 Atelier Design Yield. All Rights Reserved.
  *
 /* "updated":"2021-10-27 06:53:15 UTC" */
+.row__justify__production {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center !important;
+  text-align: center !important;
+  margin: auto;
+  width: 100%;
+}
+
+.row__justify__production__small {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center !important;
+  text-align: center !important;
+  margin: auto;
+}
+
+.block__button__wrapper {
+  position: relative;
+  margin: auto;
+  max-width: 40vw;
+  width: 100%;
+  padding: 6px;
+  height: auto;
+  align-items: center !important;
+  text-align: center !important;
+  background-color: transparent;
+  z-index: 1;
+  /* border-style: solid; */
+  /* border-width: 1px; */
+  /* border-color: #999999; */
+  border-radius: 6px;
+}
+
+.button__wrapper {
+  position: relative;
+  margin: auto;
+  max-width: 40vw;
+  width: 100%;
+  padding: 6px;
+  height: auto;
+  align-items: center !important;
+  text-align: center !important;
+  background-color: transparent;
+  z-index: 1;
+  /* border-style: solid; */
+  /* border-width: 1px; */
+  /* border-color: #999999; */
+  border-radius: 6px;
+}
+
+.button__one,
+.button__two,
+.button__three,
+.button__four,
+.block__button,
+.block__button__secondary {
+  &:hover {
+    background-color: #6D6A75;
+    opacity: .7;
+  }
+}
+
+.button__one {
+  font-family: 'Helvetica Now Text', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 14px;
+  line-height: auto;
+  background-color: #61ff7e;
+  color: #231f20;
+  padding: 6px 35px;
+  border-radius: 8px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgba(240,240,240,0.4);
+  backdrop-filter: blur(2rem);
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 2px;
+  margin-right: 2px;
+  cursor: pointer;
+}
+
+.button__two {
+  font-family: 'Helvetica Now Text', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 14px;
+  line-height: auto;
+  background-color: #3D5467;
+  color: #fff;
+  padding: 6px 35px;
+  border-radius: 8px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgba(240,240,240,0.4);
+  backdrop-filter: blur(2rem);
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 2px;
+  margin-right: 2px;
+  cursor: pointer;
+}
+
+.button__three {
+  font-family: 'Helvetica Now Text', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 14px;
+  line-height: auto;
+  background-color: #DBDBDB;
+  color: #231f20;
+  padding: 6px 35px;
+  border-radius: 8px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgba(240,240,240,0.4);
+  backdrop-filter: blur(2rem);
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 2px;
+  margin-right: 2px;
+  cursor: pointer;
+}
+
+.button__four {
+  font-family: 'Helvetica Now Text', sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 2;
+  background-color: #252627;
+  color: white;
+  padding: 6px 35px;
+  border-radius: 8px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgba(240,240,240,0.4);
+  backdrop-filter: blur(2rem);
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 2px;
+  margin-right: 2px;
+  cursor: pointer;
+}
+
+.block__button {
+  font-family: 'Helvetica Now Text', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 14px;
+  line-height: normal;
+  background-color: #3D5467;
+  color: white;
+  width: 100%;
+  padding: 6px 35px;
+  border-radius: 8px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgba(240,240,240,0.4);
+  backdrop-filter: blur(2rem);
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 5px;
+  cursor: pointer;
+}
+
+.block__button__secondary {
+  font-family: 'Helvetica Now Text', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 14px;
+  line-height: normal;
+  background-color: #61ff7e;
+  color: #231f20;
+  width: 100%;
+  padding: 6px 35px;
+  border-radius: 8px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgba(240,240,240,0.4);
+  backdrop-filter: blur(2rem);
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 5px;
+  cursor: pointer;
+}
 
 section {
   position: relative;
@@ -139,6 +343,41 @@ section {
     margin: auto;
   }
   .hero__inner {
+    text-align: center;
+    margin: 0;
+    padding: 1.2rem;
+    width: 100%;
+  }
+}
+
+.hero__small {
+  position: relative;
+  width: 100vw;
+  height: 30vh;
+  overflow: auto;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  padding: 0rem;
+  margin: auto;
+}
+
+.hero__sm__inner {
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  margin: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .hero__small {
+    height: 25vh;
+    padding: 2rem;
+    margin: auto;
+  }
+  .hero__sm__inner {
     text-align: center;
     margin: 0;
     padding: 1.2rem;
@@ -305,12 +544,22 @@ section {
 }
 
 .glass__input {
+  &:hover {
+    border-color: #6D6A75;
+    opacity: .7;
+  }
+  &:focus {
+    color: yellow;
+  }
+}
+
+.glass__input {
   height: 35px !important;
   border-radius: 8px !important;
   background-color: #fff;
   border-style: solid !important;
   border-width: 2px !important;
-  border-color: #231f20 !important;
+  border-color: #3D5467 !important;
   /*
   border-color: #aaf683 !important;
   */
@@ -334,5 +583,49 @@ section {
     height: auto;
     align-items: center;
     text-align: center;
+  }
+}
+
+.codebox {
+  @include true-select;
+  position: relative;
+  width: 100vw;
+  height: auto;
+  overflow: auto;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  padding: 0rem;
+  margin: auto;
+}
+
+.code__inner {
+  @include true-select;
+  position: relative;
+  color: #000;
+  margin: auto;
+  max-width: 40vw;
+  width: 100%;
+  padding: 20px;
+  height: auto;
+  text-align: left;
+  background-color: transparent;
+  z-index: 1;
+  /* border-style: solid; */
+  /* border-width: 1px; */
+  /* border-color: #999999; */
+  border-radius: 6px;
+}
+
+@media only screen and (max-width: 600px) {
+  .codebox{
+    height: 65vh;
+    padding: 2rem;
+    margin: auto;
+  }
+  .code__inner {
+    text-align: center;
+    margin: 0;
+    padding: 1.2rem;
+    width: 100%;
   }
 }

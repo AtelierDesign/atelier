@@ -1,11 +1,14 @@
 import Image from 'next/image';
 import Head from 'next/head';
+import Link from 'next/link';
 import Navbar from '../components/navbar';
-import Hero from '../components/hero';
+import HeroSmall from '../components/herosmall';
 import Subscribe from '../components/subscribe';
 import Section from '../components/section';
 import Cta from '../components/cta';
+import B1 from '../components/buttons/b1'
 import Footeralt from '../components/footeralt';
+
 
 export default function New() {
   return (
@@ -14,9 +17,9 @@ export default function New() {
         <title>New Releases.</title>
       </Head>
       <Navbar />
-      <Hero>
-        <h3>New.</h3>
-      </Hero>
+      <HeroSmall>
+        <h3>New Releases.</h3>
+      </HeroSmall>
       <div className="sand__box">
         <div className="container mx-auto">
           <div className="flex flex-wrap h-auto -mx-0 mb-0 mt-6 z-20 bg-transparent z-8">
@@ -114,9 +117,11 @@ export default function New() {
       {/*Call-To-Action*/}
       <Cta>
         <p>Shop All Products</p>
-        <button className="bg-drey-light border-1 border-lime hover:bg-gray-600 text-white font-bold w-1/2 mt-5 py-2 px-4 rounded-sm">
-          Shop all products
-        </button>
+        <B1>
+          <Link href="/new">
+          <a>Shop All Products</a>
+          </Link>
+        </B1>
       </Cta>
 
       {/*SECTION 001*/}

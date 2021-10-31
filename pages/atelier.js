@@ -7,6 +7,8 @@ import Subscribe from '../components/subscribe';
 import Section from '../components/section';
 import Cta from '../components/cta';
 import Footeralt from '../components/footeralt';
+import B2 from '../components/buttons/b2'
+import BlockB2 from '../components/buttons/blockb2'
 
 export default function Atelier() {
   return (
@@ -16,8 +18,8 @@ export default function Atelier() {
       </Head>
       <Navbar />
       <Hero>
-      <h1>Welcome.</h1>
-        <p>
+      <h1>THE DESIGN YIELD®</h1>
+        <p className="p_lg">
           An ever– expanding ecosystem of essential design components, for artists to empower the
           new culture of design.
         </p>
@@ -40,7 +42,7 @@ export default function Atelier() {
                   </Link>
                 </div>
                 <Image
-                  src="https://cdn.ady.systems/assets/placeholder.png"
+                  src="https://cdn.ady.systems/assets/green.jpg"
                   alt="One"
                   layout="fill"
                   objectFit="cover"
@@ -99,9 +101,11 @@ export default function Atelier() {
       {/*Call-to-Action*/}
       <Cta>
         <p>Shop All Products</p>
-        <button className="bg-pewter border-1 border-lime hover:bg-gray-600 text-white font-bold w-1/2 mt-5 py-2 px-4 rounded-sm">
-          Shop all products
-        </button>
+        <B2>
+          <Link href="/new">
+          <a>Shop All Products</a>
+          </Link>
+        </B2>
       </Cta>
 
       {/*SECTION 001*/}
@@ -110,6 +114,11 @@ export default function Atelier() {
         <p>
           <strong>This is a section, you can put whatever the hell you want here.</strong>
         </p>
+        <BlockB2>
+        <Link href="/new">
+          <a>Shop All Products</a>
+        </Link>
+        </BlockB2>
       </Section>
 
       {/*Email Subscribe*/}
