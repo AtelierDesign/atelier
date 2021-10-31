@@ -618,14 +618,16 @@ section {
 
 @media only screen and (max-width: 600px) {
   .codebox{
-    height: 65vh;
+    height: auto;
     padding: 2rem;
     margin: auto;
+    width: 100%;
   }
   .code__inner {
     text-align: center;
-    margin: 0;
-    padding: 1.2rem;
+    @include no-select;
     width: 100%;
+    max-width: 90vw;
+    padding: 2px;
   }
 }
