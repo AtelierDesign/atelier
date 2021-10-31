@@ -35,6 +35,9 @@ export default function Atelier() {
                   incididunt
                   <br /> ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                   exercitation.</p>
+                  <Link href="https://api.ady.world" passHref>
+                  <a>api.ady</a>
+                  </Link>
                 </div>
                 <Image
                   src="https://cdn.ady.systems/assets/placeholder.png"
