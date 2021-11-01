@@ -11,7 +11,6 @@ export default function Join() {
     <>
       <Head>
         <title>Join.</title>
-        <script type="text/javascript" async src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=WiNjPw"></script>
       </Head>
       <Navbar />
       <div className="cover__page">

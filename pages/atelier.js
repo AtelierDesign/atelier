@@ -3,7 +3,6 @@ import Link from 'next/link';
 import Head from 'next/head';
 import Navbar from '../components/navbar';
 import Hero from '../components/hero';
-import Subscribe from '../components/subscribe';
 import Section from '../components/section';
 import Cta from '../components/cta';
 import Footeralt from '../components/footeralt';
@@ -121,8 +120,6 @@ export default function Atelier() {
         </BlockB2>
       </Section>
 
-      {/*Email Subscribe*/}
-      <Subscribe />
       <div className="spa__cer"></div>
       <Footeralt />
 

@@ -32,6 +32,10 @@ code {
   padding-right: 15px;
 }
 
+div.code {
+  white-space: pre;
+}
+
 [hidden] {
   display: none !important;
 }
@@ -124,7 +128,7 @@ h6 {
 
 @media only screen and (max-width: 600px) {
   h1 {
-    font-size: 40px;
+    font-size: 30px;
   }
   h2 {
     font-size: 34px;
@@ -140,6 +144,12 @@ h6 {
   }
   h6 {
     font-size: 24px;
+  }
+  p {
+
+  }
+  .p_lg {
+    font-size: 16px !important;
   }
 }
 

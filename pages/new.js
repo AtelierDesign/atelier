@@ -3,7 +3,6 @@ import Head from 'next/head';
 import Link from 'next/link';
 import Navbar from '../components/navbar';
 import HeroSmall from '../components/herosmall';
-import Subscribe from '../components/subscribe';
 import Section from '../components/section';
 import Cta from '../components/cta';
 import B1 from '../components/buttons/b1'
@@ -129,10 +128,7 @@ export default function New() {
         <div className="section__home">
           <h2>This is a Section.</h2>
         </div>
-      </Section>
 
-      {/*Subscribe*/}
-      <Subscribe />
       <div className="spa__cer"></div>
       <Footeralt />
     </>
