@@ -1,4 +1,5 @@
-import Link from 'next/link'
+import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Footer() {
   return (
@@ -13,19 +14,20 @@ export default function Footer() {
           rel="noopener noreferrer"
         >
           <div>
-            <svg
-              width="15"
-              height="15"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
+          <Image
+            src="/svg/lime_butterfly.svg"
+            alt="A®"
+            width={30}
+            height={30}
+            />
+            {/* Escape "A®"" Logo for now
+            <svg width="15" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g>
-                <path
-                  fill="#000"
-                  d="M10.5,10.5H4.5L3.8,12H0.7l4.7-9h4.2l4.7,9h-3.1L10.5,10.5z M7.8,5.1H7.2L5.5,8.5h4L7.8,5.1z"
-                />
+                <path fill="#000" d="M10.5,10.5H4.5L3.8,12H0.7l4.7-9h4.2l4.7,9h-3.1L10.5,10.5z M7.8,5.1H7.2L5.5,8.5h4L7.8,5.1z" />
               </g>
             </svg>
+            */}
+
           </div>
         </a>
       </div>
