@@ -128,6 +128,7 @@ export default function New() {
         <div className="section__home">
           <h2>This is a Section.</h2>
         </div>
+        </Section>
 
       <div className="spa__cer"></div>
       <Footeralt />
