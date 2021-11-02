@@ -12,7 +12,7 @@ export default function Navbar() {
   return (
 
 <header>
-  <div className="h-full pt-4 pb-4 lg:pt-5 md:pt-5">
+  <div className="h-full pt-4 pb-2 lg:pt-3 md:pt-3">
     <div className="flex items-center justify-between md:container mx-0 my-0 px-0 py-0 md:px-0">
       <div className="lg:hidden md:hidden">
         <Popover className="popover">
