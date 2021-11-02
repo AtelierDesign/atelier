@@ -17,7 +17,7 @@ export default function Atelier() {
       </Head>
       <Navbar />
       <Hero>
-      <h1>THE DESIGN YIELD®</h1>
+      <h1>Welcome.</h1>
         <p className="p_lg">
           An ever– expanding ecosystem of essential design components, for artists to empower the
           new culture of design.
@@ -31,17 +31,13 @@ export default function Atelier() {
             <div className="w-full mb-4 md:w-full lg:w-full px-2">
               <div className="relative image__lg rounded-lg bg-gray-100 text-sm text-white flex items-center justify-center">
                 <div className="image__title">
-                  <h3>Heading.2</h3>
+                  <h2>ADY® INTERVAL</h2>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                  incididunt
-                  <br /> ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                  incididuntut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                   exercitation.</p>
-                  <Link href="https://api.ady.world" passHref>
-                  <a>api.ady</a>
-                  </Link>
                 </div>
                 <Image
-                  src="https://cdn.ady.systems/assets/green.jpg"
+                  src="https://cdn.ady.systems/assets/blk.jpg"
                   alt="One"
                   layout="fill"
                   objectFit="cover"
@@ -55,8 +51,7 @@ export default function Atelier() {
               <div className="relative image__md rounded-lg bg-gray text-sm text-grey-dark flex items-center justify-center">
                 <div className="product__svg">
                   <Image src="/svg/time.svg" alt="one" width={140} height={70} />
-                  <p>
-                    An Adobe After Effects plugin, allowing you to add aesthetic styles + timecode
+                  <p>An Adobe After Effects plugin, allowing you to add aesthetic styles + timecode
                     displays to your projects.
                   </p>
                 </div>

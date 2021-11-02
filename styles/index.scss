@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 /* Custom Components & Variables */
 @import "variables";
 @import "fontface";
@@ -9,7 +10,7 @@
 @import "components";
 @import "elements";
 @import "design.system";
-@import "highlight.js/styles/androidstudio.css";
+@import "atelier";
 
 /* Tailwind.css */
 @tailwind base;
@@ -23,6 +24,11 @@
   --tw-ring-color: transparent;
   --tw-ring-offset-shadow: 0;
   --tw-ring-shadow: 0
+}
+
+h1,h2,h3,h4,h5,h6 { font-family: 'InterDisplay', sans-serif; }
+  @supports (font-variation-settings: normal) {
+    h1,h2,h3,h4,h5,h6 { font-family: 'InterDisplay var', sans-serif; }
 }
 
 code {
@@ -43,30 +49,32 @@ div.code {
 /* All typography styles */
 
 strong {
-  font-family: 'Helvetica Now Text', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 500;
   font-style: normal;
+  font-size: inherit;
 }
 
 h1 {
-  font-family: 'Helvetica Now Text', sans-serif;
-  font-size: 45px;
-  font-weight: 800;
-  font-style: normal;
+  font-family: 'Inter';
+  font-display: swap;
+  font-style:  normal;
+  font-weight: 700;
+  font-size: 4em;
+  letter-spacing: -0.04em;
   line-height: 1;
-  letter-spacing: -0.1rem;
   padding: 8px;
   color: #333333;
   z-index: 9999;
 }
 
 h2 {
-  font-family: 'Helvetica Now Text', sans-serif;
-  font-size: 38px;
-  font-weight: 800;
+  font-family: 'Inter', sans-serif;
+  font-size: 3.8em;
+  font-weight: 700;
   font-style: normal;
   line-height: 1;
-  text-transform: uppercase;
+  // text-transform: uppercase;
   letter-spacing: -0.1rem;
   padding: 8px;
   color: #333333;
@@ -74,12 +82,12 @@ h2 {
 }
 
 h3 {
-  font-family: 'Helvetica Now Text', sans-serif;
-  font-size: 30px;
-  font-weight: 800;
+  font-family: 'Inter', sans-serif;
+  font-size: 3.8em;
+  font-weight: 500;
   font-style: normal;
   line-height: 1;
-  text-transform: uppercase;
+  // text-transform: uppercase;
   letter-spacing: -0.1rem;
   padding: 8px;
   color: #333333;
@@ -87,9 +95,9 @@ h3 {
 }
 
 h4 {
-  font-family: 'Helvetica Now Text', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 24px;
-  font-weight: 800;
+  font-weight: 700;
   font-style: normal;
   line-height: 1;
   letter-spacing: normal;
@@ -100,9 +108,9 @@ h4 {
 }
 
 h5 {
-  font-family: 'Helvetica Now Text', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 24px;
-  font-weight: bold;
+  font-weight: 700;
   font-style: normal;
   line-height: 1;
   letter-spacing: normal;
@@ -128,10 +136,10 @@ h6 {
 
 @media only screen and (max-width: 600px) {
   h1 {
-    font-size: 30px;
+    font-size: 3em;
   }
   h2 {
-    font-size: 34px;
+    font-size: 3.2em;
   }
   h3 {
     font-size: 28px;
@@ -161,21 +169,21 @@ h6 {
 }
 
 p {
-  font-family: 'Helvetica Now Text', sans-serif;
-  font-size: 14px;
-  font-weight: normal;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
   font-style: normal;
   line-height: 1.3;
-  letter-spacing: 0;
+  letter-spacing: 0em;
   padding: 8px;
   color: #999999;
   z-index: 9999;
 }
 
 .p_lg {
-  font-family: 'Helvetica Now Text', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 20px;
-  font-weight: 300;
+  font-weight: 400;
   font-style: normal;
   line-height: 1.3;
   letter-spacing: 0;
@@ -184,7 +192,7 @@ p {
 }
 
 .p_dark {
-  font-family: 'Helvetica Now Text', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 15px;
   font-weight: normal;
   font-style: normal;
@@ -257,7 +265,7 @@ p:a {
 }
 
 .overlay__big {
-  font-family: 'Helvetica Now Text', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: bold;
   font-size: 15px;
   color: #91AEC1 !important;
@@ -284,24 +292,26 @@ p:a {
   position: absolute;
   top: 0;
   left: 0;
-  font-family: 'Helvetica Now Text', sans-serif;
-  font-size: 32px;
-  font-weight: bold;
-  font-style: normal;
-  line-height: 1;
   color: #fff;
   z-index: 30;
+  width: 50%;
   padding-left: 20px;
   padding-top: 20px;
   padding-right: 4px;
   padding-bottom: 2px;
 }
 
+@media only screen and (max-width: 600px) {
+  .image__title {
+    width: 80%;
+  }
+}
+
 .image__sub {
   position: absolute;
   top: 0;
   left: 0;
-  font-family: 'Helvetica Now Text', sans-serif !important;
+  font-family: 'Inter', sans-serif !important;
   font-size: 14px;
   font-style: normal;
   font-weight: normal;
@@ -385,7 +395,7 @@ p:a {
 }
 
 .caption__title {
-  font-family: 'Helvetica Now Text', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
@@ -401,7 +411,7 @@ p:a {
 }
 
 .caption__description {
-  font-family: 'Helvetica Now Text', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 13px;
   font-style: 500;
   font-weight: normal;
@@ -475,32 +485,20 @@ p:a {
   z-index: 500;
   margin: auto;
   align-items: center;
-  font-size: 16px;
   text-align: center;
   color: #000;
-  width: 50%;
+  width: 60%;
   line-height: 1.3;
 }
 
-@media only screen and (max-width: 800px) {
-.product__svg {
-  padding-top: 15px;
-  font-size: 16px;
-  width: 70%;
-  line-height: 1.3;
- }
+@media only screen and (max-width: 600px) {
+  .product__svg {
+    padding-top: 15px;
+    font-size: 14px;
+    width: 70%;
+    line-height: 1.4;
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
 
 .form-label {
   margin-bottom: 0.5rem;

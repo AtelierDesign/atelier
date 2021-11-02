@@ -17,7 +17,6 @@
   align-items: center !important;
   text-align: center !important;
   margin: auto;
-  width: 100%;
 }
 
 .row__justify__production__small {
@@ -29,10 +28,22 @@
   margin: auto;
 }
 
+@media only screen and (max-width: 600px) {
+  .block__button__wrapper {
+    // max-width: 90vw !important;
+    width: 100% !important;
+  }
+  .button__wrapper {
+    width: 100% !important;
+  }
+  .row__justify__production {
+    margin: auto;
+  }
+}
+
 .block__button__wrapper {
   position: relative;
   margin: auto;
-  max-width: 40vw;
   width: 100%;
   padding: 6px;
   height: auto;
@@ -49,7 +60,6 @@
 .button__wrapper {
   position: relative;
   margin: auto;
-  max-width: 40vw;
   width: 100%;
   padding: 6px;
   height: auto;
@@ -172,7 +182,7 @@
 }
 
 .block__button {
-  font-family: 'Helvetica Now Text', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 500;
   font-style: normal;
   font-size: 14px;
@@ -194,7 +204,7 @@
 }
 
 .block__button__secondary {
-  font-family: 'Helvetica Now Text', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 500;
   font-style: normal;
   font-size: 14px;
@@ -251,7 +261,7 @@ section {
 }
 
 .section__title {
-  font-family: 'Helvetica Now Text', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 40px;
   font-weight: bold;
   font-style: normal;
@@ -453,7 +463,7 @@ section {
 }
 
 .clock {
-  font-family: 'Helvetica Now Text', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 13px;
   font-style: normal;
   font-weight: 500;

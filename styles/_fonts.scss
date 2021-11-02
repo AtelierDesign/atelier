@@ -165,7 +165,7 @@ $font-path: "https://cdn.ady.systems/typeface/";
 
 /* MAIN FONT */
 
-$font-main: "Helvetica Now Text", sans-serif;
+$font-main: "Inter", sans-serif;
 
 :root {
   -moz-tab-size: 4;
@@ -174,8 +174,8 @@ $font-main: "Helvetica Now Text", sans-serif;
 }
 
 html {
-  font-family: 'Helvetica Now Text';
-  font-size: 10px;
+  font-family: 'Inter';
+  font-size: 14px;
 }
 
 body {
