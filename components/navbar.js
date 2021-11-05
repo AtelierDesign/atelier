@@ -62,9 +62,9 @@ export default function Navbar() {
                 <Link href="/join">
                   <a className="popover__small__link">Subscribe</a>
                 </Link>
-                <a className="popover__small__link" href="/account">
-                  My Account
-                </a>
+                <Link href="https://api.ady.world" target="_blank" rel="noreffer">
+                  <a className="popover__small__link">My Account</a>
+                </Link>
 
                 <div className="popover__footer">
                   <div className="popover__logo">

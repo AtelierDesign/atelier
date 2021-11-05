@@ -363,7 +363,7 @@ section {
 .hero__small {
   position: relative;
   width: 100vw;
-  height: 30vh;
+  height: 40vh;
   overflow: auto;
   display: grid;
   grid-template-rows: 1fr auto;
@@ -383,7 +383,7 @@ section {
 
 @media only screen and (max-width: 600px) {
   .hero__small {
-    height: 25vh;
+    height: 35vh;
     padding: 2rem;
     margin: auto;
   }

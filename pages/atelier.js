@@ -31,7 +31,7 @@ export default function Atelier() {
             <div className="w-full mb-4 md:w-full lg:w-full px-2">
               <div className="relative image__lg rounded-lg bg-gray-100 text-sm text-white flex items-center justify-center">
                 <div className="image__title">
-                  <h2>ADY® INTERVAL</h2>
+                  <h2>Ady® Interval</h2>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                   incididuntut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                   exercitation.</p>
