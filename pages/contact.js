@@ -19,47 +19,26 @@ export default function Contact() {
       </Head>
       <Navbar />
 
-      <Section>
-        <div className="center__div">
-          <h4 className="section__title">SUPPORT.</h4>
-          <p>
-            Please contact
-            <Link href="mailto: sales@ady.world">
-              <a>
-                {' '}
-                ( <strong> sales@ady.world </strong> ){' '}
-              </a>
-            </Link>
-            for any questions or concerns.
-          </p>
-        </div>
-      </Section>
+      <form>
+        <h1>Please sign in</h1>
 
-      <Help>
-        <div className="tab__group">
-          <Tab.Group>
-            <Tab.List>
-              <div className="tab__navbar flex justify-center">
-                <Tab className="tab__button bg-drey-light text-white font-bold w-1/2 rounded-sm">
-                  Faq
-                </Tab>
-                <Tab className="tab__button bg-drey-light text-white font-bold w-1/2 rounded-sm">
-                  Sales Support
-                </Tab>
-                <Tab className="tab__button bg-drey-light text-white font-bold w-1/2 rounded-sm">
-                  Terms
-                </Tab>
-              </div>
-            </Tab.List>
-
-            <Tab.Panels className="tab__panels">
-              <Tab.Panel className="tab__content">Faq</Tab.Panel>
-              <Tab.Panel className="tab__content">Sales Support</Tab.Panel>
-              <Tab.Panel className="tab__content">Terms</Tab.Panel>
-            </Tab.Panels>
-          </Tab.Group>
+        <div className="form-floating">
+          <input type="email" className="form-control" id="floatingInput" placeholder="name@example.com" />
+          <label for="floatingInput">Email address</label>
         </div>
-      </Help>
+        <div className="form-floating">
+          <input type="password" className="form-control" id="floatingPassword" placeholder="Password" />
+          <label for="floatingPassword">Password</label>
+        </div>
+
+        <div className="checkbox mb-3">
+          <label>
+            <input type="checkbox" value="remember-me" /> Remember me
+          </label>
+        </div>
+        <button className="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+        <p className="mt-5 mb-3 text-muted">&copy; 2017–2021</p>
+      </form>
     </>
   );
 }

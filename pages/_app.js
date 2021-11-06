@@ -1,8 +1,14 @@
 import Head from 'next/head';
+import { useEffect } from "react";
 import { useCreateStore, Provider } from '../lib/store';
+
 import '../styles/index.scss';
 
 export default function App({ Component, pageProps }) {
+  useEffect(() => {
+    import("bootstrap/dist/js/bootstrap");
+  }, []);
+
   const createStore = useCreateStore(pageProps.initialZustandState);
 
   return (

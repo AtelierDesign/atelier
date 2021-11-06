@@ -8,6 +8,7 @@ import Section from '../components/section';
 import Help from '../components/help';
 import Cta from '../components/cta';
 import Footeralt from '../components/footeralt';
+import HeroDark from '../components/hero/hero_dark';
 
 import { Tab } from '@headlessui/react';
 
@@ -18,6 +19,7 @@ export default function Policy() {
         <title>Privacy.</title>
       </Head>
       <Navbar />
+      <HeroDark />
 
       <Section>
         <div className="center__div">
