@@ -1,15 +1,17 @@
-import { Col, Row, Button } from 'react-bootstrap'
+import { Col, Row } from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
+import Link from 'next/link';
 
 
 export default function B1({ children, ...props }) {
   return (
 <>
 <div className="button__wrapper">
-  <Row className="row__justify__production__small">
-    <Button className="button__one" as={Col} variant="primary">
-      {children}
+  <Button variant="primary" size="sm">
+  <Link href="/new">
+  <a>Shop All Products</a>
+  </Link>
     </Button>
-  </Row>
   </div>
 </>
   );

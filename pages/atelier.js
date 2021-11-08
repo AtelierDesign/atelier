@@ -6,7 +6,7 @@ import Hero from '../components/hero';
 import Section from '../components/section';
 import Cta from '../components/cta';
 import Footeralt from '../components/footeralt';
-import B2 from '../components/buttons/b2'
+import B1 from '../components/buttons/b1'
 import BlockB2 from '../components/buttons/blockb2'
 
 export default function Atelier() {
@@ -95,11 +95,7 @@ export default function Atelier() {
       {/*Call-to-Action*/}
       <Cta>
         <p>Shop All Products</p>
-        <B2>
-          <Link href="/new">
-          <a>Shop All Products</a>
-          </Link>
-        </B2>
+        <B1 />
       </Cta>
 
       {/*SECTION 001*/}

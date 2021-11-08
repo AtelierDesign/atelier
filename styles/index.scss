@@ -11,7 +11,7 @@
 @import "elements";
 @import "design.system";
 @import "atelier";
-@import "bootstrap-theme";
+
 
 /* Tailwind.css */
 @tailwind base;
@@ -304,7 +304,10 @@ p:a {
 
 @media only screen and (max-width: 600px) {
   .image__title {
-    width: 80%;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
   }
 }
 

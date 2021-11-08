@@ -1,4 +1,4 @@
-import { Col, Row, Button } from 'react-bootstrap'
+import { Col, Row } from 'react-bootstrap'
 
 
 export default function B2({ children, ...props }) {
@@ -6,9 +6,7 @@ export default function B2({ children, ...props }) {
 <>
 <div className="button__wrapper">
   <Row className="row__justify__production__small">
-    <Button className="button__two" as={Col} variant="primary">
-      {children}
-    </Button>
+    <button type="button" className="btn btn-primary btn-sm">{children}</button>
   </Row>
   </div>
 </>
