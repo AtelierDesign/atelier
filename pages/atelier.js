@@ -1,13 +1,13 @@
-import Image from 'next/image';
-import Link from 'next/link';
-import Head from 'next/head';
-import Navbar from '../components/navbar';
-import Hero from '../components/hero';
-import Section from '../components/section';
-import Cta from '../components/cta';
-import Footeralt from '../components/footeralt';
-import B1 from '../components/buttons/b1'
-import BlockB2 from '../components/buttons/blockb2'
+import Image from 'next/image'
+import Link from 'next/link'
+import Head from 'next/head'
+import Navigation from '../components/navbar/Navigation'
+import Hero from '../components/hero'
+import Section from '../components/section'
+import Cta from '../components/cta'
+import Footeralt from '../components/footeralt'
+
+import ListGroupOne from '../components/ListGroup/listGroupOne'
 
 export default function Atelier() {
   return (
@@ -15,12 +15,11 @@ export default function Atelier() {
       <Head>
         <title>Atelier Design®</title>
       </Head>
-      <Navbar />
+      <Navigation />
       <Hero>
-      <h1>Welcome.</h1>
+        <h1>Welcome.</h1>
         <p className="p_lg">
-          An ever– expanding ecosystem of essential design components, for artists to empower the
-          new culture of design.
+          An ever– expanding ecosystem of essential design components, for artists to empower the new culture of design.
         </p>
       </Hero>
       {/*PageStart*/}
@@ -32,9 +31,10 @@ export default function Atelier() {
               <div className="relative image__lg rounded-lg bg-gray-100 text-sm text-white flex items-center justify-center">
                 <div className="image__title">
                   <h2>Ady® Interval</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                  incididuntut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                  exercitation.</p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididuntut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+                  </p>
                 </div>
                 <Image
                   src="https://cdn.ady.systems/assets/blk.jpg"
@@ -51,8 +51,9 @@ export default function Atelier() {
               <div className="relative image__md rounded-lg bg-gray text-sm text-grey-dark flex items-center justify-center">
                 <div className="product__svg">
                   <Image src="/svg/time.svg" alt="one" width={140} height={70} />
-                  <p>An Adobe After Effects plugin, allowing you to add aesthetic styles + timecode
-                    displays to your projects.
+                  <p>
+                    An Adobe After Effects plugin, allowing you to add aesthetic styles + timecode displays to your
+                    projects.
                   </p>
                 </div>
                 <Image
@@ -72,10 +73,7 @@ export default function Atelier() {
               <div className="relative image__md rounded-lg bg-gray text-sm text-grey-dark flex items-center justify-center">
                 <div className="product__svg">
                   <Image src="/svg/sound.svg" alt="one" width={180} height={70} />
-                  <p>
-                    A dynamic pack of essential sound design to quickly enhance all types of
-                    productions.
-                  </p>
+                  <p>A dynamic pack of essential sound design to quickly enhance all types of productions.</p>
                 </div>
                 <Image
                   src="https://cdn.ady.systems/assets/grey.jpg"
@@ -92,29 +90,24 @@ export default function Atelier() {
         </div>
       </div>
 
-      {/*Call-to-Action*/}
-      <Cta>
-        <p>Shop All Products</p>
-        <B1 />
-      </Cta>
-
       {/*SECTION 001*/}
       <Section>
         <h6>ATELIER®</h6>
         <p>
           <strong>This is a section, you can put whatever the hell you want here.</strong>
         </p>
-        <BlockB2>
         <Link href="/new">
           <a>Shop All Products</a>
         </Link>
-        </BlockB2>
       </Section>
+
+      {/*LIST GROUPS TEST 001*/}
+      <ListGroupOne />
 
       <div className="spa__cer"></div>
       <Footeralt />
 
       {/*EOF*/}
     </>
-  );
+  )
 }

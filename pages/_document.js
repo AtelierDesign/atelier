@@ -1,9 +1,9 @@
-import Document, { Html, Head, Main, NextScript } from 'next/document';
+import Document, { Html, Head, Main, NextScript } from 'next/document'
 
 export default class Doc extends Document {
   static async getInitialProps(ctx) {
-    const initialProps = await Document.getInitialProps(ctx);
-    return { ...initialProps };
+    const initialProps = await Document.getInitialProps(ctx)
+    return { ...initialProps }
   }
 
   render() {
@@ -12,6 +12,7 @@ export default class Doc extends Document {
         <Head>
           <link rel="amphtml" href="https://ady.world/" />
           <link rel="canonical" href="https://www.ady.world/" />
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" />
           <meta name="googlebot" content="follow, index, noarchive" />
           <meta name="robots" content="follow, index, noarchive" />
 
@@ -32,13 +33,16 @@ export default class Doc extends Document {
           <meta property="og:site_name" content="Atelier" />
           <meta property="og:type" content="website" />
           <meta property="og:url" content="https://www.ady.world/" />
-          <script type="text/javascript" async src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=WiNjPw"></script>
+          <script
+            type="text/javascript"
+            async
+            src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=WiNjPw"></script>
         </Head>
         <body>
           <Main />
           <NextScript />
         </body>
       </Html>
-    );
+    )
   }
 }

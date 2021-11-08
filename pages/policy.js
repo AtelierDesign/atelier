@@ -1,16 +1,16 @@
-import Image from 'next/image';
-import Link from 'next/link';
-import Head from 'next/head';
-import Navbar from '../components/navbar';
-import Hero from '../components/hero';
-import Subscribe from '../components/subscribe';
-import Section from '../components/section';
-import Help from '../components/help';
-import Cta from '../components/cta';
-import Footeralt from '../components/footeralt';
-import HeroDark from '../components/hero/hero_dark';
+import Image from 'next/image'
+import Link from 'next/link'
+import Head from 'next/head'
+import Navigation from '../components/navbar/Navigation'
+import Hero from '../components/hero'
+import Subscribe from '../components/subscribe'
+import Section from '../components/section'
+import Help from '../components/help'
+import Cta from '../components/cta'
+import Footeralt from '../components/footeralt'
+import HeroDark from '../components/hero/hero_dark'
 
-import { Tab } from '@headlessui/react';
+import { Tab } from '@headlessui/react'
 
 export default function Policy() {
   return (
@@ -18,7 +18,7 @@ export default function Policy() {
       <Head>
         <title>Privacy.</title>
       </Head>
-      <Navbar />
+      <Navigation />
       <HeroDark />
 
       <Section>
@@ -37,5 +37,5 @@ export default function Policy() {
         </div>
       </Section>
     </>
-  );
+  )
 }
