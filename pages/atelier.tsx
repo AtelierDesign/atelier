@@ -54,7 +54,7 @@ const Card = styled('div', {
 
 const Atelier = () => {
   return (
-    <div css={{ bc: '$slate1' }}>
+    <div>
       <Box css={{ bc: '$slate1', marginTop: '0', marginLeft: '0', marginRight: '0', px: '0', paddingBottom: '30px' }}>
         <NavbarSticky />
         <Hero />
