@@ -52,7 +52,9 @@ export const OneCol = () => {
               Base Button
             </Button>
           </Box>
-          <Image src="/img/shape-17.png" layout="fill" objectFit="cover" alt="image" objectPosition="absolute" priority />
+          <Box css={{ zIndex: '4' }}>
+            <Image src="/img/shape-smallblue.png" layout="fill" objectFit="cover" alt="image" objectPosition="absolute" priority />
+          </Box>
         </Grid>
       </Container>
     </Box>
