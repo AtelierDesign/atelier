@@ -1,6 +1,7 @@
 import { styled } from '../stitches.config';
 import { Box } from '@design-system/box';
 import { ScrollContainer } from '@components/ScrollContainer';
+import { NavbarSticky } from '@components/NavbarSticky';
 
 const Card = styled('container', {
   width: '350px',
@@ -20,6 +21,16 @@ const Card = styled('container', {
 export default function Test() {
   return (
     <Box css={{ padding: '0px' }}>
+      <NavbarSticky />
+      <ScrollContainer>
+        <Card>Text</Card>
+        <Card>Text</Card>
+        <Card>Text</Card>
+        <Card>Text</Card>
+        <Card>Text</Card>
+        <Card>Text</Card>
+      </ScrollContainer>
+
       <ScrollContainer>
         <Card>Text</Card>
         <Card>Text</Card>

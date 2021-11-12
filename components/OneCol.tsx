@@ -18,6 +18,8 @@ export const OneCol = () => {
             bc: '$clear100',
             br: '26px',
             px: '30px',
+            border: '1px solid',
+            borderColor: '$slate6',
             zIndex: '20',
             position: 'relative'
           }}>
@@ -28,8 +30,6 @@ export const OneCol = () => {
               padding: '0',
               margin: '0',
               zIndex: '100',
-              bc: '$clear100',
-              backdropFilter: 'blur(2px)',
               saturate: '200%'
             }}>
             <Heading
@@ -44,13 +44,14 @@ export const OneCol = () => {
             </Heading>
             <Text
               as="p"
-              size="3"
+              variant="gray"
+              size="4"
+              className="image-text"
               css={{
                 fontWeight: '400',
                 paddingTop: '16px',
                 lineHeight: '22px',
-                color: '$slate9',
-                '@bp1': { width: '400px' }
+                '@bp1': { width: '450px' }
               }}>
               ADY® is an ever– expanding ecosystem of essential design components built for modern web.
             </Text>
@@ -59,18 +60,17 @@ export const OneCol = () => {
               Base Button
             </Button>
           </Box>
-
-          <Box css={{ zIndex: '4' }}>
+          <div className="color__box">
             <Image
               className="color__swirl"
               src="/img/blue-swirl.png"
               layout="fill"
-              objectFit="contain"
+              objectFit="cover"
               alt="image"
-              // objectPosition="absolute"
+              objectPosition="absolute"
               priority
             />
-          </Box>
+          </div>
         </Grid>
       </Container>
     </Box>

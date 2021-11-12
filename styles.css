@@ -24,8 +24,21 @@ svg {
   vertical-align: middle;
 }
 
+.color__box {
+  border-radius: 26px;
+  background-color: $light100;
+  backdrop-filter: blur(10px) saturate(180%);
+  z-index: 5;
+}
+
+.image-text {
+  mix-blend-mode: difference !important;
+}
+
 .color__swirl {
-  z-index: 3 !important;
+  border-radius: 26px;
+  opacity: 0.8;
+  z-index: 4;
 }
 
 html,

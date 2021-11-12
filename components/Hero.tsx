@@ -59,7 +59,7 @@ export function Hero() {
                 mb: '$7'
               }
             }}>
-            CSS-in-JS with near-zero runtime, SSR, multi-variant support, and a best-in-class developer experience.
+            An ever– expanding ecosystem of design components. Multi-variant support, and a best-in-class developer experience.
           </Paragraph>
           <Flex css={{ '@bp2': { jc: 'center', my: '$7' } }}>
             <NextLink href="https://ady.world" passHref>

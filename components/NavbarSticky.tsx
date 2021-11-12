@@ -8,7 +8,7 @@ import { ThemeToggle } from '@components/ThemeToggle';
 
 import Image from 'next/image';
 
-export const Navbar = () => {
+export const NavbarSticky = () => {
   return (
     <Flex
       as="header"
@@ -16,29 +16,25 @@ export const Navbar = () => {
         py: '$3',
         px: '5px',
         jc: 'space-between',
-        position: 'fixed',
+        position: 'absolute',
         m: '0',
         zIndex: '100',
-        bc: '$light100',
-        width: '100vw',
-        backdropFilter: 'blur(10px)',
-        saturate: '200%',
-        borderBottomWidth: '1px',
-        brc: '$lime9'
+        bc: '$slate1',
+        width: '100vw'
       }}>
       {/* LOGO SECTION */}
       <NextLink href="/" passHref>
         <Box
           as="a"
           css={{
-            ml: '$1',
-            color: '$hiContrast',
+            ml: '$2',
+            color: 'transparent',
             display: 'inline-flex',
             textDecoration: 'none',
             '&:focus': {
               boxShadow: 'none'
             },
-            '@bp2': { ml: '$5' }
+            '@bp2': { ml: '$2' }
           }}>
           <Image className="logo" alt="logo" src="/butterfly_logo.svg" width={80} height={18} />
         </Box>
@@ -48,19 +44,19 @@ export const Navbar = () => {
       <Flex as="nav" css={{ ai: 'center', px: '0px' }}>
         <ThemeToggle />
         <NextLink href="https://docs.ady.world" passHref>
-          <Link variant="subtle" css={{ mr: '$5', '@bp2': { mr: '$5' } }}>
+          <Link variant="subtle" css={{ mr: '$3', '@bp2': { mr: '$3' } }}>
             Shop <ArrowRightIcon />
           </Link>
         </NextLink>
 
         <NextLink href="https://docs.ady.world" passHref>
-          <Link variant="subtle" css={{ display: 'none', mr: '$5', '@bp2': { display: 'block', mr: '$5' } }}>
+          <Link variant="subtle" css={{ display: 'none', mr: '$3', '@bp2': { display: 'block', mr: '$3' } }}>
             Documentaion
           </Link>
         </NextLink>
 
         <NextLink href="https://docs.ady.world" passHref>
-          <Link variant="subtle" css={{ display: 'none', mr: '$5', '@bp2': { display: 'block', mr: '$5' } }}>
+          <Link variant="subtle" css={{ display: 'none', mr: '$3', '@bp2': { display: 'block', mr: '$3' } }}>
             Resources
           </Link>
         </NextLink>

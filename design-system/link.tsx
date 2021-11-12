@@ -3,6 +3,8 @@ import { Text } from './text';
 
 export const Link = styled('a', {
   alignItems: 'center',
+  fontSize: '14px',
+  fontWeight: '600',
   gap: '$1',
   flexShrink: 0,
   outline: 'none',
@@ -23,13 +25,15 @@ export const Link = styled('a', {
     textDecorationLine: 'none'
   },
   [`& ${Text}`]: {
-    color: 'lime9'
+    color: '$slate10',
+    fontSize: '14px',
+    fontWeight: '600'
   },
   variants: {
     variant: {
       subtle: {
-        color: '$slate9',
-        textDecorationColor: '$slate9',
+        color: '$slate10',
+        textDecorationColor: '$slate11',
         '&:focus': {
           outlineColor: '$slate8'
         }
@@ -37,10 +41,10 @@ export const Link = styled('a', {
       contrast: {
         color: '$hiContrast',
         textDecoration: 'underline',
-        textDecorationColor: '$slate4',
+        textDecorationColor: '$slate8',
         '@hover': {
           '&:hover': {
-            textDecorationColor: '$slate7'
+            textDecorationColor: '$slate8'
           }
         },
         '&:focus': {
@@ -50,6 +54,6 @@ export const Link = styled('a', {
     }
   },
   defaultVariants: {
-    variant: 'lime'
+    variant: 'subtle'
   }
 });

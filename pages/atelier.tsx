@@ -3,7 +3,7 @@ import { Container } from '@design-system/container';
 import { Section } from '@design-system/section';
 import { Heading } from '@design-system/heading';
 import { Text } from '@design-system/text';
-import { Navbar } from '@components/Navbar';
+import { NavbarSticky } from '@components/NavbarSticky';
 import { DefaultButton } from '@components/DefaultButton';
 import { Hero } from '@components/Hero';
 import { OneCol } from '@components/OneCol';
@@ -36,8 +36,8 @@ const Scroller = styled('div', {
 });
 
 const Card = styled('div', {
-  width: '450px',
-  minWidth: '450px',
+  width: '5000px',
+  minWidth: '500px',
   height: '350px',
   backgroundColor: '$slate3',
   display: 'block',
@@ -56,7 +56,7 @@ const Atelier = () => {
   return (
     <div>
       <Box css={{ bc: '$slate1', marginTop: '0', marginLeft: '0', marginRight: '0', marginBottom: '20px', px: '0', paddingBottom: '30px' }}>
-        <Navbar />
+        <NavbarSticky />
         <Hero />
 
         <OneCol />
@@ -87,10 +87,26 @@ const Atelier = () => {
                 Feature One
               </Heading>
             </Card>
-            <Card>Card1</Card>
-            <Card>Card1</Card>
-            <Card>Card1</Card>
-            <Card>Card1</Card>
+            <Card>
+              <Heading size="1" css={{ fontWeight: '600' }}>
+                Feature One
+              </Heading>
+            </Card>
+            <Card>
+              <Heading size="1" css={{ fontWeight: '600' }}>
+                Feature One
+              </Heading>
+            </Card>
+            <Card>
+              <Heading size="1" css={{ fontWeight: '600' }}>
+                Feature One
+              </Heading>
+            </Card>
+            <Card>
+              <Heading size="1" css={{ fontWeight: '600' }}>
+                Feature One
+              </Heading>
+            </Card>
           </GridX>
         </Scroller>
       </Box>
