@@ -1,12 +1,12 @@
 import NextLink from 'next/link'
 import { Box } from '@design-system/box'
 import { Flex } from '@design-system/flex'
-import Link from 'next/link'
+import { Link } from '@design-system/link'
 import { ThemeToggle } from '@components/ThemeToggle'
 
 import Image from 'next/image'
 
-export function Navbar() {
+export const Navbar = () => {
   return (
     <Flex
       as="header"
@@ -25,52 +25,35 @@ export function Navbar() {
         brc: '$lime9',
       }}>
       {/* LOGO SECTION */}
-      <NextLink variant="subtle" href="/" passHref>
-        <Link variant="subtle" href="/">
-          <Box
-            as="a"
-            css={{
-              ml: '$1',
-              color: '$hiContrast',
-              display: 'inline-flex',
-              textDecoration: 'none',
-              '&:focus': {
-                boxShadow: 'none',
-              },
-              '@bp2': { ml: '$5' },
-            }}>
-            <Image
-              className="logo"
-              alt="logo"
-              src="/butterfly_logo.svg"
-              width={110}
-              height={20}
-            />
-          </Box>
-        </Link>
+      <NextLink href="/" passHref>
+        <Box
+          as="a"
+          css={{
+            ml: '$1',
+            color: '$hiContrast',
+            display: 'inline-flex',
+            textDecoration: 'none',
+            '&:focus': {
+              boxShadow: 'none',
+            },
+            '@bp2': { ml: '$5' },
+          }}>
+          <Image
+            className="logo"
+            alt="logo"
+            src="/butterfly_logo.svg"
+            width={110}
+            height={20}
+          />
+        </Box>
       </NextLink>
 
       {/* NAVIGATION SECTION */}
       <Flex as="nav" css={{ ai: 'center', px: '0px' }}>
         <ThemeToggle />
         <NextLink href="https://docs.ady.world" passHref>
-          <Link variant="subtle" href="https://docs.ady.world">
-            <a>Docs</a>
-          </Link>
-        </NextLink>
-        <NextLink href="/design-system" passHref>
-          <Link variant="subtle" href="https://docs.ady.world">
-            <a>System</a>
-          </Link>
-        </NextLink>
-        <NextLink href="https://github.com/AtelierDesign" passHref>
-          <Link href="https://docs.ady.world">
-            <a>GitHub</a>
-          </Link>
-        </NextLink>
-        <NextLink variant="subtle" href="/resources" passHref>
-          <Link href="https://docs.ady.world">
-            <a>Resources</a>
+          <Link variant="subtle" css={{ mr: '$5', '@bp2': { mr: '$5' } }}>
+            Docs
           </Link>
         </NextLink>
       </Flex>
