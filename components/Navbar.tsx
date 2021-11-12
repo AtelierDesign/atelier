@@ -2,7 +2,6 @@ import NextLink from 'next/link';
 import { Box } from '@design-system/box';
 import { Flex } from '@design-system/flex';
 import { Link } from '@design-system/link';
-import { Text } from '@design-system/text';
 import { ArrowRightIcon } from '@radix-ui/react-icons';
 import { ThemeToggle } from '@components/ThemeToggle';
 
