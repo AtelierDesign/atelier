@@ -1,5 +1,6 @@
 import { styled } from '../stitches.config';
 import { Box } from '@design-system/box';
+import { ArrowRightIcon } from '@radix-ui/react-icons';
 import React from 'react';
 
 const Grid = styled('div', {
@@ -36,6 +37,7 @@ export const ScrollContainer = ({ children }) => {
           {children}
         </Grid>
       </Scroller>
+      <ArrowRightIcon />
     </Box>
   );
 };

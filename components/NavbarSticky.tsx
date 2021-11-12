@@ -43,7 +43,7 @@ export const NavbarSticky = () => {
       <Flex as="nav" css={{ ai: 'center', px: '0px' }}>
         <ThemeToggle />
         <NextLink href="https://ady.world" passHref>
-          <Link variant="subtle" css={{ mr: '$3', '@bp2': { mr: '$3' } }}>
+          <Link variant="subtle" css={{ mr: '$3', '@bp2': { mr: '$5' } }}>
             Shop <ArrowRightIcon />
           </Link>
         </NextLink>
