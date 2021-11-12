@@ -1,57 +1,53 @@
-import React from 'react'
-import NextLink from 'next/link'
-import { Section } from '@design-system/section'
-import { Container } from '@design-system/container'
-import { Box } from '@design-system/box'
-import { Heading } from '@design-system/heading'
-import { Grid } from '@design-system/grid'
-import { Flex } from '@design-system/flex'
-import { Text } from '@design-system/text'
-import { Paragraph } from '@design-system/paragraph'
-import { theme } from 'stitches.config'
-import {
-  ExternalLinkIcon,
-  RocketIcon,
-  CopyIcon,
-  CheckIcon,
-} from '@radix-ui/react-icons'
-import { HomeButton } from '@components/HomeButton'
-import { Button } from '@design-system/button'
-import copy from 'copy-to-clipboard'
+import React from 'react';
+import NextLink from 'next/link';
+import { Section } from '@design-system/section';
+import { Container } from '@design-system/container';
+import { Box } from '@design-system/box';
+import { Heading } from '@design-system/heading';
+import { Grid } from '@design-system/grid';
+import { Flex } from '@design-system/flex';
+import { Text } from '@design-system/text';
+import { Paragraph } from '@design-system/paragraph';
+import { theme } from 'stitches.config';
+import { ExternalLinkIcon, RocketIcon, CopyIcon, CheckIcon } from '@radix-ui/react-icons';
+import { HomeButton } from '@components/HomeButton';
+import { Button } from '@design-system/button';
+import copy from 'copy-to-clipboard';
 
 export function Hero() {
-  const [hasCopied, setHasCopied] = React.useState(false)
+  const [hasCopied, setHasCopied] = React.useState(false);
 
   return (
     <Box css={{ bc: '$slate1' }}>
       <Section
         size={{
           '@initial': '2',
-          '@bp1': '3',
+          '@bp1': '3'
         }}
         css={{
           pt: '$3',
           '@bp2': {
-            pt: '$6',
-          },
+            pt: '$6'
+          }
         }}>
         <Container size="3" css={{ paddingTop: '120px' }}>
           <Heading
             size="4"
             css={{
+              fontWeight: '700',
               mb: '$3',
               '@bp1': {
-                pr: 100,
+                pr: 100
               },
               '@bp2': {
                 ta: 'center',
-                px: 180,
+                px: 180
               },
               '@bp3': {
-                px: 200,
-              },
+                px: 200
+              }
             }}>
-            ATELIER DESIGN YIELD
+            Atelier Design Yield.
           </Heading>
           <Paragraph
             size="2"
@@ -60,11 +56,10 @@ export function Hero() {
               '@bp2': {
                 mx: 230,
                 ta: 'center',
-                mb: '$7',
-              },
+                mb: '$7'
+              }
             }}>
-            CSS-in-JS with near-zero runtime, SSR, multi-variant support, and a
-            best-in-class developer experience.
+            CSS-in-JS with near-zero runtime, SSR, multi-variant support, and a best-in-class developer experience.
           </Paragraph>
           <Flex css={{ '@bp2': { jc: 'center', my: '$7' } }}>
             <NextLink href="https://ady.world" passHref>
@@ -75,11 +70,7 @@ export function Hero() {
                 </Box>
               </HomeButton>
             </NextLink>
-            <HomeButton
-              as="a"
-              href="https://github.com/AtelierDesign"
-              target="_blank"
-              rel="noopener noreferrer">
+            <HomeButton as="a" href="https://github.com/AtelierDesign" target="_blank" rel="noopener noreferrer">
               GitHub
               <Box css={{ ml: '$1' }}>
                 <ExternalLinkIcon />
@@ -94,7 +85,7 @@ export function Hero() {
             my: '$6',
             position: 'relative',
             zIndex: '1',
-            '@bp2': { my: '$8' },
+            '@bp2': { my: '$8' }
           }}>
           <Flex
             css={{
@@ -111,16 +102,16 @@ export function Hero() {
               jc: 'space-between',
               '.dark-theme &': {
                 backgroundColor: 'rgba(255,255,255,.04)',
-                boxShadow: 'none',
-              },
+                boxShadow: 'none'
+              }
             }}>
             <Box>npm install @atelier/design</Box>
             <Button
               css={{ color: '$slate11', mr: '-$1' }}
               aria-label="Copy the install snippet to Clipboard"
               onClick={() => {
-                copy('npm install @atelier/design')
-                setHasCopied(true)
+                copy('npm install @atelier/design');
+                setHasCopied(true);
               }}>
               {hasCopied ? <CheckIcon /> : <CopyIcon />}
             </Button>
@@ -134,12 +125,12 @@ export function Hero() {
               gridTemplateColumns: '1fr',
               '@bp1': {
                 gap: '$7',
-                gridTemplateColumns: '1fr 1fr',
+                gridTemplateColumns: '1fr 1fr'
               },
               '@bp2': {
                 gap: '$7',
-                gridTemplateColumns: '1fr 1fr 1fr',
-              },
+                gridTemplateColumns: '1fr 1fr 1fr'
+              }
             }}>
             <Box>
               <Flex
@@ -151,14 +142,9 @@ export function Hero() {
                   borderRadius: '12px',
                   backgroundColor: '$violet5',
                   color: '$violet10',
-                  mb: '$4',
+                  mb: '$4'
                 }}>
-                <svg
-                  width="25"
-                  height="25"
-                  viewBox="0 0 25 25"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
+                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M12 10.8333L14.1667 0.833328L4.91669 14.1667H13L10.8334 24.1667L20.0834 10.8333H12Z"
                     stroke={theme.colors.violet11.computedValue}
@@ -180,14 +166,13 @@ export function Hero() {
                 as="p"
                 size={{
                   '@initial': '4',
-                  '@bp1': '3',
+                  '@bp1': '3'
                 }}
                 variant="gray"
                 css={{
-                  lineHeight: '25px',
+                  lineHeight: '25px'
                 }}>
-                Stitches avoids unnecessary prop interpolations at runtime,
-                making it more performant than other styling libraries.
+                Stitches avoids unnecessary prop interpolations at runtime, making it more performant than other styling libraries.
               </Text>
             </Box>
             <Box>
@@ -200,14 +185,9 @@ export function Hero() {
                   borderRadius: '12px',
                   backgroundColor: '$violet5',
                   color: '$violet10',
-                  mb: '$4',
+                  mb: '$4'
                 }}>
-                <svg
-                  width="25"
-                  height="25"
-                  viewBox="0 0 25 25"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
+                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M19.8333 3.5H21.5H23.1667M21.5 1.83334V5.16667"
                     stroke={theme.colors.blue11.computedValue}
@@ -278,14 +258,13 @@ export function Hero() {
                 as="p"
                 size={{
                   '@initial': '4',
-                  '@bp1': '3',
+                  '@bp1': '3'
                 }}
                 variant="gray"
                 css={{
-                  lineHeight: '25px',
+                  lineHeight: '25px'
                 }}>
-                Packed full of useful features like theming, smart tokens, prop,
-                utils, and a fully-typed API.
+                Packed full of useful features like theming, smart tokens, prop, utils, and a fully-typed API.
               </Text>
             </Box>
             <Box>
@@ -298,14 +277,9 @@ export function Hero() {
                   borderRadius: '12px',
                   backgroundColor: '$violet5',
                   color: '$violet10',
-                  mb: '$4',
+                  mb: '$4'
                 }}>
-                <svg
-                  width="25"
-                  height="25"
-                  viewBox="0 0 25 25"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
+                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M19.572 21.68L19.94 2.83C19.94 2.83 18 2.25 12.5 2.25C7 2.25 5.06 2.83 5.06 2.83L5.428 21.68C5.428 21.68 8 21.75 12.5 21.75C17 21.75 19.572 21.68 19.572 21.68Z"
                     stroke={theme.colors.violet11.computedValue}
@@ -346,19 +320,18 @@ export function Hero() {
                 as="p"
                 size={{
                   '@initial': '4',
-                  '@bp1': '3',
+                  '@bp1': '3'
                 }}
                 variant="gray"
                 css={{
-                  lineHeight: '25px',
+                  lineHeight: '25px'
                 }}>
-                Stitches has a fully-typed API, to minimize the learning curve,
-                and provide the best possible developer experience.
+                Stitches has a fully-typed API, to minimize the learning curve, and provide the best possible developer experience.
               </Text>
             </Box>
           </Grid>
         </Container>
       </Section>
     </Box>
-  )
+  );
 }
