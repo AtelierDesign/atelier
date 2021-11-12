@@ -21,6 +21,7 @@ export const OneCol = () => {
             px: '30px',
             zIndex: '20',
             boxShadow: 'inset 0 0 0 1px $colors$slate7',
+            position: 'relative',
           }}>
           <Box css={{ height: '400px', position: 'relative' }}>
             <Text
@@ -41,9 +42,8 @@ export const OneCol = () => {
                 fontWeight: '400',
                 paddingTop: '16px',
                 lineHeight: '22px',
-                zIndex: '80',
-                width: '400px',
                 color: '$slate9',
+                '@bp1': { width: '400px' },
               }}>
               ADY® is an ever– expanding ecosystem of essential design
               components built for modern web.
@@ -55,13 +55,13 @@ export const OneCol = () => {
               css={{ marginTop: '20px', zIndex: '25' }}>
               Base Button
             </Button>
-            <Image
-              src="/img/shape-17.png"
-              layout="fill"
-              objectFit="cover"
-              alt="image"
-            />
           </Box>
+          <Image
+            src="/img/shape-17.png"
+            layout="fill"
+            objectFit="cover"
+            alt="image"
+          />
         </Grid>
       </Container>
     </Box>
