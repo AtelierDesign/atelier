@@ -35,7 +35,7 @@ export const NavbarSticky = () => {
             },
             '@bp2': { ml: '$2' }
           }}>
-          <Image className="logo" alt="logo" src="/butterfly_logo.svg" width={80} height={18} />
+          <Image className="logo" alt="logo" src="/butterfly_logo.svg" width={90} height={18} />
         </Box>
       </NextLink>
 

@@ -1,3 +1,4 @@
+import NextLink from 'next/link';
 import { Box } from '@design-system/box';
 import { Container } from '@design-system/container';
 import { Section } from '@design-system/section';
@@ -71,7 +72,7 @@ const Atelier = () => {
           <Text css={{ color: '$slate8', lineHeight: '1.5', px: '5px', fontSize: '16px', marginTop: '20px', width: '80%' }}>
             Create open and close animations that take the dropdown menu’s actual position into account.
           </Text>
-          <DefaultButton css={{ marginTop: '30px', marginBottom: '30px' }}>
+          <DefaultButton as="a" css={{}}>
             Learn more <ArrowRightIcon />
           </DefaultButton>
         </Container>

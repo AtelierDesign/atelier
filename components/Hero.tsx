@@ -10,6 +10,7 @@ import { Text } from '@design-system/text';
 import { Paragraph } from '@design-system/paragraph';
 import { theme } from 'stitches.config';
 import { ExternalLinkIcon, RocketIcon } from '@radix-ui/react-icons';
+import { DefaultButton } from '@components/DefaultButton';
 import { HomeButton } from '@components/HomeButton';
 
 export function Hero() {
@@ -59,14 +60,11 @@ export function Hero() {
             An ever– expanding ecosystem of design components. Multi-variant support, and a best-in-class developer experience.
           </Paragraph>
           <Flex css={{ '@bp2': { jc: 'center', my: '$7' } }}>
-            <NextLink href="https://ady.world" passHref>
-              <HomeButton as="a" color="blue" css={{ mr: '$3' }}>
-                Latest Release
-                <Box css={{ ml: '$2' }}>
-                  <RocketIcon />
-                </Box>
-              </HomeButton>
-            </NextLink>
+            <DefaultButton css={{ lineHeight: '1', mr: '$3' }}>
+              Latest Release
+              {` `}
+              <RocketIcon />
+            </DefaultButton>
             <HomeButton as="a" href="https://github.com/AtelierDesign" target="_blank" rel="noopener noreferrer">
               GitHub
               <Box css={{ ml: '$1' }}>

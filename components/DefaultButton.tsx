@@ -5,18 +5,20 @@ export const DefaultButton = styled('button', {
   color: 'white',
   paddingLeft: '15px',
   paddingRight: '15px',
-  height: '35px',
+  py: '8px',
+  height: '40px',
   borderRadius: '12px',
   border: '2px solid',
   borderColor: '$blue7',
-  lineHeight: '1',
+  lineHeight: '5',
+  width: 'auto',
 
   fontFamily: '$inter',
   fontWeight: '700',
   fontSize: '14px',
 
   '&:hover': {
-    backgroundColor: '$slate9',
+    backgroundColor: '$blue8',
     color: 'white',
     cursor: 'pointer'
   }
