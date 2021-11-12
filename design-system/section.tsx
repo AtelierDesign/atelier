@@ -1,4 +1,4 @@
-import { styled } from 'stitches.config';
+import { styled } from 'stitches.config'
 
 export const Section = styled('section', {
   // Reset
@@ -15,18 +15,18 @@ export const Section = styled('section', {
 
   variants: {
     size: {
-      '1': {
+      1: {
         py: '$3',
       },
-      '2': {
+      2: {
         py: '$5',
       },
-      '3': {
+      3: {
         py: '$9',
-        px: '0px',
+        px: '0',
         margin: 'auto',
       },
-      '4': {
+      4: {
         py: '150px',
         px: '10px',
         margin: 'auto',
@@ -36,4 +36,4 @@ export const Section = styled('section', {
   defaultVariants: {
     size: '3',
   },
-});
+})

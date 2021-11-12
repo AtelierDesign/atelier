@@ -1,9 +1,9 @@
-import { Box } from '@design-system/box';
-import { Container } from '@design-system/container';
-import { Grid } from '@design-system/grid';
-import { Heading } from '@design-system/heading';
-import { Text } from '@design-system/text';
-import React from 'react';
+import { Box } from '@design-system/box'
+import { Container } from '@design-system/container'
+import { Grid } from '@design-system/grid'
+import { Heading } from '@design-system/heading'
+import { Text } from '@design-system/text'
+import React from 'react'
 
 export const ThreeCols = () => {
   return (
@@ -16,11 +16,13 @@ export const ThreeCols = () => {
           gridTemplateColumns: 'repeat(2, minmax(0, 1fr))',
           gap: '$4',
           bc: '$lime9',
-          br: '$3'
-        }}
-      >
+          br: '$3',
+        }}>
         <Box>
-          <Text as="p" size="4" css={{ fontWeight: '800', padding: '26px', lineHeight: '27px' }}>
+          <Text
+            as="p"
+            size="4"
+            css={{ fontWeight: '800', padding: '26px', lineHeight: '27px' }}>
             COLUMN ONE
           </Text>
         </Box>
@@ -31,5 +33,5 @@ export const ThreeCols = () => {
         </Box>
       </Grid>
     </Container>
-  );
-};
+  )
+}

@@ -1,28 +1,41 @@
-import React from 'react';
-import { Box } from '@design-system/box';
-import { Grid } from '@design-system/grid';
-import { Text } from '@design-system/text';
-import { Container } from '@design-system/container';
-import { Heading } from '@design-system/heading';
-import { Section } from '@design-system/section';
-import { Separator } from '@design-system/separator';
+import React from 'react'
+import { Box } from '@design-system/box'
+import { Grid } from '@design-system/grid'
+import { Text } from '@design-system/text'
+import { Container } from '@design-system/container'
+import { Heading } from '@design-system/heading'
+import { Section } from '@design-system/section'
+import { Separator } from '@design-system/separator'
 
 export const SocialSection = () => {
   return (
-    <Section>
-      <Container size="2">
+    <Section size="3">
+      <Container size="2" css={{ px: '0' }}>
         <Box css={{ mb: '$5' }}>
           <Separator size="2" />
         </Box>
 
         <Grid
-          gap="3"
+          gap="2"
           flow={{ '@initial': 'row', '@bp2': 'column' }}
-          css={{ justifyContent: 'space-between', '@bp2': { gridAutoColumns: '220px' } }}
-        >
-          <Box css={{ p: '$5', bc: '$slate3', borderRadius: '$4', boxShadow: 'inset 0 0 0 1px $colors$slate5' }}>
+          css={{
+            justifyContent: 'space-between',
+            '@bp2': { gridAutoColumns: '230px' },
+          }}>
+          <Box
+            css={{
+              p: '$5',
+              bc: '$slate3',
+              borderRadius: '$4',
+              boxShadow: 'inset 0 0 0 1px $colors$slate5',
+            }}>
             <Box css={{ mb: '$3' }}>
-              <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg
+                width="30"
+                height="30"
+                viewBox="0 0 30 30"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg">
                 <path
                   fillRule="evenodd"
                   clipRule="evenodd"
@@ -34,12 +47,25 @@ export const SocialSection = () => {
             <Heading as="h3" css={{ mb: '$2' }}>
               Twitter
             </Heading>
-            <Text css={{ lineHeight: 1.5 }}>For announcements, blog posts, and general Radix tips.</Text>
+            <Text css={{ lineHeight: 1.5 }}>
+              For announcements, blog posts, and general Radix tips.
+            </Text>
           </Box>
 
-          <Box css={{ p: '$5', bc: '$slate3', borderRadius: '$4', boxShadow: 'inset 0 0 0 1px $colors$slate5' }}>
+          <Box
+            css={{
+              p: '$5',
+              bc: '$slate3',
+              borderRadius: '$4',
+              boxShadow: 'inset 0 0 0 1px $colors$slate5',
+            }}>
             <Box css={{ mb: '$3' }}>
-              <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg
+                width="30"
+                height="30"
+                viewBox="0 0 30 30"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg">
                 <path
                   fillRule="evenodd"
                   clipRule="evenodd"
@@ -51,12 +77,25 @@ export const SocialSection = () => {
             <Heading as="h3" css={{ mb: '$2' }}>
               Discord
             </Heading>
-            <Text css={{ lineHeight: 1.5 }}>To get involved in the community, ask questions, and share tips.</Text>
+            <Text css={{ lineHeight: 1.5 }}>
+              To get involved in the community, ask questions, and share tips.
+            </Text>
           </Box>
 
-          <Box css={{ p: '$5', bc: '$slate3', borderRadius: '$4', boxShadow: 'inset 0 0 0 1px $colors$slate5' }}>
+          <Box
+            css={{
+              p: '$5',
+              bc: '$slate3',
+              borderRadius: '$4',
+              boxShadow: 'inset 0 0 0 1px $colors$slate5',
+            }}>
             <Box css={{ mb: '$3' }}>
-              <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg
+                width="30"
+                height="30"
+                viewBox="0 0 30 30"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg">
                 <path
                   fillRule="evenodd"
                   clipRule="evenodd"
@@ -68,10 +107,13 @@ export const SocialSection = () => {
             <Heading as="h3" css={{ mb: '$2' }}>
               GitHub
             </Heading>
-            <Text css={{ lineHeight: 1.5 }}>To file issues, request features, and contribute, check out our GitHub.</Text>
+            <Text css={{ lineHeight: 1.5 }}>
+              To file issues, request features, and contribute, check out our
+              GitHub.
+            </Text>
           </Box>
         </Grid>
       </Container>
     </Section>
-  );
-};
+  )
+}
