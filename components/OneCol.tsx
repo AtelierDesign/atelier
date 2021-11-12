@@ -1,10 +1,10 @@
-import { Box } from '@design-system/box'
-import { Container } from '@design-system/container'
-import { Grid } from '@design-system/grid'
-import { Text } from '@design-system/text'
-import { Button } from '@design-system/button'
-import Image from 'next/image'
-import React from 'react'
+import { Box } from '@design-system/box';
+import { Container } from '@design-system/container';
+import { Grid } from '@design-system/grid';
+import { Text } from '@design-system/text';
+import { Button } from '@design-system/button';
+import Image from 'next/image';
+import React from 'react';
 
 export const OneCol = () => {
   return (
@@ -21,7 +21,7 @@ export const OneCol = () => {
             px: '30px',
             zIndex: '20',
             boxShadow: 'inset 0 0 0 1px $colors$slate7',
-            position: 'relative',
+            position: 'relative'
           }}>
           <Box css={{ height: '400px', position: 'relative' }}>
             <Text
@@ -31,7 +31,7 @@ export const OneCol = () => {
                 fontWeight: '800',
                 paddingTop: '35px',
                 lineHeight: '10px',
-                zIndex: '80',
+                zIndex: '80'
               }}>
               ADY® INTERVAL
             </Text>
@@ -43,27 +43,18 @@ export const OneCol = () => {
                 paddingTop: '16px',
                 lineHeight: '22px',
                 color: '$slate9',
-                '@bp1': { width: '400px' },
+                '@bp1': { width: '400px' }
               }}>
-              ADY® is an ever– expanding ecosystem of essential design
-              components built for modern web.
+              ADY® is an ever– expanding ecosystem of essential design components built for modern web.
             </Text>
 
-            <Button
-              size="2"
-              variant="gray"
-              css={{ marginTop: '20px', zIndex: '25' }}>
+            <Button size="2" variant="gray" css={{ marginTop: '20px', zIndex: '25' }}>
               Base Button
             </Button>
           </Box>
-          <Image
-            src="/img/shape-17.png"
-            layout="fill"
-            objectFit="cover"
-            alt="image"
-          />
+          <Image src="/img/shape-17.png" layout="fill" objectFit="cover" alt="image" objectPosition="absolute" priority />
         </Grid>
       </Container>
     </Box>
-  )
-}
+  );
+};

@@ -1,12 +1,12 @@
-import Router from 'next/router';
-import { useEffect } from 'react';
+import Router from 'next/router'
+import { useEffect } from 'react'
 
 const Home = () => {
   useEffect(() => {
-    Router.replace('/atelier');
-  });
+    Router.replace('/atelier')
+  })
 
-  return null;
-};
+  return null
+}
 
-export default Home;
+export default Home
