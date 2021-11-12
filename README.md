@@ -1,7 +1,15 @@
-# atelier.alternate
+# Atelier Design Yield®
 
-Testing Site for Atelier Design Yield
+Atelier Design Yield® Website
 
-## NOTES
 
-<LightningBoltIcon>
+
+
+### Tech-Stack
+Next.js
+React
+Vercel
+Github
+three.js
+
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
