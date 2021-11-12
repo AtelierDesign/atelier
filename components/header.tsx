@@ -23,8 +23,7 @@ export function Header() {
         saturate: '300%',
         borderBottomWidth: '1px',
         brc: '$lime9'
-      }}
-    >
+      }}>
       <NextLink href="/" passHref>
         <Box
           as="a"
@@ -35,8 +34,7 @@ export function Header() {
             '&:focus': {
               boxShadow: 'none'
             }
-          }}
-        >
+          }}>
           <Heading css={{ fontSize: '18px', fontWeight: '800', pl: '10px' }}>ATELIER®</Heading>
         </Box>
       </NextLink>
@@ -60,15 +58,10 @@ export function Header() {
             display: 'none',
             '@bp1': { display: 'block' },
             '@bp2': { mr: '$5' }
-          }}
-        >
+          }}>
           <Text>GitHub</Text>
         </Link>
-        <Link
-          href="https://discord.com/invite/H4eG3Mk"
-          variant="subtle"
-          css={{ mr: '$5', '@bp2': { mr: '$5' } }}
-        >
+        <Link href="https://discord.com/invite/H4eG3Mk" variant="subtle" css={{ mr: '$5', '@bp2': { mr: '$5' } }}>
           <Text>Twitter</Text>
         </Link>
       </Flex>

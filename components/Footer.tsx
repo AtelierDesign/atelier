@@ -24,8 +24,7 @@ export const Footer = () => {
               gap: '$7',
               gridTemplateColumns: '1fr 1fr 1fr 1fr'
             }
-          }}
-        >
+          }}>
           {/* LOGO SECTION (OR) 1ST LINK SECTION */}
           <Box>
             <Text as="p" css={{ fontSize: '14px', fontWeight: '800' }}>
@@ -43,8 +42,7 @@ export const Footer = () => {
                 fontSize: '11px',
                 textDecoration: 'none',
                 pt: '2px'
-              }}
-            >
+              }}>
               Copyright © 2021.
             </Text>
           </Box>
@@ -66,8 +64,7 @@ export const Footer = () => {
                 fontSize: '12px',
                 textDecoration: 'none',
                 pt: '10px'
-              }}
-            >
+              }}>
               <NextLink href="/" passHref>
                 ONE
               </NextLink>
@@ -84,8 +81,7 @@ export const Footer = () => {
                 fontSize: '12px',
                 textDecoration: 'none',
                 pt: '10px'
-              }}
-            >
+              }}>
               <NextLink href="/" passHref>
                 TWO
               </NextLink>
@@ -103,8 +99,7 @@ export const Footer = () => {
                 fontSize: '12px',
                 textDecoration: 'none',
                 pt: '10px'
-              }}
-            >
+              }}>
               <NextLink href="/" passHref>
                 THREE
               </NextLink>
@@ -121,8 +116,7 @@ export const Footer = () => {
                 fontSize: '12px',
                 textDecoration: 'none',
                 pt: '10px'
-              }}
-            >
+              }}>
               <NextLink href="/" passHref>
                 FOUR
               </NextLink>
@@ -146,8 +140,7 @@ export const Footer = () => {
                 fontSize: '12px',
                 textDecoration: 'none',
                 pt: '10px'
-              }}
-            >
+              }}>
               <NextLink href="/" passHref>
                 ONE
               </NextLink>
@@ -164,8 +157,7 @@ export const Footer = () => {
                 fontSize: '12px',
                 textDecoration: 'none',
                 pt: '10px'
-              }}
-            >
+              }}>
               <NextLink href="/" passHref>
                 TWO
               </NextLink>
@@ -183,8 +175,7 @@ export const Footer = () => {
                 fontSize: '12px',
                 textDecoration: 'none',
                 pt: '10px'
-              }}
-            >
+              }}>
               <NextLink href="/" passHref>
                 THREE
               </NextLink>
@@ -201,8 +192,7 @@ export const Footer = () => {
                 fontSize: '12px',
                 textDecoration: 'none',
                 pt: '10px'
-              }}
-            >
+              }}>
               <NextLink href="/" passHref>
                 FOUR
               </NextLink>
@@ -226,8 +216,7 @@ export const Footer = () => {
                 fontSize: '12px',
                 textDecoration: 'none',
                 pt: '10px'
-              }}
-            >
+              }}>
               <NextLink href="/" passHref>
                 ONE
               </NextLink>
@@ -244,8 +233,7 @@ export const Footer = () => {
                 fontSize: '12px',
                 textDecoration: 'none',
                 pt: '10px'
-              }}
-            >
+              }}>
               <NextLink href="/" passHref>
                 TWO
               </NextLink>
@@ -263,8 +251,7 @@ export const Footer = () => {
                 fontSize: '12px',
                 textDecoration: 'none',
                 pt: '10px'
-              }}
-            >
+              }}>
               <NextLink href="/" passHref>
                 THREE
               </NextLink>
@@ -281,8 +268,7 @@ export const Footer = () => {
                 fontSize: '12px',
                 textDecoration: 'none',
                 pt: '10px'
-              }}
-            >
+              }}>
               <NextLink href="/" passHref>
                 FOUR
               </NextLink>

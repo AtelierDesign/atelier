@@ -21,8 +21,7 @@ export function HeroContainer({ css, children }: { css?: any; children?: React.R
 
         '@bp2': { mx: '-$7' },
         '@bp3': { mx: '-$8' }
-      }}
-    >
+      }}>
       {children}
     </Box>
   );

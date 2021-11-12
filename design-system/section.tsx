@@ -1,4 +1,4 @@
-import { styled } from 'stitches.config'
+import { styled } from 'stitches.config';
 
 export const Section = styled('section', {
   // Reset
@@ -6,34 +6,34 @@ export const Section = styled('section', {
   flexShrink: 0,
   '&::before': {
     boxSizing: 'border-box',
-    content: '""',
+    content: '""'
   },
   '&::after': {
     boxSizing: 'border-box',
-    content: '""',
+    content: '""'
   },
 
   variants: {
     size: {
       1: {
-        py: '$3',
+        py: '$3'
       },
       2: {
-        py: '$5',
+        py: '$5'
       },
       3: {
         py: '$9',
         px: '0',
-        margin: 'auto',
+        margin: 'auto'
       },
       4: {
         py: '150px',
         px: '10px',
-        margin: 'auto',
-      },
-    },
+        margin: 'auto'
+      }
+    }
   },
   defaultVariants: {
-    size: '3',
-  },
-})
+    size: '3'
+  }
+});

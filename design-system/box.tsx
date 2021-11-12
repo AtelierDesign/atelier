@@ -1,10 +1,10 @@
-import { CSS, css, styled } from 'stitches.config'
+import { CSS, css, styled } from 'stitches.config';
 
 const styles: CSS = {
   // Reset
-  include: ['box'],
-}
+  include: ['box']
+};
 
-export const box = css(styles)
+export const box = css(styles);
 
-export const Box = styled('div', box)
+export const Box = styled('div', box);

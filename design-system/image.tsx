@@ -1,7 +1,7 @@
-import { styled } from 'stitches.config'
+import { styled } from 'stitches.config';
 
 export const Image = styled('img', {
   // Reset
   verticalAlign: 'middle',
-  maxWidth: '100%',
-})
+  maxWidth: '100%'
+});

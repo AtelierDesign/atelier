@@ -15,8 +15,7 @@ export const TwoCards = () => {
         css={{
           gridTemplateColumns: 'repeat(2, minmax(0, 1fr))',
           gap: '$4'
-        }}
-      >
+        }}>
         <Box css={{ bc: '$bronze2', br: '$4', height: '300px' }}>
           <Text as="p" size="4" css={{ fontWeight: '800', padding: '26px', lineHeight: '27px' }}>
             COLUMN ONE

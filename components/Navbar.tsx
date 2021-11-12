@@ -1,10 +1,10 @@
-import NextLink from 'next/link'
-import { Box } from '@design-system/box'
-import { Flex } from '@design-system/flex'
-import { Link } from '@design-system/link'
-import { ThemeToggle } from '@components/ThemeToggle'
+import NextLink from 'next/link';
+import { Box } from '@design-system/box';
+import { Flex } from '@design-system/flex';
+import { Link } from '@design-system/link';
+import { ThemeToggle } from '@components/ThemeToggle';
 
-import Image from 'next/image'
+import Image from 'next/image';
 
 export const Navbar = () => {
   return (
@@ -22,7 +22,7 @@ export const Navbar = () => {
         backdropFilter: 'blur(10px)',
         saturate: '200%',
         borderBottomWidth: '1px',
-        brc: '$lime9',
+        brc: '$lime9'
       }}>
       {/* LOGO SECTION */}
       <NextLink href="/" passHref>
@@ -34,17 +34,11 @@ export const Navbar = () => {
             display: 'inline-flex',
             textDecoration: 'none',
             '&:focus': {
-              boxShadow: 'none',
+              boxShadow: 'none'
             },
-            '@bp2': { ml: '$5' },
+            '@bp2': { ml: '$5' }
           }}>
-          <Image
-            className="logo"
-            alt="logo"
-            src="/butterfly_logo.svg"
-            width={110}
-            height={20}
-          />
+          <Image className="logo" alt="logo" src="/butterfly_logo.svg" width={110} height={20} />
         </Box>
       </NextLink>
 
@@ -58,5 +52,5 @@ export const Navbar = () => {
         </NextLink>
       </Flex>
     </Flex>
-  )
-}
+  );
+};
