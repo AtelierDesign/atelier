@@ -23,7 +23,7 @@ export const OneCol = () => {
             boxShadow: 'inset 0 0 0 1px $colors$slate7',
             position: 'relative'
           }}>
-          <Box css={{ height: '400px', position: 'relative' }}>
+          <Box css={{ height: '400px', position: 'relative', zIndex: '100' }}>
             <Text
               as="p"
               size="5"
