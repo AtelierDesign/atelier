@@ -53,7 +53,15 @@ export const OneCol = () => {
             </Button>
           </Box>
           <Box css={{ zIndex: '4' }}>
-            <Image src="/img/shape-smallblue.png" layout="fill" objectFit="cover" alt="image" objectPosition="absolute" priority />
+            <Image
+              className="color__swirl"
+              src="/img/blue-swirl.png"
+              layout="fill"
+              objectFit="cover"
+              alt="image"
+              objectPosition="absolute"
+              priority
+            />
           </Box>
         </Grid>
       </Container>
