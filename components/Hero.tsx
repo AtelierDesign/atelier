@@ -8,16 +8,11 @@ import { Grid } from '@design-system/grid';
 import { Flex } from '@design-system/flex';
 import { Text } from '@design-system/text';
 import { Paragraph } from '@design-system/paragraph';
-import { Separator } from '@design-system/separator';
 import { theme } from 'stitches.config';
-import { ExternalLinkIcon, RocketIcon, CopyIcon, CheckIcon } from '@radix-ui/react-icons';
+import { ExternalLinkIcon, RocketIcon } from '@radix-ui/react-icons';
 import { HomeButton } from '@components/HomeButton';
-import { Button } from '@design-system/button';
-import copy from 'copy-to-clipboard';
 
 export function Hero() {
-  const [hasCopied, setHasCopied] = React.useState(false);
-
   return (
     <Box css={{ bc: '$slate1' }}>
       <Section
@@ -80,47 +75,6 @@ export function Hero() {
             </HomeButton>
           </Flex>
         </Container>
-
-        {/* BEGIN COPY-TO-CLIPBOARD SECTION
-        <Container
-          size={{ '@initial': '3', '@bp1': '1' }}
-          css={{
-            my: '$6',
-            position: 'relative',
-            zIndex: '1',
-            '@bp2': { my: '$8' }
-          }}>
-          <Flex
-            css={{
-              boxShadow: 'inset 0 0 0 1px rgba(0,0,0,.08)',
-              borderRadius: '$4',
-              fontFamily: '$mono',
-              fontSize: '$2',
-              lineHeight: 1,
-              ai: 'center',
-              height: '$7',
-              color: '$hiContrast',
-              backgroundColor: 'rgba(0,0,0,.01)',
-              px: '$4',
-              jc: 'space-between',
-              '.dark-theme &': {
-                backgroundColor: 'rgba(255,255,255,.04)',
-                boxShadow: 'none'
-              }
-            }}>
-            <Box>npm install @atelier/design</Box>
-            <Button
-              css={{ color: '$slate11', mr: '-$1' }}
-              aria-label="Copy the install snippet to Clipboard"
-              onClick={() => {
-                copy('npm install @atelier/design');
-                setHasCopied(true);
-              }}>
-              {hasCopied ? <CheckIcon /> : <CopyIcon />}
-            </Button>
-          </Flex>
-        </Container>
-        */}
 
         {/* BEGIN 3 COLUMNS SECTION */}
         <Container size="3" css={{ paddingTop: '80px', paddingBottom: '50px', px: '18px' }}>
