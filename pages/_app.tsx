@@ -14,7 +14,7 @@ const appWrapper = css({
 const App = ({ Component, pageProps }: AppProps) => {
   globalCss(reset, {
     'body, button': {
-      backgroundColor: '$lime9',
+      backgroundColor: '$slate1',
       fontFamily: '$inter'
     }
   });
@@ -32,8 +32,7 @@ const App = ({ Component, pageProps }: AppProps) => {
           className={appWrapper({
             display: 'flex',
             flexDirection: 'column'
-          })}
-        >
+          })}>
           <div className={box({ flex: 1 })}>
             <Component {...pageProps} />
           </div>

@@ -8,6 +8,7 @@ import { Grid } from '@design-system/grid';
 import { Flex } from '@design-system/flex';
 import { Text } from '@design-system/text';
 import { Paragraph } from '@design-system/paragraph';
+import { Separator } from '@design-system/separator';
 import { theme } from 'stitches.config';
 import { ExternalLinkIcon, RocketIcon, CopyIcon, CheckIcon } from '@radix-ui/react-icons';
 import { HomeButton } from '@components/HomeButton';
@@ -52,11 +53,12 @@ export function Hero() {
           <Paragraph
             size="2"
             css={{
-              mb: '$6',
+              fontSize: '18px',
+              mb: '60px',
               '@bp2': {
                 mx: 230,
                 ta: 'center',
-                mb: '$7'
+                mb: '30px'
               }
             }}>
             An ever– expanding ecosystem of design components. Multi-variant support, and a best-in-class developer experience.
@@ -79,6 +81,7 @@ export function Hero() {
           </Flex>
         </Container>
 
+        {/* BEGIN COPY-TO-CLIPBOARD SECTION
         <Container
           size={{ '@initial': '3', '@bp1': '1' }}
           css={{
@@ -117,8 +120,10 @@ export function Hero() {
             </Button>
           </Flex>
         </Container>
+        */}
 
-        <Container size="3" css={{ paddingTop: '50px', px: '20px' }}>
+        {/* BEGIN 3 COLUMNS SECTION */}
+        <Container size="3" css={{ paddingTop: '80px', paddingBottom: '50px', px: '18px' }}>
           <Grid
             css={{
               gap: '$6',

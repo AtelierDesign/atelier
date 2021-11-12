@@ -42,7 +42,7 @@ export const NavbarSticky = () => {
       {/* NAVIGATION SECTION */}
       <Flex as="nav" css={{ ai: 'center', px: '0px' }}>
         <ThemeToggle />
-        <NextLink href="https://docs.ady.world" passHref>
+        <NextLink href="https://ady.world" passHref>
           <Link variant="subtle" css={{ mr: '$3', '@bp2': { mr: '$3' } }}>
             Shop <ArrowRightIcon />
           </Link>
@@ -54,7 +54,7 @@ export const NavbarSticky = () => {
           </Link>
         </NextLink>
 
-        <NextLink href="https://docs.ady.world" passHref>
+        <NextLink href="https://api.ady.world" passHref>
           <Link variant="subtle" css={{ display: 'none', mr: '$3', '@bp2': { display: 'block', mr: '$3' } }}>
             Resources
           </Link>

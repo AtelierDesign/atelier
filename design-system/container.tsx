@@ -24,7 +24,8 @@ export const Container = styled('div', {
         alignItems: 'center'
       },
       '3': {
-        maxWidth: '1145px'
+        maxWidth: '1145px',
+        px: '18px'
       },
       '4': {
         maxWidth: 'none',

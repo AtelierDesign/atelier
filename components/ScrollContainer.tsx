@@ -8,13 +8,14 @@ const Grid = styled('div', {
   overflowY: 'hidden',
   display: 'flex',
   flexDirection: 'row',
-  gap: '20px'
+  gap: '20px',
+  bc: '$slate1'
 });
 
 const Scroller = styled('div', {
   width: '100vw',
   height: 'auto',
-  backgroundColor: '$slate2',
+  backgroundColor: '$slate1',
   display: 'inline-flex',
 
   overflowX: 'auto',
