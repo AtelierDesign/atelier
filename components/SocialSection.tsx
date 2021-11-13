@@ -5,16 +5,11 @@ import { Text } from '@design-system/text';
 import { Container } from '@design-system/container';
 import { Heading } from '@design-system/heading';
 import { Section } from '@design-system/section';
-import { Separator } from '@design-system/separator';
 
 export const SocialSection = () => {
   return (
     <Section size="3">
       <Container size="2" css={{ px: '0' }}>
-        <Box css={{ mb: '$5' }}>
-          <Separator size="2" />
-        </Box>
-
         <Grid
           gap="2"
           flow={{ '@initial': 'row', '@bp2': 'column' }}

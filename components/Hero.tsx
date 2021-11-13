@@ -1,5 +1,4 @@
 import React from 'react';
-import NextLink from 'next/link';
 import { Section } from '@design-system/section';
 import { Container } from '@design-system/container';
 import { Box } from '@design-system/box';

@@ -1,15 +1,19 @@
-import NextLink from 'next/link';
 import { Box } from '@design-system/box';
 import { Container } from '@design-system/container';
 import { Section } from '@design-system/section';
 import { Heading } from '@design-system/heading';
 import { Text } from '@design-system/text';
 import { NavbarSticky } from '@components/NavbarSticky';
+import { FooterMain } from '@components/FooterMain';
 import { DefaultButton } from '@components/DefaultButton';
 import { Hero } from '@components/Hero';
+import { Spacer } from '@components/Spacer';
+import { Line } from '@components/Line';
 import { OneCol } from '@components/OneCol';
 import { SocialSection } from '@components/SocialSection';
 import { ArrowRightIcon } from '@radix-ui/react-icons';
+import { CursorArrowIcon } from '@radix-ui/react-icons';
+
 import React from 'react';
 
 import { styled } from '@stitches/react';
@@ -32,8 +36,7 @@ const Scroller = styled('div', {
   overflowX: 'scroll',
   overflowY: 'hidden',
 
-  padding: '18px',
-  marginTop: '20px'
+  padding: '18px'
 });
 
 const Card = styled('div', {
@@ -56,20 +59,20 @@ const Card = styled('div', {
 const Atelier = () => {
   return (
     <div>
-      <Box css={{ bc: '$slate1', marginTop: '0', marginLeft: '0', marginRight: '0', px: '0', paddingBottom: '30px' }}>
+      <Box>
         <NavbarSticky />
         <Hero />
 
         <OneCol />
       </Box>
-
+      <Spacer />
       <Box css={{ padding: '0px', bc: '$slate1' }}>
-        <Container size="3" css={{}}>
-          <Text css={{ color: '$slate8', fontWeight: '500', lineHeight: '2', paddingLeft: '5px' }}>Adobe® After Effects</Text>
-          <Heading size="2" css={{ fontWeight: '600', paddingLeft: '5px' }}>
-            Adoption made easy.
+        <Container size="3" css={{ bc: 'none' }}>
+          <Text css={{ color: '$slate9', fontWeight: '500', lineHeight: '2', paddingLeft: '6px' }}>Adobe® After Effects</Text>
+          <Heading size="3" css={{ fontWeight: '600', paddingLeft: '5px' }}>
+            Style made easy.
           </Heading>
-          <Text css={{ color: '$slate8', lineHeight: '1.5', px: '5px', fontSize: '16px', marginTop: '20px', width: '80%' }}>
+          <Text css={{ color: '$slate9', lineHeight: '1.4', px: '5px', py: '20px', fontSize: '16px', width: '80%' }}>
             Create open and close animations that take the dropdown menu’s actual position into account.
           </Text>
           <DefaultButton as="a" css={{}}>
@@ -78,7 +81,7 @@ const Atelier = () => {
         </Container>
       </Box>
 
-      <Box css={{ padding: '0px', bc: '$slate1' }}>
+      <Box css={{ padding: '0px', bc: 'none' }}>
         <Scroller className="scroll-container">
           <GridX className="scroll-grid">
             {/* INSERT CARD COMPONENT WITH CHILDREN */}
@@ -112,13 +115,23 @@ const Atelier = () => {
         </Scroller>
       </Box>
 
+      <Line />
+
       <Box css={{ bc: '$slate1', margin: '0', px: '0' }}>
         <Section size="3">
+          <Heading size="3" css={{ textAlign: 'center', fontWeight: '600' }}>
+            Atelier® <strong>Community.</strong>
+          </Heading>
+          <Text css={{ textAlign: 'center', lineHeight: '3' }}>
+            Get involved. Get inspired.{` `}
+            <CursorArrowIcon />
+          </Text>
           <Container size="3" css={{ jc: 'center', ai: 'center', margin: 'auto' }}>
             <SocialSection />
           </Container>
         </Section>
       </Box>
+      <FooterMain />
     </div>
   );
 };

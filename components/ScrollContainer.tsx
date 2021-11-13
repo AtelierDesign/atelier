@@ -22,8 +22,7 @@ const Scroller = styled('div', {
   overflowX: 'auto',
   overflowY: 'hidden',
 
-  padding: '18px',
-  marginTop: '20px'
+  padding: '18px'
 });
 
 export const ScrollContainer = ({ children }) => {

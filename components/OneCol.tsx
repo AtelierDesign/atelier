@@ -9,8 +9,8 @@ import React from 'react';
 
 export const OneCol = () => {
   return (
-    <Box>
-      <Container size="3" css={{ my: '40px', px: '18px', bc: 'transparent' }}>
+    <Box css={{ bc: '$slate1' }}>
+      <Container size="3" css={{ px: '18px', bc: '$slate1' }}>
         <Grid
           css={{
             gridTemplateColumns: 'repeat(1, minmax(0, 1fr))',
