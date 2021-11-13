@@ -1,0 +1,10 @@
+import React from 'react';
+import Moment from 'react-moment';
+import 'moment-timezone';
+import moment from 'moment';
+
+export const TimeCode = () => {
+  const currentTime = moment().format('LTS');
+
+  return <Moment format="00 hh:mm:0ss" interval={1000}></Moment>;
+};

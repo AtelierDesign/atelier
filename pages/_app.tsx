@@ -6,6 +6,7 @@ import { css, globalCss } from 'stitches.config';
 import { reset } from '@styles/reset';
 import '../styles.css';
 import '../styles/inter.css';
+import '../styles/bergen.css';
 
 const appWrapper = css({
   include: ['box', 'minHeightScreen']

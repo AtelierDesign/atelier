@@ -204,9 +204,10 @@ export const { styled, css, theme, createTheme, getCssText, globalCss, keyframes
       shadowDark: 'hsl(206 22% 7% / 20%)'
     },
     fonts: {
+      inter: "'Inter', 'sans-serif'",
+      jetbrain: "'Jet Brains', monopace",
       untitled: "-apple-system, BlinkMacSystemFont, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif",
-      mono: 'Söhne Mono, menlo, monospace',
-      inter: "'Inter', 'sans-serif'"
+      bergen: 'Bergen Mono, monospace'
     },
     space: {
       1: '5px',

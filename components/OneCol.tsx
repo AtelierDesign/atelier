@@ -3,9 +3,35 @@ import { Container } from '@design-system/container';
 import { Grid } from '@design-system/grid';
 import { Text } from '@design-system/text';
 import { Heading } from '@design-system/heading';
+import { TimeCode } from '@components/Time/TimeCode';
 import { Button } from '@design-system/button';
 import Image from 'next/image';
 import React from 'react';
+
+import { styled } from '@stitches/react';
+
+const TimeDisplay = styled('div', {
+  fontFamily: '$jetbrain',
+  fontSize: '14px',
+  fontWeight: '500',
+  color: '$mauve12',
+  textAlign: 'left',
+  margin: '0',
+  paddingTop: '20px',
+  ppaddingBottom: '40px',
+  paddingLeft: '3px',
+  paddingRight: '0px',
+  zIndex: '200',
+  lineHeight: '22px',
+
+  userSelect: 'none',
+  WebkitUserSelect: 'none',
+
+  '&:hover': {
+    // cursor: 'none',
+    cursor: 'url(https://cdn.ady.systems/assets/mauve-butterfly.svg) 4 12, auto'
+  }
+});
 
 export const OneCol = () => {
   return (
@@ -17,7 +43,7 @@ export const OneCol = () => {
             gap: '$2',
             bc: '$clear100',
             br: '26px',
-            px: '30px',
+            px: '20px',
             border: '1px solid',
             borderColor: '$slate6',
             zIndex: '20',
@@ -55,8 +81,11 @@ export const OneCol = () => {
               }}>
               ADY® is an ever– expanding ecosystem of essential design components built for modern web.
             </Text>
+            <TimeDisplay>
+              <TimeCode />
+            </TimeDisplay>
 
-            <Button size="2" variant="gray" css={{ marginTop: '20px', zIndex: '25' }}>
+            <Button size="2" variant="gray" css={{ marginTop: '30px', zIndex: '25', px: '20px', borderRadius: '10px' }}>
               Base Button
             </Button>
           </Box>

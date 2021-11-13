@@ -42,9 +42,8 @@ export const button = css({
         lineHeight: '$sizes$5'
       },
       '2': {
-        borderRadius: '8px',
+        marginLeft: '-1px',
         height: '$6',
-        px: '$3',
         fontSize: '$3',
         lineHeight: '$sizes$6'
       },

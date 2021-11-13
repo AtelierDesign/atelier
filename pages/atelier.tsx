@@ -11,6 +11,7 @@ import { Spacer } from '@components/Spacer';
 import { Line } from '@components/Line';
 import { OneCol } from '@components/OneCol';
 import { SocialSection } from '@components/SocialSection';
+import { TimeCode } from '@components/Time/TimeCode';
 import { ArrowRightIcon } from '@radix-ui/react-icons';
 import { CursorArrowIcon } from '@radix-ui/react-icons';
 
@@ -56,11 +57,37 @@ const Card = styled('div', {
   webkitScrollbar: 'none'
 });
 
+const TimeDisplay = styled('div', {
+  fontFamily: '$jetbrain',
+  fontSize: '12px',
+  fontWeight: '600',
+  color: '$mauve10',
+  textAlign: 'right',
+  margin: '0',
+  paddingTop: '0px',
+  ppaddingBottom: '00px',
+  paddingLeft: '8px',
+  paddingRight: '20px',
+  zIndex: '200',
+  lineHeight: '1',
+
+  userSelect: 'none',
+  WebkitUserSelect: 'none',
+
+  '&:hover': {
+    // cursor: 'none',
+    cursor: 'url(https://cdn.ady.systems/assets/mauve-butterfly.svg) 4 12, auto'
+  }
+});
+
 const Atelier = () => {
   return (
     <div>
       <Box>
         <NavbarSticky />
+        <TimeDisplay>
+          <TimeCode />
+        </TimeDisplay>
         <Hero />
 
         <OneCol />
