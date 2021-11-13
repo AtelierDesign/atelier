@@ -28,7 +28,7 @@ const App = ({ Component, pageProps }: AppProps) => {
           <link rel="stylesheet" href="https://develop.modulz.app/fonts/fonts.css" />
           <link rel="stylesheet" href="https://use.typekit.net/ybs8pdb.css" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-          <style>@import url('https://use.typekit.net/ybs8pdb.css');</style>
+          <style>@import url('https://use.typekit.net/ybs8pdb.css')</style>
         </Head>
 
         <div
