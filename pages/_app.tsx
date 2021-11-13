@@ -15,7 +15,8 @@ const appWrapper = css({
 const App = ({ Component, pageProps }: AppProps) => {
   globalCss(reset, {
     'body, button': {
-      backgroundColor: '$slate1'
+      backgroundColor: '$slate1',
+      fontFamily: '$inter'
     }
   });
 

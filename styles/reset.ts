@@ -4,7 +4,8 @@ export const reset = {
     '-webkit-text-size-adjust': '100%'
   },
   body: {
-    margin: 0
+    margin: 0,
+    fontFamily: '$inter'
   },
   main: {
     display: 'block'
