@@ -30,6 +30,7 @@ export function Hero() {
           <Heading
             size="4"
             css={{
+              fontFamily: '$forma',
               fontWeight: '700',
               mb: '$3',
               '@bp1': {

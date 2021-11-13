@@ -206,8 +206,8 @@ export const { styled, css, theme, createTheme, getCssText, globalCss, keyframes
     fonts: {
       inter: "'Inter', 'sans-serif'",
       jetbrain: "'Jet Brains', monopace",
-      untitled: "-apple-system, BlinkMacSystemFont, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif",
-      bergen: 'Bergen Mono, monospace'
+      forma: "'forma-djr-micro, sans-serif'",
+      untitled: "-apple-system, BlinkMacSystemFont, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif"
     },
     space: {
       1: '5px',

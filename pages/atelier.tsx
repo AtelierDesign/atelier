@@ -84,15 +84,24 @@ const Atelier = () => {
   return (
     <div>
       <Box>
+        {/* NAVBAR */}
         <NavbarSticky />
+
+        {/* TIME DISPLAY */}
         <TimeDisplay>
           <TimeCode />
         </TimeDisplay>
+
+        {/* HOMEPAGE CONTAINER */}
         <Hero />
 
+        {/* LARGE ONE COLUMN CONTAINER */}
         <OneCol />
+        {/* --- */}
       </Box>
+
       <Spacer />
+
       <Box css={{ padding: '0px', bc: '$slate1' }}>
         <Container size="3" css={{ bc: 'none' }}>
           <Text css={{ color: '$slate9', fontWeight: '500', lineHeight: '2', paddingLeft: '6px' }}>Adobe® After Effects</Text>
@@ -107,6 +116,8 @@ const Atelier = () => {
           </DefaultButton>
         </Container>
       </Box>
+
+      {/* OVERFLOW X SCROLL CONTAINER */}
 
       <Box css={{ padding: '0px', bc: 'none' }}>
         <Scroller className="scroll-container">
@@ -142,7 +153,11 @@ const Atelier = () => {
         </Scroller>
       </Box>
 
+      {/* END --- OVERFLOW X SCROLL CONTAINER */}
+
       <Line />
+
+      {/* COMMUNITY CONTAINER */}
 
       <Box css={{ bc: '$slate1', margin: '0', px: '0' }}>
         <Section size="3">
@@ -158,6 +173,9 @@ const Atelier = () => {
           </Container>
         </Section>
       </Box>
+
+      {/* END --- COMMUNITY CONTAINER */}
+
       <FooterMain />
     </div>
   );
