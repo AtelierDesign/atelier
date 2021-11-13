@@ -59,6 +59,7 @@ export function Hero() {
             }}>
             An ever– expanding ecosystem of design components. Multi-variant support, and a best-in-class developer experience.
           </Paragraph>
+
           <Flex css={{ '@bp2': { jc: 'center', my: '$7' } }}>
             <DefaultButton css={{ lineHeight: '1', mr: '$3' }}>
               Latest Release

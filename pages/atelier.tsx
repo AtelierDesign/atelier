@@ -14,6 +14,7 @@ import { SocialSection } from '@components/SocialSection';
 import { TimeCode } from '@components/Time/TimeCode';
 import { ArrowRightIcon } from '@radix-ui/react-icons';
 import { CursorArrowIcon } from '@radix-ui/react-icons';
+import Image from 'next/image';
 
 import React from 'react';
 
@@ -80,6 +81,78 @@ const TimeDisplay = styled('div', {
   }
 });
 
+const ImageButton = styled('button', {
+  zIndex: '400',
+  fontFamily: '$jetbrain',
+  fontWeight: '700',
+  fontSize: '13px',
+  backgroundColor: '$slate8',
+  color: 'white',
+  paddingLeft: '30px',
+  paddingRight: '30px',
+  py: '6px',
+  height: '32px',
+  borderRadius: '10px',
+  border: '1px solid',
+  borderColor: '$sky11',
+  lineHeight: '1',
+  width: 'auto',
+  position: 'absolute',
+  bottom: '0',
+  left: '30px',
+  marginBottom: '32px',
+
+  '&:hover': {
+    backgroundColor: '$slate7',
+    color: '$sky11',
+    cursor: 'pointer'
+  }
+});
+
+const SmallText = styled('p', {
+  zIndex: '400',
+  fontFamily: '$jetbrain',
+  fontWeight: '600',
+  fontSize: '12px',
+  backgroundColor: '$gray7',
+  color: '$sky11',
+  paddingLeft: '7px',
+  paddingRight: '5px',
+  paddingTop: '3px',
+  paddingBottom: '1px',
+
+  position: 'absolute',
+  bottom: '0',
+  left: '33px',
+  marginBottom: '72px'
+});
+
+const ImageArrow = styled('button', {
+  zIndex: '400',
+  fontSize: '14px',
+  backgroundColor: 'transparent',
+  color: '$slate12',
+  paddingLeft: '30px',
+  paddingRight: '30px',
+  py: '6px',
+  height: '32px',
+  borderRadius: '10px',
+  border: '0px solid',
+  borderColor: '$sky11',
+  lineHeight: '1',
+  width: 'auto',
+  position: 'absolute',
+  bottom: '0',
+  right: '150px',
+  marginBottom: '32px',
+
+  '&:hover': {
+    backgroundColor: '$slate7',
+    color: '$sky11',
+    cursor: 'pointer'
+  }
+});
+
 const Atelier = () => {
   return (
     <div>
@@ -104,11 +177,13 @@ const Atelier = () => {
 
       <Box css={{ padding: '0px', bc: '$slate1' }}>
         <Container size="3" css={{ bc: 'none' }}>
-          <Text css={{ color: '$slate9', fontWeight: '500', lineHeight: '2', paddingLeft: '6px' }}>Adobe® After Effects</Text>
+          <Text css={{ color: '$slate9', fontWeight: '500', lineHeight: '1.6', paddingLeft: '6px' }}>
+            <strong>Adobe</strong>® After Effects
+          </Text>
           <Heading size="3" css={{ fontWeight: '600', paddingLeft: '5px' }}>
             Style made easy.
           </Heading>
-          <Text css={{ color: '$slate9', lineHeight: '1.4', px: '5px', py: '20px', fontSize: '16px', width: '80%' }}>
+          <Text css={{ color: '$slate9', lineHeight: '1.4', px: '5px', py: '15px', fontSize: '16px', width: '80%' }}>
             Create open and close animations that take the dropdown menu’s actual position into account.
           </Text>
           <DefaultButton as="a" css={{}}>
@@ -125,29 +200,159 @@ const Atelier = () => {
             {/* INSERT CARD COMPONENT WITH CHILDREN */}
             {/* <Card> .. children .. </Card> */}
             <Card>
-              <Heading size="1" css={{ fontWeight: '600' }}>
-                Feature One
+              <Heading size="2" css={{ fontWeight: '600' }}>
+                Sound.
               </Heading>
+              <Text
+                as="p"
+                variant="gray"
+                size="3"
+                className="image-text"
+                css={{
+                  zIndex: '300',
+                  width: '94%',
+                  fontWeight: '400',
+                  paddingTop: '12px',
+                  lineHeight: '22px'
+                }}>
+                Description. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                magna aliqua.
+              </Text>
+              <SmallText>From $19.99</SmallText>
+              <ImageButton>Buy Now</ImageButton>
+              <ImageArrow>
+                /{` `}
+                <ArrowRightIcon />
+              </ImageArrow>
+              <Image
+                className="color__swirl"
+                src="https://cdn.ady.systems/ady.images/one.png"
+                layout="fill"
+                objectFit="cover"
+                alt="image"
+                objectPosition="absolute"
+                priority
+              />
             </Card>
             <Card>
-              <Heading size="1" css={{ fontWeight: '600' }}>
-                Feature One
+              <Heading size="2" css={{ fontWeight: '600', zIndex: '300' }}>
+                Style.
               </Heading>
+              <Text
+                as="p"
+                variant="gray"
+                size="3"
+                className="image-text"
+                css={{
+                  zIndex: '300',
+                  width: '94%',
+                  fontWeight: '400',
+                  paddingTop: '16px',
+                  lineHeight: '22px'
+                }}>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
+              </Text>
+              <SmallText>From $19.99</SmallText>
+              <ImageButton>Buy Now</ImageButton>
+              <Image
+                className="color__swirl"
+                src="https://cdn.ady.systems/ady.images/five.png"
+                layout="fill"
+                objectFit="cover"
+                alt="image"
+                objectPosition="absolute"
+                priority
+              />
             </Card>
             <Card>
-              <Heading size="1" css={{ fontWeight: '600' }}>
-                Feature One
+              <Heading size="2" css={{ fontWeight: '600' }}>
+                Texture.
               </Heading>
+              <Text
+                as="p"
+                variant="gray"
+                size="3"
+                className="image-text"
+                css={{
+                  zIndex: '300',
+                  width: '94%',
+                  fontWeight: '400',
+                  paddingTop: '16px',
+                  lineHeight: '22px'
+                }}>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
+              </Text>
+              <SmallText>From $19.99</SmallText>
+              <ImageButton>Buy Now</ImageButton>
+              <Image
+                className="color__swirl"
+                src="https://cdn.ady.systems/ady.images/three.png"
+                layout="fill"
+                objectFit="cover"
+                alt="image"
+                objectPosition="absolute"
+                priority
+              />
             </Card>
             <Card>
-              <Heading size="1" css={{ fontWeight: '600' }}>
-                Feature One
+              <Heading size="2" css={{ fontWeight: '600' }}>
+                Motion.
               </Heading>
+              <Text
+                as="p"
+                variant="gray"
+                size="3"
+                className="image-text"
+                css={{
+                  zIndex: '300',
+                  width: '94%',
+                  fontWeight: '400',
+                  paddingTop: '16px',
+                  lineHeight: '22px'
+                }}>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
+              </Text>
+              <SmallText>From $19.99</SmallText>
+              <ImageButton>Buy Now</ImageButton>
+              <Image
+                className="color__swirl"
+                src="https://cdn.ady.systems/ady.images/four.png"
+                layout="fill"
+                objectFit="cover"
+                alt="image"
+                objectPosition="absolute"
+                priority
+              />
             </Card>
             <Card>
-              <Heading size="1" css={{ fontWeight: '600' }}>
-                Feature One
+              <Heading size="2" css={{ fontWeight: '600' }}>
+                Type.
               </Heading>
+              <Text
+                as="p"
+                variant="gray"
+                size="3"
+                className="image-text"
+                css={{
+                  zIndex: '300',
+                  width: '94%',
+                  fontWeight: '400',
+                  paddingTop: '16px',
+                  lineHeight: '22px'
+                }}>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
+              </Text>
+              <SmallText>From $19.99</SmallText>
+              <ImageButton>Buy Now</ImageButton>
+              <Image
+                className="color__swirl"
+                src="https://cdn.ady.systems/ady.images/five.png"
+                layout="fill"
+                objectFit="cover"
+                alt="image"
+                objectPosition="absolute"
+                priority
+              />
             </Card>
           </GridX>
         </Scroller>

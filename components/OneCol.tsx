@@ -33,6 +33,21 @@ const TimeDisplay = styled('div', {
   }
 });
 
+const DesignYieldLogo = styled('div', {
+  alignItems: 'left',
+  zIndex: '400',
+  backgroundColor: 'transparent',
+  paddingLeft: '0px',
+  paddingRight: '0px',
+  py: '6px',
+  lineHeight: '1',
+  width: 'auto',
+  position: 'absolute',
+  bottom: '0',
+  left: '0px',
+  marginBottom: '0px'
+});
+
 export const OneCol = () => {
   return (
     <Box css={{ bc: '$slate1' }}>
@@ -88,6 +103,10 @@ export const OneCol = () => {
             <Button size="2" variant="gray" css={{ marginTop: '30px', zIndex: '25', px: '20px', borderRadius: '10px' }}>
               Base Button
             </Button>
+
+            <DesignYieldLogo>
+              <Image src="/svg/design_yield.svg" alt="designyieldlogo" width={120} height={40} />
+            </DesignYieldLogo>
           </Box>
           <div className="color__box">
             <Image

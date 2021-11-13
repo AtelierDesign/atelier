@@ -21,7 +21,8 @@ export const Text = styled('span', {
         fontSize: '$3'
       },
       '4': {
-        fontSize: '$4'
+        fontSize: '$4',
+        zIndex: '400'
       },
       '5': {
         fontSize: '$5',
