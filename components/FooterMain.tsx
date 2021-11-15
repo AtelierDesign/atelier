@@ -30,8 +30,8 @@ export const FooterMain = () => {
         borderTop: '1px solid',
         borderColor: '$slate4',
         bc: '$gray1',
-        paddingTop: '40px',
-        paddingBottom: '40px',
+        paddingTop: '60px',
+        paddingBottom: '70px',
         margin: 'auto',
         px: '0',
         height: 'auto'
@@ -71,7 +71,7 @@ export const FooterMain = () => {
             <Card>
               <Box css={{ position: 'absolute', top: '0', left: '0', margin: '5px' }}>
                 <Text size="2" css={{ fontWeight: '600', lineHeight: '2' }}>
-                  Link Section One
+                  Information
                 </Text>
 
                 <Text size="1" css={{ fontWeight: '400', fontSize: '11px', lineHeight: '2' }}>
@@ -93,7 +93,7 @@ export const FooterMain = () => {
             <Card>
               <Box css={{ position: 'absolute', top: '0', left: '0', margin: '5px' }}>
                 <Text size="2" css={{ fontWeight: '600', lineHeight: '2' }}>
-                  Link Section TWO
+                  Resources
                 </Text>
 
                 <Text size="1" css={{ fontWeight: '400', fontSize: '11px', lineHeight: '2' }}>

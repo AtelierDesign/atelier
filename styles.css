@@ -48,6 +48,7 @@ body,
 #__next > div,
 .theme-0 {
   height: 100%;
+  scroll-behavior: smooth;
 }
 
 #__next {

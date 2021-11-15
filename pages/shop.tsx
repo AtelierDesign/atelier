@@ -70,6 +70,7 @@ const Shop = () => {
                 gridTemplateColumns: '1fr 1fr 1fr'
               }
             }}>
+            
             {/* PRODUCT ROW ONE */}
 
             <Box>
@@ -169,6 +170,58 @@ const Shop = () => {
                 </Box>
               </Card>
             </Box>
+
+
+            {/* PRODUCT ROW THREE */}
+
+            <Box css={{ marginBottom: '50px' }}>
+              <Card>
+                <Box css={{ position: 'absolute', bottom: '0', left: '0', margin: '20px' }}>
+                  <Text size="2" css={{ fontWeight: '600', lineHeight: '1.2' }}>
+                    Ady® Interval
+                  </Text>
+                  <Text size="1" css={{ fontWeight: '400', fontSize: '11px', lineHeight: '1.5' }}>
+                    Shop early for the best selection of holiday favorites.
+                    <br />
+                    <br />
+                  </Text>
+                  <SmallButton>Small Button</SmallButton>
+                </Box>
+              </Card>
+            </Box>
+
+            <Box>
+              <Card>
+                <Box css={{ position: 'absolute', bottom: '0', left: '0', margin: '20px' }}>
+                  <Text size="2" css={{ fontWeight: '600', lineHeight: '1.2' }}>
+                    Ady® Interval
+                  </Text>
+                  <Text size="1" css={{ fontWeight: '400', fontSize: '11px', lineHeight: '1.5' }}>
+                    Shop early for the best selection of holiday favorites.
+                    <br />
+                    <br />
+                  </Text>
+                  <SmallButton>Small Button</SmallButton>
+                </Box>
+              </Card>
+            </Box>
+
+            <Box>
+              <Card>
+                <Box css={{ position: 'absolute', bottom: '0', left: '0', margin: '20px' }}>
+                  <Text size="2" css={{ fontWeight: '600', lineHeight: '1.2' }}>
+                    Product 2
+                  </Text>
+                  <Text size="1" css={{ fontWeight: '400', fontSize: '11px', lineHeight: '1.5' }}>
+                    Shop early for the best selection of holiday favorites.
+                    <br />
+                    <br />
+                  </Text>
+                  <SmallButton>Small Button</SmallButton>
+                </Box>
+              </Card>
+            </Box>
+
           </Grid>
         </Container>
 
