@@ -10,9 +10,9 @@ export const ThemeToggle = (props) => {
   return (
     <Button
       variant="ghost"
-      css={{ marginRight: '15px' }}
+      css={{ marginRight: '15px', color: '$slate11' }}
       onClick={() => {
-        const newTheme = theme === 'dark' ? 'light' : 'dark';
+        const newTheme = theme === 'dark' ? 'theme' : 'dark';
 
         // When switching themes, you might see demo iframes lagging behind the primitives homepage for a few frames.
         // This is because `setTheme` hook depends on React component lifecycle to update things. We are toggling
