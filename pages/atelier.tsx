@@ -1,3 +1,6 @@
+import Head from 'next/head';
+import React from 'react';
+
 import { Box } from '@design-system/box';
 import { Container } from '@design-system/container';
 import { Section } from '@design-system/section';
@@ -15,8 +18,6 @@ import { TimeCode } from '@components/Time/TimeCode';
 import { ArrowRightIcon } from '@radix-ui/react-icons';
 import { CursorArrowIcon } from '@radix-ui/react-icons';
 import Image from 'next/image';
-
-import React from 'react';
 
 import { styled } from '@stitches/react';
 
@@ -156,6 +157,10 @@ const ImageArrow = styled('button', {
 const Atelier = () => {
   return (
     <div>
+      <Head>
+        <title>Atelier®</title>
+      </Head>
+
       <Box>
         {/* NAVBAR */}
         <NavbarSticky />

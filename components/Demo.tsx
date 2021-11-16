@@ -3,19 +3,18 @@ import { Box } from '@design-system/box';
 import { Container } from '@design-system/container';
 import { Section } from '@design-system/section';
 import { Heading } from '@design-system/heading';
-import { Flex } from '@design-system/flex';
-import { TextField } from '@design-system/text-field';
+import { Text } from '@design-system/text';
 
 import { styled } from '@stitches/react';
 
 const Card = styled('div', {
-  display: 'flex',
-  backgroundColor: '$slate3',
+  bc: '$slate4',
+  display: 'block',
   position: 'relative',
+  margin: 'auto',
 
   borderRadius: '0px',
   padding: '20px',
-  alignItems: 'center',
   webkitScrollbar: 'none',
 
   height: '300px',
@@ -28,53 +27,43 @@ const Card = styled('div', {
   }
 });
 
-const Label = styled('p', {
-  fontSize: '18px',
-  fontWeight: '700',
-  lineHeight: '1',
-  display: 'flex',
-  position: 'absolute',
-  top: '0',
-  paddingTop: '30px',
-  paddingLeft: '10px',
-  paddingRight: '10px',
+const TextBox = styled('div', {
+  display: 'block',
+  position: 'relative',
+  paddingLeft: '20px',
+  paddingRight: '20px',
+  paddingBottom: '0px',
   alignItems: 'center',
 
   '@bp1': {
-    width: '70%',
-    paddingTop: '40px'
+    width: '70%'
+  },
+  '@bp2': {
+    width: '70%'
   }
 });
 
-const SubLabel = styled('p', {
-  fontSize: '13px',
-  lineHeight: '1.5',
+const Label = styled('p', {
+  fontSize: '22px',
+  fontWeight: '700',
+  lineHeight: '0.5',
   display: 'flex',
-  position: 'absolute',
-  top: '0',
-  paddingTop: '60px',
-  paddingBottom: '10px',
-  paddingLeft: '10px',
-  paddingRight: '10px',
+  position: 'relative',
   alignItems: 'center',
-
-  width: '80%',
+  letterSpacing: '-0.05rem',
 
   '@bp1': {
-    width: '70%',
-    paddingTop: '70px'
+    width: '70%'
   }
 });
 
 const AccountButton = styled('button', {
   zIndex: '400',
-  fontFamily: '$jetbrain',
+  fontFamily: '$inter',
   fontWeight: '700',
   fontSize: '13px',
   backgroundColor: '$slate8',
   color: 'white',
-  paddingLeft: '30px',
-  paddingRight: '30px',
   py: '6px',
   height: '32px',
   borderRadius: '6px',
@@ -82,10 +71,10 @@ const AccountButton = styled('button', {
   borderColor: '$sky11',
   lineHeight: '1',
   width: 'auto',
-  position: 'absolute',
-  bottom: '0',
-  left: '28px',
-  marginBottom: '72px',
+  position: 'relative',
+  paddingLeft: '20px',
+  paddingRight: '20px',
+  marginLeft: '20px',
 
   '&:hover': {
     backgroundColor: '$slate7',
@@ -116,22 +105,62 @@ export const Demo = () => {
               }
             }}>
             <Card>
-              <Heading size="3" css={{ textAlign: 'right' }}>
-                FREE DEMO?
-              </Heading>
+              <Box css={{ width: '100%', alignItems: 'center' }}>
+                <Heading size="3" css={{ textAlign: 'center', paddingRight: '20px', paddingLeft: '20px' }}>
+                  Free Sample.
+                </Heading>
+                <Text
+                  css={{
+                    textAlign: 'center',
+                    paddingLeft: '20px',
+                    paddingRight: '20px',
+                    width: '100%',
+                    fontWeight: '400',
+                    fontSize: '13px',
+                    lineHeight: '1.5',
+                    paddingBottom: '10px',
+                    color: '$slate9',
+
+                    '@bp1': {
+                      width: '100%'
+                    },
+                    '@bp2': {
+                      width: '100%'
+                    }
+                  }}>
+                  <p>Need a test run with some of our products, before you decide? We got you.</p>
+                </Text>
+              </Box>
             </Card>
             <Card>
               <Box>
-                <Label>Create an account.</Label>
-                <SubLabel>
-                  Sign up to receive news on new products and sales, and we’ll send you a sample pack of free elements, glitches, and
-                  textures!
-                </SubLabel>
+                <TextBox>
+                  <Label>Create an account.</Label>
+                  <Text
+                    css={{
+                      textAlign: 'left',
+                      width: '100%',
+                      fontWeight: '400',
+                      fontSize: '13px',
+                      lineHeight: '1.5',
+                      paddingBottom: '10px',
+                      color: '$slate9',
+
+                      '@bp1': {
+                        width: '70%'
+                      },
+                      '@bp2': {
+                        width: '70%'
+                      }
+                    }}>
+                    <p>
+                      Create an account with us, and we’ll send you a Free Demo (Version– 1.0) of <strong>Ady® Interval</strong>, and a
+                      sample pack of design elements, textures, and more!
+                    </p>
+                  </Text>
+                </TextBox>
+                <AccountButton>Sign Up Now ➔</AccountButton>
               </Box>
-              <Flex css={{ ai: 'center', mt: '$6', width: '100%', paddingLeft: '8px', paddingRight: '8px', '@bp2': { width: '50%' } }}>
-                <TextField size="2" placeholder="Email address" cursor="text" />
-                <AccountButton>Sign Up</AccountButton>
-              </Flex>
             </Card>
           </Grid>
         </Container>

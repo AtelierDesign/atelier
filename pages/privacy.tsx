@@ -1,3 +1,6 @@
+import Head from 'next/head';
+import React from 'react';
+
 import { Box } from '@design-system/box';
 import { Container } from '@design-system/container';
 import { Section } from '@design-system/section';
@@ -8,11 +11,14 @@ import { SmallSpacer } from '@components/SmallSpacer';
 import { Spacer } from '@components/Spacer';
 import { Line } from '@components/Line';
 import { FooterMain } from '@components/FooterMain';
-import React from 'react';
 
 const PrivacyPolicy = () => {
   return (
     <Box css={{ bc: '$slate1', overflow: 'auto', height: '100vh' }}>
+      <Head>
+        <title>Privacy.</title>
+      </Head>
+
       <NavbarSticky />
 
       <Section size="1">

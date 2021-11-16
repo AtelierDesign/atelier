@@ -1,3 +1,6 @@
+import Head from 'next/head';
+import React from 'react';
+
 import { Box } from '@design-system/box';
 import { Container } from '@design-system/container';
 import { Section } from '@design-system/section';
@@ -6,7 +9,6 @@ import { Text } from '@design-system/text';
 import { NavbarSticky } from '@components/NavbarSticky';
 import { FooterMain } from '@components/FooterMain';
 import { Grid } from '@design-system/grid';
-import React from 'react';
 
 import { styled } from '@stitches/react';
 
@@ -44,6 +46,10 @@ const SmallButton = styled('button', {
 const Shop = () => {
   return (
     <div>
+      <Head>
+        <title>Shop.</title>
+      </Head>
+
       <Box css={{ bc: '$slate1', overflow: 'auto', height: '100vh' }}>
         <NavbarSticky />
 
@@ -70,7 +76,6 @@ const Shop = () => {
                 gridTemplateColumns: '1fr 1fr 1fr'
               }
             }}>
-            
             {/* PRODUCT ROW ONE */}
 
             <Box>
@@ -171,7 +176,6 @@ const Shop = () => {
               </Card>
             </Box>
 
-
             {/* PRODUCT ROW THREE */}
 
             <Box css={{ marginBottom: '50px' }}>
@@ -221,7 +225,6 @@ const Shop = () => {
                 </Box>
               </Card>
             </Box>
-
           </Grid>
         </Container>
 
