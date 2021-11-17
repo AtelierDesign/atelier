@@ -1,0 +1,58 @@
+import Head from 'next/head';
+import Image from 'next/image';
+import React from 'react';
+import NextLink from 'next/link';
+import { NormalLink } from '@design-system/normal-link';
+
+import { Box } from '@design-system/box';
+import { Heading } from '@design-system/heading';
+
+import { styled } from '@stitches/react';
+
+const CoverBox = styled('div', {
+  zIndex: '10',
+  width: '100vw',
+  minWidth: '100vw',
+  height: '100%',
+  backgroundColor: 'rgba(240, 240, 240, 0.3)',
+  display: 'block',
+  position: 'relative',
+  margin: 'auto',
+  opacity: '0.9',
+  backdropFilter: 'invert(10%) blur(10px)',
+  saturate: '300%'
+});
+
+const TextBox = styled('div', {
+  zIndex: '200',
+  position: 'absolute',
+  top: '50%',
+  left: '50%',
+  transform: 'translate(-50%, -50%)',
+  width: '100%',
+  textAlign: 'center',
+  margin: 'auto',
+  padding: '1rem',
+  zIndex: '3'
+});
+
+export default function Cover() {
+  return (
+    <Box css={{ padding: '0px', height: '100vh', zIndex: '0' }}>
+      <Head>
+        <title>Atelier®.</title>
+      </Head>
+
+      <CoverBox>
+        <TextBox>
+          <NextLink href="/atelier" passHref>
+            <NormalLink variant="normal">
+              <Image src="/logo.svg" alt="One" width={120} height={60} />
+            </NormalLink>
+          </NextLink>
+        </TextBox>
+      </CoverBox>
+      <Image src="https://cdn.ady.systems/assets/blue-swirl.png" alt="One" layout="fill" objectFit="cover" />
+    </Box>
+  );
+}
