@@ -5,7 +5,6 @@ import NextLink from 'next/link';
 import { NormalLink } from '@design-system/normal-link';
 
 import { Box } from '@design-system/box';
-import { Heading } from '@design-system/heading';
 
 import { styled } from '@stitches/react';
 
@@ -32,8 +31,7 @@ const TextBox = styled('div', {
   width: '100%',
   textAlign: 'center',
   margin: 'auto',
-  padding: '1rem',
-  zIndex: '3'
+  padding: '1rem'
 });
 
 export default function Cover() {
