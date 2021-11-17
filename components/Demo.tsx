@@ -4,6 +4,8 @@ import { Container } from '@design-system/container';
 import { Section } from '@design-system/section';
 import { Heading } from '@design-system/heading';
 import { Text } from '@design-system/text';
+import NextLink from 'next/link';
+import Link from 'next/link';
 
 import { styled } from '@stitches/react';
 
@@ -64,9 +66,9 @@ const AccountButton = styled('button', {
   fontSize: '13px',
   backgroundColor: '$slate8',
   color: 'white',
-  py: '6px',
+  py: '8px',
   height: '32px',
-  borderRadius: '6px',
+  borderRadius: '10px',
   border: '1px solid',
   borderColor: '$sky11',
   lineHeight: '1',
@@ -159,7 +161,11 @@ export const Demo = () => {
                     </p>
                   </Text>
                 </TextBox>
-                <AccountButton>Sign Up Now ➔</AccountButton>
+                <NextLink href="https://api.ady.world" passHref>
+                  <Link href="https://api.ady.world">
+                    <AccountButton>Sign Up Now ➔</AccountButton>
+                  </Link>
+                </NextLink>
               </Box>
             </Card>
           </Grid>
