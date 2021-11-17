@@ -12,6 +12,7 @@ import { DefaultButton } from '@components/DefaultButton';
 import { Hero } from '@components/Hero';
 import { Spacer } from '@components/Spacer';
 import { Line } from '@components/Line';
+import { Demo } from '@components/Demo';
 import { OneCol } from '@components/OneCol';
 import { SocialSection } from '@components/SocialSection';
 import { TimeCode } from '@components/Time/TimeCode';
@@ -366,6 +367,8 @@ const Atelier = () => {
       {/* END --- OVERFLOW X SCROLL CONTAINER */}
 
       <Line />
+
+      <Demo />
 
       {/* COMMUNITY CONTAINER */}
 
