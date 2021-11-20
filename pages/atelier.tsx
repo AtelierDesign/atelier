@@ -12,7 +12,6 @@ import { DefaultButton } from '@components/DefaultButton';
 import { Hero } from '@components/Hero';
 import { Spacer } from '@components/Spacer';
 import { Line } from '@components/Line';
-import { Demo } from '@components/Demo';
 import { OneCol } from '@components/OneCol';
 import { SocialSection } from '@components/SocialSection';
 import { TimeCode } from '@components/Time/TimeCode';
@@ -28,7 +27,7 @@ const GridX = styled('div', {
   overflowY: 'hidden',
   display: 'flex',
   flexDirection: 'row',
-  gap: '20px'
+  gap: '20px',
 });
 
 const Scroller = styled('div', {
@@ -40,7 +39,7 @@ const Scroller = styled('div', {
   overflowX: 'scroll',
   overflowY: 'hidden',
 
-  padding: '18px'
+  padding: '18px',
 });
 
 const Card = styled('div', {
@@ -57,7 +56,7 @@ const Card = styled('div', {
   marginTop: '18px',
   padding: '30px',
   alignItems: 'center',
-  webkitScrollbar: 'none'
+  webkitScrollbar: 'none',
 });
 
 const TimeDisplay = styled('div', {
@@ -79,8 +78,8 @@ const TimeDisplay = styled('div', {
 
   '&:hover': {
     // cursor: 'none',
-    cursor: 'url(https://cdn.ady.systems/assets/mauve-butterfly.svg) 4 12, auto'
-  }
+    cursor: 'url(https://cdn.ady.systems/assets/mauve-butterfly.svg) 4 12, auto',
+  },
 });
 
 const ImageButton = styled('button', {
@@ -107,8 +106,8 @@ const ImageButton = styled('button', {
   '&:hover': {
     backgroundColor: '$slate7',
     color: '$sky11',
-    cursor: 'pointer'
-  }
+    cursor: 'pointer',
+  },
 });
 
 const SmallText = styled('p', {
@@ -126,7 +125,7 @@ const SmallText = styled('p', {
   position: 'absolute',
   bottom: '0',
   left: '33px',
-  marginBottom: '72px'
+  marginBottom: '72px',
 });
 
 const ImageArrow = styled('button', {
@@ -151,8 +150,8 @@ const ImageArrow = styled('button', {
   '&:hover': {
     backgroundColor: '$slate7',
     color: '$sky11',
-    cursor: 'pointer'
-  }
+    cursor: 'pointer',
+  },
 });
 
 const Atelier = () => {
@@ -219,7 +218,7 @@ const Atelier = () => {
                   width: '94%',
                   fontWeight: '400',
                   paddingTop: '12px',
-                  lineHeight: '22px'
+                  lineHeight: '22px',
                 }}>
                 Description. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
                 magna aliqua.
@@ -254,7 +253,7 @@ const Atelier = () => {
                   width: '94%',
                   fontWeight: '400',
                   paddingTop: '16px',
-                  lineHeight: '22px'
+                  lineHeight: '22px',
                 }}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
               </Text>
@@ -284,7 +283,7 @@ const Atelier = () => {
                   width: '94%',
                   fontWeight: '400',
                   paddingTop: '16px',
-                  lineHeight: '22px'
+                  lineHeight: '22px',
                 }}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
               </Text>
@@ -314,7 +313,7 @@ const Atelier = () => {
                   width: '94%',
                   fontWeight: '400',
                   paddingTop: '16px',
-                  lineHeight: '22px'
+                  lineHeight: '22px',
                 }}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
               </Text>
@@ -344,7 +343,7 @@ const Atelier = () => {
                   width: '94%',
                   fontWeight: '400',
                   paddingTop: '16px',
-                  lineHeight: '22px'
+                  lineHeight: '22px',
                 }}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
               </Text>
@@ -367,8 +366,6 @@ const Atelier = () => {
       {/* END --- OVERFLOW X SCROLL CONTAINER */}
 
       <Line />
-
-      <Demo />
 
       {/* COMMUNITY CONTAINER */}
 
