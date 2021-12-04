@@ -371,8 +371,8 @@ const Atelier = () => {
 
       <Box css={{ bc: '$slate1', margin: '0', px: '0' }}>
         <Section size="3">
-          <Heading size="3" css={{ textAlign: 'center', fontWeight: '600' }}>
-            Atelier® <strong>Community.</strong>
+          <Heading size="3" css={{ textAlign: 'center', fontWeight: '800' }}>
+            Atelier® Community.
           </Heading>
           <Text css={{ textAlign: 'center', lineHeight: '3' }}>
             Get involved. Get inspired.{` `}

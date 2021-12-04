@@ -10,7 +10,13 @@ export const ThemeToggle = (props) => {
   return (
     <Button
       variant="ghost"
-      css={{ marginRight: '15px', color: '$slate11' }}
+      css={{
+        marginRight: '15px',
+        color: '$slate11',
+        '&:hover': {
+          cursor: 'pointer',
+        },
+      }}
       onClick={() => {
         const newTheme = theme === 'dark' ? 'theme' : 'dark';
 

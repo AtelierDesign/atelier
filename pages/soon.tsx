@@ -1,10 +1,11 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import React from 'react';
-import NextLink from 'next/link';
-import { NormalLink } from '@design-system/normal-link';
+
+import { TwitterLogoIcon } from '@radix-ui/react-icons';
 
 import { Box } from '@design-system/box';
+import { Text } from '@design-system/text';
 
 import { styled } from '@stitches/react';
 
@@ -34,20 +35,23 @@ const TextBox = styled('div', {
   padding: '1rem',
 });
 
-export default function Cover() {
+export default function Soon() {
   return (
     <Box css={{ padding: '0px', height: '100vh', zIndex: '0' }}>
       <Head>
-        <title>Atelier®.</title>
+        <title>Atelier®. Coming Soon</title>
       </Head>
 
       <CoverBox>
         <TextBox>
-          <NextLink href="/soon" passHref>
-            <NormalLink variant="normal">
-              <Image src="/logo.svg" alt="One" width={120} height={60} />
-            </NormalLink>
-          </NextLink>
+          <Text css={{ textAlign: 'center', lineHeight: '2', fontSize: '34px', fontWeight: '900', letterSpacing: '-0.1rem' }}>
+            ATELIER DESIGN YIELD®
+          </Text>
+
+          <Text css={{ textAlign: 'center', lineHeight: '2', fontSize: '14px', fontWeight: '600' }}>WILL BE OPENING SOON.</Text>
+          <Box css={{ zIndex: '600', color: '#000', paddingTop: '50px' }}>
+            <TwitterLogoIcon />
+          </Box>
         </TextBox>
       </CoverBox>
       <Image src="https://cdn.ady.systems/assets/blue-swirl.png" alt="One" layout="fill" objectFit="cover" />

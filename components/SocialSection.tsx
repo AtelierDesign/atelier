@@ -17,7 +17,7 @@ export const SocialSection = () => {
           flow={{ '@initial': 'row', '@bp2': 'column' }}
           css={{
             justifyContent: 'space-between',
-            '@bp2': { gridAutoColumns: '230px' }
+            '@bp2': { gridAutoColumns: '230px' },
           }}>
           <NextLink href="https://twitter.com/_adyworld" passHref>
             <Link href="https://twitter.com/_adyworld">
@@ -26,7 +26,7 @@ export const SocialSection = () => {
                   p: '$5',
                   bc: '$slate3',
                   borderRadius: '$4',
-                  boxShadow: 'inset 0 0 0 1px $colors$slate5'
+                  boxShadow: 'inset 0 0 0 1px $colors$slate5',
                 }}>
                 <Box css={{ mb: '$3' }}>
                   <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -41,7 +41,7 @@ export const SocialSection = () => {
                 <Heading as="h3" css={{ mb: '$2' }}>
                   Twitter
                 </Heading>
-                <Text css={{ lineHeight: 1.5 }}>For announcements, blog posts, and general Radix tips.</Text>
+                <Text css={{ lineHeight: '1.5', fontWeight: '400' }}>For announcements, blog posts, and general Radix tips.</Text>
               </Box>
             </Link>
           </NextLink>
@@ -53,7 +53,7 @@ export const SocialSection = () => {
                   p: '$5',
                   bc: '$slate3',
                   borderRadius: '$4',
-                  boxShadow: 'inset 0 0 0 1px $colors$slate5'
+                  boxShadow: 'inset 0 0 0 1px $colors$slate5',
                 }}>
                 <Box css={{ mb: '$3' }}>
                   <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -68,7 +68,7 @@ export const SocialSection = () => {
                 <Heading as="h3" css={{ mb: '$2' }}>
                   Discord
                 </Heading>
-                <Text css={{ lineHeight: 1.5 }}>To get involved in the community, and share tips.</Text>
+                <Text css={{ lineHeight: '1.5', fontWeight: '500' }}>To get involved in the community, and share tips.</Text>
               </Box>
             </Link>
           </NextLink>
@@ -80,7 +80,7 @@ export const SocialSection = () => {
                   p: '$5',
                   bc: '$slate3',
                   borderRadius: '$4',
-                  boxShadow: 'inset 0 0 0 1px $colors$slate5'
+                  boxShadow: 'inset 0 0 0 1px $colors$slate5',
                 }}>
                 <Box css={{ mb: '$3' }}>
                   <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -95,7 +95,9 @@ export const SocialSection = () => {
                 <Heading as="h3" css={{ mb: '$2' }}>
                   GitHub
                 </Heading>
-                <Text css={{ lineHeight: 1.5 }}>To file issues, request features, and contribute, check out our GitHub.</Text>
+                <Text css={{ lineHeight: '1.5', fontWeight: '500' }}>
+                  To file issues, request features, and contribute, check out our GitHub.
+                </Text>
               </Box>
             </Link>
           </NextLink>
