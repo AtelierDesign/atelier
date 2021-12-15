@@ -173,6 +173,174 @@ const Atelier = () => {
         {/* HOMEPAGE CONTAINER */}
         <Hero />
 
+        {/* OVERFLOW X SCROLL CONTAINER */}
+
+        <Box css={{ padding: '0px', bc: 'none' }}>
+          <Scroller className="scroll-container">
+            <GridX className="scroll-grid">
+              {/* INSERT CARD COMPONENT WITH CHILDREN */}
+              {/* <Card> .. children .. </Card> */}
+              <Card>
+                <Heading size="2" css={{ fontWeight: '600' }}>
+                  Sound.
+                </Heading>
+                <Text
+                  as="p"
+                  variant="gray"
+                  size="3"
+                  className="image-text"
+                  css={{
+                    zIndex: '300',
+                    width: '94%',
+                    fontWeight: '400',
+                    paddingTop: '12px',
+                    lineHeight: '22px',
+                  }}>
+                  Description. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                  magna aliqua.
+                </Text>
+                <SmallText>From $19.99</SmallText>
+                <ImageButton>Buy Now</ImageButton>
+                <ImageArrow>
+                  /{` `}
+                  <ArrowRightIcon />
+                </ImageArrow>
+                <Image
+                  className="color__swirl"
+                  src="https://cdn.ady.systems/ady.images/one.png"
+                  layout="fill"
+                  objectFit="cover"
+                  alt="image"
+                  objectPosition="absolute"
+                  priority
+                />
+              </Card>
+              <Card>
+                <Heading size="2" css={{ fontWeight: '600', zIndex: '300' }}>
+                  Style.
+                </Heading>
+                <Text
+                  as="p"
+                  variant="gray"
+                  size="3"
+                  className="image-text"
+                  css={{
+                    zIndex: '300',
+                    width: '94%',
+                    fontWeight: '400',
+                    paddingTop: '16px',
+                    lineHeight: '22px',
+                  }}>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
+                </Text>
+                <SmallText>From $19.99</SmallText>
+                <ImageButton>Buy Now</ImageButton>
+                <Image
+                  className="color__swirl"
+                  src="https://cdn.ady.systems/ady.images/five.png"
+                  layout="fill"
+                  objectFit="cover"
+                  alt="image"
+                  objectPosition="absolute"
+                  priority
+                />
+              </Card>
+              <Card>
+                <Heading size="2" css={{ fontWeight: '600' }}>
+                  Texture.
+                </Heading>
+                <Text
+                  as="p"
+                  variant="gray"
+                  size="3"
+                  className="image-text"
+                  css={{
+                    zIndex: '300',
+                    width: '94%',
+                    fontWeight: '400',
+                    paddingTop: '16px',
+                    lineHeight: '22px',
+                  }}>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
+                </Text>
+                <SmallText>From $19.99</SmallText>
+                <ImageButton>Buy Now</ImageButton>
+                <Image
+                  className="color__swirl"
+                  src="https://cdn.ady.systems/ady.images/three.png"
+                  layout="fill"
+                  objectFit="cover"
+                  alt="image"
+                  objectPosition="absolute"
+                  priority
+                />
+              </Card>
+              <Card>
+                <Heading size="2" css={{ fontWeight: '600' }}>
+                  Motion.
+                </Heading>
+                <Text
+                  as="p"
+                  variant="gray"
+                  size="3"
+                  className="image-text"
+                  css={{
+                    zIndex: '300',
+                    width: '94%',
+                    fontWeight: '400',
+                    paddingTop: '16px',
+                    lineHeight: '22px',
+                  }}>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
+                </Text>
+                <SmallText>From $19.99</SmallText>
+                <ImageButton>Buy Now</ImageButton>
+                <Image
+                  className="color__swirl"
+                  src="https://cdn.ady.systems/ady.images/four.png"
+                  layout="fill"
+                  objectFit="cover"
+                  alt="image"
+                  objectPosition="absolute"
+                  priority
+                />
+              </Card>
+              <Card>
+                <Heading size="2" css={{ fontWeight: '600' }}>
+                  Type.
+                </Heading>
+                <Text
+                  as="p"
+                  variant="gray"
+                  size="3"
+                  className="image-text"
+                  css={{
+                    zIndex: '300',
+                    width: '94%',
+                    fontWeight: '400',
+                    paddingTop: '16px',
+                    lineHeight: '22px',
+                  }}>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
+                </Text>
+                <SmallText>From $19.99</SmallText>
+                <ImageButton>Buy Now</ImageButton>
+                <Image
+                  className="color__swirl"
+                  src="https://cdn.ady.systems/ady.images/five.png"
+                  layout="fill"
+                  objectFit="cover"
+                  alt="image"
+                  objectPosition="absolute"
+                  priority
+                />
+              </Card>
+            </GridX>
+          </Scroller>
+        </Box>
+
+        {/* END --- OVERFLOW X SCROLL CONTAINER */}
+
         {/* LARGE ONE COLUMN CONTAINER */}
         <OneCol />
         {/* --- */}
@@ -180,7 +348,7 @@ const Atelier = () => {
 
       <Spacer />
 
-      <Box css={{ padding: '0px', bc: '$slate1' }}>
+      <Box css={{ paddingBottom: '50px', bc: '$slate1' }}>
         <Container size="3" css={{ bc: 'none' }}>
           <Text css={{ color: '$slate9', fontWeight: '500', lineHeight: '1.6', paddingLeft: '6px' }}>
             <strong>Adobe</strong>® After Effects
@@ -196,174 +364,6 @@ const Atelier = () => {
           </DefaultButton>
         </Container>
       </Box>
-
-      {/* OVERFLOW X SCROLL CONTAINER */}
-
-      <Box css={{ padding: '0px', bc: 'none' }}>
-        <Scroller className="scroll-container">
-          <GridX className="scroll-grid">
-            {/* INSERT CARD COMPONENT WITH CHILDREN */}
-            {/* <Card> .. children .. </Card> */}
-            <Card>
-              <Heading size="2" css={{ fontWeight: '600' }}>
-                Sound.
-              </Heading>
-              <Text
-                as="p"
-                variant="gray"
-                size="3"
-                className="image-text"
-                css={{
-                  zIndex: '300',
-                  width: '94%',
-                  fontWeight: '400',
-                  paddingTop: '12px',
-                  lineHeight: '22px',
-                }}>
-                Description. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua.
-              </Text>
-              <SmallText>From $19.99</SmallText>
-              <ImageButton>Buy Now</ImageButton>
-              <ImageArrow>
-                /{` `}
-                <ArrowRightIcon />
-              </ImageArrow>
-              <Image
-                className="color__swirl"
-                src="https://cdn.ady.systems/ady.images/one.png"
-                layout="fill"
-                objectFit="cover"
-                alt="image"
-                objectPosition="absolute"
-                priority
-              />
-            </Card>
-            <Card>
-              <Heading size="2" css={{ fontWeight: '600', zIndex: '300' }}>
-                Style.
-              </Heading>
-              <Text
-                as="p"
-                variant="gray"
-                size="3"
-                className="image-text"
-                css={{
-                  zIndex: '300',
-                  width: '94%',
-                  fontWeight: '400',
-                  paddingTop: '16px',
-                  lineHeight: '22px',
-                }}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
-              </Text>
-              <SmallText>From $19.99</SmallText>
-              <ImageButton>Buy Now</ImageButton>
-              <Image
-                className="color__swirl"
-                src="https://cdn.ady.systems/ady.images/five.png"
-                layout="fill"
-                objectFit="cover"
-                alt="image"
-                objectPosition="absolute"
-                priority
-              />
-            </Card>
-            <Card>
-              <Heading size="2" css={{ fontWeight: '600' }}>
-                Texture.
-              </Heading>
-              <Text
-                as="p"
-                variant="gray"
-                size="3"
-                className="image-text"
-                css={{
-                  zIndex: '300',
-                  width: '94%',
-                  fontWeight: '400',
-                  paddingTop: '16px',
-                  lineHeight: '22px',
-                }}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
-              </Text>
-              <SmallText>From $19.99</SmallText>
-              <ImageButton>Buy Now</ImageButton>
-              <Image
-                className="color__swirl"
-                src="https://cdn.ady.systems/ady.images/three.png"
-                layout="fill"
-                objectFit="cover"
-                alt="image"
-                objectPosition="absolute"
-                priority
-              />
-            </Card>
-            <Card>
-              <Heading size="2" css={{ fontWeight: '600' }}>
-                Motion.
-              </Heading>
-              <Text
-                as="p"
-                variant="gray"
-                size="3"
-                className="image-text"
-                css={{
-                  zIndex: '300',
-                  width: '94%',
-                  fontWeight: '400',
-                  paddingTop: '16px',
-                  lineHeight: '22px',
-                }}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
-              </Text>
-              <SmallText>From $19.99</SmallText>
-              <ImageButton>Buy Now</ImageButton>
-              <Image
-                className="color__swirl"
-                src="https://cdn.ady.systems/ady.images/four.png"
-                layout="fill"
-                objectFit="cover"
-                alt="image"
-                objectPosition="absolute"
-                priority
-              />
-            </Card>
-            <Card>
-              <Heading size="2" css={{ fontWeight: '600' }}>
-                Type.
-              </Heading>
-              <Text
-                as="p"
-                variant="gray"
-                size="3"
-                className="image-text"
-                css={{
-                  zIndex: '300',
-                  width: '94%',
-                  fontWeight: '400',
-                  paddingTop: '16px',
-                  lineHeight: '22px',
-                }}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
-              </Text>
-              <SmallText>From $19.99</SmallText>
-              <ImageButton>Buy Now</ImageButton>
-              <Image
-                className="color__swirl"
-                src="https://cdn.ady.systems/ady.images/five.png"
-                layout="fill"
-                objectFit="cover"
-                alt="image"
-                objectPosition="absolute"
-                priority
-              />
-            </Card>
-          </GridX>
-        </Scroller>
-      </Box>
-
-      {/* END --- OVERFLOW X SCROLL CONTAINER */}
 
       <Line />
 

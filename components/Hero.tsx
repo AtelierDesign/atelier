@@ -18,13 +18,13 @@ export function Hero() {
       <Section
         size={{
           '@initial': '2',
-          '@bp1': '3'
+          '@bp1': '3',
         }}
         css={{
           pt: '$3',
           '@bp2': {
-            pt: '$6'
-          }
+            pt: '$6',
+          },
         }}>
         <Container size="3" css={{ paddingTop: '120px' }}>
           <Heading
@@ -34,15 +34,15 @@ export function Hero() {
               fontWeight: '700',
               mb: '$3',
               '@bp1': {
-                pr: 100
+                pr: 100,
               },
               '@bp2': {
                 ta: 'center',
-                px: 180
+                px: 180,
               },
               '@bp3': {
-                px: 200
-              }
+                px: 200,
+              },
             }}>
             Atelier Design Yield.
           </Heading>
@@ -54,8 +54,8 @@ export function Hero() {
               '@bp2': {
                 mx: 230,
                 ta: 'center',
-                mb: '30px'
-              }
+                mb: '30px',
+              },
             }}>
             An ever– expanding ecosystem of design components. Multi-variant support, and a best-in-class developer experience.
           </Paragraph>
@@ -75,7 +75,7 @@ export function Hero() {
           </Flex>
         </Container>
 
-        {/* BEGIN 3 COLUMNS SECTION */}
+        {/* BEGIN 3 COLUMNS SECTION
         <Container size="3" css={{ paddingTop: '80px', paddingBottom: '50px', px: '18px' }}>
           <Grid
             css={{
@@ -289,6 +289,7 @@ export function Hero() {
             </Box>
           </Grid>
         </Container>
+        */}
       </Section>
     </Box>
   );

@@ -9,8 +9,8 @@ export const NormalLink = styled('a', {
   lineHeight: 'inherit',
   '@hover': {
     '&:hover': {
-      textDecorationLine: 'none'
-    }
+      textDecorationLine: 'none',
+    },
   },
   variants: {
     variant: {
@@ -18,18 +18,29 @@ export const NormalLink = styled('a', {
         fontSize: '32px',
         color: '$slate1',
         '&:focus': {
-          outlineColor: '$slate8'
+          outlineColor: '$slate8',
         },
         '&:hover': {
           color: '$slate8',
           textDecorationLine: '1px solid',
           textUnderlineOffset: '3px',
-          textDecorationColor: '$slate4'
-        }
+          textDecorationColor: '$slate4',
+        },
+      },
+      dark: {
+        fontSize: '32px',
+        color: '#000',
+        '&:focus': {
+          outlineColor: '$slate8',
+        },
+        '&:hover': {
+          color: '$slate8',
+          cursor: 'pointer',
+        },
       },
       defaultVariants: {
-        variant: 'normal'
-      }
-    }
-  }
+        variant: 'normal',
+      },
+    },
+  },
 });

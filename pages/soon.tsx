@@ -1,9 +1,9 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import React from 'react';
-
+import NextLink from 'next/link';
+import { NormalLink } from '@design-system/normal-link';
 import { TwitterLogoIcon } from '@radix-ui/react-icons';
-
 import { Box } from '@design-system/box';
 import { Text } from '@design-system/text';
 
@@ -50,7 +50,11 @@ export default function Soon() {
 
           <Text css={{ textAlign: 'center', lineHeight: '2', fontSize: '14px', fontWeight: '600' }}>WILL BE OPENING SOON.</Text>
           <Box css={{ zIndex: '600', color: '#000', paddingTop: '50px' }}>
-            <TwitterLogoIcon />
+            <NextLink href="https://twitter.com/_adyworld" passHref>
+              <NormalLink variant="dark">
+                <TwitterLogoIcon />
+              </NormalLink>
+            </NextLink>
           </Box>
         </TextBox>
       </CoverBox>
