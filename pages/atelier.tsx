@@ -196,8 +196,7 @@ const Atelier = () => {
                     paddingTop: '12px',
                     lineHeight: '22px',
                   }}>
-                  Description. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                  magna aliqua.
+                  Description. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </Text>
                 <SmallText>From $19.99</SmallText>
                 <ImageButton>Buy Now</ImageButton>
@@ -205,15 +204,7 @@ const Atelier = () => {
                   /{` `}
                   <ArrowRightIcon />
                 </ImageArrow>
-                <Image
-                  className="color__swirl"
-                  src="https://cdn.ady.systems/ady.images/one.png"
-                  layout="fill"
-                  objectFit="cover"
-                  alt="image"
-                  objectPosition="absolute"
-                  priority
-                />
+                <Image className="color__swirl" src="https://cdn.ady.systems/ady.images/one.png" layout="fill" objectFit="cover" alt="image" objectPosition="absolute" priority />
               </Card>
               <Card>
                 <Heading size="2" css={{ fontWeight: '600', zIndex: '300' }}>
@@ -235,15 +226,7 @@ const Atelier = () => {
                 </Text>
                 <SmallText>From $19.99</SmallText>
                 <ImageButton>Buy Now</ImageButton>
-                <Image
-                  className="color__swirl"
-                  src="https://cdn.ady.systems/ady.images/five.png"
-                  layout="fill"
-                  objectFit="cover"
-                  alt="image"
-                  objectPosition="absolute"
-                  priority
-                />
+                <Image className="color__swirl" src="https://cdn.ady.systems/ady.images/five.png" layout="fill" objectFit="cover" alt="image" objectPosition="absolute" priority />
               </Card>
               <Card>
                 <Heading size="2" css={{ fontWeight: '600' }}>
@@ -265,15 +248,7 @@ const Atelier = () => {
                 </Text>
                 <SmallText>From $19.99</SmallText>
                 <ImageButton>Buy Now</ImageButton>
-                <Image
-                  className="color__swirl"
-                  src="https://cdn.ady.systems/ady.images/three.png"
-                  layout="fill"
-                  objectFit="cover"
-                  alt="image"
-                  objectPosition="absolute"
-                  priority
-                />
+                <Image className="color__swirl" src="https://cdn.ady.systems/ady.images/three.png" layout="fill" objectFit="cover" alt="image" objectPosition="absolute" priority />
               </Card>
               <Card>
                 <Heading size="2" css={{ fontWeight: '600' }}>
@@ -295,15 +270,7 @@ const Atelier = () => {
                 </Text>
                 <SmallText>From $19.99</SmallText>
                 <ImageButton>Buy Now</ImageButton>
-                <Image
-                  className="color__swirl"
-                  src="https://cdn.ady.systems/ady.images/four.png"
-                  layout="fill"
-                  objectFit="cover"
-                  alt="image"
-                  objectPosition="absolute"
-                  priority
-                />
+                <Image className="color__swirl" src="https://cdn.ady.systems/ady.images/four.png" layout="fill" objectFit="cover" alt="image" objectPosition="absolute" priority />
               </Card>
               <Card>
                 <Heading size="2" css={{ fontWeight: '600' }}>
@@ -325,15 +292,7 @@ const Atelier = () => {
                 </Text>
                 <SmallText>From $19.99</SmallText>
                 <ImageButton>Buy Now</ImageButton>
-                <Image
-                  className="color__swirl"
-                  src="https://cdn.ady.systems/ady.images/five.png"
-                  layout="fill"
-                  objectFit="cover"
-                  alt="image"
-                  objectPosition="absolute"
-                  priority
-                />
+                <Image className="color__swirl" src="https://cdn.ady.systems/ady.images/five.png" layout="fill" objectFit="cover" alt="image" objectPosition="absolute" priority />
               </Card>
             </GridX>
           </Scroller>
