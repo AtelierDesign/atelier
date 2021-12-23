@@ -6,7 +6,7 @@ import { Container } from '@design-system/container';
 import { Section } from '@design-system/section';
 import { Heading } from '@design-system/heading';
 import { Text } from '@design-system/text';
-import { NavbarSticky } from '@components/NavbarSticky';
+import { Navbar } from '@components/Navbar';
 import { FooterMain } from '@components/FooterMain';
 import { Grid } from '@design-system/grid';
 
@@ -23,7 +23,7 @@ const Card = styled('div', {
   alignItems: 'center',
   webkitScrollbar: 'none',
 
-  height: '300px'
+  height: '300px',
 });
 
 const SmallButton = styled('button', {
@@ -40,7 +40,7 @@ const SmallButton = styled('button', {
   width: 'auto',
   bc: '$slate4',
   border: '1px solid',
-  borderColor: '$slate10'
+  borderColor: '$slate10',
 });
 
 const Shop = () => {
@@ -51,7 +51,7 @@ const Shop = () => {
       </Head>
 
       <Box css={{ bc: '$slate1', overflow: 'auto', height: '100vh' }}>
-        <NavbarSticky />
+        <Navbar />
 
         <Section size="3">
           <Container size="3" css={{ ai: 'center', paddingTop: '100px', margin: 'auto', textAlign: 'center' }}>
@@ -69,12 +69,12 @@ const Shop = () => {
               gridTemplateColumns: '1fr',
               '@bp1': {
                 gap: '$4',
-                gridTemplateColumns: '1fr 1fr'
+                gridTemplateColumns: '1fr 1fr',
               },
               '@bp2': {
                 gap: '$4',
-                gridTemplateColumns: '1fr 1fr 1fr'
-              }
+                gridTemplateColumns: '1fr 1fr 1fr',
+              },
             }}>
             {/* PRODUCT ROW ONE */}
 

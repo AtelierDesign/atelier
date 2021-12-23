@@ -29,8 +29,8 @@ const TimeDisplay = styled('div', {
 
   '&:hover': {
     // cursor: 'none',
-    cursor: 'url(https://cdn.ady.systems/assets/mauve-butterfly.svg) 4 12, auto'
-  }
+    cursor: 'url(https://cdn.ady.systems/assets/mauve-butterfly.svg) 4 12, auto',
+  },
 });
 
 export const OneCol = () => {
@@ -47,7 +47,7 @@ export const OneCol = () => {
             border: '1px solid',
             borderColor: '$slate6',
             zIndex: '20',
-            position: 'relative'
+            position: 'relative',
           }}>
           <Box
             css={{
@@ -56,7 +56,7 @@ export const OneCol = () => {
               padding: '0',
               margin: '0',
               zIndex: '100',
-              saturate: '200%'
+              saturate: '200%',
             }}>
             <Heading
               size="2"
@@ -64,7 +64,7 @@ export const OneCol = () => {
                 fontWeight: '700',
                 paddingTop: '35px',
                 lineHeight: '10px',
-                zIndex: '80'
+                zIndex: '80',
               }}>
               Ady® Interval
             </Heading>
@@ -77,7 +77,7 @@ export const OneCol = () => {
                 fontWeight: '400',
                 paddingTop: '16px',
                 lineHeight: '22px',
-                '@bp1': { width: '450px' }
+                '@bp1': { width: '450px' },
               }}>
               ADY® is an ever– expanding ecosystem of essential design components built for modern web.
             </Text>
@@ -85,7 +85,20 @@ export const OneCol = () => {
               <TimeCode />
             </TimeDisplay>
 
-            <Button size="2" variant="gray" css={{ marginTop: '30px', zIndex: '25', px: '20px', borderRadius: '10px' }}>
+            <Button
+              size="2"
+              variant="gray"
+              css={{
+                marginTop: '30px',
+                zIndex: '25',
+                px: '20px',
+                borderRadius: '10px',
+                '&:hover': {
+                  backgroundColor: '$gray3',
+                  color: '$indigoA9',
+                  cursor: 'pointer',
+                },
+              }}>
               Base Button
             </Button>
           </Box>

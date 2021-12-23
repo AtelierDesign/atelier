@@ -44,11 +44,28 @@ export default function Soon() {
 
       <CoverBox>
         <TextBox>
-          <Text css={{ textAlign: 'center', lineHeight: '2', fontSize: '34px', fontWeight: '900', letterSpacing: '-0.1rem' }}>
+          <Text
+            css={{
+              textAlign: 'center',
+              lineHeight: '2',
+              fontSize: '20px',
+              fontWeight: '900',
+              letterSpacing: '-0.05rem',
+              '@bp2': { letterSpacing: '-0.1rem', fontSize: '34px' },
+            }}>
             ATELIER DESIGN YIELD®
           </Text>
 
-          <Text css={{ textAlign: 'center', lineHeight: '2', fontSize: '14px', fontWeight: '600' }}>WILL BE OPENING SOON.</Text>
+          <Text
+            css={{
+              textAlign: 'center',
+              lineHeight: '2',
+              fontSize: '10px',
+              fontWeight: '600',
+              '@bp2': { fontSize: '16px' },
+            }}>
+            WILL BE OPENING SOON.
+          </Text>
           <Box css={{ zIndex: '600', color: '#000', paddingTop: '50px' }}>
             <NextLink href="https://twitter.com/_adyworld" passHref>
               <NormalLink variant="dark">

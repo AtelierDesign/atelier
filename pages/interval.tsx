@@ -2,7 +2,7 @@ import Head from 'next/head';
 import React from 'react';
 
 import { Box } from '@design-system/box';
-import { NavbarSticky } from '@components/NavbarSticky';
+import { Navbar } from '@components/Navbar';
 
 const Interval = () => {
   return (
@@ -11,7 +11,7 @@ const Interval = () => {
         <title>Interval.</title>
       </Head>
 
-      <NavbarSticky />
+      <Navbar />
     </Box>
   );
 };

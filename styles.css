@@ -1,3 +1,7 @@
+:root {
+  --colors-slate9: hsl(205 10.7% 78%);
+}
+
 *,
 *::before,
 *::after {
@@ -6,7 +10,6 @@
 
 body {
   margin: 0;
-  font-family: 'Inter', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   line-height: 1;
@@ -22,6 +25,7 @@ body {
 
 svg {
   vertical-align: middle;
+  color: inherit;
 }
 
 .color__box {
@@ -38,7 +42,7 @@ svg {
 .color__swirl {
   border-radius: 26px;
   opacity: 0.8;
-  z-index: 4;
+  z-index: 0 !important;
 }
 
 html,
@@ -58,4 +62,9 @@ body,
 
 a {
   text-decoration: none !important;
+}
+
+.logo {
+  color: var(--colors-slate9);
+  fill: var(--colors-slate9);
 }

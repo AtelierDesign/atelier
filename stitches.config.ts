@@ -492,6 +492,7 @@ export const darkTheme = createTheme('darkTheme', {
     transparentPanel: 'hsl(0 100% 100% / 97%)',
     shadowLight: 'hsl(206 22% 7% / 35%)',
     shadowDark: 'hsl(206 22% 7% / 20%)',
+    light100: 'rgba(0, 0, 0, 0.4)',
   },
   utils: {},
 });

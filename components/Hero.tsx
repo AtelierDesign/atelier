@@ -49,7 +49,8 @@ export function Hero() {
           <Paragraph
             size="2"
             css={{
-              fontSize: '18px',
+              fontFamily: '$jetbrain',
+              fontSize: '16px',
               mb: '60px',
               '@bp2': {
                 mx: 230,
@@ -57,7 +58,7 @@ export function Hero() {
                 mb: '30px',
               },
             }}>
-            An ever– expanding ecosystem of design components. Multi-variant support, and a best-in-class developer experience.
+            An ever– expanding ecosystem of design components. Essential elements that enhance your projects.
           </Paragraph>
 
           <Flex css={{ '@bp2': { jc: 'center', my: '$7' } }}>

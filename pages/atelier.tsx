@@ -6,7 +6,7 @@ import { Container } from '@design-system/container';
 import { Section } from '@design-system/section';
 import { Heading } from '@design-system/heading';
 import { Text } from '@design-system/text';
-import { NavbarSticky } from '@components/NavbarSticky';
+import { Navbar } from '@components/Navbar';
 import { FooterMain } from '@components/FooterMain';
 import { DefaultButton } from '@components/DefaultButton';
 import { Hero } from '@components/Hero';
@@ -163,8 +163,7 @@ const Atelier = () => {
 
       <Box>
         {/* NAVBAR */}
-        <NavbarSticky />
-
+        <Navbar />
         {/* TIME DISPLAY */}
         <TimeDisplay>
           <TimeCode />
@@ -190,13 +189,17 @@ const Atelier = () => {
                   size="3"
                   className="image-text"
                   css={{
-                    zIndex: '300',
+                    fontFamily: '$jetbrain',
                     width: '94%',
-                    fontWeight: '400',
+                    fontSize: '13px',
+                    fontWeight: '500',
                     paddingTop: '12px',
                     lineHeight: '22px',
+
+                    zIndex: '9999',
                   }}>
-                  Description. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Description. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                  magna aliqua.
                 </Text>
                 <SmallText>From $19.99</SmallText>
                 <ImageButton>Buy Now</ImageButton>
@@ -204,7 +207,15 @@ const Atelier = () => {
                   /{` `}
                   <ArrowRightIcon />
                 </ImageArrow>
-                <Image className="color__swirl" src="https://cdn.ady.systems/ady.images/one.png" layout="fill" objectFit="cover" alt="image" objectPosition="absolute" priority />
+                <Image
+                  className="color__swirl"
+                  src="https://cdn.ady.systems/ady.images/one.png"
+                  layout="fill"
+                  objectFit="cover"
+                  alt="image"
+                  objectPosition="absolute"
+                  priority
+                />
               </Card>
               <Card>
                 <Heading size="2" css={{ fontWeight: '600', zIndex: '300' }}>
@@ -216,6 +227,8 @@ const Atelier = () => {
                   size="3"
                   className="image-text"
                   css={{
+                    fontFamily: '$jetbrain',
+                    fontSize: '13px',
                     zIndex: '300',
                     width: '94%',
                     fontWeight: '400',
@@ -226,7 +239,15 @@ const Atelier = () => {
                 </Text>
                 <SmallText>From $19.99</SmallText>
                 <ImageButton>Buy Now</ImageButton>
-                <Image className="color__swirl" src="https://cdn.ady.systems/ady.images/five.png" layout="fill" objectFit="cover" alt="image" objectPosition="absolute" priority />
+                <Image
+                  className="color__swirl"
+                  src="https://cdn.ady.systems/ady.images/five.png"
+                  layout="fill"
+                  objectFit="cover"
+                  alt="image"
+                  objectPosition="absolute"
+                  priority
+                />
               </Card>
               <Card>
                 <Heading size="2" css={{ fontWeight: '600' }}>
@@ -238,6 +259,8 @@ const Atelier = () => {
                   size="3"
                   className="image-text"
                   css={{
+                    fontFamily: '$jetbrain',
+                    fontSize: '13px',
                     zIndex: '300',
                     width: '94%',
                     fontWeight: '400',
@@ -248,7 +271,15 @@ const Atelier = () => {
                 </Text>
                 <SmallText>From $19.99</SmallText>
                 <ImageButton>Buy Now</ImageButton>
-                <Image className="color__swirl" src="https://cdn.ady.systems/ady.images/three.png" layout="fill" objectFit="cover" alt="image" objectPosition="absolute" priority />
+                <Image
+                  className="color__swirl"
+                  src="https://cdn.ady.systems/ady.images/three.png"
+                  layout="fill"
+                  objectFit="cover"
+                  alt="image"
+                  objectPosition="absolute"
+                  priority
+                />
               </Card>
               <Card>
                 <Heading size="2" css={{ fontWeight: '600' }}>
@@ -260,6 +291,8 @@ const Atelier = () => {
                   size="3"
                   className="image-text"
                   css={{
+                    fontFamily: '$jetbrain',
+                    fontSize: '13px',
                     zIndex: '300',
                     width: '94%',
                     fontWeight: '400',
@@ -270,7 +303,15 @@ const Atelier = () => {
                 </Text>
                 <SmallText>From $19.99</SmallText>
                 <ImageButton>Buy Now</ImageButton>
-                <Image className="color__swirl" src="https://cdn.ady.systems/ady.images/four.png" layout="fill" objectFit="cover" alt="image" objectPosition="absolute" priority />
+                <Image
+                  className="color__swirl"
+                  src="https://cdn.ady.systems/ady.images/four.png"
+                  layout="fill"
+                  objectFit="cover"
+                  alt="image"
+                  objectPosition="absolute"
+                  priority
+                />
               </Card>
               <Card>
                 <Heading size="2" css={{ fontWeight: '600' }}>
@@ -282,6 +323,8 @@ const Atelier = () => {
                   size="3"
                   className="image-text"
                   css={{
+                    fontFamily: '$jetbrain',
+                    fontSize: '13px',
                     zIndex: '300',
                     width: '94%',
                     fontWeight: '400',
@@ -292,7 +335,15 @@ const Atelier = () => {
                 </Text>
                 <SmallText>From $19.99</SmallText>
                 <ImageButton>Buy Now</ImageButton>
-                <Image className="color__swirl" src="https://cdn.ady.systems/ady.images/five.png" layout="fill" objectFit="cover" alt="image" objectPosition="absolute" priority />
+                <Image
+                  className="color__swirl"
+                  src="https://cdn.ady.systems/ady.images/five.png"
+                  layout="fill"
+                  objectFit="cover"
+                  alt="image"
+                  objectPosition="absolute"
+                  priority
+                />
               </Card>
             </GridX>
           </Scroller>
