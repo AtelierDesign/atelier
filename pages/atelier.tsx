@@ -14,7 +14,6 @@ import { Spacer } from '@components/Spacer';
 import { Line } from '@components/Line';
 import { OneCol } from '@components/OneCol';
 import { SocialSection } from '@components/SocialSection';
-import { TimeCode } from '@components/Time/TimeCode';
 import { ArrowRightIcon } from '@radix-ui/react-icons';
 import { CursorArrowIcon } from '@radix-ui/react-icons';
 import Image from 'next/image';
@@ -59,29 +58,6 @@ const Card = styled('div', {
   webkitScrollbar: 'none',
 });
 
-const TimeDisplay = styled('div', {
-  fontFamily: '$jetbrain',
-  fontSize: '12px',
-  fontWeight: '600',
-  color: '$mauve10',
-  textAlign: 'right',
-  margin: '0',
-  paddingTop: '0px',
-  ppaddingBottom: '00px',
-  paddingLeft: '8px',
-  paddingRight: '20px',
-  zIndex: '200',
-  lineHeight: '1',
-
-  userSelect: 'none',
-  WebkitUserSelect: 'none',
-
-  '&:hover': {
-    // cursor: 'none',
-    cursor: 'url(https://cdn.ady.systems/assets/mauve-butterfly.svg) 4 12, auto',
-  },
-});
-
 const ImageButton = styled('button', {
   zIndex: '400',
   fontFamily: '$jetbrain',
@@ -111,7 +87,7 @@ const ImageButton = styled('button', {
 });
 
 const SmallText = styled('p', {
-  zIndex: '400',
+  zIndex: '9999',
   fontFamily: '$jetbrain',
   fontWeight: '600',
   fontSize: '12px',
@@ -164,10 +140,6 @@ const Atelier = () => {
       <Box>
         {/* NAVBAR */}
         <Navbar />
-        {/* TIME DISPLAY */}
-        <TimeDisplay>
-          <TimeCode />
-        </TimeDisplay>
 
         {/* HOMEPAGE CONTAINER */}
         <Hero />
@@ -180,34 +152,34 @@ const Atelier = () => {
               {/* INSERT CARD COMPONENT WITH CHILDREN */}
               {/* <Card> .. children .. </Card> */}
               <Card>
-                <Heading size="2" css={{ fontWeight: '600' }}>
-                  Sound.
-                </Heading>
-                <Text
-                  as="p"
-                  variant="gray"
-                  size="3"
-                  className="image-text"
-                  css={{
-                    fontFamily: '$jetbrain',
-                    width: '94%',
-                    fontSize: '13px',
-                    fontWeight: '500',
-                    paddingTop: '12px',
-                    lineHeight: '22px',
-
-                    zIndex: '9999',
-                  }}
-                >
-                  Description. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                  ut labore et dolore magna aliqua.
-                </Text>
-                <SmallText>From $19.99</SmallText>
-                <ImageButton>Buy Now</ImageButton>
-                <ImageArrow>
-                  /{` `}
-                  <ArrowRightIcon />
-                </ImageArrow>
+                <Box css={{ zIndex: '9999' }}>
+                  <Heading size="2" css={{ fontWeight: '600' }}>
+                    Sound.
+                  </Heading>
+                  <Text
+                    as="p"
+                    variant="gray"
+                    size="3"
+                    className="image-text"
+                    css={{
+                      fontFamily: '$jetbrain',
+                      width: '94%',
+                      fontSize: '13px',
+                      fontWeight: '500',
+                      paddingTop: '12px',
+                      lineHeight: '22px',
+                    }}
+                  >
+                    Description. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua.
+                  </Text>
+                  <SmallText>From $19.99</SmallText>
+                  <ImageButton>Buy Now</ImageButton>
+                  <ImageArrow>
+                    /{` `}
+                    <ArrowRightIcon />
+                  </ImageArrow>
+                </Box>
                 <Image
                   className="color__swirl"
                   src="https://cdn.ady.systems/ady.images/one.png"

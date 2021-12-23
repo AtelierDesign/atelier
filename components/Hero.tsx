@@ -11,6 +11,32 @@ import { Paragraph } from '@design-system/paragraph';
 import { ExternalLinkIcon, RocketIcon } from '@radix-ui/react-icons';
 import { DefaultButton } from '@components/DefaultButton';
 import { HomeButton } from '@components/HomeButton';
+import { TimeCode } from '@components/Time/TimeCode';
+
+import { styled } from '@stitches/react';
+
+const TimeDisplay = styled('div', {
+  position: 'relative',
+  alignItems: 'center',
+  textAlign: 'center',
+  margin: 'auto',
+  paddingBottom: '20px',
+  fontFamily: '$jetbrain',
+  fontSize: '13px',
+  fontWeight: '700',
+  color: '$mauve10',
+
+  zIndex: '200',
+  lineHeight: '1',
+
+  userSelect: 'none',
+  WebkitUserSelect: 'none',
+
+  '&:hover': {
+    cursor: 'auto',
+    // cursor: 'url(https://cdn.ady.systems/assets/mauve-butterfly.svg) 4 12, auto',
+  },
+});
 
 export function Hero() {
   return (
@@ -28,11 +54,17 @@ export function Hero() {
         }}
       >
         <Container size="3" css={{ paddingTop: '120px' }}>
+          {/* TIME DISPLAY */}
+          <TimeDisplay>
+            <TimeCode />
+          </TimeDisplay>
+          {/* END TIME DISPLAY */}
+
           <Heading
             size="4"
             css={{
               fontFamily: '$inter',
-              fontWeight: '700',
+              fontWeight: '900',
               mb: '$3',
               '@bp1': {
                 pr: 100,
@@ -46,7 +78,7 @@ export function Hero() {
               },
             }}
           >
-            Welcome to Atelier®
+            Welcome.
           </Heading>
           <Paragraph
             size="2"
@@ -60,7 +92,7 @@ export function Hero() {
               },
             }}
           >
-            An ever– expanding ecosystem of design components. Essential elements that enhance your projects.
+            An ever– expanding ecosystem of design components. Design yield.
           </Paragraph>
 
           <Flex css={{ '@bp2': { jc: 'center', my: '$7' } }}>

@@ -50,7 +50,7 @@ export default function Cover() {
           </NextLink>
         </TextBox>
       </CoverBox>
-      <Image src="https://cdn.ady.systems/assets/blue-swirl.png" alt="One" layout="fill" objectFit="cover" />
+      <Image src="https://cdn.ady.systems/ady.images/met.jpg" alt="One" layout="fill" objectFit="cover" />
     </Box>
   );
 }

@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 
 const Home = () => {
   useEffect(() => {
-    Router.replace('/soon');
+    Router.replace('/cover');
   });
 
   return null;
