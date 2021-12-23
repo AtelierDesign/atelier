@@ -25,7 +25,8 @@ export function Hero() {
           '@bp2': {
             pt: '$6',
           },
-        }}>
+        }}
+      >
         <Container size="3" css={{ paddingTop: '120px' }}>
           <Heading
             size="4"
@@ -43,21 +44,22 @@ export function Hero() {
               '@bp3': {
                 px: 200,
               },
-            }}>
-            Atelier Design Yield.
+            }}
+          >
+            Welcome to Atelier®
           </Heading>
           <Paragraph
             size="2"
             css={{
-              fontFamily: '$jetbrain',
-              fontSize: '16px',
+              fontSize: '18px',
               mb: '60px',
               '@bp2': {
                 mx: 230,
                 ta: 'center',
                 mb: '30px',
               },
-            }}>
+            }}
+          >
             An ever– expanding ecosystem of design components. Essential elements that enhance your projects.
           </Paragraph>
 

@@ -174,7 +174,7 @@ const Atelier = () => {
 
         {/* OVERFLOW X SCROLL CONTAINER */}
 
-        <Box css={{ padding: '0px', bc: 'none' }}>
+        <Box css={{ paddingBottom: '100px', bc: 'none' }}>
           <Scroller className="scroll-container">
             <GridX className="scroll-grid">
               {/* INSERT CARD COMPONENT WITH CHILDREN */}
@@ -197,9 +197,10 @@ const Atelier = () => {
                     lineHeight: '22px',
 
                     zIndex: '9999',
-                  }}>
-                  Description. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                  magna aliqua.
+                  }}
+                >
+                  Description. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                  ut labore et dolore magna aliqua.
                 </Text>
                 <SmallText>From $19.99</SmallText>
                 <ImageButton>Buy Now</ImageButton>
@@ -234,7 +235,8 @@ const Atelier = () => {
                     fontWeight: '400',
                     paddingTop: '16px',
                     lineHeight: '22px',
-                  }}>
+                  }}
+                >
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
                 </Text>
                 <SmallText>From $19.99</SmallText>
@@ -266,7 +268,8 @@ const Atelier = () => {
                     fontWeight: '400',
                     paddingTop: '16px',
                     lineHeight: '22px',
-                  }}>
+                  }}
+                >
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
                 </Text>
                 <SmallText>From $19.99</SmallText>
@@ -298,7 +301,8 @@ const Atelier = () => {
                     fontWeight: '400',
                     paddingTop: '16px',
                     lineHeight: '22px',
-                  }}>
+                  }}
+                >
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
                 </Text>
                 <SmallText>From $19.99</SmallText>
@@ -330,7 +334,8 @@ const Atelier = () => {
                     fontWeight: '400',
                     paddingTop: '16px',
                     lineHeight: '22px',
-                  }}>
+                  }}
+                >
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
                 </Text>
                 <SmallText>From $19.99</SmallText>
