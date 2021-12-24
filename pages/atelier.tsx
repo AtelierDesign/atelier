@@ -146,7 +146,7 @@ const Atelier = () => {
 
         {/* OVERFLOW X SCROLL CONTAINER */}
 
-        <Box css={{ paddingBottom: '100px', bc: 'none' }}>
+        <Box css={{ bc: '$slate1' }}>
           <Scroller className="scroll-container">
             <GridX className="scroll-grid">
               {/* INSERT CARD COMPONENT WITH CHILDREN */}
