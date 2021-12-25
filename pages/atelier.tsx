@@ -145,7 +145,6 @@ const Atelier = () => {
         <Hero />
 
         {/* OVERFLOW X SCROLL CONTAINER */}
-
         <Box css={{ bc: '$slate1' }}>
           <Scroller className="scroll-container">
             <GridX className="scroll-grid">
@@ -190,6 +189,8 @@ const Atelier = () => {
                   priority
                 />
               </Card>
+
+              {/* CARD 02 */}
               <Card>
                 <Heading size="2" css={{ fontWeight: '600', zIndex: '300' }}>
                   Style.
@@ -223,6 +224,8 @@ const Atelier = () => {
                   priority
                 />
               </Card>
+
+              {/* CARD 03 */}
               <Card>
                 <Heading size="2" css={{ fontWeight: '600' }}>
                   Texture.
@@ -256,6 +259,8 @@ const Atelier = () => {
                   priority
                 />
               </Card>
+
+              {/* CARD 04 */}
               <Card>
                 <Heading size="2" css={{ fontWeight: '600' }}>
                   Motion.
@@ -289,6 +294,8 @@ const Atelier = () => {
                   priority
                 />
               </Card>
+
+              {/* CARD 05 */}
               <Card>
                 <Heading size="2" css={{ fontWeight: '600' }}>
                   Type.

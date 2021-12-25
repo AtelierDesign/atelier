@@ -4,7 +4,7 @@ import { Button } from '@design-system/button';
 import { useTheme } from 'next-themes';
 import { LightningBoltIcon } from '@radix-ui/react-icons';
 
-export const ThemeToggle = (props) => {
+export const ThemeToggle = props => {
   const { theme, setTheme } = useTheme();
 
   return (
@@ -38,7 +38,8 @@ export const ThemeToggle = (props) => {
         setTheme(newTheme);
       }}
       {...props}
-      aria-label="toggle a light and dark color scheme">
+      aria-label="toggle a light and dark color scheme"
+    >
       <LightningBoltIcon />
     </Button>
   );
