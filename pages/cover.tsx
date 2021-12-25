@@ -20,6 +20,9 @@ const CoverBox = styled('div', {
   opacity: '0.9',
   backdropFilter: 'invert(10%) blur(10px)',
   saturate: '300%',
+
+  overflowY: 'hidden',
+  overflowX: 'hidden',
 });
 
 const TextBox = styled('div', {
@@ -36,7 +39,7 @@ const TextBox = styled('div', {
 
 export default function Cover() {
   return (
-    <Box css={{ padding: '0px', height: '100vh', zIndex: '0' }}>
+    <Box css={{ padding: '0px', height: '100vh', zIndex: '0', overflowY: 'hidden', overflowX: 'hidden' }}>
       <Head>
         <title>Atelier®.</title>
       </Head>
@@ -50,7 +53,7 @@ export default function Cover() {
           </NextLink>
         </TextBox>
       </CoverBox>
-      <Image src="https://cdn.ady.systems/ady.images/met.jpg" alt="One" layout="fill" objectFit="cover" />
+      <Image src="https://cdn.ady.systems/ady.images/four.png" alt="One" layout="fill" objectFit="cover" />
     </Box>
   );
 }
