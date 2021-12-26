@@ -29,7 +29,7 @@ export const button = css({
     backgroundColor: '$slate2',
     boxShadow: 'inset 0 0 0 1px $colors$slate7',
     color: '$slate8',
-    pointerEvents: 'none'
+    pointerEvents: 'none',
   },
 
   variants: {
@@ -39,21 +39,21 @@ export const button = css({
         height: '$5',
         px: '$2',
         fontSize: '$1',
-        lineHeight: '$sizes$5'
+        lineHeight: '$sizes$5',
       },
       '2': {
         marginLeft: '-1px',
         height: '$6',
         fontSize: '$3',
-        lineHeight: '$sizes$6'
+        lineHeight: '$sizes$6',
       },
       '3': {
         borderRadius: '12px',
         height: '$7',
         px: '$4',
         fontSize: '$4',
-        lineHeight: '$sizes$7'
-      }
+        lineHeight: '$sizes$7',
+      },
     },
     variant: {
       gray: {
@@ -62,20 +62,20 @@ export const button = css({
         color: '$hiContrast',
         '@hover': {
           '&:hover': {
-            boxShadow: 'inset 0 0 0 1px $colors$slate8'
-          }
+            boxShadow: 'inset 0 0 0 1px $colors$slate8',
+          },
         },
         '&:active': {
           backgroundColor: '$slate2',
-          boxShadow: 'inset 0 0 0 1px $colors$slate8'
+          boxShadow: 'inset 0 0 0 1px $colors$slate8',
         },
         '&:focus': {
-          boxShadow: 'inset 0 0 0 1px $colors$slate8, 0 0 0 1px $colors$slate8'
+          boxShadow: 'inset 0 0 0 1px $colors$slate8, 0 0 0 1px $colors$slate8',
         },
         '&[data-radix-popover-trigger][data-state="open"], &[data-radix-dropdown-menu-trigger][data-state="open"]': {
           backgroundColor: '$slate4',
-          boxShadow: 'inset 0 0 0 1px $colors$slate8'
-        }
+          boxShadow: 'inset 0 0 0 1px $colors$slate8',
+        },
       },
       blue: {
         backgroundColor: '$blue2',
@@ -83,20 +83,24 @@ export const button = css({
         color: '$blue11',
         '@hover': {
           '&:hover': {
-            boxShadow: 'inset 0 0 0 1px $colors$blue8'
-          }
+            boxShadow: 'inset 0 0 0 1px $colors$blue8',
+          },
         },
         '&:active': {
           backgroundColor: '$blue3',
-          boxShadow: 'inset 0 0 0 1px $colors$blue8'
+          boxShadow: 'inset 0 0 0 1px $colors$blue8',
         },
         '&:focus': {
-          boxShadow: 'inset 0 0 0 1px $colors$blue8, 0 0 0 1px $colors$blue8'
+          boxShadow: 'inset 0 0 0 1px $colors$blue8, 0 0 0 1px $colors$blue8',
         },
         '&[data-radix-popover-trigger][data-state="open"], &[data-radix-dropdown-menu-trigger][data-state="open"]': {
           backgroundColor: '$blue4',
-          boxShadow: 'inset 0 0 0 1px $colors$blue8'
-        }
+          boxShadow: 'inset 0 0 0 1px $colors$blue8',
+        },
+      },
+      ghost: {
+        backgroundColor: 'transparent',
+        color: 'inherit',
       },
       green: {
         backgroundColor: '$lime9',
@@ -104,20 +108,20 @@ export const button = css({
         color: '$mint3',
         '@hover': {
           '&:hover': {
-            boxShadow: 'inset 0 0 0 1px $colors$green8'
-          }
+            boxShadow: 'inset 0 0 0 1px $colors$green8',
+          },
         },
         '&:active': {
           backgroundColor: '$green3',
-          boxShadow: 'inset 0 0 0 1px $colors$green8'
+          boxShadow: 'inset 0 0 0 1px $colors$green8',
         },
         '&:focus': {
-          boxShadow: 'inset 0 0 0 1px $colors$green8, 0 0 0 1px $colors$green8'
+          boxShadow: 'inset 0 0 0 1px $colors$green8, 0 0 0 1px $colors$green8',
         },
         '&[data-radix-popover-trigger][data-state="open"], &[data-radix-dropdown-menu-trigger][data-state="open"]': {
           backgroundColor: '$green4',
-          boxShadow: 'inset 0 0 0 1px $colors$green8'
-        }
+          boxShadow: 'inset 0 0 0 1px $colors$green8',
+        },
       },
       red: {
         backgroundColor: '$loContrast',
@@ -125,51 +129,51 @@ export const button = css({
         color: '$red11',
         '@hover': {
           '&:hover': {
-            boxShadow: 'inset 0 0 0 1px $colors$slate8'
-          }
+            boxShadow: 'inset 0 0 0 1px $colors$slate8',
+          },
         },
         '&:active': {
           backgroundColor: '$red3',
-          boxShadow: 'inset 0 0 0 1px $colors$red8'
+          boxShadow: 'inset 0 0 0 1px $colors$red8',
         },
         '&:focus': {
-          boxShadow: 'inset 0 0 0 1px $colors$red8, 0 0 0 1px $colors$red8'
+          boxShadow: 'inset 0 0 0 1px $colors$red8, 0 0 0 1px $colors$red8',
         },
         '&[data-radix-popover-trigger][data-state="open"], &[data-radix-dropdown-menu-trigger][data-state="open"]': {
           backgroundColor: '$red4',
-          boxShadow: 'inset 0 0 0 1px $colors$red8'
-        }
+          boxShadow: 'inset 0 0 0 1px $colors$red8',
+        },
       },
       transparentWhite: {
         backgroundColor: 'hsla(0,100%,100%,.2)',
         color: 'white',
         '@hover': {
           '&:hover': {
-            backgroundColor: 'hsla(0,100%,100%,.25)'
-          }
+            backgroundColor: 'hsla(0,100%,100%,.25)',
+          },
         },
         '&:active': {
-          backgroundColor: 'hsla(0,100%,100%,.3)'
+          backgroundColor: 'hsla(0,100%,100%,.3)',
         },
         '&:focus': {
-          boxShadow: 'inset 0 0 0 1px hsla(0,100%,100%,.35), 0 0 0 1px hsla(0,100%,100%,.35)'
-        }
+          boxShadow: 'inset 0 0 0 1px hsla(0,100%,100%,.35), 0 0 0 1px hsla(0,100%,100%,.35)',
+        },
       },
       transparentBlack: {
         backgroundColor: 'hsla(0,0%,0%,.2)',
         color: 'black',
         '@hover': {
           '&:hover': {
-            backgroundColor: 'hsla(0,0%,0%,.25)'
-          }
+            backgroundColor: 'hsla(0,0%,0%,.25)',
+          },
         },
         '&:active': {
-          backgroundColor: 'hsla(0,0%,0%,.3)'
+          backgroundColor: 'hsla(0,0%,0%,.3)',
         },
         '&:focus': {
-          boxShadow: 'inset 0 0 0 1px hsla(0,0%,0%,.35), 0 0 0 1px hsla(0,0%,0%,.35)'
-        }
-      }
+          boxShadow: 'inset 0 0 0 1px hsla(0,0%,0%,.35), 0 0 0 1px hsla(0,0%,0%,.35)',
+        },
+      },
     },
     state: {
       active: {
@@ -179,15 +183,15 @@ export const button = css({
         '@hover': {
           '&:hover': {
             backgroundColor: '$slate5',
-            boxShadow: 'inset 0 0 0 1px $colors$slate8'
-          }
+            boxShadow: 'inset 0 0 0 1px $colors$slate8',
+          },
         },
         '&:active': {
-          backgroundColor: '$slate5'
+          backgroundColor: '$slate5',
         },
         '&:focus': {
-          boxShadow: 'inset 0 0 0 1px $colors$slate8, 0 0 0 1px $colors$slate8'
-        }
+          boxShadow: 'inset 0 0 0 1px $colors$slate8, 0 0 0 1px $colors$slate8',
+        },
       },
       waiting: {
         backgroundColor: '$slate4',
@@ -197,24 +201,24 @@ export const button = css({
         '@hover': {
           '&:hover': {
             backgroundColor: '$slate5',
-            boxShadow: 'inset 0 0 0 1px $colors$slate8'
-          }
+            boxShadow: 'inset 0 0 0 1px $colors$slate8',
+          },
         },
         '&:active': {
-          backgroundColor: '$slate5'
+          backgroundColor: '$slate5',
         },
         '&:focus': {
-          boxShadow: 'inset 0 0 0 1px $colors$slate8'
-        }
-      }
+          boxShadow: 'inset 0 0 0 1px $colors$slate8',
+        },
+      },
     },
     ghost: {
       true: {
         backgroundColor: 'transparent',
         color: '$slate8',
-        boxShadow: 'none'
-      }
-    }
+        boxShadow: 'none',
+      },
+    },
   },
   compoundVariants: [
     {
@@ -226,20 +230,20 @@ export const button = css({
         '@hover': {
           '&:hover': {
             backgroundColor: '$slateA3',
-            boxShadow: 'none'
-          }
+            boxShadow: 'none',
+          },
         },
         '&:active': {
-          backgroundColor: '$slateA4'
+          backgroundColor: '$slateA4',
         },
         '&:focus': {
-          boxShadow: 'inset 0 0 0 1px $colors$slateA8, 0 0 0 1px $colors$slateA8'
+          boxShadow: 'inset 0 0 0 1px $colors$slateA8, 0 0 0 1px $colors$slateA8',
         },
         '&[data-radix-popover-trigger][data-state="open"], &[data-radix-dropdown-menu-trigger][data-state="open"]': {
           backgroundColor: '$slateA4',
-          boxShadow: 'none'
-        }
-      }
+          boxShadow: 'none',
+        },
+      },
     },
     {
       variant: 'blue',
@@ -249,20 +253,20 @@ export const button = css({
         '@hover': {
           '&:hover': {
             backgroundColor: '$blueA3',
-            boxShadow: 'none'
-          }
+            boxShadow: 'none',
+          },
         },
         '&:active': {
-          backgroundColor: '$blueA4'
+          backgroundColor: '$blueA4',
         },
         '&:focus': {
-          boxShadow: 'inset 0 0 0 1px $colors$blueA8, 0 0 0 1px $colors$blueA8'
+          boxShadow: 'inset 0 0 0 1px $colors$blueA8, 0 0 0 1px $colors$blueA8',
         },
         '&[data-radix-popover-trigger][data-state="open"], &[data-radix-dropdown-menu-trigger][data-state="open"]': {
           backgroundColor: '$blueA4',
-          boxShadow: 'none'
-        }
-      }
+          boxShadow: 'none',
+        },
+      },
     },
     {
       variant: 'green',
@@ -272,20 +276,20 @@ export const button = css({
         '@hover': {
           '&:hover': {
             backgroundColor: '$greenA3',
-            boxShadow: 'none'
-          }
+            boxShadow: 'none',
+          },
         },
         '&:active': {
-          backgroundColor: '$greenA4'
+          backgroundColor: '$greenA4',
         },
         '&:focus': {
-          boxShadow: 'inset 0 0 0 1px $colors$greenA8, 0 0 0 1px $colors$greenA8'
+          boxShadow: 'inset 0 0 0 1px $colors$greenA8, 0 0 0 1px $colors$greenA8',
         },
         '&[data-radix-popover-trigger][data-state="open"], &[data-radix-dropdown-menu-trigger][data-state="open"]': {
           backgroundColor: '$greenA4',
-          boxShadow: 'none'
-        }
-      }
+          boxShadow: 'none',
+        },
+      },
     },
     {
       variant: 'red',
@@ -295,26 +299,26 @@ export const button = css({
         '@hover': {
           '&:hover': {
             backgroundColor: '$redA3',
-            boxShadow: 'none'
-          }
+            boxShadow: 'none',
+          },
         },
         '&:active': {
-          backgroundColor: '$redA4'
+          backgroundColor: '$redA4',
         },
         '&:focus': {
-          boxShadow: 'inset 0 0 0 1px $colors$redA8, 0 0 0 1px $colors$redA8'
+          boxShadow: 'inset 0 0 0 1px $colors$redA8, 0 0 0 1px $colors$redA8',
         },
         '&[data-radix-popover-trigger][data-state="open"], &[data-radix-dropdown-menu-trigger][data-state="open"]': {
           backgroundColor: '$redA4',
-          boxShadow: 'none'
-        }
-      }
-    }
+          boxShadow: 'none',
+        },
+      },
+    },
   ],
   defaultVariants: {
     size: '1',
-    variant: 'gray'
-  }
+    variant: 'gray',
+  },
 });
 
 export const Button = styled(DEFAULT_TAG, button);

@@ -1,6 +1,12 @@
 import React from 'react';
+
 import { styled, keyframes } from '@stitches/react';
-import { DotsHorizontalIcon, ChevronRightIcon } from '@radix-ui/react-icons';
+import { ChevronRightIcon } from '@radix-ui/react-icons';
+
+import { Text } from '@design-system/text';
+import { darkTheme } from 'stitches.config';
+import { Button } from '@design-system/button';
+import { useTheme } from 'next-themes';
 
 import * as DropdownMenuPrimitive from '@radix-ui/react-dropdown-menu';
 
@@ -26,10 +32,18 @@ const slideLeftAndFade = keyframes({
 
 const StyledContent = styled(DropdownMenuPrimitive.Content, {
   minWidth: 220,
-  backgroundColor: 'white',
-  borderRadius: 6,
-  padding: 5,
-  boxShadow: '0px 10px 38px -10px rgba(22, 23, 24, 0.35), 0px 10px 20px -15px rgba(22, 23, 24, 0.2)',
+  // width: '',
+  height: 'auto',
+  marginTop: '8px',
+  backgroundColor: '$light100',
+
+  borderTopRightRadius: '0px',
+  borderTopLeftRadius: '0px',
+  borderBottomRightRadius: '8px',
+  borderBottomLeftRadius: '8px',
+
+  padding: '5px',
+
   '@media (prefers-reduced-motion: no-preference)': {
     animationDuration: '400ms',
     animationTimingFunction: 'cubic-bezier(0.16, 1, 0.3, 1)',
@@ -53,9 +67,10 @@ const itemStyles = {
   display: 'flex',
   alignItems: 'center',
   height: 25,
-  padding: '0 5px',
+  // padding: '0 5px',
   position: 'relative',
-  paddingLeft: 25,
+  paddingLeft: '10px',
+  paddingRight: '10px',
   userSelect: 'none',
 
   '&[data-disabled]': {
@@ -93,7 +108,7 @@ const StyledLabel = styled(DropdownMenuPrimitive.Label, {
 
 const StyledSeparator = styled(DropdownMenuPrimitive.Separator, {
   height: 1,
-  backgroundColor: '$violet6',
+  backgroundColor: '$orange6',
   margin: 5,
 });
 
@@ -106,11 +121,7 @@ const StyledItemIndicator = styled(DropdownMenuPrimitive.ItemIndicator, {
   justifyContent: 'center',
 });
 
-const StyledArrow = styled(DropdownMenuPrimitive.Arrow, {
-  fill: 'white',
-});
-
-// Exports
+// EXPORTS
 export const DropdownMenu = DropdownMenuPrimitive.Root;
 export const DropdownMenuTrigger = DropdownMenuPrimitive.Trigger;
 export const DropdownMenuContent = StyledContent;
@@ -122,9 +133,8 @@ export const DropdownMenuItemIndicator = StyledItemIndicator;
 export const DropdownMenuTriggerItem = StyledTriggerItem;
 export const DropdownMenuLabel = StyledLabel;
 export const DropdownMenuSeparator = StyledSeparator;
-export const DropdownMenuArrow = StyledArrow;
 
-// Your app...
+// APP
 const Box = styled('div', {});
 
 const RightSlot = styled('div', {
@@ -138,21 +148,22 @@ const RightSlot = styled('div', {
 const IconButton = styled('button', {
   all: 'unset',
   fontFamily: 'inherit',
-  borderRadius: '8px',
-  border: '1px solid $slate8',
-  height: 20,
-  width: 35,
+  borderRadius: '4px',
+  border: 'none',
+  height: '22px',
+  width: '55px',
   display: 'inline-flex',
   alignItems: 'center',
   justifyContent: 'center',
-  color: '$orange9',
-  backgroundColor: 'white',
-  boxShadow: `0 2px 4px $blackA7`,
-  '&:hover': { backgroundColor: '$violet3' },
+  // color: '$orange9',
+  backgroundColor: '$white',
+  boxShadow: `0 2px 4px $orange9`,
+  '&:hover': { backgroundColor: '$orange5' },
   '&:focus': { boxShadow: `0 0 0 1px black` },
 });
 
-export const DropMenu = () => {
+export const MenuNav = props => {
+  const { theme, setTheme } = useTheme();
   // const [bookmarksChecked, setBookmarksChecked] = React.useState(true);
   // const [urlsChecked, setUrlsChecked] = React.useState(false);
   // const [person, setPerson] = React.useState('pedro');
@@ -160,18 +171,46 @@ export const DropMenu = () => {
   return (
     <Box>
       <DropdownMenu>
+        {/* INSTALL TRIGGER (MENU) */}
         <DropdownMenuTrigger asChild>
           <IconButton aria-label="Customise options">
-            <DotsHorizontalIcon />
+            <Text css={{ fontFamily: '$jetbrain', fontSize: '12px', fontWeight: '700', color: '$slate11' }}>Menu</Text>
           </IconButton>
         </DropdownMenuTrigger>
 
+        {/* ITEM 1 (SHOP ALL) */}
         <DropdownMenuContent sideOffset={5}>
           <DropdownMenuItem>
-            Shop All <RightSlot>⌘ S</RightSlot>
+            <Button
+              variant="ghost"
+              css={{
+                color: '$orange9',
+                '&:hover': {
+                  cursor: 'pointer',
+                  color: '$white',
+                },
+              }}
+            >
+              Shop All
+            </Button>
+            <RightSlot>⌘ S</RightSlot>
           </DropdownMenuItem>
+
+          {/* ITEM 2 (ABOUT) */}
           <DropdownMenuItem>
-            About <RightSlot>⌘ A</RightSlot>
+            <Button
+              variant="ghost"
+              css={{
+                color: '$orange9',
+                '&:hover': {
+                  cursor: 'pointer',
+                  color: '$white',
+                },
+              }}
+            >
+              About
+            </Button>
+            <RightSlot>⌘ A</RightSlot>
           </DropdownMenuItem>
 
           {/* SEPERATOR */}
@@ -180,12 +219,23 @@ export const DropMenu = () => {
           {/* RIGHT SLOT BEGIN */}
           <DropdownMenu>
             <DropdownMenuTriggerItem>
-              More Tools
+              <Button
+                variant="ghost"
+                css={{
+                  color: '$orange9',
+                  '&:hover': {
+                    cursor: 'pointer',
+                    color: '$white',
+                  },
+                }}
+              >
+                More Tools
+              </Button>
               <RightSlot>
                 <ChevronRightIcon />
               </RightSlot>
             </DropdownMenuTriggerItem>
-            <DropdownMenuContent sideOffset={2} alignOffset={-5}>
+            <DropdownMenuContent sideOffset={8} alignOffset={-5} css={{ borderRadius: '8px' }}>
               <DropdownMenuItem>
                 Save Page As… <RightSlot>⌘+S</RightSlot>
               </DropdownMenuItem>
@@ -201,15 +251,46 @@ export const DropMenu = () => {
 
           {/* THEME TOGGLE */}
           <DropdownMenuItem>
-            Toggle Theme
+            <Button
+              variant="ghost"
+              css={{
+                color: '$orange9',
+                '&:hover': {
+                  cursor: 'pointer',
+                  color: '$white',
+                },
+              }}
+              onClick={() => {
+                const newTheme = theme === 'dark' ? 'theme' : 'dark';
+
+                document.querySelectorAll('[data-demo-iframe]').forEach((iframe: HTMLIFrameElement) => {
+                  if (iframe.contentDocument?.documentElement) {
+                    iframe.contentDocument.documentElement.classList.toggle(darkTheme.className);
+                    iframe.contentDocument.documentElement.classList.toggle('theme');
+                    iframe.contentDocument.documentElement.style.setProperty('color-scheme', newTheme);
+                  }
+                });
+
+                document.documentElement.classList.toggle(darkTheme.className);
+                document.documentElement.classList.toggle('theme');
+                document.documentElement.style.setProperty('color-scheme', newTheme);
+
+                // HERE, WE STILL NEED TO LET 'next-themes' KNOW
+                // OF THE THEME CHANGE SO IT CAN SAVE TO LOCAL STORAGE.
+                setTheme(newTheme);
+              }}
+              // ALLOW PROPS
+              {...props}
+              aria-label="TOGGLE LIGHT AND DARK THEME®"
+            >
+              Toggle Theme
+            </Button>
             <RightSlot>⌘ T</RightSlot>
           </DropdownMenuItem>
-
-          <DropdownMenuArrow />
         </DropdownMenuContent>
       </DropdownMenu>
     </Box>
   );
 };
 
-export default DropMenu;
+export default MenuNav;

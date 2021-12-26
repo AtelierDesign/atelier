@@ -1,10 +1,9 @@
 import Head from 'next/head';
 import React from 'react';
 
-import { DropMenu } from '@components/DropMenu';
-import { Demo } from '@components/Demo';
+import { Navbar } from '@components/Navbar';
+// import { Demo } from '@components/Demo';
 import { Box } from '@design-system/box';
-import { Container } from '@design-system/container';
 
 import 'stitches.config';
 
@@ -15,11 +14,7 @@ export default function Test() {
         <title>Testing Page.</title>
       </Head>
 
-      <Container>
-        <DropMenu />
-      </Container>
-
-      <Demo />
+      <Navbar />
     </Box>
   );
 }

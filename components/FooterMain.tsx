@@ -3,6 +3,7 @@ import { Container } from '@design-system/container';
 import { Grid } from '@design-system/grid';
 import { Text } from '@design-system/text';
 
+import NextLink from 'next/link';
 import Image from 'next/image';
 
 import { styled } from '@stitches/react';
@@ -20,7 +21,7 @@ const Card = styled('div', {
   alignItems: 'center',
   webkitScrollbar: 'none',
 
-  height: '120px'
+  height: '120px',
 });
 
 export const FooterMain = () => {
@@ -34,8 +35,9 @@ export const FooterMain = () => {
         paddingBottom: '70px',
         margin: 'auto',
         px: '0',
-        height: 'auto'
-      }}>
+        height: 'auto',
+      }}
+    >
       {/* NAVIGATION SECTION */}
       <Container size="3" css={{ px: '18px' }}>
         <Grid
@@ -44,13 +46,14 @@ export const FooterMain = () => {
             gridTemplateColumns: '1fr',
             '@bp1': {
               gap: '0px',
-              gridTemplateColumns: '1fr 1fr 1fr'
+              gridTemplateColumns: '1fr 1fr 1fr',
             },
             '@bp2': {
               gap: '0px',
-              gridTemplateColumns: '1fr 1fr 1fr'
-            }
-          }}>
+              gridTemplateColumns: '1fr 1fr 1fr',
+            },
+          }}
+        >
           {/* PRODUCT ROW ONE */}
 
           <Box>
@@ -96,9 +99,21 @@ export const FooterMain = () => {
                   Resources
                 </Text>
 
-                <Text size="1" css={{ fontWeight: '400', fontSize: '11px', lineHeight: '2' }}>
-                  One
-                </Text>
+                <NextLink href="/test" passHref>
+                  <Text
+                    size="1"
+                    css={{
+                      fontWeight: '400',
+                      fontSize: '11px',
+                      lineHeight: '2',
+                      '&:hover': {
+                        cursor: 'pointer',
+                      },
+                    }}
+                  >
+                    Test Page
+                  </Text>
+                </NextLink>
 
                 <Text size="1" css={{ fontWeight: '400', fontSize: '11px', lineHeight: '2' }}>
                   Two

@@ -46,7 +46,7 @@ export default function Cover() {
 
       <CoverBox>
         <TextBox>
-          <NextLink href="/soon" passHref>
+          <NextLink href="/atelier" passHref>
             <NormalLink variant="normal">
               <Image src="/logo.svg" alt="One" width={120} height={60} />
             </NormalLink>

@@ -9,15 +9,15 @@ import '../styles/inter.css';
 import '../styles/jetbrains.css';
 
 const appWrapper = css({
-  include: ['box', 'minHeightScreen']
+  include: ['box', 'minHeightScreen'],
 });
 
 const App = ({ Component, pageProps }: AppProps) => {
   globalCss(reset, {
     'body, button': {
       backgroundColor: '$slate1',
-      fontFamily: '$inter'
-    }
+      fontFamily: '$inter',
+    },
   });
 
   return (
@@ -33,8 +33,9 @@ const App = ({ Component, pageProps }: AppProps) => {
         <div
           className={appWrapper({
             display: 'flex',
-            flexDirection: 'column'
-          })}>
+            flexDirection: 'column',
+          })}
+        >
           <div className={box({ flex: 1 })}>
             <Component {...pageProps} />
           </div>

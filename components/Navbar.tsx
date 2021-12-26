@@ -6,6 +6,8 @@ import { Link } from '@design-system/link';
 import { ArrowRightIcon } from '@radix-ui/react-icons';
 import { ThemeToggle } from '@components/ThemeToggle';
 
+import { MenuNav } from './MenuNav';
+
 // import Image from 'next/image';
 
 export const Navbar = () => {
@@ -26,7 +28,8 @@ export const Navbar = () => {
         brc: '$lime9',
 
         zIndex: '9999',
-      }}>
+      }}
+    >
       {/* LOGO SECTION */}
       <NextLink href="/" passHref>
         <Box
@@ -39,14 +42,16 @@ export const Navbar = () => {
               boxShadow: 'none',
             },
             '@bp2': { ml: '$5' },
-          }}>
+          }}
+        >
           <Text
             css={{
               fontWeight: '800',
               fontSize: '16px',
               color: 'whiteA',
               lineHeight: '1.5',
-            }}>
+            }}
+          >
             ATELIER DESIGN®
           </Text>
           {/*<Image className="logo" alt="logo" src="/butterfly_logo.svg" width={80} height={18} />*/}
@@ -63,16 +68,29 @@ export const Navbar = () => {
         </NextLink>
 
         <NextLink href="https://docs.ady.world" passHref>
-          <Link variant="subtle" css={{ display: 'none', color: '$slate8', mr: '$5', '@bp2': { display: 'block', mr: '$5' } }}>
+          <Link
+            variant="subtle"
+            css={{ display: 'none', color: '$slate8', mr: '$5', '@bp2': { display: 'block', mr: '$5' } }}
+          >
             Documentaion
           </Link>
         </NextLink>
 
         <NextLink href="https://developer.ady.world" passHref>
-          <Link variant="subtle" css={{ display: 'none', color: '$slate8', mr: '$5', '@bp2': { display: 'block', mr: '$5' } }}>
+          <Link
+            variant="subtle"
+            css={{ display: 'none', color: '$slate8', mr: '$5', '@bp2': { display: 'block', mr: '$5' } }}
+          >
             Resources
           </Link>
         </NextLink>
+
+        <Link
+          variant="subtle"
+          css={{ display: 'none', color: '$slate8', mr: '$5', '@bp2': { display: 'block', mr: '$5' } }}
+        >
+          <MenuNav />
+        </Link>
       </Flex>
     </Flex>
   );
