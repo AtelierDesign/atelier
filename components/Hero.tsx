@@ -13,7 +13,7 @@ import { DefaultButton } from '@components/DefaultButton';
 import { HomeButton } from '@components/HomeButton';
 import { TimeCode } from '@components/Time/TimeCode';
 
-import { styled } from 'stitches.config.ts';
+import { styled } from 'stitches.config';
 
 const TimeDisplay = styled('div', {
   position: 'relative',
