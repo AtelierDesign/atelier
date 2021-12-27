@@ -87,7 +87,6 @@ const ImageButton = styled('button', {
 });
 
 const SmallText = styled('p', {
-  zIndex: '9999',
   fontFamily: '$jetbrain',
   fontWeight: '600',
   fontSize: '12px',
@@ -167,10 +166,9 @@ const Atelier = () => {
                       fontWeight: '500',
                       paddingTop: '12px',
                       lineHeight: '22px',
-                    }}
-                  >
-                    Description. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua.
+                    }}>
+                    Description. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   </Text>
                   <SmallText>From $19.99</SmallText>
                   <ImageButton>Buy Now</ImageButton>
@@ -208,9 +206,9 @@ const Atelier = () => {
                     fontWeight: '400',
                     paddingTop: '16px',
                     lineHeight: '22px',
-                  }}
-                >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
+                  }}>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut labore.
                 </Text>
                 <SmallText>From $19.99</SmallText>
                 <ImageButton>Buy Now</ImageButton>
@@ -243,9 +241,9 @@ const Atelier = () => {
                     fontWeight: '400',
                     paddingTop: '16px',
                     lineHeight: '22px',
-                  }}
-                >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
+                  }}>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut labore.
                 </Text>
                 <SmallText>From $19.99</SmallText>
                 <ImageButton>Buy Now</ImageButton>
@@ -278,9 +276,9 @@ const Atelier = () => {
                     fontWeight: '400',
                     paddingTop: '16px',
                     lineHeight: '22px',
-                  }}
-                >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
+                  }}>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut labore.
                 </Text>
                 <SmallText>From $19.99</SmallText>
                 <ImageButton>Buy Now</ImageButton>
@@ -313,9 +311,9 @@ const Atelier = () => {
                     fontWeight: '400',
                     paddingTop: '16px',
                     lineHeight: '22px',
-                  }}
-                >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
+                  }}>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut labore.
                 </Text>
                 <SmallText>From $19.99</SmallText>
                 <ImageButton>Buy Now</ImageButton>
@@ -344,14 +342,24 @@ const Atelier = () => {
 
       <Box css={{ paddingBottom: '50px', bc: '$slate1' }}>
         <Container size="3" css={{ bc: 'none' }}>
-          <Text css={{ color: '$slate9', fontWeight: '500', lineHeight: '1.6', paddingLeft: '6px' }}>
+          <Text
+            css={{ color: '$slate9', fontWeight: '500', lineHeight: '1.6', paddingLeft: '6px' }}>
             <strong>Adobe</strong>® After Effects
           </Text>
           <Heading size="3" css={{ fontWeight: '600', paddingLeft: '5px' }}>
             Style made easy.
           </Heading>
-          <Text css={{ color: '$slate9', lineHeight: '1.4', px: '5px', py: '15px', fontSize: '16px', width: '80%' }}>
-            Create open and close animations that take the dropdown menu’s actual position into account.
+          <Text
+            css={{
+              color: '$slate9',
+              lineHeight: '1.4',
+              px: '5px',
+              py: '15px',
+              fontSize: '16px',
+              width: '80%',
+            }}>
+            Create open and close animations that take the dropdown menu’s actual position into
+            account.
           </Text>
           <DefaultButton as="a" css={{}}>
             Learn more <ArrowRightIcon />

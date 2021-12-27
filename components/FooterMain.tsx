@@ -36,8 +36,7 @@ export const FooterMain = () => {
         margin: 'auto',
         px: '0',
         height: 'auto',
-      }}
-    >
+      }}>
       {/* NAVIGATION SECTION */}
       <Container size="3" css={{ px: '18px' }}>
         <Grid
@@ -52,15 +51,20 @@ export const FooterMain = () => {
               gap: '0px',
               gridTemplateColumns: '1fr 1fr 1fr',
             },
-          }}
-        >
+          }}>
           {/* PRODUCT ROW ONE */}
 
           <Box>
             <Card>
               <Box css={{ position: 'absolute', top: '0', left: '0', margin: '5px' }}>
                 <Text size="2" css={{ fontWeight: '600', lineHeight: '1', textAlign: 'left' }}>
-                  <Image className="logo" alt="logo" src="/butterfly_logo.svg" width={70} height={25} />
+                  <Image
+                    className="logo"
+                    alt="logo"
+                    src="/butterfly_logo.svg"
+                    width={70}
+                    height={25}
+                  />
                 </Text>
 
                 <Text size="1" css={{ fontWeight: '400', fontSize: '11px', lineHeight: '1.5' }}>
@@ -77,14 +81,17 @@ export const FooterMain = () => {
                   Information
                 </Text>
 
+                {/* (Information) FOOTER LINK 01 */}
                 <Text size="1" css={{ fontWeight: '400', fontSize: '11px', lineHeight: '2' }}>
                   One
                 </Text>
 
+                {/* (Information) FOOTER LINK 02 */}
                 <Text size="1" css={{ fontWeight: '400', fontSize: '11px', lineHeight: '2' }}>
                   Two
                 </Text>
 
+                {/* (Information) FOOTER LINK 03 */}
                 <Text size="1" css={{ fontWeight: '400', fontSize: '11px', lineHeight: '2' }}>
                   Three
                 </Text>
@@ -99,6 +106,7 @@ export const FooterMain = () => {
                   Resources
                 </Text>
 
+                {/* (RESOURCES) FOOTER LINK 01 */}
                 <NextLink href="/test" passHref>
                   <Text
                     size="1"
@@ -109,16 +117,28 @@ export const FooterMain = () => {
                       '&:hover': {
                         cursor: 'pointer',
                       },
-                    }}
-                  >
+                    }}>
                     Test Page
                   </Text>
                 </NextLink>
 
-                <Text size="1" css={{ fontWeight: '400', fontSize: '11px', lineHeight: '2' }}>
-                  Two
-                </Text>
+                {/* (RESOURCES) FOOTER LINK 02 */}
+                <NextLink href="/connect" passHref>
+                  <Text
+                    size="1"
+                    css={{
+                      fontWeight: '400',
+                      fontSize: '11px',
+                      lineHeight: '2',
+                      '&:hover': {
+                        cursor: 'pointer',
+                      },
+                    }}>
+                    WalletConnect
+                  </Text>
+                </NextLink>
 
+                {/* (RESOURCES) FOOTER LINK 03 */}
                 <Text size="1" css={{ fontWeight: '400', fontSize: '11px', lineHeight: '2' }}>
                   Three
                 </Text>

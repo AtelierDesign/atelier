@@ -28,8 +28,9 @@ const TimeDisplay = styled('div', {
   WebkitUserSelect: 'none',
 
   '&:hover': {
-    // cursor: 'none',
-    cursor: 'url(https://cdn.ady.systems/assets/mauve-butterfly.svg) 4 12, auto',
+    cursor: 'auto',
+    userSelect: 'none',
+    // cursor: 'url(https://cdn.ady.systems/assets/mauve-butterfly.svg) 4 12, auto',
   },
 });
 
@@ -79,7 +80,8 @@ export const OneCol = () => {
                 lineHeight: '22px',
                 '@bp1': { width: '450px' },
               }}>
-              ADY® is an ever– expanding ecosystem of essential design components built for modern web.
+              ADY® is an ever– expanding ecosystem of essential design components built for modern
+              web.
             </Text>
             <TimeDisplay>
               <TimeCode />

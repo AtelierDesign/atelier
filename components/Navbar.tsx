@@ -28,8 +28,7 @@ export const Navbar = () => {
         brc: '$lime9',
 
         zIndex: '9999',
-      }}
-    >
+      }}>
       {/* LOGO SECTION */}
       <NextLink href="/" passHref>
         <Box
@@ -42,17 +41,16 @@ export const Navbar = () => {
               boxShadow: 'none',
             },
             '@bp2': { ml: '$5' },
-          }}
-        >
+          }}>
           <Text
             css={{
               fontWeight: '800',
               fontSize: '16px',
-              color: 'whiteA',
+              color: '$gray12',
               lineHeight: '1.5',
-            }}
-          >
-            ATELIER DESIGN®
+              letterSpacing: '-0.05rem',
+            }}>
+            Atelier Design®
           </Text>
           {/*<Image className="logo" alt="logo" src="/butterfly_logo.svg" width={80} height={18} />*/}
         </Box>
@@ -62,7 +60,7 @@ export const Navbar = () => {
       <Flex as="nav" css={{ ai: 'center', px: '0px', fontFamily: '$jetbrain' }}>
         <ThemeToggle />
         <NextLink href="/shop" passHref>
-          <Link variant="subtle" css={{ mr: '$2', color: '$slate8', '@bp2': { mr: '$5' } }}>
+          <Link variant="subtle" css={{ mr: '$2', color: '$gray12', '@bp2': { mr: '$5' } }}>
             Shop <ArrowRightIcon />
           </Link>
         </NextLink>
@@ -70,8 +68,12 @@ export const Navbar = () => {
         <NextLink href="https://docs.ady.world" passHref>
           <Link
             variant="subtle"
-            css={{ display: 'none', color: '$slate8', mr: '$5', '@bp2': { display: 'block', mr: '$5' } }}
-          >
+            css={{
+              display: 'none',
+              color: '$gray12',
+              mr: '$5',
+              '@bp2': { display: 'block', mr: '$5' },
+            }}>
             Documentaion
           </Link>
         </NextLink>
@@ -79,16 +81,24 @@ export const Navbar = () => {
         <NextLink href="https://developer.ady.world" passHref>
           <Link
             variant="subtle"
-            css={{ display: 'none', color: '$slate8', mr: '$5', '@bp2': { display: 'block', mr: '$5' } }}
-          >
+            css={{
+              display: 'none',
+              color: '$gray12',
+              mr: '$5',
+              '@bp2': { display: 'block', mr: '$5' },
+            }}>
             Resources
           </Link>
         </NextLink>
 
         <Link
           variant="subtle"
-          css={{ display: 'none', color: '$slate8', mr: '$5', '@bp2': { display: 'block', mr: '$5' } }}
-        >
+          css={{
+            display: 'none',
+            color: '$gray12',
+            mr: '$5',
+            '@bp2': { display: 'block', mr: '$5' },
+          }}>
           <MenuNav />
         </Link>
       </Flex>

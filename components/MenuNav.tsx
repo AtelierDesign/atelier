@@ -157,6 +157,7 @@ const IconButton = styled('button', {
   justifyContent: 'center',
   // color: '$orange9',
   backgroundColor: '$white',
+  color: '$gray12',
   boxShadow: `0 2px 4px $orange9`,
   '&:hover': { backgroundColor: '$orange5' },
   '&:focus': { boxShadow: `0 0 0 1px black` },
@@ -174,7 +175,15 @@ export const MenuNav = props => {
         {/* INSTALL TRIGGER (MENU) */}
         <DropdownMenuTrigger asChild>
           <IconButton aria-label="Customise options">
-            <Text css={{ fontFamily: '$jetbrain', fontSize: '12px', fontWeight: '700', color: '$slate11' }}>Menu</Text>
+            <Text
+              css={{
+                fontFamily: '$jetbrain',
+                fontSize: '12px',
+                fontWeight: '700',
+                color: '$gray12',
+              }}>
+              Menu
+            </Text>
           </IconButton>
         </DropdownMenuTrigger>
 
@@ -189,8 +198,7 @@ export const MenuNav = props => {
                   cursor: 'pointer',
                   color: '$white',
                 },
-              }}
-            >
+              }}>
               Shop All
             </Button>
             <RightSlot>⌘ S</RightSlot>
@@ -206,8 +214,7 @@ export const MenuNav = props => {
                   cursor: 'pointer',
                   color: '$white',
                 },
-              }}
-            >
+              }}>
               About
             </Button>
             <RightSlot>⌘ A</RightSlot>
@@ -227,8 +234,7 @@ export const MenuNav = props => {
                     cursor: 'pointer',
                     color: '$white',
                   },
-                }}
-              >
+                }}>
                 More Tools
               </Button>
               <RightSlot>
@@ -263,13 +269,18 @@ export const MenuNav = props => {
               onClick={() => {
                 const newTheme = theme === 'dark' ? 'theme' : 'dark';
 
-                document.querySelectorAll('[data-demo-iframe]').forEach((iframe: HTMLIFrameElement) => {
-                  if (iframe.contentDocument?.documentElement) {
-                    iframe.contentDocument.documentElement.classList.toggle(darkTheme.className);
-                    iframe.contentDocument.documentElement.classList.toggle('theme');
-                    iframe.contentDocument.documentElement.style.setProperty('color-scheme', newTheme);
-                  }
-                });
+                document
+                  .querySelectorAll('[data-demo-iframe]')
+                  .forEach((iframe: HTMLIFrameElement) => {
+                    if (iframe.contentDocument?.documentElement) {
+                      iframe.contentDocument.documentElement.classList.toggle(darkTheme.className);
+                      iframe.contentDocument.documentElement.classList.toggle('theme');
+                      iframe.contentDocument.documentElement.style.setProperty(
+                        'color-scheme',
+                        newTheme,
+                      );
+                    }
+                  });
 
                 document.documentElement.classList.toggle(darkTheme.className);
                 document.documentElement.classList.toggle('theme');
@@ -281,8 +292,7 @@ export const MenuNav = props => {
               }}
               // ALLOW PROPS
               {...props}
-              aria-label="TOGGLE LIGHT AND DARK THEME®"
-            >
+              aria-label="TOGGLE LIGHT AND DARK THEME®">
               Toggle Theme
             </Button>
             <RightSlot>⌘ T</RightSlot>
