@@ -6,7 +6,6 @@ export function HeroContainer({ css, children }: { css?: any; children?: React.R
   return (
     <Box
       // In case any semantic content sneaks through in a hero, let's hide it
-      // from the a11y tree since this is a presentational component.
       role="presentation"
       className={`${theme}`}
       css={{
@@ -20,7 +19,7 @@ export function HeroContainer({ css, children }: { css?: any; children?: React.R
         ...(css as any),
 
         '@bp2': { mx: '-$7' },
-        '@bp3': { mx: '-$8' }
+        '@bp3': { mx: '-$8' },
       }}>
       {children}
     </Box>

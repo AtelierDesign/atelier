@@ -24,30 +24,30 @@ export const HomeButton = styled('button', {
       gray: {
         color: '$slate11',
         '&:hover': {
-          backgroundColor: '$slate5'
+          backgroundColor: '$slate5',
         },
         '&:focus': {
-          boxShadow: '0 0 0 1px $colors$slate8, inset 0 0 0 1px $colors$slate8'
-        }
+          boxShadow: '0 0 0 1px $colors$slate8, inset 0 0 0 1px $colors$slate8',
+        },
       },
 
       blue: {
         backgroundColor: '$blue4',
         color: '$blue11',
         '&:hover': {
-          backgroundColor: '$blue5'
+          backgroundColor: '$blue5',
         },
         '&:active': {
-          backgroundColor: '$blue6'
+          backgroundColor: '$blue6',
         },
         '&:focus': {
-          boxShadow: '0 0 0 1px $colors$blue8, inset 0 0 0 1px $colors$blue8'
-        }
-      }
-    }
+          boxShadow: '0 0 0 1px $colors$blue8, inset 0 0 0 1px $colors$blue8',
+        },
+      },
+    },
   },
 
   defaultVariants: {
-    color: 'gray'
-  }
+    color: 'gray',
+  },
 });
