@@ -86,11 +86,11 @@ export function Hero() {
             size="2"
             css={{
               fontSize: '18px',
-              mb: '60px',
+              mb: '30px',
               '@bp2': {
                 mx: 230,
                 ta: 'center',
-                mb: '30px',
+                mb: '60px',
               },
             }}>
             An ever– expanding ecosystem of design components. Design yield.
