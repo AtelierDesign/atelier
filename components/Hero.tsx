@@ -13,7 +13,7 @@ import { DefaultButton } from '@components/DefaultButton';
 import { HomeButton } from '@components/HomeButton';
 import { TimeCode } from '@components/Time/TimeCode';
 
-import { styled } from '@stitches/react';
+import { styled } from 'stitches.config.ts';
 
 const TimeDisplay = styled('div', {
   position: 'relative',
@@ -22,9 +22,9 @@ const TimeDisplay = styled('div', {
   margin: 'auto',
   paddingBottom: '20px',
   fontFamily: '$jetbrain',
-  fontSize: '13px',
+  fontSize: '12px',
   fontWeight: '700',
-  color: '$mauve10',
+  color: '$gray12',
 
   zIndex: '200',
   lineHeight: '1',
@@ -32,9 +32,13 @@ const TimeDisplay = styled('div', {
   userSelect: 'none',
   WebkitUserSelect: 'none',
 
+  '@sm': {
+    alignItems: 'left',
+    textAlign: 'left',
+  },
+
   '&:hover': {
     cursor: 'auto',
-    // cursor: 'url(https://cdn.ady.systems/assets/mauve-butterfly.svg) 4 12, auto',
   },
 });
 
@@ -51,8 +55,7 @@ export function Hero() {
           '@bp2': {
             pt: '$6',
           },
-        }}
-      >
+        }}>
         <Container size="3" css={{ paddingTop: '120px' }}>
           {/* TIME DISPLAY */}
           <TimeDisplay>
@@ -66,18 +69,17 @@ export function Hero() {
               fontFamily: '$inter',
               fontWeight: '900',
               mb: '$3',
-              '@bp1': {
+              '@sm': {
                 pr: 100,
               },
               '@bp2': {
-                ta: 'center',
+                textAlign: 'center',
                 px: 180,
               },
               '@bp3': {
                 px: 200,
               },
-            }}
-          >
+            }}>
             Welcome.
           </Heading>
           <Paragraph
@@ -90,8 +92,7 @@ export function Hero() {
                 ta: 'center',
                 mb: '30px',
               },
-            }}
-          >
+            }}>
             An ever– expanding ecosystem of design components. Design yield.
           </Paragraph>
 
@@ -101,7 +102,11 @@ export function Hero() {
               {` `}
               <RocketIcon />
             </DefaultButton>
-            <HomeButton as="a" href="https://github.com/AtelierDesign" target="_blank" rel="noopener noreferrer">
+            <HomeButton
+              as="a"
+              href="https://github.com/AtelierDesign"
+              target="_blank"
+              rel="noopener noreferrer">
               GitHub
               <Box css={{ ml: '$1' }}>
                 <ExternalLinkIcon />
