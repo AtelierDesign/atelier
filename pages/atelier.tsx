@@ -11,6 +11,7 @@ import { FooterMain } from '@components/FooterMain';
 import { DefaultButton } from '@components/DefaultButton';
 import { Hero } from '@components/Hero';
 import { Spacer } from '@components/Spacer';
+import { SmallSpacer } from '@components/SmallSpacer';
 import { Line } from '@components/Line';
 import { OneCol } from '@components/OneCol';
 import { SocialSection } from '@components/SocialSection';
@@ -142,6 +143,41 @@ const Atelier = () => {
 
         {/* HOMEPAGE CONTAINER */}
         <Hero />
+
+        {/* LARGE ONE COLUMN CONTAINER */}
+        <OneCol />
+
+        <SmallSpacer />
+
+        <Box css={{ paddingBottom: '50px', bc: '$slate1' }}>
+          <Container size="3" css={{ paddingLeft: '30px', bc: 'none' }}>
+            <Text
+              css={{ color: '$gray11', fontWeight: '500', lineHeight: '1.6', paddingLeft: '6px' }}>
+              <strong>Adobe</strong>® After Effects
+            </Text>
+            <Heading size="3" css={{ fontWeight: '600', paddingLeft: '5px', color: '$gray12' }}>
+              Style made easy.
+            </Heading>
+            <Text
+              css={{
+                color: '$gray11',
+                lineHeight: '1.4',
+                px: '5px',
+                py: '15px',
+                fontSize: '16px',
+                width: '80%',
+              }}>
+              Create open and close animations that take the dropdown menu’s actual position into
+              account.
+            </Text>
+            <DefaultButton as="a" css={{}}>
+              Learn more <ArrowRightIcon />
+            </DefaultButton>
+          </Container>
+        </Box>
+
+        <Line />
+        <SmallSpacer />
 
         {/* OVERFLOW X SCROLL CONTAINER */}
         <Box css={{ bc: '$slate1' }}>
@@ -332,41 +368,8 @@ const Atelier = () => {
         </Box>
 
         {/* END --- OVERFLOW X SCROLL CONTAINER */}
-
-        {/* LARGE ONE COLUMN CONTAINER */}
-        <OneCol />
-        {/* --- */}
       </Box>
-
-      <Spacer />
-
-      <Box css={{ paddingBottom: '50px', bc: '$slate1' }}>
-        <Container size="3" css={{ bc: 'none' }}>
-          <Text
-            css={{ color: '$slate9', fontWeight: '500', lineHeight: '1.6', paddingLeft: '6px' }}>
-            <strong>Adobe</strong>® After Effects
-          </Text>
-          <Heading size="3" css={{ fontWeight: '600', paddingLeft: '5px' }}>
-            Style made easy.
-          </Heading>
-          <Text
-            css={{
-              color: '$slate9',
-              lineHeight: '1.4',
-              px: '5px',
-              py: '15px',
-              fontSize: '16px',
-              width: '80%',
-            }}>
-            Create open and close animations that take the dropdown menu’s actual position into
-            account.
-          </Text>
-          <DefaultButton as="a" css={{}}>
-            Learn more <ArrowRightIcon />
-          </DefaultButton>
-        </Container>
-      </Box>
-
+      <SmallSpacer />
       <Line />
 
       {/* COMMUNITY CONTAINER */}

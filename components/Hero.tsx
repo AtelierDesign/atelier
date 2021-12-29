@@ -47,7 +47,7 @@ export function Hero() {
     <Box css={{ bc: '$slate1' }}>
       <Section
         size={{
-          '@initial': '4',
+          '@initial': '3',
           '@bp1': '3',
         }}
         css={{
