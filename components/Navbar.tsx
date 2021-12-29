@@ -44,13 +44,14 @@ export const Navbar = () => {
           }}>
           <Text
             css={{
+              fontFamily: '$neuewide',
               fontWeight: '800',
-              fontSize: '16px',
+              fontSize: '18px',
               color: '$gray12',
-              lineHeight: '1.5',
-              letterSpacing: '-0.05rem',
+              lineHeight: 'normal',
+              letterSpacing: '-0.03rem',
             }}>
-            Atelier Design®
+            ATELIER®
           </Text>
           {/*<Image className="logo" alt="logo" src="/butterfly_logo.svg" width={80} height={18} />*/}
         </Box>

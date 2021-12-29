@@ -4,7 +4,7 @@ import { Grid } from '@design-system/grid';
 import { Text } from '@design-system/text';
 
 import NextLink from 'next/link';
-import Image from 'next/image';
+// import Image from 'next/image';
 
 import { styled } from '@stitches/react';
 
@@ -57,17 +57,35 @@ export const FooterMain = () => {
           <Box>
             <Card>
               <Box css={{ position: 'absolute', top: '0', left: '0', margin: '5px' }}>
-                <Text size="2" css={{ fontWeight: '600', lineHeight: '1', textAlign: 'left' }}>
-                  <Image
+                <Text
+                  size="2"
+                  css={{
+                    fontFamily: '$neueplak',
+                    fontSize: '14px',
+                    fontWeight: '600',
+                    lineHeight: '1',
+                    textAlign: 'left',
+                  }}>
+                  ATELIER®
+                  {/* <!-- IMAGE LOGO - Hold
+                <Image
                     className="logo"
                     alt="logo"
                     src="/butterfly_logo.svg"
                     width={70}
                     height={25}
                   />
+                  --> */}
                 </Text>
 
-                <Text size="1" css={{ fontWeight: '400', fontSize: '11px', lineHeight: '1.5' }}>
+                <Text
+                  size="1"
+                  css={{
+                    fontWeight: '600',
+                    fontSize: '10px',
+                    lineHeight: '1.5',
+                    letterSpacing: '-.03rem',
+                  }}>
                   Copyright © 2021
                 </Text>
               </Box>

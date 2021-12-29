@@ -89,3 +89,7 @@ a {
   -webkit-animation: nprogresss-spinner 400ms linear infinite;
   animation: nprogress-spinner 400ms linear infinite;
 }
+
+strong {
+  font-weight: 800 !important;
+}

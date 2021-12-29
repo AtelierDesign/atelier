@@ -45,7 +45,7 @@ export const OneCol = () => {
             gap: '$2',
             bc: '$clear100',
             br: '26px',
-            px: '20px',
+            px: '30px',
             border: '1px solid',
             borderColor: '$slate6',
             zIndex: '20',
@@ -63,12 +63,14 @@ export const OneCol = () => {
             <Heading
               size="2"
               css={{
-                fontWeight: '700',
+                fontFamily: '$neuewide',
+                textTransform: 'uppercase',
+                fontWeight: '500',
                 paddingTop: '35px',
                 lineHeight: '10px',
                 zIndex: '80',
               }}>
-              Ady® Interval
+              <strong>Ady</strong>® Interval
             </Heading>
             <Text
               as="p"

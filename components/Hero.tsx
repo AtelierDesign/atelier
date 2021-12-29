@@ -47,16 +47,16 @@ export function Hero() {
     <Box css={{ bc: '$slate1' }}>
       <Section
         size={{
-          '@initial': '2',
+          '@initial': '4',
           '@bp1': '3',
         }}
         css={{
           pt: '$3',
           '@bp2': {
-            pt: '$6',
+            pt: '$7',
           },
         }}>
-        <Container size="3" css={{ paddingTop: '120px' }}>
+        <Container size="3" css={{ paddingTop: '130px' }}>
           {/* TIME DISPLAY */}
           <TimeDisplay>
             <TimeCode />
@@ -66,9 +66,9 @@ export function Hero() {
           <Heading
             size="4"
             css={{
-              fontFamily: '$inter',
+              fontFamily: '$neuewide',
               fontWeight: '900',
-              mb: '$3',
+              mb: '$2',
               '@sm': {
                 pr: 100,
               },
@@ -80,12 +80,14 @@ export function Hero() {
                 px: 200,
               },
             }}>
-            Welcome.
+            WELCOME.
           </Heading>
           <Paragraph
             size="2"
             css={{
-              fontSize: '18px',
+              fontSize: '16px',
+              fontWeight: '500',
+              color: '$gray12',
               mb: '30px',
               '@bp2': {
                 mx: 230,
@@ -97,7 +99,7 @@ export function Hero() {
           </Paragraph>
 
           <Flex css={{ '@bp2': { jc: 'center', my: '$7' } }}>
-            <DefaultButton css={{ lineHeight: '1', mr: '$3' }}>
+            <DefaultButton css={{ width: 'auto', lineHeight: '1', mr: '$2' }}>
               Latest Release
               {` `}
               <RocketIcon />
