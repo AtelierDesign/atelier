@@ -35,7 +35,9 @@ const StyledContent = styled(DropdownMenuPrimitive.Content, {
   // width: '',
   height: 'auto',
   marginTop: '8px',
-  backgroundColor: '$light100',
+  backgroundColor: '$light50',
+  backdropFilter: 'blur(20px)',
+  saturate: '180%',
 
   borderTopRightRadius: '0px',
   borderTopLeftRadius: '0px',

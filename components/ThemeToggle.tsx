@@ -11,7 +11,7 @@ export const ThemeToggle = props => {
     <Button
       variant="ghost"
       css={{
-        marginRight: '15px',
+        marginRight: '5px',
         color: '$slate11',
         '&:hover': {
           cursor: 'pointer',
@@ -38,8 +38,7 @@ export const ThemeToggle = props => {
         setTheme(newTheme);
       }}
       {...props}
-      aria-label="toggle a light and dark color scheme"
-    >
+      aria-label="toggle a light and dark color scheme">
       <LightningBoltIcon />
     </Button>
   );

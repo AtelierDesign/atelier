@@ -58,13 +58,12 @@ export const Navbar = () => {
 
       {/* NAVIGATION SECTION */}
       <Flex as="nav" css={{ ai: 'center', px: '0px', fontFamily: '$inter', fontSize: '12px' }}>
-        <ThemeToggle />
+        <ThemeToggle /> {/* <!-- THEME SWITCH --> */}
         <NextLink href="/shop" passHref>
           <Link variant="subtle" css={{ mr: '$2', color: '$gray12', '@bp2': { mr: '$5' } }}>
             Shop <ArrowRightIcon />
           </Link>
         </NextLink>
-
         <NextLink href="https://docs.ady.world" passHref>
           <Link
             variant="subtle"
@@ -77,7 +76,6 @@ export const Navbar = () => {
             Documentation
           </Link>
         </NextLink>
-
         <NextLink href="https://developer.ady.world" passHref>
           <Link
             variant="subtle"
@@ -90,13 +88,12 @@ export const Navbar = () => {
             Blog
           </Link>
         </NextLink>
-
         <Link
           variant="subtle"
           css={{
-            display: 'none',
+            display: 'block',
             color: '$gray12',
-            mr: '$5',
+            mr: '$2',
             '@bp2': { display: 'block', mr: '$5' },
           }}>
           <MenuNav />
