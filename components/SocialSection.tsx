@@ -1,12 +1,12 @@
 import React from 'react';
+import NextLink from 'next/link';
+
 import { Box } from '@design-system/box';
 import { Grid } from '@design-system/grid';
 import { Text } from '@design-system/text';
 import { Container } from '@design-system/container';
 import { Heading } from '@design-system/heading';
 import { Section } from '@design-system/section';
-import NextLink from 'next/link';
-// import { Link } from '@design-system/link';
 
 export const SocialSection = () => {
   return (
@@ -27,6 +27,10 @@ export const SocialSection = () => {
                 bc: '$slate2',
                 borderRadius: '$4',
                 boxShadow: 'inset 0 0 0 1px $colors$slate5',
+
+                '&:hover': {
+                  cursor: 'pointer',
+                },
               }}>
               <Box css={{ mb: '$3' }}>
                 <svg
@@ -60,6 +64,10 @@ export const SocialSection = () => {
                 bc: '$slate2',
                 borderRadius: '$4',
                 boxShadow: 'inset 0 0 0 1px $colors$slate5',
+
+                '&:hover': {
+                  cursor: 'pointer',
+                },
               }}>
               <Box css={{ mb: '$3' }}>
                 <svg
@@ -105,13 +113,17 @@ export const SocialSection = () => {
           </NextLink>
 
           {/* <!-- GITHUB ORG. --> */}
-          <NextLink href="https://twitter.com/_adyworld" passHref>
+          <NextLink href="https://github.com/AtelierDesign" passHref>
             <Box
               css={{
                 p: '$5',
                 bc: '$slate2',
                 borderRadius: '$4',
                 boxShadow: 'inset 0 0 0 1px $colors$slate5',
+
+                '&:hover': {
+                  cursor: 'pointer',
+                },
               }}>
               <Box css={{ mb: '$3' }}>
                 <svg
