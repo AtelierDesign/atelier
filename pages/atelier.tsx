@@ -10,7 +10,7 @@ import { Navbar } from '@components/Navbar';
 import { FooterMain } from '@components/FooterMain';
 import { DefaultButton } from '@components/DefaultButton';
 import { Hero } from '@components/Hero';
-import { Spacer } from '@components/Spacer';
+// import { Spacer } from '@components/Spacer';
 import { SmallSpacer } from '@components/SmallSpacer';
 import { Line } from '@components/Line';
 import { OneCol } from '@components/OneCol';
