@@ -29,7 +29,7 @@ export const Navbar = () => {
 
         zIndex: '9999',
       }}>
-      {/* LOGO SECTION */}
+      {/* <!-- LOGO SECTION --> */}
       <NextLink href="/" passHref>
         <Box
           as="a"
@@ -57,7 +57,7 @@ export const Navbar = () => {
       </NextLink>
 
       {/* NAVIGATION SECTION */}
-      <Flex as="nav" css={{ ai: 'center', px: '0px', fontFamily: '$jetbrain' }}>
+      <Flex as="nav" css={{ ai: 'center', px: '0px', fontFamily: '$inter', fontSize: '12px' }}>
         <ThemeToggle />
         <NextLink href="/shop" passHref>
           <Link variant="subtle" css={{ mr: '$2', color: '$gray12', '@bp2': { mr: '$5' } }}>
@@ -74,7 +74,7 @@ export const Navbar = () => {
               mr: '$5',
               '@bp2': { display: 'block', mr: '$5' },
             }}>
-            Documentaion
+            Documentation
           </Link>
         </NextLink>
 
@@ -87,7 +87,7 @@ export const Navbar = () => {
               mr: '$5',
               '@bp2': { display: 'block', mr: '$5' },
             }}>
-            Resources
+            Blog
           </Link>
         </NextLink>
 

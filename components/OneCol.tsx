@@ -5,6 +5,7 @@ import { Text } from '@design-system/text';
 import { Heading } from '@design-system/heading';
 import { TimeCode } from '@components/Time/TimeCode';
 import { Button } from '@design-system/button';
+import { ExternalLinkIcon } from '@radix-ui/react-icons';
 import Image from 'next/image';
 import React from 'react';
 
@@ -91,17 +92,21 @@ export const OneCol = () => {
               size="2"
               variant="gray"
               css={{
+                fontSize: '14px',
                 marginTop: '30px',
                 zIndex: '25',
                 px: '20px',
                 borderRadius: '10px',
                 '&:hover': {
                   backgroundColor: '$gray3',
-                  color: '$indigoA9',
+                  color: '$orange9',
                   cursor: 'pointer',
                 },
               }}>
-              Base Button
+              Shop Now
+              <Box css={{ marginLeft: '$1', lineHeight: 'normal' }}>
+                <ExternalLinkIcon />
+              </Box>
             </Button>
           </Box>
           <div className="color__box">

@@ -15,7 +15,7 @@ export const HomeButton = styled('button', {
   alignItems: 'center',
   userSelect: 'none',
   fontSize: '$3',
-  height: '$6',
+  height: '40px',
   px: '$3',
   transition: 'background-color 75ms ease',
 

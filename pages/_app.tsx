@@ -39,10 +39,10 @@ const App = ({ Component, pageProps }: AppProps) => {
           })}>
           <div className={box({ flex: 1 })}>
             <NextNprogress
-              color="linear-gradient(90deg, rgba(58,107,180,1) 0%, rgba(29,253,117,1) 43%, rgba(252,116,69,1) 100%)"
+              color="linear-gradient(to right, #b5bdc8 0%,#828c95 36%,#28343b 100%)"
               startPosition={0.3}
-              stopDelayMs={200}
-              height={2}
+              stopDelayMs={300}
+              height={3}
               showOnShallow={true}
             />
             <Component {...pageProps} />

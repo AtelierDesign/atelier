@@ -2,7 +2,7 @@ import Head from 'next/head';
 import React from 'react';
 
 import { Navbar } from '@components/Navbar';
-// import { Demo } from '@components/Demo';
+// import { Container } from '@design-system/container';
 import { Box } from '@design-system/box';
 
 import 'stitches.config';

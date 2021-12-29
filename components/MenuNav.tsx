@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { styled, keyframes } from '@stitches/react';
-import { ChevronRightIcon } from '@radix-ui/react-icons';
+import { GitHubLogoIcon, ChevronRightIcon } from '@radix-ui/react-icons';
 
 import { Text } from '@design-system/text';
 import { darkTheme } from 'stitches.config';
@@ -159,7 +159,7 @@ const IconButton = styled('button', {
   backgroundColor: '$white',
   color: '$gray12',
   boxShadow: `0 2px 4px $orange9`,
-  '&:hover': { backgroundColor: '$orange5' },
+  '&:hover': { backgroundColor: '$orange5', cursor: 'pointer' },
   '&:focus': { boxShadow: `0 0 0 1px black` },
 });
 
@@ -177,8 +177,8 @@ export const MenuNav = props => {
           <IconButton aria-label="Customise options">
             <Text
               css={{
-                fontFamily: '$jetbrain',
-                fontSize: '12px',
+                fontFamily: '$inter',
+                fontSize: '11px',
                 fontWeight: '700',
                 color: '$gray12',
               }}>
@@ -201,7 +201,7 @@ export const MenuNav = props => {
               }}>
               Shop All
             </Button>
-            <RightSlot>⌘ S</RightSlot>
+            {/* <!-- <RightSlot>⌘ S</RightSlot> --> */}
           </DropdownMenuItem>
 
           {/* ITEM 2 (ABOUT) */}
@@ -217,7 +217,25 @@ export const MenuNav = props => {
               }}>
               About
             </Button>
-            <RightSlot>⌘ A</RightSlot>
+            {/* <!-- <RightSlot>⌘ A</RightSlot> --> */}
+          </DropdownMenuItem>
+
+          {/* ITEM 1.2 (GitHub) */}
+          <DropdownMenuItem>
+            <Button
+              variant="ghost"
+              css={{
+                color: '$orange9',
+                '&:hover': {
+                  cursor: 'pointer',
+                  color: '$white',
+                },
+              }}>
+              GitHub
+            </Button>
+            <RightSlot>
+              <GitHubLogoIcon />
+            </RightSlot>
           </DropdownMenuItem>
 
           {/* SEPERATOR */}
