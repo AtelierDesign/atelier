@@ -183,7 +183,8 @@ export const MenuNav = props => {
                 fontSize: '11px',
                 fontWeight: '700',
                 color: '$gray12',
-              }}>
+              }}
+            >
               Menu
             </Text>
           </IconButton>
@@ -200,7 +201,8 @@ export const MenuNav = props => {
                   cursor: 'pointer',
                   color: '$white',
                 },
-              }}>
+              }}
+            >
               Shop All
             </Button>
             {/* <!-- <RightSlot>⌘ S</RightSlot> --> */}
@@ -216,7 +218,8 @@ export const MenuNav = props => {
                   cursor: 'pointer',
                   color: '$white',
                 },
-              }}>
+              }}
+            >
               About
             </Button>
             {/* <!-- <RightSlot>⌘ A</RightSlot> --> */}
@@ -232,7 +235,8 @@ export const MenuNav = props => {
                   cursor: 'pointer',
                   color: '$white',
                 },
-              }}>
+              }}
+            >
               GitHub
             </Button>
             <RightSlot>
@@ -254,7 +258,8 @@ export const MenuNav = props => {
                     cursor: 'pointer',
                     color: '$white',
                   },
-                }}>
+                }}
+              >
                 More Tools
               </Button>
               <RightSlot>
@@ -312,7 +317,8 @@ export const MenuNav = props => {
               }}
               // ALLOW PROPS
               {...props}
-              aria-label="TOGGLE LIGHT AND DARK THEME®">
+              aria-label="TOGGLE LIGHT AND DARK THEME®"
+            >
               Toggle Theme
             </Button>
             <RightSlot>⌘ T</RightSlot>

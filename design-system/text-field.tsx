@@ -12,10 +12,10 @@ export const TextField = styled('input', {
   width: '100%',
   WebkitTapHighlightColor: 'rgba(0,0,0,0)',
   '&::before': {
-    boxSizing: 'border-box'
+    boxSizing: 'border-box',
   },
   '&::after': {
-    boxSizing: 'border-box'
+    boxSizing: 'border-box',
   },
 
   // Custom
@@ -25,22 +25,23 @@ export const TextField = styled('input', {
   fontVariantNumeric: 'tabular-nums',
 
   '&:-webkit-autofill': {
-    boxShadow: 'inset 0 0 0 1px $colors$blue6, inset 0 0 0 100px $colors$blue3'
+    boxShadow: 'inset 0 0 0 1px $colors$blue6, inset 0 0 0 100px $colors$blue3',
   },
 
   '&:-webkit-autofill::first-line': {
     fontFamily: '$untitled',
-    color: '$hiContrast'
+    color: '$hiContrast',
   },
 
   '&:focus': {
     boxShadow: 'inset 0px 0px 0px 1px $colors$blue8, 0px 0px 0px 1px $colors$blue8',
     '&:-webkit-autofill': {
-      boxShadow: 'inset 0px 0px 0px 1px $colors$blue8, 0px 0px 0px 1px $colors$blue8, inset 0 0 0 100px $colors$blue3'
-    }
+      boxShadow:
+        'inset 0px 0px 0px 1px $colors$blue8, 0px 0px 0px 1px $colors$blue8, inset 0 0 0 100px $colors$blue3',
+    },
   },
   '&::placeholder': {
-    color: '$slate9'
+    color: '$slate9',
   },
   '&:disabled': {
     pointerEvents: 'none',
@@ -48,14 +49,14 @@ export const TextField = styled('input', {
     color: '$slate8',
     cursor: 'not-allowed',
     '&::placeholder': {
-      color: '$slate7'
-    }
+      color: '$slate7',
+    },
   },
   '&:read-only': {
     backgroundColor: '$slate2',
     '&:focus': {
-      boxShadow: 'inset 0px 0px 0px 1px $colors$slate7'
-    }
+      boxShadow: 'inset 0px 0px 0px 1px $colors$slate7',
+    },
   },
 
   variants: {
@@ -67,8 +68,8 @@ export const TextField = styled('input', {
         px: '$1',
         lineHeight: '$sizes$5',
         '&:-webkit-autofill::first-line': {
-          fontSize: '$1'
-        }
+          fontSize: '$1',
+        },
       },
       '2': {
         borderRadius: '$2',
@@ -77,9 +78,9 @@ export const TextField = styled('input', {
         px: '$2',
         lineHeight: '$sizes$6',
         '&:-webkit-autofill::first-line': {
-          fontSize: '$3'
-        }
-      }
+          fontSize: '$3',
+        },
+      },
     },
     variant: {
       ghost: {
@@ -87,48 +88,48 @@ export const TextField = styled('input', {
         backgroundColor: 'transparent',
         '@hover': {
           '&:hover': {
-            boxShadow: 'inset 0 0 0 1px $colors$slateA7'
-          }
+            boxShadow: 'inset 0 0 0 1px $colors$slateA7',
+          },
         },
         '&:focus': {
           backgroundColor: '$loContrast',
-          boxShadow: 'inset 0px 0px 0px 1px $colors$blue8, 0px 0px 0px 1px $colors$blue8'
+          boxShadow: 'inset 0px 0px 0px 1px $colors$blue8, 0px 0px 0px 1px $colors$blue8',
         },
         '&:disabled': {
-          backgroundColor: 'transparent'
+          backgroundColor: 'transparent',
         },
         '&:read-only': {
-          backgroundColor: 'transparent'
-        }
-      }
+          backgroundColor: 'transparent',
+        },
+      },
     },
     state: {
       invalid: {
         boxShadow: 'inset 0 0 0 1px $colors$red7',
         '&:focus': {
-          boxShadow: 'inset 0px 0px 0px 1px $colors$red8, 0px 0px 0px 1px $colors$red8'
-        }
+          boxShadow: 'inset 0px 0px 0px 1px $colors$red8, 0px 0px 0px 1px $colors$red8',
+        },
       },
       valid: {
         boxShadow: 'inset 0 0 0 1px $colors$green7',
         '&:focus': {
-          boxShadow: 'inset 0px 0px 0px 1px $colors$green8, 0px 0px 0px 1px $colors$green8'
-        }
-      }
+          boxShadow: 'inset 0px 0px 0px 1px $colors$green8, 0px 0px 0px 1px $colors$green8',
+        },
+      },
     },
     cursor: {
       default: {
         cursor: 'default',
         '&:focus': {
-          cursor: 'text'
-        }
+          cursor: 'text',
+        },
       },
       text: {
-        cursor: 'text'
-      }
-    }
+        cursor: 'text',
+      },
+    },
   },
   defaultVariants: {
-    size: '1'
-  }
+    size: '1',
+  },
 });

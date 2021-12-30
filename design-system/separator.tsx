@@ -13,41 +13,41 @@ export const Separator = styled(SeparatorPrimitive.Root, {
       '1': {
         '&[data-orientation="horizontal"]': {
           height: '1px',
-          width: '$3'
+          width: '$3',
         },
 
         '&[data-orientation="vertical"]': {
           width: '1px',
-          height: '$3'
-        }
+          height: '$3',
+        },
       },
       '2': {
         '&[data-orientation="horizontal"]': {
           height: '1px',
           width: '60px',
-          alignItems: 'center'
+          alignItems: 'center',
         },
 
         '&[data-orientation="vertical"]': {
           width: '1px',
-          height: '$7'
-        }
+          height: '$7',
+        },
       },
       '5': {
         '&[data-orientation="horizontal"]': {
           height: '1px',
           width: '100vw',
-          alignItems: 'center'
+          alignItems: 'center',
         },
 
         '&[data-orientation="vertical"]': {
           width: '1px',
-          height: '$7'
-        }
-      }
-    }
+          height: '$7',
+        },
+      },
+    },
   },
   defaultVariants: {
-    size: '1'
-  }
+    size: '1',
+  },
 });

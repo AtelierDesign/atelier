@@ -37,7 +37,8 @@ const App = ({ Component, pageProps }: AppProps) => {
           className={appWrapper({
             display: 'flex',
             flexDirection: 'column',
-          })}>
+          })}
+        >
           <div className={box({ flex: 1 })}>
             <NextNprogress
               color="linear-gradient(to right, #b5bdc8 0%,#828c95 36%,#28343b 100%)"

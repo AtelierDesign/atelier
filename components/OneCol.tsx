@@ -50,7 +50,8 @@ export const OneCol = () => {
             borderColor: '$slate6',
             zIndex: '20',
             position: 'relative',
-          }}>
+          }}
+        >
           <Box
             css={{
               height: '400px',
@@ -59,7 +60,8 @@ export const OneCol = () => {
               margin: '0',
               zIndex: '100',
               saturate: '200%',
-            }}>
+            }}
+          >
             <Heading
               size="2"
               css={{
@@ -69,7 +71,8 @@ export const OneCol = () => {
                 paddingTop: '35px',
                 lineHeight: '10px',
                 zIndex: '80',
-              }}>
+              }}
+            >
               <strong>Ady</strong>® Interval
             </Heading>
             <Text
@@ -82,7 +85,8 @@ export const OneCol = () => {
                 paddingTop: '16px',
                 lineHeight: '22px',
                 '@bp1': { width: '450px' },
-              }}>
+              }}
+            >
               ADY® is an ever– expanding ecosystem of essential design components built for modern
               web.
             </Text>
@@ -104,7 +108,8 @@ export const OneCol = () => {
                   color: '$orange9',
                   cursor: 'pointer',
                 },
-              }}>
+              }}
+            >
               Shop Now
               <Box css={{ marginLeft: '$1', lineHeight: 'normal' }}>
                 <ExternalLinkIcon />

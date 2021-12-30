@@ -36,7 +36,8 @@ export const FooterMain = () => {
         margin: 'auto',
         px: '0',
         height: 'auto',
-      }}>
+      }}
+    >
       {/* NAVIGATION SECTION */}
       <Container size="3" css={{ px: '18px' }}>
         <Grid
@@ -51,7 +52,8 @@ export const FooterMain = () => {
               gap: '0px',
               gridTemplateColumns: '1fr 1fr 1fr',
             },
-          }}>
+          }}
+        >
           {/* PRODUCT ROW ONE */}
 
           <Box>
@@ -65,7 +67,8 @@ export const FooterMain = () => {
                     fontWeight: '600',
                     lineHeight: '1',
                     textAlign: 'left',
-                  }}>
+                  }}
+                >
                   ATELIER®
                   {/* <!-- IMAGE LOGO - Hold
                 <Image
@@ -85,7 +88,8 @@ export const FooterMain = () => {
                     fontSize: '10px',
                     lineHeight: '1.5',
                     letterSpacing: '-.03rem',
-                  }}>
+                  }}
+                >
                   Copyright © 2021
                 </Text>
               </Box>
@@ -135,7 +139,8 @@ export const FooterMain = () => {
                       '&:hover': {
                         cursor: 'pointer',
                       },
-                    }}>
+                    }}
+                  >
                     Test Page
                   </Text>
                 </NextLink>
@@ -151,7 +156,8 @@ export const FooterMain = () => {
                       '&:hover': {
                         cursor: 'pointer',
                       },
-                    }}>
+                    }}
+                  >
                     WalletConnect
                   </Text>
                 </NextLink>

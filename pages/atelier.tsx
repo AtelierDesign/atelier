@@ -10,7 +10,6 @@ import { Navbar } from '@components/Navbar';
 import { FooterMain } from '@components/FooterMain';
 import { DefaultButton } from '@components/DefaultButton';
 import { Hero } from '@components/Hero';
-// import { Spacer } from '@components/Spacer';
 import { SmallSpacer } from '@components/SmallSpacer';
 import { Line } from '@components/Line';
 import { OneCol } from '@components/OneCol';
@@ -152,7 +151,8 @@ const Atelier = () => {
         <Box css={{ paddingBottom: '50px', bc: '$slate1' }}>
           <Container size="3" css={{ paddingLeft: '30px', bc: 'none' }}>
             <Text
-              css={{ color: '$gray11', fontWeight: '500', lineHeight: '1.6', paddingLeft: '6px' }}>
+              css={{ color: '$gray11', fontWeight: '500', lineHeight: '1.6', paddingLeft: '6px' }}
+            >
               <strong>Adobe</strong>® After Effects
             </Text>
             <Heading size="3" css={{ fontWeight: '600', paddingLeft: '5px', color: '$gray12' }}>
@@ -166,7 +166,8 @@ const Atelier = () => {
                 py: '15px',
                 fontSize: '16px',
                 width: '80%',
-              }}>
+              }}
+            >
               Create open and close animations that take the dropdown menu’s actual position into
               account.
             </Text>
@@ -202,7 +203,8 @@ const Atelier = () => {
                       fontWeight: '500',
                       paddingTop: '12px',
                       lineHeight: '22px',
-                    }}>
+                    }}
+                  >
                     Description. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                     eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   </Text>
@@ -242,7 +244,8 @@ const Atelier = () => {
                     fontWeight: '400',
                     paddingTop: '16px',
                     lineHeight: '22px',
-                  }}>
+                  }}
+                >
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                   incididunt ut labore.
                 </Text>
@@ -277,7 +280,8 @@ const Atelier = () => {
                     fontWeight: '400',
                     paddingTop: '16px',
                     lineHeight: '22px',
-                  }}>
+                  }}
+                >
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                   incididunt ut labore.
                 </Text>
@@ -312,7 +316,8 @@ const Atelier = () => {
                     fontWeight: '400',
                     paddingTop: '16px',
                     lineHeight: '22px',
-                  }}>
+                  }}
+                >
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                   incididunt ut labore.
                 </Text>
@@ -347,7 +352,8 @@ const Atelier = () => {
                     fontWeight: '400',
                     paddingTop: '16px',
                     lineHeight: '22px',
-                  }}>
+                  }}
+                >
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                   incididunt ut labore.
                 </Text>

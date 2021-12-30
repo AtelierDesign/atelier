@@ -2,10 +2,8 @@
 
 Atelier Design Yield® Website
 
-
-
-
 ### Tech-Stack
+
 Next.js
 React
 Vercel

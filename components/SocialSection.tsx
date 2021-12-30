@@ -18,7 +18,8 @@ export const SocialSection = () => {
           css={{
             justifyContent: 'space-between',
             '@bp2': { gridAutoColumns: '240px' },
-          }}>
+          }}
+        >
           {/* <!-- TWITTER --> */}
           <NextLink href="https://twitter.com/_adyworld" passHref>
             <Box
@@ -31,14 +32,16 @@ export const SocialSection = () => {
                 '&:hover': {
                   cursor: 'pointer',
                 },
-              }}>
+              }}
+            >
               <Box css={{ mb: '$3' }}>
                 <svg
                   width="30"
                   height="30"
                   viewBox="0 0 30 30"
                   fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
+                  xmlns="http://www.w3.org/2000/svg"
+                >
                   <path
                     fillRule="evenodd"
                     clipRule="evenodd"
@@ -68,14 +71,16 @@ export const SocialSection = () => {
                 '&:hover': {
                   cursor: 'pointer',
                 },
-              }}>
+              }}
+            >
               <Box css={{ mb: '$3' }}>
                 <svg
                   width="30"
                   height="30"
                   viewBox="0 0 30 30"
                   fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
+                  xmlns="http://www.w3.org/2000/svg"
+                >
                   <g>
                     <path
                       fillRule="evenodd"
@@ -124,14 +129,16 @@ export const SocialSection = () => {
                 '&:hover': {
                   cursor: 'pointer',
                 },
-              }}>
+              }}
+            >
               <Box css={{ mb: '$3' }}>
                 <svg
                   width="30"
                   height="30"
                   viewBox="0 0 30 30"
                   fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
+                  xmlns="http://www.w3.org/2000/svg"
+                >
                   <path
                     fillRule="evenodd"
                     clipRule="evenodd"

@@ -39,7 +39,15 @@ const TextBox = styled('div', {
 
 export default function Cover() {
   return (
-    <Box css={{ padding: '0px', height: '100vh', zIndex: '0', overflowY: 'hidden', overflowX: 'hidden' }}>
+    <Box
+      css={{
+        padding: '0px',
+        height: '100vh',
+        zIndex: '0',
+        overflowY: 'hidden',
+        overflowX: 'hidden',
+      }}
+    >
       <Head>
         <title>Atelier®.</title>
       </Head>
@@ -53,7 +61,12 @@ export default function Cover() {
           </NextLink>
         </TextBox>
       </CoverBox>
-      <Image src="https://cdn.ady.systems/ady.images/four.png" alt="One" layout="fill" objectFit="cover" />
+      <Image
+        src="https://cdn.ady.systems/ady.images/four.png"
+        alt="One"
+        layout="fill"
+        objectFit="cover"
+      />
     </Box>
   );
 }

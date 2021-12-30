@@ -72,10 +72,11 @@ export const button = css({
         '&:focus': {
           boxShadow: 'inset 0 0 0 1px $colors$slate8, 0 0 0 1px $colors$slate8',
         },
-        '&[data-radix-popover-trigger][data-state="open"], &[data-radix-dropdown-menu-trigger][data-state="open"]': {
-          backgroundColor: '$slate4',
-          boxShadow: 'inset 0 0 0 1px $colors$slate8',
-        },
+        '&[data-radix-popover-trigger][data-state="open"], &[data-radix-dropdown-menu-trigger][data-state="open"]':
+          {
+            backgroundColor: '$slate4',
+            boxShadow: 'inset 0 0 0 1px $colors$slate8',
+          },
       },
       blue: {
         backgroundColor: '$blue2',
@@ -93,10 +94,11 @@ export const button = css({
         '&:focus': {
           boxShadow: 'inset 0 0 0 1px $colors$blue8, 0 0 0 1px $colors$blue8',
         },
-        '&[data-radix-popover-trigger][data-state="open"], &[data-radix-dropdown-menu-trigger][data-state="open"]': {
-          backgroundColor: '$blue4',
-          boxShadow: 'inset 0 0 0 1px $colors$blue8',
-        },
+        '&[data-radix-popover-trigger][data-state="open"], &[data-radix-dropdown-menu-trigger][data-state="open"]':
+          {
+            backgroundColor: '$blue4',
+            boxShadow: 'inset 0 0 0 1px $colors$blue8',
+          },
       },
       ghost: {
         backgroundColor: 'transparent',
@@ -118,10 +120,11 @@ export const button = css({
         '&:focus': {
           boxShadow: 'inset 0 0 0 1px $colors$green8, 0 0 0 1px $colors$green8',
         },
-        '&[data-radix-popover-trigger][data-state="open"], &[data-radix-dropdown-menu-trigger][data-state="open"]': {
-          backgroundColor: '$green4',
-          boxShadow: 'inset 0 0 0 1px $colors$green8',
-        },
+        '&[data-radix-popover-trigger][data-state="open"], &[data-radix-dropdown-menu-trigger][data-state="open"]':
+          {
+            backgroundColor: '$green4',
+            boxShadow: 'inset 0 0 0 1px $colors$green8',
+          },
       },
       red: {
         backgroundColor: '$loContrast',
@@ -139,10 +142,11 @@ export const button = css({
         '&:focus': {
           boxShadow: 'inset 0 0 0 1px $colors$red8, 0 0 0 1px $colors$red8',
         },
-        '&[data-radix-popover-trigger][data-state="open"], &[data-radix-dropdown-menu-trigger][data-state="open"]': {
-          backgroundColor: '$red4',
-          boxShadow: 'inset 0 0 0 1px $colors$red8',
-        },
+        '&[data-radix-popover-trigger][data-state="open"], &[data-radix-dropdown-menu-trigger][data-state="open"]':
+          {
+            backgroundColor: '$red4',
+            boxShadow: 'inset 0 0 0 1px $colors$red8',
+          },
       },
       transparentWhite: {
         backgroundColor: 'hsla(0,100%,100%,.2)',
@@ -239,10 +243,11 @@ export const button = css({
         '&:focus': {
           boxShadow: 'inset 0 0 0 1px $colors$slateA8, 0 0 0 1px $colors$slateA8',
         },
-        '&[data-radix-popover-trigger][data-state="open"], &[data-radix-dropdown-menu-trigger][data-state="open"]': {
-          backgroundColor: '$slateA4',
-          boxShadow: 'none',
-        },
+        '&[data-radix-popover-trigger][data-state="open"], &[data-radix-dropdown-menu-trigger][data-state="open"]':
+          {
+            backgroundColor: '$slateA4',
+            boxShadow: 'none',
+          },
       },
     },
     {
@@ -262,10 +267,11 @@ export const button = css({
         '&:focus': {
           boxShadow: 'inset 0 0 0 1px $colors$blueA8, 0 0 0 1px $colors$blueA8',
         },
-        '&[data-radix-popover-trigger][data-state="open"], &[data-radix-dropdown-menu-trigger][data-state="open"]': {
-          backgroundColor: '$blueA4',
-          boxShadow: 'none',
-        },
+        '&[data-radix-popover-trigger][data-state="open"], &[data-radix-dropdown-menu-trigger][data-state="open"]':
+          {
+            backgroundColor: '$blueA4',
+            boxShadow: 'none',
+          },
       },
     },
     {
@@ -285,10 +291,11 @@ export const button = css({
         '&:focus': {
           boxShadow: 'inset 0 0 0 1px $colors$greenA8, 0 0 0 1px $colors$greenA8',
         },
-        '&[data-radix-popover-trigger][data-state="open"], &[data-radix-dropdown-menu-trigger][data-state="open"]': {
-          backgroundColor: '$greenA4',
-          boxShadow: 'none',
-        },
+        '&[data-radix-popover-trigger][data-state="open"], &[data-radix-dropdown-menu-trigger][data-state="open"]':
+          {
+            backgroundColor: '$greenA4',
+            boxShadow: 'none',
+          },
       },
     },
     {
@@ -308,10 +315,11 @@ export const button = css({
         '&:focus': {
           boxShadow: 'inset 0 0 0 1px $colors$redA8, 0 0 0 1px $colors$redA8',
         },
-        '&[data-radix-popover-trigger][data-state="open"], &[data-radix-dropdown-menu-trigger][data-state="open"]': {
-          backgroundColor: '$redA4',
-          boxShadow: 'none',
-        },
+        '&[data-radix-popover-trigger][data-state="open"], &[data-radix-dropdown-menu-trigger][data-state="open"]':
+          {
+            backgroundColor: '$redA4',
+            boxShadow: 'none',
+          },
       },
     },
   ],

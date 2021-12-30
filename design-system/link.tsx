@@ -15,19 +15,19 @@ export const Link = styled('a', {
   lineHeight: 'inherit',
   '@hover': {
     '&:hover': {
-      textDecorationLine: 'underline'
-    }
+      textDecorationLine: 'underline',
+    },
   },
   '&:focus': {
     outlineWidth: '2px',
     outlineStyle: 'solid',
     outlineOffset: '2px',
-    textDecorationLine: 'none'
+    textDecorationLine: 'none',
   },
   [`& ${Text}`]: {
     color: '$slate10',
     fontSize: '14px',
-    fontWeight: '600'
+    fontWeight: '600',
   },
   variants: {
     variant: {
@@ -35,8 +35,8 @@ export const Link = styled('a', {
         color: '$slate10',
         textDecorationColor: '$slate11',
         '&:focus': {
-          outlineColor: '$slate8'
-        }
+          outlineColor: '$slate8',
+        },
       },
       contrast: {
         color: '$hiContrast',
@@ -44,16 +44,16 @@ export const Link = styled('a', {
         textDecorationColor: '$slate8',
         '@hover': {
           '&:hover': {
-            textDecorationColor: '$slate8'
-          }
+            textDecorationColor: '$slate8',
+          },
         },
         '&:focus': {
-          outlineColor: '$slate8'
-        }
-      }
-    }
+          outlineColor: '$slate8',
+        },
+      },
+    },
   },
   defaultVariants: {
-    variant: 'subtle'
-  }
+    variant: 'subtle',
+  },
 });

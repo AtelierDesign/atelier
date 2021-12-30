@@ -55,7 +55,8 @@ export function Hero() {
           '@bp2': {
             pt: '$7',
           },
-        }}>
+        }}
+      >
         <Container size="3" css={{ paddingTop: '130px' }}>
           {/* TIME DISPLAY */}
           <TimeDisplay>
@@ -79,7 +80,8 @@ export function Hero() {
               '@bp3': {
                 px: 200,
               },
-            }}>
+            }}
+          >
             WELCOME.
           </Heading>
           <Paragraph
@@ -94,7 +96,8 @@ export function Hero() {
                 ta: 'center',
                 mb: '60px',
               },
-            }}>
+            }}
+          >
             An ever– expanding ecosystem of design components. Design yield.
           </Paragraph>
 
@@ -108,7 +111,8 @@ export function Hero() {
               as="a"
               href="https://github.com/AtelierDesign"
               target="_blank"
-              rel="noopener noreferrer">
+              rel="noopener noreferrer"
+            >
               GitHub
               <Box css={{ ml: '$1' }}>
                 <ExternalLinkIcon />

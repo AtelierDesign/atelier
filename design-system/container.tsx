@@ -15,25 +15,25 @@ export const Container = styled('div', {
       '1': {
         maxWidth: '430px',
         padding: '0px',
-        margin: 'auto'
+        margin: 'auto',
       },
       '2': {
         maxWidth: '800px',
         padding: '8px',
         margin: 'auto',
-        alignItems: 'center'
+        alignItems: 'center',
       },
       '3': {
         maxWidth: '1145px',
-        px: '18px'
+        px: '18px',
       },
       '4': {
         maxWidth: 'none',
-        padding: '8px'
-      }
-    }
+        padding: '8px',
+      },
+    },
   },
   defaultVariants: {
-    size: '4'
-  }
+    size: '4',
+  },
 });

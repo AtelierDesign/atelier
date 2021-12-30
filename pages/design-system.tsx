@@ -96,7 +96,8 @@ const DesignSystem = () => {
                   fontWeight: 500,
                   lineHeight: '68px',
                   WebkitBackgroundClip: 'text',
-                }}>
+                }}
+              >
                 The quick brown fox jumped over the lazy dog
               </Text>
             </Flex>
@@ -110,7 +111,8 @@ const DesignSystem = () => {
                   fontWeight: 500,
                   lineHeight: '68px',
                   WebkitBackgroundClip: 'text',
-                }}>
+                }}
+              >
                 The quick brown fox jumped over the lazy dog
               </Text>
             </Flex>
@@ -124,7 +126,8 @@ const DesignSystem = () => {
                   fontWeight: 500,
                   lineHeight: '68px',
                   WebkitBackgroundClip: 'text',
-                }}>
+                }}
+              >
                 The quick brown fox jumped over the lazy dog
               </Text>
             </Flex>
@@ -138,7 +141,8 @@ const DesignSystem = () => {
                   fontWeight: 500,
                   lineHeight: '68px',
                   WebkitBackgroundClip: 'text',
-                }}>
+                }}
+              >
                 The quick brown fox jumped over the lazy dog
               </Text>
             </Flex>
@@ -152,7 +156,8 @@ const DesignSystem = () => {
                   fontWeight: 500,
                   lineHeight: '68px',
                   WebkitBackgroundClip: 'text',
-                }}>
+                }}
+              >
                 The quick brown fox jumped over the lazy dog
               </Text>
             </Flex>
@@ -166,7 +171,8 @@ const DesignSystem = () => {
                   fontWeight: 500,
                   lineHeight: '68px',
                   WebkitBackgroundClip: 'text',
-                }}>
+                }}
+              >
                 The quick brown fox jumped over the lazy dog
               </Text>
             </Flex>
@@ -180,7 +186,8 @@ const DesignSystem = () => {
                   fontWeight: 500,
                   lineHeight: '68px',
                   WebkitBackgroundClip: 'text',
-                }}>
+                }}
+              >
                 The quick brown fox jumped over the lazy dog
               </Text>
             </Flex>
@@ -194,7 +201,8 @@ const DesignSystem = () => {
                   fontWeight: 500,
                   lineHeight: '68px',
                   WebkitBackgroundClip: 'text',
-                }}>
+                }}
+              >
                 The quick brown fox jumped over the lazy dog
               </Text>
             </Flex>
@@ -208,7 +216,8 @@ const DesignSystem = () => {
                   fontWeight: 500,
                   lineHeight: '68px',
                   WebkitBackgroundClip: 'text',
-                }}>
+                }}
+              >
                 The quick brown fox jumped over the lazy dog
               </Text>
             </Flex>
@@ -222,7 +231,8 @@ const DesignSystem = () => {
                   fontWeight: 500,
                   lineHeight: '68px',
                   WebkitBackgroundClip: 'text',
-                }}>
+                }}
+              >
                 The quick brown fox jumped over the lazy dog
               </Text>
             </Flex>
@@ -236,7 +246,8 @@ const DesignSystem = () => {
                   fontWeight: 500,
                   lineHeight: '68px',
                   WebkitBackgroundClip: 'text',
-                }}>
+                }}
+              >
                 The quick brown fox jumped over the lazy dog
               </Text>
             </Flex>
@@ -250,7 +261,8 @@ const DesignSystem = () => {
                   fontWeight: 500,
                   lineHeight: '68px',
                   WebkitBackgroundClip: 'text',
-                }}>
+                }}
+              >
                 The quick brown fox jumped over the lazy dog
               </Text>
             </Flex>
@@ -264,7 +276,8 @@ const DesignSystem = () => {
                   fontWeight: 500,
                   lineHeight: '68px',
                   WebkitBackgroundClip: 'text',
-                }}>
+                }}
+              >
                 The quick brown fox jumped over the lazy dog
               </Text>
             </Flex>
@@ -278,7 +291,8 @@ const DesignSystem = () => {
                   fontWeight: 500,
                   lineHeight: '68px',
                   WebkitBackgroundClip: 'text',
-                }}>
+                }}
+              >
                 The quick brown fox jumped over the lazy dog
               </Text>
             </Flex>
@@ -292,7 +306,8 @@ const DesignSystem = () => {
                   fontWeight: 500,
                   lineHeight: '68px',
                   WebkitBackgroundClip: 'text',
-                }}>
+                }}
+              >
                 The quick brown fox jumped over the lazy dog
               </Text>
             </Flex>
@@ -306,7 +321,8 @@ const DesignSystem = () => {
                   fontWeight: 500,
                   lineHeight: '68px',
                   WebkitBackgroundClip: 'text',
-                }}>
+                }}
+              >
                 The quick brown fox jumped over the lazy dog
               </Text>
             </Flex>
@@ -320,7 +336,8 @@ const DesignSystem = () => {
                   fontWeight: 500,
                   lineHeight: '68px',
                   WebkitBackgroundClip: 'text',
-                }}>
+                }}
+              >
                 The quick brown fox jumped over the lazy dog
               </Text>
             </Flex>
@@ -474,7 +491,8 @@ const DesignSystem = () => {
             css={{
               position: 'relative',
               mt: '$6',
-            }}>
+            }}
+          >
             <Image src="https://images.unsplash.com/photo-1447690709975-318628b14c57?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2550&q=80" />
             <Box
               css={{
@@ -482,7 +500,8 @@ const DesignSystem = () => {
                 bottom: 0,
                 right: 0,
                 m: '$4',
-              }}>
+              }}
+            >
               <Button variant="transparentWhite">Transparent White</Button>
             </Box>
           </Box>
@@ -490,7 +509,8 @@ const DesignSystem = () => {
             css={{
               position: 'relative',
               mt: '$6',
-            }}>
+            }}
+          >
             <Image src="https://images.unsplash.com/photo-1453235421161-e41b42ebba05?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2550&q=80" />
             <Box
               css={{
@@ -498,7 +518,8 @@ const DesignSystem = () => {
                 bottom: 0,
                 right: 0,
                 m: '$4',
-              }}>
+              }}
+            >
               <Button variant="transparentBlack">Transparent Black</Button>
             </Box>
           </Box>
@@ -518,7 +539,8 @@ const DesignSystem = () => {
               <Box
                 css={{
                   mr: '$1',
-                }}>
+                }}
+              >
                 <PlusIcon />
               </Box>
               Button
@@ -528,7 +550,8 @@ const DesignSystem = () => {
               <Box
                 css={{
                   ml: '$1',
-                }}>
+                }}
+              >
                 <ArrowRightIcon />
               </Box>
             </Button>
@@ -536,14 +559,16 @@ const DesignSystem = () => {
               <Box
                 css={{
                   mr: '$1',
-                }}>
+                }}
+              >
                 <PlusIcon />
               </Box>
               Button
               <Box
                 css={{
                   ml: '$1',
-                }}>
+                }}
+              >
                 <ArrowRightIcon />
               </Box>
             </Button>
@@ -566,7 +591,8 @@ const DesignSystem = () => {
               p: '$5',
               border: '1px solid $slate6',
               borderRadius: '$3',
-            }}>
+            }}
+          >
             <form>
               <TextField
                 type="email"
@@ -613,7 +639,8 @@ const DesignSystem = () => {
             css={{
               gridTemplateColumns: 'repeat(3, minmax(0, 1fr))',
               gap: '$7',
-            }}>
+            }}
+          >
             <Box>
               <Text as="p" size="4" css={{ lineHeight: '27px' }}>
                 This is a much shorter paragraph of text, to demonstrate narrow text container. The

@@ -16,8 +16,9 @@ export const ThreeCols = () => {
           gridTemplateColumns: 'repeat(2, minmax(0, 1fr))',
           gap: '$4',
           bc: '$lime9',
-          br: '$3'
-        }}>
+          br: '$3',
+        }}
+      >
         <Box>
           <Text as="p" size="4" css={{ fontWeight: '800', padding: '26px', lineHeight: '27px' }}>
             COLUMN ONE

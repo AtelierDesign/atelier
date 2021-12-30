@@ -28,7 +28,8 @@ export const Navbar = () => {
         brc: '$lime9',
 
         zIndex: '9999',
-      }}>
+      }}
+    >
       {/* <!-- LOGO SECTION --> */}
       <NextLink href="/" passHref>
         <Box
@@ -41,7 +42,8 @@ export const Navbar = () => {
               boxShadow: 'none',
             },
             '@bp2': { ml: '$5' },
-          }}>
+          }}
+        >
           <Text
             css={{
               fontFamily: '$neuewide',
@@ -50,7 +52,8 @@ export const Navbar = () => {
               color: '$gray12',
               lineHeight: 'normal',
               letterSpacing: '-0.03rem',
-            }}>
+            }}
+          >
             ATELIER®
           </Text>
           {/*<Image className="logo" alt="logo" src="/butterfly_logo.svg" width={80} height={18} />*/}
@@ -73,7 +76,8 @@ export const Navbar = () => {
               color: '$gray12',
               mr: '$5',
               '@bp2': { display: 'block', mr: '$5' },
-            }}>
+            }}
+          >
             Documentation
           </Link>
         </NextLink>
@@ -85,7 +89,8 @@ export const Navbar = () => {
               color: '$gray12',
               mr: '$5',
               '@bp2': { display: 'block', mr: '$5' },
-            }}>
+            }}
+          >
             Blog
           </Link>
         </NextLink>
@@ -96,7 +101,8 @@ export const Navbar = () => {
             color: '$gray12',
             mr: '$2',
             '@bp2': { display: 'block', mr: '$5' },
-          }}>
+          }}
+        >
           <MenuNav />
         </Link>
       </Flex>

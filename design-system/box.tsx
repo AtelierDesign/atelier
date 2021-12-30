@@ -2,7 +2,7 @@ import { CSS, css, styled } from 'stitches.config';
 
 const styles: CSS = {
   // Reset
-  include: ['box']
+  include: ['box'],
 };
 
 export const box = css(styles);

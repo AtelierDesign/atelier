@@ -19,8 +19,9 @@ export const NavbarSticky = () => {
         m: '0',
         zIndex: '100',
         bc: 'transparent',
-        width: '100vw'
-      }}>
+        width: '100vw',
+      }}
+    >
       {/* LOGO SECTION */}
       <NextLink href="/" passHref>
         <Box
@@ -31,10 +32,11 @@ export const NavbarSticky = () => {
             display: 'inline-flex',
             textDecoration: 'none',
             '&:focus': {
-              boxShadow: 'none'
+              boxShadow: 'none',
             },
-            '@bp2': { ml: '$2' }
-          }}>
+            '@bp2': { ml: '$2' },
+          }}
+        >
           <Image className="logo" alt="logo" src="/butterfly_logo.svg" width={90} height={18} />
         </Box>
       </NextLink>
@@ -49,13 +51,19 @@ export const NavbarSticky = () => {
         </NextLink>
 
         <NextLink href="https://docs.ady.world" passHref>
-          <Link variant="subtle" css={{ display: 'none', mr: '$3', '@bp2': { display: 'block', mr: '$3' } }}>
+          <Link
+            variant="subtle"
+            css={{ display: 'none', mr: '$3', '@bp2': { display: 'block', mr: '$3' } }}
+          >
             Documentaion
           </Link>
         </NextLink>
 
         <NextLink href="https://api.ady.world" passHref>
-          <Link variant="subtle" css={{ display: 'none', mr: '$3', '@bp2': { display: 'block', mr: '$3' } }}>
+          <Link
+            variant="subtle"
+            css={{ display: 'none', mr: '$3', '@bp2': { display: 'block', mr: '$3' } }}
+          >
             Resources
           </Link>
         </NextLink>

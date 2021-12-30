@@ -38,7 +38,8 @@ export const ThemeToggle = props => {
         setTheme(newTheme);
       }}
       {...props}
-      aria-label="toggle a light and dark color scheme">
+      aria-label="toggle a light and dark color scheme"
+    >
       <LightningBoltIcon />
     </Button>
   );

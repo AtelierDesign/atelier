@@ -14,7 +14,7 @@ const CardParent = styled('div', {
   marginTop: '18px',
   padding: '40px',
   alignItems: 'center',
-  webkitScrollbar: 'none'
+  webkitScrollbar: 'none',
 });
 
 export const Card = ({ children }) => {

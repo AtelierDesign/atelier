@@ -10,7 +10,7 @@ const Grid = styled('div', {
   display: 'flex',
   flexDirection: 'row',
   gap: '20px',
-  bc: '$slate1'
+  bc: '$slate1',
 });
 
 const Scroller = styled('div', {
@@ -22,7 +22,7 @@ const Scroller = styled('div', {
   overflowX: 'auto',
   overflowY: 'hidden',
 
-  padding: '18px'
+  padding: '18px',
 });
 
 export const ScrollContainer = ({ children }) => {
