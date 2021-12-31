@@ -3,6 +3,7 @@ import Image from 'next/image';
 import React from 'react';
 import NextLink from 'next/link';
 import { NormalLink } from '@design-system/normal-link';
+import { Text } from '@design-system/text';
 
 import { Box } from '@design-system/box';
 
@@ -56,7 +57,17 @@ export default function Cover() {
         <TextBox>
           <NextLink href="/atelier" passHref>
             <NormalLink variant="normal">
-              <Image src="/logo.svg" alt="One" width={120} height={60} />
+              <Text
+                css={{
+                  fontFamily: '$neuewide',
+                  fontSize: '24px',
+                  fontWeight: '900',
+                  letterSpacing: '-0.05rem',
+                }}
+              >
+                ATELIER®
+              </Text>
+              {/* <!-- HOLD LOGO <Image src="/logo.svg" alt="One" width={120} height={60} /> --> */}
             </NormalLink>
           </NextLink>
         </TextBox>

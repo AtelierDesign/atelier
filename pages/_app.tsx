@@ -1,4 +1,3 @@
-import { IdProvider } from '@radix-ui/react-id';
 import { Box, box } from 'design-system/box';
 import { AppProps } from 'next/app';
 import Head from 'next/head';
@@ -25,33 +24,31 @@ const App = ({ Component, pageProps }: AppProps) => {
   });
 
   return (
-    <IdProvider>
-      <Box css={{ backgroundColor: '$slate1' }}>
-        <Head>
-          <title>Design System</title>
-          <link rel="stylesheet" href="https://develop.modulz.app/fonts/fonts.css" />
-          <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
-        </Head>
+    <Box css={{ backgroundColor: '$slate1' }}>
+      <Head>
+        <title>Design System</title>
+        <link rel="stylesheet" href="https://develop.modulz.app/fonts/fonts.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+      </Head>
 
-        <div
-          className={appWrapper({
-            display: 'flex',
-            flexDirection: 'column',
-          })}
-        >
-          <div className={box({ flex: 1 })}>
-            <NextNprogress
-              color="linear-gradient(to right, #b5bdc8 0%,#828c95 36%,#28343b 100%)"
-              startPosition={0.3}
-              stopDelayMs={300}
-              height={3}
-              showOnShallow={true}
-            />
-            <Component {...pageProps} />
-          </div>
+      <div
+        className={appWrapper({
+          display: 'flex',
+          flexDirection: 'column',
+        })}
+      >
+        <div className={box({ flex: 1 })}>
+          <NextNprogress
+            color="linear-gradient(to right, #b5bdc8 0%,#828c95 36%,#28343b 100%)"
+            startPosition={0.3}
+            stopDelayMs={300}
+            height={3}
+            showOnShallow={true}
+          />
+          <Component {...pageProps} />
         </div>
-      </Box>
-    </IdProvider>
+      </div>
+    </Box>
   );
 };
 

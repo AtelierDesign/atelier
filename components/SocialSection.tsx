@@ -25,9 +25,9 @@ export const SocialSection = () => {
             <Box
               css={{
                 p: '$5',
-                bc: '$slate2',
+                backgroundColor: '$transparent',
                 borderRadius: '$4',
-                boxShadow: 'inset 0 0 0 1px $colors$slate5',
+                // boxShadow: 'inset 0 0 0 1px $colors$slate5',
 
                 '&:hover': {
                   cursor: 'pointer',
@@ -36,8 +36,8 @@ export const SocialSection = () => {
             >
               <Box css={{ mb: '$3' }}>
                 <svg
-                  width="30"
-                  height="30"
+                  width="23"
+                  height="23"
                   viewBox="0 0 30 30"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -64,9 +64,9 @@ export const SocialSection = () => {
             <Box
               css={{
                 p: '$5',
-                bc: '$slate2',
+                backgroundColor: '$transparent',
                 borderRadius: '$4',
-                boxShadow: 'inset 0 0 0 1px $colors$slate5',
+                // boxShadow: 'inset 0 0 0 1px $colors$slate5',
 
                 '&:hover': {
                   cursor: 'pointer',
@@ -75,8 +75,8 @@ export const SocialSection = () => {
             >
               <Box css={{ mb: '$3' }}>
                 <svg
-                  width="30"
-                  height="30"
+                  width="22"
+                  height="22"
                   viewBox="0 0 30 30"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -122,9 +122,9 @@ export const SocialSection = () => {
             <Box
               css={{
                 p: '$5',
-                bc: '$slate2',
+                backgroundColor: '$transparent',
                 borderRadius: '$4',
-                boxShadow: 'inset 0 0 0 1px $colors$slate5',
+                // boxShadow: 'inset 0 0 0 1px $colors$slate5',
 
                 '&:hover': {
                   cursor: 'pointer',
@@ -133,8 +133,8 @@ export const SocialSection = () => {
             >
               <Box css={{ mb: '$3' }}>
                 <svg
-                  width="30"
-                  height="30"
+                  width="23"
+                  height="23"
                   viewBox="0 0 30 30"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"

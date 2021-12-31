@@ -42,9 +42,9 @@ const Scroller = styled('div', {
 });
 
 const Card = styled('div', {
-  width: '5000px',
-  minWidth: '500px',
-  height: '350px',
+  width: '420px',
+  minWidth: '420px',
+  height: '300px',
   backgroundColor: '$slate3',
   display: 'block',
   position: 'relative',
@@ -151,8 +151,7 @@ const Atelier = () => {
         <Box css={{ paddingBottom: '50px', bc: '$slate1' }}>
           <Container size="3" css={{ paddingLeft: '30px', bc: 'none' }}>
             <Text
-              css={{ color: '$gray11', fontWeight: '500', lineHeight: '1.6', paddingLeft: '6px' }}
-            >
+              css={{ color: '$gray11', fontWeight: '500', lineHeight: '1.6', paddingLeft: '6px' }}>
               <strong>Adobe</strong>® After Effects
             </Text>
             <Heading size="3" css={{ fontWeight: '600', paddingLeft: '5px', color: '$gray12' }}>
@@ -166,8 +165,7 @@ const Atelier = () => {
                 py: '15px',
                 fontSize: '16px',
                 width: '80%',
-              }}
-            >
+              }}>
               Create open and close animations that take the dropdown menu’s actual position into
               account.
             </Text>
@@ -193,18 +191,19 @@ const Atelier = () => {
                   </Heading>
                   <Text
                     as="p"
-                    variant="gray"
+                    // variant="gray"
                     size="3"
                     className="image-text"
                     css={{
-                      fontFamily: '$jetbrain',
+                      fontFamily: '$inter',
+                      color: '$gray12',
                       width: '94%',
                       fontSize: '13px',
                       fontWeight: '500',
                       paddingTop: '12px',
                       lineHeight: '22px',
-                    }}
-                  >
+                      zIndex: '9999',
+                    }}>
                     Description. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                     eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   </Text>
@@ -237,15 +236,14 @@ const Atelier = () => {
                   size="3"
                   className="image-text"
                   css={{
-                    fontFamily: '$jetbrain',
+                    fontFamily: '$inter',
                     fontSize: '13px',
                     zIndex: '300',
                     width: '94%',
                     fontWeight: '400',
                     paddingTop: '16px',
                     lineHeight: '22px',
-                  }}
-                >
+                  }}>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                   incididunt ut labore.
                 </Text>
@@ -273,15 +271,14 @@ const Atelier = () => {
                   size="3"
                   className="image-text"
                   css={{
-                    fontFamily: '$jetbrain',
+                    fontFamily: '$inter',
                     fontSize: '13px',
                     zIndex: '300',
                     width: '94%',
                     fontWeight: '400',
                     paddingTop: '16px',
                     lineHeight: '22px',
-                  }}
-                >
+                  }}>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                   incididunt ut labore.
                 </Text>
@@ -309,15 +306,14 @@ const Atelier = () => {
                   size="3"
                   className="image-text"
                   css={{
-                    fontFamily: '$jetbrain',
+                    fontFamily: '$inter',
                     fontSize: '13px',
                     zIndex: '300',
                     width: '94%',
                     fontWeight: '400',
                     paddingTop: '16px',
                     lineHeight: '22px',
-                  }}
-                >
+                  }}>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                   incididunt ut labore.
                 </Text>
@@ -345,15 +341,14 @@ const Atelier = () => {
                   size="3"
                   className="image-text"
                   css={{
-                    fontFamily: '$jetbrain',
+                    fontFamily: '$inter',
                     fontSize: '13px',
                     zIndex: '300',
                     width: '94%',
                     fontWeight: '400',
                     paddingTop: '16px',
                     lineHeight: '22px',
-                  }}
-                >
+                  }}>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                   incididunt ut labore.
                 </Text>

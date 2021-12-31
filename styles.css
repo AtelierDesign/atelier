@@ -29,10 +29,10 @@ svg {
 }
 
 .color__box {
+  /*position: relative;*/
   border-radius: 26px;
-  background-color: $light100;
+  background-color: transparent;
   backdrop-filter: blur(10px) saturate(180%);
-  z-index: 5;
 }
 
 .image-text {
@@ -67,6 +67,10 @@ a {
 .logo {
   color: var(--colors-slate9);
   fill: var(--colors-slate9);
+}
+
+main {
+  flex: 1;
 }
 
 #nprogress .spinner {

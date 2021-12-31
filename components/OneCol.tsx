@@ -35,10 +35,14 @@ const TimeDisplay = styled('div', {
   },
 });
 
+const adyLoader = ({ src, width, quality }) => {
+  return `https://ady.world/${src}?w=${width}&q=${quality || 75}`;
+};
+
 export const OneCol = () => {
   return (
     <Box css={{ bc: '$slate1' }}>
-      <Container size="3" css={{ px: '18px', bc: '$slate1' }}>
+      <Container size="3" css={{ px: '18px', bc: '$slate1', position: 'relative' }}>
         <Grid
           css={{
             gridTemplateColumns: 'repeat(1, minmax(0, 1fr))',
@@ -50,8 +54,7 @@ export const OneCol = () => {
             borderColor: '$slate6',
             zIndex: '20',
             position: 'relative',
-          }}
-        >
+          }}>
           <Box
             css={{
               height: '400px',
@@ -60,8 +63,7 @@ export const OneCol = () => {
               margin: '0',
               zIndex: '100',
               saturate: '200%',
-            }}
-          >
+            }}>
             <Heading
               size="2"
               css={{
@@ -71,8 +73,7 @@ export const OneCol = () => {
                 paddingTop: '35px',
                 lineHeight: '10px',
                 zIndex: '80',
-              }}
-            >
+              }}>
               <strong>Ady</strong>® Interval
             </Heading>
             <Text
@@ -85,8 +86,7 @@ export const OneCol = () => {
                 paddingTop: '16px',
                 lineHeight: '22px',
                 '@bp1': { width: '450px' },
-              }}
-            >
+              }}>
               ADY® is an ever– expanding ecosystem of essential design components built for modern
               web.
             </Text>
@@ -108,8 +108,7 @@ export const OneCol = () => {
                   color: '$orange9',
                   cursor: 'pointer',
                 },
-              }}
-            >
+              }}>
               Shop Now
               <Box css={{ marginLeft: '$1', lineHeight: 'normal' }}>
                 <ExternalLinkIcon />
@@ -118,6 +117,7 @@ export const OneCol = () => {
           </Box>
           <div className="color__box">
             <Image
+              loader={adyLoader}
               className="color__swirl"
               src="/img/blue-swirl.png"
               layout="fill"
