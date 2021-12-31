@@ -36,7 +36,7 @@ const TimeDisplay = styled('div', {
 });
 
 const adyLoader = ({ src, width, quality }) => {
-  return `https://ady.world/${src}?w=${width}&q=${quality || 75}`;
+  return `https://ady.world${src}?w=${width}&q=${quality || 75}`;
 };
 
 export const OneCol = () => {
