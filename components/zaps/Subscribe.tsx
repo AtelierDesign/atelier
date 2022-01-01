@@ -1,5 +1,6 @@
-import React from 'react';
-
+// import React from 'react';
+{
+  /* <!--
 import { Flex } from '@design-system/flex';
 // import { Heading } from '@design-system/heading';
 // import { Box } from '@design-system/box';
@@ -66,22 +67,24 @@ export function Subscribe() {
       method: 'POST',
     });
 
-    const result = await res.json();
+    // const result = await res.json();
     // result.email => 'example@ady.world';
     //*
-    /*console.log({
-    /  email: data.get('email'),
-    /});
-    */
+    console.log({
+      email: res.get('email'),
+    });
   };
+--> */
+}
 
+{
+  /* <!--
   return (
     <CoverBox>
       <Flex css={{ alignItems: 'center', gap: '$6' }}>
         <Container size="2">
           <form onSubmit={registerUser}>
-            {/* <!-- <label htmlFor="name">Name</label> --> */}
-            {/* <!-- <input id="name" name="name" type="text" autoComplete="name" required /> --> */}
+
             <TextField
               size="2"
               placeholder="Email address"
@@ -100,7 +103,8 @@ export function Subscribe() {
     </CoverBox>
   );
 }
-
+--> */
+}
 {
   /*
   const res = await fetch('https://hooks.zapier.com/hooks/catch/123456/abcde', {

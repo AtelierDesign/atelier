@@ -8,6 +8,7 @@ import '../styles/inter.css';
 import '../styles/jetbrains.css';
 import '../styles/neue-plak.css';
 import '../styles/neue-wide.css';
+import '../styles/form.css';
 
 import NextNprogress from 'nextjs-progressbar';
 
@@ -35,8 +36,7 @@ const App = ({ Component, pageProps }: AppProps) => {
         className={appWrapper({
           display: 'flex',
           flexDirection: 'column',
-        })}
-      >
+        })}>
         <div className={box({ flex: 1 })}>
           <NextNprogress
             color="linear-gradient(to right, #b5bdc8 0%,#828c95 36%,#28343b 100%)"
