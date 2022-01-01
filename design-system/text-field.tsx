@@ -5,11 +5,13 @@ export const TextField = styled('input', {
   appearance: 'none',
   borderWidth: '0',
   boxSizing: 'border-box',
-  fontFamily: 'inherit',
+  fontFamily: '$inter',
+  fontSize: '13px',
+  fontWeight: '500',
+
   margin: '0',
   outline: 'none',
   padding: '0',
-  width: '100%',
   WebkitTapHighlightColor: 'rgba(0,0,0,0)',
   '&::before': {
     boxSizing: 'border-box',
@@ -20,16 +22,17 @@ export const TextField = styled('input', {
 
   // Custom
   backgroundColor: '$loContrast',
-  boxShadow: 'inset 0 0 0 1px $colors$slate7',
+  boxShadow: 'inset 0 0 0 2px $colors$slate7',
   color: '$hiContrast',
-  fontVariantNumeric: 'tabular-nums',
+  marginBottom: '5px',
+  // fontVariantNumeric: 'tabular-nums',
 
   '&:-webkit-autofill': {
     boxShadow: 'inset 0 0 0 1px $colors$blue6, inset 0 0 0 100px $colors$blue3',
   },
 
   '&:-webkit-autofill::first-line': {
-    fontFamily: '$untitled',
+    fontFamily: '$inter',
     color: '$hiContrast',
   },
 
@@ -40,9 +43,16 @@ export const TextField = styled('input', {
         'inset 0px 0px 0px 1px $colors$blue8, 0px 0px 0px 1px $colors$blue8, inset 0 0 0 100px $colors$blue3',
     },
   },
+
   '&::placeholder': {
-    color: '$slate9',
+    color: '$slate8',
+    fontFamily: '$inter',
+    fontSize: '13px',
+    fontWeight: '500',
+    letterSpacing: '-0.02rem',
+    paddingLeft: '4px',
   },
+
   '&:disabled': {
     pointerEvents: 'none',
     backgroundColor: '$slate2',
@@ -52,6 +62,7 @@ export const TextField = styled('input', {
       color: '$slate7',
     },
   },
+
   '&:read-only': {
     backgroundColor: '$slate2',
     '&:focus': {
@@ -66,22 +77,25 @@ export const TextField = styled('input', {
         height: '$5',
         fontSize: '$1',
         px: '$1',
+        width: '100%',
         lineHeight: '$sizes$5',
         '&:-webkit-autofill::first-line': {
           fontSize: '$1',
         },
       },
       '2': {
-        borderRadius: '$2',
+        borderRadius: '8px',
         height: '$6',
-        fontSize: '$3',
+        fontSize: '13px',
         px: '$2',
+        width: '100%',
         lineHeight: '$sizes$6',
         '&:-webkit-autofill::first-line': {
-          fontSize: '$3',
+          fontSize: '13px',
         },
       },
     },
+
     variant: {
       ghost: {
         boxShadow: 'none',
