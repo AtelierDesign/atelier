@@ -8,7 +8,6 @@ import '../styles/inter.css';
 import '../styles/jetbrains.css';
 import '../styles/neue-plak.css';
 import '../styles/neue-wide.css';
-import '../styles/form.css';
 
 import NextNprogress from 'nextjs-progressbar';
 

@@ -3,7 +3,7 @@ import React from 'react';
 
 import { Navbar } from '@components/Navbar';
 // import { Subscribe } from '@components/zaps/Subscribe';
-import { Subs } from '@components/zaps/Subs';
+import { Zap } from '@components/zaps/Zap';
 import { Container } from '@design-system/container';
 import { Box } from '@design-system/box';
 
@@ -32,7 +32,7 @@ export default function Test() {
       <CoverBox>
         <Container size="2">
           {/* <Subscribe /> */}
-          <Subs />
+          <Zap />
         </Container>
       </CoverBox>
     </Box>
