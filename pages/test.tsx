@@ -2,8 +2,7 @@ import Head from 'next/head';
 import React from 'react';
 
 import { Navbar } from '@components/Navbar';
-// import { Subscribe } from '@components/zaps/Subscribe';
-import { Zap } from '@components/zaps/Zap';
+
 import { Container } from '@design-system/container';
 import { Box } from '@design-system/box';
 
@@ -21,7 +20,7 @@ const CoverBox = styled('div', {
   padding: '1rem',
 });
 
-export default function Test() {
+const Test = () => {
   return (
     <Box css={{ padding: '0px' }}>
       <Head>
@@ -30,11 +29,13 @@ export default function Test() {
 
       <Navbar />
       <CoverBox>
-        <Container size="2">
-          {/* <Subscribe /> */}
-          <Zap />
+        <Container size="1">
+          {/* <!-- <Subscribe /> --> */}
+          FORM GOES HERE
         </Container>
       </CoverBox>
     </Box>
   );
-}
+};
+
+export default Test;
