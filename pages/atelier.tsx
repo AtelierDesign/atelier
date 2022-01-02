@@ -6,6 +6,7 @@ import { Container } from '@design-system/container';
 import { Section } from '@design-system/section';
 import { Heading } from '@design-system/heading';
 import { Text } from '@design-system/text';
+import { Paragraph } from '@design-system/paragraph';
 import { Navbar } from '@components/Navbar';
 import { FooterMain } from '@components/FooterMain';
 import { DefaultButton } from '@components/DefaultButton';
@@ -151,15 +152,24 @@ const Atelier = () => {
         <Box css={{ paddingBottom: '50px', bc: '$slate1' }}>
           <Container size="3" css={{ paddingLeft: '30px', bc: 'none' }}>
             <Text
-              css={{ color: '$gray11', fontWeight: '500', lineHeight: '1.6', paddingLeft: '6px' }}>
+              css={{
+                fontSize: '13px',
+                color: '$gray11',
+                fontWeight: '500',
+                lineHeight: '2',
+                paddingLeft: '6px',
+              }}>
               <strong>Adobe</strong>® After Effects
             </Text>
             <Heading size="3" css={{ fontWeight: '600', paddingLeft: '5px', color: '$gray12' }}>
               Style made easy.
             </Heading>
-            <Text
+            <Paragraph
+              size="2"
               css={{
-                color: '$gray11',
+                fontFamily: '$inter',
+                fontWeight: '500',
+                color: '$gray10',
                 lineHeight: '1.4',
                 px: '5px',
                 py: '15px',
@@ -168,7 +178,7 @@ const Atelier = () => {
               }}>
               Create open and close animations that take the dropdown menu’s actual position into
               account.
-            </Text>
+            </Paragraph>
             <DefaultButton as="a" css={{}}>
               Learn more <ArrowRightIcon />
             </DefaultButton>

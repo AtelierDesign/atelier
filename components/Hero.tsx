@@ -55,9 +55,17 @@ export function Hero() {
           '@bp2': {
             pt: '$7',
           },
-        }}
-      >
-        <Container size="3" css={{ paddingTop: '130px' }}>
+        }}>
+        <Container
+          size="3"
+          css={{
+            paddingTop: '130px',
+            paddingBottom: '40px',
+            '@sm': {
+              paddingTop: '100px',
+              paddingBottom: '80px',
+            },
+          }}>
           {/* TIME DISPLAY */}
           <TimeDisplay>
             <TimeCode />
@@ -80,8 +88,7 @@ export function Hero() {
               '@bp3': {
                 px: 200,
               },
-            }}
-          >
+            }}>
             WELCOME.
           </Heading>
           <Paragraph
@@ -89,16 +96,24 @@ export function Hero() {
             css={{
               fontSize: '16px',
               fontWeight: '500',
-              color: '$gray12',
+              lineHeight: '1.4',
+              color: '$gray11',
               mb: '30px',
               '@bp2': {
-                mx: 230,
+                mx: 250,
                 ta: 'center',
                 mb: '60px',
+                lineHeight: '1.3',
               },
-            }}
-          >
-            An ever– expanding ecosystem of design components. Design yield.
+              '@bp3': {
+                mx: 300,
+                ta: 'center',
+                mb: '60px',
+                lineHeight: '1.3',
+              },
+            }}>
+            <strong>Atelier Design Yield</strong>® is an ever– expanding ecosystem of raw, unstyled,
+            and modern design components.
           </Paragraph>
 
           <Flex css={{ '@bp2': { jc: 'center', my: '$7' } }}>
@@ -111,8 +126,7 @@ export function Hero() {
               as="a"
               href="https://github.com/AtelierDesign"
               target="_blank"
-              rel="noopener noreferrer"
-            >
+              rel="noopener noreferrer">
               GitHub
               <Box css={{ ml: '$1' }}>
                 <ExternalLinkIcon />
