@@ -22,7 +22,6 @@ export async function getEmojiList() {
       return rows.map(row => ({
         name: row[2],
         email: row[3],
-        browser: row[4],
       }));
     }
   } catch (err) {
