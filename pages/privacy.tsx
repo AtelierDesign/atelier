@@ -6,10 +6,9 @@ import { Container } from '@design-system/container';
 import { Section } from '@design-system/section';
 import { Heading } from '@design-system/heading';
 import { Text } from '@design-system/text';
-import { NavbarSticky } from '@components/NavbarSticky';
+import { Navbar } from '@components/Navbar';
 import { SmallSpacer } from '@components/SmallSpacer';
 import { Spacer } from '@components/Spacer';
-import { Line } from '@components/Line';
 import { FooterMain } from '@components/FooterMain';
 
 const PrivacyPolicy = () => {
@@ -19,33 +18,27 @@ const PrivacyPolicy = () => {
         <title>Privacy.</title>
       </Head>
 
-      <NavbarSticky />
+      <Navbar />
 
       <Section size="1">
         <Container
           size="3"
-          css={{ ai: 'center', paddingTop: '100px', margin: 'auto', textAlign: 'center' }}
-        >
+          css={{ ai: 'center', paddingTop: '100px', margin: 'auto', textAlign: 'center' }}>
           <Heading size="4">Privacy</Heading>
           <Text
             as="p"
-            css={{ fontWeight: '400', fontSize: '14px', lineHeight: '4', color: '$slate9' }}
-          >
+            css={{ fontWeight: '400', fontSize: '14px', lineHeight: '4', color: '$gray11' }}>
             Terms, Conditions, and Privacy.
           </Text>
         </Container>
       </Section>
 
-      <SmallSpacer />
-      <Line />
-
       <Section size="1">
         {/* POLICY ONE */}
         <Container
           size="3"
-          css={{ ai: 'center', paddingTop: '100px', margin: 'auto', textAlign: 'center' }}
-        >
-          <Heading size="1" css={{ textAlign: 'left' }}>
+          css={{ ai: 'center', paddingTop: '50px', margin: 'auto', textAlign: 'center' }}>
+          <Heading size="1" css={{ textAlign: 'left', fontWeight: '600' }}>
             Definitions.
           </Heading>
           <Text
@@ -55,9 +48,8 @@ const PrivacyPolicy = () => {
               fontSize: '13px',
               lineHeight: '1.5',
               paddingTop: '10px',
-              color: '$slate9',
-            }}
-          >
+              color: '$gray11',
+            }}>
             <p>
               <strong>Content.</strong> means the particular media (e.g. image files, video files,
               audio files, templates, project files, data files, etc.) that you license through any
@@ -88,7 +80,7 @@ const PrivacyPolicy = () => {
           <SmallSpacer />
 
           {/* POLICY TWO */}
-          <Heading size="1" css={{ textAlign: 'left' }}>
+          <Heading size="1" css={{ textAlign: 'left', fontWeight: '600' }}>
             License.
           </Heading>
           <Text
@@ -98,9 +90,8 @@ const PrivacyPolicy = () => {
               fontSize: '13px',
               lineHeight: '1.5',
               paddingTop: '10px',
-              color: '$slate9',
-            }}
-          >
+              color: '$gray11',
+            }}>
             <p>
               Subject to payment of the License Fee and your compliance with these TOU, we grant you
               a nonexclusive, perpetual, worldwide, non-transferable license to use, reproduce,
@@ -117,7 +108,7 @@ const PrivacyPolicy = () => {
           <SmallSpacer />
 
           {/* POLICY THREE */}
-          <Heading size="1" css={{ textAlign: 'left' }}>
+          <Heading size="1" css={{ textAlign: 'left', fontWeight: '600' }}>
             Ownership.
           </Heading>
           <Text
@@ -127,9 +118,8 @@ const PrivacyPolicy = () => {
               fontSize: '13px',
               lineHeight: '1.5',
               paddingTop: '10px',
-              color: '$slate9',
-            }}
-          >
+              color: '$gray11',
+            }}>
             <p>
               <strong>Content.</strong> As between you and us, we retain all rights, title and
               interest in and to the Content and any derivatives or modifications thereof, in whole
@@ -149,7 +139,7 @@ const PrivacyPolicy = () => {
           <SmallSpacer />
 
           {/* POLICY FOUR */}
-          <Heading size="1" css={{ textAlign: 'left' }}>
+          <Heading size="1" css={{ textAlign: 'left', fontWeight: '600' }}>
             Employer or Client Use.
           </Heading>
           <Text
@@ -159,9 +149,8 @@ const PrivacyPolicy = () => {
               fontSize: '13px',
               lineHeight: '1.5',
               paddingTop: '10px',
-              color: '$slate9',
-            }}
-          >
+              color: '$gray11',
+            }}>
             <p>
               You may purchase a license to the Content pursuant to these TOU on behalf of your
               employer or clients, provided that you represent and warrant that you have the
@@ -177,7 +166,7 @@ const PrivacyPolicy = () => {
           <SmallSpacer />
 
           {/* POLICY FIVE */}
-          <Heading size="1" css={{ textAlign: 'left' }}>
+          <Heading size="1" css={{ textAlign: 'left', fontWeight: '600' }}>
             Restrictions.
           </Heading>
           <Text
@@ -187,9 +176,8 @@ const PrivacyPolicy = () => {
               fontSize: '13px',
               lineHeight: '1.5',
               paddingTop: '10px',
-              color: '$slate9',
-            }}
-          >
+              color: '$gray11',
+            }}>
             <p>
               <strong>YOU MAY NOT.</strong>
             </p>
@@ -234,7 +222,7 @@ const PrivacyPolicy = () => {
           <SmallSpacer />
 
           {/* POLICY SIX */}
-          <Heading size="1" css={{ textAlign: 'left' }}>
+          <Heading size="1" css={{ textAlign: 'left', fontWeight: '600' }}>
             Use Case.
           </Heading>
           <Text
@@ -244,9 +232,8 @@ const PrivacyPolicy = () => {
               fontSize: '13px',
               lineHeight: '1.5',
               paddingTop: '10px',
-              color: '$slate9',
-            }}
-          >
+              color: '$gray11',
+            }}>
             <p>
               All rights herein granted are conditioned on your use consistent with the Use Case
               selected at the time of licensing the Content. If at any point your Use Case changes
@@ -262,7 +249,7 @@ const PrivacyPolicy = () => {
           <SmallSpacer />
 
           {/* POLICY SEVEN */}
-          <Heading size="1" css={{ textAlign: 'left' }}>
+          <Heading size="1" css={{ textAlign: 'left', fontWeight: '600' }}>
             Warranties and Representations.
           </Heading>
           <Text
@@ -272,9 +259,8 @@ const PrivacyPolicy = () => {
               fontSize: '13px',
               lineHeight: '1.5',
               paddingTop: '10px',
-              color: '$slate9',
-            }}
-          >
+              color: '$gray11',
+            }}>
             <p>
               You warrant and represent that (a) you have the right and authority to enter into
               these TOU, either individually or on behalf of your employer or client, as applicable,
@@ -288,7 +274,7 @@ const PrivacyPolicy = () => {
           <SmallSpacer />
 
           {/* POLICY EIGHT */}
-          <Heading size="1" css={{ textAlign: 'left' }}>
+          <Heading size="1" css={{ textAlign: 'left', fontWeight: '600' }}>
             Indemnification.
           </Heading>
           <Text
@@ -298,9 +284,8 @@ const PrivacyPolicy = () => {
               fontSize: '13px',
               lineHeight: '1.5',
               paddingTop: '10px',
-              color: '$slate9',
-            }}
-          >
+              color: '$gray11',
+            }}>
             <p>
               <strong>Your Indemnification Obligations.</strong> You shall indemnify, defend and
               hold us and our subsidiaries, affiliates, officers, agents, employees, partners, or
@@ -325,7 +310,7 @@ const PrivacyPolicy = () => {
           <SmallSpacer />
 
           {/* POLICY NINE */}
-          <Heading size="1" css={{ textAlign: 'left' }}>
+          <Heading size="1" css={{ textAlign: 'left', fontWeight: '600' }}>
             Disclaimer or Warranties.
           </Heading>
           <Text
@@ -335,9 +320,8 @@ const PrivacyPolicy = () => {
               fontSize: '13px',
               lineHeight: '1.5',
               paddingTop: '10px',
-              color: '$slate9',
-            }}
-          >
+              color: '$gray11',
+            }}>
             <p>
               The Content is provided “AS-IS.” To the maximum extent permitted by law, we disclaim
               all warranties, express or implied, including the implied warranties of

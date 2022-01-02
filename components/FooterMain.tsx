@@ -36,8 +36,7 @@ export const FooterMain = () => {
         margin: 'auto',
         px: '0',
         height: 'auto',
-      }}
-    >
+      }}>
       {/* NAVIGATION SECTION */}
       <Container size="3" css={{ px: '18px' }}>
         <Grid
@@ -52,8 +51,7 @@ export const FooterMain = () => {
               gap: '0px',
               gridTemplateColumns: '1fr 1fr 1fr',
             },
-          }}
-        >
+          }}>
           {/* PRODUCT ROW ONE */}
 
           <Box>
@@ -67,8 +65,7 @@ export const FooterMain = () => {
                     fontWeight: '600',
                     lineHeight: '1',
                     textAlign: 'left',
-                  }}
-                >
+                  }}>
                   ATELIER®
                   {/* <!-- IMAGE LOGO - Hold
                 <Image
@@ -88,8 +85,7 @@ export const FooterMain = () => {
                     fontSize: '10px',
                     lineHeight: '1.5',
                     letterSpacing: '-.03rem',
-                  }}
-                >
+                  }}>
                   Copyright © 2021
                 </Text>
               </Box>
@@ -104,14 +100,36 @@ export const FooterMain = () => {
                 </Text>
 
                 {/* (Information) FOOTER LINK 01 */}
-                <Text size="1" css={{ fontWeight: '400', fontSize: '11px', lineHeight: '2' }}>
-                  One
-                </Text>
+                <NextLink href="/privacy" passHref>
+                  <Text
+                    size="1"
+                    css={{
+                      fontWeight: '400',
+                      fontSize: '11px',
+                      lineHeight: '2',
+                      '&:hover': {
+                        cursor: 'pointer',
+                      },
+                    }}>
+                    Terms & Conditions
+                  </Text>
+                </NextLink>
 
                 {/* (Information) FOOTER LINK 02 */}
-                <Text size="1" css={{ fontWeight: '400', fontSize: '11px', lineHeight: '2' }}>
-                  Two
-                </Text>
+                <NextLink href="/privacy" passHref>
+                  <Text
+                    size="1"
+                    css={{
+                      fontWeight: '400',
+                      fontSize: '11px',
+                      lineHeight: '2',
+                      '&:hover': {
+                        cursor: 'pointer',
+                      },
+                    }}>
+                    Privacy
+                  </Text>
+                </NextLink>
 
                 {/* (Information) FOOTER LINK 03 */}
                 <Text size="1" css={{ fontWeight: '400', fontSize: '11px', lineHeight: '2' }}>
@@ -139,8 +157,7 @@ export const FooterMain = () => {
                       '&:hover': {
                         cursor: 'pointer',
                       },
-                    }}
-                  >
+                    }}>
                     Test Page
                   </Text>
                 </NextLink>
@@ -156,8 +173,7 @@ export const FooterMain = () => {
                       '&:hover': {
                         cursor: 'pointer',
                       },
-                    }}
-                  >
+                    }}>
                     WalletConnect
                   </Text>
                 </NextLink>
