@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import React from 'react';
 import NextLink from 'next/link';
+import coverSwirl from '../public/img/four.png';
 import { NormalLink } from '@design-system/normal-link';
 import { Text } from '@design-system/text';
 
@@ -47,8 +48,7 @@ export default function Cover() {
         zIndex: '0',
         overflowY: 'hidden',
         overflowX: 'hidden',
-      }}
-    >
+      }}>
       <Head>
         <title>Atelier®.</title>
       </Head>
@@ -63,8 +63,7 @@ export default function Cover() {
                   fontSize: '24px',
                   fontWeight: '900',
                   letterSpacing: '-0.05rem',
-                }}
-              >
+                }}>
                 ATELIER®
               </Text>
               {/* <!-- HOLD LOGO <Image src="/logo.svg" alt="One" width={120} height={60} /> --> */}
@@ -72,12 +71,7 @@ export default function Cover() {
           </NextLink>
         </TextBox>
       </CoverBox>
-      <Image
-        src="https://cdn.ady.systems/ady.images/four.png"
-        alt="One"
-        layout="fill"
-        objectFit="cover"
-      />
+      <Image src={coverSwirl} alt="One" layout="fill" objectFit="cover" />
     </Box>
   );
 }

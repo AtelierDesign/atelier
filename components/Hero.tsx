@@ -1,4 +1,5 @@
 import React from 'react';
+import NextLink from 'next/link';
 import { Section } from '@design-system/section';
 import { Container } from '@design-system/container';
 import { Box } from '@design-system/box';
@@ -117,11 +118,13 @@ export function Hero() {
           </Paragraph>
 
           <Flex css={{ '@bp2': { jc: 'center', my: '$7' } }}>
-            <DefaultButton css={{ width: 'auto', lineHeight: '1', mr: '$2' }}>
-              Latest Release
-              {` `}
-              <RocketIcon />
-            </DefaultButton>
+            <NextLink href="/shop" passHref>
+              <DefaultButton css={{ width: 'auto', lineHeight: '1', mr: '$2' }}>
+                Latest Release
+                {` `}
+                <RocketIcon />
+              </DefaultButton>
+            </NextLink>
             <HomeButton
               as="a"
               href="https://github.com/AtelierDesign"

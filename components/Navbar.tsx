@@ -37,7 +37,7 @@ export const Navbar = () => {
           zIndex: '9999',
         }}>
         {/* <!-- LOGO SECTION --> */}
-        <NextLink href="/" passHref>
+        <NextLink href="/atelier" passHref>
           <Box
             as="a"
             css={{
