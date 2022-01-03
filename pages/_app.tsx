@@ -1,11 +1,12 @@
-import Router from 'next/router';
+import Head from 'next/head';
 import { Box, box } from 'design-system/box';
 import { AppProps } from 'next/app';
+import { useRouter } from 'next/router';
 
 // MAGIC LABS
-import { magic } from '../lib/magic';
+import { magic } from '@lib/magic';
 import { useState, useEffect } from 'react';
-import { UserContext } from '../lib/UserContext';
+import { UserContext } from '@lib/UserContext';
 
 // STITCHES.DEV
 import { css, globalCss } from 'stitches.config';
@@ -23,7 +24,8 @@ const appWrapper = css({
 });
 
 const App = ({ Component, pageProps }: AppProps) => {
-  const [user, setUser] = useState();
+  const router = useRouter();
+  const [user, setUser] = useState(null);
 
   useEffect(() => {
     setUser({ loading: true });
@@ -31,7 +33,7 @@ const App = ({ Component, pageProps }: AppProps) => {
       if (isLoggedIn) {
         magic.user.getMetadata().then(userData => setUser(userData));
       } else {
-        Router.push('/login');
+        router.push('/login');
         setUser({ user: null });
       }
     });
@@ -46,6 +48,9 @@ const App = ({ Component, pageProps }: AppProps) => {
 
   return (
     <UserContext.Provider value={[user, setUser]}>
+      <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+      </Head>
       <Box css={{ backgroundColor: '$slate1' }}>
         <div
           className={appWrapper({

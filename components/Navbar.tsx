@@ -7,14 +7,7 @@ import { Link } from '@design-system/link';
 import { ArrowRightIcon } from '@radix-ui/react-icons';
 import { ThemeToggle } from '@components/ThemeToggle';
 
-// MAGIC AUTH
-// import { useContext } from 'react';
-// import { magic } from '@utils/magic';
-// import { UserContext } from '@utils/UserContext';
-
 import { MenuNav } from './MenuNav';
-
-// import Image from 'next/image';
 
 export const Navbar = () => {
   return (

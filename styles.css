@@ -113,7 +113,7 @@ form {
 }
 .social-btn {
   cursor: pointer;
-  border-radius: 50px;
+  border-radius: 12px;
   margin-bottom: 20px;
   border: 1px solid #8a8a8a;
   padding: 9px 24px 9px 35px;

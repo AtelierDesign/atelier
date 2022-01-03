@@ -1,5 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
+import { DefaultButton } from '@components/DefaultButton';
+import { Box } from '@design-system/box';
 
 const SocialLogin = ({ onSubmit }) => {
   const providers = ['twitter'];
@@ -7,26 +9,27 @@ const SocialLogin = ({ onSubmit }) => {
 
   return (
     <>
-      <div className="or-login-with">Or login with</div>
-      {providers.map(provider => {
-        return (
-          <div key={provider}>
-            <button
-              type="submit"
-              className="social-btn"
-              onClick={() => {
-                setIsRedirecting(true);
-                onSubmit(provider);
-              }}
-              key={provider}
-              style={{ backgroundImage: `url(${provider}.png)` }}>
-              {/* turns "google" to "Google" */}
-              {provider.replace(/^\w/, c => c.toUpperCase())}
-            </button>
-          </div>
-        );
-      })}
-      {isRedirecting && <div className="redirecting">Redirecting...</div>}
+      <Box css={{ alignItems: 'center', textAlign: 'center' }}>
+        <div>Or login with</div>
+        {providers.map(provider => {
+          return (
+            <div key={provider}>
+              <DefaultButton
+                type="submit"
+                onClick={() => {
+                  setIsRedirecting(true);
+                  onSubmit(provider);
+                }}
+                key={provider}
+                style={{ backgroundImage: `url(${provider}.png)` }}>
+                {/* turns "google" to "Google" */}
+                {provider.replace(/^\w/, c => c.toUpperCase())}
+              </DefaultButton>
+            </div>
+          );
+        })}
+        {isRedirecting && <div className="redirecting">Redirecting...</div>}
+      </Box>
     </>
   );
 };

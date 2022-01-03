@@ -2,17 +2,19 @@ import { useState, useEffect, useContext } from 'react';
 import Router from 'next/router';
 import { magic } from '@lib/magic';
 import { UserContext } from '@lib/UserContext';
-import EmailForm from '@components/Magic/EmailForm';
-import SocialLogin from '@components/Magic/SocialLogin';
+import { EmailForm } from '@components/Magic/EmailForm';
+import { SocialLogin } from '@components/Magic/SocialLogin';
+import { Heading } from '@design-system/heading';
+import { Card } from '@components/Card';
 
 import { styled } from '@stitches/react';
 
-const LoginBox = styled('div', {
+const SignupBox = styled('div', {
   zIndex: '10',
   width: '100vw',
   minWidth: '100vw',
   height: '100%',
-  backgroundColor: 'rgba(240, 240, 240, 0.3)',
+  backgroundColor: '$gray12',
   display: 'block',
   position: 'relative',
   margin: 'auto',
@@ -24,7 +26,7 @@ const LoginBox = styled('div', {
   overflowX: 'hidden',
 });
 
-const Login = () => {
+const SignUp = () => {
   const [disabled, setDisabled] = useState(false);
   const [user, setUser] = useContext(UserContext);
 
@@ -56,7 +58,7 @@ const Login = () => {
         // Set the UserContext to the now logged in user
         const userMetadata = await magic.user.getMetadata();
         await setUser(userMetadata);
-        Router.push('/');
+        Router.push('/profile');
       }
     } catch (error) {
       setDisabled(false); // re-enable login button - user may have requested to edit their email
@@ -72,13 +74,16 @@ const Login = () => {
   }
 
   return (
-    <div>
-      <LoginBox>
+    <SignupBox>
+      <Card>
+        <Heading size="1" css={{ color: '$white' }}>
+          SIGN UP
+        </Heading>
         <EmailForm disabled={disabled} onEmailSubmit={handleLoginWithEmail} />
         <SocialLogin onSubmit={handleLoginWithSocial} />
-      </LoginBox>
-    </div>
+      </Card>
+    </SignupBox>
   );
 };
 
-export default Login;
+export default SignUp;
