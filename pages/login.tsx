@@ -2,26 +2,27 @@ import { useState, useEffect, useContext } from 'react';
 import Router from 'next/router';
 import { magic } from '@lib/magic';
 import { UserContext } from '@lib/UserContext';
+import { Box } from '@design-system/box';
+import { Container } from '@design-system/container';
+import { Section } from '@design-system/section';
 import EmailForm from '@components/Magic/EmailForm';
 import SocialLogin from '@components/Magic/SocialLogin';
 
 import { styled } from '@stitches/react';
 
-const LoginBox = styled('div', {
-  zIndex: '10',
-  width: '100vw',
-  minWidth: '100vw',
-  height: '100%',
-  backgroundColor: 'rgba(240, 240, 240, 0.3)',
-  display: 'block',
-  position: 'relative',
+const CoverBox = styled('div', {
+  zIndex: '200',
+  position: 'absolute',
+  top: '50%',
+  left: '50%',
+  transform: 'translate(-50%, -50%)',
+  width: '100%',
+  textAlign: 'center',
+  alignItems: 'center',
   margin: 'auto',
-  opacity: '0.9',
-  backdropFilter: 'invert(10%) blur(10px)',
-  saturate: '300%',
+  padding: '1rem',
 
-  overflowY: 'hidden',
-  overflowX: 'hidden',
+  backgroundColor: '#000',
 });
 
 const Login = () => {
@@ -72,12 +73,14 @@ const Login = () => {
   }
 
   return (
-    <div>
-      <LoginBox>
-        <EmailForm disabled={disabled} onEmailSubmit={handleLoginWithEmail} />
-        <SocialLogin onSubmit={handleLoginWithSocial} />
-      </LoginBox>
-    </div>
+    <CoverBox>
+      <Section size="1" css={{ alignItems: 'center', margin: 'auto' }}>
+        <Container size="3" css={{ ai: 'center', margin: 'auto', textAlign: 'center' }}>
+          <EmailForm disabled={disabled} onEmailSubmit={handleLoginWithEmail} />
+          <SocialLogin onSubmit={handleLoginWithSocial} />
+        </Container>
+      </Section>
+    </CoverBox>
   );
 };
 

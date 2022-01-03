@@ -140,21 +140,6 @@ form {
   word-wrap: break-word;
 }
 
-form,
-label {
-  display: flex;
-  flex-flow: column;
-  text-align: center;
-}
-.form-header {
-  font-size: 22px;
-  margin: 25px 0;
-}
-.input-wrapper {
-  width: 80%;
-  margin: 0 auto 20px;
-}
-
 nav {
   max-width: 45rem;
   margin: 0 auto 50px;
@@ -175,7 +160,7 @@ li:first-child {
 
 .magic-container {
   max-width: 42rem;
-  margin: 0 auto;
+  margin: auto;
   padding: 0 10px;
 }
 
