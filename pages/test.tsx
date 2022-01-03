@@ -1,5 +1,4 @@
 import React from 'react';
-import { Subscribe } from '@components/Subscribe';
 
 import { styled } from '@stitches/react';
 
@@ -18,9 +17,7 @@ const CoverBox = styled('div', {
 export default function Test() {
   return (
     <>
-      <CoverBox>
-        <Subscribe />
-      </CoverBox>
+      <CoverBox></CoverBox>
     </>
   );
 }

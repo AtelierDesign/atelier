@@ -1,6 +1,13 @@
+import Router from 'next/router';
 import { Box, box } from 'design-system/box';
 import { AppProps } from 'next/app';
-import Head from 'next/head';
+
+// MAGIC LABS
+import { magic } from '../lib/magic';
+import { useState, useEffect } from 'react';
+import { UserContext } from '../lib/UserContext';
+
+// STITCHES.DEV
 import { css, globalCss } from 'stitches.config';
 import { reset } from '@styles/reset';
 import '../styles.css';
@@ -16,6 +23,20 @@ const appWrapper = css({
 });
 
 const App = ({ Component, pageProps }: AppProps) => {
+  const [user, setUser] = useState();
+
+  useEffect(() => {
+    setUser({ loading: true });
+    magic.user.isLoggedIn().then(isLoggedIn => {
+      if (isLoggedIn) {
+        magic.user.getMetadata().then(userData => setUser(userData));
+      } else {
+        Router.push('/login');
+        setUser({ user: null });
+      }
+    });
+  }, []);
+
   globalCss(reset, {
     'body, button': {
       backgroundColor: '$slate1',
@@ -24,30 +45,26 @@ const App = ({ Component, pageProps }: AppProps) => {
   });
 
   return (
-    <Box css={{ backgroundColor: '$slate1' }}>
-      <Head>
-        <title>Design System</title>
-        <link rel="stylesheet" href="https://develop.modulz.app/fonts/fonts.css" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
-      </Head>
-
-      <div
-        className={appWrapper({
-          display: 'flex',
-          flexDirection: 'column',
-        })}>
-        <div className={box({ flex: 1 })}>
-          <NextNprogress
-            color="linear-gradient(to right, #b5bdc8 0%,#828c95 36%,#28343b 100%)"
-            startPosition={0.3}
-            stopDelayMs={300}
-            height={3}
-            showOnShallow={true}
-          />
-          <Component {...pageProps} />
+    <UserContext.Provider value={[user, setUser]}>
+      <Box css={{ backgroundColor: '$slate1' }}>
+        <div
+          className={appWrapper({
+            display: 'flex',
+            flexDirection: 'column',
+          })}>
+          <div className={box({ flex: 1 })}>
+            <NextNprogress
+              color="linear-gradient(to right, #b5bdc8 0%,#828c95 36%,#28343b 100%)"
+              startPosition={0.3}
+              stopDelayMs={300}
+              height={3}
+              showOnShallow={true}
+            />
+            <Component {...pageProps} />
+          </div>
         </div>
-      </div>
-    </Box>
+      </Box>
+    </UserContext.Provider>
   );
 };
 

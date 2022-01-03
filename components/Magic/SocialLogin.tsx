@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 
-export const SocialLogin = ({ onSubmit }) => {
+const SocialLogin = ({ onSubmit }) => {
   const providers = ['twitter'];
   const [isRedirecting, setIsRedirecting] = useState(false);
 
@@ -30,3 +30,5 @@ export const SocialLogin = ({ onSubmit }) => {
     </>
   );
 };
+
+export default SocialLogin;
