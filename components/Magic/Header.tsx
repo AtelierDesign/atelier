@@ -62,19 +62,17 @@ export const Header = () => {
               }}>
               ATELIER®
             </Text>
-            {/*<Image className="logo" alt="logo" src="/butterfly_logo.svg" width={80} height={18} />*/}
           </Box>
         </NextLink>
 
         {/* NAVIGATION SECTION */}
         <Flex as="nav" css={{ ai: 'center', px: '0px', fontFamily: '$inter', fontSize: '12px' }}>
           <ThemeToggle /> {/* <!-- THEME SWITCH --> */}
-          <NextLink passHref>
+          <NextLink>
             <Link
               onClick={logout}
               variant="subtle"
               css={{
-                // display: 'none',
                 color: '$gray12',
                 mr: '$5',
                 '@bp2': { display: 'block', mr: '$5' },
