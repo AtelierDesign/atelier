@@ -2,8 +2,8 @@ import { useState, useEffect, useContext } from 'react';
 import Router from 'next/router';
 import { magic } from '@lib/magic';
 import { UserContext } from '@lib/UserContext';
-import EmailForm from '@components/Magic/email-form';
-import SocialLogin from '@components/Magic/social-login';
+import EmailForm from '@components/Magic/Email';
+import SocialLogin from '@components/Magic/SocialLogin';
 
 import { styled } from '@stitches/react';
 
@@ -70,7 +70,7 @@ const Login = () => {
     <div>
       <LoginBox>
         <EmailForm disabled={disabled} onEmailSubmit={handleLoginWithEmail} />
-        <SocialLogins onSubmit={handleLoginWithSocial} />
+        <SocialLogin onSubmit={handleLoginWithSocial} />
       </LoginBox>
     </div>
   );

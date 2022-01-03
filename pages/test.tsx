@@ -1,4 +1,5 @@
 import React from 'react';
+import { Password } from '@components/Forms/Password';
 
 import { styled } from '@stitches/react';
 
@@ -17,7 +18,9 @@ const CoverBox = styled('div', {
 export default function Test() {
   return (
     <>
-      <CoverBox></CoverBox>
+      <CoverBox>
+        <Password />
+      </CoverBox>
     </>
   );
 }
