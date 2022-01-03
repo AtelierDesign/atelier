@@ -2,7 +2,7 @@ import { useContext } from 'react';
 import { UserContext } from '@lib/UserContext';
 import Loading from '@components/Magic/Loading';
 import Header from '@components/Magic/Header';
-import FooterMain from '@components/FooterMain';
+import { FooterMain } from '@components/FooterMain';
 import { Text } from '@design-system/text';
 
 import { styled } from '@stitches/react';
