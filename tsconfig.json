@@ -6,6 +6,7 @@
       "@components/*": ["components/*"],
       "@styles/*": ["styles/*"],
       "@utils/*": ["utils/*"],
+      "@lib/*": ["lib/*"],
       "@test/*": ["test/*"]
     },
     "target": "es5",
@@ -23,6 +24,6 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "exclude": ["node_modules", ".next", "out"],
+  "exclude": ["node_modules"],
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.js"]
 }
