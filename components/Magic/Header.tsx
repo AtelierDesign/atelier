@@ -9,7 +9,7 @@ import { Text } from '@design-system/text';
 import { Link } from '@design-system/link';
 import { ThemeToggle } from '@components/ThemeToggle';
 
-const Header = () => {
+export const Header = () => {
   const [user, setUser] = useContext(UserContext);
 
   const logout = () => {
@@ -87,5 +87,3 @@ const Header = () => {
     </>
   );
 };
-
-export default Header;

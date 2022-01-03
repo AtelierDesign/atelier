@@ -5,8 +5,8 @@ import { UserContext } from '@lib/UserContext';
 import { Box } from '@design-system/box';
 import { Container } from '@design-system/container';
 import { Section } from '@design-system/section';
-import EmailForm from '@components/Magic/EmailForm';
-import SocialLogin from '@components/Magic/SocialLogin';
+import { EmailForm } from '@components/Magic/EmailForm';
+import { SocialLogin } from '@components/Magic/SocialLogin';
 
 const Login = () => {
   const [disabled, setDisabled] = useState(false);

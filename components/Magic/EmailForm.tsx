@@ -27,7 +27,7 @@ const CardParent = styled('div', {
   textAlign: 'center',
 });
 
-const EmailForm = ({ onEmailSubmit, disabled }) => {
+export const EmailForm = ({ onEmailSubmit, disabled }) => {
   const [email, setEmail] = useState('');
 
   const handleSubmit = async e => {
@@ -61,5 +61,3 @@ const EmailForm = ({ onEmailSubmit, disabled }) => {
     </>
   );
 };
-
-export default EmailForm;

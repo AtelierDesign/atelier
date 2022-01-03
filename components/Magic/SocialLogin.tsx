@@ -4,7 +4,7 @@ import { DefaultButton } from '@components/DefaultButton';
 import { Box } from '@design-system/box';
 import { Text } from '@design-system/text';
 
-const SocialLogin = ({ onSubmit }) => {
+export const SocialLogin = ({ onSubmit }) => {
   const providers = ['twitter'];
   const [isRedirecting, setIsRedirecting] = useState(false);
 
@@ -38,5 +38,3 @@ const SocialLogin = ({ onSubmit }) => {
     </>
   );
 };
-
-export default SocialLogin;

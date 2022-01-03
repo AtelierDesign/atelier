@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 import { UserContext } from '@lib/UserContext';
-import Loading from '@components/Loading';
+import { Loading } from '@components/Magic/Loading';
 
 const Profile = () => {
   const [user] = useContext(UserContext);

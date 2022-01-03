@@ -24,7 +24,7 @@ const Card = styled('div', {
   height: '120px',
 });
 
-const Footer = () => {
+export const Footer = () => {
   return (
     <Box
       css={{
@@ -190,5 +190,3 @@ const Footer = () => {
     </Box>
   );
 };
-
-export default Footer;
