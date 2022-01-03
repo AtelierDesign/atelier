@@ -140,12 +140,6 @@ form {
   word-wrap: break-word;
 }
 
-nav {
-  max-width: 45rem;
-  margin: 0 auto 50px;
-  padding: 1.25rem 1.25rem;
-  border-bottom: 1px solid #f0f0f0;
-}
 ul {
   display: flex;
   list-style: none;
@@ -156,16 +150,4 @@ li {
 }
 li:first-child {
   margin-left: auto;
-}
-
-.magic-container {
-  max-width: 42rem;
-  margin: auto;
-  padding: 0 10px;
-}
-
-.container {
-  max-width: 42rem;
-  margin: 0 auto;
-  padding: 0 10px;
 }

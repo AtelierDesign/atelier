@@ -8,23 +8,6 @@ import { Section } from '@design-system/section';
 import EmailForm from '@components/Magic/EmailForm';
 import SocialLogin from '@components/Magic/SocialLogin';
 
-import { styled } from '@stitches/react';
-
-const CoverBox = styled('div', {
-  zIndex: '200',
-  position: 'absolute',
-  top: '50%',
-  left: '50%',
-  transform: 'translate(-50%, -50%)',
-  width: '100%',
-  textAlign: 'center',
-  alignItems: 'center',
-  margin: 'auto',
-  padding: '1rem',
-
-  backgroundColor: '#000',
-});
-
 const Login = () => {
   const [disabled, setDisabled] = useState(false);
   const [user, setUser] = useContext(UserContext);
@@ -73,14 +56,14 @@ const Login = () => {
   }
 
   return (
-    <CoverBox>
-      <Section size="1" css={{ alignItems: 'center', margin: 'auto' }}>
-        <Container size="3" css={{ ai: 'center', margin: 'auto', textAlign: 'center' }}>
-          <EmailForm disabled={disabled} onEmailSubmit={handleLoginWithEmail} />
+    <div>
+      <Section size="4" css={{ display: 'flex', alignItems: 'center', margin: 'auto' }}>
+        <Container size="2" css={{ alignItems: 'center', margin: 'auto', textAlign: 'center' }}>
+          <EmailForm disabled={disabled} onEmailSubmit={handleLoginWithEmail}></EmailForm>
           <SocialLogin onSubmit={handleLoginWithSocial} />
         </Container>
       </Section>
-    </CoverBox>
+    </div>
   );
 };
 

@@ -2,26 +2,23 @@ import { useContext } from 'react';
 import { UserContext } from '@lib/UserContext';
 import Loading from '@components/Magic/Loading';
 import Header from '@components/Magic/Header';
-import { FooterMain } from '@components/FooterMain';
 import { Text } from '@design-system/text';
 
 import { styled } from '@stitches/react';
 
 const CoverBox = styled('div', {
-  zIndex: '10',
-  width: '100vw',
-  minWidth: '100vw',
-  height: '100%',
-  backgroundColor: '$gray12',
-  display: 'block',
-  position: 'relative',
+  zIndex: '200',
+  position: 'absolute',
+  top: '50%',
+  left: '50%',
+  transform: 'translate(-50%, -50%)',
+  width: '100%',
+  textAlign: 'center',
+  alignItems: 'center',
   margin: 'auto',
-  opacity: '0.9',
-  backdropFilter: 'invert(10%) blur(10px)',
-  saturate: '300%',
+  padding: '1rem',
 
-  overflowY: 'hidden',
-  overflowX: 'hidden',
+  backgroundColor: '$white',
 });
 
 const Auth = (): JSX.Element => {
@@ -36,12 +33,10 @@ const Auth = (): JSX.Element => {
           <>
             <Header />
             <CoverBox>
-              <Text size="1" css={{ color: '$white' }}>
-                You're now logged in!
+              <Text size="3" css={{ color: '$gray12', fontFamily: '$neuewide', fontWeight: '700' }}>
+                YOU'RE IN.
               </Text>
             </CoverBox>
-
-            <FooterMain />
           </>
         )
       )}

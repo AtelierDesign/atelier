@@ -3,19 +3,25 @@ import { DefaultButton } from '@components/DefaultButton';
 import { TextField } from '@design-system/text-field';
 import { Box } from '@design-system/box';
 import { Container } from '@design-system/container';
+import { Flex } from '@design-system/flex';
+import { Heading } from '@design-system/heading';
+import { Copyrights } from '@components/Copyrights';
 
 import { styled } from '@stitches/react';
 
 const CardParent = styled('div', {
   width: '400px',
-  minWidth: '400px',
-  height: '400px',
-  backgroundColor: '#000',
+  height: 'auto',
+  backgroundColor: '$light100',
   display: 'flex',
+  flexDirection: 'column',
   position: 'relative',
   border: '1px solid $gray11',
   borderRadius: '12px',
-  marginTop: '18px',
+  marginTop: '28px',
+  marginLeft: '28px',
+  marginRight: '28px',
+  marginBottom: '28px',
   padding: '20px',
   alignItems: 'center',
   textAlign: 'center',
@@ -31,20 +37,27 @@ const EmailForm = ({ onEmailSubmit, disabled }) => {
 
   return (
     <>
-      <CardParent>
-        <form onSubmit={handleSubmit}>
-          <TextField
-            size="2"
-            type="email"
-            autoFocus
-            onChange={e => setEmail(e.target.value)}
-            placeholder="Email"
-          />
-          <DefaultButton as="a" onClick={handleSubmit}>
-            Send Magic Link
-          </DefaultButton>
-        </form>
-      </CardParent>
+      <Flex css={{ ai: 'center' }}>
+        <CardParent>
+          <Heading size="2" css={{ paddingTop: '18px' }}>
+            Sign Up
+          </Heading>
+          <form onSubmit={handleSubmit}>
+            <TextField
+              size="2"
+              type="email"
+              autoFocus
+              onChange={e => setEmail(e.target.value)}
+              placeholder="Email"
+            />
+            <DefaultButton as="a" onClick={handleSubmit}>
+              Send Magic Link
+            </DefaultButton>
+          </form>
+
+          <Copyrights />
+        </CardParent>
+      </Flex>
     </>
   );
 };

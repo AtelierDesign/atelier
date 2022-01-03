@@ -74,7 +74,7 @@ const Header = () => {
               onClick={logout}
               variant="subtle"
               css={{
-                display: 'none',
+                // display: 'none',
                 color: '$gray12',
                 mr: '$5',
                 '@bp2': { display: 'block', mr: '$5' },
