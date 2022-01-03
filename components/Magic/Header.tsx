@@ -69,7 +69,7 @@ export const Header = () => {
         {/* NAVIGATION SECTION */}
         <Flex as="nav" css={{ ai: 'center', px: '0px', fontFamily: '$inter', fontSize: '12px' }}>
           <ThemeToggle /> {/* <!-- THEME SWITCH --> */}
-          <NextLink href="/api/login" passHref>
+          <NextLink passHref>
             <Link
               onClick={logout}
               variant="subtle"
