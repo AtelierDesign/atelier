@@ -61,7 +61,7 @@ const TwitterButton = styled('button', {
 });
 
 export const SocialLogin = ({ onSubmit }) => {
-  const providers = ['twitter'];
+  const providers = ['twitter', 'Github'];
   const [isRedirecting, setIsRedirecting] = useState(false);
 
   return (
@@ -83,22 +83,20 @@ export const SocialLogin = ({ onSubmit }) => {
             }}>
             {providers.map(provider => {
               return (
-                <div key={provider}>
-                  <TwitterButton
-                    as="button"
-                    type="submit"
-                    onClick={() => {
-                      setIsRedirecting(true);
-                      onSubmit(provider);
-                    }}
-                    key={provider}
-                    style={{ backgroundImage: `url(${provider}.png)` }}>
-                    <TwitterLogoIcon />
-                    {` `}
-                    Sign in with{` `}
-                    {provider.replace(/^\w/, c => c.toUpperCase())}
-                  </TwitterButton>
-                </div>
+                <TwitterButton
+                  as="button"
+                  type="submit"
+                  key={provider}
+                  onClick={() => {
+                    setIsRedirecting(true);
+                    onSubmit(provider);
+                  }}
+                  style={{ backgroundImage: `url(${provider}.png)` }}>
+                  <TwitterLogoIcon />
+                  {` `}
+                  Sign in with{` `}
+                  {provider.replace(/^\w/, c => c.toUpperCase())}
+                </TwitterButton>
               );
             })}
 

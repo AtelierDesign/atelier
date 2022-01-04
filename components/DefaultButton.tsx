@@ -1,7 +1,7 @@
 import { styled } from '../stitches.config';
 
 export const DefaultButton = styled('button', {
-  backgroundColor: '$orange9',
+  backgroundColor: '$lime9',
   color: 'white',
   paddingLeft: '25px',
   paddingRight: '25px',

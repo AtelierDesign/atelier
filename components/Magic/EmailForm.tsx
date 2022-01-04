@@ -41,7 +41,7 @@ const MagicButton = styled('button', {
   paddingRight: '30px',
   py: '6px',
   height: '32px',
-  borderRadius: '8px',
+  borderRadius: '6px',
   border: '1px solid transparent',
   lineHeight: '1',
   width: '100%',
