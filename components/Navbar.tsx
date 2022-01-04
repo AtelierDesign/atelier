@@ -38,8 +38,6 @@ export const Navbar = () => {
           width: '100vw',
           backdropFilter: 'blur(10px)',
           saturate: '200%',
-          borderBottomWidth: '1px',
-          brc: '$lime9',
 
           zIndex: '9999',
         }}>
@@ -108,8 +106,8 @@ export const Navbar = () => {
             variant="subtle"
             css={{
               color: '$gray12',
-              mr: '$5',
-              '@bp2': { display: 'block', mr: '$5' },
+              mr: '$3',
+              '@bp2': { display: 'block', mr: '$3' },
               '&:hover': { cursor: 'pointer' },
             }}>
             Logout
