@@ -1,6 +1,9 @@
-import Head from 'next/head';
+// REACT + NEXT IMPORTS
 import React from 'react';
+import Head from 'next/head';
+import Image from 'next/image';
 
+// ATELIER DESIGN SYSTEM IMPORTS
 import { Box } from '@design-system/box';
 import { Container } from '@design-system/container';
 import { Section } from '@design-system/section';
@@ -17,10 +20,11 @@ import { OneCol } from '@components/OneCol';
 import { SocialSection } from '@components/SocialSection';
 import { ArrowRightIcon } from '@radix-ui/react-icons';
 import { CursorArrowIcon } from '@radix-ui/react-icons';
-import Image from 'next/image';
 
+// STITCH IMPORTS
 import { styled } from '@stitches/react';
 
+// STYLED
 const GridX = styled('div', {
   flow: 'column',
   overflowX: 'scroll',
@@ -130,6 +134,7 @@ const ImageArrow = styled('button', {
   },
 });
 
+// APP BEGIN / HOMEPAGE
 const Atelier = () => {
   return (
     <div>
@@ -138,15 +143,10 @@ const Atelier = () => {
       </Head>
 
       <Box>
-        {/* NAVBAR */}
+        {/* <!-- NAVBAR, HERO, ONE COLUMN SPANNER, AND SPACER --> */}
         <Navbar />
-
-        {/* HOMEPAGE CONTAINER */}
         <Hero />
-
-        {/* LARGE ONE COLUMN CONTAINER */}
         <OneCol />
-
         <SmallSpacer />
 
         <Box css={{ paddingBottom: '50px', bc: '$slate1' }}>

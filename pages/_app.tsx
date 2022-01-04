@@ -27,12 +27,14 @@ const App = ({ Component, pageProps }: AppProps) => {
   const router = useRouter();
   const [user, setUser] = useState(null);
 
+  // DETERMINE WHETHER USER IS LOGGED IN OR NOT / ON FIRST LOAD
   useEffect(() => {
     setUser({ loading: true });
     magic.user.isLoggedIn().then(isLoggedIn => {
       if (isLoggedIn) {
         magic.user.getMetadata().then(userData => setUser(userData));
       } else {
+        // IF NOT LOGGED IN PUSH TO LOGIN
         router.push('/login');
         setUser({ user: null });
       }
@@ -51,6 +53,7 @@ const App = ({ Component, pageProps }: AppProps) => {
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
       </Head>
+
       <Box css={{ backgroundColor: '$slate1' }}>
         <div
           className={appWrapper({

@@ -75,7 +75,7 @@ export const EmailForm = ({ onEmailSubmit, disabled }) => {
             onChange={e => setEmail(e.target.value)}
             placeholder="you@ady.world"
           />
-          <MagicButton onClick={handleSubmit}>Login / Sign Up</MagicButton>
+          <MagicButton onClick={handleSubmit}>Login or Sign Up</MagicButton>
         </form>
       </Card>
     </>

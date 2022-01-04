@@ -10,7 +10,6 @@ import { Container } from '@design-system/container';
 import { Section } from '@design-system/section';
 import { EmailForm } from '@components/Magic/EmailForm';
 import { SocialLogin } from '@components/Magic/SocialLogin';
-import { Copyrights } from '@components/Copyrights';
 
 import { styled } from '@stitches/react';
 
@@ -50,25 +49,6 @@ const CoverBox = styled('div', {
   padding: '0',
   overflowY: 'hidden',
   overflowX: 'hidden',
-});
-
-const LoginFooter = styled('div', {
-  width: '100%',
-  height: '50px',
-  backgroundColor: '$translucent',
-  color: '#FFF',
-  display: 'block',
-  position: 'absolute',
-  bottom: '0',
-  left: '0',
-  right: '0',
-
-  margin: 'auto',
-  padding: '4px',
-  alignItems: 'center',
-  textAlign: 'center',
-
-  zIndex: '9999',
 });
 
 const Login = () => {
@@ -157,10 +137,6 @@ const Login = () => {
               <SocialLogin onSubmit={handleLoginWithSocial} />
             </Container>
           </Section>
-
-          <LoginFooter>
-            <Copyrights />
-          </LoginFooter>
         </CoverBox>
       </Box>
     </>

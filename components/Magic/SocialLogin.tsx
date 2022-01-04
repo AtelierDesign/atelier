@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
-import { DefaultButton } from '@components/DefaultButton';
+import { FormLine } from '@components/FormLine';
 import { Box } from '@design-system/box';
 import { Text } from '@design-system/text';
 import { Grid } from '@design-system/grid';
@@ -41,7 +41,7 @@ const TwitterButton = styled('button', {
   fontWeight: '700',
   fontSize: '12px',
   backgroundColor: '$gray3',
-  color: '$gray12',
+  color: '#1DA1F2',
   border: '1px solid $slate6',
   paddingLeft: '40px',
   paddingRight: '40px',
@@ -67,31 +67,44 @@ export const SocialLogin = ({ onSubmit }) => {
   return (
     <>
       <CardParent>
-        <Box
-          css={{ position: 'relative', zIndex: '9999', alignItems: 'center', textAlign: 'center' }}>
-          {providers.map(provider => {
-            return (
-              <div key={provider}>
-                <TwitterButton
-                  as="button"
-                  type="submit"
-                  onClick={() => {
-                    setIsRedirecting(true);
-                    onSubmit(provider);
-                  }}
-                  key={provider}
-                  style={{ backgroundImage: `url(${provider}.png)` }}>
-                  <TwitterLogoIcon />
-                  {` `}
-                  Sign in with{` `}
-                  {provider.replace(/^\w/, c => c.toUpperCase())}
-                </TwitterButton>
-              </div>
-            );
-          })}
+        <Text
+          size="1"
+          css={{ color: '$gray9', fontSize: '10px', fontFamily: '$inter', fontWeight: '700' }}>
+          LOGIN WITH SOCIAL
+        </Text>
+        <FormLine />
+        <form>
+          <Box
+            css={{
+              position: 'relative',
+              zIndex: '9999',
+              alignItems: 'center',
+              textAlign: 'center',
+            }}>
+            {providers.map(provider => {
+              return (
+                <div key={provider}>
+                  <TwitterButton
+                    as="button"
+                    type="submit"
+                    onClick={() => {
+                      setIsRedirecting(true);
+                      onSubmit(provider);
+                    }}
+                    key={provider}
+                    style={{ backgroundImage: `url(${provider}.png)` }}>
+                    <TwitterLogoIcon />
+                    {` `}
+                    Sign in with{` `}
+                    {provider.replace(/^\w/, c => c.toUpperCase())}
+                  </TwitterButton>
+                </div>
+              );
+            })}
 
-          {isRedirecting && <div className="redirecting">Authenticating...</div>}
-        </Box>
+            {isRedirecting && <div className="redirecting">Authenticating...</div>}
+          </Box>
+        </form>
       </CardParent>
     </>
   );

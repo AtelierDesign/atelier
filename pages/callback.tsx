@@ -7,12 +7,14 @@ import { Loading } from '@components/Magic/Loading';
 const Callback = () => {
   const router = useRouter();
   const [user, setUser] = useContext(UserContext);
-  // The redirect contains a `provider` query param if the user is logging in with a social provider
+
+  // REDIRECT CONTAINS A 'PROVIDER' QUERY PARAM / IF USING SOCIAL PROVIDER.
   useEffect(() => {
     router.query.provider ? finishSocialLogin() : finishEmailRedirectLogin();
   }, [router.query]);
 
-  // `getRedirectResult()` returns an object with user data from Magic and the social provider
+  // getRedirectResult()
+  // RETURNS AN OBJECT WITH USER DATA FROM MAGIC AND THE SOCIAL PROVIDER.
   const finishSocialLogin = async () => {
     const result = await magic.oauth.getRedirectResult();
     const provider_data = result.oauth.userInfo;
@@ -20,13 +22,14 @@ const Callback = () => {
     authenticateWithServer(result.magic.idToken);
   };
 
-  // `loginWithCredential()` returns a didToken for the user logging in
+  // loginWithCredential()
+  // RRETURNS A DID TOKEN FOR THE USER
   const finishEmailRedirectLogin = () => {
     if (router.query.magic_credential)
       magic.auth.loginWithCredential().then(didToken => authenticateWithServer(didToken));
   };
 
-  // Send token to server to validate
+  // SEND TOKEN TO SERVER TO VALIDATE
   const authenticateWithServer = async didToken => {
     const res = await fetch('/api/login', {
       method: 'POST',
@@ -37,10 +40,10 @@ const Callback = () => {
     });
 
     if (res.status === 200) {
-      // Set the UserContext to the now logged in user
+      // SET THE USER CONTEXT TO THE NOW LOGGED IN USER
       const userMetadata = await magic.user.getMetadata();
       await setUser(userMetadata);
-      Router.push('/atelier');
+      Router.push('/atelier'); // PUSH TO HOMEPAGE
     }
   };
 

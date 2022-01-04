@@ -90,8 +90,14 @@ export const TextField = styled('input', {
         px: '$2',
         width: '100%',
         lineHeight: '$sizes$6',
+
         '&:-webkit-autofill::first-line': {
           fontSize: '13px',
+        },
+
+        '&:focus': {
+          backgroundColor: '$loContrast',
+          boxShadow: 'inset 0px 0px 0px 1px $colors$lime6, 0px 0px 0px 1px $colors$lime6',
         },
       },
     },
