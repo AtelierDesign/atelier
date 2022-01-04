@@ -9,7 +9,7 @@ import Image from 'next/image';
 
 // RADIX-UI ICONS
 import { TwitterLogoIcon } from '@radix-ui/react-icons';
-import { GitHubLogoIcon } from '@radix-ui/react-icons';
+// import { GitHubLogoIcon } from '@radix-ui/react-icons';
 
 import { styled } from '@stitches/react';
 
@@ -40,24 +40,81 @@ const TwitterButton = styled('button', {
   fontFamily: '$inter',
   fontWeight: '700',
   fontSize: '12px',
-  backgroundColor: '$gray4',
-  color: '$sky8',
+  backgroundColor: '$gray3',
+  color: '$gray12',
+  border: '1px solid $slate6',
   paddingLeft: '40px',
   paddingRight: '40px',
   py: '6px',
-  height: '36px',
-  borderRadius: '8px',
-  border: '2px solid transparent',
-  lineHeight: '1',
-  width: '98%',
+  height: '32px',
+  borderRadius: '6px',
+  lineHeight: '1.3rem',
+  width: '100%',
   position: 'relative',
 
   margin: '3px',
 
   '&:hover': {
     cursor: 'pointer',
+    backgroundColor: '$gray5',
   },
 });
+
+export const SocialLogin = ({ onSubmit }) => {
+  const providers = ['twitter'];
+  const [isRedirecting, setIsRedirecting] = useState(false);
+
+  return (
+    <>
+      <CardParent>
+        <Box
+          css={{ position: 'relative', zIndex: '9999', alignItems: 'center', textAlign: 'center' }}>
+          {providers.map(provider => {
+            return (
+              <div key={provider}>
+                <TwitterButton
+                  as="button"
+                  type="submit"
+                  onClick={() => {
+                    setIsRedirecting(true);
+                    onSubmit(provider);
+                  }}
+                  key={provider}
+                  style={{ backgroundImage: `url(${provider}.png)` }}>
+                  <TwitterLogoIcon />
+                  {` `}
+                  Sign in with{` `}
+                  {provider.replace(/^\w/, c => c.toUpperCase())}
+                </TwitterButton>
+              </div>
+            );
+          })}
+
+          {isRedirecting && <div className="redirecting">Authenticating...</div>}
+        </Box>
+      </CardParent>
+    </>
+  );
+};
+
+{
+  /* <!-- GITHUB AND APPLE OPTIONS // NEED TO GET APPLE DEV ACCOUNT --> */
+}
+{
+  /*
+<GithubButton>
+  <GitHubLogoIcon />
+  {` `}
+  Sign in with GitHub
+</GithubButton>
+
+<SignInWithApple>
+  <Image src="/svg/apple.svg" width={15} height={15} alt="Apple Logo" />
+  {` `}
+  Sign in with Apple
+</SignInWithApple>
+
+
 
 const GithubButton = styled('button', {
   zIndex: '400',
@@ -107,62 +164,7 @@ const SignInWithApple = styled('button', {
   },
 });
 
-export const SocialLogin = ({ onSubmit }) => {
-  const providers = ['twitter'];
-  const [isRedirecting, setIsRedirecting] = useState(false);
 
-  return (
-    <>
-      <CardParent>
-        <Box
-          css={{ position: 'relative', zIndex: '9999', alignItems: 'center', textAlign: 'center' }}>
-          <Text
-            css={{
-              fontFamily: '$inter',
-              fontSize: '13px',
-              fontWeight: '600',
-              lineHeight: '1',
-              padding: '10px',
-            }}>
-            ( or )
-          </Text>
-          {providers.map(provider => {
-            return (
-              <form>
-                <div key={provider}>
-                  <TwitterButton
-                    type="submit"
-                    onClick={() => {
-                      setIsRedirecting(true);
-                      onSubmit(provider);
-                    }}
-                    key={provider}
-                    style={{ backgroundImage: `url(${provider}.png)` }}>
-                    {/* turns "google" to "Google" */}
-                    <TwitterLogoIcon />
-                    {` `}
-                    Sign in with{` `}
-                    {provider.replace(/^\w/, c => c.toUpperCase())}
-                  </TwitterButton>
 
-                  <GithubButton>
-                    <GitHubLogoIcon />
-                    {` `}
-                    Sign in with GitHub
-                  </GithubButton>
-
-                  <SignInWithApple>
-                    <Image src="/svg/apple.svg" width={15} height={15} alt="Apple Logo" />
-                    {` `}
-                    Sign in with Apple
-                  </SignInWithApple>
-                </div>
-              </form>
-            );
-          })}
-          {isRedirecting && <div className="redirecting">Redirecting...</div>}
-        </Box>
-      </CardParent>
-    </>
-  );
-};
+*/
+}

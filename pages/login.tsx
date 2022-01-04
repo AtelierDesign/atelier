@@ -5,6 +5,7 @@ import Router from 'next/router';
 import { magic } from '@lib/magic';
 import { UserContext } from '@lib/UserContext';
 import { Box } from '@design-system/box';
+import { Text } from '@design-system/text';
 import { Container } from '@design-system/container';
 import { Section } from '@design-system/section';
 import { EmailForm } from '@components/Magic/EmailForm';
@@ -13,13 +14,34 @@ import { Copyrights } from '@components/Copyrights';
 
 import { styled } from '@stitches/react';
 
+const LogoDiv = styled('div', {
+  width: '100%',
+  height: '50px',
+  backgroundColor: '$translucent',
+  display: 'block',
+  position: 'absolute',
+  top: '0',
+  left: '0',
+  right: '0',
+
+  margin: 'auto',
+  paddingTop: '30px',
+  alignItems: 'center',
+  textAlign: 'center',
+
+  zIndex: '9999',
+});
+
 const CoverBox = styled('div', {
+  bc: '$gray12',
+
   display: 'flex',
   position: 'absolute',
   top: '50%',
   left: '50%',
   transform: 'translate(-50%, -50%)',
   width: '100%',
+  height: '100vh',
   textAlign: 'center',
   alignItems: 'center',
   flexWrap: 'nowrap',
@@ -45,6 +67,8 @@ const LoginFooter = styled('div', {
   padding: '4px',
   alignItems: 'center',
   textAlign: 'center',
+
+  zIndex: '9999',
 });
 
 const Login = () => {
@@ -98,6 +122,7 @@ const Login = () => {
     <>
       <Box
         css={{
+          bc: '$slate2',
           padding: '0px',
           height: '100vh',
           zIndex: '0',
@@ -108,9 +133,26 @@ const Login = () => {
           <title>Login / Sign up.</title>
         </Head>
 
+        <LogoDiv>
+          <Text
+            css={{
+              fontFamily: '$neuewide',
+              fontWeight: '800',
+              fontSize: '22px',
+              color: '$gray7',
+              lineHeight: 'normal',
+              letterSpacing: '-0.03rem',
+              '&:hover': {
+                color: '$gray8',
+              },
+            }}>
+            ATELIER®
+          </Text>
+        </LogoDiv>
+
         <CoverBox>
           <Section size="3" css={{ display: 'flex', alignItems: 'center', margin: 'auto' }}>
-            <Container size="1" css={{ alignItems: 'center', margin: 'auto', textAlign: 'center' }}>
+            <Container size="2" css={{ alignItems: 'center', margin: 'auto', textAlign: 'center' }}>
               <EmailForm disabled={disabled} onEmailSubmit={handleLoginWithEmail}></EmailForm>
               <SocialLogin onSubmit={handleLoginWithSocial} />
             </Container>

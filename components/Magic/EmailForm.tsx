@@ -8,7 +8,7 @@ import { Copyrights } from '@components/Copyrights';
 
 import { styled } from '@stitches/react';
 
-const CardParent = styled('div', {
+const Card = styled('div', {
   width: 'auto',
   height: 'auto',
   backgroundColor: '$white',
@@ -63,21 +63,21 @@ export const EmailForm = ({ onEmailSubmit, disabled }) => {
 
   return (
     <>
-      <CardParent>
-        <Heading size="2" css={{ paddingTop: '18px', paddingBottom: '18px', fontWeight: '800' }}>
-          Welcome to Atelier®
+      <Card>
+        <Heading size="3" css={{ paddingTop: '18px', paddingBottom: '18px', fontWeight: '800' }}>
+          Welcome.
         </Heading>
         <form onSubmit={handleSubmit}>
           <TextField
             size="2"
             type="email"
-            autoFocus
+            // autoFocus
             onChange={e => setEmail(e.target.value)}
-            placeholder="tim@ady.world"
+            placeholder="you@ady.world"
           />
           <MagicButton onClick={handleSubmit}>Login / Sign Up</MagicButton>
         </form>
-      </CardParent>
+      </Card>
     </>
   );
 };

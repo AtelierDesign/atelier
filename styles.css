@@ -111,17 +111,30 @@ form {
   flex-direction: column;
   margin: 0;
   padding: inherit;
-  min-width: none;
+  min-width: 300px;
   width: 100%;
 }
 
 /* MAGIC AUTH */
 
+.redirect-holder {
+  position: relative;
+  height: 20px;
+  text-align: center;
+  align-items: center;
+  padding-top: 20px;
+  margin: auto;
+
+  z-index: 9999;
+}
 .redirecting {
   font-family: sans-serif;
+  font-weight: 600;
   color: #000;
   font-size: 12px;
-  margin-bottom: 5px;
+  margin-top: 15px;
+
+  display: block;
 }
 
 .label {
