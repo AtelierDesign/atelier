@@ -63,23 +63,21 @@ export const EmailForm = ({ onEmailSubmit, disabled }) => {
 
   return (
     <>
-      <Flex css={{ ai: 'center' }}>
-        <CardParent>
-          <Heading size="2" css={{ paddingTop: '18px', paddingBottom: '18px', fontWeight: '800' }}>
-            Sign Up
-          </Heading>
-          <form onSubmit={handleSubmit}>
-            <TextField
-              size="2"
-              type="email"
-              autoFocus
-              onChange={e => setEmail(e.target.value)}
-              placeholder="tim@ady.world"
-            />
-            <MagicButton onClick={handleSubmit}>Send Magic Link</MagicButton>
-          </form>
-        </CardParent>
-      </Flex>
+      <CardParent>
+        <Heading size="2" css={{ paddingTop: '18px', paddingBottom: '18px', fontWeight: '800' }}>
+          Welcome to Atelier®
+        </Heading>
+        <form onSubmit={handleSubmit}>
+          <TextField
+            size="2"
+            type="email"
+            autoFocus
+            onChange={e => setEmail(e.target.value)}
+            placeholder="tim@ady.world"
+          />
+          <MagicButton onClick={handleSubmit}>Login / Sign Up</MagicButton>
+        </form>
+      </CardParent>
     </>
   );
 };

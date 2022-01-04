@@ -14,16 +14,16 @@ import Router from 'next/router';
 import { magic } from '@lib/magic';
 import { UserContext } from '@lib/UserContext';
 
-const [user, setUser] = useContext(UserContext);
-
-const logout = () => {
-  magic.user.logout().then(() => {
-    setUser({ user: null });
-    Router.push('/login');
-  });
-};
-
 export const Navbar = () => {
+  const [user, setUser] = useContext(UserContext);
+
+  const logout = () => {
+    magic.user.logout().then(() => {
+      setUser({ user: null });
+      Router.push('/login');
+    });
+  };
+
   return (
     <>
       <Flex

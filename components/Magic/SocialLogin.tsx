@@ -21,7 +21,7 @@ const CardParent = styled('div', {
   flexDirection: 'column',
   position: 'relative',
   // border: '1px solid $slate3',
-  borderRadius: '36px',
+  borderRadius: '32px',
   // boxShadow: 'inset 0 0 0 6px $colors$slate5',
 
   marginTop: '8px',
@@ -31,6 +31,8 @@ const CardParent = styled('div', {
   padding: '8px',
   alignItems: 'center',
   textAlign: 'center',
+
+  boxSizing: 'border-box',
 });
 
 const TwitterButton = styled('button', {
@@ -47,7 +49,7 @@ const TwitterButton = styled('button', {
   borderRadius: '8px',
   border: '2px solid transparent',
   lineHeight: '1',
-  width: '100%',
+  width: '98%',
   position: 'relative',
 
   margin: '3px',
@@ -71,7 +73,7 @@ const GithubButton = styled('button', {
   borderRadius: '8px',
   border: '2px solid transparent',
   lineHeight: '1',
-  width: '100%',
+  width: '98%',
   position: 'relative',
 
   margin: '3px',
@@ -95,7 +97,7 @@ const SignInWithApple = styled('button', {
   borderRadius: '8px',
   border: '2px solid transparent',
   lineHeight: '1',
-  width: '100%',
+  width: '98%',
   position: 'relative',
 
   margin: '3px',
@@ -122,38 +124,40 @@ export const SocialLogin = ({ onSubmit }) => {
               lineHeight: '1',
               padding: '10px',
             }}>
-            Or login with
+            ( or )
           </Text>
           {providers.map(provider => {
             return (
-              <div key={provider}>
-                <TwitterButton
-                  type="submit"
-                  onClick={() => {
-                    setIsRedirecting(true);
-                    onSubmit(provider);
-                  }}
-                  key={provider}
-                  style={{ backgroundImage: `url(${provider}.png)` }}>
-                  {/* turns "google" to "Google" */}
-                  <TwitterLogoIcon />
-                  {` `}
-                  Sign in with{` `}
-                  {provider.replace(/^\w/, c => c.toUpperCase())}
-                </TwitterButton>
+              <form>
+                <div key={provider}>
+                  <TwitterButton
+                    type="submit"
+                    onClick={() => {
+                      setIsRedirecting(true);
+                      onSubmit(provider);
+                    }}
+                    key={provider}
+                    style={{ backgroundImage: `url(${provider}.png)` }}>
+                    {/* turns "google" to "Google" */}
+                    <TwitterLogoIcon />
+                    {` `}
+                    Sign in with{` `}
+                    {provider.replace(/^\w/, c => c.toUpperCase())}
+                  </TwitterButton>
 
-                <GithubButton>
-                  <GitHubLogoIcon />
-                  {` `}
-                  Sign in with GitHub
-                </GithubButton>
+                  <GithubButton>
+                    <GitHubLogoIcon />
+                    {` `}
+                    Sign in with GitHub
+                  </GithubButton>
 
-                <SignInWithApple>
-                  <Image src="/svg/apple.svg" width={15} height={15} alt="Apple Logo" />
-                  {` `}
-                  Sign in with Apple
-                </SignInWithApple>
-              </div>
+                  <SignInWithApple>
+                    <Image src="/svg/apple.svg" width={15} height={15} alt="Apple Logo" />
+                    {` `}
+                    Sign in with Apple
+                  </SignInWithApple>
+                </div>
+              </form>
             );
           })}
           {isRedirecting && <div className="redirecting">Redirecting...</div>}

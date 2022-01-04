@@ -3,7 +3,7 @@ import { styled } from 'stitches.config';
 export const Section = styled('section', {
   // Reset
   boxSizing: 'border-box',
-  flexShrink: 0,
+  flexShrink: 1,
   '&::before': {
     boxSizing: 'border-box',
     content: '""',

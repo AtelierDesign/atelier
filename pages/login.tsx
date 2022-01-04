@@ -1,3 +1,5 @@
+import Head from 'next/head';
+
 import { useState, useEffect, useContext } from 'react';
 import Router from 'next/router';
 import { magic } from '@lib/magic';
@@ -12,15 +14,20 @@ import { Copyrights } from '@components/Copyrights';
 import { styled } from '@stitches/react';
 
 const CoverBox = styled('div', {
+  display: 'flex',
   position: 'absolute',
   top: '50%',
   left: '50%',
   transform: 'translate(-50%, -50%)',
   width: '100%',
   textAlign: 'center',
+  alignItems: 'center',
+  flexWrap: 'nowrap',
+  justifyContent: 'space-around',
   margin: 'auto',
   padding: '0',
   overflowY: 'hidden',
+  overflowX: 'hidden',
 });
 
 const LoginFooter = styled('div', {
@@ -88,18 +95,33 @@ const Login = () => {
   }
 
   return (
-    <CoverBox>
-      <Section size="3" css={{ display: 'flex', alignItems: 'center', margin: 'auto' }}>
-        <Container size="1" css={{ alignItems: 'center', margin: 'auto', textAlign: 'center' }}>
-          <EmailForm disabled={disabled} onEmailSubmit={handleLoginWithEmail}></EmailForm>
-          <SocialLogin onSubmit={handleLoginWithSocial} />
-        </Container>
-      </Section>
+    <>
+      <Box
+        css={{
+          padding: '0px',
+          height: '100vh',
+          zIndex: '0',
+          overflowY: 'hidden',
+          overflowX: 'hidden',
+        }}>
+        <Head>
+          <title>Login / Sign up.</title>
+        </Head>
 
-      <LoginFooter>
-        <Copyrights />
-      </LoginFooter>
-    </CoverBox>
+        <CoverBox>
+          <Section size="3" css={{ display: 'flex', alignItems: 'center', margin: 'auto' }}>
+            <Container size="1" css={{ alignItems: 'center', margin: 'auto', textAlign: 'center' }}>
+              <EmailForm disabled={disabled} onEmailSubmit={handleLoginWithEmail}></EmailForm>
+              <SocialLogin onSubmit={handleLoginWithSocial} />
+            </Container>
+          </Section>
+
+          <LoginFooter>
+            <Copyrights />
+          </LoginFooter>
+        </CoverBox>
+      </Box>
+    </>
   );
 };
 
