@@ -6,8 +6,22 @@ import { Text } from '@design-system/text';
 import { Link } from '@design-system/link';
 import { ArrowRightIcon } from '@radix-ui/react-icons';
 import { ThemeToggle } from '@components/ThemeToggle';
+// import { MenuNav } from './MenuNav';
 
-import { MenuNav } from './MenuNav';
+// MAGIC
+import { useContext } from 'react';
+import Router from 'next/router';
+import { magic } from '@lib/magic';
+import { UserContext } from '@lib/UserContext';
+
+const [user, setUser] = useContext(UserContext);
+
+const logout = () => {
+  magic.user.logout().then(() => {
+    setUser({ user: null });
+    Router.push('/login');
+  });
+};
 
 export const Navbar = () => {
   return (
@@ -89,27 +103,16 @@ export const Navbar = () => {
               Blog
             </Link>
           </NextLink>
-          <NextLink href="/api/login" passHref>
-            <Link
-              variant="subtle"
-              css={{
-                display: 'none',
-                color: '$gray12',
-                mr: '$5',
-                '@bp2': { display: 'block', mr: '$5' },
-              }}>
-              Login
-            </Link>
-          </NextLink>
           <Link
+            onClick={logout}
             variant="subtle"
             css={{
-              display: 'block',
               color: '$gray12',
-              mr: '$2',
+              mr: '$5',
               '@bp2': { display: 'block', mr: '$5' },
+              '&:hover': { cursor: 'pointer' },
             }}>
-            <MenuNav />
+            Logout
           </Link>
         </Flex>
       </Flex>
