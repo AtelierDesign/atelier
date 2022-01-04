@@ -7,7 +7,7 @@ export const TextField = styled('input', {
   boxSizing: 'border-box',
   fontFamily: '$inter',
   fontSize: '13px',
-  fontWeight: '500',
+  fontWeight: '600',
 
   margin: '0',
   outline: 'none',
@@ -49,7 +49,7 @@ export const TextField = styled('input', {
     fontFamily: '$inter',
     fontSize: '13px',
     fontWeight: '500',
-    letterSpacing: '-0.02rem',
+    letterSpacing: '-0.01rem',
     paddingLeft: '4px',
   },
 

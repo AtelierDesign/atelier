@@ -7,6 +7,38 @@ import { Container } from '@design-system/container';
 import { Section } from '@design-system/section';
 import { EmailForm } from '@components/Magic/EmailForm';
 import { SocialLogin } from '@components/Magic/SocialLogin';
+import { Copyrights } from '@components/Copyrights';
+
+import { styled } from '@stitches/react';
+
+const CoverBox = styled('div', {
+  position: 'absolute',
+  top: '50%',
+  left: '50%',
+  transform: 'translate(-50%, -50%)',
+  width: '100%',
+  textAlign: 'center',
+  margin: 'auto',
+  padding: '0',
+  overflowY: 'hidden',
+});
+
+const LoginFooter = styled('div', {
+  width: '100%',
+  height: '50px',
+  backgroundColor: '$translucent',
+  color: '#FFF',
+  display: 'block',
+  position: 'absolute',
+  bottom: '0',
+  left: '0',
+  right: '0',
+
+  margin: 'auto',
+  padding: '4px',
+  alignItems: 'center',
+  textAlign: 'center',
+});
 
 const Login = () => {
   const [disabled, setDisabled] = useState(false);
@@ -56,14 +88,18 @@ const Login = () => {
   }
 
   return (
-    <div>
-      <Section size="4" css={{ display: 'flex', alignItems: 'center', margin: 'auto' }}>
-        <Container size="2" css={{ alignItems: 'center', margin: 'auto', textAlign: 'center' }}>
+    <CoverBox>
+      <Section size="3" css={{ display: 'flex', alignItems: 'center', margin: 'auto' }}>
+        <Container size="1" css={{ alignItems: 'center', margin: 'auto', textAlign: 'center' }}>
           <EmailForm disabled={disabled} onEmailSubmit={handleLoginWithEmail}></EmailForm>
           <SocialLogin onSubmit={handleLoginWithSocial} />
         </Container>
       </Section>
-    </div>
+
+      <LoginFooter>
+        <Copyrights />
+      </LoginFooter>
+    </CoverBox>
   );
 };
 

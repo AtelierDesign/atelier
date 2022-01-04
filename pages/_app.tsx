@@ -40,7 +40,7 @@ const App = ({ Component, pageProps }: AppProps) => {
   }, []);
 
   globalCss(reset, {
-    'body, button': {
+    body: {
       backgroundColor: '$slate1',
       fontFamily: '$inter',
     },

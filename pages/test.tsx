@@ -1,5 +1,6 @@
 import React from 'react';
-import { Password } from '@components/Forms/Password';
+// import { IntervalLoader } from '@components/IntervalLoader';
+//import { AtelierFollow } from '@components/Three/AtelierFollow';
 
 import { styled } from '@stitches/react';
 
@@ -18,9 +19,7 @@ const CoverBox = styled('div', {
 export default function Test() {
   return (
     <>
-      <CoverBox>
-        <Password />
-      </CoverBox>
+      <CoverBox></CoverBox>
     </>
   );
 }

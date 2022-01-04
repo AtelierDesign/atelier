@@ -8,6 +8,7 @@ import { Flex } from '@design-system/flex';
 import { Text } from '@design-system/text';
 import { Link } from '@design-system/link';
 import { ThemeToggle } from '@components/ThemeToggle';
+import { ArrowRightIcon } from '@radix-ui/react-icons';
 
 export const Header = () => {
   const [user, setUser] = useContext(UserContext);
@@ -68,6 +69,23 @@ export const Header = () => {
         {/* NAVIGATION SECTION */}
         <Flex as="nav" css={{ ai: 'center', px: '0px', fontFamily: '$inter', fontSize: '12px' }}>
           <ThemeToggle /> {/* <!-- THEME SWITCH --> */}
+          <NextLink href="/shop" passHref>
+            <Link variant="subtle" css={{ mr: '$2', color: '$gray12', '@bp2': { mr: '$5' } }}>
+              Shop <ArrowRightIcon />
+            </Link>
+          </NextLink>
+          <NextLink href="https://docs.ady.world" passHref>
+            <Link
+              variant="subtle"
+              css={{
+                display: 'none',
+                color: '$gray12',
+                mr: '$5',
+                '@bp2': { display: 'block', mr: '$5' },
+              }}>
+              Documentation
+            </Link>
+          </NextLink>
           <Link
             onClick={logout}
             variant="subtle"
@@ -75,6 +93,7 @@ export const Header = () => {
               color: '$gray12',
               mr: '$5',
               '@bp2': { display: 'block', mr: '$5' },
+              '&:hover': { cursor: 'pointer' },
             }}>
             Logout
           </Link>

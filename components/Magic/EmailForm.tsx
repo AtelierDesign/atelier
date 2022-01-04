@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { DefaultButton } from '@components/DefaultButton';
 import { TextField } from '@design-system/text-field';
 import { Box } from '@design-system/box';
 import { Container } from '@design-system/container';
@@ -10,21 +9,48 @@ import { Copyrights } from '@components/Copyrights';
 import { styled } from '@stitches/react';
 
 const CardParent = styled('div', {
-  width: '400px',
+  width: 'auto',
   height: 'auto',
-  backgroundColor: '$light100',
+  backgroundColor: '$white',
   display: 'flex',
   flexDirection: 'column',
   position: 'relative',
-  border: '1px solid $gray11',
-  borderRadius: '12px',
-  marginTop: '28px',
-  marginLeft: '28px',
-  marginRight: '28px',
-  marginBottom: '28px',
-  padding: '20px',
+  // border: '1px solid $slate3',
+  borderRadius: '32px',
+  // boxShadow: 'inset 0 0 0 6px $colors$slate5',
+
+  marginTop: '8px',
+  marginLeft: '20px',
+  marginRight: '20px',
+  marginBottom: '8px',
+  padding: '8px',
   alignItems: 'center',
   textAlign: 'center',
+
+  boxSizing: 'border-box',
+});
+
+const MagicButton = styled('button', {
+  zIndex: '400',
+  fontFamily: '$inter',
+  fontWeight: '700',
+  fontSize: '12px',
+  backgroundColor: '$lime9',
+  color: 'white',
+  paddingLeft: '30px',
+  paddingRight: '30px',
+  py: '6px',
+  height: '32px',
+  borderRadius: '8px',
+  border: '1px solid transparent',
+  lineHeight: '1',
+  width: '100%',
+  position: 'relative',
+
+  '&:hover': {
+    backgroundColor: '$sky8',
+    cursor: 'pointer',
+  },
 });
 
 export const EmailForm = ({ onEmailSubmit, disabled }) => {
@@ -39,7 +65,7 @@ export const EmailForm = ({ onEmailSubmit, disabled }) => {
     <>
       <Flex css={{ ai: 'center' }}>
         <CardParent>
-          <Heading size="2" css={{ paddingTop: '18px' }}>
+          <Heading size="2" css={{ paddingTop: '18px', paddingBottom: '18px', fontWeight: '800' }}>
             Sign Up
           </Heading>
           <form onSubmit={handleSubmit}>
@@ -48,14 +74,10 @@ export const EmailForm = ({ onEmailSubmit, disabled }) => {
               type="email"
               autoFocus
               onChange={e => setEmail(e.target.value)}
-              placeholder="Email"
+              placeholder="tim@ady.world"
             />
-            <DefaultButton as="a" onClick={handleSubmit}>
-              Send Magic Link
-            </DefaultButton>
+            <MagicButton onClick={handleSubmit}>Send Magic Link</MagicButton>
           </form>
-
-          <Copyrights />
         </CardParent>
       </Flex>
     </>
