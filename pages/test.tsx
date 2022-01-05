@@ -1,7 +1,9 @@
 import React from 'react';
+import { LoadAdy } from '@components/LoadAdy';
 // import { IntervalLoader } from '@components/IntervalLoader';
-//import { AtelierFollow } from '@components/Three/AtelierFollow';
+// import { AtelierFollow } from '@components/Three/AtelierFollow';
 
+// STYLED STITCHES
 import { styled } from '@stitches/react';
 
 const CoverBox = styled('div', {
@@ -19,7 +21,9 @@ const CoverBox = styled('div', {
 export default function Test() {
   return (
     <>
-      <CoverBox></CoverBox>
+      <CoverBox>
+        <LoadAdy />
+      </CoverBox>
     </>
   );
 }

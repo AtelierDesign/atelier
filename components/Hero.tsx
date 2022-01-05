@@ -4,17 +4,18 @@ import { Section } from '@design-system/section';
 import { Container } from '@design-system/container';
 import { Box } from '@design-system/box';
 import { Heading } from '@design-system/heading';
-// import { Grid } from '@design-system/grid';
 import { Flex } from '@design-system/flex';
-// import { Text } from '@design-system/text';
 import { Paragraph } from '@design-system/paragraph';
-// import { theme } from 'stitches.config';
 import { ExternalLinkIcon, RocketIcon } from '@radix-ui/react-icons';
 import { DefaultButton } from '@components/DefaultButton';
 import { HomeButton } from '@components/HomeButton';
 import { TimeCode } from '@components/Time/TimeCode';
 
+// STITCHES STYLED
 import { styled } from 'stitches.config';
+// import { theme } from 'stitches.config';
+// import { Text } from '@design-system/text';
+// import { Grid } from '@design-system/grid';
 
 const TimeDisplay = styled('div', {
   position: 'relative',
@@ -26,18 +27,14 @@ const TimeDisplay = styled('div', {
   fontSize: '12px',
   fontWeight: '700',
   color: '$gray12',
-
   zIndex: '200',
   lineHeight: '1',
-
   userSelect: 'none',
   WebkitUserSelect: 'none',
-
   '@sm': {
     alignItems: 'left',
     textAlign: 'left',
   },
-
   '&:hover': {
     cursor: 'auto',
   },
