@@ -4,8 +4,8 @@ import { Box } from '@design-system/box';
 import { Container } from '@design-system/container';
 import { Flex } from '@design-system/flex';
 import { Heading } from '@design-system/heading';
-import { Copyrights } from '@components/Copyrights';
 
+// STITCHES
 import { styled } from '@stitches/react';
 
 const Card = styled('div', {
@@ -15,10 +15,7 @@ const Card = styled('div', {
   display: 'flex',
   flexDirection: 'column',
   position: 'relative',
-  // border: '1px solid $slate3',
   borderRadius: '32px',
-  // boxShadow: 'inset 0 0 0 6px $colors$slate5',
-
   marginTop: '8px',
   marginLeft: '20px',
   marginRight: '20px',
@@ -26,8 +23,9 @@ const Card = styled('div', {
   padding: '8px',
   alignItems: 'center',
   textAlign: 'center',
-
   boxSizing: 'border-box',
+  // border: '1px solid $slate3',
+  // boxShadow: 'inset 0 0 0 6px $colors$slate5',
 });
 
 const MagicButton = styled('button', {
