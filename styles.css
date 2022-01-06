@@ -16,6 +16,10 @@
   width: 100%;
 }
 
+svg {
+  vertical-align: middle;
+}
+
 *,
 *::before,
 *::after {
@@ -35,11 +39,6 @@ body {
 
 .scroll-grid::-webkit-scrollbar {
   width: 0 !important;
-}
-
-svg {
-  vertical-align: middle;
-  color: inherit;
 }
 
 .color__box {

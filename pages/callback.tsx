@@ -1,10 +1,28 @@
+import React from 'react';
+import ReactLoading from 'react-loading';
+
 import { useEffect, useContext } from 'react';
 import Router, { useRouter } from 'next/router';
 import { magic } from '@lib/magic';
 import { UserContext } from '@lib/UserContext';
 import { LoadingSpinner } from '@components/LoadingSpinner';
 
-const Callback = () => {
+import { styled } from '@stitches/react';
+
+const LoadingBox = styled('div', {
+  zIndex: '200',
+  position: 'absolute',
+  top: '50%',
+  left: '50%',
+  transform: 'translate(-50%, -50%)',
+  width: '100%',
+  textAlign: 'center',
+  alignItems: 'center',
+  margin: 'auto',
+  padding: '1rem',
+});
+
+const Callback = ({ type, color }) => {
   const router = useRouter();
   const [user, setUser] = useContext(UserContext);
 
@@ -47,7 +65,11 @@ const Callback = () => {
     }
   };
 
-  return <LoadingSpinner />;
+  return (
+    <LoadingBox>
+      <ReactLoading className="react-loader" type={'bars'} color={'#000'} height={50} width={50} />
+    </LoadingBox>
+  );
 };
 
 export default Callback;
