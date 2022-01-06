@@ -5,7 +5,6 @@ import { useEffect, useContext } from 'react';
 import Router, { useRouter } from 'next/router';
 import { magic } from '@lib/magic';
 import { UserContext } from '@lib/UserContext';
-import { LoadingSpinner } from '@components/LoadingSpinner';
 
 import { styled } from '@stitches/react';
 
