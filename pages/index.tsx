@@ -11,6 +11,7 @@ import { useTheme } from 'next-themes';
 const Home = () => {
   const { theme, setTheme } = useTheme();
 
+  // REDIRECT TO COVERPAGE
   useEffect(() => {
     Router.replace('/cover');
   });

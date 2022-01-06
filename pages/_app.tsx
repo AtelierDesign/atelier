@@ -40,8 +40,7 @@ const App = ({ Component, pageProps }: AppProps) => {
       if (isLoggedIn) {
         magic.user.getMetadata().then(userData => setUser(userData));
       } else {
-        // IF NOT LOGGED IN PUSH TO LOGIN
-        router.push('/login');
+        router.push('/login'); // IF NOT LOGGED IN PUSH TO LOGIN
         setUser({ user: null });
       }
     });
@@ -75,7 +74,6 @@ const App = ({ Component, pageProps }: AppProps) => {
                 height={3}
                 showOnShallow={true}
               />
-
               <Component {...pageProps} />
             </div>
           </div>
