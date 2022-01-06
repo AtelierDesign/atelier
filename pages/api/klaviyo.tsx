@@ -1,7 +1,13 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
+import { Klaviyo } from 'node-klaviyo';
 
-const api_key = process.env.KLAVIYO_PUBLIC_API_KEY;
-const list_id = process.env.KLAVIYO_LIST_ID;
+const KlaviyoClient = new Klaviyo({
+  publicToken: process.env.KLAVIYO_PUBLIC_API_KEY,
+  privateToken: process.env.KLAVIYO_PRIVATE_API_KEY,
+});
+
+// Get the list of Klaviyo lists on the account.
+KlaviyoClient.lists.getLists();
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   const { email } = req.body;
