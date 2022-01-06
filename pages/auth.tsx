@@ -17,7 +17,6 @@ const CoverBox = styled('div', {
   alignItems: 'center',
   margin: 'auto',
   padding: '1rem',
-
   backgroundColor: '$white',
 });
 

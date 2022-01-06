@@ -13,25 +13,23 @@ import { TwitterLogoIcon } from '@radix-ui/react-icons';
 
 import { styled } from '@stitches/react';
 
-const CardParent = styled('div', {
+const Card = styled('div', {
   width: 'auto',
   height: 'auto',
+  maxWidth: '98vw',
   backgroundColor: '$white',
-  display: 'flex',
+  display: 'block',
+  justifyContent: 'center',
   flexDirection: 'column',
   position: 'relative',
-  // border: '1px solid $slate3',
-  borderRadius: '32px',
-  // boxShadow: 'inset 0 0 0 6px $colors$slate5',
-
+  borderRadius: '0px',
   marginTop: '8px',
-  marginLeft: '20px',
-  marginRight: '20px',
+  marginLeft: 'auto',
+  marginRight: 'auto',
   marginBottom: '8px',
   padding: '8px',
   alignItems: 'center',
   textAlign: 'center',
-
   boxSizing: 'border-box',
 });
 
@@ -43,8 +41,8 @@ const TwitterButton = styled('button', {
   backgroundColor: '$gray3',
   color: '#1DA1F2',
   border: '1px solid $slate6',
-  paddingLeft: '40px',
-  paddingRight: '40px',
+  paddingLeft: '20px',
+  paddingRight: '20px',
   py: '6px',
   height: '32px',
   borderRadius: '6px',
@@ -66,13 +64,13 @@ export const SocialLogin = ({ onSubmit }) => {
 
   return (
     <>
-      <CardParent>
-        <Text
-          size="1"
-          css={{ color: '$gray9', fontSize: '10px', fontFamily: '$inter', fontWeight: '700' }}>
-          LOGIN WITH SOCIAL
-        </Text>
-        <FormLine />
+      <Text
+        size="1"
+        css={{ color: '$gray9', fontSize: '10px', fontFamily: '$inter', fontWeight: '700' }}>
+        LOGIN WITH SOCIAL
+      </Text>
+      <FormLine />
+      <Card>
         <form>
           <Box
             css={{
@@ -103,7 +101,7 @@ export const SocialLogin = ({ onSubmit }) => {
             {isRedirecting && <div className="redirecting">Authenticating...</div>}
           </Box>
         </form>
-      </CardParent>
+      </Card>
     </>
   );
 };

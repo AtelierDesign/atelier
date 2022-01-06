@@ -11,21 +11,21 @@ import { styled } from '@stitches/react';
 const Card = styled('div', {
   width: 'auto',
   height: 'auto',
+  maxWidth: '98vw',
   backgroundColor: '$white',
   display: 'flex',
+  justifyContent: 'center',
   flexDirection: 'column',
   position: 'relative',
-  borderRadius: '32px',
+  borderRadius: '0px',
   marginTop: '8px',
-  marginLeft: '20px',
-  marginRight: '20px',
+  marginLeft: 'auto',
+  marginRight: 'auto',
   marginBottom: '8px',
   padding: '8px',
   alignItems: 'center',
   textAlign: 'center',
   boxSizing: 'border-box',
-  // border: '1px solid $slate3',
-  // boxShadow: 'inset 0 0 0 6px $colors$slate5',
 });
 
 const MagicButton = styled('button', {
@@ -61,10 +61,10 @@ export const EmailForm = ({ onEmailSubmit, disabled }) => {
 
   return (
     <>
+      <Heading size="3" css={{ paddingTop: '18px', paddingBottom: '18px', fontWeight: '800' }}>
+        Welcome.
+      </Heading>
       <Card>
-        <Heading size="3" css={{ paddingTop: '18px', paddingBottom: '18px', fontWeight: '800' }}>
-          Welcome.
-        </Heading>
         <form onSubmit={handleSubmit}>
           <TextField
             size="2"

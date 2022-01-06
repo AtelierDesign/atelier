@@ -6,7 +6,7 @@ const Home = () => {
   const { theme, setTheme } = useTheme();
 
   useEffect(() => {
-    Router.replace('/test');
+    Router.replace('/cover');
   });
 
   return null;

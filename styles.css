@@ -84,7 +84,6 @@ a {
 }
 
 main {
-  flex: 1;
 }
 
 #nprogress .spinner {
@@ -113,14 +112,25 @@ strong {
 }
 
 form {
+  box-sizing: border-box;
   display: flex;
   flex-shrink: 1;
   flex-direction: column;
   margin: 0;
   padding: inherit;
-  min-width: 200px;
-  max-width: 430px !important;
   width: 100% !important;
+}
+
+@media only screen and (max-width: 500px) {
+  form {
+    box-sizing: border-box;
+    display: flex;
+    flex-shrink: 1;
+    flex-direction: column;
+    margin: 0;
+    padding: inherit;
+    width: 100% !important;
+  }
 }
 
 /* MAGIC AUTH */
@@ -194,4 +204,10 @@ li:first-child {
   border-radius: 5px;
   transition: box-shadow 0.5s;
   will-change: transform;
+}
+
+.react-loader {
+  align-items: center;
+  text-align: center;
+  background-color: transparent !important;
 }

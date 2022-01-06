@@ -1,5 +1,5 @@
 import React from 'react';
-import { LoadAdy } from '@components/LoadAdy';
+import { LoadingSpinner } from '@components/LoadingSpinner';
 // import { IntervalLoader } from '@components/IntervalLoader';
 // import { AtelierFollow } from '@components/Three/AtelierFollow';
 
@@ -22,7 +22,7 @@ export default function Test() {
   return (
     <>
       <CoverBox>
-        <LoadAdy />
+        <LoadingSpinner />
       </CoverBox>
     </>
   );

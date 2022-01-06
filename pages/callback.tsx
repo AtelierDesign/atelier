@@ -2,7 +2,7 @@ import { useEffect, useContext } from 'react';
 import Router, { useRouter } from 'next/router';
 import { magic } from '@lib/magic';
 import { UserContext } from '@lib/UserContext';
-import { Loading } from '@components/Magic/Loading';
+import { LoadingSpinner } from '@components/LoadingSpinner';
 
 const Callback = () => {
   const router = useRouter();
@@ -47,7 +47,7 @@ const Callback = () => {
     }
   };
 
-  return <Loading />;
+  return <LoadingSpinner />;
 };
 
 export default Callback;

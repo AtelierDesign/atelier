@@ -32,9 +32,8 @@ const LogoDiv = styled('div', {
 });
 
 const CoverBox = styled('div', {
-  bc: '$gray12',
-
   display: 'flex',
+  justifyContent: 'center',
   position: 'absolute',
   top: '50%',
   left: '50%',
@@ -44,7 +43,6 @@ const CoverBox = styled('div', {
   textAlign: 'center',
   alignItems: 'center',
   flexWrap: 'nowrap',
-  justifyContent: 'space-around',
   margin: 'auto',
   padding: '0',
   overflowY: 'hidden',
@@ -100,15 +98,7 @@ const Login = () => {
 
   return (
     <>
-      <Box
-        css={{
-          bc: '$slate2',
-          padding: '0px',
-          height: '100vh',
-          zIndex: '0',
-          overflowY: 'hidden',
-          overflowX: 'hidden',
-        }}>
+      <CoverBox>
         <Head>
           <title>Login / Sign up.</title>
         </Head>
@@ -130,15 +120,17 @@ const Login = () => {
           </Text>
         </LogoDiv>
 
-        <CoverBox>
-          <Section size="3" css={{ display: 'flex', alignItems: 'center', margin: 'auto' }}>
-            <Container size="2" css={{ alignItems: 'center', margin: 'auto', textAlign: 'center' }}>
-              <EmailForm disabled={disabled} onEmailSubmit={handleLoginWithEmail}></EmailForm>
-              <SocialLogin onSubmit={handleLoginWithSocial} />
-            </Container>
-          </Section>
-        </CoverBox>
-      </Box>
+        <Section
+          size="3"
+          css={{ padding: '0', display: 'flex', alignItems: 'center', margin: '0' }}>
+          <Container
+            size="2"
+            css={{ padding: '0', alignItems: 'center', margin: '0', textAlign: 'center' }}>
+            <EmailForm disabled={disabled} onEmailSubmit={handleLoginWithEmail}></EmailForm>
+            <SocialLogin onSubmit={handleLoginWithSocial} />
+          </Container>
+        </Section>
+      </CoverBox>
     </>
   );
 };
