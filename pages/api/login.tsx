@@ -1,5 +1,7 @@
+// MAGIC INSTANCE
 import { Magic } from '@magic-sdk/admin';
 
+// CREATE NEW MAGIC
 const magic = new Magic(process.env.MAGIC_SECRET_KEY);
 
 export default async function login(req, res) {
