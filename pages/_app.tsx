@@ -12,12 +12,17 @@ import { UserContext } from '@lib/UserContext';
 // STITCHES.DEV
 import { css, globalCss } from 'stitches.config';
 import { reset } from '@styles/reset';
-import '../styles.css';
+
+// MAIN STYLE IMPORTS
 import '../styles/inter.css';
 import '../styles/jetbrains.css';
 import '../styles/neue-plak.css';
 import '../styles/neue-wide.css';
+import '../styles/form.css';
+import '../styles/magic.css';
+import '../styles.css';
 
+// PROGRESS LOADER
 import NextNprogress from 'nextjs-progressbar';
 
 const appWrapper = css({

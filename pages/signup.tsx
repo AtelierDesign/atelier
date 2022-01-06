@@ -7,6 +7,7 @@ import { SocialLogin } from '@components/Magic/SocialLogin';
 import { Heading } from '@design-system/heading';
 import { Card } from '@components/Card';
 
+// IMPORT STITCHES
 import { styled } from '@stitches/react';
 
 const SignupBox = styled('div', {

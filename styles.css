@@ -16,6 +16,15 @@
   width: 100%;
 }
 
+#__next-prerender-indicator {
+  display: none;
+}
+
+canvas {
+  width: 100%;
+  height: 100vh;
+}
+
 svg {
   vertical-align: middle;
 }
@@ -82,9 +91,6 @@ a {
   fill: var(--colors-slate9);
 }
 
-main {
-}
-
 #nprogress .spinner {
   display: none !important;
   /*display: 'block';*/
@@ -108,105 +114,4 @@ main {
 
 strong {
   font-weight: 800 !important;
-}
-
-form {
-  box-sizing: border-box;
-  display: flex;
-  flex-shrink: 1;
-  flex-direction: column;
-  margin: 0;
-  padding: inherit;
-  width: 100% !important;
-}
-
-@media only screen and (max-width: 500px) {
-  form {
-    box-sizing: border-box;
-    display: flex;
-    flex-shrink: 1;
-    flex-direction: column;
-    margin: 0;
-    padding: inherit;
-    width: 100% !important;
-  }
-}
-
-/* MAGIC AUTH */
-
-.redirect-holder {
-  position: relative;
-  height: 20px;
-  text-align: center;
-  align-items: center;
-  padding-top: 20px;
-  margin: auto;
-
-  z-index: 9999;
-}
-.redirecting {
-  font-family: sans-serif;
-  font-weight: 600;
-  color: #000;
-  font-size: 12px;
-  margin-top: 15px;
-
-  display: block;
-}
-
-.label {
-  font-size: 12px;
-  color: #6851ff;
-  margin: 30px 0 5px;
-}
-.profile-info {
-  font-size: 17px;
-  word-wrap: break-word;
-}
-
-ul {
-  display: flex;
-  list-style: none;
-}
-li {
-  margin-right: 1.5rem;
-  line-height: 38px;
-}
-li:first-child {
-  margin-left: auto;
-}
-
-.color-container {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  height: 100%;
-  width: 100%;
-  justify-content: center;
-  overflow: hidden;
-}
-
-.ccard-main {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-}
-
-.ccard {
-  width: 20ch;
-  height: 20ch;
-  background: hotpink;
-  border-radius: 5px;
-  transition: box-shadow 0.5s;
-  will-change: transform;
-}
-
-.react-loader {
-  align-items: center;
-  text-align: center;
-  background-color: transparent !important;
 }

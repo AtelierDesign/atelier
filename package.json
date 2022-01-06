@@ -45,7 +45,9 @@
     "react-spring": "^9.4.0",
     "react-zapier-form": "^1.0.0",
     "stitches-mixins": "^1.0.0",
-    "swr": "^1.1.2"
+    "swr": "^1.1.2",
+    "three": "^0.136.0",
+    "zustand": "^3.6.8"
   },
   "devDependencies": {
     "@babel/preset-typescript": "^7.16.0",
@@ -69,6 +71,7 @@
     "eslint": "^7.19.0",
     "eslint-config-prettier": "^7.2.0",
     "eslint-plugin-react": "^7.19.0",
+    "file-loader": "^6.2.0",
     "framer-motion": "^4.1.17",
     "husky": "^4.2.3",
     "identity-obj-proxy": "^3.0.0",

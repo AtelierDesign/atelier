@@ -1,7 +1,5 @@
 import React from 'react';
 import { LoadingSpinner } from '@components/LoadingSpinner';
-// import { IntervalLoader } from '@components/IntervalLoader';
-// import { AtelierFollow } from '@components/Three/AtelierFollow';
 
 // STYLED STITCHES
 import { styled } from '@stitches/react';
@@ -23,6 +21,7 @@ export default function Test() {
     <>
       <CoverBox>
         <LoadingSpinner />
+        {/* <!-- <AtelierModel /> --> */}
       </CoverBox>
     </>
   );
