@@ -37,3 +37,9 @@ yarn-error.log*
 
 # CONTENTLAYER
 .contentlayer
+
+# - KLAVIYO
+/dev
+/dev/KlaviyoSnippets.js
+KlaviyoSnippets.js
+KlaviyoNotes.js

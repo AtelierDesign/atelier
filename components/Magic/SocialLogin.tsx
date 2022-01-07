@@ -33,13 +33,16 @@ const Card = styled('div', {
   boxSizing: 'border-box',
 });
 
-const TwitterButton = styled('button', {
+const SocialButton = styled('button', {
+  // backgroundImage: `url(/icons/${provider}.svg)`,
+
   zIndex: '400',
   fontFamily: '$inter',
   fontWeight: '700',
   fontSize: '12px',
   backgroundColor: '$gray3',
-  color: '#1DA1F2',
+  // color: '#1DA1F2', // TWITTER HEX
+  color: '#231f20',
   border: '1px solid $slate6',
   paddingLeft: '20px',
   paddingRight: '20px',
@@ -49,9 +52,7 @@ const TwitterButton = styled('button', {
   lineHeight: '1.3rem',
   width: '100%',
   position: 'relative',
-
   margin: '3px',
-
   '&:hover': {
     cursor: 'pointer',
     backgroundColor: '$gray5',
@@ -59,14 +60,12 @@ const TwitterButton = styled('button', {
 });
 
 export const SocialLogin = ({ onSubmit }) => {
-  const providers = ['twitter', 'Github'];
+  const providers = ['twitter', 'github'];
   const [isRedirecting, setIsRedirecting] = useState(false);
 
   return (
     <>
-      <Text
-        size="1"
-        css={{ color: '$gray9', fontSize: '10px', fontFamily: '$inter', fontWeight: '700' }}>
+      <Text size="1" css={{ color: '$gray9', fontSize: '10px', fontFamily: '$inter', fontWeight: '700' }}>
         LOGIN WITH SOCIAL
       </Text>
       <FormLine />
@@ -81,7 +80,7 @@ export const SocialLogin = ({ onSubmit }) => {
             }}>
             {providers.map(provider => {
               return (
-                <TwitterButton
+                <SocialButton
                   as="button"
                   type="submit"
                   key={provider}
@@ -89,12 +88,13 @@ export const SocialLogin = ({ onSubmit }) => {
                     setIsRedirecting(true);
                     onSubmit(provider);
                   }}
-                  style={{ backgroundImage: `url(${provider}.png)` }}>
-                  <TwitterLogoIcon />
+                  //css={{ backgroundImage: `url(/icons/${provider}.svg)`, backgroundRepeat: 'none' }}
+                >
+                  <Image src="/icons/${provider}.svg" width={15} height={15} />
                   {` `}
                   Sign in with{` `}
                   {provider.replace(/^\w/, c => c.toUpperCase())}
-                </TwitterButton>
+                </SocialButton>
               );
             })}
 

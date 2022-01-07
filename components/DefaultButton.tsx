@@ -2,7 +2,7 @@ import { styled } from '../stitches.config';
 
 export const DefaultButton = styled('button', {
   backgroundColor: '$lime9',
-  color: 'white',
+  color: '$white',
   paddingLeft: '25px',
   paddingRight: '25px',
   py: '8px',
@@ -19,8 +19,8 @@ export const DefaultButton = styled('button', {
   fontSize: '13px',
 
   '&:hover': {
-    backgroundColor: '$orange10',
-    color: 'white',
+    backgroundColor: '',
+    color: '$white',
     cursor: 'pointer',
   },
 });

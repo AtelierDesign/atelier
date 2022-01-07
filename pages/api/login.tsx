@@ -13,3 +13,7 @@ export default async function login(req, res) {
     res.status(500).json({ error: error.message });
   }
 }
+
+/*
+ * ['x-magic-api-key', 'x-magic-referrer', 'x-magic-csrf']
+ */

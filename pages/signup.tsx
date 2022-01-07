@@ -1,11 +1,14 @@
 import { useState, useEffect, useContext } from 'react';
 import Router from 'next/router';
+import { useRouter } from 'next/router';
+import { Heading } from '@design-system/heading';
+import { Card } from '@components/Card';
+
+// MAGIC LABS
 import { magic } from '@lib/magic';
 import { UserContext } from '@lib/UserContext';
 import { EmailForm } from '@components/Magic/EmailForm';
 import { SocialLogin } from '@components/Magic/SocialLogin';
-import { Heading } from '@design-system/heading';
-import { Card } from '@components/Card';
 
 // IMPORT STITCHES
 import { styled } from '@stitches/react';
@@ -28,13 +31,27 @@ const SignupBox = styled('div', {
 });
 
 const SignUp = () => {
+  const router = useRouter();
   const [disabled, setDisabled] = useState(false);
   const [user, setUser] = useContext(UserContext);
 
   // Redirec to / if the user is logged in
   useEffect(() => {
-    user?.issuer && Router.push('/');
+    user?.issuer && Router.push('/atelier');
   }, [user]);
+
+  // DETERMINE WHETHER USER IS LOGGED IN OR NOT / ON FIRST LOAD
+  useEffect(() => {
+    setUser({ loading: true });
+    magic.user.isLoggedIn().then(isLoggedIn => {
+      if (isLoggedIn) {
+        magic.user.getMetadata().then(userData => setUser(userData));
+      } else {
+        router.push('/login'); // IF NOT LOGGED IN PUSH TO LOGIN
+        setUser({ user: null });
+      }
+    });
+  }, []);
 
   async function handleLoginWithEmail(email) {
     try {

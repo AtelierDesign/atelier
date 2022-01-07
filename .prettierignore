@@ -8,6 +8,12 @@
 /test
 test
 
+# - KLAVIYO
+/dev
+/dev/KlaviyoSnippets.js
+KlaviyoSnippets.js
+KlaviyoNotes.js
+
 # NEXT.JS
 /.next/
 /out/

@@ -1,5 +1,5 @@
 import React from 'react';
-import { LoadingSpinner } from '@components/LoadingSpinner';
+import { Subscribe } from '@components/Subscribe';
 
 // STYLED STITCHES
 import { styled } from '@stitches/react';
@@ -20,7 +20,7 @@ export default function Test() {
   return (
     <>
       <CoverBox>
-        <LoadingSpinner />
+        <Subscribe />
         {/* <!-- <AtelierModel /> --> */}
       </CoverBox>
     </>

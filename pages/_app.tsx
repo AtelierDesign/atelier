@@ -40,8 +40,10 @@ const App = ({ Component, pageProps }: AppProps) => {
       if (isLoggedIn) {
         magic.user.getMetadata().then(userData => setUser(userData));
       } else {
-        router.push('/login'); // IF NOT LOGGED IN PUSH TO LOGIN
-        setUser({ user: null });
+        // <!-- { EDIT } --> //
+        // IF NOT LOGGED IN PUSH TO LOGIN // DON'T PUSH JUST YET
+        // <!-- router.push('/login'); --> Uncomment when ready
+        setUser({ user: null }); // Set user as not logged in
       }
     });
   }, []);
