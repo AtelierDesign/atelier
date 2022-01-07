@@ -84,13 +84,15 @@ export const SocialLogin = ({ onSubmit }) => {
                   as="button"
                   type="submit"
                   key={provider}
+                  css={{
+                    backgroundImage: `url(/icons/${provider}.svg)`,
+                    backgroundRepeat: 'no-repeat',
+                    backgroundPosition: 'center',
+                  }}
                   onClick={() => {
                     setIsRedirecting(true);
                     onSubmit(provider);
-                  }}
-                  //css={{ backgroundImage: `url(/icons/${provider}.svg)`, backgroundRepeat: 'none' }}
-                >
-                  <Image src="/icons/${provider}.svg" width={15} height={15} />
+                  }}>
                   {` `}
                   Sign in with{` `}
                   {provider.replace(/^\w/, c => c.toUpperCase())}

@@ -10,7 +10,7 @@ import { ThemeToggle } from '@components/ThemeToggle';
 
 // MAGIC
 import { useContext } from 'react';
-import Router from 'next/router';
+import router from 'next/router';
 import { magic } from '@lib/magic';
 import { UserContext } from '@lib/UserContext';
 
@@ -20,7 +20,7 @@ export const Navbar = () => {
   const logout = () => {
     magic.user.logout().then(() => {
       setUser({ user: null });
-      Router.push('/login');
+      router.push('/login');
     });
   };
 
