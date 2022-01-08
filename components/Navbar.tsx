@@ -4,7 +4,7 @@ import { Box } from '@design-system/box';
 import { Flex } from '@design-system/flex';
 import { Text } from '@design-system/text';
 import { Link } from '@design-system/link';
-import { ArrowRightIcon } from '@radix-ui/react-icons';
+// import { ArrowRightIcon } from '@radix-ui/react-icons';
 import { ThemeToggle } from '@components/ThemeToggle';
 import { ThemeSwitch } from '@components/ThemeSwitch';
 import { HamburgerMenuIcon } from '@radix-ui/react-icons';
@@ -32,15 +32,15 @@ export const Navbar = () => {
       <Flex
         as="header"
         css={{
-          py: '12px',
+          py: '11px',
           px: '5px',
           jc: 'space-between',
           position: 'fixed',
-          m: '0',
-          bc: '$light100',
+          margin: '0',
+          backgroundColorc: '$light100',
           width: '100vw',
           backdropFilter: 'blur(10px)',
-          saturate: '200%',
+          saturate: '300%',
 
           zIndex: '9999',
         }}>
@@ -59,11 +59,12 @@ export const Navbar = () => {
             }}>
             <Text
               css={{
+                zIndex: '999',
                 fontFamily: '$neuewide',
                 fontWeight: '800',
                 fontSize: '18px',
                 color: '$gray12',
-                lineHeight: 'normal',
+                lineHeight: '30px',
                 letterSpacing: '-0.03rem',
               }}>
               ATELIER®
@@ -73,7 +74,17 @@ export const Navbar = () => {
         </NextLink>
 
         {/* NAVIGATION SECTION */}
-        <Flex as="nav" css={{ ai: 'center', px: '0px', fontFamily: '$inter', fontSize: '12px' }}>
+        <Flex
+          as="nav"
+          css={{
+            ai: 'center',
+            px: '0px',
+            fontFamily: '$inter',
+            fontSize: '12px',
+            '@sm': {
+              display: 'none',
+            },
+          }}>
           {/* // <!-- NEED A LABEL? --> // Uncomment
           <Text css={{ fontSize: '12px', marginRight: '$2' }}>Theme</Text>
           */}
@@ -81,10 +92,17 @@ export const Navbar = () => {
           {/* <!-- THEME SWITCH --> */}
           <ThemeSwitch />
           <NextLink href="/shop" passHref>
-            <Link variant="subtle" css={{ mr: '$3', color: '$gray12', '@bp2': { mr: '$3' } }}>
-              Shop <ArrowRightIcon />
+            <Link variant="subtle" css={{ marginRight: '$3', color: '$gray12', '@sm': { marginRight: '$2' } }}>
+              Shop
             </Link>
           </NextLink>
+
+          <NextLink href="/atelier" passHref>
+            <Link variant="subtle" css={{ marginRight: '$3', color: '$gray12', '@sm': { marginRight: '$2' } }}>
+              Moods
+            </Link>
+          </NextLink>
+
           <NextLink href="https://docs.ady.world" passHref>
             <Link
               variant="subtle"
@@ -109,6 +127,10 @@ export const Navbar = () => {
               Blog
             </Link>
           </NextLink>
+        </Flex>
+        {/* <!-- JSX ELEMENT --> */}
+
+        <Flex as="nav" css={{ ai: 'center', px: '0px', fontFamily: '$inter', fontSize: '12px' }}>
           {/* <!-- JSX ELEMENT --> */}
           <Link
             onClick={logout}
@@ -143,7 +165,7 @@ export const Navbar = () => {
               // border: '1px solid $crimson9',
               backgroundColor: '$lime9',
               border: '0px solid $crimson9',
-              borderRadius: '6px',
+              borderRadius: '4px',
               paddingTop: '6px',
               paddingBottom: '6px',
               paddingLeft: '10px',

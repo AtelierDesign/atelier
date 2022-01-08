@@ -42,26 +42,20 @@ const TimeDisplay = styled('div', {
 
 export function Hero() {
   return (
-    <Box css={{ bc: 'transparent' }}>
-      <Section
-        size={{
-          '@initial': '2',
-          '@bp1': '3',
-        }}
-        css={{
-          pt: '$3',
-          '@bp2': {
-            pt: '$7',
-          },
-        }}>
+    <Box css={{ bc: '$slate3' }}>
+      <Section size="3" css={{}}>
         <Container
-          size="3"
+          size="2"
           css={{
-            paddingTop: '130px',
-            paddingBottom: '40px',
+            paddingTop: '140px',
+            paddingBottom: '50px',
+            paddingLeft: '100px',
+            paddingRight: '100px',
             '@sm': {
               paddingTop: '120px',
-              paddingBottom: '80px',
+              paddingBottom: '60px',
+              paddingLeft: '0px',
+              paddingRight: '40px',
             },
           }}>
           {/* TIME DISPLAY */}
@@ -73,12 +67,17 @@ export function Hero() {
           <Heading
             size="4"
             css={{
-              fontFamily: '$neuewide',
+              fontFamily: '$inter',
               fontWeight: '900',
+              fontSize: '70px',
               mb: '$2',
+              textAlign: 'center',
               '@sm': {
-                pr: 100,
+                textAlign: 'left',
+                fontSize: '44px',
               },
+
+              /*
               '@bp2': {
                 textAlign: 'center',
                 px: 180,
@@ -86,25 +85,31 @@ export function Hero() {
               '@bp3': {
                 px: 200,
               },
+              */
             }}>
             WELCOME.
           </Heading>
           <Paragraph
             size="2"
             css={{
-              fontSize: '16px',
+              textAlign: 'center',
+              fontSize: '18px',
               fontWeight: '500',
               lineHeight: '1.4',
               color: '$gray11',
               mb: '30px',
+              '@sm': {
+                textAlign: 'left',
+                fontSize: '16px',
+              },
               '@bp2': {
-                mx: 250,
+                // mx: 250,
                 ta: 'center',
                 mb: '60px',
                 lineHeight: '1.3',
               },
               '@bp3': {
-                mx: 300,
+                //  mx: 300,
                 ta: 'center',
                 mb: '60px',
                 lineHeight: '1.3',

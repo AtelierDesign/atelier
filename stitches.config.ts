@@ -194,7 +194,6 @@ export const { styled, css, theme, createTheme, getCssText, globalCss, keyframes
       light100: 'rgba(240, 240, 240, 0.5)',
       clear100: 'rgba(240, 240, 240, 0.2)',
 
-      light100: 'rgba(240, 240, 240, 0.5)',
       light50: 'rgba(240, 240, 240, 0.8)',
 
       // SEMANTICS

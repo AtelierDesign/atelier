@@ -21,7 +21,6 @@ export const Container = styled('div', {
         maxWidth: '800px',
         padding: '8px',
         margin: 'auto',
-        alignItems: 'center',
       },
       '3': {
         maxWidth: '1145px',
