@@ -6,6 +6,8 @@ import { Text } from '@design-system/text';
 import { Link } from '@design-system/link';
 import { ArrowRightIcon } from '@radix-ui/react-icons';
 import { ThemeToggle } from '@components/ThemeToggle';
+import { ThemeSwitch } from '@components/ThemeSwitch';
+import { HamburgerMenuIcon } from '@radix-ui/react-icons';
 // import { MenuNav } from './MenuNav';
 
 // MAGIC
@@ -13,6 +15,7 @@ import { useContext } from 'react';
 import router from 'next/router';
 import { magic } from '@lib/magic';
 import { UserContext } from '@lib/UserContext';
+import { Loading } from '@components/Magic/Loading';
 
 export const Navbar = () => {
   const [user, setUser] = useContext(UserContext);
@@ -71,9 +74,14 @@ export const Navbar = () => {
 
         {/* NAVIGATION SECTION */}
         <Flex as="nav" css={{ ai: 'center', px: '0px', fontFamily: '$inter', fontSize: '12px' }}>
-          <ThemeToggle /> {/* <!-- THEME SWITCH --> */}
+          {/* // <!-- NEED A LABEL? --> // Uncomment
+          <Text css={{ fontSize: '12px', marginRight: '$2' }}>Theme</Text>
+          */}
+
+          {/* <!-- THEME SWITCH --> */}
+          <ThemeSwitch />
           <NextLink href="/shop" passHref>
-            <Link variant="subtle" css={{ mr: '$2', color: '$gray12', '@bp2': { mr: '$5' } }}>
+            <Link variant="subtle" css={{ mr: '$3', color: '$gray12', '@bp2': { mr: '$3' } }}>
               Shop <ArrowRightIcon />
             </Link>
           </NextLink>
@@ -83,8 +91,8 @@ export const Navbar = () => {
               css={{
                 display: 'none',
                 color: '$gray12',
-                mr: '$5',
-                '@bp2': { display: 'block', mr: '$5' },
+                mr: '$3',
+                '@bp2': { display: 'block', mr: '$3' },
               }}>
               Documentation
             </Link>
@@ -95,41 +103,57 @@ export const Navbar = () => {
               css={{
                 display: 'none',
                 color: '$gray12',
-                mr: '$5',
+                mr: '$3',
                 '@bp2': { display: 'block', mr: '$5' },
               }}>
               Blog
             </Link>
           </NextLink>
-          <div>
-            {user?.loading ? (
-              <Link
-                onClick={logout}
-                variant="subtle"
-                css={{
-                  color: '$gray12',
-                  mr: '$3',
-                  '@bp2': { display: 'block', mr: '$3' },
-                  '&:hover': { cursor: 'pointer' },
-                }}>
-                Logout
-              </Link>
-            ) : (
-              user?.issuer && (
-                <Link
-                  onClick={logout}
-                  variant="subtle"
-                  css={{
-                    color: '$gray12',
-                    mr: '$3',
-                    '@bp2': { display: 'block', mr: '$3' },
-                    '&:hover': { cursor: 'pointer' },
-                  }}>
-                  Login / Signup
-                </Link>
-              )
-            )}
-          </div>
+          {/* <!-- JSX ELEMENT --> */}
+          <Link
+            onClick={logout}
+            variant="subtle"
+            css={{
+              fontSize: '13px',
+              color: '$white',
+              // backgroundColor: '$crimson9',
+              // border: '1px solid $crimson9',
+              backgroundColor: '$lime9',
+              border: '0px solid $crimson9',
+              borderRadius: '6px',
+              paddingTop: '6px',
+              paddingBottom: '6px',
+              paddingLeft: '10px',
+              paddingRight: '10px',
+              mr: '$3',
+              '@sm': { display: 'none', mr: '$3' },
+              '&:hover': { cursor: 'pointer' },
+            }}>
+            Sign In
+          </Link>
+          {/* <!-- -->*/}
+          <Link
+            onClick={logout}
+            variant="subtle"
+            css={{
+              display: 'none',
+              fontSize: '13px',
+              color: '$white',
+              // backgroundColor: '$crimson9',
+              // border: '1px solid $crimson9',
+              backgroundColor: '$lime9',
+              border: '0px solid $crimson9',
+              borderRadius: '6px',
+              paddingTop: '6px',
+              paddingBottom: '6px',
+              paddingLeft: '10px',
+              paddingRight: '10px',
+              mr: '$3',
+              '@sm': { display: 'block', mr: '$3' },
+              '&:hover': { cursor: 'pointer' },
+            }}>
+            <HamburgerMenuIcon />
+          </Link>
         </Flex>
       </Flex>
     </>

@@ -55,7 +55,7 @@ export default function Cover() {
 
       <CoverBox>
         <TextBox>
-          <NextLink href="/atelier" passHref>
+          <NextLink href="/ady-index" passHref>
             <NormalLink variant="normal">
               <Text
                 css={{

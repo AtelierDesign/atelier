@@ -45,7 +45,7 @@ export function Hero() {
     <Box css={{ bc: '$slate1' }}>
       <Section
         size={{
-          '@initial': '3',
+          '@initial': '2',
           '@bp1': '3',
         }}
         css={{
@@ -60,7 +60,7 @@ export function Hero() {
             paddingTop: '130px',
             paddingBottom: '40px',
             '@sm': {
-              paddingTop: '100px',
+              paddingTop: '120px',
               paddingBottom: '80px',
             },
           }}>
@@ -110,23 +110,19 @@ export function Hero() {
                 lineHeight: '1.3',
               },
             }}>
-            <strong>Atelier Design Yield</strong>® is an ever– expanding ecosystem of raw, unstyled,
-            and modern design components.
+            <strong>Atelier Design Yield</strong>® is an ever– expanding ecosystem of raw, unstyled, and modern design
+            components.
           </Paragraph>
 
           <Flex css={{ '@bp2': { jc: 'center', my: '$7' } }}>
             <NextLink href="/shop" passHref>
-              <DefaultButton css={{ width: 'auto', lineHeight: '1', mr: '$2' }}>
+              <DefaultButton css={{ width: 'auto', lineHeight: '1', mr: '$2', color: '$white' }}>
                 Latest Release
                 {` `}
                 <RocketIcon />
               </DefaultButton>
             </NextLink>
-            <HomeButton
-              as="a"
-              href="https://github.com/AtelierDesign"
-              target="_blank"
-              rel="noopener noreferrer">
+            <HomeButton as="a" href="https://github.com/AtelierDesign" target="_blank" rel="noopener noreferrer">
               GitHub
               <Box css={{ ml: '$1' }}>
                 <ExternalLinkIcon />
