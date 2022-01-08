@@ -12,7 +12,7 @@ const Card = styled('div', {
   width: 'auto',
   height: 'auto',
   maxWidth: '98vw',
-  backgroundColor: '$white',
+
   display: 'flex',
   justifyContent: 'center',
   flexDirection: 'column',

@@ -1,5 +1,5 @@
 import Head from 'next/head';
-
+import Link from 'next/link';
 import { useState, useEffect, useContext } from 'react';
 import Router from 'next/router';
 import { magic } from '@lib/magic';
@@ -104,28 +104,26 @@ const Login = () => {
         </Head>
 
         <LogoDiv>
-          <Text
-            css={{
-              fontFamily: '$neuewide',
-              fontWeight: '800',
-              fontSize: '22px',
-              color: '$gray7',
-              lineHeight: 'normal',
-              letterSpacing: '-0.03rem',
-              '&:hover': {
-                color: '$gray8',
-              },
-            }}>
-            ATELIER®
-          </Text>
+          <Link href="/">
+            <Text
+              css={{
+                fontFamily: '$neuewide',
+                fontWeight: '800',
+                fontSize: '22px',
+                color: '$gray7',
+                lineHeight: 'normal',
+                letterSpacing: '-0.03rem',
+                '&:hover': {
+                  color: '$gray8',
+                },
+              }}>
+              ATELIER®
+            </Text>
+          </Link>
         </LogoDiv>
 
-        <Section
-          size="3"
-          css={{ padding: '0', display: 'flex', alignItems: 'center', margin: '0' }}>
-          <Container
-            size="2"
-            css={{ padding: '0', alignItems: 'center', margin: '0', textAlign: 'center' }}>
+        <Section size="3" css={{ padding: '0', display: 'flex', alignItems: 'center', margin: '0' }}>
+          <Container size="2" css={{ padding: '0', alignItems: 'center', margin: '0', textAlign: 'center' }}>
             <EmailForm disabled={disabled} onEmailSubmit={handleLoginWithEmail}></EmailForm>
             <SocialLogin onSubmit={handleLoginWithSocial} />
           </Container>

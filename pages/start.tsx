@@ -6,7 +6,7 @@ import Image from 'next/image';
 // ATELIER DESIGN SYSTEM IMPORTS
 import { Box } from '@design-system/box';
 import { Text } from '@design-system/text';
-import { Navbar } from '@components/Navbar';
+import { UserNavbar } from '@components/Magic/UserNavbar';
 import { Hero } from '@components/Hero';
 import { Heading } from '@design-system/heading';
 import { Paragraph } from '@design-system/paragraph';
@@ -104,7 +104,7 @@ const Card = styled('div', {
 });
 
 // APP BEGIN / HOMEPAGE
-const AdyIndex = () => {
+const Start = () => {
   return (
     <>
       <Box
@@ -122,7 +122,7 @@ const AdyIndex = () => {
           </Head>
 
           <Box>
-            <Navbar />
+            <UserNavbar />
             <Hero />
           </Box>
 
@@ -172,7 +172,7 @@ const AdyIndex = () => {
                     lineHeight: '1.3',
                   },
                 }}>
-                <strong>Essential</strong>® design components for you.
+                <strong>Atelier Design Yield</strong>® is cool.
               </Paragraph>
 
               {/* <!-- CARDS CONTAINER --> */}
@@ -226,4 +226,4 @@ const AdyIndex = () => {
   );
 };
 
-export default AdyIndex;
+export default Start;

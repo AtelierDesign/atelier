@@ -2,7 +2,9 @@ import { useContext } from 'react';
 import { UserContext } from '@lib/UserContext';
 import { Loading } from '@components/Magic/Loading';
 
-import { Navbar } from '@components/Navbar';
+import { UserNavbar } from '@components/Magic/UserNavbar';
+import { Container } from '@design-system/container';
+import { Text } from '@atelier-dsgn/text';
 
 import { styled } from '@stitches/react';
 
@@ -23,18 +25,22 @@ const Profile = () => {
 
   return (
     <>
-      <Navbar />
+      <UserNavbar />
       {user?.loading ? (
         <Loading />
       ) : (
         user?.issuer && (
           <>
             <CoverBox>
-              <div className="label">Email</div>
-              <div className="profile-info">{user.email}</div>
+              <Container size="2" css={{ color: '$gray11', textAlign: 'left' }}>
+                <Text css={{ fontSize: '16px', fontFamily: '$inter', lineHeight: '2', fontWeight: '800' }}>EMAIL:</Text>
+                <Text css={{ fontSize: '11px', fontFamily: '$jetbrain' }}>{user.email}</Text>
 
-              <div className="label">User Id</div>
-              <div className="profile-info">{user.issuer}</div>
+                <Text css={{ fontSize: '16px', fontFamily: '$inter', lineHeight: '2', fontWeight: '800' }}>
+                  USER ID:
+                </Text>
+                <Text css={{ fontSize: '11px', fontFamily: '$jetbrain' }}>{user.issuer}</Text>
+              </Container>
             </CoverBox>
           </>
         )

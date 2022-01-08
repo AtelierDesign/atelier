@@ -17,7 +17,7 @@ const Card = styled('div', {
   width: 'auto',
   height: 'auto',
   maxWidth: '98vw',
-  backgroundColor: '$white',
+
   display: 'block',
   justifyContent: 'center',
   flexDirection: 'column',
@@ -87,7 +87,7 @@ export const SocialLogin = ({ onSubmit }) => {
                   css={{
                     backgroundImage: `url(/icons/${provider}.svg)`,
                     backgroundRepeat: 'no-repeat',
-                    backgroundPosition: 'center',
+                    backgroundPosition: 'left',
                   }}
                   onClick={() => {
                     setIsRedirecting(true);

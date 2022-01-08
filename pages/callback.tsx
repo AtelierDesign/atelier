@@ -60,7 +60,7 @@ const Callback = ({ type, color }) => {
       // SET THE USER CONTEXT TO THE NOW LOGGED IN USER
       const userMetadata = await magic.user.getMetadata();
       await setUser(userMetadata);
-      Router.push('/atelier'); // PUSH TO HOMEPAGE
+      Router.push('/start'); // PUSH TO HOMEPAGE
     }
   };
 
