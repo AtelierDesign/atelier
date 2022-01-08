@@ -20,6 +20,7 @@ import '../styles/neue-plak.css';
 import '../styles/neue-wide.css';
 import '../styles/form.css';
 import '../styles/magic.css';
+import '../styles/react-flick.css';
 import '../styles.css';
 
 // PROGRESS LOADER

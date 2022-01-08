@@ -11,10 +11,14 @@ import { Hero } from '@components/Hero';
 import { Heading } from '@design-system/heading';
 import { Paragraph } from '@design-system/paragraph';
 import { Container } from '@design-system/container';
+import { Grid } from '@design-system/grid';
 // import { OneHundred } from '@components/OneHundred';
 import { EightySection } from '@components/EightySection';
 import { FooterMain } from '@components/FooterMain';
 import btrfly from '../public/img/btrfly_g.jpg';
+
+// FUNCTIONS
+import { PlanetMenu } from '@components/Function/PlanetMenu';
 
 // STITCH IMPORTS
 // import { styled } from '@stitches/react';
@@ -42,7 +46,7 @@ const BarSection = styled('div', {
   zIndex: '10',
   width: '100vw',
   minWidth: '100vw',
-  height: '200px',
+  height: '100px',
   backgroundColor: '$gray6',
   display: 'block',
   position: 'relative',
@@ -50,36 +54,53 @@ const BarSection = styled('div', {
   padding: '0',
   boxShadow: `0 2px 2px $lime9`,
   '@lg': {
-    borderTopLeftRadius: '80px',
-    borderTopRightRadius: '80px',
+    borderTopLeftRadius: '0px',
+    borderTopRightRadius: '0px',
   },
 
   '@md': {
-    borderTopLeftRadius: '60px',
-    borderTopRightRadius: '60px',
+    borderTopLeftRadius: '0px',
+    borderTopRightRadius: '0px',
   },
 
   '@sm': {
-    borderTopLeftRadius: '50px',
-    borderTopRightRadius: '50px',
+    borderTopLeftRadius: '0px',
+    borderTopRightRadius: '0px',
   },
   '@xs': {
-    borderTopLeftRadius: '32px',
-    borderTopRightRadius: '32px',
+    borderTopLeftRadius: '0px',
+    borderTopRightRadius: '0px',
   },
 });
 
 const Bar = styled('div', {
   boxSizing: 'border-box',
-  zIndex: '10',
+  zIndex: '1',
   width: '100vw',
   minWidth: '100vw',
-  height: '200px',
+  height: '400px',
   backgroundColor: '$gray6',
   display: 'block',
   position: 'relative',
   margin: '0',
   padding: '0',
+
+  alignItems: 'center',
+  textAlign: 'center',
+});
+
+const Card = styled('div', {
+  display: 'flex',
+  backgroundColor: '$slate3',
+  position: 'relative',
+
+  borderRadius: '20px',
+  marginTop: '18px',
+  padding: '40px',
+  alignItems: 'center',
+  webkitScrollbar: 'none',
+
+  height: '300px',
 });
 
 // APP BEGIN / HOMEPAGE
@@ -151,13 +172,49 @@ const AdyIndex = () => {
                     lineHeight: '1.3',
                   },
                 }}>
-                <strong>Atelier Design Yield</strong>® is an ever– expanding ecosystem of raw, unstyled, and modern
-                design components.
+                <strong>Atelier Design Yield</strong>® is cool.
               </Paragraph>
+
+              {/* <!-- CARDS CONTAINER --> */}
+              <Container
+                size="3"
+                css={{ overflowY: 'visible', height: 'auto', paddingTop: '10px', paddingBottom: '80px', px: '0px' }}>
+                <Grid
+                  css={{
+                    height: 'auto',
+                    gap: '10px',
+                    gridTemplateColumns: '1fr 1fr',
+                    '@sm': {
+                      gap: '10px',
+                      gridTemplateColumns: '1fr',
+                    },
+                  }}>
+                  {/* <!-- BOX ONE --> */}
+                  <Box>
+                    <Card>
+                      <Box css={{ position: 'absolute', bottom: '0', left: '0', margin: '20px' }}>
+                        <Text size="2" css={{ fontWeight: '600', lineHeight: '1.2' }}>
+                          Ady® Interval
+                        </Text>
+                      </Box>
+                    </Card>
+                  </Box>
+
+                  {/* <!-- BOX TWO --> */}
+                  <Box>
+                    <Card>
+                      <Box css={{ position: 'absolute', bottom: '0', left: '0', margin: '20px' }}>
+                        <Text size="2" css={{ fontWeight: '600', lineHeight: '1.2' }}>
+                          Ady® Interval
+                        </Text>
+                      </Box>
+                    </Card>
+                  </Box>
+                </Grid>
+              </Container>
+              {/* <!-- END CARDS CONTAINER --> */}
             </Container>
           </EightySection>
-
-          <Bar />
 
           <FooterMain />
         </CoverBox>

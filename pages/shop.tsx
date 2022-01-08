@@ -54,15 +54,9 @@ const Shop = () => {
         <Navbar />
 
         <Section size="3">
-          <Container
-            size="3"
-            css={{ ai: 'center', paddingTop: '100px', margin: 'auto', textAlign: 'center' }}
-          >
+          <Container size="3" css={{ ai: 'center', paddingTop: '100px', margin: 'auto', textAlign: 'center' }}>
             <Heading size="4">The design yield.</Heading>
-            <Text
-              as="p"
-              css={{ fontWeight: '400', fontSize: '14px', lineHeight: '4', color: '$slate9' }}
-            >
+            <Text as="p" css={{ fontWeight: '400', fontSize: '14px', lineHeight: '4', color: '$slate9' }}>
               Shop all.
             </Text>
           </Container>
@@ -81,10 +75,8 @@ const Shop = () => {
                 gap: '$4',
                 gridTemplateColumns: '1fr 1fr 1fr',
               },
-            }}
-          >
+            }}>
             {/* PRODUCT ROW ONE */}
-
             <Box>
               <Card>
                 <Box css={{ position: 'absolute', bottom: '0', left: '0', margin: '20px' }}>
