@@ -101,17 +101,35 @@ export const Navbar = () => {
               Blog
             </Link>
           </NextLink>
-          <Link
-            onClick={logout}
-            variant="subtle"
-            css={{
-              color: '$gray12',
-              mr: '$3',
-              '@bp2': { display: 'block', mr: '$3' },
-              '&:hover': { cursor: 'pointer' },
-            }}>
-            Logout
-          </Link>
+          <div>
+            {user?.loading ? (
+              <Link
+                onClick={logout}
+                variant="subtle"
+                css={{
+                  color: '$gray12',
+                  mr: '$3',
+                  '@bp2': { display: 'block', mr: '$3' },
+                  '&:hover': { cursor: 'pointer' },
+                }}>
+                Logout
+              </Link>
+            ) : (
+              user?.issuer && (
+                <Link
+                  onClick={logout}
+                  variant="subtle"
+                  css={{
+                    color: '$gray12',
+                    mr: '$3',
+                    '@bp2': { display: 'block', mr: '$3' },
+                    '&:hover': { cursor: 'pointer' },
+                  }}>
+                  Login / Signup
+                </Link>
+              )
+            )}
+          </div>
         </Flex>
       </Flex>
     </>
