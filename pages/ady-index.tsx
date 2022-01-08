@@ -8,6 +8,7 @@ import { Box } from '@design-system/box';
 import { Text } from '@design-system/text';
 import { Navbar } from '@components/Navbar';
 import { Hero } from '@components/Hero';
+import { SocialSection } from '@components/SocialSection';
 import { Heading } from '@design-system/heading';
 import { Paragraph } from '@design-system/paragraph';
 import { Container } from '@design-system/container';
@@ -215,6 +216,10 @@ const AdyIndex = () => {
               {/* <!-- END CARDS CONTAINER --> */}
             </Container>
           </EightySection>
+
+          <BarSection css={{ borderBottomRightRadius: '40px', borderBottomLeftRadius: '40px' }} />
+
+          <SocialSection />
 
           <FooterMain />
         </CoverBox>
