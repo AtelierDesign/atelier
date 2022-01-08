@@ -194,6 +194,9 @@ export const { styled, css, theme, createTheme, getCssText, globalCss, keyframes
       light100: 'rgba(240, 240, 240, 0.5)',
       clear100: 'rgba(240, 240, 240, 0.2)',
 
+      light100: 'rgba(240, 240, 240, 0.5)',
+      light50: 'rgba(240, 240, 240, 0.8)',
+
       // SEMANTICS
       hiContrast: '$slate12',
       semiTransparent: '$light100',
@@ -495,6 +498,7 @@ export const darkTheme = createTheme('darkTheme', {
     shadowLight: 'hsl(206 22% 7% / 35%)',
     shadowDark: 'hsl(206 22% 7% / 20%)',
     light100: 'rgba(0, 0, 0, 0.4)',
+    light50: 'rgba(0, 0, 0, 0.8)',
   },
   utils: {},
 });

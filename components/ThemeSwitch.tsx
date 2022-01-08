@@ -11,13 +11,13 @@ const StyledSwitch = styled(SwitchPrimitive.Root, {
   all: 'unset',
   width: 32,
   height: 16,
-  backgroundColor: '$w',
+  backgroundColor: '$slate5',
   borderRadius: '9999px',
   position: 'relative',
   boxShadow: `0 2px 10px $gray10`,
   WebkitTapHighlightColor: 'rgba(0, 0, 0, 0)',
   '&:focus': { boxShadow: `0 0 0 2px black` },
-  '&[data-state="checked"]': { backgroundColor: '$whiteA' },
+  '&[data-state="checked"]': { backgroundColor: '$slate5' },
 });
 
 const StyledThumb = styled(SwitchPrimitive.Thumb, {
