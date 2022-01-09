@@ -2,6 +2,26 @@
 
 Atelier Design Yield® Website
 
+## Description
+
+Atelier Design Yield® Website
+
+## Environment
+
+- NextJs
+- Supabase
+- Stitches.dev
+
+## Design Structure
+
+- Stitches Components
+
+## ToDo List
+
+- [x] Twitter Auth Login
+- [ ] Dashboard
+- [ ] Profile (Edit, upload Profile Image)
+
 ### Tech-Stack
 
 Next.js
