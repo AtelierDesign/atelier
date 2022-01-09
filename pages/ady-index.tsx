@@ -30,7 +30,7 @@ const CoverBox = styled('div', {
   width: '100vw',
   minWidth: '100vw',
   height: '100vh',
-  backgroundColor: '$slate3',
+  backgroundColor: '$slate1',
   display: 'block',
   position: 'relative',
   margin: 'auto',
