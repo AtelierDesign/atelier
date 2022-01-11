@@ -72,12 +72,6 @@ export const Navbar = () => {
               display: 'none',
             },
           }}>
-          {/* // <!-- NEED A LABEL? --> // Uncomment
-          <Text css={{ fontSize: '12px', marginRight: '$2' }}>Theme</Text>
-          */}
-
-          {/* <!-- THEME SWITCH --> */}
-          <ThemeSwitch />
           <NextLink href="/shop" passHref>
             <Link variant="subtle" css={{ marginRight: '$3', color: '$gray12', '@sm': { marginRight: '$2' } }}>
               Shop
@@ -118,9 +112,14 @@ export const Navbar = () => {
         {/* <!-- JSX ELEMENT --> */}
 
         <Flex as="nav" css={{ ai: 'center', px: '0px', fontFamily: '$inter', fontSize: '12px' }}>
+          {/* <!-- THEME SWITCH --> */}
+          <ThemeSwitch />
+
           {/* <!-- JSX ELEMENT --> */}
           <Link
-            href="/"
+            href="https://api.ady.world"
+            target="_blank"
+            rel="norefferer"
             variant="subtle"
             css={{
               fontSize: '13px',
@@ -142,7 +141,9 @@ export const Navbar = () => {
           </Link>
           {/* <!-- -->*/}
           <Link
-            href="/"
+            href="https://api.ady.world"
+            target="_blank"
+            rel="norefferer"
             variant="subtle"
             css={{
               display: 'none',
