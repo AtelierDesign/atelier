@@ -1,17 +1,15 @@
+import React from 'react';
+import Router from 'next/router';
 import NextLink from 'next/link';
 
+// ATELIER® DESIGN SYSTEM
 import { Box } from '@atelier/box';
 import { Flex } from '@atelier/flex';
 import { Text } from '@atelier/text';
 import { Link } from '@atelier/link';
-// import { ArrowRightIcon } from '@radix-ui/react-icons';
-import { ThemeSwitch } from '@components/ThemeSwitch';
+import { ThemeSwitch } from '@components/Functions/ThemeSwitch';
 import { HamburgerMenuIcon } from '@radix-ui/react-icons';
-// import { MenuNav } from './MenuNav';
-
-// MAGIC
-import { useContext } from 'react';
-import router from 'next/router';
+import { ArrowRightIcon } from '@radix-ui/react-icons';
 
 export const Navbar = () => {
   return (
@@ -74,7 +72,7 @@ export const Navbar = () => {
           }}>
           <NextLink href="/shop" passHref>
             <Link variant="subtle" css={{ marginRight: '$3', color: '$gray12', '@sm': { marginRight: '$2' } }}>
-              Shop
+              Shop <ArrowRightIcon />
             </Link>
           </NextLink>
 
