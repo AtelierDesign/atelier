@@ -3,9 +3,9 @@ import React from 'react';
 import { styled, keyframes } from '@stitches/react';
 import { GitHubLogoIcon, ChevronRightIcon } from '@radix-ui/react-icons';
 
-import { Text } from '@design-system/text';
+import { Text } from '@atelier/text';
 import { darkTheme } from 'stitches.config';
-import { Button } from '@design-system/button';
+import { Button } from '@atelier/button';
 import { useTheme } from 'next-themes';
 
 import * as DropdownMenuPrimitive from '@radix-ui/react-dropdown-menu';
@@ -183,8 +183,7 @@ export const MenuNav = props => {
                 fontSize: '11px',
                 fontWeight: '700',
                 color: '$gray12',
-              }}
-            >
+              }}>
               Menu
             </Text>
           </IconButton>
@@ -201,8 +200,7 @@ export const MenuNav = props => {
                   cursor: 'pointer',
                   color: '$white',
                 },
-              }}
-            >
+              }}>
               Shop All
             </Button>
             {/* <!-- <RightSlot>⌘ S</RightSlot> --> */}
@@ -218,8 +216,7 @@ export const MenuNav = props => {
                   cursor: 'pointer',
                   color: '$white',
                 },
-              }}
-            >
+              }}>
               About
             </Button>
             {/* <!-- <RightSlot>⌘ A</RightSlot> --> */}
@@ -235,8 +232,7 @@ export const MenuNav = props => {
                   cursor: 'pointer',
                   color: '$white',
                 },
-              }}
-            >
+              }}>
               GitHub
             </Button>
             <RightSlot>
@@ -258,8 +254,7 @@ export const MenuNav = props => {
                     cursor: 'pointer',
                     color: '$white',
                   },
-                }}
-              >
+                }}>
                 More Tools
               </Button>
               <RightSlot>
@@ -294,18 +289,13 @@ export const MenuNav = props => {
               onClick={() => {
                 const newTheme = theme === 'dark' ? 'theme' : 'dark';
 
-                document
-                  .querySelectorAll('[data-demo-iframe]')
-                  .forEach((iframe: HTMLIFrameElement) => {
-                    if (iframe.contentDocument?.documentElement) {
-                      iframe.contentDocument.documentElement.classList.toggle(darkTheme.className);
-                      iframe.contentDocument.documentElement.classList.toggle('theme');
-                      iframe.contentDocument.documentElement.style.setProperty(
-                        'color-scheme',
-                        newTheme,
-                      );
-                    }
-                  });
+                document.querySelectorAll('[data-demo-iframe]').forEach((iframe: HTMLIFrameElement) => {
+                  if (iframe.contentDocument?.documentElement) {
+                    iframe.contentDocument.documentElement.classList.toggle(darkTheme.className);
+                    iframe.contentDocument.documentElement.classList.toggle('theme');
+                    iframe.contentDocument.documentElement.style.setProperty('color-scheme', newTheme);
+                  }
+                });
 
                 document.documentElement.classList.toggle(darkTheme.className);
                 document.documentElement.classList.toggle('theme');
@@ -317,8 +307,7 @@ export const MenuNav = props => {
               }}
               // ALLOW PROPS
               {...props}
-              aria-label="TOGGLE LIGHT AND DARK THEME®"
-            >
+              aria-label="TOGGLE LIGHT AND DARK THEME®">
               Toggle Theme
             </Button>
             <RightSlot>⌘ T</RightSlot>

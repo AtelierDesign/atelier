@@ -1,10 +1,10 @@
-import { Box } from '@design-system/box';
-import { Container } from '@design-system/container';
-import { Grid } from '@design-system/grid';
-import { Text } from '@design-system/text';
-import { Heading } from '@design-system/heading';
+import { Box } from '@atelier/box';
+import { Container } from '@atelier/container';
+import { Grid } from '@atelier/grid';
+import { Text } from '@atelier/text';
+import { Heading } from '@atelier/heading';
 import { TimeCode } from '@components/Time/TimeCode';
-import { Button } from '@design-system/button';
+import { Button } from '@atelier/button';
 import { ExternalLinkIcon } from '@radix-ui/react-icons';
 import Image from 'next/image';
 import React from 'react';
@@ -87,8 +87,7 @@ export const OneCol = () => {
                 lineHeight: '22px',
                 '@bp1': { width: '450px' },
               }}>
-              ADY® is an ever– expanding ecosystem of essential design components built for modern
-              web.
+              ADY® is an ever– expanding ecosystem of essential design components built for modern web.
             </Text>
             <TimeDisplay>
               <TimeCode />

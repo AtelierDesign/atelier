@@ -1,9 +1,9 @@
-import { Grid } from '@design-system/grid';
-import { Box } from '@design-system/box';
-import { Container } from '@design-system/container';
-import { Section } from '@design-system/section';
-import { Heading } from '@design-system/heading';
-import { Text } from '@design-system/text';
+import { Grid } from '@atelier/grid';
+import { Box } from '@atelier/box';
+import { Container } from '@atelier/container';
+import { Section } from '@atelier/section';
+import { Heading } from '@atelier/heading';
+import { Text } from '@atelier/text';
 import NextLink from 'next/link';
 import Link from 'next/link';
 
@@ -105,14 +105,10 @@ export const Demo = () => {
                 rowGap: '2px',
                 gridTemplateColumns: '1fr 1fr',
               },
-            }}
-          >
+            }}>
             <Card>
               <Box css={{ width: '100%', alignItems: 'center' }}>
-                <Heading
-                  size="3"
-                  css={{ textAlign: 'center', paddingRight: '20px', paddingLeft: '20px' }}
-                >
+                <Heading size="3" css={{ textAlign: 'center', paddingRight: '20px', paddingLeft: '20px' }}>
                   Free Sample.
                 </Heading>
                 <Text
@@ -133,8 +129,7 @@ export const Demo = () => {
                     '@bp2': {
                       width: '100%',
                     },
-                  }}
-                >
+                  }}>
                   <p>Need a test run with some of our products, before you decide? We got you.</p>
                 </Text>
               </Box>
@@ -159,12 +154,10 @@ export const Demo = () => {
                       '@bp2': {
                         width: '70%',
                       },
-                    }}
-                  >
+                    }}>
                     <p>
                       Create an account with us, and we’ll send you a Free Demo (Version– 1.0) of{' '}
-                      <strong>Ady® Interval</strong>, and a sample pack of design elements,
-                      textures, and more!
+                      <strong>Ady® Interval</strong>, and a sample pack of design elements, textures, and more!
                     </p>
                   </Text>
                 </TextBox>

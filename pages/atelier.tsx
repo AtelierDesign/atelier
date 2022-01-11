@@ -4,12 +4,12 @@ import Head from 'next/head';
 import Image from 'next/image';
 
 // ATELIER DESIGN SYSTEM IMPORTS
-import { Box } from '@design-system/box';
-import { Container } from '@design-system/container';
-import { Section } from '@design-system/section';
-import { Heading } from '@design-system/heading';
-import { Text } from '@design-system/text';
-import { Paragraph } from '@design-system/paragraph';
+import { Box } from '@atelier/box';
+import { Container } from '@atelier/container';
+import { Section } from '@atelier/section';
+import { Heading } from '@atelier/heading';
+import { Text } from '@atelier/text';
+import { Paragraph } from '@atelier/paragraph';
 import { Navbar } from '@components/Navbar';
 import { FooterMain } from '@components/FooterMain';
 import { DefaultButton } from '@components/DefaultButton';
@@ -176,8 +176,7 @@ const Atelier = () => {
                 fontSize: '16px',
                 width: '80%',
               }}>
-              Create open and close animations that take the dropdown menu’s actual position into
-              account.
+              Create open and close animations that take the dropdown menu’s actual position into account.
             </Paragraph>
             <DefaultButton as="a" css={{}}>
               Learn more <ArrowRightIcon />
@@ -214,8 +213,8 @@ const Atelier = () => {
                       lineHeight: '22px',
                       zIndex: '9999',
                     }}>
-                    Description. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Description. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua.
                   </Text>
                   <SmallText>From $19.99</SmallText>
                   <ImageButton>Buy Now</ImageButton>
@@ -254,8 +253,7 @@ const Atelier = () => {
                     paddingTop: '16px',
                     lineHeight: '22px',
                   }}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                  incididunt ut labore.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
                 </Text>
                 <SmallText>From $19.99</SmallText>
                 <ImageButton>Buy Now</ImageButton>
@@ -289,8 +287,7 @@ const Atelier = () => {
                     paddingTop: '16px',
                     lineHeight: '22px',
                   }}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                  incididunt ut labore.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
                 </Text>
                 <SmallText>From $19.99</SmallText>
                 <ImageButton>Buy Now</ImageButton>
@@ -324,8 +321,7 @@ const Atelier = () => {
                     paddingTop: '16px',
                     lineHeight: '22px',
                   }}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                  incididunt ut labore.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
                 </Text>
                 <SmallText>From $19.99</SmallText>
                 <ImageButton>Buy Now</ImageButton>
@@ -359,8 +355,7 @@ const Atelier = () => {
                     paddingTop: '16px',
                     lineHeight: '22px',
                   }}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                  incididunt ut labore.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
                 </Text>
                 <SmallText>From $19.99</SmallText>
                 <ImageButton>Buy Now</ImageButton>

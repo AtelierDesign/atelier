@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box } from '@design-system/box';
+import { Box } from '@atelier/box';
 import { theme } from 'stitches.config';
 
 export function HeroContainer({ css, children }: { css?: any; children?: React.ReactNode }) {
@@ -20,8 +20,7 @@ export function HeroContainer({ css, children }: { css?: any; children?: React.R
 
         '@bp2': { mx: '-$7' },
         '@bp3': { mx: '-$8' },
-      }}
-    >
+      }}>
       {children}
     </Box>
   );

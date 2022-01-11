@@ -3,10 +3,10 @@ import Image from 'next/image';
 import React from 'react';
 import NextLink from 'next/link';
 import coverSwirl from '../public/img/four.png';
-import { NormalLink } from '@design-system/normal-link';
-import { Text } from '@design-system/text';
+import { NormalLink } from '@atelier/normal-link';
+import { Text } from '@atelier/text';
 
-import { Box } from '@design-system/box';
+import { Box } from '@atelier/box';
 
 import { styled } from '@stitches/react';
 

@@ -1,5 +1,5 @@
 import { styled } from '../stitches.config';
-import { Box } from '@design-system/box';
+import { Box } from '@atelier/box';
 import { ArrowRightIcon } from '@radix-ui/react-icons';
 import React from 'react';
 

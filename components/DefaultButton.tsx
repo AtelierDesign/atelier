@@ -19,7 +19,6 @@ export const DefaultButton = styled('button', {
   fontSize: '13px',
 
   '&:hover': {
-    backgroundColor: '',
     color: '$white',
     cursor: 'pointer',
   },

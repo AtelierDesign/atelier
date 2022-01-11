@@ -1,32 +1,17 @@
 import NextLink from 'next/link';
 
-import { Box } from '@design-system/box';
-import { Flex } from '@design-system/flex';
-import { Text } from '@design-system/text';
-import { Link } from '@design-system/link';
-// import { ArrowRightIcon } from '@radix-ui/react-icons';
-import { ThemeToggle } from '@components/ThemeToggle';
+import { Box } from '@atelier/box';
+import { Flex } from '@atelier/flex';
+import { Text } from '@atelier/text';
+import { Link } from '@atelier/link';
 import { ThemeSwitch } from '@components/ThemeSwitch';
 import { FalldownMenu } from '@components/Function/FalldownMenu';
-// import { MenuNav } from './MenuNav';
 
 // MAGIC
 import { useContext } from 'react';
 import router from 'next/router';
-import { magic } from '@lib/magic';
-import { UserContext } from '@lib/UserContext';
-import { Loading } from '@components/Magic/Loading';
 
 export const NavbarSticky = () => {
-  const [user, setUser] = useContext(UserContext);
-
-  const logout = () => {
-    magic.user.logout().then(() => {
-      setUser({ user: null });
-      router.push('/login');
-    });
-  };
-
   return (
     <>
       <Flex
@@ -133,7 +118,7 @@ export const NavbarSticky = () => {
         <Flex as="nav" css={{ ai: 'center', px: '0px', fontFamily: '$inter', fontSize: '12px' }}>
           {/* <!-- JSX ELEMENT --> */}
           <Link
-            onClick={logout}
+            href="/"
             variant="subtle"
             css={{
               fontSize: '13px',

@@ -4,7 +4,7 @@ import { violet, mauve, blackA, whiteA } from '@radix-ui/colors';
 import * as SwitchPrimitive from '@radix-ui/react-switch';
 
 import { darkTheme } from 'stitches.config';
-import { Button } from '@design-system/button';
+import { Button } from '@atelier/button';
 import { useTheme } from 'next-themes';
 
 const StyledSwitch = styled(SwitchPrimitive.Root, {

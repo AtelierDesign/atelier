@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { Box } from '@design-system/box';
+import { Box } from '@atelier/box';
 
 // STITCHES STYLED
 import { styled } from '@stitches/react';

@@ -1,14 +1,14 @@
 import Head from 'next/head';
 import React from 'react';
 
-import { Box } from '@design-system/box';
-import { Container } from '@design-system/container';
-import { Section } from '@design-system/section';
-import { Heading } from '@design-system/heading';
-import { Text } from '@design-system/text';
+import { Box } from '@atelier/box';
+import { Container } from '@atelier/container';
+import { Section } from '@atelier/section';
+import { Heading } from '@atelier/heading';
+import { Text } from '@atelier/text';
 import { Navbar } from '@components/Navbar';
 import { FooterMain } from '@components/FooterMain';
-import { Grid } from '@design-system/grid';
+import { Grid } from '@atelier/grid';
 
 import { styled } from '@stitches/react';
 

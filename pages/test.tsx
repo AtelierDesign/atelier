@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Box } from '@atelier-dsgn/box';
+import { Box } from '@atelier/box';
 import { NavbarSticky } from '@components/NavbarSticky';
 
 // STYLED STITCHES

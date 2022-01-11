@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import React from 'react';
 
-import { Box } from '@design-system/box';
+import { Box } from '@atelier/box';
 import { Navbar } from '@components/Navbar';
 
 const Interval = () => {

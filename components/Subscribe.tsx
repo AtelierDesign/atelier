@@ -1,10 +1,10 @@
 import React from 'react';
 import Head from 'next/head';
 // import { Klaviyo } from 'node-klaviyo';
-import { Box } from '@design-system/box';
-import { Heading } from '@design-system/heading';
-import { Text } from '@design-system/text';
-import { Container } from '@design-system/container';
+import { Box } from '@atelier/box';
+import { Heading } from '@atelier/heading';
+import { Text } from '@atelier/text';
+import { Container } from '@atelier/container';
 import { DefaultButton } from '@components/DefaultButton';
 
 /*

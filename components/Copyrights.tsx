@@ -1,5 +1,5 @@
-import { Box } from '@design-system/box';
-import { Text } from '@design-system/text';
+import { Box } from '@atelier/box';
+import { Text } from '@atelier/text';
 
 export const Copyrights = () => {
   return (

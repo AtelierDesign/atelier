@@ -1,6 +1,6 @@
 import React from 'react';
 import { darkTheme } from 'stitches.config';
-import { Button } from '@design-system/button';
+import { Button } from '@atelier/button';
 import { useTheme } from 'next-themes';
 import { LightningBoltIcon } from '@radix-ui/react-icons';
 
@@ -38,8 +38,7 @@ export const ThemeToggle = props => {
         setTheme(newTheme);
       }}
       {...props}
-      aria-label="toggle a light and dark color scheme"
-    >
+      aria-label="toggle a light and dark color scheme">
       <LightningBoltIcon />
     </Button>
   );

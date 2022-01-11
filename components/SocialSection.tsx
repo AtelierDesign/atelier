@@ -1,12 +1,12 @@
 import React from 'react';
 import NextLink from 'next/link';
 
-import { Box } from '@design-system/box';
-import { Grid } from '@design-system/grid';
-import { Text } from '@design-system/text';
-import { Container } from '@design-system/container';
-import { Heading } from '@design-system/heading';
-import { Section } from '@design-system/section';
+import { Box } from '@atelier/box';
+import { Grid } from '@atelier/grid';
+import { Text } from '@atelier/text';
+import { Container } from '@atelier/container';
+import { Heading } from '@atelier/heading';
+import { Section } from '@atelier/section';
 
 export const SocialSection = () => {
   return (
@@ -18,8 +18,7 @@ export const SocialSection = () => {
           css={{
             justifyContent: 'space-between',
             '@bp2': { gridAutoColumns: '240px' },
-          }}
-        >
+          }}>
           {/* <!-- TWITTER --> */}
           <NextLink href="https://twitter.com/_adyworld" passHref>
             <Box
@@ -32,16 +31,9 @@ export const SocialSection = () => {
                 '&:hover': {
                   cursor: 'pointer',
                 },
-              }}
-            >
+              }}>
               <Box css={{ mb: '$3' }}>
-                <svg
-                  width="23"
-                  height="23"
-                  viewBox="0 0 30 30"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
+                <svg width="23" height="23" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     fillRule="evenodd"
                     clipRule="evenodd"
@@ -71,16 +63,9 @@ export const SocialSection = () => {
                 '&:hover': {
                   cursor: 'pointer',
                 },
-              }}
-            >
+              }}>
               <Box css={{ mb: '$3' }}>
-                <svg
-                  width="22"
-                  height="22"
-                  viewBox="0 0 30 30"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
+                <svg width="22" height="22" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g>
                     <path
                       fillRule="evenodd"
@@ -129,16 +114,9 @@ export const SocialSection = () => {
                 '&:hover': {
                   cursor: 'pointer',
                 },
-              }}
-            >
+              }}>
               <Box css={{ mb: '$3' }}>
-                <svg
-                  width="23"
-                  height="23"
-                  viewBox="0 0 30 30"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
+                <svg width="23" height="23" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     fillRule="evenodd"
                     clipRule="evenodd"

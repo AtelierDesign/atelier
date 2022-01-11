@@ -1,9 +1,10 @@
-import { Box } from '@design-system/box';
-import { Container } from '@design-system/container';
-import { Grid } from '@design-system/grid';
-import { Heading } from '@design-system/heading';
-import { Text } from '@design-system/text';
 import React from 'react';
+
+import { Box } from '@atelier/box';
+import { Container } from '@atelier/container';
+import { Grid } from '@atelier/grid';
+import { Heading } from '@atelier/heading';
+import { Text } from '@atelier/text';
 
 export const ThreeCols = () => {
   return (
@@ -17,8 +18,7 @@ export const ThreeCols = () => {
           gap: '$4',
           bc: '$lime9',
           br: '$3',
-        }}
-      >
+        }}>
         <Box>
           <Text as="p" size="4" css={{ fontWeight: '800', padding: '26px', lineHeight: '27px' }}>
             COLUMN ONE

@@ -1,6 +1,7 @@
-import { styled } from '../stitches.config';
-import { Box } from '@design-system/box';
 import React from 'react';
+import { Box } from '@atelier/box';
+
+import { styled } from '../stitches.config';
 
 const CardParent = styled('div', {
   width: '350px',

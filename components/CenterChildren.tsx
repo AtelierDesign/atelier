@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box } from '@design-system/box';
+import { Box } from '@atelier/box';
 import { styled } from '@stitches/react';
 
 const CenterContent = styled('div', {

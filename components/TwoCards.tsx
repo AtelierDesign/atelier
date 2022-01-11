@@ -1,8 +1,8 @@
-import { Box } from '@design-system/box';
-import { Container } from '@design-system/container';
-import { Grid } from '@design-system/grid';
-import { Heading } from '@design-system/heading';
-import { Text } from '@design-system/text';
+import { Box } from '@atelier/box';
+import { Container } from '@atelier/container';
+import { Grid } from '@atelier/grid';
+import { Heading } from '@atelier/heading';
+import { Text } from '@atelier/text';
 import React from 'react';
 
 export const TwoCards = () => {
@@ -15,8 +15,7 @@ export const TwoCards = () => {
         css={{
           gridTemplateColumns: 'repeat(2, minmax(0, 1fr))',
           gap: '$4',
-        }}
-      >
+        }}>
         <Box css={{ bc: '$bronze2', br: '$4', height: '300px' }}>
           <Text as="p" size="4" css={{ fontWeight: '800', padding: '26px', lineHeight: '27px' }}>
             COLUMN ONE

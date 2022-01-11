@@ -2,8 +2,10 @@ import { styled } from 'stitches.config';
 
 export const Section = styled('section', {
   // Reset
+
   boxSizing: 'border-box',
   flexShrink: 1,
+  // backgroundColor: '$gray4',
   '&::before': {
     boxSizing: 'border-box',
     content: '""',
@@ -17,13 +19,19 @@ export const Section = styled('section', {
     size: {
       1: {
         py: '$3',
+        paddingLeft: '40px',
+        paddingRight: '40px',
       },
       2: {
         py: '$5',
+        paddingLeft: '0px',
+        paddingRight: '0px',
+        margin: '20px',
       },
       3: {
-        py: '$9',
-        px: '0',
+        py: '80px',
+        paddingLeft: '15px',
+        paddingRight: '15px',
         margin: 'auto',
       },
       4: {

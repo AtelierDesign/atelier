@@ -4,25 +4,19 @@ import Head from 'next/head';
 import Image from 'next/image';
 
 // ATELIER DESIGN SYSTEM IMPORTS
-import { Box } from '@design-system/box';
-import { Text } from '@design-system/text';
+import { Box } from '@atelier/box';
+import { Text } from '@atelier/text';
 import { Navbar } from '@components/Navbar';
 import { Hero } from '@components/Hero';
 import { SocialSection } from '@components/SocialSection';
-import { Heading } from '@design-system/heading';
-import { Paragraph } from '@design-system/paragraph';
-import { Container } from '@design-system/container';
-import { Grid } from '@design-system/grid';
-// import { OneHundred } from '@components/OneHundred';
+import { Heading } from '@atelier/heading';
+import { Paragraph } from '@atelier/paragraph';
+import { Container } from '@atelier/container';
+import { Grid } from '@atelier/grid';
 import { EightySection } from '@components/EightySection';
 import { FooterMain } from '@components/FooterMain';
 import btrfly from '../public/img/btrfly_g.jpg';
 
-// FUNCTIONS
-import { PlanetMenu } from '@components/Function/PlanetMenu';
-
-// STITCH IMPORTS
-// import { styled } from '@stitches/react';
 import { styled } from 'stitches.config';
 
 const CoverBox = styled('div', {

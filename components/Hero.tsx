@@ -1,11 +1,11 @@
 import React from 'react';
 import NextLink from 'next/link';
-import { Section } from '@design-system/section';
-import { Container } from '@design-system/container';
-import { Box } from '@design-system/box';
-import { Heading } from '@design-system/heading';
-import { Flex } from '@design-system/flex';
-import { Paragraph } from '@design-system/paragraph';
+import { Section } from '@atelier/section';
+import { Container } from '@atelier/container';
+import { Box } from '@atelier/box';
+import { Heading } from '@atelier/heading';
+import { Flex } from '@atelier/flex';
+import { Paragraph } from '@atelier/paragraph';
 import { ExternalLinkIcon, RocketIcon } from '@radix-ui/react-icons';
 import { DefaultButton } from '@components/DefaultButton';
 import { HomeButton } from '@components/HomeButton';
@@ -14,8 +14,8 @@ import { TimeCode } from '@components/Time/TimeCode';
 // STITCHES STYLED
 import { styled } from 'stitches.config';
 // import { theme } from 'stitches.config';
-// import { Text } from '@design-system/text';
-// import { Grid } from '@design-system/grid';
+// import { Text } from '@atelier/text';
+// import { Grid } from '@atelier/grid';
 
 const TimeDisplay = styled('div', {
   position: 'relative',
