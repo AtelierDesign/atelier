@@ -42,7 +42,7 @@ const TimeDisplay = styled('div', {
 
 export function Hero() {
   return (
-    <Box css={{ bc: '$slate3' }}>
+    <Box css={{ bc: '$slate1' }}>
       <Section size="3" css={{}}>
         <Container
           size="2"

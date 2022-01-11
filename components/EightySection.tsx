@@ -6,7 +6,7 @@ const Eighty = styled('div', {
   width: '100vw',
   minWidth: '100vw',
   height: 'auto',
-  backgroundColor: '$gray6',
+  backgroundColor: '$gray4',
   display: 'block',
   position: 'relative',
   margin: '0',

@@ -14,6 +14,7 @@ import { Paragraph } from '@atelier/paragraph';
 import { Container } from '@atelier/container';
 import { Grid } from '@atelier/grid';
 import { EightySection } from '@components/EightySection';
+import { AtelierSubscribe } from '@components/Function/AtelierSubscribe';
 import { FooterMain } from '@components/FooterMain';
 import btrfly from '../public/img/btrfly_g.jpg';
 
@@ -42,7 +43,7 @@ const BarSection = styled('div', {
   width: '100vw',
   minWidth: '100vw',
   height: '100px',
-  backgroundColor: '$gray6',
+  backgroundColor: '$gray4',
   display: 'block',
   position: 'relative',
   margin: '0',
@@ -74,7 +75,7 @@ const Bar = styled('div', {
   width: '100vw',
   minWidth: '100vw',
   height: '400px',
-  backgroundColor: '$gray6',
+  backgroundColor: '$gray4',
   display: 'block',
   position: 'relative',
   margin: '0',
@@ -211,7 +212,7 @@ const AdyIndex = () => {
             </Container>
           </EightySection>
 
-          <BarSection css={{ borderBottomRightRadius: '40px', borderBottomLeftRadius: '40px' }} />
+          <AtelierSubscribe />
 
           <SocialSection />
 
