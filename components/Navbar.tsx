@@ -7,7 +7,7 @@ import { Box } from '@atelier/box';
 import { Flex } from '@atelier/flex';
 import { Text } from '@atelier/text';
 import { Link } from '@atelier/link';
-import { ThemeSwitch } from '@components/Functions/ThemeSwitch';
+import { ThemeSwitch } from '@components/ThemeSwitch';
 import { HamburgerMenuIcon } from '@radix-ui/react-icons';
 import { ArrowRightIcon } from '@radix-ui/react-icons';
 
