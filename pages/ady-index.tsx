@@ -29,10 +29,6 @@ const CoverBox = styled('div', {
   display: 'block',
   position: 'relative',
   margin: 'auto',
-  // opacity: '0.9',
-  // backdropFilter: 'invert(10%) blur(10px)',
-  // saturate: '600%',
-
   overflowY: 'visible',
   overflowX: 'hidden',
 });
@@ -53,12 +49,10 @@ const BarSection = styled('div', {
     borderTopLeftRadius: '0px',
     borderTopRightRadius: '0px',
   },
-
   '@md': {
     borderTopLeftRadius: '0px',
     borderTopRightRadius: '0px',
   },
-
   '@sm': {
     borderTopLeftRadius: '0px',
     borderTopRightRadius: '0px',
@@ -89,13 +83,11 @@ const Card = styled('div', {
   display: 'flex',
   backgroundColor: '$slate3',
   position: 'relative',
-
   borderRadius: '20px',
   marginTop: '18px',
   padding: '40px',
   alignItems: 'center',
   webkitScrollbar: 'none',
-
   height: '300px',
 });
 
