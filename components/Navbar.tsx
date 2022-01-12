@@ -9,8 +9,8 @@ import { Text } from '@atelier/text';
 import { Link } from '@atelier/link';
 import { ThemeSwitch } from '@components/ThemeSwitch';
 // import { HamburgerMenuIcon } from '@radix-ui/react-icons';
-import { FalldownMenu } from '@components/Function/FalldownMenu';
-import { DropdownNavigation } from '@components/Function/DropdownNavigation';
+// import { FalldownMenu } from '@components/Function/FalldownMenu';
+// import { DropdownNavigation } from '@components/Function/DropdownNavigation';
 import { ArrowRightIcon } from '@radix-ui/react-icons';
 
 export const Navbar = () => {
@@ -141,11 +141,30 @@ export const Navbar = () => {
           </Link>
           {/* <!-- -->*/}
 
-          <Box css={{ zIndex: '9999', display: 'none', '@md': { display: 'block' } }}>
-            <DropdownNavigation>
-              <FalldownMenu />
-            </DropdownNavigation>
-          </Box>
+          <Link
+            href="https://api.ady.world"
+            target="_blank"
+            rel="norefferer"
+            variant="subtle"
+            css={{
+              display: 'none',
+              fontSize: '13px',
+              color: '$white',
+              // backgroundColor: '$crimson9',
+              // border: '1px solid $crimson9',
+              backgroundColor: '$lime9',
+              border: '0px solid $crimson9',
+              borderRadius: '6px',
+              paddingTop: '6px',
+              paddingBottom: '6px',
+              paddingLeft: '10px',
+              paddingRight: '10px',
+              mr: '$3',
+              '@sm': { display: 'block', mr: '$3' },
+              '&:hover': { cursor: 'pointer' },
+            }}>
+            Menu
+          </Link>
         </Flex>
       </Flex>
     </>

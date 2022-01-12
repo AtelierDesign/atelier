@@ -204,9 +204,9 @@ const AdyIndex = () => {
             </Container>
           </EightySection>
 
-          <AtelierSubscribe />
-
           <SocialSection />
+
+          <AtelierSubscribe />
 
           <FooterMain />
         </CoverBox>
