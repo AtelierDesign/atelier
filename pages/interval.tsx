@@ -1,17 +1,28 @@
-import Head from 'next/head';
 import React from 'react';
-
+import Image from 'next/image';
+import Link from 'next/link';
 import { Box } from '@atelier/box';
-import { Navbar } from '@components/Navbar';
+import { Container } from '@atelier/container';
+import { Section } from '@atelier/section';
+import { Flex } from '@atelier/flex';
 
-const Interval = () => {
+// import { Cross1Icon, PlusIcon, BackpackIcon, ArchiveIcon, StarFilledIcon, StarIcon } from '@radix-ui/react-icons';
+
+const Interval = props => {
   return (
-    <Box css={{ bc: '$slate1', overflow: 'auto', height: '100vh' }}>
-      <Head>
-        <title>Interval.</title>
-      </Head>
-
-      <Navbar />
+    <Box>
+      <Section size="2">
+        <Container size="3">
+          <Flex css={{ '@bp2': { gap: '$7' } }}>
+            <Flex css={{ fd: 'column', gap: '$3', width: 45, fs: 0 }}>
+              <Image src="https://cdn.ady.systems/ady.images/btrfly.png" alt="One" width={100} height={100} />
+              <Image src="https://cdn.ady.systems/ady.images/btrfly.png" alt="One" width={100} height={100} />
+              <Image src="https://cdn.ady.systems/ady.images/btrfly.png" alt="One" width={100} height={100} />
+              <Image src="https://cdn.ady.systems/ady.images/btrfly.png" alt="One" width={100} height={100} />
+            </Flex>
+          </Flex>
+        </Container>
+      </Section>
     </Box>
   );
 };

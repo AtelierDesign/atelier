@@ -1,13 +1,19 @@
 import React from 'react';
 import NextDocument, { Html, Head, Main, NextScript } from 'next/document';
-import { getCssText } from '../stitches.config';
+import { getCssText } from 'stitches.config';
+
+const getCssAndReset = () => {
+  const css = getCssText();
+
+  return css;
+};
 
 export default class Document extends NextDocument {
   render() {
     return (
       <Html lang="en">
         <Head>
-          <style id="stitches" dangerouslySetInnerHTML={{ __html: getCssText() }} />
+          <style id="stitches" dangerouslySetInnerHTML={{ __html: getCssAndReset() }} />
 
           <link rel="stylesheet" href="https://develop.modulz.app/fonts/fonts.css" />
           <link rel="amphtml" href="https://ady.world/" />
@@ -20,10 +26,7 @@ export default class Document extends NextDocument {
           <meta property="og:title" content="Atelier Design Yield®" />
           <meta property="og:url" content="https://www.ady.world/" />
           <meta property="og:image" content="https://cdn.ady.systems/assets/social.jpg" />
-          <meta
-            property="og:image:secure_url"
-            content="https://cdn.ady.systems/assets/social.jpg"
-          />
+          <meta property="og:image:secure_url" content="https://cdn.ady.systems/assets/social.jpg" />
           <meta property="og:image:type" content="image/jpeg" />
           <meta property="og:image:width" content="1600" />
           <meta property="og:image:height" content="900" />
