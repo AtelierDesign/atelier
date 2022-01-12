@@ -5,8 +5,8 @@ import NextLink from 'next/link';
 import coverSwirl from '../public/img/four.png';
 import { NormalLink } from '@atelier/normal-link';
 import { Text } from '@atelier/text';
-
 import { Box } from '@atelier/box';
+import { SmallSpacer } from '@components/SmallSpacer';
 
 import { styled } from '@stitches/react';
 
@@ -16,11 +16,12 @@ const CoverBox = styled('div', {
   minWidth: '100vw',
   height: '100%',
   backgroundColor: 'rgba(240, 240, 240, 0.3)',
+  // backgroundColor: '$gray12',
   display: 'block',
   position: 'relative',
   margin: 'auto',
   opacity: '0.9',
-  backdropFilter: 'invert(10%) blur(10px)',
+  backdropFilter: 'invert(10%) blur(20px)',
   saturate: '300%',
 
   overflowY: 'hidden',
@@ -48,6 +49,7 @@ export default function Cover() {
         zIndex: '0',
         overflowY: 'hidden',
         overflowX: 'hidden',
+        backgroundColor: '$gray12',
       }}>
       <Head>
         <title>Atelier®.</title>
@@ -63,6 +65,7 @@ export default function Cover() {
                   fontSize: '24px',
                   fontWeight: '900',
                   letterSpacing: '-0.05rem',
+                  color: '$white',
                 }}>
                 ATELIER®
               </Text>
@@ -71,7 +74,8 @@ export default function Cover() {
           </NextLink>
         </TextBox>
       </CoverBox>
-      <Image src={coverSwirl} alt="One" layout="fill" objectFit="cover" />
+      {/*<Image src={coverSwirl} alt="One" layout="fill" objectFit="cover" />*/}
+      <Image src="https://cdn.ady.systems/ady.images/btrfly.png" alt="One" layout="fill" objectFit="cover" />
     </Box>
   );
 }
