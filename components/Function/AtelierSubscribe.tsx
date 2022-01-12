@@ -17,7 +17,12 @@ export const AtelierSubscribe = () => {
         <Heading size="3" css={{ paddingBottom: '20px' }}>
           Join the conversation.
         </Heading>
-        <TextField size="3" css={{ width: '400px' }} type="email" placeholder="Enter email address" />
+        <TextField
+          size="3"
+          css={{ width: '100%', maxWidth: '400px', minWidth: '200px' }}
+          type="email"
+          placeholder="Enter email address"
+        />
         <Heading as="a" size="1" css={{ paddingTop: '10px', fontWeight: '700' }}>
           Submit <ArrowRightIcon />
         </Heading>
