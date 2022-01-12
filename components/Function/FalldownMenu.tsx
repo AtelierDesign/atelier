@@ -21,12 +21,20 @@ export const FalldownMenu = () => {
 
   return (
     <Hamburger
+      id="hamburger-react"
+      className="hamburger-react"
+      padding="0"
+      direction="left"
+      easing="ease-in"
+      duration={0.2}
+      position="relative"
+      color="#000"
       size={18}
       toggled={isOpen}
       toggle={setOpen}
       onToggle={isOpen => {
         if (isOpen) {
-          return <Menu />;
+          return null;
         } else {
           return null;
         }

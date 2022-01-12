@@ -119,14 +119,28 @@ strong {
 /* HEADLESS */
 
 #headlessui-menu-button-1 {
-  background-color: #94e522 !important;
-  border: 1px solid #94e522;
-  border-radius: 12px;
-  height: 25px;
-  padding: 3px;
-  font-size: 13px;
+  height: 32px;
+  line-height: normal;
+  border: none !important;
+
+  background-color: transparent;
+}
+
+#hamburger-react {
+  height: 32px;
+  width: 32px;
   line-height: normal;
 }
+
+.hamburger-react {
+  margin: auto !important;
+  padding: 0;
+  /*  height: 38px !important;
+  width: 38px !important; */
+  line-height: normal !important;
+}
+
+/*
 
 #headlessui-menu-items-2 {
   display: flex;
@@ -147,3 +161,12 @@ strong {
   padding-bottom: 3px;
   line-height: normal;
 }
+
+.menu__item__link,
+.menu__item__link a,
+.menu__item__link:active {
+  font-family: 'Inter', sans-serif;
+  color: white !important;
+}
+
+*/

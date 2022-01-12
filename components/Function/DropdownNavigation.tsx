@@ -1,28 +1,73 @@
 import { Menu } from '@headlessui/react';
+import { Container } from '@atelier/container';
+import { Box } from '@atelier/box';
+import { FalldownMenu } from '@components/Function/FalldownMenu';
+
+import Link from 'next/link';
+
+import { styled } from '@stitches/react';
+
+const ItemHolder = styled('div', {
+  margin: '0',
+  padding: '8px',
+  position: 'relative',
+  alignItems: 'right',
+  textAlign: 'right',
+});
 
 export const DropdownNavigation = () => {
   return (
-    <Menu>
-      <Menu.Button>More</Menu.Button>
-      <Menu.Items>
-        <Menu.Item>
-          {({ active }) => (
-            <a className={`${active && 'bg-blue-500'}`} href="/account-settings">
-              Account settings
-            </a>
-          )}
-        </Menu.Item>
-        <Menu.Item>
-          {({ active }) => (
-            <a className={`${active && 'bg-blue-500'}`} href="/account-settings">
-              Documentation
-            </a>
-          )}
-        </Menu.Item>
-        <Menu.Item disabled>
-          <span className="opacity-75">Invite a friend (coming soon!)</span>
-        </Menu.Item>
-      </Menu.Items>
-    </Menu>
+    <Container size="2" css={{ alignItems: 'right', textAlign: 'right', zIndex: '9999' }}>
+      <Menu>
+        <Menu.Button>
+          <FalldownMenu />
+        </Menu.Button>
+
+        <Menu.Items>
+          <Box
+            css={{ padding: '16px', display: 'flex', flexDirection: 'column', bc: '$light100', alignItems: 'right' }}>
+            <Menu.Item>
+              {({ active }) => (
+                <ItemHolder>
+                  <Link className={`${active && 'menu__item__link'}`} href="/">
+                    Account settings
+                  </Link>
+                </ItemHolder>
+              )}
+            </Menu.Item>
+
+            <Menu.Item>
+              {({ active }) => (
+                <ItemHolder>
+                  <Link className={`${active && 'menu__item__link'}`} href="/">
+                    Account settings
+                  </Link>
+                </ItemHolder>
+              )}
+            </Menu.Item>
+
+            <Menu.Item>
+              {({ active }) => (
+                <ItemHolder>
+                  <Link className={`${active && 'menu__item__link'}`} href="/">
+                    Account settings
+                  </Link>
+                </ItemHolder>
+              )}
+            </Menu.Item>
+
+            <Menu.Item>
+              {({ active }) => (
+                <ItemHolder>
+                  <Link className={`${active && 'menu__item__link'}`} href="/">
+                    Account settings
+                  </Link>
+                </ItemHolder>
+              )}
+            </Menu.Item>
+          </Box>
+        </Menu.Items>
+      </Menu>
+    </Container>
   );
 };
