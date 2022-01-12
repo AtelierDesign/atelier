@@ -21,6 +21,7 @@
     "@emotion/styled": "^11.6.0",
     "@headlessui/react": "^1.4.2",
     "@radix-ui/colors": "^0.1.7",
+    "@radix-ui/react-radio-group": "^0.1.4",
     "@react-three/drei": "^7.20.5",
     "@react-three/fiber": "^7.0.19",
     "@stitches/core": "^1.2.5",
