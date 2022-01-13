@@ -2,11 +2,12 @@ import Head from 'next/head';
 import Image from 'next/image';
 import React from 'react';
 import NextLink from 'next/link';
-import coverSwirl from '../public/img/four.png';
+import butterFly from '../public/img/btrfly/b4.png';
 import { NormalLink } from '@atelier/normal-link';
 import { Text } from '@atelier/text';
 import { Box } from '@atelier/box';
 import { SmallSpacer } from '@components/SmallSpacer';
+import { CoverFooter } from '@components/CoverFooter';
 
 import { styled } from '@stitches/react';
 
@@ -18,12 +19,13 @@ const CoverBox = styled('div', {
   backgroundColor: 'rgba(240, 240, 240, 0.3)',
 
   // RADIAL GRADIENT
+  /*
   backgroundImage: `
   radial-gradient(circle 300px at 500px 200px, $blue8, $lime9Alpha),
   radial-gradient(circle 500px at calc(100% - 900px) 300px, $lime6, $lime9Alpha),
   radial-gradient(circle 800px at left center, $blue6, $sky9Alpha)
   `,
-
+*/
   display: 'block',
   position: 'relative',
   margin: 'auto',
@@ -56,13 +58,14 @@ export default function Cover() {
         zIndex: '0',
         overflowY: 'hidden',
         overflowX: 'hidden',
-        backgroundColor: '$white',
+        backgroundColor: '$slate1',
       }}>
       <Head>
         <title>Atelier®.</title>
       </Head>
 
       <CoverBox>
+        <CoverFooter />
         <TextBox>
           <NextLink href="/ady-index" passHref>
             <NormalLink variant="normal">
@@ -80,15 +83,20 @@ export default function Cover() {
                 }}>
                 ATELIER DESIGN YIELD®
               </Text>
-              <Text css={{ fontWeight: '500', fontSize: '12px', lineHeight: '1.2' }}>
-                <strong>ADY</strong>®Store Opening Soon.
+              <Text css={{ fontWeight: '600', fontSize: '12px', lineHeight: '1.3' }}>
+                An ongoing [ <strong>Web3</strong> ] project.
               </Text>
+              {/*
+              <Text css={{ fontWeight: '500', fontSize: '12px', lineHeight: '1.2' }}>
+                <strong>ADY</strong>®Store Opening Soon. An ongoing [Web3] prjct. © 2022
+              </Text>
+              */}
               {/* <!-- HOLD LOGO <Image src="/logo.svg" alt="One" width={120} height={60} /> --> */}
             </NormalLink>
           </NextLink>
         </TextBox>
       </CoverBox>
-      <Image src={coverSwirl} alt="One" layout="fill" objectFit="cover" />
+      <Image src={butterFly} alt="One" layout="fill" objectFit="cover" />
       {/* <!--   <Image src="https://cdn.ady.systems/ady.images/btrfly.png" alt="One" layout="fill" objectFit="cover" /> --> */}
     </Box>
   );

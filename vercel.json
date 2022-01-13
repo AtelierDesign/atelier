@@ -62,6 +62,10 @@
     {
       "destination": "https://twitter.com/_adyworld",
       "source": "/twitter"
+    },
+    {
+      "destination": "https://discord.gg/mcEPWdZ2",
+      "source": "/discord"
     }
   ],
   "scope": "ady.world"
