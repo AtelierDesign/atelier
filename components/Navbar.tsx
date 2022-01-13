@@ -24,9 +24,10 @@ export const Navbar = () => {
           jc: 'space-between',
           position: 'fixed',
           margin: '0',
-          backgroundColorc: '$light100',
+          backgroundColor: '$light100',
           width: '100vw',
           backdropFilter: 'blur(10px)',
+          WebkitBackdropFilter: 'blur(10px)',
           saturate: '300%',
 
           zIndex: '9999',

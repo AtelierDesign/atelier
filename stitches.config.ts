@@ -191,18 +191,26 @@ export const { styled, css, theme, createTheme, getCssText, globalCss, keyframes
       purple500: 'hsl(252,78%,60%)',
       green500: 'hsl(148,60%,60%)',
       red500: 'hsl(352,100%,62%)',
+
+      // TRANSLUCENT ALPHAS
       light100: 'rgba(240, 240, 240, 0.5)',
+      light50: 'rgba(240, 240, 240, 0.8)',
       clear100: 'rgba(240, 240, 240, 0.2)',
 
-      light50: 'rgba(240, 240, 240, 0.8)',
+      // NEONS
+      lime9Alpha: 'rgba(153,213,42, 0.2)',
+      sky9Alpha: 'rgba(104,221,253,0.3)',
+      // orange9Alpha: 'rgba(153,213,42, 0.5)',
+      // indigo9Alpha: 'rgba(153,213,42, 0.5)',
 
       // SEMANTICS
       hiContrast: '$slate12',
       semiTransparent: '$light100',
       loContrast: '$slate1',
-      // loContrast: 'white',
+      panel: '$gray12',
+
+      // LO CONTRAST
       canvas: 'hsl(0 0% 93%)',
-      panel: 'white',
       transparentPanel: 'hsl(0 0% 0% / 97%)',
       shadowLight: 'hsl(206 22% 7% / 35%)',
       shadowDark: 'hsl(206 22% 7% / 20%)',

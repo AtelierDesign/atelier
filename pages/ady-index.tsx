@@ -18,6 +18,10 @@ import { AtelierSubscribe } from '@components/Function/AtelierSubscribe';
 import { FooterMain } from '@components/FooterMain';
 import btrfly from '../public/img/btrfly_g.jpg';
 
+// COOKIE NOTICE
+import { CookieNotice } from '@components/Function/CookieNotice';
+
+// STYLED ITEMS
 import { styled } from 'stitches.config';
 
 const CoverBox = styled('div', {
@@ -95,21 +99,13 @@ const Card = styled('div', {
 const AdyIndex = () => {
   return (
     <>
-      <Box
-        css={{
-          padding: '0px',
-          height: '100vh',
-          // overflowY: 'hidden',
-          // overflowX: 'hidden',
-          backgroundColor: '$slate3',
-          zIndex: '0',
-        }}>
+      <Box css={{ padding: '0px', height: '100vh', zIndex: '0' }}>
+        <Head>
+          <title>Atelier®</title>
+        </Head>
         <CoverBox>
-          <Head>
-            <title>Atelier®</title>
-          </Head>
-
           <Box>
+            <CookieNotice />
             <Navbar />
             <Hero />
           </Box>

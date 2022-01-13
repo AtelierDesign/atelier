@@ -16,7 +16,14 @@ const CoverBox = styled('div', {
   minWidth: '100vw',
   height: '100%',
   backgroundColor: 'rgba(240, 240, 240, 0.3)',
-  // backgroundColor: '$gray12',
+
+  // RADIAL GRADIENT
+  backgroundImage: `
+  radial-gradient(circle 300px at 500px 200px, $blue8, $lime9Alpha),
+  radial-gradient(circle 500px at calc(100% - 900px) 300px, $lime6, $lime9Alpha),
+  radial-gradient(circle 800px at left center, $blue6, $sky9Alpha)
+  `,
+
   display: 'block',
   position: 'relative',
   margin: 'auto',
@@ -49,7 +56,7 @@ export default function Cover() {
         zIndex: '0',
         overflowY: 'hidden',
         overflowX: 'hidden',
-        backgroundColor: '$gray12',
+        backgroundColor: '$white',
       }}>
       <Head>
         <title>Atelier®.</title>
@@ -62,20 +69,27 @@ export default function Cover() {
               <Text
                 css={{
                   fontFamily: '$neuewide',
-                  fontSize: '24px',
+                  fontSize: '20px',
                   fontWeight: '900',
                   letterSpacing: '-0.05rem',
-                  color: '$white',
+                  color: '$gray12',
+
+                  '&:hover': {
+                    color: '$gray10',
+                  },
                 }}>
-                ATELIER®
+                ATELIER DESIGN YIELD®
+              </Text>
+              <Text css={{ fontWeight: '500', fontSize: '12px', lineHeight: '1.2' }}>
+                <strong>ADY</strong>®Store Opening Soon.
               </Text>
               {/* <!-- HOLD LOGO <Image src="/logo.svg" alt="One" width={120} height={60} /> --> */}
             </NormalLink>
           </NextLink>
         </TextBox>
       </CoverBox>
-      {/*<Image src={coverSwirl} alt="One" layout="fill" objectFit="cover" />*/}
-      <Image src="https://cdn.ady.systems/ady.images/btrfly.png" alt="One" layout="fill" objectFit="cover" />
+      <Image src={coverSwirl} alt="One" layout="fill" objectFit="cover" />
+      {/* <!--   <Image src="https://cdn.ady.systems/ady.images/btrfly.png" alt="One" layout="fill" objectFit="cover" /> --> */}
     </Box>
   );
 }

@@ -9,7 +9,7 @@ export function HeroContainer({ css, children }: { css?: any; children?: React.R
       role="presentation"
       className={`${theme}`}
       css={{
-        backgroundImage: 'linear-gradient(330deg, $sky4 0%, $sky11 100%)',
+        //  backgroundImage: `radial-gradient(circle 400px at 300px 200px, $lime9, $$transparent)`,
         position: 'relative',
         display: 'flex',
         alignItems: 'flex-start',

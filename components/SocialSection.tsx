@@ -42,7 +42,7 @@ export const SocialSection = () => {
                   />
                 </svg>
               </Box>
-              <Heading as="h3" css={{ fontSize: '16px', mb: '$2' }}>
+              <Heading as="h3" css={{ fontSize: '16px', mb: '$2', fontWeight: '600' }}>
                 Twitter
               </Heading>
               <Text css={{ lineHeight: '1.5', fontWeight: '400', fontSize: '13px' }}>
@@ -93,7 +93,7 @@ export const SocialSection = () => {
                   </g>
                 </svg>
               </Box>
-              <Heading as="h3" css={{ fontSize: '16px', mb: '$2' }}>
+              <Heading as="h3" css={{ fontSize: '16px', mb: '$2', fontWeight: '600' }}>
                 Instagram
               </Heading>
               <Text css={{ lineHeight: '1.5', fontWeight: '400', fontSize: '13px' }}>
@@ -125,7 +125,7 @@ export const SocialSection = () => {
                   />
                 </svg>
               </Box>
-              <Heading as="h3" css={{ fontSize: '16px', mb: '$2' }}>
+              <Heading as="h3" css={{ fontSize: '16px', mb: '$2', fontWeight: '600' }}>
                 GitHub
               </Heading>
               <Text css={{ lineHeight: '1.5', fontWeight: '400', fontSize: '13px' }}>
