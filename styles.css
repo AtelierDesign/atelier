@@ -1,14 +1,16 @@
 :root {
-  --fg: #000;
-  --bg: #fff;
+  /* Your default theme */
+  --background: white;
+  --foreground: black;
+
   --colors-slate9: hsl(205 10.7% 78%);
   --from: #3cffd0;
   --to: #277ef4;
 }
 
 [data-theme='dark'] {
-  --fg: #fff;
-  --bg: #000;
+  --background: black;
+  --foreground: white;
 }
 
 #root {
