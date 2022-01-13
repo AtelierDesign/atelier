@@ -20,16 +20,6 @@ import '../styles.css';
 // PROGRESS LOADER
 import NextNprogress from 'nextjs-progressbar';
 
-const globalStyles = globalCss({
-  html: {
-    overflowX: 'hidden',
-  },
-  body: {
-    margin: 0,
-    backgroundColor: '$slate1',
-  },
-});
-
 const appWrapper = css({
   include: ['box', 'minHeightScreen'],
 });
@@ -39,17 +29,19 @@ const App = ({ Component, pageProps }: AppProps) => {
   const [mounted, setMounted] = useState(false);
   const { theme, setTheme } = useTheme();
 
-  globalStyles();
-
   // When mounted on client, now we can show the UI
   useEffect(() => setMounted(true), []);
 
   if (!mounted) return null;
 
   globalCss(reset, {
+    html: {
+      overflowX: 'hidden',
+    },
     body: {
-      backgroundColor: '$slate1',
+      margin: 0,
       fontFamily: '$inter',
+      backgroundColor: '$slate1',
     },
   });
 
