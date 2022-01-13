@@ -133,7 +133,7 @@ export const CoverFooter = () => {
                   color: '$gray11',
                 },
 
-                '@bp2': { display: 'block', mr: '$5' },
+                '@sm': { display: 'block', mr: '$3' },
               }}>
               ©2022
             </Link>
