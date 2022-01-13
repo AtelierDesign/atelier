@@ -8,14 +8,18 @@ import { Box } from '@atelier/box';
 import { Text } from '@atelier/text';
 import { Navbar } from '@components/Navbar';
 import { Hero } from '@components/Hero';
+import { AdobeAe } from '@components/AdobeAe';
 import { SocialSection } from '@components/SocialSection';
 import { Heading } from '@atelier/heading';
 import { Paragraph } from '@atelier/paragraph';
 import { Container } from '@atelier/container';
 import { Grid } from '@atelier/grid';
 import { EightySection } from '@components/EightySection';
+import { GradientBackground } from '@components/Background/GradientBackground';
 import { AtelierSubscribe } from '@components/Function/AtelierSubscribe';
 import { FooterMain } from '@components/FooterMain';
+import { SmallSpacer } from '@components/SmallSpacer';
+import { Button } from '@atelier/button';
 import btrfly from '../public/img/btrfly_g.jpg';
 
 // COOKIE NOTICE
@@ -40,31 +44,15 @@ const CoverBox = styled('div', {
 const BarSection = styled('div', {
   boxSizing: 'border-box',
   zIndex: '10',
-  width: '100vw',
+  width: '100%',
   minWidth: '100vw',
-  height: '100px',
-  backgroundColor: '$gray4',
+  height: 'auto',
+  backgroundColor: '',
+  backgroundImage: 'url("../img/four.png")',
   display: 'block',
   position: 'relative',
   margin: '0',
   padding: '0',
-  boxShadow: `0 2px 2px $lime9`,
-  '@lg': {
-    borderTopLeftRadius: '0px',
-    borderTopRightRadius: '0px',
-  },
-  '@md': {
-    borderTopLeftRadius: '0px',
-    borderTopRightRadius: '0px',
-  },
-  '@sm': {
-    borderTopLeftRadius: '0px',
-    borderTopRightRadius: '0px',
-  },
-  '@xs': {
-    borderTopLeftRadius: '0px',
-    borderTopRightRadius: '0px',
-  },
 });
 
 const Bar = styled('div', {
@@ -110,10 +98,8 @@ const AdyIndex = () => {
             <Hero />
           </Box>
 
-          <BarSection />
-
           <EightySection>
-            <Container size="3">
+            <Container size="3" css={{ paddingTop: '120px' }}>
               <Heading
                 size="4"
                 css={{
@@ -176,9 +162,9 @@ const AdyIndex = () => {
                   {/* <!-- BOX ONE --> */}
                   <Box>
                     <Card>
-                      <Box css={{ position: 'absolute', bottom: '0', left: '0', margin: '20px' }}>
-                        <Text size="2" css={{ fontWeight: '600', lineHeight: '1.2' }}>
-                          Ady® Interval
+                      <Box css={{ position: 'absolute', bottom: '0', left: '0', margin: '30px' }}>
+                        <Text size="2" css={{ fontWeight: '800', lineHeight: '1.2' }}>
+                          PRODUCT TITLE 001
                         </Text>
                       </Box>
                     </Card>
@@ -187,18 +173,33 @@ const AdyIndex = () => {
                   {/* <!-- BOX TWO --> */}
                   <Box>
                     <Card>
-                      <Box css={{ position: 'absolute', bottom: '0', left: '0', margin: '20px' }}>
-                        <Text size="2" css={{ fontWeight: '600', lineHeight: '1.2' }}>
-                          Ady® Interval
+                      <Box css={{ position: 'absolute', bottom: '0', left: '0', margin: '30px' }}>
+                        <Text size="2" css={{ fontWeight: '800', lineHeight: '1.2' }}>
+                          PRODUCT TITLE 002
                         </Text>
                       </Box>
                     </Card>
                   </Box>
                 </Grid>
               </Container>
+
+              {/* <!-- ADOBE® AE SECTION --> */}
+              <Container size="3" css={{}}>
+                <AdobeAe />
+              </Container>
+              {/* <!-- --> */}
+
               {/* <!-- END CARDS CONTAINER --> */}
             </Container>
           </EightySection>
+
+          <GradientBackground />
+
+          <BarSection>
+            <Container size="3">
+              <AtelierSubscribe />
+            </Container>
+          </BarSection>
 
           <SocialSection />
 

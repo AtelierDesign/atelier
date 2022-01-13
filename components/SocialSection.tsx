@@ -10,7 +10,7 @@ import { Section } from '@atelier/section';
 
 export const SocialSection = () => {
   return (
-    <Section size="3">
+    <Section size="3" css={{ paddingTop: '120px' }}>
       <Container size="2" css={{ px: '0' }}>
         <Grid
           gap="2"

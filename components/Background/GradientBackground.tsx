@@ -26,7 +26,11 @@ export const GradientBackground: React.FC = ({ children }) => {
             position: 'absolute',
             top: 0,
             bottom: 0,
+            backgroundColor: '$slate1',
             backgroundRepeat: 'no-repeat',
+            backgroundImage: 'linear-gradient(to bottom, $slate1 0%, $gray11 100%)',
+
+            /*
             backgroundImage: `
               radial-gradient(circle 800px at 700px 200px, $lime4, $$transparent),
               radial-gradient(circle 600px at calc(100% - 300px) 300px, $lime6, $$transparent),
@@ -34,6 +38,7 @@ export const GradientBackground: React.FC = ({ children }) => {
               radial-gradient(circle 800px at right bottom, $sky1, $$transparent),
               radial-gradient(circle 800px at calc(50% - 600px) calc(100% - 100px), $lime3, $lime1, $$transparent)
             `,
+            */
 
             // Safari transparency bug workaround
             $$transparent: '#FDFCFD00',

@@ -9,6 +9,7 @@ export const Container = styled('div', {
   ml: 'auto',
   mr: 'auto',
   px: '$5',
+  mt: '0',
 
   variants: {
     size: {

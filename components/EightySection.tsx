@@ -6,11 +6,16 @@ const Eighty = styled('div', {
   width: '100vw',
   minWidth: '100vw',
   height: 'auto',
-  backgroundColor: '$gray4',
+  backgroundColor: '$sage6',
   display: 'block',
   position: 'relative',
   margin: '0',
   padding: '0',
+
+  borderBottomWidth: '1px solid #FFF',
+
+  borderBottomLeftRadius: '46px',
+  borderBottomRightRadius: '46px',
 
   overflowY: 'visible',
   overflowX: 'hidden',
