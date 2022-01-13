@@ -51,10 +51,6 @@ const App = ({ Component, pageProps }: AppProps) => {
       backgroundColor: '$slate1',
       fontFamily: '$inter',
     },
-    '[data-theme="dark"]': {
-      fg: '#fff',
-      bg: '#000',
-    },
   });
 
   return (
