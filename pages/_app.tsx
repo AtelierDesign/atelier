@@ -11,10 +11,10 @@ import { css, globalCss, darkTheme } from 'stitches.config';
 import { reset } from '@styles/reset';
 
 // MAIN STYLE IMPORTS
-import '../styles/inter.css';
-import '../styles/jetbrains.css';
-import '../styles/neue-plak.css';
-import '../styles/neue-wide.css';
+import '@styles/inter.css';
+import '@styles/jetbrains.css';
+import '@styles/neue-plak.css';
+import '@styles/neue-wide.css';
 import '../styles.css';
 
 // PROGRESS LOADER

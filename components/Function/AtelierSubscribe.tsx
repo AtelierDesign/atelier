@@ -31,7 +31,7 @@ export const AtelierSubscribe = () => {
   };
 
   return (
-    <Section size="2" css={{ paddingBottom: '4rem', paddingTop: '4rem', alignItems: 'center', textAlign: 'center' }}>
+    <Section size="2" css={{ paddingBottom: '5rem', paddingTop: '5rem', alignItems: 'center', textAlign: 'center' }}>
       <Container size="3" css={{ boxSizing: 'border-box' }}>
         <Heading size="3" css={{ paddingBottom: '20px' }}>
           Join the conversation.

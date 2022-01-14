@@ -46,12 +46,12 @@ export function Hero() {
           size="2"
           css={{
             paddingTop: '140px',
-            paddingBottom: '50px',
+            paddingBottom: '100px',
             paddingLeft: '100px',
             paddingRight: '100px',
             '@sm': {
-              paddingTop: '120px',
-              paddingBottom: '60px',
+              paddingTop: '140px',
+              paddingBottom: '120px',
               paddingLeft: '0px',
               paddingRight: '40px',
             },
