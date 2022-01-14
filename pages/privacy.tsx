@@ -29,7 +29,7 @@ const PrivacyPolicy = () => {
         </Container>
       </Section>
 
-      <Section size="1">
+      <Section size="2">
         {/* POLICY ONE */}
         <Container size="3" css={{ ai: 'center', paddingTop: '50px', margin: 'auto', textAlign: 'center' }}>
           <Heading size="1" css={{ textAlign: 'left', fontWeight: '600' }}>

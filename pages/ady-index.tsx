@@ -48,7 +48,7 @@ const BarSection = styled('div', {
   minWidth: '100vw',
   height: 'auto',
   backgroundColor: '',
-  backgroundImage: 'url("../img/btrfly/b4.png")',
+  backgroundImage: 'url("")',
   // backgroundPosition: 'relative',
   display: 'block',
   position: 'relative',
@@ -195,12 +195,6 @@ const AdyIndex = () => {
           </EightySection>
 
           <GradientBackground />
-
-          <BarSection>
-            <Container size="3">
-              <AtelierSubscribe />
-            </Container>
-          </BarSection>
 
           <SocialSection />
 
