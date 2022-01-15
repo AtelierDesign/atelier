@@ -5,6 +5,7 @@
     "eslint:recommended",
     "plugin:react/recommended",
     "plugin:@typescript-eslint/recommended",
+    "plugin:storybook/recommended",
     "prettier"
   ],
   "env": {
@@ -19,6 +20,7 @@
     }
   },
   "rules": {
+    "no-irregular-whitespace": "off",
     "no-console": "off",
     "react/react-in-jsx-scope": 0,
     "react/display-name": 0,
@@ -41,5 +43,14 @@
         "message": "Unexpected property on console object was called"
       }
     ]
-  }
+  },
+  "overrides": [
+    {
+      "files": ["*.stories.@(ts|tsx|js|jsx|mjs|cjs)"],
+      "rules": {
+        "storybook/hierarchy-separator": "error",
+        "storybook/default-exports": "off"
+      }
+    }
+  ]
 }
