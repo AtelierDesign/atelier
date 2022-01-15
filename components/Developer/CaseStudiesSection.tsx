@@ -31,9 +31,9 @@ export const CaseStudiesSection = () => {
   return (
     <Section>
       <Container size="3">
-        <Box css={{ mb: '$5' }}>
-          <Heading as="h2" size="3" css={{ maxWidth: 500, textAlign: 'left' }}>
-            World-class teams use Radix to power their products
+        <Box css={{ mb: '$5', alignItems: 'center' }}>
+          <Heading as="h2" size="3" css={{ textAlign: 'center' }}>
+            Our Products in Use.
           </Heading>
         </Box>
 
@@ -81,8 +81,8 @@ export const CaseStudiesSection = () => {
         </Grid>
 
         <Text variant="gray" css={{ mb: '$3' }}>
-          <NextLink href="/case-studies" passHref>
-            <Link variant="subtle" css={{ display: 'inline-flex', alignItems: 'center' }}>
+          <NextLink href="/privacy" passHref>
+            <Link variant="subtle" css={{ fontFamily: '$inter', display: 'inline-flex', alignItems: 'center' }}>
               And dozens more companies
               <ArrowRightIcon />
             </Link>

@@ -196,25 +196,25 @@ const AdyIndex = () => {
             </Container>
           </EightySection>
 
-          <GradientBackground />
+          <CaseStudiesSection />
 
-          <SocialSection />
-
+          {/* <!-- BEGIN SUBSCRIBE & SOCIAL SECTION --> */}
           <Section
             size="2"
-            css={{ paddingBottom: '5rem', paddingTop: '5rem', alignItems: 'center', textAlign: 'center' }}>
+            css={{ paddingBottom: '2rem', paddingTop: '8rem', alignItems: 'center', textAlign: 'center' }}>
             <Container css={{ boxSizing: 'border-box', width: '100%', maxWidth: '400px', minWidth: '200px' }}>
               <AtelierAcademy />
             </Container>
           </Section>
 
+          <SocialSection />
+          {/* <!-- HOLD
           <CaseStudiesSection />
+          --> */}
 
+          {/* <!-- END FOOTER --> */}
           <FooterMain />
         </CoverBox>
-        {/* <!--
-        <Image src={btrfly} alt="One" layout="fill" objectFit="cover" />
-        --> */}
       </Box>
     </>
   );
