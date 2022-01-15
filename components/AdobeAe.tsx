@@ -7,6 +7,7 @@ import { Text } from '@atelier/text';
 import { Heading } from '@atelier/heading';
 import { Paragraph } from '@atelier/paragraph';
 import { Container } from '@atelier/container';
+import { Button } from '@atelier/button';
 import { DefaultButton } from '@components/DefaultButton';
 
 // RADIX ICONS
@@ -35,8 +36,9 @@ export const AdobeAe = () => {
               lineHeight: '2',
               paddingLeft: '6px',
             }}>
-            <strong>Adobe</strong>® After Effects
+            Adobe® After Effects
           </Text>
+
           <Heading size="3" css={{ fontWeight: '700', paddingLeft: '5px', color: '$gray12' }}>
             Your pack, your style.
           </Heading>
@@ -54,9 +56,9 @@ export const AdobeAe = () => {
             }}>
             Create open and close animations that take the dropdown menu’s actual position into account.
           </Paragraph>
-          <DefaultButton as="a" css={{}}>
+          <Button css={{}}>
             Learn more <ArrowRightIcon />
-          </DefaultButton>
+          </Button>
         </Container>
       </Box>
     </>

@@ -38,32 +38,22 @@ const Input = styled('input', {
   // SIZE="3"
   borderRadius: '12px',
   height: '50px',
-  fontSize: '13px',
   paddingLeft: '14px',
   paddingRight: '14px',
   width: '100%',
   lineHeight: 'normal',
 
-  '&:-webkit-autofill::first-line': {
-    fontSize: '13px',
-  },
   '&:focus': {
     backgroundColor: '$loContrast',
-    boxShadow: 'inset 0px 0px 0px 2px #96F550, 0px 0px 0px 1px #96F550',
+    boxShadow: 'inset 0px 0px 0px 1px $colors$superLime, 0px 0px 0px 1px $colors$superLime',
   },
   '&:-webkit-autofill': {
     boxShadow: 'inset 0 0 0 2px $gray12, inset 0 0 0 100px $gray8',
   },
   '&:-webkit-autofill::first-line': {
+    fontSize: '13px',
     fontFamily: '$inter',
     color: '$hiContrast',
-  },
-  '&:focus': {
-    boxShadow: 'inset 0px 0px 0px 1px $colors$superLime, 0px 0px 0px 1px $colors$superLime',
-    '&:-webkit-autofill': {
-      boxShadow:
-        'inset 0px 0px 0px 1px $colors$superLime, 0px 0px 0px 1px $colors$superLime, inset 0 0 0 100px $colors$gray7',
-    },
   },
 });
 

@@ -9,7 +9,7 @@ import { Box } from '@atelier/box';
 import { Text } from '@atelier/text';
 import { Navbar } from '@components/Navbar';
 import { Hero } from '@components/Hero';
-import { AdobeAe } from '@components/AdobeAe';
+// import { AdobeAe } from '@components/AdobeAe';
 import { SocialSection } from '@components/SocialSection';
 import { CaseStudiesSection } from '@components/Developer/CaseStudiesSection';
 import { Heading } from '@atelier/heading';
@@ -186,10 +186,11 @@ const AdyIndex = () => {
                 </Grid>
               </Container>
 
-              {/* <!-- ADOBE® AE SECTION --> */}
+              {/* <!-- ADOBE® AE SECTION -->
               <Container size="3" css={{}}>
                 <AdobeAe />
               </Container>
+              */}
               {/* <!-- --> */}
 
               {/* <!-- END CARDS CONTAINER --> */}
