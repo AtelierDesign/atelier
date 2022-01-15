@@ -198,10 +198,10 @@ export const { styled, css, theme, createTheme, getCssText, globalCss, keyframes
       clear100: 'rgba(240, 240, 240, 0.2)',
 
       // NEONS
+      superYellow: '#F6F930',
+      superLime: '#96F550',
       lime9Alpha: 'rgba(153,213,42, 0.2)',
       sky9Alpha: 'rgba(104,221,253,0.3)',
-      // orange9Alpha: 'rgba(153,213,42, 0.5)',
-      // indigo9Alpha: 'rgba(153,213,42, 0.5)',
 
       // SEMANTICS
       hiContrast: '$slate12',
@@ -504,6 +504,9 @@ export const darkTheme = createTheme('darkTheme', {
     transparentPanel: 'hsl(0 100% 100% / 97%)',
     shadowLight: 'hsl(206 22% 7% / 35%)',
     shadowDark: 'hsl(206 22% 7% / 20%)',
+
+    // CUSTOM FOR DARK
+    superLime: '#7A306C',
     light100: 'rgba(0, 0, 0, 0.4)',
     light50: 'rgba(0, 0, 0, 0.8)',
   },

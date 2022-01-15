@@ -4,6 +4,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 
 // ATELIER DESIGN SYSTEM IMPORTS
+import { Section } from '@atelier/section';
 import { Box } from '@atelier/box';
 import { Text } from '@atelier/text';
 import { Navbar } from '@components/Navbar';
@@ -16,7 +17,7 @@ import { Container } from '@atelier/container';
 import { Grid } from '@atelier/grid';
 import { EightySection } from '@components/EightySection';
 import { GradientBackground } from '@components/Background/GradientBackground';
-import { AtelierSubscribe } from '@components/Function/AtelierSubscribe';
+import { AtelierAcademy } from '@components/Function/AtelierAcademy';
 import { FooterMain } from '@components/FooterMain';
 import { SmallSpacer } from '@components/SmallSpacer';
 import { Button } from '@atelier/button';
@@ -198,7 +199,13 @@ const AdyIndex = () => {
 
           <SocialSection />
 
-          <AtelierSubscribe />
+          <Section
+            size="2"
+            css={{ paddingBottom: '5rem', paddingTop: '5rem', alignItems: 'center', textAlign: 'center' }}>
+            <Container css={{ boxSizing: 'border-box', width: '100%', maxWidth: '400px', minWidth: '200px' }}>
+              <AtelierAcademy />
+            </Container>
+          </Section>
 
           <FooterMain />
         </CoverBox>
