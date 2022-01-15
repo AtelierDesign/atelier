@@ -11,6 +11,7 @@ import { Navbar } from '@components/Navbar';
 import { Hero } from '@components/Hero';
 import { AdobeAe } from '@components/AdobeAe';
 import { SocialSection } from '@components/SocialSection';
+import { CaseStudiesSection } from '@components/Developer/CaseStudiesSection';
 import { Heading } from '@atelier/heading';
 import { Paragraph } from '@atelier/paragraph';
 import { Container } from '@atelier/container';
@@ -206,6 +207,8 @@ const AdyIndex = () => {
               <AtelierAcademy />
             </Container>
           </Section>
+
+          <CaseStudiesSection />
 
           <FooterMain />
         </CoverBox>

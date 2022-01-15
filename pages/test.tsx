@@ -9,7 +9,7 @@ import { Heading } from '@atelier/heading';
 import { Text } from '@atelier/text';
 import { Navbar } from '@components/Navbar';
 
-import { FormPrimitive } from '@components/Function/FormPrimitive';
+import { LogoSlide } from '@components/Framework/LogoSlide';
 
 import { styled } from '@stitches/react';
 
@@ -34,9 +34,7 @@ const Test = () => {
 
       <Navbar />
       <CenterBox>
-        <Container size="1">
-          <FormPrimitive />
-        </Container>
+        <LogoSlide />
       </CenterBox>
     </>
   );
