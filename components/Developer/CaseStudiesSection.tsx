@@ -1,6 +1,13 @@
 import React from 'react';
 import NextLink from 'next/link';
-import { Box, Grid, Text, Container, Flex, Section, Card, Avatar, Link, Separator } from '@modulz/design-system';
+import { Card, Avatar, Link, Separator } from '@modulz/design-system';
+
+import { Box } from '@atelier/box';
+import { Grid } from '@atelier/grid';
+import { Text } from '@atelier/text';
+import { Container } from '@atelier/container';
+import { Flex } from '@atelier/flex';
+import { Section } from '@atelier/section';
 
 import { Heading } from '@atelier/heading';
 import { ArrowRightIcon } from '@radix-ui/react-icons';
