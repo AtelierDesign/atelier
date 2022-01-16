@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import { styled } from '@stitches/react';
 
 const Eighty = styled('div', {
@@ -6,7 +7,12 @@ const Eighty = styled('div', {
   width: '100vw',
   minWidth: '100vw',
   height: 'auto',
-  backgroundColor: '$sage6',
+  backgroundColor: '$light100',
+
+  // backgroundImage: 'url("/img/four.png")',
+  backgroundPosition: 'center',
+  backdropFilter: 'blur(10px)',
+
   display: 'block',
   position: 'relative',
   margin: '0',
@@ -21,6 +27,20 @@ const Eighty = styled('div', {
   overflowX: 'hidden',
 });
 
+const ImageHolder = styled('div', {
+  zIndex: '1',
+  position: 'relative',
+  margin: '0',
+  padding: '0',
+});
+
 export const EightySection = ({ children }) => {
-  return <Eighty>{children}</Eighty>;
+  return (
+    <div>
+      <Eighty>{children}</Eighty>
+      <ImageHolder>
+        <Image src="/img/four.png" layout="fill" objectFit="cover" alt="gradient" />
+      </ImageHolder>
+    </div>
+  );
 };

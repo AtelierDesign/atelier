@@ -38,6 +38,7 @@
     "follow-redirects": "^1.14.7",
     "formik": "^2.2.9",
     "hamburger-react": "^2.4.1",
+    "klaviyo-client": "^2.3.0",
     "klaviyo-subscribe": "^1.0.0",
     "leva": "^0.9.18",
     "moment": "^2.29.1",

@@ -1,4 +1,3 @@
-import React from 'react';
 import Head from 'next/head';
 
 // STITCHES
@@ -9,7 +8,7 @@ import { Heading } from '@atelier/heading';
 import { Text } from '@atelier/text';
 import { Navbar } from '@components/Navbar';
 
-import { LogoSlide } from '@components/Framework/LogoSlide';
+import { FormPrimitive } from '@components/Function/FormPrimitive';
 
 import { styled } from '@stitches/react';
 
@@ -34,7 +33,7 @@ const Test = () => {
 
       <Navbar />
       <CenterBox>
-        <LogoSlide />
+        <FormPrimitive />
       </CenterBox>
     </>
   );
