@@ -9,9 +9,9 @@ import { Box } from '@atelier/box';
 import { Text } from '@atelier/text';
 import { Navbar } from '@components/Navbar';
 import { Hero } from '@components/Hero';
-// import { AdobeAe } from '@components/AdobeAe';
+import { AdobeAe } from '@components/AdobeAe';
 import { SocialSection } from '@components/SocialSection';
-import { CaseStudiesSection } from '@components/Developer/CaseStudiesSection';
+import { LogoSlide } from '@components/Framework/LogoSlide';
 import { Heading } from '@atelier/heading';
 import { Paragraph } from '@atelier/paragraph';
 import { Container } from '@atelier/container';
@@ -186,18 +186,21 @@ const AdyIndex = () => {
                 </Grid>
               </Container>
 
-              {/* <!-- ADOBE® AE SECTION -->
+              {/* <!-- ADOBE® AE SECTION --> */}
               <Container size="3" css={{}}>
                 <AdobeAe />
               </Container>
-              */}
-              {/* <!-- --> */}
 
               {/* <!-- END CARDS CONTAINER --> */}
             </Container>
           </EightySection>
 
-          <CaseStudiesSection />
+          <Section size="3" css={{ alignItems: 'center', textAlign: 'center' }}>
+            <Heading size="2" css={{ color: '$gray7', paddingBottom: '30px' }}>
+              Our Products
+            </Heading>
+            <LogoSlide />
+          </Section>
 
           {/* <!-- BEGIN SUBSCRIBE & SOCIAL SECTION --> */}
           <Section
