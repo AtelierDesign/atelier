@@ -85,6 +85,23 @@ const Button = styled('button', {
   lineHeight: '$sizes$6',
 });
 
+// Uses the subscribe endpoint to subscribe user to list, this obeys the list opt-in settings.
+KlaviyoClient.lists.addSubscribersToList({
+  listId: 'myListId',
+  profiles: [
+    {
+      email: 'pizza.dave@mailinator.com',
+    },
+    {
+      email: 'salami.sam@mailinator.com',
+    },
+    {
+      email: 'lasagna.larry@mailinator.com',
+      push_token: 'myPushToken',
+    },
+  ],
+});
+
 export const FormPrimitive = () => {
   const formik = useFormik({
     initialValues: {
