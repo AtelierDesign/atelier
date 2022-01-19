@@ -94,130 +94,127 @@ const AdyIndex = () => {
           <title>Atelier®</title>
         </Head>
 
-        <CoverBox>
-          <Box>
-            <CookieNotice />
-            <Navbar />
-            <Hero />
-          </Box>
+        <Box>
+          <CookieNotice />
+          <Navbar />
+          <Hero />
+        </Box>
 
-          <EightySection>
-            <Container size="3" css={{ paddingTop: '120px' }}>
-              <Heading
-                size="4"
-                css={{
-                  fontSize: '50px',
-                  fontFamily: '$neuewide',
-                  textAlign: 'center',
-                  paddingBottom: '20px',
-                  '@sm': {
-                    fontSize: '26px',
-                    textAlign: 'left',
-                    paddingBottom: '10px',
-                  },
-                }}>
-                ATELIER®
-              </Heading>
-
-              <Paragraph
-                size="2"
-                css={{
-                  textAlign: 'center',
-                  fontSize: '18px',
-                  fontWeight: '500',
-                  lineHeight: '1.4',
-                  color: '$gray11',
-                  mb: '30px',
-                  '@sm': {
-                    textAlign: 'left',
-                    fontSize: '16px',
-                  },
-                  '@bp2': {
-                    // mx: 250,
-                    ta: 'center',
-                    mb: '60px',
-                    lineHeight: '1.3',
-                  },
-                  '@bp3': {
-                    //  mx: 300,
-                    ta: 'center',
-                    mb: '60px',
-                    lineHeight: '1.3',
-                  },
-                }}>
-                <strong>Essential</strong>® design components for you.
-              </Paragraph>
-
-              {/* <!-- CARDS CONTAINER --> */}
-              <Container
-                size="3"
-                css={{ overflowY: 'visible', height: 'auto', paddingTop: '10px', paddingBottom: '80px', px: '0px' }}>
-                <Grid
-                  css={{
-                    height: 'auto',
-                    gap: '10px',
-                    gridTemplateColumns: '1fr 1fr',
-                    '@sm': {
-                      gap: '10px',
-                      gridTemplateColumns: '1fr',
-                    },
-                  }}>
-                  {/* <!-- BOX ONE --> */}
-                  <Box>
-                    <Card>
-                      <Box css={{ position: 'absolute', bottom: '0', left: '0', margin: '30px' }}>
-                        <Text size="2" css={{ fontWeight: '800', lineHeight: '1.2' }}>
-                          PRODUCT TITLE 001
-                        </Text>
-                      </Box>
-                    </Card>
-                  </Box>
-
-                  {/* <!-- BOX TWO --> */}
-                  <Box>
-                    <Card>
-                      <Box css={{ position: 'absolute', bottom: '0', left: '0', margin: '30px' }}>
-                        <Text size="2" css={{ fontWeight: '800', lineHeight: '1.2' }}>
-                          PRODUCT TITLE 002
-                        </Text>
-                      </Box>
-                    </Card>
-                  </Box>
-                </Grid>
-              </Container>
-
-              {/* <!-- ADOBE® AE SECTION --> */}
-              <Container size="3" css={{}}>
-                <AdobeAe />
-              </Container>
-
-              {/* <!-- END CARDS CONTAINER --> */}
-            </Container>
-          </EightySection>
-
-          <Section size="3" css={{ alignItems: 'center', textAlign: 'center' }}>
-            <Heading size="2" css={{ color: '$gray7', paddingBottom: '30px' }}>
-              Our Products
+        <EightySection>
+          <Container size="3" css={{ paddingTop: '120px' }}>
+            <Heading
+              size="4"
+              css={{
+                fontSize: '50px',
+                fontFamily: '$neuewide',
+                textAlign: 'center',
+                paddingBottom: '20px',
+                '@sm': {
+                  fontSize: '26px',
+                  textAlign: 'left',
+                  paddingBottom: '10px',
+                },
+              }}>
+              ATELIER®
             </Heading>
-            <LogoSlide />
-          </Section>
 
-          {/* <!-- BEGIN SUBSCRIBE & SOCIAL SECTION --> */}
-          <Section
-            size="2"
-            css={{ paddingBottom: '2rem', paddingTop: '8rem', alignItems: 'center', textAlign: 'center' }}>
+            <Paragraph
+              size="2"
+              css={{
+                textAlign: 'center',
+                fontSize: '18px',
+                fontWeight: '500',
+                lineHeight: '1.4',
+                color: '$gray11',
+                mb: '30px',
+                '@sm': {
+                  textAlign: 'left',
+                  fontSize: '16px',
+                },
+                '@bp2': {
+                  // mx: 250,
+                  ta: 'center',
+                  mb: '60px',
+                  lineHeight: '1.3',
+                },
+                '@bp3': {
+                  //  mx: 300,
+                  ta: 'center',
+                  mb: '60px',
+                  lineHeight: '1.3',
+                },
+              }}>
+              <strong>Essential</strong>® design components for you.
+            </Paragraph>
+
+            {/* <!-- CARDS CONTAINER --> */}
             <Container
-              css={{ boxSizing: 'border-box', width: '100%', maxWidth: '400px', minWidth: '200px' }}></Container>
-          </Section>
+              size="3"
+              css={{ overflowY: 'visible', height: 'auto', paddingTop: '10px', paddingBottom: '80px', px: '0px' }}>
+              <Grid
+                css={{
+                  height: 'auto',
+                  gap: '10px',
+                  gridTemplateColumns: '1fr 1fr',
+                  '@sm': {
+                    gap: '10px',
+                    gridTemplateColumns: '1fr',
+                  },
+                }}>
+                {/* <!-- BOX ONE --> */}
+                <Box>
+                  <Card>
+                    <Box css={{ position: 'absolute', bottom: '0', left: '0', margin: '30px' }}>
+                      <Text size="2" css={{ fontWeight: '800', lineHeight: '1.2' }}>
+                        PRODUCT TITLE 001
+                      </Text>
+                    </Box>
+                  </Card>
+                </Box>
 
-          <SocialSection />
-          {/* <!-- HOLD
+                {/* <!-- BOX TWO --> */}
+                <Box>
+                  <Card>
+                    <Box css={{ position: 'absolute', bottom: '0', left: '0', margin: '30px' }}>
+                      <Text size="2" css={{ fontWeight: '800', lineHeight: '1.2' }}>
+                        PRODUCT TITLE 002
+                      </Text>
+                    </Box>
+                  </Card>
+                </Box>
+              </Grid>
+            </Container>
+
+            {/* <!-- ADOBE® AE SECTION --> */}
+            <Container size="3" css={{}}>
+              <AdobeAe />
+            </Container>
+
+            {/* <!-- END CARDS CONTAINER --> */}
+          </Container>
+        </EightySection>
+
+        <Section size="3" css={{ alignItems: 'center', textAlign: 'center' }}>
+          <Heading size="2" css={{ color: '$gray7', paddingBottom: '30px' }}>
+            Our Products
+          </Heading>
+          <LogoSlide />
+        </Section>
+
+        {/* <!-- BEGIN SUBSCRIBE & SOCIAL SECTION --> */}
+        <Section
+          size="2"
+          css={{ paddingBottom: '2rem', paddingTop: '8rem', alignItems: 'center', textAlign: 'center' }}>
+          <Container css={{ boxSizing: 'border-box', width: '100%', maxWidth: '400px', minWidth: '200px' }}></Container>
+        </Section>
+
+        <SocialSection />
+        {/* <!-- HOLD
           <CaseStudiesSection />
           --> */}
 
-          {/* <!-- END FOOTER --> */}
-          <FooterMain />
-        </CoverBox>
+        {/* <!-- END FOOTER --> */}
+        <FooterMain />
       </Box>
     </>
   );
