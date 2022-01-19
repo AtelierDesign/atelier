@@ -46,12 +46,12 @@ export function Hero() {
           size="2"
           css={{
             paddingTop: '140px',
-            paddingBottom: '100px',
+            paddingBottom: '60px',
             paddingLeft: '100px',
             paddingRight: '100px',
             '@sm': {
               paddingTop: '140px',
-              paddingBottom: '120px',
+              paddingBottom: '100px',
               paddingLeft: '0px',
               paddingRight: '40px',
             },
@@ -117,7 +117,7 @@ export function Hero() {
             components.
           </Paragraph>
 
-          <Flex css={{ '@bp2': { jc: 'center', my: '$7' } }}>
+          <Flex css={{ '@bp2': { jc: 'center', my: '$6' } }}>
             <NextLink href="/shop" passHref>
               <DefaultButton css={{ width: 'auto', lineHeight: '1', mr: '$2', color: '$white' }}>
                 Latest Release

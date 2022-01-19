@@ -93,6 +93,7 @@ const AdyIndex = () => {
         <Head>
           <title>Atelier®</title>
         </Head>
+
         <CoverBox>
           <Box>
             <CookieNotice />
