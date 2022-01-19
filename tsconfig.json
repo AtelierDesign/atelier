@@ -9,7 +9,7 @@
       "@utils/*": ["utils/*"],
       "@lib/*": ["lib/*"],
       "@test/*": ["test/*"],
-      "@modulz/*": ["modulz/*"]
+      "@data/*": ["data/*"]
     },
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
