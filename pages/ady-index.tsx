@@ -18,7 +18,6 @@ import { Container } from '@atelier/container';
 import { Grid } from '@atelier/grid';
 import { EightySection } from '@components/EightySection';
 import { GradientBackground } from '@components/Background/GradientBackground';
-import { AtelierAcademy } from '@components/Function/AtelierAcademy';
 import { FooterMain } from '@components/FooterMain';
 import { SmallSpacer } from '@components/SmallSpacer';
 import { Button } from '@atelier/button';
@@ -206,9 +205,8 @@ const AdyIndex = () => {
           <Section
             size="2"
             css={{ paddingBottom: '2rem', paddingTop: '8rem', alignItems: 'center', textAlign: 'center' }}>
-            <Container css={{ boxSizing: 'border-box', width: '100%', maxWidth: '400px', minWidth: '200px' }}>
-              <AtelierAcademy />
-            </Container>
+            <Container
+              css={{ boxSizing: 'border-box', width: '100%', maxWidth: '400px', minWidth: '200px' }}></Container>
           </Section>
 
           <SocialSection />
