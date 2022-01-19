@@ -1,11 +1,6 @@
 import Head from 'next/head';
 import React from 'react';
 import Link from 'next/link';
-import Layout from '@components/Stripe.js/Layout';
-
-import { Elements } from '@stripe/react-stripe-js';
-import getStripe from '@utils/get-stripejs';
-import ElementsForm from '@components/Stripe.js/ElementsForm';
 
 import { NextPage } from 'next';
 import { Box } from '@atelier/box';
@@ -69,49 +64,6 @@ const Shop: NextPage = () => {
             </Text>
           </Container>
         </Section>
-
-        {/* <!-- STRIPE ELEMENTS -->} */}
-
-        <Section size="3">
-          <ul className="card-list">
-            <li>
-              <Link href="/checkout">
-                <a className="card checkout-style-background">
-                  <Heading size="1">Donate with Checkout</Heading>
-                  <img src="/stripe/checkout-one-time-payments.svg" />
-                </a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/shop">
-                <a className="card elements-style-background">
-                  <Heading size="1">Donate with Elements</Heading>
-                  <img src="/stripe/elements-card-payment.svg" />
-                </a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/shopping-cart">
-                <a className="card cart-style-background">
-                  <Heading size="1">Use Shopping Cart</Heading>
-                </a>
-              </Link>
-            </li>
-          </ul>
-        </Section>
-
-        <Section size="3">
-          <Container size="3">
-            <Heading size="1">Donate with Elements</Heading>
-            <Paragraph>Donate to our project.</Paragraph>
-
-            <Elements stripe={getStripe()}>
-              <ElementsForm />
-            </Elements>
-          </Container>
-        </Section>
-
-        {/* <!-- END STRIPE ELEMENTS --> */}
 
         <Container size="3" css={{ paddingTop: '10px', paddingBottom: '80px', px: '18px' }}>
           <Grid
