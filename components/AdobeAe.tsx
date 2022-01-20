@@ -56,7 +56,7 @@ export const AdobeAe = () => {
             }}>
             Create open and close animations that take the dropdown menu’s actual position into account.
           </Paragraph>
-          <Button css={{}}>
+          <Button css={{ marginLeft: '3px' }}>
             Learn more <ArrowRightIcon />
           </Button>
         </Container>

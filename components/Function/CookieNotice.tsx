@@ -48,10 +48,18 @@ export const CookieNotice = () => {
         fontFamily: "'Inter', sans-serif'",
         fontWeight: '600',
       }}>
-      <Text css={{ fontFamily: '$neueplak', fontSize: '12px', fontWeight: 'bold', lineHeight: '1.3' }}>
+      <Text
+        css={{
+          // textTransform: 'uppercase',
+          fontFamily: '$inter',
+          fontSize: '14px',
+          fontWeight: 'bold',
+          paddingBottom: '7px',
+          lineHeight: '1.3',
+        }}>
         We use cookies.
       </Text>
-      <Text size="2" css={{ fontWeight: '500', width: '70vw', fontSize: '11px', lineHeight: '1.3' }}>
+      <Text size="2" css={{ fontWeight: '500', width: '60vw', fontSize: '11px', lineHeight: '1.3' }}>
         We use cookies to personalise content and ads, to provide social media features and to analyse our traffic. We
         also share information about your use of our site with our social media, advertising and analytics partners who
         may combine it with other information that you’ve provided to them or that they’ve collected from your use of
