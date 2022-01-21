@@ -11,7 +11,7 @@ import { Navbar } from '@components/Navbar';
 import { Hero } from '@components/Hero';
 import { AdobeAe } from '@components/AdobeAe';
 import { SocialSection } from '@components/SocialSection';
-import { LogoSlide } from '@components/Framework/LogoSlide';
+import { CommunityContainer } from '@components/CommunityContainer';
 import { Heading } from '@atelier/heading';
 import { Paragraph } from '@atelier/paragraph';
 import { Container } from '@atelier/container';
@@ -21,6 +21,8 @@ import { GradientBackground } from '@components/Background/GradientBackground';
 import { FooterMain } from '@components/FooterMain';
 import { SmallSpacer } from '@components/SmallSpacer';
 import { Button } from '@atelier/button';
+
+import { CursorArrowIcon } from '@radix-ui/react-icons';
 import btrfly from '../public/img/btrfly_g.jpg';
 
 // COOKIE NOTICE
@@ -105,17 +107,19 @@ const AdyIndex = () => {
             <Heading
               size="4"
               css={{
-                fontSize: '50px',
-                fontFamily: '$neuewide',
+                fontSize: '40px',
+                fontFamily: '$neueplak',
+                fontWeight: '400',
+
                 textAlign: 'center',
-                paddingBottom: '20px',
+                paddingBottom: '10px',
                 '@sm': {
                   fontSize: '26px',
                   textAlign: 'left',
                   paddingBottom: '10px',
                 },
               }}>
-              ATELIER®
+              <strong>ADY</strong>® Packs
             </Heading>
 
             <Paragraph
@@ -126,7 +130,7 @@ const AdyIndex = () => {
                 fontWeight: '500',
                 lineHeight: '1.4',
                 color: '$gray11',
-                mb: '30px',
+                mb: '40px',
                 '@sm': {
                   textAlign: 'left',
                   fontSize: '16px',
@@ -144,7 +148,7 @@ const AdyIndex = () => {
                   lineHeight: '1.3',
                 },
               }}>
-              <strong>Essential</strong>® design components for you.
+              <strong>Essential</strong>® design components for your projects.
             </Paragraph>
 
             {/* <!-- CARDS CONTAINER --> */}
@@ -166,9 +170,18 @@ const AdyIndex = () => {
                   <Card>
                     <Box css={{ position: 'absolute', bottom: '0', left: '0', margin: '30px' }}>
                       <Text size="2" css={{ fontWeight: '800', lineHeight: '1.2' }}>
-                        PRODUCT TITLE 001
+                        SFX. 001
                       </Text>
                     </Box>
+                    <Image
+                      className="color__swirl"
+                      src="https://cdn.ady.systems/ady.images/one.png"
+                      layout="fill"
+                      objectFit="cover"
+                      alt="image"
+                      objectPosition="absolute"
+                      priority
+                    />
                   </Card>
                 </Box>
 
@@ -177,9 +190,18 @@ const AdyIndex = () => {
                   <Card>
                     <Box css={{ position: 'absolute', bottom: '0', left: '0', margin: '30px' }}>
                       <Text size="2" css={{ fontWeight: '800', lineHeight: '1.2' }}>
-                        PRODUCT TITLE 002
+                        INTERVAL. v001
                       </Text>
                     </Box>
+                    <Image
+                      className="color__swirl"
+                      src="https://cdn.ady.systems/ady.images/four.png"
+                      layout="fill"
+                      objectFit="cover"
+                      alt="image"
+                      objectPosition="absolute"
+                      priority
+                    />
                   </Card>
                 </Box>
               </Grid>
@@ -198,7 +220,6 @@ const AdyIndex = () => {
           <Heading size="2" css={{ color: '$gray7', paddingBottom: '30px' }}>
             Our Products
           </Heading>
-          <LogoSlide />
         </Section>
 
         {/* <!-- BEGIN SUBSCRIBE & SOCIAL SECTION --> */}
@@ -208,10 +229,11 @@ const AdyIndex = () => {
           <Container css={{ boxSizing: 'border-box', width: '100%', maxWidth: '400px', minWidth: '200px' }}></Container>
         </Section>
 
-        <SocialSection />
         {/* <!-- HOLD
           <CaseStudiesSection />
           --> */}
+
+        <CommunityContainer />
 
         {/* <!-- END FOOTER --> */}
         <FooterMain />

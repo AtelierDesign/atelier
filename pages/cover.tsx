@@ -16,7 +16,8 @@ const CoverBox = styled('div', {
   width: '100vw',
   minWidth: '100vw',
   height: '100%',
-  backgroundColor: 'rgba(240, 240, 240, 0.3)',
+  // backgroundColor: 'rgba(240, 240, 240, 0.3)',
+  backgroundColor: '$gold9',
 
   // RADIAL GRADIENT
   /*
@@ -96,7 +97,7 @@ export default function Cover() {
           </NextLink>
         </TextBox>
       </CoverBox>
-      <Image src={butterFly} alt="One" layout="fill" objectFit="cover" />
+      {/* <!-- <Image src={butterFly} alt="One" layout="fill" objectFit="cover" /> --> */}
       {/* <!--   <Image src="https://cdn.ady.systems/ady.images/btrfly.png" alt="One" layout="fill" objectFit="cover" /> --> */}
     </Box>
   );

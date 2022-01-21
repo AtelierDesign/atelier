@@ -85,7 +85,7 @@ export function Hero() {
               },
               */
             }}>
-            WELCOME.
+            Welcome.
           </Heading>
           <Paragraph
             size="2"
