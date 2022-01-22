@@ -8,6 +8,20 @@
   --to: #277ef4;
 }
 
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1;
+
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+}
+
+html {
+  height: -webkit-fill-available;
+}
+
 [data-theme='dark'] {
   --background: black;
   --foreground: white;
@@ -35,13 +49,6 @@ svg {
 *::before,
 *::after {
   box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  line-height: 1;
 }
 
 .scroll-container::-webkit-scrollbar {

@@ -17,8 +17,9 @@ const CoverBox = styled('div', {
   width: '100vw',
   minWidth: '100vw',
   height: '100%',
+  minHeight: '100vh',
   // backgroundColor: 'rgba(240, 240, 240, 0.3)',
-  backgroundColor: '$light100',
+  backgroundColor: '$translucent',
 
   // RADIAL GRADIENT
   /*
