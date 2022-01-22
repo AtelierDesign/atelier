@@ -2,7 +2,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import React from 'react';
 import NextLink from 'next/link';
-import butterFly from '../public/img/btrfly/b4.png';
+import a from '../public/mov/a.gif';
 import { NormalLink } from '@atelier/normal-link';
 import { Text } from '@atelier/text';
 import { Box } from '@atelier/box';
@@ -18,7 +18,7 @@ const CoverBox = styled('div', {
   minWidth: '100vw',
   height: '100%',
   // backgroundColor: 'rgba(240, 240, 240, 0.3)',
-  backgroundColor: '$slime',
+  backgroundColor: '$light100',
 
   // RADIAL GRADIENT
   /*
@@ -31,8 +31,8 @@ const CoverBox = styled('div', {
   display: 'block',
   position: 'relative',
   margin: 'auto',
-  opacity: '0.9',
-  backdropFilter: 'invert(10%) blur(20px)',
+  // opacity: '0.9',
+  // backdropFilter: 'invert(10%) blur(20px)',
   saturate: '300%',
 
   overflowY: 'hidden',
@@ -66,11 +66,10 @@ export default function Cover() {
         <title>Atelier®.</title>
       </Head>
 
-      <CoverNavbar />
-
       <CoverBox>
         <CoverFooter />
         <TextBox>
+          {/*
           <NextLink href="/cover" passHref>
             <NormalLink variant="normal">
               <Text
@@ -94,13 +93,13 @@ export default function Cover() {
               <Text css={{ fontWeight: '500', fontSize: '12px', lineHeight: '1.2' }}>
                 <strong>ADY</strong>®Store Opening Soon. An ongoing [Web3] prjct. © 2022
               </Text>
-              */}
-              {/* <!-- HOLD LOGO <Image src="/logo.svg" alt="One" width={120} height={60} /> --> */}
+
             </NormalLink>
           </NextLink>
+          */}
         </TextBox>
       </CoverBox>
-      {/* <!-- <Image src={butterFly} alt="One" layout="fill" objectFit="cover" /> --> */}
+      <Image src={a} alt="One" layout="fill" objectFit="cover" />
       {/* <!--   <Image src="https://cdn.ady.systems/ady.images/btrfly.png" alt="One" layout="fill" objectFit="cover" /> --> */}
     </Box>
   );

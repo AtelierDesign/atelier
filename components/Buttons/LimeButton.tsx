@@ -22,11 +22,6 @@ const Button = styled('button', {
   fontWeight: '600',
   fontSize: '13px',
 
-  '&:hover': {
-    color: '$white',
-    cursor: 'pointer',
-  },
-
   mr: '$3',
   '@sm': { display: 'block', mr: '$3' },
   '&:hover': { cursor: 'pointer' },
