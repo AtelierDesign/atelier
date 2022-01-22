@@ -1,44 +1,57 @@
-import React from 'react';
-import { Slant as Hamburger } from 'hamburger-react';
-import { useState } from 'react';
-import Link from 'next/link';
-
-import { styled } from '@stitches/react';
-
-const Menu = styled('div', {
-  zIndex: '9999',
-  position: 'relative',
-  top: '20',
-  right: '0',
-  width: '200px',
-  height: '100vh',
-  color: '$gray12',
-  backgroundColor: '$gray12',
-});
+import { Menu } from '@headlessui/react';
+import { Link } from '@atelier/link';
+import { Button } from '@atelier/button';
+import { LimeButton } from '@components/Buttons/LimeButton';
+import NextLink from 'next/link';
 
 export const FalldownMenu = () => {
-  const [isOpen, setOpen] = useState(false);
-
   return (
-    <Hamburger
-      // id="hamburger-react"
-      // className="hamburger-react"
-      // padding="0"
-      direction="left"
-      easing="ease-in"
-      duration={0.2}
-      // position="relative"
-      color="#000"
-      size={18}
-      toggled={isOpen}
-      toggle={setOpen}
-      onToggle={isOpen => {
-        if (isOpen) {
-          return null;
-        } else {
-          return null;
-        }
-      }}
-    />
+    <Menu>
+      <LimeButton>
+        <Menu.Button>More</Menu.Button>
+      </LimeButton>
+
+      <Menu.Items>
+        <Menu.Item>
+          {({ active }) => (
+            <Button>
+              <NextLink href="/shop" passHref>
+                <Link variant="subtle" css={{ marginRight: '$3', color: '$gray12', '@sm': { marginRight: '$2' } }}>
+                  Shop
+                </Link>
+              </NextLink>
+            </Button>
+          )}
+        </Menu.Item>
+        <Menu.Item>
+          {({ active }) => (
+            <NextLink href="/" passHref>
+              <Link variant="subtle" css={{ marginRight: '$3', color: '$gray12', '@sm': { marginRight: '$2' } }}>
+                Link 2
+              </Link>
+            </NextLink>
+          )}
+        </Menu.Item>
+        <Menu.Item disabled>
+          <span className="opacity-75">Link 3 disabled</span>
+        </Menu.Item>
+      </Menu.Items>
+    </Menu>
   );
 };
+
+/*
+    <Menu>
+      <Menu.Button>More</Menu.Button>
+
+
+        By default, this will automatically show/hide when the
+        Menu.Button is pressed.
+
+      <Menu.Items>
+    /* <Menu.Item> ... </Menu.Item>
+
+        /* ...
+      </Menu.Items>
+    </Menu>
+*/
