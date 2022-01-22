@@ -200,6 +200,7 @@ export const { styled, css, theme, createTheme, getCssText, globalCss, keyframes
       // NEONS
       superYellow: '#F6F930',
       superLime: '#96F550',
+      slime: '#FFFD8E',
       lime9Alpha: 'rgba(153,213,42, 0.2)',
       sky9Alpha: 'rgba(104,221,253,0.3)',
 
@@ -507,6 +508,7 @@ export const darkTheme = createTheme('darkTheme', {
 
     // CUSTOM FOR DARK
     superLime: '#7A306C',
+    slime: '#c9cccd',
     light100: 'rgba(0, 0, 0, 0.4)',
     light50: 'rgba(0, 0, 0, 0.8)',
   },

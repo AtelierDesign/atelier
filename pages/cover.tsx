@@ -8,6 +8,7 @@ import { Text } from '@atelier/text';
 import { Box } from '@atelier/box';
 import { SmallSpacer } from '@components/SmallSpacer';
 import { CoverFooter } from '@components/CoverFooter';
+import { CoverNavbar } from '@components/Function/CoverNavbar';
 
 import { styled } from '@stitches/react';
 
@@ -17,7 +18,7 @@ const CoverBox = styled('div', {
   minWidth: '100vw',
   height: '100%',
   // backgroundColor: 'rgba(240, 240, 240, 0.3)',
-  backgroundColor: '$gold9',
+  backgroundColor: '$slime',
 
   // RADIAL GRADIENT
   /*
@@ -64,6 +65,8 @@ export default function Cover() {
       <Head>
         <title>Atelier®.</title>
       </Head>
+
+      <CoverNavbar />
 
       <CoverBox>
         <CoverFooter />
