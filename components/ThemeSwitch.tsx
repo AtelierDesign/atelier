@@ -45,7 +45,14 @@ export const ThemeSwitch = props => {
 
   return (
     <form>
-      <Flex css={{ alignItems: 'center', marginRight: '$5' }}>
+      <Flex
+        css={{
+          alignItems: 'center',
+          marginRight: '$5',
+          '@sm': {
+            marginRight: '$2',
+          },
+        }}>
         <Switch
           defaultChecked
           id="s1"

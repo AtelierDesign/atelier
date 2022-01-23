@@ -39,19 +39,3 @@ export const FalldownMenu = () => {
     </Menu>
   );
 };
-
-/*
-    <Menu>
-      <Menu.Button>More</Menu.Button>
-
-
-        By default, this will automatically show/hide when the
-        Menu.Button is pressed.
-
-      <Menu.Items>
-    /* <Menu.Item> ... </Menu.Item>
-
-        /* ...
-      </Menu.Items>
-    </Menu>
-*/

@@ -2,54 +2,93 @@ import { Popover, Transition } from '@headlessui/react';
 import { Fragment } from 'react';
 
 import { Link } from '@atelier/link';
+import { Text } from '@atelier/text';
+import { Box } from '@atelier/box';
 import { LimeButton } from '@components/Buttons/LimeButton';
 import { styled } from '@stitches/react';
 
 const Dropdown = styled('div', {
-  // display: 'none',
   zIndex: '9999',
   position: 'absolute',
   top: '10',
   right: '0',
   left: '0',
-  backgroundColor: '$light100',
-  backdropFilter: 'blur(18px), saturate(180%)',
+  // backgroundColor: '$light100',
+  backgroundColor: '$light50',
+  backdropFilter: 'blur(18px)',
+  saturate: '180%',
+  boxShadow: '$colors$shadowLight 0px 10px 38px -10px, $colors$shadowDark 0px 10px 20px -15px',
 
   height: 'auto',
   width: 'auto',
-  paddingLeft: '15px',
-  paddingRight: '15px',
-  paddingBottom: '30px',
+  paddingLeft: '25px',
+  paddingRight: '25px',
+  paddingBottom: '40vh',
   paddingTop: '30px',
-  margin: 'auto',
-  marginTop: '13px',
+  marginTop: '25px',
+  marginRight: '10px',
+  marginLeft: '10px',
 
   borderBottomLeftRadius: '20px',
   borderBottomRightRadius: '20px',
+  borderTopLeftRadius: '20px',
+  borderTopRightRadius: '20px',
 
   // TYPOGRAPHY
-  fontFamily: '$inter',
-  fontSize: '13px',
-  fontWeight: '600',
+  textTransform: 'uppercase',
   color: '$gray12',
+});
+
+const MenuBox = styled('div', {
+  width: '100%',
+  position: 'relative',
+  // border: '1px solid $gray12',
+  // borderBottomWidth: '1px',
+  // borderLeftWidth: '0',
+  // borderRightWidth: '0',
+  // borderTopWidth: '0',
+
+  // paddingBottom: '5px',
+  // paddingLeft: '0',
+  // paddingRight: '0',
+  // paddingTop: '5px',
+
+  marginTop: '5px',
+  marginBottom: '5px',
+});
+
+const MenuLink = styled('a', {
+  fontSize: '22px',
+  fontFamily: '$inter',
+  fontWeight: '800',
+  color: '$gray12',
+  lineHeight: '1',
+  letterSpacing: '-0.03rem',
+
+  marginTop: '5px',
+  marginBottom: '5px',
+
+  '&:hover': {
+    color: '$gray10',
+  },
 });
 
 const solutions = [
   {
-    name: 'Insights',
-    description: 'Measure actions your users take',
+    name: 'Shop →',
+    description: '',
     href: '##',
     icon: IconOne,
   },
   {
-    name: 'Automations',
-    description: 'Create your own targeted content',
+    name: 'Documentation',
+    description: '',
     href: '##',
     icon: IconTwo,
   },
   {
-    name: 'Reports',
-    description: 'Keep track of your growth',
+    name: 'Login',
+    description: '',
     href: '##',
     icon: IconThree,
   },
@@ -85,8 +124,8 @@ export const PopoverPanel = () => {
 
             <Transition
               as={Fragment}
-              enter="transition ease-out duration-200"
-              enterFrom="opacity-0 translate-y-1"
+              enter="transition ease-out duration-800"
+              enterFrom="opacity-0 translate-y-2"
               enterTo="opacity-100 translate-y-0"
               leave="transition ease-in duration-150"
               leaveFrom="opacity-100 translate-y-0"
@@ -97,23 +136,31 @@ export const PopoverPanel = () => {
                     <div>
                       {solutions.map(item => (
                         <a key={item.name} href={item.href}>
-                          <div>
-                            <item.icon aria-hidden="true" />
-                          </div>
-                          <div>
-                            <p>{item.name}</p>
+                          <MenuBox>
+                            <MenuLink>{item.name}</MenuLink>
                             <p>{item.description}</p>
-                          </div>
+                          </MenuBox>
                         </a>
                       ))}
-                    </div>
-                    <div>
-                      <a>
-                        <span>
-                          <span>Documentation</span>
-                        </span>
-                        <span>Start integrating products and tools</span>
-                      </a>
+
+                      <Box css={{ position: 'absolute', bottom: '0', paddingBottom: '20px' }}>
+                        <Text size="1" css={{ fontFamily: '$neuewide', fontWeight: '800' }}>
+                          <span>ATELIER®</span>
+                        </Text>
+
+                        <Text
+                          css={{
+                            fontFamily: '$inter',
+                            fontSize: '10px',
+                            fontWeight: '500',
+                            letterSpacing: '-0.03rem',
+                            color: '$slate10',
+
+                            paddingTop: '4px',
+                          }}>
+                          <span>© 2022 All Rights Reserved.</span>
+                        </Text>
+                      </Box>
                     </div>
                   </div>
                 </Dropdown>
