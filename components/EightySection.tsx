@@ -12,6 +12,7 @@ const Eighty = styled('div', {
   // backgroundImage: 'url("/img/four.png")',
   backgroundPosition: 'center',
   backdropFilter: 'blur(10px)',
+  // boxShadow: '$colors$shadowLight 0px 10px 38px -10px, $colors$shadowDark 0px 10px 20px -15px',
 
   display: 'block',
   position: 'relative',
@@ -20,8 +21,8 @@ const Eighty = styled('div', {
 
   borderBottomWidth: '1px solid #FFF',
 
-  borderBottomLeftRadius: '46px',
-  borderBottomRightRadius: '46px',
+  borderBottomLeftRadius: '30px',
+  borderBottomRightRadius: '30px',
 
   overflowY: 'visible',
   overflowX: 'hidden',

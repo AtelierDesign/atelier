@@ -208,7 +208,7 @@ const AdyIndex = () => {
             </Container>
 
             {/* <!-- ADOBE® AE SECTION --> */}
-            <Container size="3" css={{}}>
+            <Container size="3" css={{ padding: '0', margin: '0' }}>
               <AdobeAe />
             </Container>
 

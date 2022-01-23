@@ -213,8 +213,8 @@ export const { styled, css, theme, createTheme, getCssText, globalCss, keyframes
       // LO CONTRAST
       canvas: 'hsl(0 0% 93%)',
       transparentPanel: 'hsl(0 0% 0% / 97%)',
-      shadowLight: 'hsl(206 22% 7% / 35%)',
-      shadowDark: 'hsl(206 22% 7% / 20%)',
+      shadowLight: 'hsl(206 22% 7% / 15%)',
+      shadowDark: 'hsl(206 22% 7% / 40%)',
     },
     fonts: {
       inter: "'Inter', 'sans-serif'",

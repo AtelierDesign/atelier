@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import Head from 'next/head';
 import { Box, box } from '@atelier/box';
 import { AppProps } from 'next/app';
@@ -26,13 +26,7 @@ const appWrapper = css({
 
 const App = ({ Component, pageProps }: AppProps) => {
   const router = useRouter();
-  const [mounted, setMounted] = useState(false);
   const { theme, setTheme } = useTheme();
-
-  // When mounted on client, now we can show the UI
-  useEffect(() => setMounted(true), []);
-
-  if (!mounted) return null;
 
   globalCss(reset, {
     html: {
