@@ -77,19 +77,25 @@ const solutions = [
   {
     name: 'Shop →',
     description: '',
-    href: '##',
+    href: '/shop',
     icon: IconOne,
   },
   {
     name: 'Documentation',
     description: '',
-    href: '##',
+    href: 'https://docs.ady.world',
     icon: IconTwo,
   },
   {
     name: 'Login',
     description: '',
-    href: '##',
+    href: 'https://api.ady.world',
+    icon: IconThree,
+  },
+  {
+    name: 'Privacy Policy',
+    description: '',
+    href: '/privacy',
     icon: IconThree,
   },
 ];
