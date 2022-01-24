@@ -4,6 +4,7 @@ import { Fragment } from 'react';
 import { Link } from '@atelier/link';
 import { Text } from '@atelier/text';
 import { Box } from '@atelier/box';
+import { Cross as Hamburger } from 'hamburger-react';
 import { LimeButton } from '@components/Buttons/LimeButton';
 import { styled } from '@stitches/react';
 
@@ -35,7 +36,6 @@ const Dropdown = styled('div', {
   borderTopRightRadius: '20px',
 
   // TYPOGRAPHY
-  textTransform: 'uppercase',
   color: '$gray12',
 });
 
@@ -107,25 +107,15 @@ export const PopoverPanel = () => {
         {({ open }) => (
           <>
             <Popover.Button as="a">
-              <Link
-                variant="subtle"
+              <Box
                 css={{
                   display: 'none',
-                  fontSize: '13px',
-                  color: '$white',
-                  backgroundColor: '$lime9',
-                  border: '0px solid $crimson9',
-                  borderRadius: '6px',
-                  paddingTop: '6px',
-                  paddingBottom: '6px',
-                  paddingLeft: '10px',
-                  paddingRight: '10px',
-                  mr: '$3',
-                  '@sm': { display: 'block', marginRight: '$2', marginLeft: '0' },
-                  '&:hover': { cursor: 'pointer' },
+                  '@sm': {
+                    display: 'block',
+                  },
                 }}>
-                <span>Menu</span>
-              </Link>
+                <Hamburger size={15} direction="right" duration={0.4} distance="sm" color="#FFF" hideOutline={true} />
+              </Box>
             </Popover.Button>
 
             <Transition

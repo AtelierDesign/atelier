@@ -7,7 +7,7 @@ const Eighty = styled('div', {
   width: '100vw',
   minWidth: '100vw',
   height: 'auto',
-  backgroundColor: '$light100',
+  backgroundColor: '$slate5',
 
   // backgroundImage: 'url("/img/four.png")',
   backgroundPosition: 'center',

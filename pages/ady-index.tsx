@@ -12,6 +12,7 @@ import { Hero } from '@components/Hero';
 import { AdobeAe } from '@components/AdobeAe';
 import { SocialSection } from '@components/SocialSection';
 import { CommunityContainer } from '@components/CommunityContainer';
+import { ProductSection } from '@components/Framework/ProductSection';
 import { Heading } from '@atelier/heading';
 import { Paragraph } from '@atelier/paragraph';
 import { Container } from '@atelier/container';
@@ -222,16 +223,7 @@ const AdyIndex = () => {
           </Heading>
         </Section>
 
-        {/* <!-- BEGIN SUBSCRIBE & SOCIAL SECTION --> */}
-        <Section
-          size="2"
-          css={{ paddingBottom: '2rem', paddingTop: '8rem', alignItems: 'center', textAlign: 'center' }}>
-          <Container css={{ boxSizing: 'border-box', width: '100%', maxWidth: '400px', minWidth: '200px' }}></Container>
-        </Section>
-
-        {/* <!-- HOLD
-          <CaseStudiesSection />
-          --> */}
+        <ProductSection />
 
         <CommunityContainer />
 

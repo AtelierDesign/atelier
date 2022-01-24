@@ -127,86 +127,17 @@ strong {
 
 /* HEADLESS */
 
-#headlessui-menu-button-1 {
-  height: 32px;
-  line-height: normal;
-  border: none !important;
-
-  background-color: transparent;
-}
-
-#hamburger-react {
-  height: 32px;
-  width: 32px;
-  line-height: normal;
-}
-
 .hamburger-react {
+  position: relative;
   margin: auto !important;
-  padding: 0;
-  /*  height: 38px !important;
-  width: 38px !important; */
+  text-align: center;
+  align-items: center;
+  vertical-align: middle;
   line-height: normal !important;
 }
 
-.progress {
-  position: absolute;
-  width: 80px;
-  height: 80px;
-  top: calc(50% - 40px);
-  left: calc(50% - 40px);
-  transition: transform 0.4s cubic-bezier(0.7, 0, 0.3, 1);
+@media screen only and (min-width: 800px) {
+  .hamburger-react {
+    display: none !important;
+  }
 }
-
-.progress__circle,
-.progress__path {
-  fill: none;
-  stroke: #f0f0f0;
-  stroke-width: 1px;
-}
-
-.button--fenrir:focus-visible .progress__circle {
-  fill: rgba(252, 196, 63, 0.4);
-}
-
-.progress__path {
-  stroke: #a6a6a6;
-  stroke-dasharray: 1;
-  stroke-dashoffset: 1;
-  transition: stroke-dashoffset 0.4s cubic-bezier(0.7, 0, 0.3, 1);
-}
-
-.button--fenrir:hover .progress__path {
-  stroke-dashoffset: 0;
-}
-
-/*
-
-#headlessui-menu-items-2 {
-  display: flex;
-  flex-direction: column;
-
-  background-color: black;
-  color: white !important;
-
-  font-family: 'Inter', sans-serif;
-  font-size: 13px;
-  font-weight: bold;
-  padding-top: 3px;
-  padding-bottom: 3px;
-}
-
-#headlessui-menu-item-10 {
-  padding-top: 3px;
-  padding-bottom: 3px;
-  line-height: normal;
-}
-
-.menu__item__link,
-.menu__item__link a,
-.menu__item__link:active {
-  font-family: 'Inter', sans-serif;
-  color: white !important;
-}
-
-*/

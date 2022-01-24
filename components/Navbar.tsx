@@ -17,8 +17,9 @@ export const Navbar = () => {
       <Flex
         as="header"
         css={{
-          py: '11px',
+          py: '0px',
           px: '5px',
+          height: '48px',
           jc: 'space-between',
           position: 'fixed',
           margin: '0',
@@ -31,7 +32,7 @@ export const Navbar = () => {
           zIndex: '9999',
         }}>
         {/* <!-- LOGO SECTION --> */}
-        <NextLink href="/atelier" passHref>
+        <NextLink href="/ady-index" passHref>
           <Box
             as="a"
             css={{
@@ -50,7 +51,7 @@ export const Navbar = () => {
                 fontWeight: '800',
                 fontSize: '18px',
                 color: '$gray12',
-                lineHeight: '30px',
+                lineHeight: '48px',
                 letterSpacing: '-0.03rem',
               }}>
               ATELIER®
