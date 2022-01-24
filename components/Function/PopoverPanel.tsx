@@ -114,7 +114,7 @@ export const PopoverPanel = () => {
                     display: 'block',
                   },
                 }}>
-                <Hamburger size={15} direction="right" duration={0.4} distance="sm" color="#FFF" hideOutline={true} />
+                <Hamburger size={15} direction="right" duration={0.4} distance="sm" color="gray" hideOutline={true} />
               </Box>
             </Popover.Button>
 
