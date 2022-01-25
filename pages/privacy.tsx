@@ -6,7 +6,7 @@ import { Container } from '@atelier/container';
 import { Section } from '@atelier/section';
 import { Heading } from '@atelier/heading';
 import { Text } from '@atelier/text';
-import { Navbar } from '@components/Navbar';
+import { Navbar } from '@components/Framework/Navbar';
 import { SmallSpacer } from '@components/SmallSpacer';
 import { Spacer } from '@components/Spacer';
 import { FooterMain } from '@components/FooterMain';

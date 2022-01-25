@@ -32,7 +32,7 @@ export const Navbar = () => {
           zIndex: '9999',
         }}>
         {/* <!-- LOGO SECTION --> */}
-        <NextLink href="/ady-index" passHref>
+        <NextLink href="/atelier" passHref>
           <Box
             as="a"
             css={{
@@ -124,8 +124,6 @@ export const Navbar = () => {
             css={{
               fontSize: '13px',
               color: '$white',
-              // backgroundColor: '$crimson9',
-              // border: '1px solid $crimson9',
               backgroundColor: '$lime9',
               border: '0px solid $crimson9',
               borderRadius: '6px',

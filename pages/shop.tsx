@@ -9,7 +9,7 @@ import { Section } from '@atelier/section';
 import { Heading } from '@atelier/heading';
 import { Paragraph } from '@atelier/paragraph';
 import { Text } from '@atelier/text';
-import { Navbar } from '@components/Navbar';
+import { Navbar } from '@components/Framework/Navbar';
 import { FooterMain } from '@components/FooterMain';
 import { Grid } from '@atelier/grid';
 
