@@ -2,13 +2,11 @@ import Head from 'next/head';
 import Image from 'next/image';
 import React from 'react';
 import NextLink from 'next/link';
-import a from '../public/mov/a.gif';
 import { NormalLink } from '@atelier/normal-link';
 import { Text } from '@atelier/text';
 import { Box } from '@atelier/box';
 import { SmallSpacer } from '@components/SmallSpacer';
 import { CoverFooter } from '@components/CoverFooter';
-import { CoverNavbar } from '@components/Function/CoverNavbar';
 
 import { styled } from '@stitches/react';
 
@@ -66,13 +64,12 @@ export default function Cover() {
       <CoverBox>
         <CoverFooter />
         <TextBox>
-          {/*
-          <NextLink href="/cover" passHref>
+          <NextLink href="/" passHref>
             <NormalLink variant="normal">
               <Text
                 css={{
                   fontFamily: '$neuewide',
-                  fontSize: '20px',
+                  fontSize: '26px',
                   fontWeight: '900',
                   letterSpacing: '-0.05rem',
                   color: '$gray12',
@@ -81,23 +78,17 @@ export default function Cover() {
                     color: '$gray10',
                   },
                 }}>
-                ATELIER DESIGN YIELD®
+                ATELIER®
               </Text>
-              <Text css={{ fontWeight: '600', fontSize: '12px', lineHeight: '1.3' }}>
-                An ongoing [ <strong>Web3</strong> ] project.
-              </Text>
-              {/*
-              <Text css={{ fontWeight: '500', fontSize: '12px', lineHeight: '1.2' }}>
-                <strong>ADY</strong>®Store Opening Soon. An ongoing [Web3] prjct. © 2022
-              </Text>
-
             </NormalLink>
           </NextLink>
-          */}
+
+          <Text css={{ fontWeight: '600', fontSize: '12px', lineHeight: '1.3' }}>
+            An ongoing [ <strong>Web3</strong> ] project.
+          </Text>
         </TextBox>
       </CoverBox>
-      <Image src={a} alt="One" layout="fill" objectFit="cover" />
-      {/* <!--   <Image src="https://cdn.ady.systems/ady.images/btrfly.png" alt="One" layout="fill" objectFit="cover" /> --> */}
+      <Image src="https://cdn.ady.systems/ady.images/btrfly.png" alt="One" layout="fill" objectFit="cover" />
     </Box>
   );
 }
