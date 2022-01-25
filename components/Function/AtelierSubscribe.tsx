@@ -1,6 +1,9 @@
 import React from 'react';
 import Head from 'next/head';
-// import { Klaviyo } from 'node-klaviyo';
+import { Formik } from 'formik';
+import { useFormik } from 'formik';
+
+// ATELIER® DESIGN SYSTEM
 import { Box } from '@atelier/box';
 import { Heading } from '@atelier/heading';
 import { Text } from '@atelier/text';
@@ -12,36 +15,29 @@ import { Button } from '@atelier/button';
 import { ArrowRightIcon } from '@radix-ui/react-icons';
 
 export const AtelierSubscribe = () => {
-  const subscribeUser = async event => {
-    event.preventDefault(); // don't redirect the page
-    // where we'll add our form logic
-
-    const res = await fetch('https://hooks.zapier.com/hooks/catch/123456/abcde', {
-      body: JSON.stringify({
-        name: event.target.name.value,
-      }),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      method: 'POST',
-    });
-
-    const result = await res.json();
-    // result.user => 'Ada Lovelace'
-  };
+  const formik = useFormik({
+    initialValues: {
+      email: '',
+    },
+    onSubmit: values => {
+      alert(JSON.stringify(values, null, 2));
+    },
+  });
 
   return (
     <Section size="2" css={{ paddingBottom: '5rem', paddingTop: '5rem', alignItems: 'center', textAlign: 'center' }}>
       <Container size="3" css={{ boxSizing: 'border-box' }}>
         <Heading size="3" css={{ paddingBottom: '20px' }}>
-          Join the conversation.
+          Join the Conversation.
         </Heading>
 
-        <form onSubmit={subscribeUser}>
+        <form onSubmit={formik.handleSubmit}>
           <Box css={{ display: 'flex', flexDirection: 'column', margin: 'auto', alignItems: 'center' }}>
             <TextField
               size="3"
               css={{ width: '100%', maxWidth: '400px', minWidth: '200px' }}
+              onChange={formik.handleChange}
+              value={formik.values.email}
               id="email"
               name="email"
               type="email"
@@ -53,7 +49,6 @@ export const AtelierSubscribe = () => {
               variant="ghost"
               type="submit"
               name="email"
-              onSubmit={subscribeUser}
               size="1"
               css={{
                 backgroundColor: 'transparent',

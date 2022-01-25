@@ -8,6 +8,7 @@ import { Flex } from '@atelier/flex';
 import { Paragraph } from '@atelier/paragraph';
 import { ExternalLinkIcon, RocketIcon } from '@radix-ui/react-icons';
 import { DefaultButton } from '@components/DefaultButton';
+import { StandardButton } from '@components/Buttons/StandardButton';
 import { HomeButton } from '@components/HomeButton';
 import { TimeCode } from '@components/Time/TimeCode';
 // import { HeroContainer } from '@components/HeroContainer';
@@ -109,18 +110,23 @@ export function Hero() {
 
           <Flex css={{ '@bp2': { jc: 'center', my: '$6' } }}>
             <NextLink href="/shop" passHref>
-              <DefaultButton css={{ width: 'auto', lineHeight: '1', mr: '$2', color: '$white' }}>
+              <StandardButton color="lime" href="/shop">
                 Latest Release
                 {` `}
                 <RocketIcon />
-              </DefaultButton>
+              </StandardButton>
             </NextLink>
-            <HomeButton as="a" href="https://github.com/AtelierDesign" target="_blank" rel="noopener noreferrer">
+
+            <StandardButton
+              color="ghost"
+              href="https://github.com/AtelierDesign"
+              target="_blank"
+              rel="noopener noreferrer">
               GitHub
-              <Box css={{ ml: '$1' }}>
+              <Box css={{ display: 'inline', ml: '$1' }}>
                 <ExternalLinkIcon />
               </Box>
-            </HomeButton>
+            </StandardButton>
           </Flex>
         </Container>
       </Section>

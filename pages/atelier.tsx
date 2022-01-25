@@ -19,14 +19,15 @@ import { Paragraph } from '@atelier/paragraph';
 import { Container } from '@atelier/container';
 import { Grid } from '@atelier/grid';
 import { EightySection } from '@components/EightySection';
-import { GradientBackground } from '@components/Background/GradientBackground';
-import { FooterMain } from '@components/FooterMain';
+import { BlurBox } from '@components/Framework/BlurBox';
+import { BgSection } from '@components/Framework/BgSection';
+import { FooterMain } from '@components/Framework/FooterMain';
 import { SmallSpacer } from '@components/SmallSpacer';
 import { Button } from '@atelier/button';
 import { CursorArrowIcon } from '@radix-ui/react-icons';
 
 // IMAGES
-import btrfly from '../public/img/btrfly_g.jpg';
+import fourPng from '../public/img/four.png';
 
 // COOKIE NOTICE
 import { CookieNotice } from '@components/Function/CookieNotice';
@@ -216,12 +217,6 @@ const Atelier = () => {
           </Container>
         </EightySection>
 
-        <Section size="3" css={{ alignItems: 'center', textAlign: 'center' }}>
-          <Heading size="2" css={{ color: '$gray7', paddingBottom: '30px' }}>
-            Our Products
-          </Heading>
-        </Section>
-
         {/* <!-- PRODUCT SECTION --> */}
         <ProductSection />
 
@@ -230,6 +225,10 @@ const Atelier = () => {
 
         {/* <!-- SOCIAL & COMMUNITY --> */}
         <CommunityContainer />
+
+        <BlurBox>
+          <Image src={fourPng} objectFit="cover" layout="fill" alt="" />
+        </BlurBox>
 
         {/* <!-- END FOOTER --> */}
         <FooterMain />

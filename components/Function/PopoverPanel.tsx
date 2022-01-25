@@ -21,6 +21,7 @@ const Dropdown = styled('div', {
   saturate: '180%',
   boxShadow: '$colors$shadowLight 0px 10px 38px -10px, $colors$shadowDark 0px 10px 20px -15px',
 
+  minHeight: '80vh',
   height: 'auto',
   width: 'auto',
   paddingLeft: '25px',

@@ -9,6 +9,8 @@ import { Paragraph } from '@atelier/paragraph';
 import { Container } from '@atelier/container';
 import { Button } from '@atelier/button';
 import { DefaultButton } from '@components/DefaultButton';
+import { StandardButton } from '@components/Buttons/StandardButton';
+import { CaretRightIcon } from '@radix-ui/react-icons';
 
 // RADIX ICONS
 import { ArrowRightIcon } from '@radix-ui/react-icons';
@@ -65,28 +67,12 @@ export const AdobeAe = () => {
             }}>
             Create open and close animations that take the dropdown menu’s actual position into account.
           </Paragraph>
-          <Button
-            variant="ghost"
-            css={{
-              marginLeft: '3px',
-              paddingLeft: '22px',
-              paddingRight: '22px',
-              paddingTop: '3px',
-              paddingBottom: '3px',
-              backgroundColor: '$gray4',
-              opacity: '1',
-
-              borderRadius: '8px',
-              // border: '1px solid $lime9',
-
-              '&:hover': {
-                opacity: '1',
-                curser: 'pointer',
-                backgroundColor: '$lime8',
-              },
-            }}>
-            Learn more <ArrowRightIcon />
-          </Button>
+          <StandardButton color="lime" href="/welcome" target="_blank" rel="noopener noreferrer">
+            Learn More
+            <Box css={{ display: 'inline', ml: '$1' }}>
+              <CaretRightIcon />
+            </Box>
+          </StandardButton>
         </Container>
       </Box>
     </>

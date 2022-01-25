@@ -9,7 +9,7 @@ import { Text } from '@atelier/text';
 import { Link } from '@atelier/link';
 import { ThemeSwitch } from '@components/ThemeSwitch';
 import { PopoverPanel } from '@components/Function/PopoverPanel';
-import { ArrowRightIcon } from '@radix-ui/react-icons';
+import { CaretRightIcon } from '@radix-ui/react-icons';
 
 export const Navbar = () => {
   return (
@@ -56,7 +56,6 @@ export const Navbar = () => {
               }}>
               ATELIER®
             </Text>
-            {/*<Image className="logo" alt="logo" src="/butterfly_logo.svg" width={80} height={18} />*/}
           </Box>
         </NextLink>
 
@@ -74,13 +73,13 @@ export const Navbar = () => {
           }}>
           <NextLink href="/shop" passHref>
             <Link variant="subtle" css={{ marginRight: '$3', color: '$gray12', '@sm': { marginRight: '$2' } }}>
-              Shop <ArrowRightIcon />
+              Shop <CaretRightIcon />
             </Link>
           </NextLink>
 
           <NextLink href="/atelier" passHref>
             <Link variant="subtle" css={{ marginRight: '$3', color: '$gray12', '@sm': { marginRight: '$2' } }}>
-              Moods
+              Showcase
             </Link>
           </NextLink>
 
@@ -93,7 +92,7 @@ export const Navbar = () => {
                 mr: '$3',
                 '@bp2': { display: 'block', mr: '$3' },
               }}>
-              Documentation
+              Docs
             </Link>
           </NextLink>
           <NextLink href="https://developer.ady.world" passHref>
@@ -123,7 +122,6 @@ export const Navbar = () => {
             css={{
               fontSize: '13px',
               color: '$gray12',
-              // backgroundColor: '$lime9',
               border: '0px solid $crimson9',
               borderRadius: '6px',
               paddingTop: '6px',

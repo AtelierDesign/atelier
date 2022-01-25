@@ -11,7 +11,7 @@ export const styledButton = css({
   paddingRight: '18px',
   paddingTop: '4px',
   paddingBottom: '4px',
-  height: '34px',
+  height: '32px',
   borderRadius: '7px',
   border: 'none',
   borderColor: '$gray12',
@@ -20,9 +20,9 @@ export const styledButton = css({
 
   // MARGINS
   marginRight: '6px',
-  marginLeft: '6px',
-  marginTop: '6px',
-  marginBottom: '6px',
+  marginLeft: '1px',
+  marginTop: '0px',
+  marginBottom: '0px',
 
   // BUTTON TEXT
   fontSize: '13px',
@@ -40,10 +40,25 @@ export const styledButton = css({
       lime: {
         backgroundColor: '$lime9',
         color: '$white',
+
+        '&:hover': {
+          backgroundColor: '$lime10',
+          color: '$white',
+        },
       },
       orange: {
         backgroundColor: '$orange9',
         color: '$white',
+      },
+      ghost: {
+        backgroundColor: '$translucent',
+        color: '$gray11',
+        fontWeight: '600',
+
+        '&:hover': {
+          backgroundColor: '$slate5',
+          color: '$gray11',
+        },
       },
     },
   },

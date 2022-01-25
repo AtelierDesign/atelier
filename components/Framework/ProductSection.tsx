@@ -45,7 +45,10 @@ const SmallButton = styled('button', {
 
 export const ProductSection = () => {
   return (
-    <Container size="3" css={{ paddingTop: '10px', paddingBottom: '80px', px: '18px' }}>
+    <Container size="3" css={{ paddingTop: '120px', paddingBottom: '120px', px: '18px' }}>
+      <Heading size="2" css={{ color: '$gray12', paddingBottom: '50px', textAlign: 'center' }}>
+        Our Products
+      </Heading>
       <Grid
         css={{
           gap: '10px',

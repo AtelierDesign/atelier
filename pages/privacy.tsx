@@ -9,7 +9,7 @@ import { Text } from '@atelier/text';
 import { Navbar } from '@components/Framework/Navbar';
 import { SmallSpacer } from '@components/SmallSpacer';
 import { Spacer } from '@components/Spacer';
-import { FooterMain } from '@components/FooterMain';
+import { FooterMain } from '@components/Framework/FooterMain';
 
 const PrivacyPolicy = () => {
   return (
