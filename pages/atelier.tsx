@@ -8,10 +8,11 @@ import { Section } from '@atelier/section';
 import { Box } from '@atelier/box';
 import { Text } from '@atelier/text';
 import { Navbar } from '@components/Framework/Navbar';
-import { Hero } from '@components/Hero';
+import { Hero } from '@components/Framework/Hero';
 import { AdobeAe } from '@components/AdobeAe';
 import { SocialSection } from '@components/SocialSection';
 import { CommunityContainer } from '@components/CommunityContainer';
+import { AtelierSubscribe } from '@components/Function/AtelierSubscribe';
 import { ProductSection } from '@components/Framework/ProductSection';
 import { Heading } from '@atelier/heading';
 import { Paragraph } from '@atelier/paragraph';
@@ -22,8 +23,9 @@ import { GradientBackground } from '@components/Background/GradientBackground';
 import { FooterMain } from '@components/FooterMain';
 import { SmallSpacer } from '@components/SmallSpacer';
 import { Button } from '@atelier/button';
-
 import { CursorArrowIcon } from '@radix-ui/react-icons';
+
+// IMAGES
 import btrfly from '../public/img/btrfly_g.jpg';
 
 // COOKIE NOTICE
@@ -224,6 +226,8 @@ const Atelier = () => {
         </Section>
 
         <ProductSection />
+
+        <AtelierSubscribe />
 
         <CommunityContainer />
 

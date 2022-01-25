@@ -120,11 +120,10 @@ export const Navbar = () => {
             href="https://api.ady.world"
             target="_blank"
             rel="norefferer"
-            variant="subtle"
             css={{
               fontSize: '13px',
-              color: '$white',
-              backgroundColor: '$lime9',
+              color: '$gray12',
+              // backgroundColor: '$lime9',
               border: '0px solid $crimson9',
               borderRadius: '6px',
               paddingTop: '6px',

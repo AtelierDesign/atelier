@@ -1,5 +1,6 @@
 import { Popover, Transition } from '@headlessui/react';
 import { Fragment } from 'react';
+import { useState } from 'react';
 
 import { Link } from '@atelier/link';
 import { Text } from '@atelier/text';
@@ -88,6 +89,8 @@ const navigation = [
 ];
 
 export const PopoverPanel = () => {
+  const [isOpen, setOpen] = useState(false);
+
   return (
     <>
       <Popover>
@@ -101,7 +104,16 @@ export const PopoverPanel = () => {
                     display: 'block',
                   },
                 }}>
-                <Hamburger size={20} direction="right" duration={0.4} distance="sm" color="gray" hideOutline={true} />
+                <Hamburger
+                  toggled={isOpen}
+                  toggle={setOpen}
+                  size={20}
+                  direction="right"
+                  duration={0.4}
+                  distance="sm"
+                  color="gray"
+                  hideOutline={true}
+                />
               </Box>
             </Popover.Button>
 
