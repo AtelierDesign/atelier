@@ -24,7 +24,7 @@ const CoverBox = styled('div', {
   overflowY: 'hidden',
   overflowX: 'hidden',
 
-  // RADIAL GRADIENT
+  // <!-- RADIAL GRADIENT --> //
   /*
   backgroundImage: `
   radial-gradient(circle 300px at 500px 200px, $blue8, $lime9Alpha),
@@ -88,7 +88,10 @@ export default function Cover() {
           </Text>
         </TextBox>
       </CoverBox>
+
+      {/* <!-- IMAGE UNDER COVER -->
       <Image src="https://cdn.ady.systems/ady.images/btrfly.png" alt="One" layout="fill" objectFit="cover" />
+      <!-- IMAGE UNDER COVER --> */}
     </Box>
   );
 }

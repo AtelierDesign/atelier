@@ -1,43 +1,12 @@
 import Head from 'next/head';
-import Image from 'next/image';
 import React from 'react';
-import NextLink from 'next/link';
-import fourImage from '../public/img/four.png';
-import { NormalLink } from '@atelier/normal-link';
 import { Text } from '@atelier/text';
 import { Box } from '@atelier/box';
-import { SmallSpacer } from '@components/SmallSpacer';
-import { CoverFooter } from '@components/CoverFooter';
+import { StandardButton, SmallButton } from '@components/Buttons/StandardButton';
 
-import { styled } from '@stitches/react';
+import { styled } from 'stitches.config';
 
-const CoverBox = styled('div', {
-  zIndex: '10',
-  width: '100vw',
-  minWidth: '100vw',
-  height: '100%',
-  backgroundColor: 'rgba(240, 240, 240, 0.3)',
-
-  // RADIAL GRADIENT
-  /*
-  backgroundImage: `
-  radial-gradient(circle 300px at 500px 200px, $blue8, $lime9Alpha),
-  radial-gradient(circle 500px at calc(100% - 900px) 300px, $lime6, $lime9Alpha),
-  radial-gradient(circle 800px at left center, $blue6, $sky9Alpha)
-  `,
-*/
-  display: 'block',
-  position: 'relative',
-  margin: 'auto',
-  opacity: '0.9',
-  backdropFilter: 'invert(10%) blur(20px)',
-  saturate: '300%',
-
-  overflowY: 'hidden',
-  overflowX: 'hidden',
-});
-
-const TextBox = styled('div', {
+const ButtonBox = styled('div', {
   zIndex: '200',
   position: 'absolute',
   top: '50%',
@@ -66,40 +35,29 @@ const Welcome = () => {
           <title>Atelier®.</title>
         </Head>
 
-        <CoverBox>
-          <CoverFooter />
-          <TextBox>
-            <NextLink href="/ady-index" passHref>
-              <NormalLink variant="normal">
-                <Text
-                  css={{
-                    fontFamily: '$neuewide',
-                    fontSize: '20px',
-                    fontWeight: '900',
-                    letterSpacing: '-0.05rem',
-                    color: '$gray12',
+        <ButtonBox>
+          {/* <!-- STANDARD BUTTON --> */}
+          <StandardButton color="lime">
+            <span>Lime Button</span>
+          </StandardButton>
 
-                    '&:hover': {
-                      color: '$gray10',
-                    },
-                  }}>
-                  ATELIER DESIGN YIELD®
-                </Text>
-                <Text css={{ fontWeight: '600', fontSize: '12px', lineHeight: '1.3' }}>
-                  An ongoing [ <strong>Web3</strong> ] project.
-                </Text>
-                {/*
-              <Text css={{ fontWeight: '500', fontSize: '12px', lineHeight: '1.2' }}>
-                <strong>ADY</strong>®Store Opening Soon. An ongoing [Web3] prjct. © 2022
-              </Text>
-              */}
-                {/* <!-- HOLD LOGO <Image src="/logo.svg" alt="One" width={120} height={60} /> --> */}
-              </NormalLink>
-            </NextLink>
-          </TextBox>
-        </CoverBox>
-        <Image src={fourImage} alt="One" layout="fill" objectFit="cover" />
-        {/* <!--   <Image src="https://cdn.ady.systems/ady.images/btrfly.png" alt="One" layout="fill" objectFit="cover" /> --> */}
+          <StandardButton color="orange">
+            <span>Orange Button</span>
+          </StandardButton>
+
+          <br></br>
+
+          {/* <!-- SMALL BUTTON ( Variants= Lime, orange, gray ) --> */}
+          <SmallButton color="lime">
+            <span>Small Lime</span>
+          </SmallButton>
+
+          <SmallButton color="gray">
+            <span>Small Orange</span>
+          </SmallButton>
+
+          <br></br>
+        </ButtonBox>
       </Box>
     </>
   );

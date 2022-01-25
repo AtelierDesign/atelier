@@ -55,7 +55,6 @@ const BarSection = styled('div', {
   height: 'auto',
   backgroundColor: '',
   backgroundImage: 'url("")',
-  // backgroundPosition: 'relative',
   display: 'block',
   position: 'relative',
   margin: '0',
@@ -73,7 +72,6 @@ const Bar = styled('div', {
   position: 'relative',
   margin: '0',
   padding: '0',
-
   alignItems: 'center',
   textAlign: 'center',
 });
@@ -134,18 +132,17 @@ const Atelier = () => {
                 lineHeight: '1.4',
                 color: '$gray11',
                 mb: '40px',
+
                 '@sm': {
                   textAlign: 'left',
                   fontSize: '16px',
                 },
                 '@bp2': {
-                  // mx: 250,
                   ta: 'center',
                   mb: '60px',
                   lineHeight: '1.3',
                 },
                 '@bp3': {
-                  //  mx: 300,
                   ta: 'center',
                   mb: '60px',
                   lineHeight: '1.3',
@@ -225,10 +222,13 @@ const Atelier = () => {
           </Heading>
         </Section>
 
+        {/* <!-- PRODUCT SECTION --> */}
         <ProductSection />
 
+        {/* <!-- SUBSCRIBE COMPONENT --> */}
         <AtelierSubscribe />
 
+        {/* <!-- SOCIAL & COMMUNITY --> */}
         <CommunityContainer />
 
         {/* <!-- END FOOTER --> */}
