@@ -43,7 +43,6 @@ const TimeDisplay = styled('div', {
   lineHeight: '1',
   userSelect: 'none',
   WebkitUserSelect: 'none',
-
   '@sm': {
     alignItems: 'left',
     textAlign: 'left',
@@ -56,7 +55,7 @@ const TimeDisplay = styled('div', {
 export function CommunityContainer() {
   return (
     <>
-      <Box css={{ bc: '$slate1', margin: '0', px: '0' }}>
+      <Box css={{ bc: '$translucent', margin: '0', px: '0' }}>
         <Section size="3">
           <Heading size="3" css={{ textAlign: 'center', fontWeight: '800' }}>
             Atelier® Community.

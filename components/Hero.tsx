@@ -74,16 +74,6 @@ export function Hero() {
                 textAlign: 'left',
                 fontSize: '44px',
               },
-
-              /*
-              '@bp2': {
-                textAlign: 'center',
-                px: 180,
-              },
-              '@bp3': {
-                px: 200,
-              },
-              */
             }}>
             Welcome.
           </Heading>

@@ -8,14 +8,14 @@ import { Cross as Hamburger } from 'hamburger-react';
 import { LimeButton } from '@components/Buttons/LimeButton';
 import { styled } from '@stitches/react';
 
+// DROPDOWN MENU STYLE
 const Dropdown = styled('div', {
   zIndex: '9999',
   position: 'absolute',
   top: '10',
   right: '0',
   left: '0',
-  // backgroundColor: '$light100',
-  backgroundColor: '$light50',
+  backgroundColor: '$gray12',
   backdropFilter: 'blur(18px)',
   saturate: '180%',
   boxShadow: '$colors$shadowLight 0px 10px 38px -10px, $colors$shadowDark 0px 10px 20px -15px',
@@ -26,7 +26,7 @@ const Dropdown = styled('div', {
   paddingRight: '25px',
   paddingBottom: '40vh',
   paddingTop: '30px',
-  marginTop: '25px',
+  marginTop: '20px',
   marginRight: '10px',
   marginLeft: '10px',
 
@@ -34,48 +34,35 @@ const Dropdown = styled('div', {
   borderBottomRightRadius: '20px',
   borderTopLeftRadius: '20px',
   borderTopRightRadius: '20px',
-
-  // TYPOGRAPHY
-  color: '$gray12',
 });
 
+// MENU LINK PLACEMENT
 const MenuBox = styled('div', {
   width: '100%',
   position: 'relative',
-  // border: '1px solid $gray12',
-  // borderBottomWidth: '1px',
-  // borderLeftWidth: '0',
-  // borderRightWidth: '0',
-  // borderTopWidth: '0',
-
-  // paddingBottom: '5px',
-  // paddingLeft: '0',
-  // paddingRight: '0',
-  // paddingTop: '5px',
-
   marginTop: '5px',
   marginBottom: '5px',
 });
 
+// MENU LINK STYLING
 const MenuLink = styled('a', {
   fontSize: '22px',
   fontFamily: '$inter',
-  fontWeight: '800',
-  color: '$gray12',
+  fontWeight: '600',
+  color: '$slate1',
   lineHeight: '1',
   letterSpacing: '-0.03rem',
-
   marginTop: '5px',
   marginBottom: '5px',
-
   '&:hover': {
     color: '$gray10',
   },
 });
 
-const solutions = [
+// MOBILE MENU NAVIGATION
+const navigation = [
   {
-    name: 'Shop →',
+    name: 'Shop',
     description: '',
     href: '/shop',
     icon: IconOne,
@@ -114,7 +101,7 @@ export const PopoverPanel = () => {
                     display: 'block',
                   },
                 }}>
-                <Hamburger size={15} direction="right" duration={0.4} distance="sm" color="gray" hideOutline={true} />
+                <Hamburger size={20} direction="right" duration={0.4} distance="sm" color="gray" hideOutline={true} />
               </Box>
             </Popover.Button>
 
@@ -130,7 +117,7 @@ export const PopoverPanel = () => {
                 <Dropdown>
                   <div>
                     <div>
-                      {solutions.map(item => (
+                      {navigation.map(item => (
                         <a key={item.name} href={item.href}>
                           <MenuBox>
                             <MenuLink>{item.name}</MenuLink>
@@ -139,8 +126,8 @@ export const PopoverPanel = () => {
                         </a>
                       ))}
 
-                      <Box css={{ position: 'absolute', bottom: '0', paddingBottom: '20px' }}>
-                        <Text size="1" css={{ fontFamily: '$neuewide', fontWeight: '800' }}>
+                      <Box css={{ position: 'absolute', bottom: '0', paddingBottom: '30px' }}>
+                        <Text size="1" css={{ fontFamily: '$neuewide', fontWeight: '800', color: '$slate1' }}>
                           <span>ATELIER®</span>
                         </Text>
 
@@ -150,7 +137,7 @@ export const PopoverPanel = () => {
                             fontSize: '10px',
                             fontWeight: '500',
                             letterSpacing: '-0.03rem',
-                            color: '$slate10',
+                            color: '$slate1',
 
                             paddingTop: '4px',
                           }}>

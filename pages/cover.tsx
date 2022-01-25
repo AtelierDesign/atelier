@@ -18,8 +18,13 @@ const CoverBox = styled('div', {
   minWidth: '100vw',
   height: '100%',
   minHeight: '100vh',
-  // backgroundColor: 'rgba(240, 240, 240, 0.3)',
   backgroundColor: '$translucent',
+  display: 'block',
+  position: 'relative',
+  margin: 'auto',
+  saturate: '300%',
+  overflowY: 'hidden',
+  overflowX: 'hidden',
 
   // RADIAL GRADIENT
   /*
@@ -28,16 +33,7 @@ const CoverBox = styled('div', {
   radial-gradient(circle 500px at calc(100% - 900px) 300px, $lime6, $lime9Alpha),
   radial-gradient(circle 800px at left center, $blue6, $sky9Alpha)
   `,
-*/
-  display: 'block',
-  position: 'relative',
-  margin: 'auto',
-  // opacity: '0.9',
-  // backdropFilter: 'invert(10%) blur(20px)',
-  saturate: '300%',
-
-  overflowY: 'hidden',
-  overflowX: 'hidden',
+  */
 });
 
 const TextBox = styled('div', {
