@@ -19,8 +19,6 @@ import { Paragraph } from '@atelier/paragraph';
 import { Container } from '@atelier/container';
 import { Grid } from '@atelier/grid';
 import { EightySection } from '@components/EightySection';
-import { BlurBox } from '@components/Framework/BlurBox';
-import { BgSection } from '@components/Framework/BgSection';
 import { FooterMain } from '@components/Framework/FooterMain';
 import { SmallSpacer } from '@components/SmallSpacer';
 import { Button } from '@atelier/button';
@@ -225,10 +223,6 @@ const Atelier = () => {
 
         {/* <!-- SOCIAL & COMMUNITY --> */}
         <CommunityContainer />
-
-        <BlurBox>
-          <Image src={fourPng} objectFit="cover" layout="fill" alt="" />
-        </BlurBox>
 
         {/* <!-- END FOOTER --> */}
         <FooterMain />
