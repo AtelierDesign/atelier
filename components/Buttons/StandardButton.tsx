@@ -4,8 +4,13 @@ import { styled } from 'stitches.config';
 export const DEFAULT_TAG = 'button';
 
 export const styledButton = css({
-  // BASE STYLES
+  // RESET
+  inclue: ['box'],
+  all: 'unset',
+  alignItems: 'center',
+  userSelect: 'none',
 
+  // BASE STYLES
   position: 'relative',
   paddingLeft: '18px',
   paddingRight: '18px',
@@ -65,6 +70,12 @@ export const styledButton = css({
 });
 
 export const styledSmallButton = css({
+  // RESET
+  inclue: ['box'],
+  all: 'unset',
+  alignItems: 'center',
+  userSelect: 'none',
+
   // BASE STYLES
   position: 'relative',
   paddingLeft: '14px',
@@ -113,5 +124,5 @@ export const styledSmallButton = css({
   },
 });
 
+export const Button = styled(DEFAULT_TAG, styledButton);
 export const SmallButton = styled(DEFAULT_TAG, styledSmallButton);
-export const StandardButton = styled(DEFAULT_TAG, styledButton);

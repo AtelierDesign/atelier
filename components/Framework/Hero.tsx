@@ -1,5 +1,6 @@
 import React from 'react';
 import NextLink from 'next/link';
+import Link from 'next/link';
 import { Section } from '@atelier/section';
 import { Container } from '@atelier/container';
 import { Box } from '@atelier/box';
@@ -8,10 +9,9 @@ import { Flex } from '@atelier/flex';
 import { Paragraph } from '@atelier/paragraph';
 import { ExternalLinkIcon, RocketIcon } from '@radix-ui/react-icons';
 import { DefaultButton } from '@components/DefaultButton';
-import { StandardButton } from '@components/Buttons/StandardButton';
+import { Button } from '@components/Buttons/StandardButton';
 import { HomeButton } from '@components/HomeButton';
 import { TimeCode } from '@components/Time/TimeCode';
-// import { HeroContainer } from '@components/HeroContainer';
 
 // STITCHES STYLED
 import { styled } from 'stitches.config';
@@ -109,24 +109,18 @@ export function Hero() {
           </Paragraph>
 
           <Flex css={{ '@bp2': { jc: 'center', my: '$6' } }}>
-            <NextLink href="/shop" passHref>
-              <StandardButton color="lime" href="/shop">
-                Latest Release
-                {` `}
-                <RocketIcon />
-              </StandardButton>
-            </NextLink>
+            <Button color="lime">
+              Latest Release
+              {` `}
+              <RocketIcon />
+            </Button>
 
-            <StandardButton
-              color="ghost"
-              href="https://github.com/AtelierDesign"
-              target="_blank"
-              rel="noopener noreferrer">
+            <Button color="ghost">
               GitHub
               <Box css={{ display: 'inline', ml: '$1' }}>
                 <ExternalLinkIcon />
               </Box>
-            </StandardButton>
+            </Button>
           </Flex>
         </Container>
       </Section>

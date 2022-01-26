@@ -1,5 +1,6 @@
 // REACT + NEXT IMPORTS
 import React from 'react';
+import Link from 'next/link';
 
 // ATELIER DESIGN SYSTEM IMPORTS
 import { Box } from '@atelier/box';
@@ -7,9 +8,9 @@ import { Text } from '@atelier/text';
 import { Heading } from '@atelier/heading';
 import { Paragraph } from '@atelier/paragraph';
 import { Container } from '@atelier/container';
-import { Button } from '@atelier/button';
+// import { Button } from '@atelier/button';
 import { DefaultButton } from '@components/DefaultButton';
-import { StandardButton } from '@components/Buttons/StandardButton';
+import { Button } from '@components/Buttons/StandardButton';
 import { CaretRightIcon } from '@radix-ui/react-icons';
 
 // RADIX ICONS
@@ -67,12 +68,13 @@ export const AdobeAe = () => {
             }}>
             Create open and close animations that take the dropdown menu’s actual position into account.
           </Paragraph>
-          <StandardButton color="lime" href="/welcome" target="_blank" rel="noopener noreferrer">
+
+          <Button color="lime">
             Learn More
             <Box css={{ display: 'inline', ml: '$1' }}>
               <CaretRightIcon />
             </Box>
-          </StandardButton>
+          </Button>
         </Container>
       </Box>
     </>

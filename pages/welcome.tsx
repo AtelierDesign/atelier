@@ -2,7 +2,7 @@ import Head from 'next/head';
 import React from 'react';
 import { Text } from '@atelier/text';
 import { Box } from '@atelier/box';
-import { StandardButton, SmallButton } from '@components/Buttons/StandardButton';
+import { Button, SmallButton } from '@components/Buttons/StandardButton';
 
 import { styled } from 'stitches.config';
 
@@ -37,13 +37,13 @@ const Welcome = () => {
 
         <ButtonBox>
           {/* <!-- STANDARD BUTTON --> */}
-          <StandardButton color="lime">
+          <Button color="lime">
             <span>Lime Button</span>
-          </StandardButton>
+          </Button>
 
-          <StandardButton color="orange">
+          <Button color="orange">
             <span>Orange Button</span>
-          </StandardButton>
+          </Button>
 
           <br></br>
 
