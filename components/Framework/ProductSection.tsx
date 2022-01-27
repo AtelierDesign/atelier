@@ -18,13 +18,11 @@ const Card = styled('div', {
   display: 'flex',
   backgroundColor: '$slate3',
   position: 'relative',
-
   borderRadius: '20px',
   marginTop: '18px',
   padding: '40px',
   alignItems: 'center',
   webkitScrollbar: 'none',
-
   height: '300px',
 });
 
@@ -62,7 +60,7 @@ export const ProductSection = () => {
                 </Text>
 
                 {/* <!-- ARROW LINK --> */}
-                <ArrowLink href="/shop" passHref>
+                <ArrowLink href="/shop">
                   <a>View Product</a>
                 </ArrowLink>
               </Box>
@@ -82,7 +80,7 @@ export const ProductSection = () => {
                 </Text>
 
                 {/* <!-- ARROW LINK --> */}
-                <ArrowLink href="/shop" passHref>
+                <ArrowLink href="/shop">
                   <a>View Product</a>
                 </ArrowLink>
               </Box>
@@ -102,7 +100,7 @@ export const ProductSection = () => {
                 </Text>
 
                 {/* <!-- ARROW LINK --> */}
-                <ArrowLink href="/shop" passHref>
+                <ArrowLink href="/shop">
                   <a>View Product</a>
                 </ArrowLink>
               </Box>
