@@ -1,3 +1,11 @@
+/*
+ *  [ ATELIER DESIGN YIELD® ]
+ *  2022-01-06
+ *  All Rights Reserved.
+ *  NO WARRANTY EXPRESSED OR IMPLIED. USE AT YOUR OWN RISK.
+ *  See http://developer.ady.world/ for more information.
+ */
+
 // REACT + NEXT IMPORTS
 import React from 'react';
 import Head from 'next/head';
