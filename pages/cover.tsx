@@ -10,10 +10,6 @@ import { CoverFooter } from '@components/CoverFooter';
 
 import { styled } from '@stitches/react';
 
-const Header = styled('div', {});
-
-const Footer = styled('div', {});
-
 const CoverBox = styled('div', {
   zIndex: '10',
   width: '100%',

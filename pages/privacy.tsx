@@ -1,6 +1,8 @@
+// REACT & NEXT IMPORTS
 import Head from 'next/head';
 import React from 'react';
 
+// ATELIER® DESIGN SYSTEM
 import { Box } from '@atelier/box';
 import { Container } from '@atelier/container';
 import { Section } from '@atelier/section';

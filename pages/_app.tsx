@@ -1,12 +1,23 @@
+/*
+ *  [ ATELIER DESIGN YIELD® ]
+ *  2022-01-06
+ *  All Rights Reserved.
+ *  NO WARRANTY EXPRESSED OR IMPLIED. USE AT YOUR OWN RISK.
+ *  See http://developer.ady.world/ for more information.
+ */
+
+// REACT & NEXT IMPORTS
 import React from 'react';
 import Head from 'next/head';
-import { Box, box } from '@atelier/box';
 import { AppProps } from 'next/app';
-import { useRouter } from 'next/router';
-import { useTheme } from 'next-themes';
+
+// FUNCTIONS
 import { ThemeProvider } from 'next-themes';
+import { useTheme } from 'next-themes';
+import { useRouter } from 'next/router';
 
 // STITCHES.DEV
+import { Box, box } from '@atelier/box';
 import { css, globalCss, darkTheme } from 'stitches.config';
 import { reset } from '@styles/reset';
 

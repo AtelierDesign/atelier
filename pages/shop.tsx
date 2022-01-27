@@ -1,8 +1,10 @@
+// REACT & NEXT IMPORTS
 import Head from 'next/head';
 import React from 'react';
 import Link from 'next/link';
-
 import { NextPage } from 'next';
+
+// ATELIER® DESIGN SYSTEM
 import { Box } from '@atelier/box';
 import { Container } from '@atelier/container';
 import { Section } from '@atelier/section';
@@ -13,19 +15,18 @@ import { Navbar } from '@components/Framework/Navbar';
 import { FooterMain } from '@components/Framework/FooterMain';
 import { Grid } from '@atelier/grid';
 
+// STITCHES.DEV
 import { styled } from '@stitches/react';
 
 const Card = styled('div', {
   display: 'flex',
   backgroundColor: '$slate3',
   position: 'relative',
-
   borderRadius: '20px',
   marginTop: '18px',
   padding: '40px',
   alignItems: 'center',
   webkitScrollbar: 'none',
-
   height: '300px',
 });
 
@@ -39,7 +40,6 @@ const SmallButton = styled('button', {
   paddingBottom: '4px',
   fontSize: '12px',
   lineHeight: '1.2',
-
   width: 'auto',
   bc: '$slate4',
   border: '1px solid',

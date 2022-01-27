@@ -12,7 +12,7 @@ import { Container } from '@atelier/container';
 import { Section } from '@atelier/section';
 import { DefaultButton } from '@components/DefaultButton';
 import { Button } from '@atelier/button';
-import { ArrowRightIcon } from '@radix-ui/react-icons';
+import { ChevronRightIcon } from '@radix-ui/react-icons';
 
 export const AtelierSubscribe = () => {
   const formik = useFormik({
@@ -27,9 +27,24 @@ export const AtelierSubscribe = () => {
   return (
     <Section size="2" css={{ paddingBottom: '5rem', paddingTop: '5rem', alignItems: 'center', textAlign: 'center' }}>
       <Container size="3" css={{ boxSizing: 'border-box' }}>
+        {/* <!-- HEADING v1 --> */}
         <Heading size="3" css={{ paddingBottom: '20px' }}>
           Join the Conversation.
         </Heading>
+
+        {/* <!-- HEADING v2 -->
+        <Heading
+          size="1"
+          css={{
+            paddingBottom: '30px',
+            fontSize: '18px',
+            fontFamily: '$neueplak',
+            fontWeight: '800',
+            textTransform: 'uppercase',
+          }}>
+          JOIN THE CONVERSATION.
+        </Heading>
+        --> */}
 
         <form onSubmit={formik.handleSubmit}>
           <Box css={{ display: 'flex', flexDirection: 'column', margin: 'auto', alignItems: 'center' }}>
@@ -65,7 +80,10 @@ export const AtelierSubscribe = () => {
                   color: '$lime9',
                 },
               }}>
-              Submit <ArrowRightIcon />
+              Submit {` `}
+              <Box css={{ marginLeft: '6px' }}>
+                <ChevronRightIcon />
+              </Box>
             </Button>
           </Box>
         </form>

@@ -14,6 +14,7 @@ import { SocialSection } from '@components/SocialSection';
 import { CommunityContainer } from '@components/CommunityContainer';
 import { AtelierSubscribe } from '@components/Function/AtelierSubscribe';
 import { ProductSection } from '@components/Framework/ProductSection';
+import { AccordionComponent } from '@components/Function/Accordion';
 import { Heading } from '@atelier/heading';
 import { Paragraph } from '@atelier/paragraph';
 import { Container } from '@atelier/container';
@@ -216,6 +217,11 @@ const Atelier = () => {
 
         {/* <!-- PRODUCT SECTION --> */}
         <ProductSection />
+
+        {/* <!-- ACCORDION --> */}
+        <Container size="2" css={{ alignItems: 'center', textAlign: 'center', margin: 'auto' }}>
+          <AccordionComponent />
+        </Container>
 
         {/* <!-- SUBSCRIBE COMPONENT --> */}
         <AtelierSubscribe />
