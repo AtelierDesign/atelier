@@ -4,9 +4,10 @@ import { styled } from 'stitches.config';
 import { violet, blackA, mauve, slate, gray, lime } from '@radix-ui/colors';
 import { ChevronDownIcon } from '@radix-ui/react-icons';
 
+// ATELIER® DESIGN SYSTEM
 import { Heading } from '@atelier/heading';
 
-// @type Accordion
+// Accordion Component
 import * as AccordionPrimitive from '@radix-ui/react-accordion';
 
 const AccordionContainer = styled('div', {
@@ -115,28 +116,24 @@ export const Accordion = StyledAccordion;
 export const AccordionItem = StyledItem;
 
 // TRIGGER COMPONENT
-const AccordionTrigger = React.forwardRef(({ children, ...props }, ref) => {
-  return (
-    <StyledHeader>
-      <StyledTrigger {...props} ref={ref}>
-        {children}
-        <StyledChevron aria-hidden />
-      </StyledTrigger>
-    </StyledHeader>
-  );
-});
+export const AccordionTrigger = React.forwardRef(({ children, ...props }, ref) => (
+  <StyledHeader>
+    <StyledTrigger {...props} ref={ref}>
+      {children}
+      <StyledChevron aria-hidden />
+    </StyledTrigger>
+  </StyledHeader>
+));
 
 // CONTENT
-export const AccordionContent = React.forwardRef(({ children, ...props }, ref) => {
-  return (
-    <StyledContent {...props} ref={ref}>
-      <StyledContentText>{children}</StyledContentText>
-    </StyledContent>
-  );
-});
+export const AccordionContent = React.forwardRef(({ children, ...props }, ref) => (
+  <StyledContent {...props} ref={ref}>
+    <StyledContentText>{children}</StyledContentText>
+  </StyledContent>
+));
 
 // THE ACCORDION
-const AccordionComponent = () => {
+export const AccordionComponent = props => {
   return (
     <AccordionContainer>
       <Heading
