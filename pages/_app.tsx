@@ -31,11 +31,21 @@ const App = ({ Component, pageProps }: AppProps) => {
   globalCss(reset, {
     html: {
       overflowX: 'hidden',
+      backgroundColor: '$slate1',
+
+      // iOS MOBILE VIEWPORT FIX
+      minHeight: '-webkit-fill-available',
     },
     body: {
+      display: 'flex',
+      flexDirection: 'column',
       margin: 0,
       fontFamily: '$inter',
       backgroundColor: '$slate1',
+      height: '100vh',
+
+      // iOS MOBILE VIEWPORT FIX
+      minHeight: '-webkit-fill-available',
     },
   });
 

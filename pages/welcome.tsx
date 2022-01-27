@@ -1,13 +1,17 @@
 import Head from 'next/head';
 import React from 'react';
+import NextLink from 'next/link';
 import { Text } from '@atelier/text';
 import { Box } from '@atelier/box';
-import { Button, SmallButton } from '@components/Buttons/StandardButton';
+import { ThemeSwitch } from '@components/ThemeSwitch';
+import { SmallButton } from '@components/Buttons/AtelierButton';
+import { Button } from '@atelier/button';
+import { GradientButton } from '@atelier/adybtn';
 
 import { styled } from 'stitches.config';
 
 const ButtonBox = styled('div', {
-  zIndex: '200',
+  zIndex: '2',
   position: 'absolute',
   top: '50%',
   left: '50%',
@@ -16,6 +20,19 @@ const ButtonBox = styled('div', {
   textAlign: 'center',
   margin: 'auto',
   padding: '1rem',
+});
+
+const ThemeBox = styled('div', {
+  backgroundColor: '$light100',
+  position: 'fixed',
+  bottom: '0',
+  padding: '8px',
+  margin: 'auto',
+  alignItems: 'center',
+  textAlign: 'center',
+  height: 'auto',
+
+  width: '100%',
 });
 
 // APP BEGIN / WELCOME (Newsletter Success Redirect)
@@ -27,9 +44,9 @@ const Welcome = () => {
           padding: '0px',
           height: '100vh',
           zIndex: '0',
-          overflowY: 'hidden',
-          overflowX: 'hidden',
           backgroundColor: '$slate1',
+
+          alignItems: 'center',
         }}>
         <Head>
           <title>Atelier®.</title>
@@ -37,13 +54,11 @@ const Welcome = () => {
 
         <ButtonBox>
           {/* <!-- STANDARD BUTTON --> */}
-          <Button color="lime">
-            <span>Lime Button</span>
-          </Button>
-
-          <Button color="orange">
-            <span>Orange Button</span>
-          </Button>
+          <NextLink href="/privacy" passHref>
+            <Button>
+              <span>Lime Button</span>
+            </Button>
+          </NextLink>
 
           <br></br>
 
@@ -52,12 +67,20 @@ const Welcome = () => {
             <span>Small Lime</span>
           </SmallButton>
 
-          <SmallButton color="gray">
+          <SmallButton color="light_gray">
             <span>Small Orange</span>
           </SmallButton>
 
           <br></br>
+
+          <GradientButton>
+            <span>Small Gradient</span>
+          </GradientButton>
         </ButtonBox>
+
+        <ThemeBox>
+          <ThemeSwitch />
+        </ThemeBox>
       </Box>
     </>
   );

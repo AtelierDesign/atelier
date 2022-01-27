@@ -49,9 +49,7 @@ export const ThemeSwitch = props => {
         css={{
           alignItems: 'center',
           marginRight: '$2',
-          '@sm': {
-            marginRight: '$2',
-          },
+          marginLeft: '$2',
         }}>
         <Switch
           defaultChecked

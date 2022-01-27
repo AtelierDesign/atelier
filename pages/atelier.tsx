@@ -21,7 +21,6 @@ import { Grid } from '@atelier/grid';
 import { EightySection } from '@components/EightySection';
 import { FooterMain } from '@components/Framework/FooterMain';
 import { SmallSpacer } from '@components/SmallSpacer';
-import { Button } from '@atelier/button';
 import { CursorArrowIcon } from '@radix-ui/react-icons';
 
 // IMAGES

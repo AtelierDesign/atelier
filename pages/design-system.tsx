@@ -453,19 +453,11 @@ const DesignSystem = () => {
           <Flex css={{ mt: '$6', gap: '$6' }}>
             <Button>Button</Button>
             <Button variant="blue">Important</Button>
-            <Button variant="green">Secure</Button>
-            <Button variant="red">Warning</Button>
           </Flex>
           <Flex css={{ mt: '$6', gap: '$6' }}>
             <Button ghost>Button</Button>
             <Button ghost variant="blue">
               Important
-            </Button>
-            <Button ghost variant="green">
-              Secure
-            </Button>
-            <Button ghost variant="red">
-              Warning
             </Button>
           </Flex>
           <Box
@@ -501,13 +493,13 @@ const DesignSystem = () => {
             </Box>
           </Box>
           <Flex css={{ mt: '$6', gap: '$6' }}>
-            <Button variant="red" disabled>
+            <Button variant="blue" disabled>
               Disabled
             </Button>
-            <Button variant="red" state="active">
+            <Button variant="blue" state="active">
               Active
             </Button>
-            <Button variant="red" state="waiting" disabled>
+            <Button variant="blue" state="waiting" disabled>
               Waiting
             </Button>
           </Flex>

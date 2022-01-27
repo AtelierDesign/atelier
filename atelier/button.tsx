@@ -32,6 +32,7 @@ export const button = css({
     pointerEvents: 'none',
   },
 
+  // SIZE
   variants: {
     size: {
       '1': {
@@ -55,6 +56,8 @@ export const button = css({
         lineHeight: '$sizes$7',
       },
     },
+
+    // COLOR
     variant: {
       gray: {
         backgroundColor: '$loContrast',
@@ -98,52 +101,53 @@ export const button = css({
           boxShadow: 'inset 0 0 0 1px $colors$blue8',
         },
       },
+      green: {
+        backgroundColor: '$green2',
+        boxShadow: 'inset 0 0 0 1px $colors$blue7',
+        color: '$blue11',
+        '@hover': {
+          '&:hover': {
+            boxShadow: 'inset 0 0 0 1px $colors$blue8',
+          },
+        },
+        '&:active': {
+          backgroundColor: '$blue3',
+          boxShadow: 'inset 0 0 0 1px $colors$blue8',
+        },
+        '&:focus': {
+          boxShadow: 'inset 0 0 0 1px $colors$blue8, 0 0 0 1px $colors$blue8',
+        },
+        '&[data-radix-popover-trigger][data-state="open"], &[data-radix-dropdown-menu-trigger][data-state="open"]': {
+          backgroundColor: '$blue4',
+          boxShadow: 'inset 0 0 0 1px $colors$blue8',
+        },
+      },
+      red: {
+        backgroundColor: '$red2',
+        boxShadow: 'inset 0 0 0 1px $colors$blue7',
+        color: '$blue11',
+        '@hover': {
+          '&:hover': {
+            boxShadow: 'inset 0 0 0 1px $colors$blue8',
+          },
+        },
+        '&:active': {
+          backgroundColor: '$blue3',
+          boxShadow: 'inset 0 0 0 1px $colors$blue8',
+        },
+        '&:focus': {
+          boxShadow: 'inset 0 0 0 1px $colors$blue8, 0 0 0 1px $colors$blue8',
+        },
+        '&[data-radix-popover-trigger][data-state="open"], &[data-radix-dropdown-menu-trigger][data-state="open"]': {
+          backgroundColor: '$blue4',
+          boxShadow: 'inset 0 0 0 1px $colors$blue8',
+        },
+      },
       ghost: {
         backgroundColor: 'transparent',
         color: 'inherit',
       },
-      green: {
-        backgroundColor: '$lime9',
-        boxShadow: 'inset 0 0 0 1px $colors$green7',
-        color: '$mint3',
-        '@hover': {
-          '&:hover': {
-            boxShadow: 'inset 0 0 0 1px $colors$green8',
-          },
-        },
-        '&:active': {
-          backgroundColor: '$green3',
-          boxShadow: 'inset 0 0 0 1px $colors$green8',
-        },
-        '&:focus': {
-          boxShadow: 'inset 0 0 0 1px $colors$green8, 0 0 0 1px $colors$green8',
-        },
-        '&[data-radix-popover-trigger][data-state="open"], &[data-radix-dropdown-menu-trigger][data-state="open"]': {
-          backgroundColor: '$green4',
-          boxShadow: 'inset 0 0 0 1px $colors$green8',
-        },
-      },
-      red: {
-        backgroundColor: '$loContrast',
-        boxShadow: 'inset 0 0 0 1px $colors$slate7',
-        color: '$red11',
-        '@hover': {
-          '&:hover': {
-            boxShadow: 'inset 0 0 0 1px $colors$slate8',
-          },
-        },
-        '&:active': {
-          backgroundColor: '$red3',
-          boxShadow: 'inset 0 0 0 1px $colors$red8',
-        },
-        '&:focus': {
-          boxShadow: 'inset 0 0 0 1px $colors$red8, 0 0 0 1px $colors$red8',
-        },
-        '&[data-radix-popover-trigger][data-state="open"], &[data-radix-dropdown-menu-trigger][data-state="open"]': {
-          backgroundColor: '$red4',
-          boxShadow: 'inset 0 0 0 1px $colors$red8',
-        },
-      },
+
       transparentWhite: {
         backgroundColor: 'hsla(0,100%,100%,.2)',
         color: 'white',
@@ -175,7 +179,10 @@ export const button = css({
         },
       },
     },
+
+    // STATE
     state: {
+      // ACTIVE
       active: {
         backgroundColor: '$slate4',
         boxShadow: 'inset 0 0 0 1px $colors$slate8',
@@ -193,6 +200,8 @@ export const button = css({
           boxShadow: 'inset 0 0 0 1px $colors$slate8, 0 0 0 1px $colors$slate8',
         },
       },
+
+      // LOADING
       waiting: {
         backgroundColor: '$slate4',
         boxShadow: 'inset 0 0 0 1px $colors$slate8',
@@ -220,6 +229,7 @@ export const button = css({
       },
     },
   },
+
   compoundVariants: [
     {
       variant: 'gray',
