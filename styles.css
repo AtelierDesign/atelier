@@ -13,13 +13,14 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   line-height: 1;
-
   min-height: 100vh;
-  min-height: -webkit-fill-available;
+
+  /* mobile viewport bug fix */
+  min-height: -webkit-fill-available !important;
 }
 
 html {
-  height: -webkit-fill-available;
+  height: -webkit-fill-available !important;
 }
 
 [data-theme='dark'] {

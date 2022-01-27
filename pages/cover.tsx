@@ -10,6 +10,10 @@ import { CoverFooter } from '@components/CoverFooter';
 
 import { styled } from '@stitches/react';
 
+const Header = styled('div', {});
+
+const Footer = styled('div', {});
+
 const CoverBox = styled('div', {
   zIndex: '10',
   width: '100%',
@@ -50,11 +54,17 @@ export default function Cover() {
   return (
     <Box
       css={{
+        position: 'fixed',
+        top: '0',
+        bottom: '0',
+        left: '0',
+        right: '0',
         padding: '0px',
         height: '100vh',
+        width: '100vw',
         zIndex: '0',
-        overflowY: 'hidden',
-        overflowX: 'hidden',
+        overflowY: 'visible',
+        overflowX: 'visible',
         backgroundColor: '$slate1',
       }}>
       <Head>
