@@ -72,10 +72,11 @@ const Welcome = () => {
           </SmallButton>
 
           <br></br>
-
-          <GradientButton>
-            <span>Small Gradient</span>
-          </GradientButton>
+          <NextLink href="/welcome" passHref>
+            <GradientButton>
+              <span>Small Gradient</span>
+            </GradientButton>
+          </NextLink>
         </ButtonBox>
 
         <ThemeBox>

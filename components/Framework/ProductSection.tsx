@@ -9,6 +9,8 @@ import { Heading } from '@atelier/heading';
 import { Paragraph } from '@atelier/paragraph';
 import { Text } from '@atelier/text';
 import { Grid } from '@atelier/grid';
+import { SmallButton } from '@components/Buttons/AtelierButton';
+import { ArrowLink } from '@components/Buttons/ArrowLink';
 
 import { styled } from '@stitches/react';
 
@@ -26,141 +28,90 @@ const Card = styled('div', {
   height: '300px',
 });
 
-const SmallButton = styled('button', {
-  borderRadius: '6px',
-  height: 'auto',
-  marginLeft: '-1px',
-  paddingLeft: '10px',
-  paddingRight: '10px',
-  paddingTop: '4px',
-  paddingBottom: '4px',
-  fontSize: '12px',
-  lineHeight: '1.2',
-
-  width: 'auto',
-  bc: '$slate4',
-  border: '1px solid',
-  borderColor: '$slate10',
-});
-
 export const ProductSection = () => {
   return (
-    <Container size="3" css={{ paddingTop: '120px', paddingBottom: '120px', px: '18px' }}>
-      <Heading size="2" css={{ color: '$gray12', paddingBottom: '50px', textAlign: 'center' }}>
-        Our Products
-      </Heading>
-      <Grid
-        css={{
-          gap: '10px',
-          gridTemplateColumns: '1fr',
-          '@bp1': {
-            gap: '$4',
-            gridTemplateColumns: '1fr 1fr',
-          },
-          '@bp2': {
-            gap: '$4',
-            gridTemplateColumns: '1fr 1fr 1fr',
-          },
-        }}>
-        {/* PRODUCT ROW ONE */}
-        <Box>
-          <Card>
-            <Box css={{ position: 'absolute', bottom: '0', left: '0', margin: '20px' }}>
-              <Text size="2" css={{ fontWeight: '600', lineHeight: '1.2' }}>
-                Ady® Interval
-              </Text>
-              <Text size="1" css={{ fontWeight: '400', fontSize: '11px', lineHeight: '1.5' }}>
-                Shop early for the best selection of holiday favorites.
-                <br />
-                <br />
-              </Text>
-              <SmallButton>Small Button</SmallButton>
-            </Box>
-          </Card>
-        </Box>
+    <>
+      <Container size="3" css={{ paddingTop: '120px', paddingBottom: '120px', px: '18px' }}>
+        <Heading size="2" css={{ color: '$gray12', paddingBottom: '50px', textAlign: 'center' }}>
+          Our Products
+        </Heading>
+        <Grid
+          css={{
+            gap: '10px',
+            gridTemplateColumns: '1fr',
+            '@bp1': {
+              gap: '$4',
+              gridTemplateColumns: '1fr 1fr',
+            },
+            '@bp2': {
+              gap: '$4',
+              gridTemplateColumns: '1fr 1fr 1fr',
+            },
+          }}>
+          {/* PRODUCT ROW ONE */}
+          <Box>
+            <Card>
+              <Box css={{ position: 'absolute', bottom: '0', left: '0', margin: '20px' }}>
+                <Text size="3" css={{ fontWeight: '600', lineHeight: '1.2' }}>
+                  Interval
+                </Text>
+                <Text size="1" css={{ fontWeight: '400', fontSize: '12px', lineHeight: '2' }}>
+                  Shop early for the best selection of holiday favorites.
+                  <br />
+                  <br />
+                </Text>
 
-        <Box>
-          <Card>
-            <Box css={{ position: 'absolute', bottom: '0', left: '0', margin: '20px' }}>
-              <Text size="2" css={{ fontWeight: '600', lineHeight: '1.2' }}>
-                Ady® Interval
-              </Text>
-              <Text size="1" css={{ fontWeight: '400', fontSize: '11px', lineHeight: '1.5' }}>
-                Shop early for the best selection of holiday favorites.
-                <br />
-                <br />
-              </Text>
-              <SmallButton>Small Button</SmallButton>
-            </Box>
-          </Card>
-        </Box>
+                {/* <!-- ARROW LINK --> */}
+                <ArrowLink href="/shop" passHref>
+                  <a>View Product</a>
+                </ArrowLink>
+              </Box>
+            </Card>
+          </Box>
 
-        <Box>
-          <Card>
-            <Box css={{ position: 'absolute', bottom: '0', left: '0', margin: '20px' }}>
-              <Text size="2" css={{ fontWeight: '600', lineHeight: '1.2' }}>
-                Product 2
-              </Text>
-              <Text size="1" css={{ fontWeight: '400', fontSize: '11px', lineHeight: '1.5' }}>
-                Shop early for the best selection of holiday favorites.
-                <br />
-                <br />
-              </Text>
-              <SmallButton>Small Button</SmallButton>
-            </Box>
-          </Card>
-        </Box>
+          <Box>
+            <Card>
+              <Box css={{ position: 'absolute', bottom: '0', left: '0', margin: '20px' }}>
+                <Text size="3" css={{ fontWeight: '600', lineHeight: '1.2' }}>
+                  Interval
+                </Text>
+                <Text size="1" css={{ fontWeight: '400', fontSize: '12px', lineHeight: '2' }}>
+                  Shop early for the best selection of holiday favorites.
+                  <br />
+                  <br />
+                </Text>
 
-        {/* PRODUCT ROW TWO */}
+                {/* <!-- ARROW LINK --> */}
+                <ArrowLink href="/shop" passHref>
+                  <a>View Product</a>
+                </ArrowLink>
+              </Box>
+            </Card>
+          </Box>
 
-        <Box>
-          <Card>
-            <Box css={{ position: 'absolute', bottom: '0', left: '0', margin: '20px' }}>
-              <Text size="2" css={{ fontWeight: '600', lineHeight: '1.2' }}>
-                Ady® Interval
-              </Text>
-              <Text size="1" css={{ fontWeight: '400', fontSize: '11px', lineHeight: '1.5' }}>
-                Shop early for the best selection of holiday favorites.
-                <br />
-                <br />
-              </Text>
-              <SmallButton>Small Button</SmallButton>
-            </Box>
-          </Card>
-        </Box>
+          <Box>
+            <Card>
+              <Box css={{ position: 'absolute', bottom: '0', left: '0', margin: '20px' }}>
+                <Text size="3" css={{ fontWeight: '600', lineHeight: '1.2' }}>
+                  Interval
+                </Text>
+                <Text size="1" css={{ fontWeight: '400', fontSize: '12px', lineHeight: '2' }}>
+                  Shop early for the best selection of holiday favorites.
+                  <br />
+                  <br />
+                </Text>
 
-        <Box>
-          <Card>
-            <Box css={{ position: 'absolute', bottom: '0', left: '0', margin: '20px' }}>
-              <Text size="2" css={{ fontWeight: '600', lineHeight: '1.2' }}>
-                Ady® Interval
-              </Text>
-              <Text size="1" css={{ fontWeight: '400', fontSize: '11px', lineHeight: '1.5' }}>
-                Shop early for the best selection of holiday favorites.
-                <br />
-                <br />
-              </Text>
-              <SmallButton>Small Button</SmallButton>
-            </Box>
-          </Card>
-        </Box>
+                {/* <!-- ARROW LINK --> */}
+                <ArrowLink href="/shop" passHref>
+                  <a>View Product</a>
+                </ArrowLink>
+              </Box>
+            </Card>
+          </Box>
 
-        <Box>
-          <Card>
-            <Box css={{ position: 'absolute', bottom: '0', left: '0', margin: '20px' }}>
-              <Text size="2" css={{ fontWeight: '600', lineHeight: '1.2' }}>
-                Product 2
-              </Text>
-              <Text size="1" css={{ fontWeight: '400', fontSize: '11px', lineHeight: '1.5' }}>
-                Shop early for the best selection of holiday favorites.
-                <br />
-                <br />
-              </Text>
-              <SmallButton>Small Button</SmallButton>
-            </Box>
-          </Card>
-        </Box>
-      </Grid>
-    </Container>
+          {/* PRODUCT ROW TWO */}
+        </Grid>
+      </Container>
+    </>
   );
 };

@@ -24,7 +24,7 @@ export const button = css({
   paddingTop: '7px',
   paddingBottom: '7px',
   height: 'auto',
-  borderRadius: '5px',
+  borderRadius: '6px',
   border: 'none',
   borderColor: '$gray12',
   lineHeight: 'normal',
@@ -76,7 +76,7 @@ export const button = css({
   },
 });
 
-const styledButton = css({
+export const styledButton = css({
   // RESET
   inclue: ['box'],
   all: 'unset',
@@ -149,7 +149,7 @@ const styledButton = css({
   },
 });
 
-const styledSmallButton = css({
+export const styledSmallButton = css({
   // RESET
   inclue: ['box'],
   all: 'unset',
@@ -171,13 +171,13 @@ const styledSmallButton = css({
 
   // MARGINS
   marginRight: '6px',
-  marginLeft: '6px',
+  marginLeft: '0px',
   marginTop: '6px',
   marginBottom: '6px',
 
   // BUTTON TEXT
   fontSize: '11px',
-  fontWeight: '400',
+  fontWeight: '500',
   fontFamily: '$inter',
   color: '$white',
 
@@ -191,9 +191,11 @@ const styledSmallButton = css({
       light_gray: {
         backgroundColor: '$gray5',
         color: '$gray12',
+        borderColor: '$gray11',
 
         '&:hover': {
           backgroundColor: '$gray6',
+          color: '$gray12',
         },
       },
       lime: {
@@ -213,7 +215,7 @@ const styledSmallButton = css({
   },
 });
 
-const styledGradientButton = css({
+export const styledGradientButton = css({
   // RESET
   inclue: ['box'],
   all: 'unset',
