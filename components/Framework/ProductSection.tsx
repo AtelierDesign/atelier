@@ -61,7 +61,7 @@ export const ProductSection = () => {
 
                 {/* <!-- ARROW LINK --> */}
                 <ArrowLink href="/shop">
-                  <a>View Product</a>
+                  <span>View Product</span>
                 </ArrowLink>
               </Box>
             </Card>
@@ -81,7 +81,7 @@ export const ProductSection = () => {
 
                 {/* <!-- ARROW LINK --> */}
                 <ArrowLink href="/shop">
-                  <a>View Product</a>
+                  <span>View Product</span>
                 </ArrowLink>
               </Box>
             </Card>
@@ -101,7 +101,7 @@ export const ProductSection = () => {
 
                 {/* <!-- ARROW LINK --> */}
                 <ArrowLink href="/shop">
-                  <a>View Product</a>
+                  <span>View Product</span>
                 </ArrowLink>
               </Box>
             </Card>

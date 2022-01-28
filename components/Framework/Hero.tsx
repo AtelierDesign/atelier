@@ -116,16 +116,14 @@ export const Hero = () => {
             </AtelierButton>
           </Link>
 
-          <NextLink href="https://github.com/AtelierDesign/atelier" passHref>
-            <a target="_blank" rel="noopener norefferer">
-              <AtelierButton color="ghost">
-                <span>GitHub</span>
-                <Box css={{ display: 'inline', ml: '$1' }}>
-                  <ExternalLinkIcon />
-                </Box>
-              </AtelierButton>
-            </a>
-          </NextLink>
+          <Link href="https://github.com/AtelierDesign/atelier" target="_blank" rel="noopener norefferer" passHref>
+            <AtelierButton color="ghost">
+              <span>GitHub</span>
+              <Box css={{ display: 'inline', ml: '$1' }}>
+                <ExternalLinkIcon />
+              </Box>
+            </AtelierButton>
+          </Link>
         </Flex>
       </Container>
     </Section>

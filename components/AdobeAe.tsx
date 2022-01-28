@@ -69,14 +69,16 @@ export const AdobeAe = () => {
             Create open and close animations that take the dropdown menu’s actual position into account.
           </Paragraph>
 
-          <NextLink href="/welcome" passHref>
-            <Button color="lime">
-              Learn More
-              <Box css={{ display: 'inline', ml: '$1' }}>
-                <CaretRightIcon />
-              </Box>
-            </Button>
-          </NextLink>
+          <Link href="/welcome" passHref>
+            <a>
+              <Button color="lime">
+                Learn More
+                <Box css={{ display: 'inline', ml: '$1' }}>
+                  <CaretRightIcon />
+                </Box>
+              </Button>
+            </a>
+          </Link>
         </Container>
       </Box>
     </>
