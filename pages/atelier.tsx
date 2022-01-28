@@ -12,25 +12,21 @@ import Head from 'next/head';
 import Image from 'next/image';
 
 // ATELIER® DESIGN SYSTEM IMPORTS
-import { Section } from '@atelier/section';
 import { Box } from '@atelier/box';
 import { Text } from '@atelier/text';
+import { Container } from '@atelier/container';
+import { Grid } from '@atelier/grid';
 import { Navbar } from '@components/Framework/Navbar';
 import { Hero } from '@components/Framework/Hero';
 import { AdobeAe } from '@components/AdobeAe';
-import { SocialSection } from '@components/SocialSection';
 import { CommunityContainer } from '@components/CommunityContainer';
 import { AtelierSubscribe } from '@components/Function/AtelierSubscribe';
 import { ProductSection } from '@components/Framework/ProductSection';
 import { AccordionComponent } from '@components/Function/Accordion';
 import { Heading } from '@atelier/heading';
 import { Paragraph } from '@atelier/paragraph';
-import { Container } from '@atelier/container';
-import { Grid } from '@atelier/grid';
 import { EightySection } from '@components/EightySection';
 import { FooterMain } from '@components/Framework/FooterMain';
-import { SmallSpacer } from '@components/SmallSpacer';
-import { CursorArrowIcon } from '@radix-ui/react-icons';
 
 // IMAGES
 import fourPng from '../public/img/four.png';
@@ -118,7 +114,6 @@ const Atelier = () => {
                 fontSize: '40px',
                 fontFamily: '$neueplak',
                 fontWeight: '400',
-
                 textAlign: 'center',
                 paddingBottom: '10px',
                 '@sm': {
@@ -139,7 +134,6 @@ const Atelier = () => {
                 lineHeight: '1.4',
                 color: '$gray11',
                 mb: '40px',
-
                 '@sm': {
                   textAlign: 'left',
                   fontSize: '16px',

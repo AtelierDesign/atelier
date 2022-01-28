@@ -1,6 +1,5 @@
 // REACT & NEXT IMPORTS
 import Head from 'next/head';
-import Image from 'next/image';
 import React from 'react';
 import NextLink from 'next/link';
 
@@ -8,7 +7,6 @@ import NextLink from 'next/link';
 import { NormalLink } from '@atelier/normal-link';
 import { Text } from '@atelier/text';
 import { Box } from '@atelier/box';
-import { SmallSpacer } from '@components/SmallSpacer';
 import { CoverFooter } from '@components/CoverFooter';
 
 // STITCHES
