@@ -11,7 +11,7 @@ import React from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 
-// ATELIER DESIGN SYSTEM IMPORTS
+// ATELIER® DESIGN SYSTEM IMPORTS
 import { Section } from '@atelier/section';
 import { Box } from '@atelier/box';
 import { Text } from '@atelier/text';

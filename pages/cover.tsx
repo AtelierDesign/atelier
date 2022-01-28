@@ -1,13 +1,17 @@
+// REACT & NEXT IMPORTS
 import Head from 'next/head';
 import Image from 'next/image';
 import React from 'react';
 import NextLink from 'next/link';
+
+// ATELIER® DESIGN SYSTEM
 import { NormalLink } from '@atelier/normal-link';
 import { Text } from '@atelier/text';
 import { Box } from '@atelier/box';
 import { SmallSpacer } from '@components/SmallSpacer';
 import { CoverFooter } from '@components/CoverFooter';
 
+// STITCHES
 import { styled } from '@stitches/react';
 
 const CoverBox = styled('div', {
