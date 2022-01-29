@@ -26,9 +26,9 @@ const Dropdown = styled('div', {
   width: 'auto',
   paddingLeft: '25px',
   paddingRight: '25px',
-  paddingBottom: '40vh',
-  paddingTop: '30px',
-  marginTop: '20px',
+  paddingBottom: '30vh',
+  paddingTop: '35px',
+  marginTop: '15px',
   marginRight: '10px',
   marginLeft: '10px',
 
@@ -48,7 +48,7 @@ const MenuBox = styled('div', {
 
 // MENU LINK STYLING
 const MenuLink = styled('a', {
-  fontSize: '22px',
+  fontSize: '26px',
   fontFamily: '$inter',
   fontWeight: '600',
   color: '$slate1',
@@ -56,6 +56,49 @@ const MenuLink = styled('a', {
   letterSpacing: '-0.03rem',
   marginTop: '5px',
   marginBottom: '5px',
+  '&:hover': {
+    color: '$gray10',
+  },
+});
+
+// MENU LINK PLACEMENT
+const SubMenuContainer = styled('div', {
+  width: '100%',
+  height: 'auto',
+  position: 'relative',
+  marginTop: '35px',
+  marginLeft: '0px',
+  marginRight: '0px',
+  marginBottom: '25px',
+  paddingTop: '10px',
+  // backgroundColor: '$blue5',
+
+  // border: '2px solid $slate4',
+  borderTopWidth: '0px',
+  borderBottomWidth: '0px',
+  borderLeftWidth: '0px',
+  borderRightWidth: '0px',
+});
+
+// MENU LINK PLACEMENT
+const SubMenuBox = styled('div', {
+  width: '100%',
+  position: 'relative',
+  marginTop: '12px',
+  marginBottom: '12px',
+});
+
+// MENU LINK STYLING
+const SubMenuLink = styled('a', {
+  fontSize: '12px',
+  fontFamily: '$jetbrain',
+  fontWeight: '500',
+  color: '$slate9',
+  lineHeight: '1',
+  letterSpacing: '0.03rem',
+  margin: 'auto',
+  // textTransform: 'uppercase',
+
   '&:hover': {
     color: '$gray10',
   },
@@ -76,14 +119,53 @@ const navigation = [
     icon: IconTwo,
   },
   {
-    name: 'Login',
+    name: 'Blog',
     description: '',
     href: 'https://api.ady.world',
     icon: IconThree,
   },
   {
-    name: 'Privacy Policy',
+    name: 'Collextions',
     description: '',
+    href: '/privacy',
+    icon: IconThree,
+  },
+];
+
+// MOBILE MENU NAVIGATION
+const submenu = [
+  {
+    name: 'About →',
+    href: '/privacy',
+    icon: IconThree,
+  },
+  {
+    name: 'Login',
+    href: '/shop',
+    icon: IconOne,
+  },
+  {
+    name: 'Sign_up',
+    href: 'https://docs.ady.world',
+    icon: IconTwo,
+  },
+  {
+    name: 'Subscribe ⌟',
+    href: 'https://api.ady.world',
+    icon: IconThree,
+  },
+  {
+    name: 'Twitter',
+    href: 'https://docs.ady.world',
+    icon: IconTwo,
+  },
+  {
+    name: 'GitHub®',
+    href: '/privacy',
+    icon: IconThree,
+  },
+  {
+    name: 'Terms ⏤ Privacy',
     href: '/privacy',
     icon: IconThree,
   },
@@ -128,6 +210,7 @@ export const PopoverPanel = () => {
               leaveTo="opacity-0 translate-y-1">
               <Popover.Panel as="div">
                 <Dropdown>
+                  {/* <!-- Dropdown Main Navigation --> */}
                   <div>
                     <div>
                       {navigation.map(item => (
@@ -138,6 +221,17 @@ export const PopoverPanel = () => {
                           </MenuBox>
                         </a>
                       ))}
+
+                      {/* <!-- SubMenu Navigation --> */}
+                      <SubMenuContainer>
+                        {submenu.map(item => (
+                          <a key={item.name} href={item.href}>
+                            <SubMenuBox>
+                              <SubMenuLink>{item.name}</SubMenuLink>
+                            </SubMenuBox>
+                          </a>
+                        ))}
+                      </SubMenuContainer>
 
                       <Box css={{ position: 'absolute', bottom: '0', paddingBottom: '30px' }}>
                         <Text size="1" css={{ fontFamily: '$neuewide', fontWeight: '800', color: '$slate1' }}>
