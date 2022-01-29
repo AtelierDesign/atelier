@@ -3,7 +3,6 @@ import Head from 'next/head';
 import React from 'react';
 import NextLink from 'next/link';
 import Image from 'next/image';
-import useNextBlurhash from 'use-next-blurhash';
 
 // ATELIER® DESIGN SYSTEM
 import { Navbar } from '@ui/app/Navbar';
@@ -28,12 +27,16 @@ const HeadingBox = styled('div', {
   padding: '20px',
 });
 
-const Showcase = () => {
-  // useNextBlurhash(hash, width, height, puch);
-  const [blurDataUrlOne] = useNextBlurhash(`98JQ]P{[`, 700, 360, 0);
-  const [blurDataUrlTwo] = useNextBlurhash(`LAH2l{-n17D$.TM|OFxY%zR*Ipkr`, 700, 360, 0);
-  const [blurDataUrlThree] = useNextBlurhash(`LFHo5304*L.E:gkk0r~l06^JpsV|`, 700, 360, 0);
+const BLUR_DATA_ONE =
+  'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAACCAIAAADwyuo0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAH0lEQVQImWNgYGDY3/1/377/Fz/+Z4CAS1//n3v4HwCYOQz6Nu+U2wAAAABJRU5ErkJggg==';
 
+const BLUR_DATA_TWO =
+  'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAACCAIAAADwyuo0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAJUlEQVQImQEaAOX/AObi5Pr//9vR0sitrQAAAAD4+P/bzs7Nt7fz6hHmov42rQAAAABJRU5ErkJggg==';
+
+const BLUR_DATA_THREE =
+  'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAACCAIAAADwyuo0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAI0lEQVQImWNgYGDovHjs0peJ/3+lMjAwMCRtfZx/8tbnX/UAmYINTvh532kAAAAASUVORK5CYII=';
+
+const Showcase = () => {
   return (
     <Box>
       <Head>
@@ -84,17 +87,17 @@ const Showcase = () => {
                 <span>Showcase One</span>
               </Heading>
             </HeadingBox>
-
-            <Image
-              className="color__swirl"
-              src="https://cdn.ady.systems/ady.images/one.png"
-              placeholder="blur"
-              blurDataURL={blurDataUrlOne}
-              layout="fill"
-              objectFit="cover"
-              alt="image"
-              objectPosition="absolute"
-            />
+            <Box css={{ borderRadius: '26px' }}>
+              <Image
+                src="https://cdn.ady.systems/ady.images/one.png"
+                placeholder="blur"
+                blurDataURL={BLUR_DATA_ONE}
+                layout="fill"
+                objectFit="cover"
+                alt="image"
+                objectPosition="absolute"
+              />
+            </Box>
           </ShowcaseComp>
         </Container>
 
@@ -113,16 +116,17 @@ const Showcase = () => {
                 <span>Showcase Two</span>
               </Heading>
             </HeadingBox>
-            <Image
-              className="color__swirl"
-              src="https://cdn.ady.systems/ady.images/five.png"
-              placeholder="blur"
-              blurDataURL={blurDataUrlTwo}
-              layout="fill"
-              objectFit="cover"
-              alt="image"
-              objectPosition="absolute"
-            />
+            <Box css={{ borderRadius: '26px' }}>
+              <Image
+                src="https://cdn.ady.systems/ady.images/five.png"
+                placeholder="blur"
+                blurDataURL={BLUR_DATA_TWO}
+                layout="fill"
+                objectFit="cover"
+                alt="image"
+                objectPosition="absolute"
+              />
+            </Box>
           </ShowcaseComp>
         </Container>
 
@@ -141,17 +145,18 @@ const Showcase = () => {
                 Showcase Three
               </Heading>
             </HeadingBox>
-
-            <Image
-              className="color__swirl"
-              src="https://cdn.ady.systems/ady.images/four.png"
-              placeholder="blur"
-              blurDataURL={blurDataUrlThree}
-              layout="fill"
-              objectFit="cover"
-              alt="image"
-              objectPosition="absolute"
-            />
+            <Box css={{ borderRadius: '26px' }}>
+              <Image
+                className="color__swirl"
+                src="https://cdn.ady.systems/ady.images/four.png"
+                placeholder="blur"
+                blurDataURL={BLUR_DATA_THREE}
+                layout="fill"
+                objectFit="cover"
+                alt="image"
+                objectPosition="absolute"
+              />
+            </Box>
           </ShowcaseComp>
         </Container>
       </Box>
