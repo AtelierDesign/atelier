@@ -1,6 +1,5 @@
 import React from 'react';
 import Head from 'next/head';
-import { Formik } from 'formik';
 import { useFormik } from 'formik';
 
 // ATELIER® DESIGN SYSTEM
@@ -25,6 +24,8 @@ export const AtelierSubscribe = () => {
   });
 
   return (
+      <>
+          <Head><title>Subscribe 2 Atelier®</title></Head>
     <Section size="2" css={{ paddingBottom: '5rem', paddingTop: '5rem', alignItems: 'center', textAlign: 'center' }}>
       <Container size="3" css={{ boxSizing: 'border-box' }}>
         {/* <!-- HEADING v1 --> */}
@@ -89,5 +90,6 @@ export const AtelierSubscribe = () => {
         </form>
       </Container>
     </Section>
+          </>
   );
 };
