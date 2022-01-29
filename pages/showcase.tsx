@@ -28,9 +28,11 @@ const HeadingBox = styled('div', {
   padding: '20px',
 });
 
-export default function Showcase() {
+const Showcase = () => {
   // useNextBlurhash(hash, width, height, puch);
-  const [blurDataUrlOne] = useNextBlurhash(`LqKKTmxv-j$dWCRowJad},RPS%s:`, 700, 360, 0);
+  const [blurDataUrlOne] = useNextBlurhash(`98JQ]P{[`, 700, 360, 0);
+  const [blurDataUrlTwo] = useNextBlurhash(`LAH2l{-n17D$.TM|OFxY%zR*Ipkr`, 700, 360, 0);
+  const [blurDataUrlThree] = useNextBlurhash(`LFHo5304*L.E:gkk0r~l06^JpsV|`, 700, 360, 0);
 
   return (
     <Box>
@@ -114,6 +116,8 @@ export default function Showcase() {
             <Image
               className="color__swirl"
               src="https://cdn.ady.systems/ady.images/five.png"
+              placeholder="blur"
+              blurDataURL={blurDataUrlTwo}
               layout="fill"
               objectFit="cover"
               alt="image"
@@ -141,6 +145,8 @@ export default function Showcase() {
             <Image
               className="color__swirl"
               src="https://cdn.ady.systems/ady.images/four.png"
+              placeholder="blur"
+              blurDataURL={blurDataUrlThree}
               layout="fill"
               objectFit="cover"
               alt="image"
@@ -151,4 +157,6 @@ export default function Showcase() {
       </Box>
     </Box>
   );
-}
+};
+
+export default Showcase;
