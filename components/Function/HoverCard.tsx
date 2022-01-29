@@ -1,9 +1,14 @@
+// REACT IMPORTS
 import React from 'react';
-import { keyframes } from '@stitches/react';
-import { styled } from 'stitches.config';
-import { mauve } from '@radix-ui/colors';
-import { Text } from '@atelier/text';
+
+// STITCHES & RADIX-UI IMPORTS
 import * as HoverCardPrimitive from '@radix-ui/react-hover-card';
+import { keyframes } from '@stitches/react';
+import { mauve } from '@radix-ui/colors';
+
+// ATELIER® DESIGN SYSTEM
+import { styled } from 'stitches.config';
+import { Text } from '@atelier/text';
 
 const slideUpAndFade = keyframes({
   '0%': { opacity: 0, transform: 'translateY(2px)' },
@@ -56,7 +61,6 @@ export const HoverCardTrigger = HoverCardPrimitive.Trigger;
 export const HoverCardContent = StyledContent;
 export const HoverCardArrow = StyledArrow;
 
-// Your app...
 const Flex = styled('div', { display: 'flex' });
 
 const ImageTrigger = styled('a', {
@@ -81,6 +85,7 @@ const Img = styled('img', {
   },
 });
 
+// HoverCard Component...
 export const HoverCardComponent = () => (
   <>
     <HoverCard>

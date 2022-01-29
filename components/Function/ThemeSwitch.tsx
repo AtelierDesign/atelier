@@ -1,11 +1,17 @@
+// REACT IMPORTS
 import React from 'react';
-import { styled } from '@stitches/react';
-import { violet, mauve, blackA, whiteA } from '@radix-ui/colors';
-import * as SwitchPrimitive from '@radix-ui/react-switch';
 
+// Dependencies
+import * as SwitchPrimitive from '@radix-ui/react-switch';
+import { violet, mauve, blackA, whiteA } from '@radix-ui/colors';
+import { useTheme } from 'next-themes';
+
+// Atelier® Design System
 import { darkTheme } from 'stitches.config';
 import { Button } from '@atelier/button';
-import { useTheme } from 'next-themes';
+
+// Stitches
+import { styled } from '@stitches/react';
 
 const StyledSwitch = styled(SwitchPrimitive.Root, {
   all: 'unset',

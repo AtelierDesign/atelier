@@ -1,10 +1,14 @@
+// React Imports
+import React from 'react';
+import NextLink from 'next/link';
+
+// ATELIER® DESIGN YIELD
 import { Box } from '@atelier/box';
 import { Container } from '@atelier/container';
 import { Grid } from '@atelier/grid';
 import { Text } from '@atelier/text';
 
-import NextLink from 'next/link';
-
+// Stitches
 import { styled } from '@stitches/react';
 
 const Card = styled('div', {

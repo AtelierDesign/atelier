@@ -4,7 +4,6 @@ import { CaretRightIcon } from '@radix-ui/react-icons';
 import { styled } from 'stitches.config';
 
 // This creates a custom component that wraps an <a> tag
-
 const DefaultLink = styled('a', {
   fontFamily: '$inter',
   fontSize: '12px',
@@ -28,11 +27,3 @@ export const ArrowLink = ({ href, children }) => {
     </Link>
   );
 };
-
-{
-  /* <!--
-<LinkStyle href="##" passHref>
-  <a>Text</a>
-</LinkStyle>
---> */
-}

@@ -1,12 +1,18 @@
-import { Popover, Transition } from '@headlessui/react';
+// REACT IMPORTS
 import { Fragment } from 'react';
 import { useState } from 'react';
 
+// Dependencies
+import { Popover, Transition } from '@headlessui/react';
+import { Cross as Hamburger } from 'hamburger-react';
+
+// ATELIER® DESIGN SYSTEM
 import { Link } from '@atelier/link';
 import { Text } from '@atelier/text';
 import { Box } from '@atelier/box';
-import { Cross as Hamburger } from 'hamburger-react';
 import { lime } from '@radix-ui/colors';
+
+// Stitches
 import { styled } from '@stitches/react';
 
 // DROPDOWN MENU STYLE
@@ -104,73 +110,74 @@ const SubMenuLink = styled('a', {
   },
 });
 
-// MOBILE MENU NAVIGATION
+// Navigation ( Map )...
 const navigation = [
   {
     name: 'Shop',
     description: '',
     href: '/shop',
-    icon: IconOne,
+    // icon: IconOne,
   },
   {
     name: 'Documentation',
     description: '',
     href: 'https://docs.ady.world',
-    icon: IconTwo,
+    // icon: IconTwo,
   },
   {
     name: 'Blog',
     description: '',
     href: 'https://api.ady.world',
-    icon: IconThree,
+    // icon: IconThree,
   },
   {
     name: 'Collextions',
     description: '',
     href: '/privacy',
-    icon: IconThree,
+    // icon: IconThree,
   },
 ];
 
-// MOBILE MENU NAVIGATION
+// SubMenu ( Map )...
 const submenu = [
   {
     name: 'About →',
     href: '/privacy',
-    icon: IconThree,
+    // icon: IconThree,
   },
   {
     name: 'Login',
     href: '/shop',
-    icon: IconOne,
+    // icon: IconOne,
   },
   {
     name: 'Sign_up',
     href: 'https://docs.ady.world',
-    icon: IconTwo,
+    // icon: IconTwo,
   },
   {
     name: 'Subscribe ⌟',
     href: 'https://api.ady.world',
-    icon: IconThree,
+    // icon: IconThree,
   },
   {
     name: 'Twitter',
     href: 'https://docs.ady.world',
-    icon: IconTwo,
+    // icon: IconTwo,
   },
   {
     name: 'GitHub®',
     href: '/privacy',
-    icon: IconThree,
+    // icon: IconThree,
   },
   {
     name: 'Terms ⏤ Privacy',
     href: '/privacy',
-    icon: IconThree,
+    // icon: IconThree,
   },
 ];
 
+// PopOver Component...
 export const PopoverPanel = () => {
   const [isOpen, setOpen] = useState(false);
 
@@ -208,9 +215,10 @@ export const PopoverPanel = () => {
               leave="transition ease-in duration-150"
               leaveFrom="opacity-100 translate-y-0"
               leaveTo="opacity-0 translate-y-1">
+              {/* <!-- Begin Panel --> */}
               <Popover.Panel as="div">
                 <Dropdown>
-                  {/* <!-- Dropdown Main Navigation --> */}
+                  {/* <!-- Main Navigation --> */}
                   <div>
                     <div>
                       {navigation.map(item => (
@@ -221,37 +229,41 @@ export const PopoverPanel = () => {
                           </MenuBox>
                         </a>
                       ))}
-
-                      {/* <!-- SubMenu Navigation --> */}
-                      <SubMenuContainer>
-                        {submenu.map(item => (
-                          <a key={item.name} href={item.href}>
-                            <SubMenuBox>
-                              <SubMenuLink>{item.name}</SubMenuLink>
-                            </SubMenuBox>
-                          </a>
-                        ))}
-                      </SubMenuContainer>
-
-                      <Box css={{ position: 'absolute', bottom: '0', paddingBottom: '30px' }}>
-                        <Text size="1" css={{ fontFamily: '$neuewide', fontWeight: '800', color: '$slate1' }}>
-                          <span>ATELIER®</span>
-                        </Text>
-
-                        <Text
-                          css={{
-                            fontFamily: '$inter',
-                            fontSize: '10px',
-                            fontWeight: '500',
-                            letterSpacing: '-0.03rem',
-                            color: '$slate1',
-
-                            paddingTop: '4px',
-                          }}>
-                          <span>© 2022 All Rights Reserved.</span>
-                        </Text>
-                      </Box>
                     </div>
+                    {/* <!-- END Main Navigation --> */}
+
+                    {/* <!-- SubMenu Navigation --> */}
+                    <SubMenuContainer>
+                      {submenu.map(item => (
+                        <a key={item.name} href={item.href}>
+                          <SubMenuBox>
+                            <SubMenuLink>{item.name}</SubMenuLink>
+                          </SubMenuBox>
+                        </a>
+                      ))}
+                    </SubMenuContainer>
+                    {/* <!-- END!! SubMenu Navigation --> */}
+
+                    {/* <!-- Menu Footer --> */}
+                    <Box css={{ position: 'absolute', bottom: '0', paddingBottom: '30px' }}>
+                      <Text size="1" css={{ fontFamily: '$neuewide', fontWeight: '800', color: '$slate1' }}>
+                        <span>ATELIER®</span>
+                      </Text>
+
+                      <Text
+                        css={{
+                          fontFamily: '$inter',
+                          fontSize: '10px',
+                          fontWeight: '500',
+                          letterSpacing: '-0.03rem',
+                          color: '$slate1',
+
+                          paddingTop: '4px',
+                        }}>
+                        <span>© 2022 All Rights Reserved.</span>
+                      </Text>
+                    </Box>
+                    {/* <!-- End Menu Footer --> */}
                   </div>
                 </Dropdown>
               </Popover.Panel>
@@ -263,6 +275,9 @@ export const PopoverPanel = () => {
   );
 };
 
+/*
+// We can add Icons here to use in ( Map )...
+// ICON ONE
 function IconOne() {
   return (
     <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -286,6 +301,7 @@ function IconOne() {
   );
 }
 
+// ICON TWO
 function IconTwo() {
   return (
     <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -306,6 +322,7 @@ function IconTwo() {
   );
 }
 
+// ICON THREE
 function IconThree() {
   return (
     <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -319,3 +336,5 @@ function IconThree() {
     </svg>
   );
 }
+
+*/

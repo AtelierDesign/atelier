@@ -1,12 +1,14 @@
+// REACT IMPORTS
 import React from 'react';
+
+// DEPENDENCIES
 import CookieConsent from 'react-cookie-consent';
+
+// ATELIER® DESIGN SYSTEM
 import { Text } from '@atelier/text';
 
-import { useTheme } from 'next-themes';
-
+// Cookie Banner Component
 export const CookieNotice = () => {
-  const { theme, setTheme } = useTheme();
-
   return (
     <CookieConsent
       debug={false}
