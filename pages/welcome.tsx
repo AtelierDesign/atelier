@@ -6,7 +6,7 @@ import { Box } from '@atelier/box';
 import { ThemeSwitch } from '@components/ThemeSwitch';
 import { SmallButton } from '@components/Buttons/AtelierButton';
 import { Button } from '@atelier/button';
-import { GradientButton } from '@atelier/adybtn';
+import { GradientButton } from '@components/Buttons/AtelierButton';
 
 import { styled } from 'stitches.config';
 

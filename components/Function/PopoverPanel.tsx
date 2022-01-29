@@ -6,7 +6,7 @@ import { Link } from '@atelier/link';
 import { Text } from '@atelier/text';
 import { Box } from '@atelier/box';
 import { Cross as Hamburger } from 'hamburger-react';
-import { LimeButton } from '@components/Buttons/LimeButton';
+import { lime } from '@radix-ui/colors';
 import { styled } from '@stitches/react';
 
 // DROPDOWN MENU STYLE

@@ -216,11 +216,31 @@ export const styledSmallButton = css({
 });
 
 export const styledGradientButton = css({
+  '&::before': {
+    content: `''`,
+    display: 'block',
+    // backgroundImage: 'linear-gradient(to right, #1fa2ff, #12d8fa, #a6ffcb)',
+    backgroundImage: 'linear-gradient(to right, #1ed900, #00d4ff)',
+    position: 'absolute',
+    top: '-3px',
+    left: '-3px',
+    width: 'calc(100% + 6px)',
+    height: 'calc(100% + 6px)',
+    borderRadius: '9px',
+    zIndex: '-1',
+  },
+
+  '&::after': {
+    content: `''`,
+    zIndex: '1',
+  },
+
   // RESET
   inclue: ['box'],
   all: 'unset',
   alignItems: 'center',
   userSelect: 'none',
+  // zIndex: '5',
 
   backgroundColor: '#231F20',
 
@@ -248,20 +268,6 @@ export const styledGradientButton = css({
   fontWeight: '600',
   fontFamily: '$inter',
   color: '$white',
-
-  '&::before': {
-    content: `''`,
-    display: 'block',
-    // backgroundImage: 'linear-gradient(to right, #1fa2ff, #12d8fa, #a6ffcb)',
-    backgroundImage: 'linear-gradient(to right, #1ed900, #00d4ff)',
-    position: 'absolute',
-    top: '-3px',
-    left: '-3px',
-    width: 'calc(100% + 6px)',
-    height: 'calc(100% + 6px)',
-    borderRadius: '9px',
-    zIndex: -1,
-  },
 
   '&:hover': {
     color: '$white',

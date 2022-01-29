@@ -9,8 +9,7 @@ import { Flex } from '@atelier/flex';
 import { Paragraph } from '@atelier/paragraph';
 import { ExternalLinkIcon, RocketIcon } from '@radix-ui/react-icons';
 import { AtelierButton } from '@components/Buttons/AtelierButton';
-import { GradientButton } from '@components/Buttons/GradientButton';
-import { HomeButton } from '@components/HomeButton';
+import { GradientButton } from '@components/Buttons/AtelierButton';
 import { TimeCode } from '@components/Time/TimeCode';
 
 // STITCHES STYLED
@@ -41,7 +40,7 @@ const TimeDisplay = styled('div', {
 
 export const Hero = () => {
   return (
-    <Section size="3" css={{ bc: 'transparent' }}>
+    <Section size="3" css={{ backgroundColor: '$translucent' }}>
       <Container
         size="2"
         css={{
@@ -107,7 +106,14 @@ export const Hero = () => {
           components.
         </Paragraph>
 
-        <Flex css={{ '@bp2': { jc: 'center', my: '$6' } }}>
+        <Flex
+          css={{
+            zIndex: '2',
+            '@bp2': {
+              jc: 'center',
+              my: '$6',
+            },
+          }}>
           <Link href="/shop" passHref>
             <AtelierButton color="lime">
               <span>Latest Release</span>
@@ -116,7 +122,7 @@ export const Hero = () => {
             </AtelierButton>
           </Link>
 
-          <Link href="https://github.com/AtelierDesign/atelier" target="_blank" rel="noopener norefferer" passHref>
+          <Link href="https://github.com/AtelierDesign/atelier" passHref>
             <AtelierButton color="ghost">
               <span>GitHub</span>
               <Box css={{ display: 'inline', ml: '$1' }}>

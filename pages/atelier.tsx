@@ -10,6 +10,7 @@
 import React from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
+import Link from 'next/link';
 
 // ATELIER® DESIGN SYSTEM IMPORTS
 import { Box } from '@atelier/box';
@@ -23,10 +24,12 @@ import { CommunityContainer } from '@components/CommunityContainer';
 import { AtelierSubscribe } from '@components/Function/AtelierSubscribe';
 import { ProductSection } from '@components/Framework/ProductSection';
 import { AccordionComponent } from '@components/Function/Accordion';
+import { AccordionDemo } from '@components/Function/AccordionDemo';
 import { Heading } from '@atelier/heading';
 import { Paragraph } from '@atelier/paragraph';
 import { EightySection } from '@components/EightySection';
 import { FooterMain } from '@components/Framework/FooterMain';
+import { GradientButton } from '@components/Buttons/AtelierButton';
 
 // IMAGES
 import fourPng from '../public/img/four.png';
@@ -223,6 +226,10 @@ const Atelier = () => {
         {/* <!-- ACCORDION --> */}
         <Container size="2" css={{ alignItems: 'center', textAlign: 'center', margin: 'auto' }}>
           <AccordionComponent />
+        </Container>
+
+        <Container size="2" css={{ alignItems: 'center', textAlign: 'center', margin: 'auto' }}>
+          <AccordionDemo />
         </Container>
 
         {/* <!-- SUBSCRIBE COMPONENT --> */}
