@@ -25,7 +25,6 @@
         <img src="https://img.shields.io/github/contributors/TryGhost/Ghost.svg" alt="Contributors" />
     </a>
 </p>
-<p align="center">Love open source? We're hiring <a href="https://careers.ghost.org/product-engineer-node-js/">Node.js Engineers</a> to work on Ghost full-time</p>
 
 &nbsp;
 
