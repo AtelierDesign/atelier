@@ -1,14 +1,17 @@
-import React, { createRef } from 'react';
+// import React from 'react';
+import React, { useRef } from 'react';
 import { keyframes } from '@stitches/react';
+
+// Accordion Component
+import * as AccordionPrimitive from '@radix-ui/react-accordion';
+
+// Stitches + Atelier®
 import { styled } from 'stitches.config';
 import { violet, blackA, mauve, slate, gray, lime } from '@radix-ui/colors';
 import { ChevronDownIcon } from '@radix-ui/react-icons';
 
 // ATELIER® DESIGN SYSTEM
 import { Heading } from '@atelier/heading';
-
-// Accordion Component
-import * as AccordionPrimitive from '@radix-ui/react-accordion';
 
 const AccordionContainer = styled('div', {
   backgroundColor: '$translucent',
@@ -102,7 +105,10 @@ const StyledContentText = styled('div', {
   fontFamily: '$inter',
   fontSize: '13px',
   fontWeight: '500',
-  padding: '15px 20px',
+  padding: '25px 20px',
+  lineHeight: '1.4',
+  alignItems: 'left',
+  textAlign: 'left',
 });
 
 const StyledChevron = styled(ChevronDownIcon, {
@@ -115,95 +121,68 @@ const StyledChevron = styled(ChevronDownIcon, {
 export const Accordion = StyledAccordion;
 export const AccordionItem = StyledItem;
 
-/*
-const FancyButton = React.forwardRef((props, ref) => (
-  <button ref={ref} className="FancyButton">
-    {props.children}
-  </button>
-));
+// Trigger
+const AccordionTrigger = ({ children, ...props }, ref) => {
+  const triggerRef = useRef(null);
 
-// You can now get a ref directly to the DOM button:
-const ref = React.createRef();
-<FancyButton ref={ref}>Click me!</FancyButton>;
-
-//
-// TRIGGER COMPONENT
-export const AccordionTrigger = React.forwardRef((props, ref) => (
-
-const ref = React.createRef();
-  <StyledHeader>
-    <StyledTrigger ref={ref}>
-      {props.children}
-      <StyledChevron aria-hidden />
-    </StyledTrigger>
-  </StyledHeader>
-));
-*/
-
-// TRIGGER COMPONENT
-export const AccordionTrigger = React.forwardRef(({ children, ...props }, ref) => {
   return (
     <StyledHeader>
-      <StyledTrigger {...props} ref={ref}>
+      <StyledTrigger {...props} ref={triggerRef}>
         {children}
         <StyledChevron aria-hidden />
       </StyledTrigger>
     </StyledHeader>
   );
-});
+};
 
-// CONTENT
-export const AccordionContent = React.forwardRef(({ children, ...props }, ref) => {
+// Content
+const AccordionContent = ({ children, ...props }, ref) => {
+  const contentRef = useRef(null);
+
   return (
-    <StyledContent {...props} ref={ref}>
-      <StyledContentText>{props.children}</StyledContentText>
+    <StyledContent {...props} ref={contentRef}>
+      <StyledContentText>{children}</StyledContentText>
     </StyledContent>
-  );
-});
-
-// THE ACCORDION
-export const AccordionComponent = props => {
-  return (
-    <>
-      <AccordionContainer>
-        <Heading
-          size="1"
-          css={{
-            paddingBottom: '30px',
-            fontSize: '14px',
-            fontFamily: '$neuewide',
-            fontWeight: '800',
-            textTransform: 'uppercase',
-          }}>
-          Frequently asked
-        </Heading>
-
-        <Accordion type="single" collapsible>
-          <AccordionItem value="item-1">
-            <AccordionTrigger>What is Atelier Design Yield?</AccordionTrigger>
-            <AccordionContent>Simply put, it's the coolest shit ever.</AccordionContent>
-          </AccordionItem>
-
-          <AccordionItem value="item-2">
-            <AccordionTrigger>Is it unstyled?</AccordionTrigger>
-            <AccordionContent>
-              Yes. It's unstyled by default, giving you freedom over the look and feel.
-            </AccordionContent>
-          </AccordionItem>
-
-          <AccordionItem value="item-3">
-            <AccordionTrigger>Can it be animated?</AccordionTrigger>
-            <AccordionContent>Yes! You can animate the Accordion with CSS or JavaScript.</AccordionContent>
-          </AccordionItem>
-
-          <AccordionItem value="item-4">
-            <AccordionTrigger>Is it accessible?</AccordionTrigger>
-            <AccordionContent>Yes. It adheres to the WAI-ARAI design pattern.</AccordionContent>
-          </AccordionItem>
-        </Accordion>
-      </AccordionContainer>
-    </>
   );
 };
 
-export default AccordionComponent;
+// THE ACCORDION
+export const AccordionComponent = () => (
+  <>
+    <AccordionContainer>
+      <Heading
+        size="1"
+        css={{
+          paddingBottom: '30px',
+          fontSize: '14px',
+          fontFamily: '$neuewide',
+          fontWeight: '800',
+          textTransform: 'uppercase',
+        }}>
+        Frequently asked
+      </Heading>
+
+      <Accordion type="single" collapsible>
+        <AccordionItem value="item-1">
+          <AccordionTrigger>What is Atelier Design Yield?</AccordionTrigger>
+          <AccordionContent>Simply put, it's the coolest shit ever.</AccordionContent>
+        </AccordionItem>
+
+        <AccordionItem value="item-2">
+          <AccordionTrigger>Is it unstyled?</AccordionTrigger>
+          <AccordionContent>Yes. It's unstyled by default, giving you freedom over the look and feel.</AccordionContent>
+        </AccordionItem>
+
+        <AccordionItem value="item-3">
+          <AccordionTrigger>Can it be animated?</AccordionTrigger>
+          <AccordionContent>Yes! You can animate the Accordion with CSS or JavaScript.</AccordionContent>
+        </AccordionItem>
+
+        <AccordionItem value="item-4">
+          <AccordionTrigger>Is it accessible?</AccordionTrigger>
+          <AccordionContent>Yes. It adheres to the WAI-ARAI design pattern.</AccordionContent>
+        </AccordionItem>
+      </Accordion>
+    </AccordionContainer>
+  </>
+);

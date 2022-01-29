@@ -7,6 +7,8 @@ import { ThemeSwitch } from '@components/ThemeSwitch';
 import { SmallButton } from '@components/Buttons/AtelierButton';
 import { Button } from '@atelier/button';
 import { GradientButton } from '@components/Buttons/AtelierButton';
+import { HoverCardComponent } from '@components/Function/HoverCard';
+import { AccordionComponent } from '@components/Function/AccordionComponent';
 
 import { styled } from 'stitches.config';
 
@@ -53,23 +55,9 @@ const Welcome = () => {
         </Head>
 
         <ButtonBox>
-          {/* <!-- STANDARD BUTTON --> */}
-          <NextLink href="/privacy" passHref>
-            <Button>
-              <span>Lime Button</span>
-            </Button>
-          </NextLink>
-
-          <br></br>
-
           {/* <!-- SMALL BUTTON ( Variants= Lime, orange, gray ) --> */}
-          <SmallButton color="lime">
-            <span>Small Lime</span>
-          </SmallButton>
-
-          <SmallButton color="light_gray">
-            <span>Small Orange</span>
-          </SmallButton>
+          <HoverCardComponent />
+          <br></br>
 
           <br></br>
           <NextLink href="/welcome" passHref>
@@ -77,6 +65,11 @@ const Welcome = () => {
               <span>Small Gradient</span>
             </GradientButton>
           </NextLink>
+          <br></br>
+
+          <br></br>
+
+          <AccordionComponent />
         </ButtonBox>
 
         <ThemeBox>

@@ -23,8 +23,7 @@ import { AdobeAe } from '@components/AdobeAe';
 import { CommunityContainer } from '@components/CommunityContainer';
 import { AtelierSubscribe } from '@components/Function/AtelierSubscribe';
 import { ProductSection } from '@components/Framework/ProductSection';
-import { AccordionComponent } from '@components/Function/Accordion';
-import { AccordionDemo } from '@components/Function/AccordionDemo';
+import { AccordionComponent } from '@components/Function/AccordionComponent';
 import { Heading } from '@atelier/heading';
 import { Paragraph } from '@atelier/paragraph';
 import { EightySection } from '@components/EightySection';
@@ -184,7 +183,6 @@ const Atelier = () => {
                       objectFit="cover"
                       alt="image"
                       objectPosition="absolute"
-                      priority
                     />
                   </Card>
                 </Box>
@@ -204,7 +202,6 @@ const Atelier = () => {
                       objectFit="cover"
                       alt="image"
                       objectPosition="absolute"
-                      priority
                     />
                   </Card>
                 </Box>
@@ -226,10 +223,6 @@ const Atelier = () => {
         {/* <!-- ACCORDION --> */}
         <Container size="2" css={{ alignItems: 'center', textAlign: 'center', margin: 'auto' }}>
           <AccordionComponent />
-        </Container>
-
-        <Container size="2" css={{ alignItems: 'center', textAlign: 'center', margin: 'auto' }}>
-          <AccordionDemo />
         </Container>
 
         {/* <!-- SUBSCRIBE COMPONENT --> */}
