@@ -3,6 +3,7 @@ import Head from 'next/head';
 import React from 'react';
 import NextLink from 'next/link';
 import Image from 'next/image';
+import useNextBlurhash from 'use-next-blurhash';
 
 // ATELIER® DESIGN SYSTEM
 import { Navbar } from '@ui/app/Navbar';
@@ -28,6 +29,9 @@ const HeadingBox = styled('div', {
 });
 
 export default function Showcase() {
+  // useNextBlurhash(hash, width, height, puch);
+  const [blurDataUrlOne] = useNextBlurhash(`LqKKTmxv-j$dWCRowJad},RPS%s:`, 700, 360, 0);
+
   return (
     <Box>
       <Head>
@@ -78,9 +82,12 @@ export default function Showcase() {
                 <span>Showcase One</span>
               </Heading>
             </HeadingBox>
+
             <Image
               className="color__swirl"
               src="https://cdn.ady.systems/ady.images/one.png"
+              placeholder="blur"
+              blurDataURL={blurDataUrlOne}
               layout="fill"
               objectFit="cover"
               alt="image"
