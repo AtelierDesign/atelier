@@ -8,7 +8,7 @@ import { SmallButton } from '@components/Buttons/AtelierButton';
 import { Button } from '@atelier/button';
 import { GradientButton } from '@components/Buttons/AtelierButton';
 import { HoverCardComponent } from '@components/Function/HoverCard';
-import { AccordionComponent } from '@components/Function/AccordionComponent';
+import { AccordionComponent } from '@components/Function/Accordion';
 
 import { styled } from 'stitches.config';
 

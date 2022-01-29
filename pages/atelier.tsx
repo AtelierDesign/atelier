@@ -23,7 +23,7 @@ import { AdobeAe } from '@components/AdobeAe';
 import { CommunityContainer } from '@components/CommunityContainer';
 import { AtelierSubscribe } from '@components/Function/AtelierSubscribe';
 import { ProductSection } from '@components/Framework/ProductSection';
-import { AccordionComponent } from '@components/Function/AccordionComponent';
+import { AccordionComponent } from '@components/Function/Accordion';
 import { Heading } from '@atelier/heading';
 import { Paragraph } from '@atelier/paragraph';
 import { EightySection } from '@components/EightySection';

@@ -46,8 +46,6 @@
     "formik": "^2.2.9",
     "hamburger-react": "^2.4.1",
     "isomorphic-unfetch": "^3.1.0",
-    "klaviyo-client": "^2.3.0",
-    "klaviyo-subscribe": "^1.0.0",
     "leva": "^0.9.18",
     "micro": "^9.3.4",
     "micro-cors": "^0.1.1",
