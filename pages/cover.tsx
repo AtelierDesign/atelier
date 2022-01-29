@@ -7,7 +7,7 @@ import NextLink from 'next/link';
 import { NormalLink } from '@atelier/normal-link';
 import { Text } from '@atelier/text';
 import { Box } from '@atelier/box';
-import { CoverFooter } from '@components/CoverFooter';
+import { CoverFooter } from '@ui/cover/CoverFooter';
 
 // STITCHES
 import { styled } from '@stitches/react';
@@ -72,7 +72,7 @@ export default function Cover() {
       <CoverBox>
         <CoverFooter />
         <TextBox>
-          <NextLink href="/" passHref>
+          <NextLink href="/atelier" passHref>
             <NormalLink variant="normal">
               <Text
                 css={{

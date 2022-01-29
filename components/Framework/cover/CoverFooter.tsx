@@ -7,23 +7,24 @@ import { Box } from '@atelier/box';
 import { Flex } from '@atelier/flex';
 import { Text } from '@atelier/text';
 import { Link } from '@atelier/link';
-import { ThemeSwitch } from '@components/Function/ThemeSwitch';
-import { PopoverPanel } from '@components/Function/PopoverPanel';
-import { CaretRightIcon } from '@radix-ui/react-icons';
+import { ThemeSwitch } from '@components/ThemeSwitch';
+import { ArrowRightIcon } from '@radix-ui/react-icons';
 
-export const Navbar = () => {
+export const CoverFooter = () => {
   return (
     <>
       <Flex
-        as="header"
+        as="footer"
         css={{
-          py: '0px',
+          py: '11px',
           px: '5px',
-          height: '48px',
           jc: 'space-between',
           position: 'fixed',
+          bottom: '0',
+          left: '0',
+          right: '0',
           margin: '0',
-          backgroundColor: '$light100',
+          backgroundColor: '$translucent',
           width: '100vw',
           backdropFilter: 'blur(10px)',
           WebkitBackdropFilter: 'blur(10px)',
@@ -32,7 +33,7 @@ export const Navbar = () => {
           zIndex: '9999',
         }}>
         {/* <!-- LOGO SECTION --> */}
-        <NextLink href="/atelier" passHref>
+        <NextLink href="/" passHref>
           <Box
             as="a"
             css={{
@@ -49,13 +50,20 @@ export const Navbar = () => {
                 zIndex: '999',
                 fontFamily: '$neuewide',
                 fontWeight: '800',
-                fontSize: '18px',
-                color: '$gray12',
-                lineHeight: '48px',
+                fontSize: '14px',
+                color: '$gray8',
+                lineHeight: '30px',
                 letterSpacing: '-0.03rem',
+                mixBlendMode: 'overlay',
+
+                '&:hover': {
+                  color: '$gray11',
+                  mixBlendMode: 'difference',
+                },
               }}>
               ATELIER®
             </Text>
+            {/*<Image className="logo" alt="logo" src="/butterfly_logo.svg" width={80} height={18} />*/}
           </Box>
         </NextLink>
 
@@ -71,19 +79,19 @@ export const Navbar = () => {
               display: 'none',
             },
           }}>
-          <NextLink href="/shop" passHref>
+          <NextLink href="/" passHref>
             <Link variant="subtle" css={{ marginRight: '$3', color: '$gray12', '@sm': { marginRight: '$2' } }}>
-              Shop <CaretRightIcon />
+              Subscribe <ArrowRightIcon />
             </Link>
           </NextLink>
 
-          <NextLink href="/showcase" passHref>
+          <NextLink href="/twitter" passHref>
             <Link variant="subtle" css={{ marginRight: '$3', color: '$gray12', '@sm': { marginRight: '$2' } }}>
-              Showcase
+              Twitter
             </Link>
           </NextLink>
 
-          <NextLink href="https://docs.ady.world" passHref>
+          <NextLink href="/github" passHref>
             <Link
               variant="subtle"
               css={{
@@ -92,10 +100,10 @@ export const Navbar = () => {
                 mr: '$3',
                 '@bp2': { display: 'block', mr: '$3' },
               }}>
-              Docs
+              GitHub
             </Link>
           </NextLink>
-          <NextLink href="https://developer.ady.world" passHref>
+          <NextLink href="/discord" passHref>
             <Link
               variant="subtle"
               css={{
@@ -104,39 +112,33 @@ export const Navbar = () => {
                 mr: '$3',
                 '@bp2': { display: 'block', mr: '$5' },
               }}>
-              Blog
+              Discord
             </Link>
           </NextLink>
         </Flex>
         {/* <!-- JSX ELEMENT --> */}
 
         <Flex as="nav" css={{ ai: 'center', px: '0px', fontFamily: '$inter', fontSize: '12px' }}>
-          {/* <!-- THEME SWITCH --> */}
-          <ThemeSwitch />
-
           {/* <!-- JSX ELEMENT --> */}
-          <Link
-            href="https://api.ady.world"
-            target="_blank"
-            rel="norefferer"
-            css={{
-              fontSize: '13px',
-              color: '$gray12',
-              border: '0px solid $crimson9',
-              borderRadius: '6px',
-              paddingTop: '6px',
-              paddingBottom: '6px',
-              paddingLeft: '10px',
-              paddingRight: '10px',
-              mr: '$3',
-              '@sm': { display: 'none', mr: '$3' },
-              '&:hover': { cursor: 'pointer' },
-            }}>
-            Sign In
-          </Link>
-          {/* <!-- -->*/}
+          <NextLink href="/" passHref>
+            <Link
+              variant="subtle"
+              css={{
+                fontSize: '12px',
+                display: 'block',
+                color: '$gray8',
+                mr: '$5',
 
-          <PopoverPanel />
+                '&:hover': {
+                  color: '$gray11',
+                },
+
+                '@sm': { display: 'block', mr: '$3' },
+              }}>
+              ©2022
+            </Link>
+          </NextLink>
+          {/* <!-- -->*/}
         </Flex>
       </Flex>
     </>

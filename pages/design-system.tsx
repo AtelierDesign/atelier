@@ -1,3 +1,4 @@
+// React
 import React from 'react';
 
 import { Box } from '@atelier/box';
@@ -17,6 +18,7 @@ import { Text } from '@atelier/text';
 import { TextField } from '@atelier/text-field';
 import { ArrowRightIcon, PlusIcon } from '@radix-ui/react-icons';
 
+// https://ady.world/design-system
 const DesignSystem = () => {
   return (
     <Box css={{ bc: '$slate1' }}>

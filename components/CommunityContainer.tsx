@@ -13,7 +13,6 @@ import { Paragraph } from '@atelier/paragraph';
 import { Container } from '@atelier/container';
 import { Grid } from '@atelier/grid';
 import { EightySection } from '@components/EightySection';
-import { GradientBackground } from '@components/Background/GradientBackground';
 import { FooterMain } from '@components/FooterMain';
 import { SmallSpacer } from '@components/SmallSpacer';
 import { Button } from '@atelier/button';

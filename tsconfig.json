@@ -4,6 +4,9 @@
     "paths": {
       "@atelier/*": ["atelier/*"],
       "@components/*": ["components/*"],
+      "@ui/*": ["components/ui/*"],
+      "@functions/*": ["components/functions/*"],
+
       "@styles/*": ["styles/*"],
       "@utils/*": ["utils/*"],
       "@lib/*": ["lib/*"],

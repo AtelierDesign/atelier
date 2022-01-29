@@ -1,5 +1,6 @@
 import { styled } from 'stitches.config';
 
+// Container
 export const Container = styled('div', {
   // Reset
   boxSizing: 'border-box',
