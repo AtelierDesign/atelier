@@ -53,10 +53,10 @@ const Showcase = () => {
           overflow: 'auto',
           height: '100vh',
           '@md': {
-            display: 'none',
+            // display: 'none',
           },
           '@sm': {
-            display: 'none',
+            // display: 'none',
           },
         }}>
         <Section size="1">
