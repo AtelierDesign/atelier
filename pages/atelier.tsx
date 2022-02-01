@@ -35,7 +35,7 @@ import { DesktopPanel } from '@ui/index/MenuLink';
 import fourPng from '../public/img/four.png';
 
 // COOKIE NOTICE
-import { CookieNotice } from '@components/Function/CookieNotice';
+import { CookieNotice } from '@components/functions/CookieNotice';
 
 // STYLED ITEMS
 import { styled } from 'stitches.config';

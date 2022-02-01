@@ -36,17 +36,18 @@ export const CookieNotice = () => {
 
         '@500px': {
           flexDirection: 'column',
+          width: '100%',
         },
       }}
       buttonStyle={{
-        backgroundColor: 'hsl(81, 67%, 50%)',
-        color: '#FFFFFF',
+        backgroundColor: 'transparent',
+        color: '#FFF',
         fontSize: '13px',
         paddingTop: '6px',
         paddingBottom: '8px',
-        paddingLeft: '10px',
-        paddingRight: '10px',
-        borderRadius: '6px',
+        paddingLeft: '14px',
+        paddingRight: '14px',
+        borderRadius: '4px',
         fontFamily: "'Inter', sans-serif'",
         fontWeight: '600',
       }}>
@@ -54,14 +55,25 @@ export const CookieNotice = () => {
         css={{
           // textTransform: 'uppercase',
           fontFamily: '$inter',
-          fontSize: '14px',
+          fontSize: '16px',
           fontWeight: 'bold',
           paddingBottom: '7px',
           lineHeight: '1.3',
         }}>
         We use cookies.
       </Text>
-      <Text size="2" css={{ fontWeight: '500', width: '60vw', fontSize: '11px', lineHeight: '1.3' }}>
+      <Text
+        size="2"
+        css={{
+          fontWeight: '500',
+          width: '60vw',
+          fontSize: '12px',
+          lineHeight: '1.3',
+
+          '@sm': {
+            width: '100%',
+          },
+        }}>
         Our websites and online services may use “cookies.” Cookies enable you to use shopping carts and to personalize
         your experience on our sites, tell us which parts of our websites people have visited, help us measure the
         effectiveness of ads and web searches, and give us insights into user behavior so we can improve our
