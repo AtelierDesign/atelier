@@ -15,6 +15,63 @@ import { lime } from '@radix-ui/colors';
 // Stitches
 import { styled } from '@stitches/react';
 
+// Navigation ( Map )...
+const navigation = [
+  {
+    name: 'Shop',
+    description: '',
+    href: '/shop',
+    // icon: IconOne,
+  },
+  {
+    name: 'Documentation',
+    description: '',
+    href: 'https://docs.ady.world',
+    // icon: IconTwo,
+  },
+  {
+    name: 'Blog',
+    description: '',
+    href: 'https://api.ady.world',
+    // icon: IconThree,
+  },
+  {
+    name: 'Collextions',
+    description: '',
+    href: '/privacy',
+    // icon: IconThree,
+  },
+];
+
+// SubMenu ( Map )...
+const submenu = [
+  {
+    name: 'About →',
+    href: '/privacy',
+    // icon: IconThree,
+  },
+  {
+    name: 'Login',
+    href: '/shop',
+    // icon: IconOne,
+  },
+  {
+    name: 'Sign_up',
+    href: 'https://docs.ady.world',
+    // icon: IconTwo,
+  },
+  {
+    name: 'Subscribe ⌟',
+    href: 'https://api.ady.world',
+    // icon: IconThree,
+  },
+  {
+    name: 'Terms ⏤ Privacy',
+    href: '/privacy',
+    // icon: IconThree,
+  },
+];
+
 // DROPDOWN MENU STYLE
 const Dropdown = styled('div', {
   zIndex: '9999',
@@ -27,7 +84,7 @@ const Dropdown = styled('div', {
   saturate: '180%',
   boxShadow: '$colors$shadowLight 0px 10px 38px -10px, $colors$shadowDark 0px 10px 20px -15px',
 
-  minHeight: '80vh',
+  minHeight: '60vh',
   height: 'auto',
   width: 'auto',
   paddingLeft: '25px',
@@ -109,73 +166,6 @@ const SubMenuLink = styled('a', {
     color: '$gray10',
   },
 });
-
-// Navigation ( Map )...
-const navigation = [
-  {
-    name: 'Shop',
-    description: '',
-    href: '/shop',
-    // icon: IconOne,
-  },
-  {
-    name: 'Documentation',
-    description: '',
-    href: 'https://docs.ady.world',
-    // icon: IconTwo,
-  },
-  {
-    name: 'Blog',
-    description: '',
-    href: 'https://api.ady.world',
-    // icon: IconThree,
-  },
-  {
-    name: 'Collextions',
-    description: '',
-    href: '/privacy',
-    // icon: IconThree,
-  },
-];
-
-// SubMenu ( Map )...
-const submenu = [
-  {
-    name: 'About →',
-    href: '/privacy',
-    // icon: IconThree,
-  },
-  {
-    name: 'Login',
-    href: '/shop',
-    // icon: IconOne,
-  },
-  {
-    name: 'Sign_up',
-    href: 'https://docs.ady.world',
-    // icon: IconTwo,
-  },
-  {
-    name: 'Subscribe ⌟',
-    href: 'https://api.ady.world',
-    // icon: IconThree,
-  },
-  {
-    name: 'Twitter',
-    href: 'https://docs.ady.world',
-    // icon: IconTwo,
-  },
-  {
-    name: 'GitHub®',
-    href: '/privacy',
-    // icon: IconThree,
-  },
-  {
-    name: 'Terms ⏤ Privacy',
-    href: '/privacy',
-    // icon: IconThree,
-  },
-];
 
 // PopOver Component...
 export const PopoverPanel = () => {

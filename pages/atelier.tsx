@@ -17,7 +17,7 @@ import { Box } from '@atelier/box';
 import { Text } from '@atelier/text';
 import { Container } from '@atelier/container';
 import { Grid } from '@atelier/grid';
-import { Navbar } from '@components/Framework/Navbar';
+import { Navbar } from '@ui/app/Navbar';
 import { Hero } from '@components/Framework/Hero';
 import { AdobeAe } from '@components/AdobeAe';
 import { CommunityContainer } from '@components/CommunityContainer';

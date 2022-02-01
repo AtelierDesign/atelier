@@ -9,7 +9,7 @@ import { Grid } from '@atelier/grid';
 import { Heading } from '@atelier/heading';
 import { Image } from '@atelier/image';
 import { Paragraph } from '@atelier/paragraph';
-import { Navbar } from '@components/Framework/Navbar';
+import { Navbar } from '@ui/app/Navbar';
 import { Section } from '@atelier/section';
 import { Separator } from '@atelier/separator';
 import { Sub } from '@atelier/sub';

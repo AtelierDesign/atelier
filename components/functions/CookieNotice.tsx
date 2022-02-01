@@ -11,7 +11,7 @@ import { Text } from '@atelier/text';
 export const CookieNotice = () => {
   return (
     <CookieConsent
-      debug={false}
+      debug={true}
       expires={150}
       location="bottom"
       buttonText="Accept"
@@ -62,10 +62,10 @@ export const CookieNotice = () => {
         We use cookies.
       </Text>
       <Text size="2" css={{ fontWeight: '500', width: '60vw', fontSize: '11px', lineHeight: '1.3' }}>
-        We use cookies to personalise content and ads, to provide social media features and to analyse our traffic. We
-        also share information about your use of our site with our social media, advertising and analytics partners who
-        may combine it with other information that you’ve provided to them or that they’ve collected from your use of
-        their services.
+        Our websites and online services may use “cookies.” Cookies enable you to use shopping carts and to personalize
+        your experience on our sites, tell us which parts of our websites people have visited, help us measure the
+        effectiveness of ads and web searches, and give us insights into user behavior so we can improve our
+        communications and products.
       </Text>
     </CookieConsent>
   );
