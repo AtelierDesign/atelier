@@ -29,7 +29,6 @@ import { Paragraph } from '@atelier/paragraph';
 import { EightySection } from '@components/EightySection';
 import { FooterMain } from '@components/Framework/FooterMain';
 import { GradientButton } from '@components/Buttons/AtelierButton';
-import { DesktopPanel } from '@ui/index/MenuLink';
 
 // IMAGES
 import fourPng from '../public/img/four.png';
@@ -106,7 +105,6 @@ const Atelier = () => {
         <Box>
           <CookieNotice />
           <Navbar />
-          <DesktopPanel />
           <Hero />
         </Box>
 

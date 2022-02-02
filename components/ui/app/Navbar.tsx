@@ -77,7 +77,7 @@ export const Navbar = () => {
             </Link>
           </NextLink>
 
-          <NextLink href="/atelier" passHref>
+          <NextLink href="/showcase" passHref>
             <Link variant="subtle" css={{ marginRight: '$3', color: '$gray12', '@sm': { marginRight: '$2' } }}>
               Showcase
             </Link>

@@ -22,7 +22,6 @@ const HeadingBox = styled('div', {
   left: '0',
   width: '80%',
   height: '50%',
-
   margin: 'auto',
   padding: '20px',
 });
@@ -149,6 +148,36 @@ const Showcase = () => {
               <Image
                 className="color__swirl"
                 src="https://cdn.ady.systems/ady.images/four.png"
+                placeholder="blur"
+                blurDataURL={BLUR_DATA_THREE}
+                layout="fill"
+                objectFit="cover"
+                alt="image"
+                objectPosition="absolute"
+              />
+            </Box>
+          </ShowcaseComp>
+        </Container>
+
+        <Container size="3" css={{}}>
+          <ShowcaseComp>
+            <HeadingBox>
+              <Heading
+                css={{
+                  fontSize: '26px',
+                  fontWeight: '600',
+
+                  '@sm': {
+                    fontSize: '22px',
+                  },
+                }}>
+                Showcase Three
+              </Heading>
+            </HeadingBox>
+            <Box css={{ borderRadius: '26px' }}>
+              <Image
+                className="color__swirl"
+                src="https://cdn.ady.systems/ady.images/one.png"
                 placeholder="blur"
                 blurDataURL={BLUR_DATA_THREE}
                 layout="fill"
