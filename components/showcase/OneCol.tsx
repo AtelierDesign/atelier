@@ -3,7 +3,7 @@ import { Container } from '@atelier/container';
 import { Grid } from '@atelier/grid';
 import { Text } from '@atelier/text';
 import { Heading } from '@atelier/heading';
-import { TimeCode } from '@components/Time/TimeCode';
+import { TimeCode } from '@fnctns/TimeCode';
 import { Button } from '@atelier/button';
 import { ExternalLinkIcon } from '@radix-ui/react-icons';
 import Image from 'next/image';

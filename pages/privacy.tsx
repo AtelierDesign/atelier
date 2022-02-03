@@ -9,9 +9,10 @@ import { Section } from '@atelier/section';
 import { Heading } from '@atelier/heading';
 import { Text } from '@atelier/text';
 import { Navbar } from '@ui/app/Navbar';
+import { FooterMain } from '@ui/app/FooterMain';
+
 import { SmallSpacer } from '@components/SmallSpacer';
 import { Spacer } from '@components/Spacer';
-import { FooterMain } from '@components/Framework/FooterMain';
 
 const PrivacyPolicy = () => {
   return (

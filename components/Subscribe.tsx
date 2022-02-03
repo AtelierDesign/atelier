@@ -5,7 +5,7 @@ import { Box } from '@atelier/box';
 import { Heading } from '@atelier/heading';
 import { Text } from '@atelier/text';
 import { Container } from '@atelier/container';
-import { DefaultButton } from '@components/DefaultButton';
+import { DefaultButton } from '@ui/buttons/DefaultButton';
 
 /*
 const KlaviyoClient = new Klaviyo({

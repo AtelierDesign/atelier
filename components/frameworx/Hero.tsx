@@ -8,9 +8,9 @@ import { Heading } from '@atelier/heading';
 import { Flex } from '@atelier/flex';
 import { Paragraph } from '@atelier/paragraph';
 import { ExternalLinkIcon, RocketIcon } from '@radix-ui/react-icons';
-import { AtelierButton } from '@components/Buttons/AtelierButton';
-import { GradientButton } from '@components/Buttons/AtelierButton';
-import { TimeCode } from '@components/Time/TimeCode';
+import { AtelierButton } from '@ui/buttons/AtelierButton';
+import { GradientButton } from '@ui/buttons/AtelierButton';
+import { TimeCode } from '@fnctns/TimeCode';
 
 // STITCHES STYLED
 import { styled } from 'stitches.config';

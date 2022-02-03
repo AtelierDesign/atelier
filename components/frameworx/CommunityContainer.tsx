@@ -12,12 +12,11 @@ import { Heading } from '@atelier/heading';
 import { Paragraph } from '@atelier/paragraph';
 import { Container } from '@atelier/container';
 import { Grid } from '@atelier/grid';
-import { EightySection } from '@components/EightySection';
-import { FooterMain } from '@components/FooterMain';
+import { SocialSection } from '@frameworx/SocialSection';
+import { EightySection } from '@frameworx/EightySection';
+import { FooterMain } from '@ui/app/FooterMain';
 import { SmallSpacer } from '@components/SmallSpacer';
 import { Button } from '@atelier/button';
-
-import { SocialSection } from '@components/SocialSection';
 
 import { CursorArrowIcon } from '@radix-ui/react-icons';
 import btrfly from '../public/img/btrfly_g.jpg';

@@ -3,12 +3,12 @@ import React from 'react';
 import NextLink from 'next/link';
 import { Text } from '@atelier/text';
 import { Box } from '@atelier/box';
-import { ThemeSwitch } from '@components/ThemeSwitch';
-import { SmallButton } from '@components/Buttons/AtelierButton';
 import { Button } from '@atelier/button';
-import { GradientButton } from '@components/Buttons/AtelierButton';
-import { HoverCardComponent } from '@components/Function/HoverCard';
-import { AccordionComponent } from '@components/Function/Accordion';
+import { ThemeSwitch } from '@ui/app/ThemeSwitch';
+import { SmallButton } from '@ui/buttons/AtelierButton';
+import { GradientButton } from '@ui/buttons/AtelierButton';
+import { HoverCardComponent } from '@fnctns/HoverCard';
+import { AccordionComponent } from '@fnctns/Accordion';
 
 import { styled } from 'stitches.config';
 

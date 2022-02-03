@@ -9,8 +9,7 @@ import { Text } from '@atelier/text';
 import { Heading } from '@atelier/heading';
 import { Paragraph } from '@atelier/paragraph';
 import { Container } from '@atelier/container';
-import { DefaultButton } from '@components/DefaultButton';
-import { Button } from '@components/Buttons/AtelierButton';
+import { Button } from '@ui/buttons/AtelierButton';
 import { CaretRightIcon } from '@radix-ui/react-icons';
 
 // RADIX ICONS

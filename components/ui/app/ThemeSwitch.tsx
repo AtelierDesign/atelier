@@ -1,15 +1,21 @@
+// REACT IMPORTS
 import React from 'react';
-import { styled } from '@stitches/react';
-import { violet, mauve, blackA, whiteA } from '@radix-ui/colors';
-import * as SwitchPrimitive from '@radix-ui/react-switch';
 
+// Dependencies
+import * as SwitchPrimitive from '@radix-ui/react-switch';
+import { violet, mauve, blackA, whiteA } from '@radix-ui/colors';
+import { useTheme } from 'next-themes';
+
+// Atelier® Design System
 import { darkTheme } from 'stitches.config';
 import { Button } from '@atelier/button';
-import { useTheme } from 'next-themes';
+
+// Stitches
+import { styled } from '@stitches/react';
 
 const StyledSwitch = styled(SwitchPrimitive.Root, {
   all: 'unset',
-  width: 34,
+  width: 32,
   height: 16,
   backgroundColor: '$slate6',
   borderRadius: '9999px',
@@ -22,20 +28,15 @@ const StyledSwitch = styled(SwitchPrimitive.Root, {
 
 const StyledThumb = styled(SwitchPrimitive.Thumb, {
   display: 'block',
-  width: 13,
-  height: 13,
-  backgroundColor: '$blue10',
+  width: 11,
+  height: 11,
+  backgroundColor: '$lime9',
   borderRadius: '9999px',
-  // boxShadow: `0 2px 2px $lime9`,
+  boxShadow: `0 2px 2px $lime9`,
   transition: 'transform 100ms',
   transform: 'translateX(2px)',
   willChange: 'transform',
-
-  // WHEN CHECKED
-  '&[data-state="checked"]': {
-    transform: 'translateX(19px)',
-    backgroundColor: '$sand12',
-  },
+  '&[data-state="checked"]': { transform: 'translateX(19px)' },
 });
 
 // Exports
@@ -45,7 +46,6 @@ const SwitchThumb = StyledThumb;
 // Your app...
 const Flex = styled('div', { display: 'flex' });
 
-// COVER THEME SWITCH ONLY
 export const ThemeSwitch = props => {
   const { theme, setTheme } = useTheme();
 

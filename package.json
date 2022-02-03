@@ -9,9 +9,7 @@
     "format": "prettier --write .",
     "lint": "eslint . --ext ts --ext tsx --ext js",
     "test": "jest",
-    "test-all": "yarn lint && yarn type-check && yarn test",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "test-all": "yarn lint && yarn type-check && yarn test"
   },
   "lint-staged": {
     "*.@(ts|tsx)": [

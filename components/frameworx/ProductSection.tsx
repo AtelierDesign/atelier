@@ -9,8 +9,8 @@ import { Heading } from '@atelier/heading';
 import { Paragraph } from '@atelier/paragraph';
 import { Text } from '@atelier/text';
 import { Grid } from '@atelier/grid';
-import { SmallButton } from '@components/Buttons/AtelierButton';
-import { ArrowLink } from '@components/Buttons/ArrowLink';
+import { SmallButton } from '@ui/buttons/AtelierButton';
+import { ArrowLink } from '@ui/buttons/ArrowLink';
 
 import { styled } from '@stitches/react';
 

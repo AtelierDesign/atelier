@@ -7,8 +7,8 @@ import { Box } from '@atelier/box';
 import { Flex } from '@atelier/flex';
 import { Text } from '@atelier/text';
 import { Link } from '@atelier/link';
-import { ThemeSwitch } from '@components/Function/ThemeSwitch';
-import { PopoverPanel } from '@components/functions/PopoverPanel';
+import { ThemeSwitch } from '@ui/app/ThemeSwitch';
+import { PopoverPanel } from '@fnctns/PopoverPanel';
 import { CaretRightIcon } from '@radix-ui/react-icons';
 
 export const Navbar = () => {

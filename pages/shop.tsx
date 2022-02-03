@@ -11,9 +11,10 @@ import { Section } from '@atelier/section';
 import { Heading } from '@atelier/heading';
 import { Paragraph } from '@atelier/paragraph';
 import { Text } from '@atelier/text';
-import { Navbar } from '@components/Framework/Navbar';
-import { FooterMain } from '@components/Framework/FooterMain';
 import { Grid } from '@atelier/grid';
+
+import { Navbar } from '@ui/app/Navbar';
+import { FooterMain } from '@ui/app/FooterMain';
 
 // STITCHES.DEV
 import { styled } from '@stitches/react';

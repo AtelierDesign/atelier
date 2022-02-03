@@ -5,8 +5,9 @@
       "@atelier/*": ["atelier/*"],
       "@components/*": ["components/*"],
       "@ui/*": ["components/ui/*"],
-      "@functions/*": ["components/functions/*"],
-
+      "@frameworx/*": ["components/frameworx/*"],
+      "@fnctns/*": ["components/fnctns/*"],
+      "@web3/*": ["components/web3/*"],
       "@styles/*": ["styles/*"],
       "@utils/*": ["utils/*"],
       "@lib/*": ["lib/*"],

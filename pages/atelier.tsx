@@ -17,24 +17,26 @@ import { Box } from '@atelier/box';
 import { Text } from '@atelier/text';
 import { Container } from '@atelier/container';
 import { Grid } from '@atelier/grid';
-import { Navbar } from '@ui/app/Navbar';
-import { Hero } from '@components/Framework/Hero';
-import { AdobeAe } from '@components/AdobeAe';
-import { CommunityContainer } from '@components/CommunityContainer';
-import { AtelierSubscribe } from '@components/Function/AtelierSubscribe';
-import { ProductSection } from '@components/Framework/ProductSection';
-import { AccordionComponent } from '@components/Function/Accordion';
 import { Heading } from '@atelier/heading';
 import { Paragraph } from '@atelier/paragraph';
-import { EightySection } from '@components/EightySection';
-import { FooterMain } from '@components/Framework/FooterMain';
-import { GradientButton } from '@components/Buttons/AtelierButton';
+
+// User Interface ..
+import { Navbar } from '@ui/app/Navbar';
+import { FooterMain } from '@ui/app/FooterMain';
+import { Hero } from '@frameworx/Hero';
+import { GradientButton } from '@ui/buttons/AtelierButton';
+import { AdobeAe } from '@frameworx/AdobeAe';
+import { CommunityContainer } from '@frameworx/CommunityContainer';
+import { ProductSection } from '@frameworx/ProductSection';
+import { EightySection } from '@frameworx/EightySection';
+
+// UI .. fnctns
+import { AtelierSubscribe } from '@fnctns/AtelierSubscribe';
+import { AccordionComponent } from '@fnctns/Accordion';
+import { CookieNotice } from '@fnctns/CookieNotice';
 
 // IMAGES
 import fourPng from '../public/img/four.png';
-
-// COOKIE NOTICE
-import { CookieNotice } from '@components/functions/CookieNotice';
 
 // STYLED ITEMS
 import { styled } from 'stitches.config';

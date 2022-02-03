@@ -2,9 +2,9 @@ import { Container } from '@atelier/container';
 import { Grid } from '@atelier/grid';
 import { Box } from '@atelier/box';
 import NextLink from 'next/link';
-import { LogoLink } from '@components/LogoLink';
+import { LogoLink } from '@ui/index/LogoLink';
 import { Root as AccessibleIcon } from '@radix-ui/react-accessible-icon';
-import { InteroperableLogo } from '@components/Framework/InteroperableLogo';
+import { InteroperableLogo } from '@frameworx/InteroperableLogo';
 
 export const LogoSlide = () => {
   return (
