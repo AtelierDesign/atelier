@@ -33,6 +33,7 @@
     "@stitches/react": "^1.2.0",
     "@stripe/react-stripe-js": "^1.7.0",
     "@stripe/stripe-js": "^1.22.0",
+    "@supabase/supabase-js": "^1.30.0",
     "@szhsin/react-menu": "^2.3.2",
     "axios": "^0.24.0",
     "blurhash": "^1.1.4",

@@ -84,6 +84,8 @@ export default function Cover() {
 
                   '&:hover': {
                     color: '$gray10',
+                    WebkitFilter: 'blur(1px)',
+                    filter: 'blur(1px)',
                   },
                 }}>
                 ATELIER®
