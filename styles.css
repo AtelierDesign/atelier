@@ -1,14 +1,26 @@
 :root {
   /* Your default theme */
-  --background: white;
-  --foreground: black;
+  --bg: #fff;
+  --fg: #000;
 
   --colors-slate9: hsl(205 10.7% 78%);
   --from: #3cffd0;
   --to: #277ef4;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+html,
 body {
+  padding: 0;
+  height: -webkit-fill-available !important;
+}
+
+body {
+  min-height: 100vh;
+
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -19,14 +31,7 @@ body {
   min-height: -webkit-fill-available !important;
 }
 
-html {
-  height: -webkit-fill-available !important;
-}
-
-[data-theme='dark'] {
-  --background: black;
-  --foreground: white;
-}
+/* /////// */
 
 #root {
   height: 100%;

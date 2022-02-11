@@ -11,7 +11,7 @@ import { Text } from '@atelier/text';
 export const CookieNotice = () => {
   return (
     <CookieConsent
-      debug={true}
+      debug={false}
       expires={150}
       location="bottom"
       buttonText="Accept"

@@ -1,6 +1,8 @@
 import React from 'react';
-import { Formik } from 'formik';
-import { useFormik } from 'formik';
+// import { Formik } from 'formik';
+// import { useFormik } from 'formik';
+
+import { Subscribe } from '@fnctns/Subscribe';
 
 // STYLED ITEMS
 import { styled } from 'stitches.config';
@@ -18,6 +20,7 @@ const CoverBox = styled('div', {
 });
 
 export default () => {
+  /*
   // Pass the useFormik() hook initial form values and a submit function that will
   // be called when the form is submitted
   const formik = useFormik({
@@ -44,11 +47,7 @@ fetch('https://a.klaviyo.com/api/v2/list/SjPAZJ/subscribe?api_key=WiNjPw', optio
 
   return (
     <CoverBox>
-      <form onSubmit={formik.handleSubmit}>
-        <input id="email" name="email" type="email" onChange={formik.handleChange} value={formik.values.email} />
-
-        <button type="submit">Submit</button>
-      </form>
+      <Subscribe />
     </CoverBox>
   );
 };

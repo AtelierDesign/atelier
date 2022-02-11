@@ -58,6 +58,15 @@ export const button = css({
           color: '$white',
         },
       },
+      sky: {
+        backgroundColor: '$sky9',
+        color: '$white',
+
+        '&:hover': {
+          backgroundColor: '$sky8',
+          color: '$white',
+        },
+      },
       orange: {
         backgroundColor: '$orange9',
         color: '$white',

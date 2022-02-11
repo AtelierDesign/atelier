@@ -1,6 +1,5 @@
 // REACT & NEXT IMPORTS
 import React from 'react';
-import Head from 'next/head';
 import { useFormik } from 'formik';
 
 // ATELIER® DESIGN SYSTEM
@@ -14,20 +13,48 @@ import { ChevronRightIcon } from '@radix-ui/react-icons';
 
 // Subscribe Component
 export const AtelierSubscribe = () => {
+  const subscribe = async e => {
+    e.preventDefault();
+    setForm({ state: Form.Loading });
+
+    const res = await fetch('/api/subscribe', {
+      body: JSON.stringify({
+        email: inputEl.current.value,
+      }),
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      method: 'POST',
+    });
+
+    const { error } = await res.json();
+    if (error) {
+      setForm({
+        state: Form.Error,
+        message: error,
+      });
+      return;
+    }
+
+    trackGoal('JYFUFMSF', 0);
+    inputEl.current.value = '';
+    setForm({
+      state: Form.Success,
+      message: `Hooray! You're now on the list.`,
+    });
+  };
+
   const formik = useFormik({
     initialValues: {
       email: '',
     },
     onSubmit: values => {
-      alert(JSON.stringify(values, null, 2));
+      subscribe(JSON.stringify(values, null, 2));
     },
   });
 
   return (
     <Box>
-      <Head>
-        <title>Subscribe 2 Atelier®</title>
-      </Head>
       <Section size="2" css={{ paddingBottom: '5rem', paddingTop: '5rem', alignItems: 'center', textAlign: 'center' }}>
         <Container size="3" css={{ boxSizing: 'border-box' }}>
           {/* <!-- HEADING v1 --> */}

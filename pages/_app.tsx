@@ -36,8 +36,8 @@ const appWrapper = css({
 });
 
 const App = ({ Component, pageProps }: AppProps) => {
-  const router = useRouter();
   const { theme, setTheme } = useTheme();
+  const router = useRouter();
 
   globalCss(reset, {
     html: {
@@ -61,11 +61,14 @@ const App = ({ Component, pageProps }: AppProps) => {
   });
 
   return (
+    <ThemeProvider defaultTheme="system" forcedTheme={Component.theme || undefined}>
+      {/* <!--
     <ThemeProvider
       disableTransitionOnChange
       attribute="class"
       value={{ light: 'light-theme', dark: darkTheme.className }}
       defaultTheme="system">
+    --> */}
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
       </Head>

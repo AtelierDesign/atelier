@@ -80,7 +80,7 @@ export const CoverFooter = () => {
               display: 'none',
             },
           }}>
-          <NextLink href="/" passHref>
+          <NextLink href="/subscribe" passHref>
             <Link variant="subtle" css={{ marginRight: '$3', color: '$gray12', '@sm': { marginRight: '$2' } }}>
               Subscribe <ArrowRightIcon />
             </Link>
