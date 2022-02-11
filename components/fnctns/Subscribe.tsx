@@ -22,7 +22,6 @@ import { ChevronRightIcon } from '@radix-ui/react-icons';
 export const Subscribe = () => {
   const [form, setForm] = useState<FormState>({ state: Form.Initial });
   const inputEl = useRef(null);
-  // const { data } = useSWR<Subscribers>('/api/subscribers', fetcher);
 
   const subscribe = async e => {
     e.preventDefault();
@@ -47,7 +46,6 @@ export const Subscribe = () => {
       return;
     }
 
-    // trackGoal('JYFUFMSF', 0);
     inputEl.current.value = '';
     setForm({
       state: Form.Success,

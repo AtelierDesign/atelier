@@ -46,6 +46,11 @@ export default class Document extends NextDocument {
           <meta property="og:site_name" content="Atelier" />
           <meta property="og:type" content="website" />
           <meta property="og:url" content="https://www.ady.world/" />
+
+          <script
+            async
+            type="text/javascript"
+            src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=WiNjPw"></script>
         </Head>
         <body>
           <Main />

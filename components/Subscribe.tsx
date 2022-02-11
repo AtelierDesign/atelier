@@ -5,7 +5,7 @@ import { Box } from '@atelier/box';
 import { Heading } from '@atelier/heading';
 import { Text } from '@atelier/text';
 import { Container } from '@atelier/container';
-import { DefaultButton } from '@ui/buttons/DefaultButton';
+import { AtelierButton } from '@ui/buttons/AtelierButton';
 
 /*
 const KlaviyoClient = new Klaviyo({
@@ -31,9 +31,9 @@ export const Subscribe = () => {
         <div className="klaviyo-form-Y4dwX7"></div>
       </Container>
 
-      <DefaultButton css={{ color: '$gray12' }}>
+      <AtelierButton color="blue">
         <Text>Click to reload!</Text>
-      </DefaultButton>
+      </AtelierButton>
     </Box>
   );
 };
