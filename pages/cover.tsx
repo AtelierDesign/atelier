@@ -2,12 +2,14 @@
 import Head from 'next/head';
 import React from 'react';
 import NextLink from 'next/link';
+import Image from 'next/image';
 
 // ATELIER® DESIGN SYSTEM
 import { NormalLink } from '@atelier/normal-link';
 import { Text } from '@atelier/text';
 import { Box } from '@atelier/box';
 import { CoverFooter } from '@ui/cover/CoverFooter';
+import butterFly from '@public/svg/butterFly.svg';
 
 // STITCHES
 import { styled } from '@stitches/react';
@@ -74,6 +76,9 @@ export default function Cover() {
         <TextBox>
           <NextLink href="/atelier" passHref>
             <NormalLink variant="normal">
+              <Image src={butterFly} width={80} height={80} alt="ATELIER®" />
+
+              {/* <!--
               <Text
                 css={{
                   fontFamily: '$neuewide',
@@ -90,6 +95,7 @@ export default function Cover() {
                 }}>
                 ATELIER®
               </Text>
+              --> */}
             </NormalLink>
           </NextLink>
 

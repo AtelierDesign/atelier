@@ -12,7 +12,8 @@
       "@utils/*": ["utils/*"],
       "@lib/*": ["lib/*"],
       "@test/*": ["test/*"],
-      "@data/*": ["data/*"]
+      "@data/*": ["data/*"],
+      "@public/*": ["public/*"]
     },
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],

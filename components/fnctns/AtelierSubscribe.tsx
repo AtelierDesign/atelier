@@ -13,43 +13,12 @@ import { ChevronRightIcon } from '@radix-ui/react-icons';
 
 // Subscribe Component
 export const AtelierSubscribe = () => {
-  const subscribe = async e => {
-    e.preventDefault();
-    setForm({ state: Form.Loading });
-
-    const res = await fetch('/api/subscribe', {
-      body: JSON.stringify({
-        email: inputEl.current.value,
-      }),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      method: 'POST',
-    });
-
-    const { error } = await res.json();
-    if (error) {
-      setForm({
-        state: Form.Error,
-        message: error,
-      });
-      return;
-    }
-
-    trackGoal('JYFUFMSF', 0);
-    inputEl.current.value = '';
-    setForm({
-      state: Form.Success,
-      message: `Hooray! You're now on the list.`,
-    });
-  };
-
   const formik = useFormik({
     initialValues: {
       email: '',
     },
     onSubmit: values => {
-      subscribe(JSON.stringify(values, null, 2));
+      alert(JSON.stringify(values, null, 2));
     },
   });
 
