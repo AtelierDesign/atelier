@@ -9,7 +9,9 @@ import { NormalLink } from '@atelier/normal-link';
 import { Text } from '@atelier/text';
 import { Box } from '@atelier/box';
 import { CoverFooter } from '@ui/cover/CoverFooter';
-import butterFly from '@public/svg/butterFly.svg';
+import { Spacer } from '@components/Spacer';
+import blueButterfly from '@public/svg/blue_logo.svg';
+import tapeButterfly from '@public/img/btrfly/tapeButterfly.png';
 
 // STITCHES
 import { styled } from '@stitches/react';
@@ -76,38 +78,18 @@ export default function Cover() {
         <TextBox>
           <NextLink href="/atelier" passHref>
             <NormalLink variant="normal">
-              <Image src={butterFly} width={80} height={80} alt="ATELIER®" />
-
-              {/* <!--
-              <Text
-                css={{
-                  fontFamily: '$neuewide',
-                  fontSize: '26px',
-                  fontWeight: '900',
-                  letterSpacing: '-0.05rem',
-                  color: '$gray12',
-
-                  '&:hover': {
-                    color: '$gray10',
-                    WebkitFilter: 'blur(1px)',
-                    filter: 'blur(1px)',
-                  },
-                }}>
-                ATELIER®
-              </Text>
-              --> */}
+              <Image src={blueButterfly} width={90} height={90} alt="ATELIER®" />
             </NormalLink>
           </NextLink>
 
-          <Text css={{ fontWeight: '600', fontSize: '12px', lineHeight: '1.3' }}>
+          <Text css={{ fontWeight: '600', fontSize: '13px', lineHeight: '1' }}>
             An ongoing [ <strong>Web3</strong> ] project.
           </Text>
         </TextBox>
       </CoverBox>
-
-      {/* <!-- IMAGE UNDER COVER -->
-      <Image src="https://cdn.ady.systems/ady.images/btrfly.png" alt="One" layout="fill" objectFit="cover" />
-      <!-- IMAGE UNDER COVER --> */}
+      {/* <!--
+      <Image src={tapeButterfly} alt="One" layout="fill" objectFit="cover" />
+      --> */}
     </Box>
   );
 }

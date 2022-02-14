@@ -111,7 +111,7 @@ const Atelier = () => {
         </Box>
 
         <EightySection>
-          <Container size="3" css={{ paddingTop: '120px' }}>
+          <Container size="2" css={{ paddingTop: '120px', px: '20px' }}>
             <Heading
               size="4"
               css={{
@@ -126,12 +126,14 @@ const Atelier = () => {
                   paddingBottom: '10px',
                 },
               }}>
-              <strong>ADY</strong>® Packs
+              <strong>Most</strong>Desired.
             </Heading>
 
             <Paragraph
               size="2"
               css={{
+                margin: 'auto',
+                maxWidth: '80%',
                 textAlign: 'center',
                 fontSize: '18px',
                 fontWeight: '500',
@@ -139,84 +141,85 @@ const Atelier = () => {
                 color: '$gray11',
                 mb: '40px',
                 '@sm': {
+                  maxWidth: '100%',
+                  width: '100%',
+                  margin: '0',
                   textAlign: 'left',
                   fontSize: '16px',
                 },
-                '@bp2': {
-                  ta: 'center',
-                  mb: '60px',
-                  lineHeight: '1.3',
-                },
-                '@bp3': {
-                  ta: 'center',
+                '@md': {
+                  ta: 'left',
                   mb: '60px',
                   lineHeight: '1.3',
                 },
               }}>
-              <strong>Essential</strong>® design components for your projects.
+              The <strong>best-selling</strong> products that ADY® has to offer. These are essential design components
+              for your next project.
             </Paragraph>
-
-            {/* <!-- CARDS CONTAINER --> */}
-            <Container
-              size="3"
-              css={{ overflowY: 'visible', height: 'auto', paddingTop: '10px', paddingBottom: '80px', px: '0px' }}>
-              <Grid
-                css={{
-                  height: 'auto',
-                  gap: '10px',
-                  gridTemplateColumns: '1fr 1fr',
-                  '@sm': {
-                    gap: '10px',
-                    gridTemplateColumns: '1fr',
-                  },
-                }}>
-                {/* <!-- BOX ONE --> */}
-                <Box>
-                  <Card>
-                    <Box css={{ position: 'absolute', bottom: '0', left: '0', margin: '30px' }}>
-                      <Text size="2" css={{ fontWeight: '800', lineHeight: '1.2' }}>
-                        SFX. 001
-                      </Text>
-                    </Box>
-                    <Image
-                      className="color__swirl"
-                      src="https://cdn.ady.systems/ady.images/one.png"
-                      layout="fill"
-                      objectFit="cover"
-                      alt="image"
-                      objectPosition="absolute"
-                    />
-                  </Card>
-                </Box>
-
-                {/* <!-- BOX TWO --> */}
-                <Box>
-                  <Card>
-                    <Box css={{ position: 'absolute', bottom: '0', left: '0', margin: '30px' }}>
-                      <Text size="2" css={{ fontWeight: '800', lineHeight: '1.2' }}>
-                        INTERVAL. v001
-                      </Text>
-                    </Box>
-                    <Image
-                      className="color__swirl"
-                      src="https://cdn.ady.systems/ady.images/four.png"
-                      layout="fill"
-                      objectFit="cover"
-                      alt="image"
-                      objectPosition="absolute"
-                    />
-                  </Card>
-                </Box>
-              </Grid>
-            </Container>
-
-            {/* <!-- ADOBE® AE SECTION --> */}
-            <Container size="3" css={{ padding: '0', margin: '0' }}>
-              <AdobeAe />
-            </Container>
-
-            {/* <!-- END CARDS CONTAINER --> */}
           </Container>
+
+          {/* <!-- CARDS CONTAINER --> */}
+          <Container
+            size="3"
+            css={{ overflowY: 'visible', height: 'auto', paddingTop: '10px', paddingBottom: '80px', px: 'auto' }}>
+            <Grid
+              css={{
+                height: 'auto',
+                gap: '10px',
+                gridTemplateColumns: '1fr 1fr',
+                '@sm': {
+                  gap: '10px',
+                  gridTemplateColumns: '1fr',
+                },
+              }}>
+              {/* <!-- BOX ONE --> */}
+              <Box>
+                <Card>
+                  <Box css={{ position: 'absolute', bottom: '0', left: '0', margin: '30px' }}>
+                    <Text size="2" css={{ fontWeight: '800', lineHeight: '1.2' }}>
+                      SFX. 001
+                    </Text>
+                  </Box>
+                  <Image
+                    className="color__swirl"
+                    src="https://cdn.ady.systems/ady.images/one.png"
+                    layout="fill"
+                    objectFit="cover"
+                    alt="image"
+                    objectPosition="absolute"
+                  />
+                </Card>
+              </Box>
+
+              {/* <!-- BOX TWO --> */}
+              <Box>
+                <Card>
+                  <Box css={{ position: 'absolute', bottom: '0', left: '0', margin: '30px' }}>
+                    <Text size="2" css={{ fontWeight: '800', lineHeight: '1.2' }}>
+                      INTERVAL. v001
+                    </Text>
+                  </Box>
+                  <Image
+                    className="color__swirl"
+                    src="https://cdn.ady.systems/ady.images/four.png"
+                    layout="fill"
+                    objectFit="cover"
+                    alt="image"
+                    objectPosition="absolute"
+                  />
+                </Card>
+              </Box>
+            </Grid>
+          </Container>
+
+          {/* <!-- ADOBE® AE SECTION --> */}
+          <Container
+            size="3"
+            css={{ overflowY: 'visible', height: 'auto', paddingTop: '10px', paddingBottom: '80px', px: 'auto' }}>
+            <AdobeAe />
+          </Container>
+
+          {/* <!-- END CARDS CONTAINER --> */}
         </EightySection>
 
         {/* <!-- PRODUCT SECTION --> */}

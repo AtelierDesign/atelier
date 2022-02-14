@@ -9,7 +9,7 @@ import { Text } from '@atelier/text';
 import { Heading } from '@atelier/heading';
 import { Paragraph } from '@atelier/paragraph';
 import { Container } from '@atelier/container';
-import { Button } from '@ui/buttons/AtelierButton';
+import { AtelierButton } from '@ui/buttons/AtelierButton';
 import { CaretRightIcon } from '@radix-ui/react-icons';
 
 // RADIX ICONS
@@ -70,12 +70,12 @@ export const AdobeAe = () => {
 
           <Link href="/welcome" passHref>
             <a>
-              <Button color="lime">
+              <AtelierButton color="blue">
                 Learn More
                 <Box css={{ display: 'inline', ml: '$1' }}>
                   <CaretRightIcon />
                 </Box>
-              </Button>
+              </AtelierButton>
             </a>
           </Link>
         </Container>
