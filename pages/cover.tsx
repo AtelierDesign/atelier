@@ -76,7 +76,7 @@ export default function Cover() {
       <CoverBox>
         <CoverFooter />
         <TextBox>
-          <NextLink href="/atelier" passHref>
+          <NextLink href="/" passHref>
             <NormalLink variant="normal">
               <Image src={blueButterfly} width={90} height={90} alt="ATELIER®" />
             </NormalLink>
