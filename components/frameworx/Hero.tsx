@@ -115,7 +115,7 @@ export const Hero = () => {
             },
           }}>
           <Link href="/shop" passHref>
-            <AtelierButton color="sky">
+            <AtelierButton color="blue">
               <span>Latest Release</span>
               {` `}
               <RocketIcon />
