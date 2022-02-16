@@ -11,7 +11,7 @@ import { styled } from 'stitches.config';
 const BlueBox = styled('div', {
   zIndex: '2',
   position: 'absolute',
-  top: '50%',
+  top: '40%',
   left: '50%',
   transform: 'translate(-50%, -50%)',
   width: '100%',
@@ -30,6 +30,10 @@ const Interval = () => {
           </Section>
         </BlueBox>
       </Box>
+
+      <Section size="2">
+        <Heading size="3">Hi</Heading>
+      </Section>
     </Box>
   );
 };

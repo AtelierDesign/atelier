@@ -22,6 +22,7 @@ import { css, globalCss, darkTheme } from 'stitches.config';
 import { reset } from '@styles/reset';
 
 // MAIN STYLE IMPORTS
+import '@styles/chrome-bug.css';
 import '@styles/inter.css';
 import '@styles/jetbrains.css';
 import '@styles/neue-plak.css';
