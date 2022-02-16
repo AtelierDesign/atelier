@@ -10,6 +10,8 @@
 import React from 'react';
 import Head from 'next/head';
 import { AppProps } from 'next/app';
+import { useState, useEffect } from 'react';
+import { supabase } from '@lib/client';
 
 // FUNCTIONS
 import { ThemeProvider } from 'next-themes';
@@ -39,6 +41,39 @@ const appWrapper = css({
 const App = ({ Component, pageProps }: AppProps) => {
   const { theme, setTheme } = useTheme();
   const router = useRouter();
+
+  // Set User
+  const [authenticatedState, setAuthenticatedState] = useState('not-authenticated');
+  useEffect(() => {
+    const { data: authListener } = supabase.auth.onAuthStateChange((event, session) => {
+      handleAuthChange(event, session);
+      if (event === 'SIGNED_IN') {
+        setAuthenticatedState('authenticated');
+        router.push('/profile');
+      }
+      if (event === 'SIGNED_OUT') {
+        setAuthenticatedState('not-authenticated');
+      }
+    });
+    checkUser();
+    return () => {
+      authListener.unsubscribe();
+    };
+  }, []);
+  async function checkUser() {
+    const user = await supabase.auth.user();
+    if (user) {
+      setAuthenticatedState('authenticated');
+    }
+  }
+  async function handleAuthChange(event, session) {
+    await fetch('/api/auth', {
+      method: 'POST',
+      headers: new Headers({ 'Content-Type': 'application/json' }),
+      credentials: 'same-origin',
+      body: JSON.stringify({ event, session }),
+    });
+  }
 
   globalCss(reset, {
     html: {

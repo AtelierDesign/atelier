@@ -116,9 +116,9 @@ export const Navbar = () => {
 
           {/* <!-- JSX ELEMENT --> */}
           <Link
-            href="https://api.ady.world"
-            target="_blank"
-            rel="norefferer"
+            href="/login"
+            // target="_blank"
+            // rel="norefferer"
             css={{
               fontSize: '13px',
               color: '$gray12',
@@ -132,7 +132,7 @@ export const Navbar = () => {
               '@sm': { display: 'none', mr: '$3' },
               '&:hover': { cursor: 'pointer' },
             }}>
-            Sign In
+            Log In
           </Link>
           {/* <!-- -->*/}
 

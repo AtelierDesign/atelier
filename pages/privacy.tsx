@@ -23,7 +23,7 @@ const PrivacyPolicy = () => {
 
       <Navbar />
 
-      <Section size="1">
+      <Section size="2">
         <Container size="3" css={{ ai: 'center', paddingTop: '100px', margin: 'auto', textAlign: 'center' }}>
           <Heading size="4">Privacy</Heading>
           <Text as="p" css={{ fontWeight: '400', fontSize: '14px', lineHeight: '4', color: '$gray11' }}>
