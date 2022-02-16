@@ -20,7 +20,7 @@ export const ShowcaseComp = ({ children }) => {
             gridTemplateColumns: 'repeat(1, minmax(0, 1fr))',
             gap: '$2',
             bc: '$translucent',
-            br: '26px',
+            br: '0px',
             px: '0px',
             border: '1px solid',
             borderColor: '$slate6',

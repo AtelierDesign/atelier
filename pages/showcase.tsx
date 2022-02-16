@@ -11,6 +11,7 @@ import { Container } from '@atelier/container';
 import { Section } from '@atelier/section';
 import { Heading } from '@atelier/heading';
 import { Text } from '@atelier/text';
+import { FooterMain } from '@ui/app/FooterMain';
 
 import { ShowcaseComp } from '@components/showcase/ShowcaseComp';
 
@@ -49,6 +50,7 @@ const Showcase = () => {
 
       <Box
         css={{
+          paddingBottom: '100px',
           bc: '$slate1',
           overflow: 'auto',
           height: '100vh',
@@ -59,7 +61,7 @@ const Showcase = () => {
             // display: 'none',
           },
         }}>
-        <Section size="1">
+        <Section size="2">
           <Container
             size="3"
             css={{ ai: 'center', paddingTop: '120px', paddingBottom: '40px', margin: 'auto', textAlign: 'center' }}>
@@ -87,7 +89,7 @@ const Showcase = () => {
                 <span>Showcase One</span>
               </Heading>
             </HeadingBox>
-            <Box css={{ borderRadius: '26px' }}>
+            <Box css={{ borderRadius: '0px' }}>
               <Image
                 src="https://cdn.ady.systems/ady.images/one.png"
                 placeholder="blur"
@@ -116,7 +118,7 @@ const Showcase = () => {
                 <span>Showcase Two</span>
               </Heading>
             </HeadingBox>
-            <Box css={{ borderRadius: '26px' }}>
+            <Box css={{ borderRadius: '0px' }}>
               <Image
                 src="https://cdn.ady.systems/ady.images/five.png"
                 placeholder="blur"
@@ -145,9 +147,8 @@ const Showcase = () => {
                 Showcase Three
               </Heading>
             </HeadingBox>
-            <Box css={{ borderRadius: '26px' }}>
+            <Box css={{ borderRadius: '0px' }}>
               <Image
-                className="color__swirl"
                 src="https://cdn.ady.systems/ady.images/four.png"
                 placeholder="blur"
                 blurDataURL={BLUR_DATA_THREE}
@@ -160,7 +161,7 @@ const Showcase = () => {
           </ShowcaseComp>
         </Container>
 
-        <Container size="3" css={{}}>
+        <Container size="3" css={{ paddingBottom: '100px' }}>
           <ShowcaseComp>
             <HeadingBox>
               <Heading
@@ -175,9 +176,8 @@ const Showcase = () => {
                 Showcase Three
               </Heading>
             </HeadingBox>
-            <Box css={{ borderRadius: '26px' }}>
+            <Box css={{ borderRadius: '0px' }}>
               <Image
-                className="color__swirl"
                 src="https://cdn.ady.systems/ady.images/one.png"
                 placeholder="blur"
                 blurDataURL={BLUR_DATA_THREE}
@@ -189,62 +189,11 @@ const Showcase = () => {
             </Box>
           </ShowcaseComp>
         </Container>
+
+        <FooterMain />
       </Box>
     </Box>
   );
 };
 
 export default Showcase;
-
-/*
-import * as React from "react";
-import { InferGetStaticPropsType } from "next";
-import Image from "next/image";
-import { getPlaiceholder } from "plaiceholder";
-import { config } from "@/config";
-import { getAllUnsplashImagePaths } from "@/lib/images";
-import { Layout } from "@/components/layout";
-import { ImageGrid, ImageGridItem } from "@/components/image-grid";
-
-export const getStaticProps = async () => {
-  const imagePaths = getAllUnsplashImagePaths();
-
-  const images = await Promise.all(
-    imagePaths.map(async (src) => {
-      const { base64, img } = await getPlaiceholder(src);
-
-      return {
-        ...img,
-        alt: "Paint Splashes",
-        title: "Photo from Unsplash",
-        blurDataURL: base64,
-      };
-    })
-  ).then((values) => values);
-
-  return {
-    props: {
-      images,
-      title: config.examples.pages.base64.title,
-      heading: config.examples.variants.multiple.title,
-    },
-  };
-};
-
-const PageSVGMultiple: React.FC<
-  InferGetStaticPropsType<typeof getStaticProps>
-> = ({ title, heading, images }) => (
-  <Layout variant="example" title={title} heading={heading}>
-    <ImageGrid>
-      {images.map((imageProps) => (
-        <ImageGridItem key={imageProps.src}>
-          <Image {...imageProps} placeholder="blur" />
-        </ImageGridItem>
-      ))}
-    </ImageGrid>
-  </Layout>
-);
-
-export default PageSVGMultiple;
-
-*/
