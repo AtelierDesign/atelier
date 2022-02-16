@@ -6,6 +6,8 @@ import * as HoverCardPrimitive from '@radix-ui/react-hover-card';
 import { keyframes } from '@stitches/react';
 import { mauve } from '@radix-ui/colors';
 
+import Avatar from 'boring-avatars';
+
 // ATELIER® DESIGN SYSTEM
 import { styled } from 'stitches.config';
 import { Text } from '@atelier/text';
@@ -90,13 +92,23 @@ export const HoverCardComponent = () => (
   <>
     <HoverCard>
       <HoverCardTrigger asChild>
-        <ImageTrigger href="https://twitter.com/radix_ui" target="_blank" rel="noreferrer noopener">
-          <Img src="https://pbs.twimg.com/profile_images/1485391663489073152/sEjulX4__normal.jpg" />
+        <ImageTrigger href="/welcome">
+          <Avatar
+            size={40}
+            name="ADY®"
+            variant="marble"
+            colors={['#92A1C6', '#146A7C', '#F0AB3D', '#C271B4', '#C20D90']}
+          />
         </ImageTrigger>
       </HoverCardTrigger>
       <HoverCardContent sideOffset={5}>
         <Flex css={{ flexDirection: 'column', gap: 7 }}>
-          <Img size="large" src="https://pbs.twimg.com/profile_images/1485391663489073152/sEjulX4__bigger.jpg" />
+          <Avatar
+            size={50}
+            name="ADY®"
+            variant="marble"
+            colors={['#92A1C6', '#146A7C', '#F0AB3D', '#C271B4', '#C20D90']}
+          />
 
           <Flex css={{ flexDirection: 'column', gap: 15 }}>
             <Text css={{ color: '$gray12', fontFamily: '$inter' }}>

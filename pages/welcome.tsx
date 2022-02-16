@@ -65,11 +65,6 @@ const Welcome = () => {
               <span>Small Gradient</span>
             </GradientButton>
           </NextLink>
-          <br></br>
-
-          <br></br>
-
-          <AccordionComponent />
         </ButtonBox>
 
         <ThemeBox>
