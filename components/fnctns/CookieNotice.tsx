@@ -41,7 +41,7 @@ export const CookieNotice = () => {
       }}
       buttonStyle={{
         backgroundColor: 'transparent',
-        color: '#FFF',
+        color: '#000',
         fontSize: '13px',
         paddingTop: '6px',
         paddingBottom: '8px',
@@ -74,10 +74,9 @@ export const CookieNotice = () => {
             width: '100%',
           },
         }}>
-        Our websites and online services may use “cookies.” Cookies enable you to use shopping carts and to personalize
-        your experience on our sites, tell us which parts of our websites people have visited, help us measure the
-        effectiveness of ads and web searches, and give us insights into user behavior so we can improve our
-        communications and products.
+        Our websites and online services may use “cookies.” Cookies enable you to use shopping carts and to personalize your experience on
+        our sites, tell us which parts of our websites people have visited, help us measure the effectiveness of ads and web searches, and
+        give us insights into user behavior so we can improve our communications and products.
       </Text>
     </CookieConsent>
   );
