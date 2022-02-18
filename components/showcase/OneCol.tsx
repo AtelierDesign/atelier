@@ -35,10 +35,6 @@ const TimeDisplay = styled('div', {
   },
 });
 
-const adyLoader = ({ src, width, quality }) => {
-  return `https://ady.world${src}?w=${width}&q=${quality || 75}`;
-};
-
 export const OneCol = () => {
   return (
     <Box css={{ bc: '$slate1' }}>
@@ -116,7 +112,6 @@ export const OneCol = () => {
           </Box>
           <div className="color__box">
             <Image
-              loader={adyLoader}
               className="color__swirl"
               src="/img/blue-swirl.png"
               layout="fill"
