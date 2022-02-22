@@ -68,13 +68,12 @@ export const CookieNotice = () => {
             fontWeight: '500',
             width: '60vw',
             fontSize: '12px',
-            lineHeight: '1.3',
-
+            lineHeight: 'normal',
+            margin: '0',
             '@sm': {
               width: '100%',
             },
-
-            '&:a': {
+            '&:active': {
               color: '$gray12',
             },
           }}>
@@ -86,7 +85,7 @@ export const CookieNotice = () => {
               </strong>
             </a>
           </Link>{' '}
-          or fint out{' '}
+          or find out{' '}
           <Link href="/privacy" passHref>
             <a>
               <strong>
