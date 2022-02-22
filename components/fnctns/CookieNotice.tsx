@@ -1,8 +1,10 @@
 // REACT IMPORTS
 import React from 'react';
+import Link from 'next/link';
 
 // DEPENDENCIES
 import CookieConsent from 'react-cookie-consent';
+import { Container } from '@atelier/container';
 
 // ATELIER® DESIGN SYSTEM
 import { Text } from '@atelier/text';
@@ -10,74 +12,91 @@ import { Text } from '@atelier/text';
 // Cookie Banner Component
 export const CookieNotice = () => {
   return (
-    <CookieConsent
-      debug={false}
-      expires={150}
-      location="bottom"
-      buttonText="Accept"
-      cookieName="AtelierCookie001"
-      style={{
-        display: 'flex',
-        flexDirection: 'row',
-        border: '1px solid #231F20',
-        borderTopWidth: '1px',
-        borderBottomWidth: '0',
-        borderLeftWidth: '0',
-        borderRightWidth: '0',
-        background: 'rgba(240, 240, 240, 0.5)',
-        backdropFilter: 'blur(10px)',
-        WebkitBackdropFilter: 'blur(10px)',
-        saturate: '200%',
-        color: '#231F20',
-        paddingTop: '10px',
-        paddingBottom: '10px',
-        paddingLeft: '6px',
-        paddingRight: '6px',
+    <div className="cookie_bar">
+      <CookieConsent
+        debug={true}
+        expires={150}
+        location="bottom"
+        buttonText="Accept"
+        cookieName="AtelierCookie001"
+        style={{
+          textAlign: 'center',
+          alignItems: 'center',
+          display: 'flex',
+          flexDirection: 'row',
+          border: '1px solid #231F20',
+          //borderTopWidth: '1px',
+          //borderBottomWidth: '0',
+          //  borderLeftWidth: '0',
+          //borderRightWidth: '0',
+          borderRadius: '32px',
+          background: 'rgba(240, 240, 240, 0.5)',
+          backdropFilter: 'blur(10px)',
+          WebkitBackdropFilter: 'blur(10px)',
+          saturate: '200%',
+          color: '#231F20',
+          paddingTop: '4px',
+          paddingBottom: '4px',
+          paddingLeft: '6px',
+          paddingRight: '6px',
+          width: 'auto',
+          margin: '10px',
 
-        '@500px': {
-          flexDirection: 'column',
-          width: '100%',
-        },
-      }}
-      buttonStyle={{
-        backgroundColor: 'transparent',
-        color: '#000',
-        fontSize: '13px',
-        paddingTop: '6px',
-        paddingBottom: '8px',
-        paddingLeft: '14px',
-        paddingRight: '14px',
-        borderRadius: '4px',
-        fontFamily: "'Inter', sans-serif'",
-        fontWeight: '600',
-      }}>
-      <Text
-        css={{
-          // textTransform: 'uppercase',
-          fontFamily: '$inter',
-          fontSize: '16px',
-          fontWeight: 'bold',
-          paddingBottom: '7px',
-          lineHeight: '1.3',
-        }}>
-        We use cookies.
-      </Text>
-      <Text
-        size="2"
-        css={{
-          fontWeight: '500',
-          width: '60vw',
-          fontSize: '12px',
-          lineHeight: '1.3',
-
-          '@sm': {
+          '@md': {
+            flexDirection: 'column',
             width: '100%',
+            paddingLeft: '10px',
+            paddingRight: '10px',
           },
+        }}
+        buttonStyle={{
+          display: 'none',
+          backgroundColor: 'transparent',
+          color: '#000',
+          fontSize: '13px',
+          paddingTop: '6px',
+          paddingBottom: '8px',
+          paddingLeft: '14px',
+          paddingRight: '14px',
+          borderRadius: '4px',
+          fontFamily: "'Inter', sans-serif'",
+          fontWeight: '600',
         }}>
-        Our websites and online services may use “cookies.” Cookies enable you to use shopping carts and to personalize your experience on
-        our sites, tell us which parts of our websites people have visited, help us measure the effectiveness of ads and web searches, and
-        give us insights into user behavior so we can improve our communications and products.
-      </Text>
-    </CookieConsent>
+        <Text
+          size="2"
+          css={{
+            fontWeight: '500',
+            width: '60vw',
+            fontSize: '12px',
+            lineHeight: '1.3',
+
+            '@sm': {
+              width: '100%',
+            },
+
+            '&:a': {
+              color: '$gray12',
+            },
+          }}>
+          This website uses cookies.{' '}
+          <Link href="/privacy" passHref>
+            <a>
+              <strong>
+                <u>Accept</u>
+              </strong>
+            </a>
+          </Link>{' '}
+          or fint out{' '}
+          <Link href="/privacy" passHref>
+            <a>
+              <strong>
+                <u>More</u>
+              </strong>
+            </a>
+          </Link>
+          .
+        </Text>
+      </CookieConsent>
+    </div>
   );
 };
