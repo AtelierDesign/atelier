@@ -50,10 +50,10 @@ export const ProductSection = () => {
           <Box>
             <Card>
               <Box css={{ position: 'absolute', bottom: '0', left: '0', margin: '20px' }}>
-                <Text size="3" css={{ fontWeight: '600', lineHeight: '1.2' }}>
+                <Text size="3" css={{ fontWeight: '600', lineHeight: '2' }}>
                   Interval
                 </Text>
-                <Text size="1" css={{ fontWeight: '400', fontSize: '12px', lineHeight: '2' }}>
+                <Text size="1" css={{ fontWeight: '400', fontSize: '12px', lineHeight: '1.5' }}>
                   Shop early for the best selection of holiday favorites.
                   <br />
                   <br />
@@ -70,10 +70,10 @@ export const ProductSection = () => {
           <Box>
             <Card>
               <Box css={{ position: 'absolute', bottom: '0', left: '0', margin: '20px' }}>
-                <Text size="3" css={{ fontWeight: '600', lineHeight: '1.2' }}>
+                <Text size="3" css={{ fontWeight: '600', lineHeight: '2' }}>
                   Interval
                 </Text>
-                <Text size="1" css={{ fontWeight: '400', fontSize: '12px', lineHeight: '2' }}>
+                <Text size="1" css={{ fontWeight: '400', fontSize: '12px', lineHeight: '1.5' }}>
                   Shop early for the best selection of holiday favorites.
                   <br />
                   <br />
@@ -90,10 +90,10 @@ export const ProductSection = () => {
           <Box>
             <Card>
               <Box css={{ position: 'absolute', bottom: '0', left: '0', margin: '20px' }}>
-                <Text size="3" css={{ fontWeight: '600', lineHeight: '1.2' }}>
+                <Text size="3" css={{ fontWeight: '600', lineHeight: '2' }}>
                   Interval
                 </Text>
-                <Text size="1" css={{ fontWeight: '400', fontSize: '12px', lineHeight: '2' }}>
+                <Text size="1" css={{ fontWeight: '400', fontSize: '12px', lineHeight: '1.5' }}>
                   Shop early for the best selection of holiday favorites.
                   <br />
                   <br />
