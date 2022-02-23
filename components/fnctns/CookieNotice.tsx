@@ -14,13 +14,13 @@ export const CookieNotice = () => {
   return (
     <div className="cookie_bar">
       <CookieConsent
-        debug={true}
+        debug={false}
         expires={150}
         location="bottom"
         buttonText="Accept"
         cookieName="AtelierCookie001"
         style={{
-          height: '40px',
+          height: '48px',
           zIndex: '9999',
           right: '0',
           textAlign: 'center',
@@ -56,7 +56,7 @@ export const CookieNotice = () => {
           position: 'relative',
           display: 'inline-flex',
           flexDirection: 'row',
-          backgroundColor: '#83c5be',
+          backgroundColor: '#231f20',
           color: '#fff',
           fontSize: '13px',
           paddingTop: '3px',
@@ -68,7 +68,7 @@ export const CookieNotice = () => {
           fontWeight: '600',
           margin: 'auto',
           height: '32px',
-          lineHeight: 'normal',
+          lineHeight: '1.9',
         }}>
         <Text
           size="2"
