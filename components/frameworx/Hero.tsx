@@ -102,8 +102,8 @@ export const Hero = () => {
               lineHeight: '1.3',
             },
           }}>
-          <strong>Atelier Design Yield</strong>® is an ever– expanding ecosystem of raw, unstyled, and modern design
-          components.
+          <strong>Atelier Design Yield</strong>® is an ever– expanding ecosystem of essential design components, created for designers by
+          designers.
         </Paragraph>
 
         <Flex

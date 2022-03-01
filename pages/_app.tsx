@@ -60,12 +60,14 @@ const App = ({ Component, pageProps }: AppProps) => {
       authListener.unsubscribe();
     };
   }, []);
+
   async function checkUser() {
     const user = await supabase.auth.user();
     if (user) {
       setAuthenticatedState('authenticated');
     }
   }
+
   async function handleAuthChange(event, session) {
     await fetch('/api/auth', {
       method: 'POST',
