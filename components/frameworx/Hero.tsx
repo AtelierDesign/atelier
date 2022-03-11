@@ -1,6 +1,7 @@
 import React from 'react';
 import NextLink from 'next/link';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Section } from '@atelier/section';
 import { Container } from '@atelier/container';
 import { Box } from '@atelier/box';
@@ -11,6 +12,7 @@ import { ExternalLinkIcon, RocketIcon } from '@radix-ui/react-icons';
 import { AtelierButton } from '@ui/buttons/AtelierButton';
 import { GradientButton } from '@ui/buttons/AtelierButton';
 import { TimeCode } from '@fnctns/TimeCode';
+import atelierLarge from '@public/svg/Atelier_Large.svg';
 
 // STITCHES STYLED
 import { styled } from 'stitches.config';
@@ -61,6 +63,7 @@ export const Hero = () => {
         </TimeDisplay>
         {/* END TIME DISPLAY */}
 
+        {/* <!-- Header or Logo (Large)
         <Heading
           size="4"
           css={{
@@ -76,6 +79,12 @@ export const Hero = () => {
           }}>
           Welcome.
         </Heading>
+        --> */}
+
+        <Container size="1" css={{ padding: '0' }}>
+          <Image src={atelierLarge} width={400} height={100} alt="ATELIER®" />
+        </Container>
+
         <Paragraph
           size="2"
           css={{
