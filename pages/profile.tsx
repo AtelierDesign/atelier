@@ -5,6 +5,8 @@ import { Box } from '@atelier/box';
 import { Heading } from '@atelier/heading';
 import { SmallButton } from '@ui/buttons/AtelierButton';
 import { Code } from '@atelier/code';
+import { FooterMain } from '@ui/app/FooterMain';
+import { HoverCardComponent } from '@fnctns/HoverCard';
 import Image from 'next/image';
 
 import { styled } from 'stitches.config';
@@ -57,6 +59,7 @@ const Profile = () => {
   return (
     <Box css={{ height: '100vh' }}>
       <Container>
+        <HoverCardComponent />
         <Heading size="1" css={{ fontFamily: 'Helvetica', paddingBottom: '20px' }}>
           Hello, {profile.email}
         </Heading>
@@ -73,6 +76,7 @@ const Profile = () => {
           <SmallButton onClick={update}>Sign in</SmallButton>
         </Box>
       </Container>
+      <FooterMain />
     </Box>
   );
 };
