@@ -29,7 +29,7 @@ import '@styles/inter.css';
 import '@styles/jetbrains.css';
 import '@styles/neue-plak.css';
 import '@styles/neue-wide.css';
-import '../styles.css';
+import '@styles/globals.css';
 
 // PROGRESS LOADER
 import NextNprogress from 'nextjs-progressbar';
@@ -42,7 +42,7 @@ const App = ({ Component, pageProps }: AppProps) => {
   const { theme, setTheme } = useTheme();
   const router = useRouter();
 
-  // Set User
+  // Set user..
   const [authenticatedState, setAuthenticatedState] = useState('not-authenticated');
   useEffect(() => {
     const { data: authListener } = supabase.auth.onAuthStateChange((event, session) => {

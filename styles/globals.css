@@ -1,0 +1,158 @@
+:root {
+  /* Your default theme */
+  --bg: #fff;
+  --fg: #000;
+
+  --colors-slate9: hsl(205 10.7% 78%);
+  --from: #3cffd0;
+  --to: #277ef4;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  height: -webkit-fill-available !important;
+}
+
+body {
+  min-height: 100vh;
+
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1;
+  min-height: 100vh;
+
+  /* mobile viewport bug fix */
+  min-height: -webkit-fill-available !important;
+}
+
+/* /////// */
+
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+#__next-prerender-indicator {
+  display: none;
+}
+
+canvas {
+  width: 100%;
+  height: 100vh;
+}
+
+.cookie_bar {
+  align-items: center;
+  margin: auto;
+}
+
+svg {
+  vertical-align: middle;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.scroll-container::-webkit-scrollbar {
+  width: 0 !important;
+}
+
+.scroll-grid::-webkit-scrollbar {
+  width: 0 !important;
+}
+
+.color__box {
+  /*position: relative;*/
+  border-radius: 26px;
+  background-color: transparent;
+  backdrop-filter: blur(10px) saturate(180%);
+}
+
+.image-text {
+  mix-blend-mode: difference !important;
+}
+
+.color__swirl {
+  border-radius: 26px;
+  opacity: 0.8;
+  z-index: 0 !important;
+}
+
+html,
+body,
+#root,
+#__next,
+#__next > div,
+.theme-0 {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+#__next {
+  position: relative;
+  z-index: 0;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.logo {
+  color: var(--colors-slate9);
+  fill: var(--colors-slate9);
+}
+
+#nprogress .spinner {
+  display: none !important;
+  /*display: 'block';*/
+  position: fixed;
+  z-index: 1031;
+  top: 15px;
+  right: 15px;
+}
+#nprogress .spinner-icon {
+  display: none !important;
+  width: 18px;
+  height: 18px;
+  box-sizing: border-box;
+  border: solid 2px transparent;
+  border-top-color: #000;
+  border-left-color: #000;
+  border-radius: 50%;
+  -webkit-animation: nprogresss-spinner 400ms linear infinite;
+  animation: nprogress-spinner 400ms linear infinite;
+}
+
+strong {
+  font-weight: 800 !important;
+}
+
+/* HEADLESS */
+
+.hamburger-react {
+  position: relative;
+  margin: auto !important;
+  text-align: center;
+  align-items: center;
+  vertical-align: middle;
+  line-height: normal !important;
+}
+
+@media screen only and (min-width: 800px) {
+  .hamburger-react {
+    display: none !important;
+  }
+}
+
+.klaviyo-form-Y4dwX7 input {
+  border-radius: 8px !important;
+}
