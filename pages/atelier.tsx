@@ -21,7 +21,6 @@ import { Heading } from '@atelier/heading';
 import { Paragraph } from '@atelier/paragraph';
 
 // User Interface ..
-import { Navbar } from '@ui/app/Navbar';
 import { FooterMain } from '@ui/app/FooterMain';
 import { Hero } from '@frameworx/Hero';
 import { GradientButton } from '@ui/buttons/AtelierButton';
@@ -106,7 +105,6 @@ const Atelier = () => {
 
         <Box>
           <CookieNotice />
-          <Navbar />
           <Hero />
         </Box>
 
@@ -153,15 +151,13 @@ const Atelier = () => {
                   lineHeight: '1.3',
                 },
               }}>
-              The <strong>best-selling</strong> products that ADY® has to offer. These are essential design components
-              for your next project.
+              The <strong>best-selling</strong> products that ADY® has to offer. These are essential design components for your next
+              project.
             </Paragraph>
           </Container>
 
           {/* <!-- CARDS CONTAINER --> */}
-          <Container
-            size="3"
-            css={{ overflowY: 'visible', height: 'auto', paddingTop: '10px', paddingBottom: '80px', px: 'auto' }}>
+          <Container size="3" css={{ overflowY: 'visible', height: 'auto', paddingTop: '10px', paddingBottom: '80px', px: 'auto' }}>
             <Grid
               css={{
                 height: 'auto',
@@ -213,9 +209,7 @@ const Atelier = () => {
           </Container>
 
           {/* <!-- ADOBE® AE SECTION --> */}
-          <Container
-            size="3"
-            css={{ overflowY: 'visible', height: 'auto', paddingTop: '10px', paddingBottom: '80px', px: 'auto' }}>
+          <Container size="3" css={{ overflowY: 'visible', height: 'auto', paddingTop: '10px', paddingBottom: '80px', px: 'auto' }}>
             <AdobeAe />
           </Container>
 

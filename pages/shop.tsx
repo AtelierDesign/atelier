@@ -2,6 +2,7 @@
 import Head from 'next/head';
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { NextPage } from 'next';
 
 // ATELIER® DESIGN SYSTEM
@@ -13,7 +14,6 @@ import { Paragraph } from '@atelier/paragraph';
 import { Text } from '@atelier/text';
 import { Grid } from '@atelier/grid';
 
-import { Navbar } from '@ui/app/Navbar';
 import { FooterMain } from '@ui/app/FooterMain';
 
 // STITCHES.DEV
@@ -40,11 +40,17 @@ const SmallButton = styled('button', {
   paddingTop: '4px',
   paddingBottom: '4px',
   fontSize: '12px',
+  fontWeight: '600',
   lineHeight: '1.2',
   width: 'auto',
   bc: '$slate4',
   border: '1px solid',
   borderColor: '$slate10',
+
+  '&:hover': {
+    backgroundColor: '$slate8',
+    cursor: 'pointer',
+  },
 });
 
 const Shop: NextPage = () => {
@@ -55,8 +61,6 @@ const Shop: NextPage = () => {
       </Head>
 
       <Box css={{ bc: '$slate1', overflow: 'auto', height: '100vh' }}>
-        <Navbar />
-
         <Section size="3">
           <Container size="3" css={{ ai: 'center', paddingTop: '100px', margin: 'auto', textAlign: 'center' }}>
             <Heading size="4">The design yield.</Heading>
@@ -92,8 +96,16 @@ const Shop: NextPage = () => {
                     <br />
                     <br />
                   </Text>
-                  <SmallButton>Small Button</SmallButton>
+                  <SmallButton>View Product</SmallButton>
                 </Box>
+                <Image
+                  className="color__swirl"
+                  src="https://cdn.ady.systems/ady.images/one.png"
+                  layout="fill"
+                  objectFit="cover"
+                  alt="image"
+                  objectPosition="absolute"
+                />
               </Card>
             </Box>
 
@@ -108,8 +120,16 @@ const Shop: NextPage = () => {
                     <br />
                     <br />
                   </Text>
-                  <SmallButton>Small Button</SmallButton>
+                  <SmallButton>View Product</SmallButton>
                 </Box>
+                <Image
+                  className="color__swirl"
+                  src="https://cdn.ady.systems/ady.images/one.png"
+                  layout="fill"
+                  objectFit="cover"
+                  alt="image"
+                  objectPosition="absolute"
+                />
               </Card>
             </Box>
 
@@ -124,8 +144,16 @@ const Shop: NextPage = () => {
                     <br />
                     <br />
                   </Text>
-                  <SmallButton>Small Button</SmallButton>
+                  <SmallButton>View Product</SmallButton>
                 </Box>
+                <Image
+                  className="color__swirl"
+                  src="https://cdn.ady.systems/ady.images/four.png"
+                  layout="fill"
+                  objectFit="cover"
+                  alt="image"
+                  objectPosition="absolute"
+                />
               </Card>
             </Box>
 
@@ -142,7 +170,7 @@ const Shop: NextPage = () => {
                     <br />
                     <br />
                   </Text>
-                  <SmallButton>Small Button</SmallButton>
+                  <SmallButton>View Product</SmallButton>
                 </Box>
               </Card>
             </Box>
@@ -158,7 +186,7 @@ const Shop: NextPage = () => {
                     <br />
                     <br />
                   </Text>
-                  <SmallButton>Small Button</SmallButton>
+                  <SmallButton>View Product</SmallButton>
                 </Box>
               </Card>
             </Box>
@@ -174,7 +202,7 @@ const Shop: NextPage = () => {
                     <br />
                     <br />
                   </Text>
-                  <SmallButton>Small Button</SmallButton>
+                  <SmallButton>View Product</SmallButton>
                 </Box>
               </Card>
             </Box>
@@ -192,7 +220,7 @@ const Shop: NextPage = () => {
                     <br />
                     <br />
                   </Text>
-                  <SmallButton>Small Button</SmallButton>
+                  <SmallButton>View Product</SmallButton>
                 </Box>
               </Card>
             </Box>
@@ -208,7 +236,7 @@ const Shop: NextPage = () => {
                     <br />
                     <br />
                   </Text>
-                  <SmallButton>Small Button</SmallButton>
+                  <SmallButton>View Product</SmallButton>
                 </Box>
               </Card>
             </Box>
@@ -224,7 +252,7 @@ const Shop: NextPage = () => {
                     <br />
                     <br />
                   </Text>
-                  <SmallButton>Small Button</SmallButton>
+                  <SmallButton>View Product</SmallButton>
                 </Box>
               </Card>
             </Box>

@@ -95,7 +95,7 @@ export function CommunityContainer() {
                     Twitter
                   </Heading>
                   <Text css={{ lineHeight: '1.5', fontWeight: '400', fontSize: '13px' }}>
-                    For announcements, blog posts, and general Radix tips. We Tweet often.
+                    For announcements, blog posts, and general Atelier® tips. We Tweet often.
                   </Text>
                 </Box>
               </NextLink>
@@ -146,7 +146,7 @@ export function CommunityContainer() {
                     Instagram
                   </Heading>
                   <Text css={{ lineHeight: '1.5', fontWeight: '400', fontSize: '13px' }}>
-                    To file issues, request features, and contribute, check out our GitHub.
+                    See the products in use. Created by our community, showcased for you.
                   </Text>
                 </Box>
               </NextLink>

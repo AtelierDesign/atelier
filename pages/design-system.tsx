@@ -9,7 +9,6 @@ import { Grid } from '@atelier/grid';
 import { Heading } from '@atelier/heading';
 import { Image } from '@atelier/image';
 import { Paragraph } from '@atelier/paragraph';
-import { Navbar } from '@ui/app/Navbar';
 import { Section } from '@atelier/section';
 import { Separator } from '@atelier/separator';
 import { Sub } from '@atelier/sub';
@@ -22,15 +21,12 @@ import { ArrowRightIcon, PlusIcon } from '@radix-ui/react-icons';
 const DesignSystem = () => {
   return (
     <Box css={{ bc: '$slate1' }}>
-      <Navbar />
       <Section size="3">
         <Container size="2">
           <Heading id="text" size="3" css={{ mb: '$4', scrollMarginTop: '$7' }}>
             Atelier Design Yield®
           </Heading>
-          <Paragraph>
-            ADY® is an ever– expanding ecosystem of essential design components built for modern web.
-          </Paragraph>
+          <Paragraph>ADY® is an ever– expanding ecosystem of essential design components built for modern web.</Paragraph>
         </Container>
       </Section>
       <Section size="3">
@@ -425,18 +421,17 @@ const DesignSystem = () => {
               This is a heading size 1
             </Heading>
             <Paragraph size="2">
-              This is a Paragraph size 2. Design in the target medium. Prototype with real components. Handoff
-              production code.
+              This is a Paragraph size 2. Design in the target medium. Prototype with real components. Handoff production code.
             </Paragraph>
             <Paragraph size="1">
-              This is a Paragraph size 1. A really long paragraph of text, to demonstrate prose text, like for example,
-              the kind you might read in a blog post. The reason we&apos;re using prose here is because the most common
-              use case for this container size is longform text. So we&apos;re previewing some longform text here so we
-              can make sure the container width provides an optimal line length for this font size.
+              This is a Paragraph size 1. A really long paragraph of text, to demonstrate prose text, like for example, the kind you might
+              read in a blog post. The reason we&apos;re using prose here is because the most common use case for this container size is
+              longform text. So we&apos;re previewing some longform text here so we can make sure the container width provides an optimal
+              line length for this font size.
             </Paragraph>
             <Paragraph>
-              This is a Sup and Sub demo. The kind you might read in a blog post.<Sup>1</Sup> This is a really long
-              paragraph of text, to demonstrate prose text.<Sub>1</Sub>
+              This is a Sup and Sub demo. The kind you might read in a blog post.<Sup>1</Sup> This is a really long paragraph of text, to
+              demonstrate prose text.<Sub>1</Sub>
             </Paragraph>
           </Flex>
         </Container>
@@ -578,10 +573,10 @@ const DesignSystem = () => {
             Size 2
           </Heading>
           <Paragraph>
-            This is a really long paragraph of text, to demonstrate prose text, like for example, the kind you might
-            read in a blog post. The reason we&apos;re using prose here is because the most common use case for this
-            container size is longform text. So we&apos;re previewing some longform text here so we can make sure the
-            container width provides an optimal line length for this font size.
+            This is a really long paragraph of text, to demonstrate prose text, like for example, the kind you might read in a blog post.
+            The reason we&apos;re using prose here is because the most common use case for this container size is longform text. So
+            we&apos;re previewing some longform text here so we can make sure the container width provides an optimal line length for this
+            font size.
           </Paragraph>
         </Container>
         <Container size="3" css={{ my: '$9' }}>
@@ -595,20 +590,20 @@ const DesignSystem = () => {
             }}>
             <Box>
               <Text as="p" size="4" css={{ lineHeight: '27px' }}>
-                This is a much shorter paragraph of text, to demonstrate narrow text container. The reason we&apos;re
-                using text here is because one common use case for this container size is a 3-up grid.
+                This is a much shorter paragraph of text, to demonstrate narrow text container. The reason we&apos;re using text here is
+                because one common use case for this container size is a 3-up grid.
               </Text>
             </Box>
             <Box>
               <Text as="p" size="4" css={{ lineHeight: '27px' }}>
-                This is a much shorter paragraph of text, to demonstrate narrow text container. The reason we&apos;re
-                using text here is because one common use case for this container size is a 3-up grid.
+                This is a much shorter paragraph of text, to demonstrate narrow text container. The reason we&apos;re using text here is
+                because one common use case for this container size is a 3-up grid.
               </Text>
             </Box>
             <Box>
               <Text as="p" size="4" css={{ lineHeight: '27px' }}>
-                This is a much shorter paragraph of text, to demonstrate narrow text container. The reason we&apos;re
-                using text here is because one common use case for this container size is a 3-up grid.
+                This is a much shorter paragraph of text, to demonstrate narrow text container. The reason we&apos;re using text here is
+                because one common use case for this container size is a 3-up grid.
               </Text>
             </Box>
           </Grid>
