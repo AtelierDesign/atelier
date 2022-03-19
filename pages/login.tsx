@@ -2,6 +2,7 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import { supabase } from '@lib/client';
 
+import { Navbar } from '@ui/app/Navbar';
 import { Box } from '@atelier/box';
 import { Heading } from '@atelier/heading';
 import { AtelierButton } from '@ui/buttons/AtelierButton';
@@ -34,6 +35,8 @@ export default function Login() {
 
   return (
     <Box css={{ height: '100vh' }}>
+      {/* <!-- NAVBAR --> */}
+      <Navbar />
       {session ? (
         <>
           <Container>

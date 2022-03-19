@@ -1,6 +1,6 @@
 // React
 import React from 'react';
-
+import { Navbar } from '@ui/app/Navbar';
 import { Box } from '@atelier/box';
 import { Button } from '@atelier/button';
 import { Container } from '@atelier/container';
@@ -21,6 +21,8 @@ import { ArrowRightIcon, PlusIcon } from '@radix-ui/react-icons';
 const DesignSystem = () => {
   return (
     <Box css={{ bc: '$slate1' }}>
+      {/* <!-- NAVBAR --> */}
+      <Navbar />
       <Section size="3">
         <Container size="2">
           <Heading id="text" size="3" css={{ mb: '$4', scrollMarginTop: '$7' }}>

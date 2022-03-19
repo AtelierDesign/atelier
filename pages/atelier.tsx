@@ -21,6 +21,7 @@ import { Heading } from '@atelier/heading';
 import { Paragraph } from '@atelier/paragraph';
 
 // User Interface ..
+import { Navbar } from '@ui/app/Navbar';
 import { FooterMain } from '@ui/app/FooterMain';
 import { Hero } from '@frameworx/Hero';
 import { GradientButton } from '@ui/buttons/AtelierButton';
@@ -104,6 +105,8 @@ const Atelier = () => {
         </Head>
 
         <Box>
+          {/* <!-- NAVBAR --> */}
+          <Navbar />
           <CookieNotice />
           <Hero />
         </Box>

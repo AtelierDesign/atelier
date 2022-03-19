@@ -6,6 +6,7 @@ import Image from 'next/image';
 import { NextPage } from 'next';
 
 // ATELIER® DESIGN SYSTEM
+import { Navbar } from '@ui/app/Navbar';
 import { Box } from '@atelier/box';
 import { Container } from '@atelier/container';
 import { Section } from '@atelier/section';
@@ -59,6 +60,9 @@ const Shop: NextPage = () => {
       <Head>
         <title>Shop.</title>
       </Head>
+
+      {/* <!-- NAVBAR --> */}
+      <Navbar />
 
       <Box css={{ bc: '$slate1', overflow: 'auto', height: '100vh' }}>
         <Section size="3">

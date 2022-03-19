@@ -6,6 +6,7 @@ import { Heading } from '@atelier/heading';
 import { SmallButton } from '@ui/buttons/AtelierButton';
 import { Code } from '@atelier/code';
 import { FooterMain } from '@ui/app/FooterMain';
+import { Navbar } from '@ui/app/Navbar';
 import { HoverCardComponent } from '@fnctns/HoverCard';
 import Image from 'next/image';
 
@@ -58,6 +59,8 @@ const Profile = () => {
 
   return (
     <Box css={{ height: '100vh' }}>
+      {/* <!-- NAVBAR --> */}
+      <Navbar />
       <Container>
         <HoverCardComponent />
         <Heading size="1" css={{ fontFamily: 'Helvetica', paddingBottom: '20px' }}>

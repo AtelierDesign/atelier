@@ -19,7 +19,6 @@ import { useTheme } from 'next-themes';
 import { useRouter } from 'next/router';
 
 // STITCHES.DEV
-import { Navbar } from '@ui/app/Navbar';
 import { Box, box } from '@atelier/box';
 import { css, globalCss, darkTheme } from 'stitches.config';
 import { reset } from '@styles/reset';
@@ -115,8 +114,6 @@ const App = ({ Component, pageProps }: AppProps) => {
             display: 'flex',
             flexDirection: 'column',
           })}>
-          {/* <!-- NAVBAR --> */}
-          <Navbar />
           <div className={box({ flex: 1 })}>
             <NextNprogress
               color="linear-gradient(to right, #b5bdc8 0%,#828c95 36%,#28343b 100%)"
