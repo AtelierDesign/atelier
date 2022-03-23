@@ -5,7 +5,8 @@ import { Heading } from '@atelier/heading';
 import { Container } from '@atelier/container';
 import { Box } from '@atelier/box';
 import { Button } from '@atelier/button';
-import { GradientButton, AtelierButton } from '@ui/buttons/AtelierButton';
+import { GradientButton } from '@ui/buttons/AtelierButton';
+import { AtelierButton } from '@components/buttons';
 import { SmallSpacer } from '@components/SmallSpacer';
 import { Card } from '@frameworx/Card';
 import { ChevronRightIcon } from '@radix-ui/react-icons';
@@ -105,13 +106,13 @@ export default function SignIn() {
         <SmallSpacer />
 
         <Container size="3" css={{ alignItems: 'center', textAlign: 'center' }}>
-          <AtelierButton color="twitter" size="3" onClick={signInWithTwitter}>
+          <AtelierButton color="twitter" onClick={signInWithTwitter}>
             <TwitterLogoIcon /> Continue with Twitter
           </AtelierButton>
         </Container>
 
         <Container size="3" css={{ alignItems: 'center', textAlign: 'center', paddingTop: '6px' }}>
-          <AtelierButton color="github" size="3" onClick={signInWithGithub}>
+          <AtelierButton color="github" onClick={signInWithGithub}>
             <GitHubLogoIcon /> Continue with GitHub
           </AtelierButton>
         </Container>
