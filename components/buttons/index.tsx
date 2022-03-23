@@ -154,6 +154,7 @@ export const button = css({
         color: '$gray12',
 
         // Base Styles
+        fontFamily: '$inter',
         fontSize: '14px',
         fontWeight: '700',
         position: 'relative',

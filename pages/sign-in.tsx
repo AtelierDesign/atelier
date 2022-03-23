@@ -12,6 +12,7 @@ import { Card } from '@frameworx/Card';
 import { ChevronRightIcon } from '@radix-ui/react-icons';
 import { TwitterLogoIcon } from '@radix-ui/react-icons';
 import { GitHubLogoIcon } from '@radix-ui/react-icons';
+import { Navbar } from '@ui/app/Navbar';
 // import { BsApple } from 'react-icons/bs';
 
 import { supabase } from '@lib/client';
@@ -70,6 +71,7 @@ export default function SignIn() {
   if (submitted) {
     return (
       <Box css={{ height: '100vh' }}>
+        <Navbar />
         <CenterBox>
           <Container size="3">
             <Heading
@@ -91,6 +93,7 @@ export default function SignIn() {
 
   return (
     <Box css={{ height: '100vh' }}>
+      <Navbar />
       <CenterBox>
         <Heading size="3" css={{ fontFamily: '$inter', paddingBottom: '20px' }}>
           Sign in
