@@ -15,6 +15,10 @@ import tapeButterfly from '@public/img/btrfly/tapeButterfly.png';
 
 // STITCHES
 import { styled } from '@stitches/react';
+import toast, { Toaster } from 'react-hot-toast';
+
+// const notify = () => toast('Here is your toast.');
+const notify = () => toast.success('Successfully created!');
 
 const CoverBox = styled('div', {
   zIndex: '10',
@@ -29,15 +33,6 @@ const CoverBox = styled('div', {
   saturate: '300%',
   overflowY: 'hidden',
   overflowX: 'hidden',
-
-  // <!-- RADIAL GRADIENT --> //
-  /*
-  backgroundImage: `
-  radial-gradient(circle 300px at 500px 200px, $blue8, $lime9Alpha),
-  radial-gradient(circle 500px at calc(100% - 900px) 300px, $lime6, $lime9Alpha),
-  radial-gradient(circle 800px at left center, $blue6, $sky9Alpha)
-  `,
-  */
 });
 
 const TextBox = styled('div', {

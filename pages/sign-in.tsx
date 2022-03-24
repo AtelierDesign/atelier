@@ -13,7 +13,8 @@ import { ChevronRightIcon } from '@radix-ui/react-icons';
 import { TwitterLogoIcon } from '@radix-ui/react-icons';
 import { GitHubLogoIcon } from '@radix-ui/react-icons';
 import { Navbar } from '@ui/app/Navbar';
-// import { BsApple } from 'react-icons/bs';
+import { ToastSuccess } from '@fnctns/ToastSuccess';
+import toast, { Toaster } from 'react-hot-toast';
 
 import { supabase } from '@lib/client';
 
@@ -47,6 +48,10 @@ export default function SignIn() {
       console.log({ error });
     } else {
       setSubmitted(true);
+      toast.success('Successfully submitted', {
+        duration: 4000,
+        position: 'top-center',
+      });
     }
   }
 
@@ -55,6 +60,13 @@ export default function SignIn() {
     const { user, session, error } = await supabase.auth.signIn({
       provider: 'twitter',
     });
+
+    if (error) {
+      console.log({ error });
+    } else {
+      setSubmitted(true);
+      toast.success('Submitted');
+    }
   }
 
   // Continue with GitHub
@@ -72,6 +84,20 @@ export default function SignIn() {
     return (
       <Box css={{ height: '100vh' }}>
         <Navbar />
+
+        <Toaster
+          toastOptions={{
+            // className: '',
+            style: {
+              fontFamily: 'Inter',
+              border: '2px solid #231f20',
+              borderRadius: '8px',
+              padding: '10px',
+              color: '#FFF',
+              backgroundColor: 'green',
+            },
+          }}
+        />
         <CenterBox>
           <Container size="3">
             <Heading
