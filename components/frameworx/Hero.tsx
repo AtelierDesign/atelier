@@ -63,7 +63,7 @@ export const Hero = () => {
         </TimeDisplay>
         {/* END TIME DISPLAY */}
 
-        {/* <!-- Header or Logo (Large)
+        {/* <!-- Header or Logo (Large) --> */}
         <Heading
           size="4"
           css={{
@@ -79,11 +79,6 @@ export const Hero = () => {
           }}>
           Welcome.
         </Heading>
-        --> */}
-
-        <Container size="1" css={{ padding: '0' }}>
-          <Image src={atelierLarge} width={400} height={100} alt="ATELIER®" />
-        </Container>
 
         <Paragraph
           size="2"
