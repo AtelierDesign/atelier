@@ -5,7 +5,7 @@ import { Grid } from '@atelier/grid';
 export const GridCollapse = ({ children }) => {
   return (
     <>
-      <Container size="4" css={{ paddingTop: '50px', paddingBottom: '80px', px: '8px' }}>
+      <Container size="4" css={{ paddingTop: '60px', paddingBottom: '80px', px: '8px' }}>
         <Grid
           css={{
             gap: '8px',

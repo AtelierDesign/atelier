@@ -78,7 +78,7 @@ export default function Cover() {
           </NextLink>
 
           <Text css={{ fontWeight: '600', fontSize: '13px', lineHeight: '1' }}>
-            An ongoing [ <strong>Web3</strong> ] project.
+            An ongoing [ <strong>project</strong> ]
           </Text>
         </TextBox>
       </CoverBox>

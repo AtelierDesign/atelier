@@ -1,5 +1,6 @@
 import Image from 'next/image';
-import { Navbar } from '@ui/app/Navbar';
+import { Navvy } from '@ui/app/Navvy';
+import { FooterMain } from '@ui/app/FooterMain';
 import { Box } from '@atelier/box';
 import { Text } from '@atelier/text';
 import { GridCollapse } from '@components/sections/GridCollapse';
@@ -12,7 +13,7 @@ const Card = styled('div', {
   backgroundColor: '$slate3',
   position: 'relative',
   borderRadius: '20px',
-  marginTop: '18px',
+  marginTop: '10px',
   padding: '40px',
   alignItems: 'center',
   webkitScrollbar: 'none',
@@ -23,6 +24,7 @@ const SmallButton = styled('button', {
   borderRadius: '6px',
   height: 'auto',
   marginLeft: '-1px',
+  marginTop: '10px',
   paddingLeft: '10px',
   paddingRight: '10px',
   paddingTop: '4px',
@@ -45,23 +47,12 @@ const SmallButton = styled('button', {
 const Work = () => {
   return (
     <>
-      <Navbar />
+      <Navvy />
       <GridCollapse>
         {/* ROW ONE */}
-
+        {/* CARD.001 */}
         <Box>
           <Card>
-            <Box css={{ position: 'absolute', bottom: '0', left: '0', margin: '20px' }}>
-              <Text size="2" css={{ fontWeight: '600', lineHeight: '1.2' }}>
-                Ady® Interval
-              </Text>
-              <Text size="1" css={{ fontWeight: '400', fontSize: '11px', lineHeight: '1.5' }}>
-                Shop early for the best selection of holiday favorites.
-                <br />
-                <br />
-              </Text>
-              <SmallButton>View Product</SmallButton>
-            </Box>
             <Image
               className="color__swirl"
               src="https://cdn.ady.systems/ady.images/one.png"
@@ -71,21 +62,20 @@ const Work = () => {
               objectPosition="absolute"
             />
           </Card>
+          <Box css={{ position: 'relative', margin: '8px' }}>
+            <Text size="2" css={{ fontWeight: '600', lineHeight: '1.5' }}>
+              Ady® Interval
+            </Text>
+            <Text size="1" css={{ fontWeight: '400', fontSize: '11px', lineHeight: '1.5' }}>
+              Shop early for the best selection of holiday favorites.
+              <br />
+            </Text>
+          </Box>
         </Box>
 
+        {/* CARD.002 */}
         <Box>
           <Card>
-            <Box css={{ position: 'absolute', bottom: '0', left: '0', margin: '20px' }}>
-              <Text size="2" css={{ fontWeight: '600', lineHeight: '1.2' }}>
-                Ady® Interval
-              </Text>
-              <Text size="1" css={{ fontWeight: '400', fontSize: '11px', lineHeight: '1.5' }}>
-                Shop early for the best selection of holiday favorites.
-                <br />
-                <br />
-              </Text>
-              <SmallButton>View Product</SmallButton>
-            </Box>
             <Image
               className="color__swirl"
               src="https://cdn.ady.systems/ady.images/one.png"
@@ -95,21 +85,20 @@ const Work = () => {
               objectPosition="absolute"
             />
           </Card>
+          <Box css={{ position: 'relative', margin: '8px' }}>
+            <Text size="2" css={{ fontWeight: '600', lineHeight: '1.5' }}>
+              Ady® Interval
+            </Text>
+            <Text size="1" css={{ fontWeight: '400', fontSize: '11px', lineHeight: '1.5' }}>
+              Shop early for the best selection of holiday favorites.
+              <br />
+            </Text>
+          </Box>
         </Box>
 
+        {/* CARD.003 */}
         <Box>
           <Card>
-            <Box css={{ position: 'absolute', bottom: '0', left: '0', margin: '20px' }}>
-              <Text size="2" css={{ fontWeight: '600', lineHeight: '1.2' }}>
-                Ady® Interval
-              </Text>
-              <Text size="1" css={{ fontWeight: '400', fontSize: '11px', lineHeight: '1.5' }}>
-                Shop early for the best selection of holiday favorites.
-                <br />
-                <br />
-              </Text>
-              <SmallButton>View Product</SmallButton>
-            </Box>
             <Image
               className="color__swirl"
               src="https://cdn.ady.systems/ady.images/one.png"
@@ -119,32 +108,135 @@ const Work = () => {
               objectPosition="absolute"
             />
           </Card>
+          <Box css={{ position: 'relative', margin: '8px' }}>
+            <Text size="2" css={{ fontWeight: '600', lineHeight: '1.5' }}>
+              Ady® Interval
+            </Text>
+            <Text size="1" css={{ fontWeight: '400', fontSize: '11px', lineHeight: '1.5' }}>
+              Shop early for the best selection of holiday favorites.
+              <br />
+            </Text>
+          </Box>
         </Box>
 
+        {/* CARD.004 */}
         <Box>
           <Card>
-            <Box css={{ position: 'absolute', bottom: '0', left: '0', margin: '20px' }}>
-              <Text size="2" css={{ fontWeight: '600', lineHeight: '1.2' }}>
-                Product 2
-              </Text>
-              <Text size="1" css={{ fontWeight: '400', fontSize: '11px', lineHeight: '1.5' }}>
-                Shop early for the best selection of holiday favorites.
-                <br />
-                <br />
-              </Text>
-              <SmallButton>View Product</SmallButton>
-            </Box>
             <Image
               className="color__swirl"
-              src="https://cdn.ady.systems/ady.images/four.png"
+              src="https://cdn.ady.systems/ady.images/one.png"
               layout="fill"
               objectFit="cover"
               alt="image"
               objectPosition="absolute"
             />
           </Card>
+          <Box css={{ position: 'relative', margin: '8px' }}>
+            <Text size="2" css={{ fontWeight: '600', lineHeight: '1.5' }}>
+              Ady® Interval
+            </Text>
+            <Text size="1" css={{ fontWeight: '400', fontSize: '11px', lineHeight: '1.5' }}>
+              Shop early for the best selection of holiday favorites.
+              <br />
+            </Text>
+          </Box>
+        </Box>
+
+        {/* <!-- <!-- <!-- ROW TWO --> --> --> */}
+        {/* CARD.001 */}
+        <Box>
+          <Card>
+            <Image
+              className="color__swirl"
+              src="https://cdn.ady.systems/ady.images/one.png"
+              layout="fill"
+              objectFit="cover"
+              alt="image"
+              objectPosition="absolute"
+            />
+          </Card>
+          <Box css={{ position: 'relative', margin: '8px' }}>
+            <Text size="2" css={{ fontWeight: '600', lineHeight: '1.5' }}>
+              Ady® Interval
+            </Text>
+            <Text size="1" css={{ fontWeight: '400', fontSize: '11px', lineHeight: '1.5' }}>
+              Shop early for the best selection of holiday favorites.
+              <br />
+            </Text>
+          </Box>
+        </Box>
+
+        {/* CARD.002 */}
+        <Box>
+          <Card>
+            <Image
+              className="color__swirl"
+              src="https://cdn.ady.systems/ady.images/one.png"
+              layout="fill"
+              objectFit="cover"
+              alt="image"
+              objectPosition="absolute"
+            />
+          </Card>
+          <Box css={{ position: 'relative', margin: '8px' }}>
+            <Text size="2" css={{ fontWeight: '600', lineHeight: '1.5' }}>
+              Ady® Interval
+            </Text>
+            <Text size="1" css={{ fontWeight: '400', fontSize: '11px', lineHeight: '1.5' }}>
+              Shop early for the best selection of holiday favorites.
+              <br />
+            </Text>
+          </Box>
+        </Box>
+
+        {/* CARD.003 */}
+        <Box>
+          <Card>
+            <Image
+              className="color__swirl"
+              src="https://cdn.ady.systems/ady.images/one.png"
+              layout="fill"
+              objectFit="cover"
+              alt="image"
+              objectPosition="absolute"
+            />
+          </Card>
+          <Box css={{ position: 'relative', margin: '8px' }}>
+            <Text size="2" css={{ fontWeight: '600', lineHeight: '1.5' }}>
+              Ady® Interval
+            </Text>
+            <Text size="1" css={{ fontWeight: '400', fontSize: '11px', lineHeight: '1.5' }}>
+              Shop early for the best selection of holiday favorites.
+              <br />
+            </Text>
+          </Box>
+        </Box>
+
+        {/* CARD.004 */}
+        <Box>
+          <Card>
+            <Image
+              className="color__swirl"
+              src="https://cdn.ady.systems/ady.images/one.png"
+              layout="fill"
+              objectFit="cover"
+              alt="image"
+              objectPosition="absolute"
+            />
+          </Card>
+          <Box css={{ position: 'relative', margin: '8px' }}>
+            <Text size="2" css={{ fontWeight: '600', lineHeight: '1.5' }}>
+              Ady® Interval
+            </Text>
+            <Text size="1" css={{ fontWeight: '400', fontSize: '11px', lineHeight: '1.5' }}>
+              Shop early for the best selection of holiday favorites.
+              <br />
+            </Text>
+          </Box>
         </Box>
       </GridCollapse>
+
+      <FooterMain />
     </>
   );
 };
