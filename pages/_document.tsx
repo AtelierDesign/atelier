@@ -13,8 +13,6 @@ export default class Document extends NextDocument {
     return (
       <Html lang="en">
         <Head>
-          <style id="stitches" dangerouslySetInnerHTML={{ __html: getCssAndReset() }} />
-
           <link rel="amphtml" href="https://ady.world/" />
           <link rel="canonical" href="https://www.ady.world/" />
           <meta name="googlebot" content="follow, index, noarchive" />
@@ -49,7 +47,9 @@ export default class Document extends NextDocument {
         </Head>
         <body>
           <Main />
-          <NextScript />
+          <NextScript>
+            <style id="stitches" dangerouslySetInnerHTML={{ __html: getCssAndReset() }} />
+          </NextScript>
         </body>
       </Html>
     );

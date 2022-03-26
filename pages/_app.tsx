@@ -99,11 +99,7 @@ const App = ({ Component, pageProps }: AppProps) => {
   });
 
   return (
-    <ThemeProvider
-      disableTransitionOnChange
-      attribute="class"
-      value={{ light: 'light-theme', dark: darkTheme.className }}
-      defaultTheme="system">
+    <ThemeProvider disableTransitionOnChange attribute="class" defaultTheme="system">
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
       </Head>
