@@ -16,8 +16,10 @@ import { Navbar } from '@ui/app/Navbar';
 import { ToastSuccess } from '@fnctns/ToastSuccess';
 import toast, { Toaster } from 'react-hot-toast';
 
+// Supabase..
 import { supabase } from '@lib/client';
 
+// Stitches..
 import { styled } from 'stitches.config';
 
 const CenterBox = styled('div', {
@@ -30,6 +32,7 @@ const CenterBox = styled('div', {
   height: '100vh',
 });
 
+// App..
 export default function SignIn() {
   // EMAIL
   const [email, setEmail] = useState(null);
@@ -37,8 +40,7 @@ export default function SignIn() {
   const [submitted, setSubmitted] = useState(false);
   const [session, setSession] = useState(null);
 
-  // AUTH HANDLERS
-  // Magic Link
+  // Auth handlers..
   async function signIn() {
     const { user, session, error } = await supabase.auth.signIn({
       email,
@@ -87,14 +89,15 @@ export default function SignIn() {
 
         <Toaster
           toastOptions={{
-            // className: '',
+            // Docs: https://react-hot-toast.com
             style: {
               fontFamily: 'Inter',
-              border: '2px solid #231f20',
+              fontSize: '13px',
+              border: '2px solid #affc41',
               borderRadius: '8px',
               padding: '10px',
-              color: '#FFF',
-              backgroundColor: 'green',
+              color: '#231f20',
+              backgroundColor: '#80ed99',
             },
           }}
         />
