@@ -38,6 +38,7 @@ const appWrapper = css({
   include: ['box', 'minHeightScreen'],
 });
 
+// App..
 const App = ({ Component, pageProps }: AppProps) => {
   const { theme, setTheme } = useTheme();
   const router = useRouter();
