@@ -42,7 +42,11 @@ const TimeDisplay = styled('div', {
 
 export const Hero = () => {
   return (
-    <Section size="3" css={{ backgroundColor: '$translucent' }}>
+    <Section
+      size="3"
+      css={{
+        backgroundColor: '$translucent',
+      }}>
       <Container
         size="2"
         css={{

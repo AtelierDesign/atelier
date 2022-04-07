@@ -127,7 +127,7 @@ const Atelier = () => {
                   paddingBottom: '10px',
                 },
               }}>
-              <strong>Most</strong>Desired.
+              <strong>Most</strong> Wanted.
             </Heading>
 
             <Paragraph

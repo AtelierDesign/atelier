@@ -15,7 +15,7 @@ import { supabase } from '@lib/client';
 
 // FUNCTIONS
 import { ThemeProvider } from 'next-themes';
-import { useTheme } from 'next-themes';
+// import { useTheme } from 'next-themes';
 import { useRouter } from 'next/router';
 
 // STITCHES.DEV
@@ -40,7 +40,6 @@ const appWrapper = css({
 
 // App..
 const App = ({ Component, pageProps }: AppProps) => {
-  const { theme, setTheme } = useTheme();
   const router = useRouter();
 
   // Set user..
@@ -100,7 +99,7 @@ const App = ({ Component, pageProps }: AppProps) => {
   });
 
   return (
-    <ThemeProvider disableTransitionOnChange attribute="class" defaultTheme="system">
+    <ThemeProvider disableTransitionOnChange defaultTheme="system">
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
       </Head>
