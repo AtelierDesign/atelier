@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import { Navvy } from '@ui/app/Navvy';
 import { FooterMain } from '@ui/app/FooterMain';
 import { Box } from '@atelier/box';
 import { Text } from '@atelier/text';
@@ -47,7 +46,6 @@ const SmallButton = styled('button', {
 const Work = () => {
   return (
     <>
-      <Navvy />
       <GridCollapse>
         {/* ROW ONE */}
         {/* CARD.001 */}
