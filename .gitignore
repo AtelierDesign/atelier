@@ -18,6 +18,7 @@ KlaviyoNotes.js
 /.next/
 /out/
 next.lock
+package-lock.json
 
 # PRODUCTION
 /build
