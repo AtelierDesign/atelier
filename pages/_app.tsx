@@ -38,8 +38,30 @@ const appWrapper = css({
   include: ['box', 'minHeightScreen'],
 });
 
+const globalStyles = globalCss(reset, {
+  html: {
+    overflowX: 'hidden',
+    backgroundColor: '$slate1',
+
+    // iOS MOBILE VIEWPORT FIX
+    minHeight: '-webkit-fill-available',
+  },
+  body: {
+    display: 'flex',
+    flexDirection: 'column',
+    margin: 0,
+    fontFamily: '$inter',
+    backgroundColor: '$slate1',
+    height: '100vh',
+
+    // iOS MOBILE VIEWPORT FIX
+    minHeight: '-webkit-fill-available',
+  },
+});
+
 // App..
 const App = ({ Component, pageProps }: AppProps) => {
+  globalStyles();
   const router = useRouter();
 
   // Set user..
@@ -77,29 +99,12 @@ const App = ({ Component, pageProps }: AppProps) => {
     });
   }
 
-  globalCss(reset, {
-    html: {
-      overflowX: 'hidden',
-      backgroundColor: '$slate1',
-
-      // iOS MOBILE VIEWPORT FIX
-      minHeight: '-webkit-fill-available',
-    },
-    body: {
-      display: 'flex',
-      flexDirection: 'column',
-      margin: 0,
-      fontFamily: '$inter',
-      backgroundColor: '$slate1',
-      height: '100vh',
-
-      // iOS MOBILE VIEWPORT FIX
-      minHeight: '-webkit-fill-available',
-    },
-  });
-
   return (
-    <ThemeProvider disableTransitionOnChange defaultTheme="system">
+    <ThemeProvider
+      disableTransitionOnChange
+      attribute="class"
+      value={{ light: 'light-theme', dark: darkTheme.className }}
+      defaultTheme="system">
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
       </Head>
