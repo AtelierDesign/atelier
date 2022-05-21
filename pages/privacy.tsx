@@ -9,6 +9,7 @@ import { Section } from '@atelier/section';
 import { Heading } from '@atelier/heading';
 import { Text } from '@atelier/text';
 import { FooterMain } from '@ui/app/FooterMain';
+import { Navbar } from '@ui/app/Navbar';
 
 import { SmallSpacer } from '@components/SmallSpacer';
 import { Spacer } from '@components/Spacer';
@@ -19,6 +20,8 @@ const PrivacyPolicy = () => {
       <Head>
         <title>Privacy.</title>
       </Head>
+
+      <Navbar />
 
       <Section size="2">
         <Container size="3" css={{ ai: 'center', paddingTop: '100px', margin: 'auto', textAlign: 'center' }}>
